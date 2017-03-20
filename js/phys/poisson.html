@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>Poisson Distribution</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i,700i|Roboto:400|Material+Icons" rel="stylesheet">
+		<style>
+			*						{font-size:13pt;font-family:'Roboto',sans-serif;}
+			html					{color:#333;background:#fff;}
+			sup, sub				{font-size:6pt;}
+			#body					{position:relative;margin:auto;}
+			
+			.math					{font-family:'Droid Serif',serif;font-style:italic;font-weight:700;}
+			.unit					{font-family:'Droid Serif',serif;font-style:italic;}
+			.material-icons			{font-size:14pt;}
+			
+			#graph					{position:relative;top:0;left:0;width:500px;height:300px;margin:30px 0 40px 50px;border-width:0 0 1px 1px;border-color:#333;border-style:solid;margin-top:calc(50vh - 170px);-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;}
+				.plot-line			{position:absolute;bottom:0;background:#333;z-index:10;}
+				.plot-point			{position:absolute;bottom:0;width:1px;border-top-color:#333;border-top-style:solid;z-index:10;}
+				.plot-tick			{position:absolute;top:calc(100%);width:1px;height:10px;background:#333;z-index:10;}
+				.plot-tick-label	{position:absolute;top:calc(100% + 13px);width:21px;text-align:center;color:#333;z-index:10;}
+				.plot-mark			{position:absolute;bottom:calc(100% + 10px);width:27px;text-align:center;color:#333;z-index:10;}
+				.plot-side-tick		{position:absolute;right:100%;height:1px;width:10px;background:#333;z-index:10;}
+				.plot-side-mark		{position:absolute;right:calc(100% + 13px);color:#333;z-index:10;}
+			.chi					{text-align:right;}
+		</style>
+</head>
+<body>
+	<div id="body"><div class="post">
+		<div id="graph" style="cursor:move;"></div>
+		<!--<div class="chi">χ<sup>2</sup><sub>red</sub>(1,100) = <span id="rcs"></span></div>-->
+		<!--<div class="chi">χ<sup>2</sup><sub>red</sub>(10,70) = <span id="rcs2"></span></div>-->
+	</div></div>
+	<script>
+		function poisson(a,rounds){
+			var a		= a || 40,
+				rounds	= rounds || 100,
+				ret		= [Math.exp(-a)];
+			for(var i = 1; i < rounds; i++) ret[i] = (a * ret[i - 1]) / i;
+			return ret;
+		}
+		function gaussian(a,s,x){
+			return (1 / (s * Math.sqrt(2 * Math.PI))) * Math.exp((-1 / 2) * Math.pow(((x - a) / s),2));
+		}
+		function reducedChiSquared(a=40,min=0,max=100){
+			var val		= poisson(a,max+1),
+				v		= val.length - 2,
+				tot		= 0;
+			for(let i = min; i <= max; i++) tot += (Math.pow(val[i] - gaussian(a,Math.sqrt(a),i),2)) / val[i];
+			return tot / v;
+		}
+		function poissonSum(a,rounds){
+			var a		= a || 40,
+				rounds	= rounds || 100,
+				val		= poisson(a,rounds),
+				tot		= 0;
+			for(let i = 0; i < val.length; i++) tot += val[i];
+			return tot;
+		}
+		function plot(n){
+			var val = poisson(n),
+				e = document.getElementById('graph');
+				b = e.getBoundingClientRect(),
+				h = b.height,
+				w = b.width,
+				m = Math.max.apply(Math,val);
+				//m = 0.1;
+			e.innerHTML = '';
+			//	PLOT THE POISSON
+			for(let i = 0; i < val.length; i++){
+				let l = document.createElement('div');
+					l.className = 'plot-line';
+					l.style.height = (val[i] * h) / m + 'px';
+					l.style.width = (~~(w / val.length)) - 2 + 'px';
+					l.style.left = (~~(w / val.length) * i) + 1 + 'px';
+					e.appendChild(l);
+			}
+			//	PLOT THE GAUSSIAN
+			//for(let i = 1; i < w; i++){
+			//	let l = document.createElement('div'),
+			//		prev = (gaussian(n, Math.sqrt(n), (i - 1) / (w / val.length)) * h) / m,
+			//		next = (gaussian(n, Math.sqrt(n), (i) / (w / val.length)) * h) / m;
+			//		l.className = 'plot-point';
+			//		l.style.height = Math.min(prev,next) + 'px';
+			//		l.style.borderTopWidth = Math.max(prev,next) - Math.min(prev,next) + 'px';
+			//		l.style.left = i + 'px';
+			//		e.appendChild(l);
+			//}
+			//	PLOT TICK MARKS
+			for(let i = 0; i <= val.length; i ++){
+				let t = document.createElement('div');
+					t.className = 'plot-tick';
+					t.style.left = (w / val.length) * i + 'px';
+					if(i%5==0) t.style.height = 13 + 'px';
+					e.appendChild(t);
+				if(i%10==0){
+					let l = document.createElement('div');
+						l.className = 'plot-tick-label';
+						l.innerText = i;
+						l.style.left = ((w / val.length) * i) - 11 + 'px';
+						e.appendChild(l);
+				}
+			}
+			//	PLOT SIDE TICKS
+			for(let i = 1; i < 5; i++){
+				let t = document.createElement('div');
+					t.className = 'plot-side-tick';
+					t.style.bottom = i * (h/4) + 'px';
+					e.appendChild(t);
+				let k = document.createElement('div');
+					k.className = 'plot-side-mark';
+					k.style.bottom = (i * (h/4)) - 7 + 'px';
+					k.innerHTML = ~~(i * (m/4) * 1e4) / 100 + '<span class="unit">%</span>';
+					e.appendChild(k);
+			}
+			//	PLOT MEAN AND STD DEV
+			for(let i = -1; i <= 1; i++){
+				if(n + (i * Math.sqrt(n))>val.length) break;
+				if(i!=0){
+					let m = document.createElement('div');
+						m.className = 'plot-line';
+						m.style.width = 1 + 'px';
+						m.style.height = h + 'px';
+						m.style.left = Math.min(w,(w / val.length) * (n + (i * Math.sqrt(n)))) + 'px';
+						e.appendChild(m);
+				}
+				let k = document.createElement('div');
+					k.className = 'plot-mark';
+					k.innerText = i == 0 ? '⟨ j ⟩' : 'σ';
+					k.style.left = Math.min(w,(w / val.length) * (n + (i * Math.sqrt(n)))) - 13 + 'px';
+					e.appendChild(k);
+			}
+			//document.getElementById('rcs').innerText = reducedChiSquared(n);
+			//document.getElementById('rcs2').innerText = reducedChiSquared(n,10,70);
+		}
+		
+		//	FIT GRAPH TO SCREEN WIDTH
+		function setSize(){
+			var w = 500 * ~~((window.innerWidth-60) / 500);
+			document.getElementById('body').style.width = w + 60 + 'px';
+			document.getElementsByClassName('post')[0].style.width = w + 60 + 'px';
+			document.getElementById('graph').style.width = w + 'px';
+			plot(40);
+		}
+		window.onresize = setSize;
+		window.onload = setSize;
+		plot(40);
+		
+		//	LET USER DRAG GRAPH
+		window.draggingJ = false;
+		document.getElementById('graph').addEventListener('mousedown',function(e){
+			window.draggingJ = true;
+			var g = document.getElementById('graph'),
+				r = g.getBoundingClientRect(),
+				p = e.pageX - r.left,
+				j = Math.min(Math.max(1,~~((p / r.width) * 100)),100);
+			plot(j);
+		});
+		window.addEventListener('mouseup',function(e){
+			window.draggingJ = false;
+		});
+		window.addEventListener('mousemove',function(e){
+			if(window.draggingJ){
+				var g = document.getElementById('graph'),
+					r = g.getBoundingClientRect(),
+					p = e.pageX - r.left,
+					j = Math.min(Math.max(1,~~((p / r.width) * 100)),100);
+				plot(j);
+			}
+		});
+	</script>
+</body>
+</html>

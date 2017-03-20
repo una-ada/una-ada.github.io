@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Revolution.js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1">
+		<style>
+			html,body{margin:0;padding:0;overflow:hidden;}
+		</style>
+	</head>
+	<body>
+		<script src="assets/dep.js"></script>
+		<script src="assets/three.min.js"></script>
+		<script src="assets/OrbitControls.js"></script>
+		<script src="assets/DeviceOrientationControls.js"></script>
+		<script>
+			/*	Options Handling
+			 *		count		number		number of particles
+			 *		gaussian	boolean		dis/enable gaussian distribution
+			 *		range		number		containing range of particles
+			 *		wave		"plane"		type of wave
+			 *					"cylindrical"
+			 *					"spherical"
+			 */
+			var o = {};
+			try{
+				o = JSON.parse(decodeURIComponent(
+					document.location.hash.split('#')[1]
+				));
+			}catch(e){console.log(e)}
+			
+			
+			//	Scene Setup
+			const
+				scene		= new THREE.Scene(),
+				aspect		= window.innerWidth/window.innerHeight,
+				camera		= new THREE.PerspectiveCamera(75,aspect,0.1,1e3),
+				controls	= new THREE.OrbitControls(camera);
+				renderer	= new THREE.WebGLRenderer(),
+				r			= ()=>Math.random(),
+				r2			= ()=>{
+					/*
+					 *	Approximately Gaussian Random
+					 *	source: https://goo.gl/ZiKdoV
+					 */
+					for(var r=0,i=0;i<6;i++)r+=Math.random();
+					return r/6;
+				},
+				/*
+				 *	Wave Solutions
+				 *	source: https://goo.gl/Wo8127
+				 */
+				waves		= {
+					plane(x,y,z,t){
+						return new THREE.Vector3(Math.sin(x-t),0,0);
+					},
+					cylindrical(x,y,z,t){
+						if(x*x+y*y<0.01)
+							return new THREE.Vector3(0,0,0);
+						else{
+							var ρ = Math.sqrt(x*x+y*y),
+								φ = Math.atan2(y,x);
+							return new THREE.Vector3(
+								1.5*Math.cos(φ)*Math.sin(ρ-t)/Math.sqrt(ρ),
+								1.5*Math.sin(φ)*Math.sin(ρ-t)/Math.sqrt(ρ),
+								0
+							);
+						}
+					},
+					spherical(x,y,z,t){
+						if(x*x+y*y+z*z<0.01)
+							return new THREE.Vector3(0,0,0);
+						else {
+							var r = Math.sqrt(x*x+y*y+z*z),
+								θ = Math.acos(z/r),
+								φ = Math.atan2(y,x);
+							return new THREE.Vector3(
+								3*Math.cos(φ)*Math.sin(θ)*Math.sin(r-t)/r,
+								3*Math.sin(φ)*Math.sin(θ)*Math.sin(r-t)/r,
+								3*Math.cos(θ)*Math.sin(r-t)/r
+							);
+						}
+					}
+				};
+			scene.background	= new THREE.Color(0xffffff);
+			camera.position.x	= 
+			camera.position.z	= 
+			camera.position.y	= 50;
+			renderer.setSize(window.innerWidth,window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			
+			//	Snow Generation
+			const
+				particles	= [],
+				disp		= typeof o.wave=="string"&&~["plane","cylindrical",
+								"spherical"].indexOf(o.wave)?o.wave:"spherical";
+			var t=0;
+			var	spriteMap 	= new THREE.TextureLoader().load('assets/hns.png'),
+				material	= new THREE.SpriteMaterial({map:spriteMap,fog:!0}),
+				range = typeof o.range=='number'?o.range:100,
+				gauss = typeof o.gaussian=='boolean'?o.gaussian:true,
+				count = typeof o.count=='number'?o.count:5e3;
+			for(let i=0;i<count;i++){
+				let p = new THREE.Sprite(material);
+				p.position.x = ((gauss?r2:r)()*range)-(range/2),
+				p.position.y = ((gauss?r2:r)()*range)-(range/2),
+				p.position.z = ((gauss?r2:r)()*range)-(range/2),
+				scene.add(p);
+				particles.push(p);
+			}
+			
+			
+			//	Rendering Loop
+			(render	= ()=>{
+				//	Loop
+				requestAnimationFrame(render);
+				//	Scene Control
+				controls.update();
+				renderer.render(scene,camera);
+				//	Waves
+				for(var i of particles){
+					var v0 = i.position,
+						dv = waves[disp](v0.x,v0.y,v0.z,t/5);
+					v0.x+=dv.x;
+					v0.y+=dv.y;
+					v0.z+=dv.z;
+				}
+				//	Iterate Time
+				t++;
+			})();
+			
+			//	Handle Resize
+			window.addEventListener('resize',()=>{
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			},!1);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Let it snow.js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1">
+		<style>
+			html,body{margin:0;padding:0;overflow:hidden;}
+		</style>
+	</head>
+	<body>
+		<script src="assets/dep.js"></script>
+		<script src="assets/three.min.js"></script>
+		<script src="assets/OrbitControls.js"></script>
+		<script src="assets/DeviceOrientationControls.js"></script>
+		<script>
+			//	Scene Setup
+			const
+				scene		= new THREE.Scene(),
+				aspect		= window.innerWidth/window.innerHeight,
+				camera		= new THREE.PerspectiveCamera(75,aspect,0.1,1e3),
+				controls	= window.mobilecheck()
+					? new THREE.DeviceOrientationControls(camera)
+					: new THREE.OrbitControls(camera);
+				renderer	= new THREE.WebGLRenderer(),
+				r			= ()=>Math.random();
+			scene.background	= new THREE.Color(0xffffff);
+			camera.position.x	= 
+			camera.position.z	= 1;
+			camera.position.y	= 0;
+			renderer.setSize(window.innerWidth,window.innerHeight);
+			document.body.appendChild(renderer.domElement);
+			
+			//	Snow Generation
+			const particles	= [];
+			var	spriteMap 	= new THREE.TextureLoader().load('assets/hns.png'),
+				material	= new THREE.SpriteMaterial({map:spriteMap,fog:!0});
+			for(let i=0;i<2e3;i++){
+				let p = new THREE.Sprite(material);
+				p.velocity = new THREE.Vector3(0,-0.5,0);
+				p.position.x = (r()*2e2)-1e2,
+				p.position.y = (r()*2e2),
+				p.position.z = (r()*2e2)-1e2,
+				scene.add(p);
+				particles.push(p);
+			}
+			
+			//	Rendering Loop
+			(render	= ()=>{
+				//	Loop
+				requestAnimationFrame(render);
+				//	Handle Snow
+				for(var i of particles){
+					i.position.add(i.velocity);
+					i.position.y += i.position.y<-2?2e2:0;
+				}
+				//	Scene Control
+				controls.update();
+				renderer.render(scene,camera);
+			})();
+			
+			//	Handle Resize
+			if(!window.mobilecheck())window.addEventListener('resize',()=>{
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			},!1);
+		</script>
+	</body>
+</html>

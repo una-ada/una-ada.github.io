@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>gravity</title>
+	<link rel="shortcut icon" type="image/png" href="assets/fav.png"/>
+	<link
+		href="https://fonts.googleapis.com/css?family=
+			Droid+Serif:400i,700i|
+			Roboto:400,900|
+			Material+Icons"
+		rel="stylesheet"
+	>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||
+		function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+		a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+		m.parentNode.insertBefore(a,m)})(window,document,'script',
+		'https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-67481186-9', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script>
+		function _i(i){return document.getElementById(i);}
+		function _c(c){return document.getElementsByClassName(c);}
+		Element.prototype._c=function(c){return this.getElementsByClassName(c);}
+		window.gridImg	= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAA"
+						+ "BkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQ"
+						+ "UAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAZdEVYdFNvZnR3YXJlAH"
+						+ "BhaW50Lm5ldCA0LjAuMTJDBGvsAAAA7ElEQVR4Xu3QoQHAMAzAsP"
+						+ "5/cdhKesDMAiRi7jMrfSuZFZgVmBWYFZgVmBWYFZgVmBWYFZgVmB"
+						+ "WYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZ"
+						+ "gVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZzXZd"
+						+ "6zZcwKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCs"
+						+ "wKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzA"
+						+ "rMCswKzArMCswKzArMCswKzArMCsz6beYC9PonZuPFYfkAAAAASU"
+						+ "VORK5CYII=";
+		window.gridDark = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAA"
+						+ "BkCAIAAAD/gAIDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwg"
+						+ "AADsIBFShKgAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC"
+						+ "4xMkMEa+wAAADuSURBVHhe7dChDcAwEMDADFTp998uJAPU7MEdMf"
+						+ "eZlb6VzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCs"
+						+ "wKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzA"
+						+ "rMCswKzArMCswKzArMCswKzArMCswKzArO6zLv2TJmBWYFZgVmBW"
+						+ "YFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZg"
+						+ "VmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBWYFZgVmBW"
+						+ "YFZgVmBWYFZgVm/TZzAVcz1TW7hI2kAAAAAElFTkSuQmCC";
+		window.defHBox	= '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0'
+						+ ' 2 2"><circle cx="1" cy="1" r="1"/></svg>';
+	</script>
+	<style>
+		*						{border:0;margin:0px;outline:0;user-select:none;
+								-moz-user-select:none;-webkit-user-select:none;
+								zoom:1;}
+		a						{cursor:pointer;color:#333 !important;
+								box-shadow:inset 0 -3px 0 #333;
+								text-decoration:none;}
+		h1						{font-family:'Roboto',sans-serif;font-size:28pt;
+								font-weight:900;}
+		hitbox					{height:100%;left:0;opacity:0;position:absolute;
+								top:0;width:100%;}
+		html					{color:#333;font-family:'Roboto',sans-serif;
+								font-size:14pt;}
+		sub						{position:relative;top:0.4em;
+								vertical-align:baseline;}
+		
+		.material-icons			{font-size:14pt;}
+		.math					{font-family:'Droid Serif',serif;
+								font-style:italic;font-weight:700;}
+		.unit					{font-family:'Droid Serif',serif;
+								font-style:italic;}
+		
+		#nav					{position:fixed;z-index:100;}
+			#planet				{position:absolute;width:102px;height:102px;}
+			#planet .info		{display:none;}
+			#planet:hover .info	{display:block;}
+			.moon				{position:absolute;width:18px;height:18px;}
+			.moon .shell		{border:9px solid #333;border-radius:50%;
+								height:0px;position:absolute;width:0px;}
+			.moon.current .shell{height:0px;margin:5px;width:0px;}
+			.info				{color:#333;height:20px;left:12px;
+								line-height:20px;position:absolute;top:-10px;
+								width:150px;}
+		#settings				{bottom:10px;font-weight:400;left:10px;
+								position:absolute;z-index:200;}
+		#frame-info				{left:10px;position:absolute;top:10px;}
+		
+		#idfk					{font-family:'Roboto',sans-serif;
+								font-size:144pt;font-weight:900;line-height:1em;
+								left:1rem;opacity:0.1;position:fixed;top:1rem;
+								z-index:10;}
+		
+		.dark *					{color:#fff;}
+		.dark .moon .shell		{border:9px solid #fff;}
+		.dark .to-kill			{background:rgba(255,255,255,0.3);}
+	</style>
+</head>
+<body>
+	<div id="nav">
+		<div
+			style="left:calc(50vw - 51px);top:calc(50vh - 51px);"
+			id="planet"
+			direction="0"
+			mass="5.683e26"
+			name="saturn"
+			velocity="9.69e3"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.61 204.61">
+				<title>phene.co</title>
+				<defs>
+					<style id="planetstyle">
+						.cls-1	{fill:none;stroke:#333333;stroke-linecap:round;
+								stroke-linejoin:round;stroke-width:18px;}
+					</style>
+				</defs>
+				<path
+					class="cls-1"
+					d="M172.88,76.6a75,75,0,1,0-17.35,78.94A74.69,74.69,0,0,0,
+						172.88,76.6Z"
+					transform="translate(-0.2 -0.2)"
+				/>
+				<path
+					class="cls-1"
+					d="M128.4,32.12c29-19.5,53.17-27.32,62.48-18s1.49,33.53-18,
+						62.48C161.74,93.15,146.78,111.26,129,129S93.15,161.74,
+						76.6,172.88c-29,19.5-53.17,27.32-62.48,18s-1.49-33.53,
+						18-62.48"
+					transform="translate(-0.2 -0.2)"
+				/>
+			</svg>
+			<div class="info" style="left:100px;top:80px;">
+				<span class="math">m =</span>
+				5.683e26<span class="unit">kg</span>
+			</div>
+			<hitbox>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204.61
+				204.61">
+					<circle cx="102.30" cy="102.30" r="83.95"/>
+				</svg>
+			</hitbox>
+		</div>
+		<div
+			style="left:calc(50vw - 9px);top:calc(50vh + 398px);
+				width:18px;height:18px;"
+			class="moon"
+			direction="0"
+			mass="1.35e23"
+			name="titan"
+			velocity="15.26e3"
+		>
+			<div class="shell" style="width:0px;height:0px;">
+				<div class="info" style="top:-10px;left:12px;"></div>
+			</div>
+		</div>
+		<div
+			style="left:calc(50vw - 408px);top:calc(50vh + 475925px);
+				width:815.332px;height:815.332px;"
+			class="moon"
+			mass="1.989e30"
+			name="sun"
+		>
+			<div class="shell" style="width:797.332px;height:797.332px;">
+				<div class="info" style="top:388.666px;left:809.332px;"></div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="frame-info">
+		<div class="material-icons" id="velocity-arrow">navigation</div>
+		<span class="math">v = </span>
+		<span id="velocity-value">0</span><span class="unit">m/s</span>
+	</div>
+	<div id="idfk">FOLLOW ME ON TWITTER @TREWBOT FOR MORE QUALITY CONTENT™</div>
+	<div id="settings">
+		<table>
+			scroll to adjust:
+			<tr id="setting-fllw">
+				<td>follow</td>
+				<td>
+					<span class="setting">
+						<span class="unit">saturn</span>
+					</span>
+				</td>
+			</tr>
+			<tr id="setting-grid">
+				<td>grid </td>
+				<td>
+					<span class="unit setting">off</span>
+				</td>
+			</tr>
+			<tr id="setting-theme">
+				<td>theme </td>
+				<td>
+					<span class="unit setting">light</span>
+				</td>
+			</tr>
+			<tr id="setting-wmark">
+				<td>watermark &nbsp;&nbsp;</td>
+				<td>
+					<span class="unit setting">show</span>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+		/*
+		 *	Todo:
+		 *		Add collisions
+		 */
+		const E_ = {
+			//	Startup
+			running	: !0,
+			loop	(){
+				if(E_.running)
+					requestAnimationFrame(E_.loop);
+				E_.step = (function*(s){
+					for(let i of s)
+						yield i;
+				})(E_.steps);
+				E_.step.next().value();
+			},
+			render	(){
+				var focal = ~settings.follow
+					? E_.phys.objects[settings.follow].position
+					: E_.phys.centerOfMass();
+				E_.display.position.x = focal.x
+					- (scale.space*window.innerWidth*0.5);
+				E_.display.position.y = focal.y
+					- (scale.space*window.innerHeight*0.5);
+				if(~settings.follow){
+					_i('frame-info').style.display = 'block';
+					_i('velocity-arrow').style.transform = `rotate(
+						${E_.phys.objects[settings.follow].velocity.direction()
+						+(Math.PI/2)}rad)`;
+					_i('velocity-value').innerHTML = E_.display.numAbbr(
+						E_.phys.objects[settings.follow].velocity.magnitude(),
+						3,
+						true
+					);
+				}else{
+					_i('frame-info').style.display			= 'none';
+				}
+				for(let o of E_.phys.objects){
+					var r = o.element.getBoundingClientRect();
+					o.element.style.left =
+						((o.position.x-E_.display.position.x)/scale.space)
+						- (r.width/2)+"px";
+					o.element.style.top  =
+						((o.position.y-E_.display.position.y)/scale.space)
+						- (r.height/2)+"px";
+				}
+				document.getElementsByTagName('html')[0]
+					.style.backgroundPosition	= `${window.innerWidth/2}px`
+												+ `${window.innerHeight/2}px`;
+			},
+			start	(startup=()=>{},callback=()=>{}){
+				startup();
+				E_.steps = [
+					E_.render
+				];
+				E_.phys.steps = [
+					E_.phys.gravity,
+					E_.phys.move
+				];
+				E_.settings();
+				E_.phys.loop();
+				E_.loop();
+				callback();
+			},
+			
+			//	Function Groups
+			display	: {
+				numAbbr		(n,f=3,l=false){
+					if(l&&(""+~~n).length<f+4) return ~~n;
+					var tm;
+					return (tm = ""+~~((10**f)*(n/10**~~Math.log10(n)))/(10**f))
+						+ (""+E_.display.zeroStr(f+2-tm.length))
+						+ "e" + ~~Math.log10(n);
+				},
+				position	: {
+					//	Look ma, a universal reference frame!
+					x				: 0,
+					y				: 0
+				},
+				zeroStr		(n){
+					var ret = '';
+					for(var i = 0; i < n; i++) ret += ''+0;
+					return ret;
+				}
+			},
+			phys	: {
+				centerOfMass(){
+					var sum		= 0,
+						com		= new E_.phys.vector(0,0);
+					for(let o of E_.phys.objects){
+						com.x  += o.position.x*o.mass;
+						com.y  += o.position.y*o.mass;
+						sum	   += o.mass;
+					}
+					com.x	   /= sum;
+					com.y	   /= sum;
+					E_.phys.totalMass = sum;
+					return com;
+				},
+				collisions	(){
+					//	my life is a fucking mess
+				},
+				G			: 6.67e-11,
+				gravity		(){
+					for(let o of E_.phys.objects){
+						var g = new E_.phys.vector(0,0);
+						if(E_.phys.objects.length > 1)
+							for(let i of E_.phys.objects){
+								if(o == i) continue;
+								let s	= new E_.phys.vector(
+											o.position.x-i.position.x,
+											o.position.y-i.position.y
+										),
+									a  = i.mass/(s.magnitude()**2);
+								g.x	   += s.cos()*a;
+								g.y	   += s.sin()*a;
+							}
+						o.velocity.x   += g.x*(-E_.phys.G)*scale.time;
+						o.velocity.y   += g.y*(-E_.phys.G)*scale.time;
+					};
+					E_.phys.step.next().value();
+				},
+				loop		(){
+					window.setInterval(()=>{
+						if(!E_.running) return !1;
+						E_.phys.step = (function*(s){
+							for(let i of s)
+								yield i;
+						})(E_.phys.steps);
+						E_.phys.step.next().value();
+					},1e3/120);
+				},
+				move		(){
+					for(let o of E_.phys.objects){
+						o.position.x   += o.velocity.x*scale.time;
+						o.position.y   += o.velocity.y*scale.time;
+					};
+					//E_.step.next().value();
+				},
+				objects		: [],
+				register	(e){
+					var r = e.getBoundingClientRect();
+					if(!e.getElementsByTagName('hitbox')[0]){
+						var hbox = document.createElement('hitbox');
+						hbox.innerHTML = window.defHBox;
+						e.appendChild(hbox);
+					}
+					return (E_.phys.objects[E_.phys.objects.length] = {
+						birth			: +new Date,
+						element			: e,
+						hitbox			: e.getElementsByTagName('hitbox')[0]
+											.children[0],
+						mass			: +e.attributes.mass.value,
+						name			: e.attributes.name
+											? e.attributes.name.value
+											: null,
+						position		: new E_.phys.vector(
+							((r.left+(r.width/2))*scale.space)
+								+ E_.display.position.x,
+							((r.top+(r.height/2))*scale.space)
+								+ E_.display.position.y
+						),
+						velocity		: E_.phys.vectorMag(
+							e.attributes.velocity
+								? +e.attributes.velocity.value
+								: 0,
+							e.attributes.direction
+								? +e.attributes.direction.value
+								: 0
+						)
+					});
+				},
+				scale		: {
+					diamRate	: 0.80e-7,	//	pixels per kg
+					massRate	: 1.05,		//	growth per 100ms
+					space		: 0.30e7,	//	meters per pixel
+					time		: 0.50e3,	//	seconds per animation frame
+					velocity	: 55.7		//	meters per second per pixel
+				},
+				totalMass	: 0,
+				vector		: function(x,y){
+					this.x			= x;
+					this.y			= y;
+					this.direction	= ()=>{
+						return this.x==0&&this.y==0
+							?0
+							:this.x==0&&this.y<0
+								?-Math.PI/2
+								:((this.x>0?1:-1)
+									*Math.atan((this.x>0?1:-1)
+									*(this.y/this.x))
+									+(this.x>0?0:Math.PI));
+					},
+					this.magnitude	= ()=>{
+						return Math.sqrt((this.x**2)+(this.y**2));
+					}
+					this.cos		= ()=>{
+						return Math.cos(this.direction());
+					};
+					this.sin		= ()=>{
+						return Math.sin(this.direction());
+					};
+				},
+				vectorMag	(mag,dir){
+					return new E_.phys.vector(
+						mag*Math.cos(dir),
+						mag*Math.sin(dir)
+					);
+				}
+			},
+			settings(){
+				//	TODO: Reorganize all this shit
+				window.settings		= {
+					blur			: !1,
+					dark			: !1,
+					follow			: 0,
+					grid			: !1,
+					motionBlur		: !0,
+					trailingTime	: 1e4,
+					wmark			: !0
+				}
+				_i('setting-fllw').addEventListener('wheel',(e)=>{
+					var setting			= _i('setting-fllw')._c('setting')[0];
+					if(e.deltaY>0&&settings.follow>-1)
+						settings.follow--;
+					if(e.deltaY<0&&settings.follow<E_.phys.objects.length-1)
+						settings.follow++;
+					setting.innerHTML	= settings.follow==-1
+						? '<span class="unit">com</span>'
+						: E_.phys.objects[settings.follow].name!=null
+							? '<span class="unit">'
+								+ E_.phys.objects[settings.follow].name
+								+ '<\/span>'
+							: '<span class="unit">object<\/span>'
+								+ `<sub>${settings.follow}<\/sub>`;
+				});
+				_i('setting-grid').addEventListener('wheel',(e)=>{
+					var html		= document.getElementsByTagName('html')[0],
+						setting		= _i('setting-grid')._c('setting')[0];
+					if(e.deltaY!=0)
+						settings.grid	= !settings.grid;
+				html.style.background	= settings.grid
+						? "url('"+
+							(settings.dark
+								? window.gridDark
+								: window.gridImg
+							)+"')"
+						: (settings.dark
+							? "#333"
+							:"#fff");
+					setting.innerText	= settings.grid?'on':'off';
+				});
+				_i('setting-theme').addEventListener('wheel',(e)=>{
+					var html		= document.getElementsByTagName('html')[0],
+						setting		= _i('setting-theme')._c('setting')[0];
+					if(e.deltaY	    != 0)
+						settings.dark		= !settings.dark;
+					html.style.background	= settings.grid
+						? "url('"+
+							(settings.dark
+								? window.gridDark
+								: window.gridImg
+							)+"')"
+						: (settings.dark
+							? "#333"
+							:"#fff");
+					html.className		= settings.dark	? 'dark' : '';
+					_i('planetstyle').sheet
+						.cssRules[0].style
+						.stroke			= settings.dark	? '#fff' :'#282828';
+					setting.innerText	= settings.dark	? 'dark' :'light';
+				});
+				_i('setting-wmark').addEventListener('wheel',(e)=>{
+					var idfk			= _i('idfk'),
+						setting			= _i('setting-wmark')._c('setting')[0];
+					if(e.deltaY!=0)
+						settings.wmark	= !settings.wmark;
+					idfk.style.display	= settings.wmark?'block':'none';
+					setting.innerText	= settings.wmark?'show':'hide';
+				});
+			}
+		};
+		
+		document.addEventListener('mousedown',(e)=>{
+			window.moon	= document.createElement('div');
+			moon.style.left	= (e.pageX - 9) + 'px';
+			moon.style.top	= (e.pageY - 9) + 'px';
+			moon.x0			= e.pageX;
+			moon.y0			= e.pageY;
+			moon.mass		= 7.35e22;//1.350e23;
+			moon.className	= 'moon';
+			moon.innerHTML	= '<div class="shell"><div class="info"><span class'
+							+ '="math">m = </span>'
+							+ E_.display.numAbbr(moon.mass)
+							+ '<span class="unit">kg</span></div></div>';
+			nav.appendChild(moon);
+			window.growing	= window.setInterval(()=>{
+				var shell	= moon._c('shell')[0],
+					inf		= moon._c('info')[0],
+					diam	= (((moon.mass-1.350e23)**0.33)*scale.diamRate);
+				moon.mass  *= scale.massRate;
+				moon.style.left		= (moon.x0 - 9 - (diam/2)) + 'px';
+				moon.style.top		= (moon.y0 - 9 - (diam/2)) + 'px';
+				shell.style.width	= diam+"px";
+				shell.style.height	= diam+"px";
+				moon.style.width	= diam+18+"px";
+				moon.style.height	= diam+18+"px";
+				inf.style.top		= (diam/2)-10+"px";
+				inf.style.left		= (diam)+12+"px";
+				inf.innerHTML		= '<span class="math">m = <\/span>'
+									+ E_.display.numAbbr(moon.mass)
+									+ '<span class="unit">kg<\/span>';
+			},100)
+			window.dragit	= (e)=>{
+				window.clearInterval(window.growing);
+				var v		= new E_.phys.vector(
+								(moon.x0-e.pageX)*scale.velocity,
+								(moon.y0-e.pageY)*scale.velocity
+							),
+					inf		= moon._c('info')[0],
+					shell	= moon._c('shell')[0].getBoundingClientRect();
+				inf.innerHTML 		= '<span class="math">v = <\/span>'
+									+ ~~v.magnitude()
+									+ '<span class="unit">m/s<\/span>';
+				inf.style.left		= ((80+(shell.width/2))*v.cos()) - 75
+									+ (shell.width/2)	- 9 + "px";
+				inf.style.top		= ((80+(shell.width/2))*v.sin()) - 10
+									+ (shell.height/2)- 9 + "px";
+				inf.style.textAlign = v.x<0?'right':'left';
+				inf.style.transform	= `rotate(
+										${v.direction()+(v.x<0?Math.PI:0)}rad
+									)`;
+			}
+			window.liftup 	= (e)=>{
+				window.clearInterval(window.growing);
+				var v	= new E_.phys.vector(
+							(moon.x0-e.pageX)*scale.velocity
+							+ (settings.follow>-1
+								? E_.phys.objects[settings.follow].velocity.x
+								: 0
+							),
+							(moon.y0-e.pageY)*scale.velocity
+							+ (settings.follow>-1
+								? E_.phys.objects[settings.follow].velocity.y
+								: 0
+							)
+						),
+					inf	= moon._c('info')[0];
+				inf.innerHTML = '';
+				moon.setAttribute('mass',moon.mass);
+				moon.setAttribute('velocity',v.magnitude());
+				moon.setAttribute('direction',v.direction());
+				E_.phys.register(moon);
+				document.removeEventListener('mouseup',liftup);
+				document.removeEventListener('mousemove',dragit);
+			}
+			document.addEventListener('mouseup',liftup);
+			document.addEventListener('mousemove',dragit);
+		});
+		
+		window.addEventListener('load',E_.start(()=>{
+			window.scale = E_.phys.scale;
+			for(let e of nav.children) E_.phys.register(e);
+		}));
+	</script>
+</body>
+</html>
