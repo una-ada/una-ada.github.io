@@ -1,30 +1,30 @@
-#CSS Guide
+# CSS Guide
 
 By [Trevor J Hoglund](http://trevorjhoglund.com) for [Phene.co](http://phene.co).
 
-##Purpose
+## Purpose
 
 This document is written to create a standard coding styleguide for CSS or CSS preprocessors within all Phene.co projects. Modifications can be made per project, and should be noted within the appropriate documentation.
 
-##Tools and Rationales
+## Tools and Rationales
 
-###Preprocessors
+### Preprocessors
 
 To allow for more efficient production, it is recommended that a CSS preprocessor be used. This permits the usage of variables for colors or repetitive styling techniques as well as to write more concise CSS overall without losing any stylign in the end product. The prepocessor of choice for most Phene.co projects is [Sass](http://sass-lang.com/), particularly using the `scss` style. The use of [node-sass](https://www.npmjs.com/package/node-sass) rather than [Ruby Sass](http://sass-lang.com/install) is highly recommended as it removes the Ruby dependency from a project (it is also supposedly a more efficient implementation using a C library rather than a Ruby one).
 
-###Linting
+### Linting
 
 `WIP` Linting allows you to check and fix your code so as to ensure your code follows this styleguide. A `.scss-lint.yml` file will be supplied to aid in this process. While there are several tools to do this, [stylelint](http://stylelint.io/) appears to be the best for the purposes of this guide, as it also avoids a Ruby dependency.
 
-###Autoprefixing
+### Autoprefixing
 
 Continuing on the theme of concise and consistent coding, [Autoprefixer](https://github.com/postcss/autoprefixer) is another recommended tool for development. This will remove the necessity of repeating sections of code for multiple vendors by checking with [Can I Use](http://caniuse.com/) to determine if a style requires vendor prefixes and subsequently applies said prefixes to the styles.
 
-##Styling
+## Styling
 
 This section is based in part on [18F's Front End Guide](https://pages.18f.gov/frontend/), with modifications to the actual styling described.
 
-###Spacing
+### Spacing
 
 - Limit the CSS files' width to 200 characters.
 
@@ -52,7 +52,7 @@ selector                    {name:value;name:value;}
 selector                    {name:value;}
 ```
 
-###Property-Value Pairs
+### Property-Value Pairs
 
 - Put each pair on the same line, only adding new lines when the 200 character mark has been reached.
 
@@ -108,7 +108,7 @@ $variable:100%;
 selector					{top:$variable;}
 ```
 
-###Ordering
+### Ordering
 
 - Selectors should be grouped by categories, broadest categories first.
 
@@ -144,9 +144,9 @@ selector                    {
 }
 ```
 
-###Units
+### Units
 
-####Measurements
+#### Measurements
 
 - Use `rem` units for font sizes with a px fallback. 18F supplies a mixin to help do this. To ensure the ratio remains consistent, the HTML font size should be set to `10px` making `0.1rem` equal to `1px`.
 
@@ -167,7 +167,7 @@ html                        {font-size:10px;}
 
 - Always use units when available except with a value of `0`.
 
-####Colors
+#### Colors
 
 - Use `hex` notation for colors without alpha values.
 
