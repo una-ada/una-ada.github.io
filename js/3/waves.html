@@ -46,6 +46,18 @@
 					for(var r=0,i=0;i<6;i++)r+=Math.random();
 					return r/6;
 				},
+				r3			= (μ=0,σ=1)=>{
+					var z0,z1,u1,u2
+						ε	= Number.EPSILON,
+						πx2	= 2*Math.PI;
+					do{
+						u1 = Math.random();
+						u2 = Math.random();
+					}while(u1<=ε);
+					z0 = Math.sqrt(-2*Math.log(u1))*Math.cos(πx2*u2);
+					//z1 = Math.sqrt(-2*Math.log(u1))*Math.sin(πx2*u2);
+					return z0*σ+μ;
+				},
 				/*
 				 *	Wave Solutions
 				 *	source: https://goo.gl/Wo8127
@@ -102,9 +114,14 @@
 				count = typeof o.count=='number'?o.count:5e3;
 			for(let i=0;i<count;i++){
 				let p = new THREE.Sprite(material);
-				p.position.x = ((gauss?r2:r)()*range)-(range/2),
-				p.position.y = ((gauss?r2:r)()*range)-(range/2),
-				p.position.z = ((gauss?r2:r)()*range)-(range/2),
+				if(!gauss)
+					p.position.x = (r()*range)-(range/2),
+					p.position.y = (r()*range)-(range/2),
+					p.position.z = (r()*range)-(range/2);
+				else
+					p.position.x = (r3()*range/3),
+					p.position.y = (r3()*range/3),
+					p.position.z = (r3()*range/3);
 				scene.add(p);
 				particles.push(p);
 			}
