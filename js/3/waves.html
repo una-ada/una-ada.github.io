@@ -110,7 +110,7 @@
 			var t=0;
 			var	spriteMap 	= new THREE.TextureLoader().load('assets/hns.png'),
 				material	= new THREE.SpriteMaterial({map:spriteMap,fog:!0}),
-				range = typeof o.range=='number'?o.range:100,
+				range = typeof o.range=='number'?o.range:50,
 				gauss = typeof o.gaussian=='boolean'?o.gaussian:true,
 				count = typeof o.count=='number'?o.count:5e3;
 			for(let i=0;i<count;i++){
