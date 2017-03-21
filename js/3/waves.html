@@ -148,8 +148,10 @@
 			})();
 			
 			const updateSprites = (URL)=>{
+				var loader = new THREE.TextureLoader();
+				loader.crossOrigin = '';
 				var mat = new THREE.SpriteMaterial({
-					map:new THREE.TextureLoader().load(URL),
+					map:loader.load(URL),
 					fog:!0
 				})
 				for(var p of particles)
