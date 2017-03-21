@@ -147,6 +147,15 @@
 				t++;
 			})();
 			
+			const updateSprites = (URL)=>{
+				var mat = new THREE.SpriteMaterial({
+					map:new THREE.TextureLoader().load(URL),
+					fog:!0
+				})
+				for(var p of particles)
+					p.material = mat;
+			}
+			
 			//	Handle Resize
 			window.addEventListener('resize',()=>{
 				camera.aspect = window.innerWidth / window.innerHeight;
