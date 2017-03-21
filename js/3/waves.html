@@ -21,6 +21,7 @@
 			 *		wave		"plane"		type of wave
 			 *					"cylindrical"
 			 *					"spherical"
+			 *		dist		number		distance x,y,z from center
 			 */
 			var o = {};
 			try{
@@ -97,7 +98,7 @@
 			scene.background	= new THREE.Color(0xffffff);
 			camera.position.x	= 
 			camera.position.z	= 
-			camera.position.y	= 50;
+			camera.position.y	= typeof o.dist=='number'?o.dist:75;
 			renderer.setSize(window.innerWidth,window.innerHeight);
 			document.body.appendChild(renderer.domElement);
 			
