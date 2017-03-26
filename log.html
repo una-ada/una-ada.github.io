@@ -2545,6 +2545,7 @@
 			}
 			function render(links){
 				var out = '',
+					notes = [],
 					alpha = ((a,z)=>{
 						var r=[],i=a.charCodeAt(0),j=z.charCodeAt(0);
 						for (;i<=j;++i)
@@ -2552,10 +2553,12 @@
 						return r;
 					})('a','z'),
 					renderLink = (k,o,h)=>{
+						if(o.note!=[][[]]) notes.push(o.note);
 						return '<a href="'+o.link+'">'+k
 							+'</a>'
 							+(k=='XX'?'<a href="#X"><sup>?</sup></a>':k.length==2?':':'')
 							+' '+o.title
+							+(o.note!=[][[]]?'<a href="#'+notes.length+'"><sup>'+notes.length+'</sup></a>':'')
 							+(o.media!=[][[]]?' <a href="#'+h+'" onclick=\'embed(this,'
 								+JSON.stringify(o.media)
 								+')\'>&#x25BE;</a>':'')
@@ -2597,6 +2600,10 @@
 					}
 					out+='</div>';
 				}
+				if(notes.length)
+					out+='<br>notes:<br>'
+				for(var i = 0;i<notes.length;)
+					out+='<div id="'+(++i)+'"><sup>'+i+'</sup>'+notes[i-1]+'</div>'
 				return out;
 			}
 		</script>
