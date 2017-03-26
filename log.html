@@ -2,497 +2,2611 @@
 	<head>
 		<title>trew.moe / log</title>
 		<style>
-			body{font-family:monospace;tab-width:4;background:#fff;}
-			t:before{content:'\0000a0\0000a0\0000a0\0000a0';} /** tfw ur this lazy **/
-			div:target{background:#eee;}
-			sup{vertical-align:top;position:relative;top:-0.3em;}
+			body		{font-family:monospace;tab-width:4;background:#fff;}
+			t:before	{content:'\0000a0\0000a0\0000a0\0000a0';} /** tfw ur this lazy **/
+			div:target	{background:#eee;}
+			sup			{vertical-align:top;position:relative;top:-0.3em;}
+			.open,
+			.closer,
+			.opener		{display:inline;}
+			.close		{display:none;}
+			.embedee	{margin:0.5rem;}
+			img,video	{max-width:calc(100% - 1rem);}
 		</style>
+		<script>
+			const
+			twitter	= 'https://twitter.com/Trewbot/',
+			yt		= 'https://www.youtube.com/watch?v=',
+			git		= 'https://github.com/Trewbot/',
+			b		= 'http://b.trew.moe/post/',
+			links	= {
+				2010:{
+					05:{
+						08:{
+							title	: 'wiki for lore abt a <a href="https://en.wikipedia.org/wiki/SimCity_4">SC4</a> region my brother n i made',
+							link	: 'http://joshandtrevorsimcity4.wikia.com',
+							tags	: ['sc4','writing']
+						}
+					},
+					09:{
+						XX:{
+							title	: 'started high school',
+							link	: 'http://hs.hudson.k12.wi.us',
+							tags	: ['event','school']
+						}
+					}
+				},
+				2011:{
+					10:{
+						03:{
+							title	: '<a href="http://community.simtropolis.com/">simtropolis</a> account',
+							link	: 'http://community.simtropolis.com/profile/441163-shadadorianpro',
+							tags	: ['account','sc4']
+						}
+					},
+					12:{
+						XX:{
+							title	: '<a href="https://flickr.com">flickr</a> account',
+							link	: 'https://www.flickr.com/people/trewbot',
+							tags	: ['account']
+						}
+					}
+				},
+				2012:{
+					05:{
+						05:{
+							title	: 'wip <a href="https://minecraft.net/en-us/">minecraft</a> mod',
+							link	: 'http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod',
+							tags	: ['minecraft','programming']
+						},
+						06:{
+							title	: '<a href="http://www.minecraftforum.net/">minecraft forum</a> account',
+							link	: 'http://www.minecraftforum.net/members/Shadadorian',
+							tags	: ['minecraft','account']
+						}
+					},
+					06:{
+						16:{
+							title	: 'some comment i made about <a href="http://www.wolfire.com/overgrowth">overgrowth</a>\'s development',
+							link	: 'http://blog.wolfire.com/2012/06/Overgrowth-a182-changelog#comment-559946318'
+						}
+					},
+					07:{
+						06:{
+							title	: 'minecraft account',
+							link	: 'https://sessionserver.mojang.com/session/minecraft/profile/8bc10277341a48348e46a51856877c67',
+							tags	: ['minecraft','account']
+						}
+					},
+					08:{
+						15:{
+							title	: '<a href="https://twitter.com">twitter</a> account',
+							link	: twitter,
+							tags	: ['twitter','account']
+						},
+						30:{
+							title	: 'minecraft language packs',
+							link	: 'http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs',
+							tags	: ['minecraft']
+						}
+					},
+					12:{
+						XX:{
+							title	: 'old <a href="https://soundcloud.com">soundcloud</a> account',
+							link	: 'https://soundcloud.com/shadadorianpro',
+							tags	: ['account']
+						}
+					}
+				},
+				2013:{
+					05:{
+						04:{
+							title	: 'mason playing some minecraft thing w me in the background',
+							link	: yt + 'Opa83EsG8Ds',
+							tags	: ['minecraft','video'],
+							media	: {
+								type	: 'youtube',
+								src		: 'Opa83EsG8Ds'
+							}
+						}
+					},
+					09:{
+						11:{
+							title	: 'renamed social network project to "graphene"',
+							link	: 'http://gra.phene.co',
+							tags	: ['graphene','programming']
+						}
+					},
+					12:{
+						02:{
+							title	: 'boxed someone\'s city in bc they were being an asshole (n so was i, tbh)',
+							link	: 'http://www.mxpulse.com/board/viewtopic.php?f=34&t=3212&p=19078',
+							tags	: ['minecraft']
+						}
+					}
+				},
+				2014:{
+					01:{
+						10:{
+							title	: 'mason\'s documentary [draft 1]',
+							link	: yt + 'nAHu-n3GXA4',
+							tags	: ['video'],
+							media	: {
+								type	: 'youtube',
+								src		: 'nAHu-n3GXA4'
+							}
+						},
+						22:{
+							title	: 'mason\'s documentary [draft 2]',
+							link	: yt + 'IBMWlyCBqUg',
+							tags	: ['video'],
+							media	: {
+								type	: 'youtube',
+								src		: 'IBMWlyCBqUg'
+							}
+						}
+					},
+					07:{
+						08:{
+							title	: '_g.crop (gra_crop)',
+							link	: git + '_g.crop',
+							tags	: ['programming','script','graphene']
+						},
+						13:{
+							title	: 'fanfest',
+							link	: 'https://trewbot.svbtle.com/fanfest',
+							tags	: ['writing','blog','event']
+						},
+						15:{
+							title	: 'minecraft ep1',
+							link	: yt + 'yTCGrSxYo7k',
+							tags	: ['video','minecraft'],
+							media	: {
+								type	: 'youtube',
+								src		: 'yTCGrSxYo7k'
+							}
+						}
+					},
+					08:{
+						07:{
+							title	: 'minecraft ep1 redo',
+							link	: yt + 'pg6QxouEHw8',
+							tags	: ['video','minecraft'],
+							media	: {
+								type	: 'youtube',
+								src		: 'pg6QxouEHw8'
+							}
+						}
+					},
+					09:{
+						07:{
+							title	: 'minecraft ep3',
+							link	: yt + '77yGUSS8B3Y',
+							tags	: ['video','minecraft'],
+							media	: {
+								type	: 'youtube',
+								src		: '77yGUSS8B3Y'
+							}
+						},
+						20:{
+							title	: '_g.color (gra_clr)',
+							link	: git + '_g.color',
+							tags	: ['programming','script','graphene']
+						},
+						30:{
+							title	: '_g.player (gra_aud)',
+							link	: 'http://scripts.phene.co/player',
+							tags	: ['programming','script','graphene']
+						},
+					},
+					10:{
+						03:{
+							title	: 'graphene v0.3.0',
+							link	: 'http://gra.phene.co',
+							tags	: ['programming','graphene']
+						},
+						19:[
+							{
+								title	: 'graphene v0.3.1',
+								link	: 'http://gra.phene.co',
+								tags	: ['programming','graphene']
+							},
+							{
+								title	: 'graphene v0.3.2',
+								link	: 'http://gra.phene.co',
+								tags	: ['programming','graphene']
+							}
+						],
+						21:{
+							title	: '_g.menu (gra_cm)',
+							link	: git + '_g.menu',
+							tags	: ['programming','script','graphene']
+						},
+						30:{
+							title	: 'mn hs quiz bowl league',
+							link	: 'https://www.naqt.com/stats/team-performance.jsp?team_id=74788',
+							tags	: ['quizbowl','event','club']
+						}
+					},
+					11:{
+						05:{
+							title	: 'graphene v0.3.3',
+							link	: 'http://gra.phene.co',
+							tags	: ['programming','graphene']
+						},
+						15:{
+							title	: 'rosemount annual thumb-racing academic competition event',
+							link	: 'https://www.naqt.com/stats/team-performance.jsp?team_id=71915',
+							tags	: ['quizbowl','event','club'],
+							note	: 'that feeling when ur on a team w the girl u have a crush on n the guy she has a crush on'
+						},
+						22:{
+							title	: '<a href="https://github.com">github</a> account',
+							link	: git,
+							tags	: ['account']
+						}
+					},
+				},
+				2015:{
+					01:{
+						07:{
+							title	: 'graphene v0.3.3-s0.1.0',
+							link	: 'http://gra.phene.co',
+							tags	: ['programming','graphene']
+						},
+						31:{
+							title	: '2015 snow cat',
+							link	: 'https://www.naqt.com/stats/team-performance.jsp?team_id=76226',
+							tags	: ['quizbowl','event','club']
+						}
+					},
+					02:{
+						21:{
+							title	: '2015 snow cat',
+							link	: 'https://www.naqt.com/stats/team-performance.jsp?team_id=77117',
+							tags	: ['quizbowl','event','club']
+						}
+					},
+					03:{
+						XX:{
+							title	: 'new soundcloud account',
+							link	: 'https://soundcloud.com/trewbot',
+							tags	: ['account']
+						},
+						14:{
+							title	: '4th annual ranger academic tournament',
+							link	: 'https://www.naqt.com/stats/team-performance.jsp?team_id=82473',
+							tags	: ['quizbowl','event']
+						},
+						23:{
+							title	: '_g.popup',
+							link	: git + '_g.modal',
+							tags	: ['programming','script','graphene']
+						}
+					},
+					04:{
+						25:{
+							title	: 'naqt wi state championship',
+							link	: 'https://www.naqt.com/stats/team-performance.jsp?team_id=85031',
+							tags	: ['quizbowl','event','club']
+						}
+					},
+					05:{
+						30:[
+							{
+								title	: 'graduated high school',
+								link	: 'http://www.hudsonstarobserver.com/news/education/3759403-390-members-class-2015-graduate-chilly-evening-newton-field',
+								tags	: ['news','event','school']
+							},
+							{
+								title	: '"butterfly"',
+								link	: b + '120260721903',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/86bf1e777b1af53e24117fca33226de3/tumblr_np53nd4pID1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'moss',
+								link	: b + '120290532981',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/7fdb2c40db617f3ac5484e1656f2eaa6/tumblr_np53p39zyP1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'stairs',
+								link	: b + '120344814766',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/0c5037416c2befd0e1368a3ea8e6c698/tumblr_np53ryOJM41utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'eagle',
+								link	: b + '120377226089',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/f0dfc355cbb6e189648c0de3dd42a8ee/tumblr_np53x6XrSi1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'fluff',
+								link	: b + '120435630333',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/8ace9f4d7e8be7c9299b29eaa08f0e7b/tumblr_np53zk7zFV1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'falls',
+								link	: b + '120464495831',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/f35e7280ef9f8fdaf3d5244ef8963957/tumblr_np541qhRwe1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'lake',
+								link	: b + '120521446599',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/055b82f5f09b17009485ceceaa4a5014/tumblr_np543nYwHe1utn57jo1_1280.jpg'
+								}
+							}
+						]
+					},
+					06:{
+						02:[
+							{
+								title	: 'my mom made me go to my graduation instead of another thing',
+								link	: 'http://www.hudsonstarobserver.com/news/education/3755579-hhs-qualifies-national-quiz-bowl-competition',
+								tags	: ['news','event','school']
+							},
+							{
+								title	: 'crick',
+								link	: b + '120550054117',
+								tags	: ['photography','nature'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/cd8277d53cd4de0606762e1a64cd7d15/tumblr_np548b9Ixs1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'sleep',
+								link	: b + '120605592461',
+								tags	: ['photography','sunset']
+							},
+							{
+								title	: 'farms',
+								link	: b + '120633328039',
+								tags	: ['photography','farm'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/befa8d3f6d827e97a03b2b2593ebec57/tumblr_np54cwQfFX1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'contrast',
+								link	: b + '120688566307',
+								tags	: ['photography'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/71c5ad4c264f3ec802c8ef8da84306aa/tumblr_np54fcRGNu1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'dilapidated',
+								link	: b + '120716533669',
+								tags	: ['photography'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/fc3000f057306034a827ec3979b722e4/tumblr_np54gfVKd01utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'pseudo llama',
+								link	: b + '120769998062',
+								tags	: ['photography','nature','deer'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/e167ca4ea8e494d7a0fa481057d7df36/tumblr_np54jh9lUp1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: '35<sup>th</sup> st',
+								link	: b + '120797149363',
+								tags	: ['photography','road'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/8d59720b8daf913c5919116057631727/tumblr_np54mi0Cqu1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'quaint',
+								link	: b + '120848151929',
+								tags	: ['photography','sunset'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/2894d96832a5afee659b74e5226c9a41/tumblr_np54npDcmY1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'the briefcase',
+								link	: 'https://trewbot.svbtle.com/the-briefcase',
+								tags	: ['blog']
+							}
+						]
+					},
+					08:{
+						05:{
+							title	: 'coulee pics',
+							link	: 'https://www.flickr.com/photos/trewbot/sets/72157664669982134',
+							tags	: ['photography','city','outdoors']
+						},
+						13:[
+							{
+								title	: 'space loans',
+								link	: b+'158775588155',
+								tags	: ['art','photography']
+							},
+							{
+								title	: 'night trail',
+								link	: b+'158775681530',
+								tags	: ['photography']
+							}
+						],
+						28:[
+							{
+								title	: 'wind',
+								link	: b + '127828156145',
+								tags	: ['photography','wind mill'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/e36b5bb33d00bd83adad9de6a1fb26ef/tumblr_nttl38vUGg1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'wheel',
+								link	: b + '127870279885',
+								tags	: ['photography','wheel'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/139603b7ae54903ca74a6d241e0e8759/tumblr_nttl4a9J2a1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'buckets',
+								link	: b + '127950557186',
+								tags	: ['photography','buckets','clothes washer'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/01321cce621aa7f6b1134c003edb5b0d/tumblr_nttl4prnnM1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						30:{
+							title	: 'graphene v0.3.3-s0.2.0',
+							link	: 'http://gra.phene.co',
+							tags	: ['graphene','programming']
+						}
+					},
+					09:{
+						01:{
+							title	: 'nerds',
+							link	: b+'128115024591',
+							tags	: ['photography','nerds'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/8508b6b233cfc9c6e406e3760a2fd580/tumblr_nttl7pMe7N1utn57jo1_1280.jpg'
+							}
+						},
+						02:[
+							{
+								title	: 'started college at uwrf',
+								link	: 'http://uwrf.edu',
+								tags	: ['event','school']
+							},
+							{
+								title	: 'ok ok fail ok ok',
+								link	: b+'128192325992',
+								tags	: ['photography','computer'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/e572affe698445162a693c2ea19920ca/tumblr_nttl86imCq1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						03:{
+							title	: 'rain',
+							link	: b+'128267083002',
+							tags	: ['photography','raindrops','rain']
+						},
+						04:[
+							{
+								title	: 'sunny day',
+								link	: 'https://trewbot.svbtle.com/sunny-day',
+								tags	: ['writing','short']
+							},
+							{
+								title	: 'linear',
+								link	: b+'128339109471',
+								tags	: ['photography','lines'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/fb463038fe76c61fe3b3f3c71a89ea37/tumblr_nttl96SnpM1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						05:{
+							title	: 'headache',
+							link	: b+'128410890309',
+							tags	: ['photography'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/35f903b868654717e039bf1c05a32710/tumblr_nttl9lmIzi1utn57jo1_1280.jpg'
+							}
+						},
+						06:{
+							title	: 'squiggle',
+							link	: b+'128486714600',
+							tags	: ['photography','cat'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/d09cb03037640d0c55913bde7cb73f2e/tumblr_nttlagHok81utn57jo1_1280.jpg'
+							}
+						},
+						07:{
+							title	: 'stare',
+							link	: b+'128564824786',
+							tags	: ['photography','cat'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/87538723f41bf586ef15a13168cdf1fb/tumblr_nttlayOnDc1utn57jo1_1280.jpg'
+							}
+						},
+						08:[
+							{
+								title	: 'the proletaricat and purrgeoisie',
+								link	: 'https://twitter.com/Trewbot/status/641457942277959680',
+								tags	: ['art','drawing','cats','communism'],
+								media	: {
+									type	: 'img',
+									src		: 'https://pbs.twimg.com/media/CObqmWDUwAASMw4.jpg'
+								}
+							},
+							{
+								title	: 'sideways',
+								link	: b+'128642520010',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/e23cc87494aecb37ccb4d1fe496ebaaf/tumblr_nttlbhQlv31utn57jo1_1280.jpg'
+								}
+							}
+						],
+						09:{
+							title	: 'rage',
+							link	: b+'128712976740',
+							tags	: ['photography','cat'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/bc2dee20cf0f8b354d413495321f181b/tumblr_nttlbz9WKq1utn57jo1_1280.jpg'
+							}
+						},
+						09:{
+							title	: 'difficulty',
+							link	: b+'128782061671',
+							tags	: ['photography','cat','collage'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/862314872ea7cc5f934d02673dbd8ee1/tumblr_nttldoPcEM1utn57jo1_500.png'
+							}
+						},
+						18:{
+							title	: 'student voice vol 102 iss 01',
+							link	: 'http://uwrfvoice.com/pdf/150918studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						23:{
+							title	: 'cat boards',
+							link	: b+'158775521935',
+							tags	: ['photography','art','cat'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/6f2f18830e77b9acee65bda2d00dd491/tumblr_nv5ac9nyYW1udosl4o1_1280.jpg'
+							}
+						},
+						25:{
+							title	: 'student voice vol 102 iss 02',
+							link	: 'http://uwrfvoice.com/pdf/150925studentvoice.pdf',
+							tags	: ['student voice','layout']
+						}
+					},
+					10:{
+						02:{
+							title	: 'student voice vol 102 iss 03',
+							link	: 'http://uwrfvoice.com/pdf/151002studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						05:{
+							title	: 'graphene w0.4.0-s0.2.0',
+							link	: 'http://gra.phene.co',
+							tags	: ['graphene','programming']
+						},
+						06:{
+							title	: 'the road',
+							link	: 'https://trewbot.svbtle.com/the-road',
+							tags	: ['writing','short']
+						},
+						08:{
+							title	: '"uwrf society of physics students visits 3m"',
+							link	: 'http://uwrfvoice.com/etcetera/14704',
+							tags	: ['writing','column']
+						},
+						09:{
+							title	: 'student voice vol 102 iss 04',
+							link	: 'http://uwrfvoice.com/pdf/151009studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						10:{
+							title	: 'civilization thread #5.2',
+							link	: 'https://archive.b-stats.org/b/thread/645668865',
+							tags	: ['art','pixels','writing']
+						},
+						11:{
+							title	: 'graphene w0.4.0-s0.2.1',
+							link	: 'http://gra.phene.co',
+							tags	: ['graphene','programming']
+						},
+						13:{
+							title	: 'repository for graphene (w0.4.1-s0.3.0)',
+							link	: git+'Graphene',
+							tags	: ['graphene','programming']
+						},
+						14:{
+							title	: 'some stupid existential shit',
+							link	: 'http://b.trew.moe/post/158775779025',
+							tags	: ['photography','art','typography'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/58f19608dabfc377a5ac2215f71a8acd/tumblr_nw7342CX5e1udosl4o1_1280.jpg'
+							}
+						},
+						15:[
+							{
+								title	: 'repository for programming ii',
+								link	: 'https://github.com/Trewbot/CS162',
+								tags	: ['programming','school']
+							},
+							{
+								title	: '"about" theme',
+								link	: 'https://www.tumblr.com/theme/40029',
+								tags	: ['programming','theme','layout']
+							}
+						],
+						16:{
+							title	: 'student voice vol 012 iss 05',
+							link	: 'http://uwrfvoice.com/pdf/151016studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						17:{
+							title	: 'graphene w0.4.2-s0.3.0',
+							link	: 'https://github.com/Trewbot/Graphene/commit/f3e85b28796229e0e25129768e8c63d4bf83b00f',
+							tags	: ['graphene','programming']
+						},
+						19:{
+							title	: 'i cant even relate to myself anymore',
+							link	: 'http://b.trew.moe/post/131474743180',
+							tags	: ['blog']
+						},
+						20:{
+							title	: 'started project euler',
+							link	: 'https://github.com/Trewbot/Euler',
+							tags	: ['programming']
+						},
+						21:{
+							title	: 'blog stuff',
+							link	: 'http://b.trew.moe/post/131665318960',
+							tags	: ['blog']
+						},
+						22:[
+							{
+								title	: 'graphene w0.4.2-s0.3.1',
+								link	: 'https://github.com/Trewbot/Graphene/commit/2ab9dd3cc57851b36bf85c93ee79076c7f0f7b75',
+								tags	: ['graphene','programming']
+							},
+							{
+								title	: 'asynchronous coding',
+								link	: 'http://b.trew.moe/post/131716242410',
+								tags	: ['programming','blog']
+							},
+							{
+								title	: 'fu[k]',
+								link	: 'http://b.trew.moe/post/131718789050',
+								tags	: ['programming','blog']
+							}
+						],
+						23:{
+							title	: 'student voice vol 102 iss 06',
+							link	: 'http://uwrfvoice.com/pdf/151023studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						25:[
+							{
+								title	: 'graphene w0.4.2-s0.3.2',
+								link	: 'https://github.com/Trewbot/Graphene/commit/d3056a141c888f5f656f6d6f1b83c995c45a53e8',
+								tags	: ['graphene','programming']
+							},
+							{
+								title	: 'graphene w0.4.3-s0.4.0',
+								link	: 'https://github.com/Trewbot/Graphene/releases/tag/w0.4.3-s0.4.0',
+								tags	: ['graphene','programming']
+							}
+						],
+						26:{
+							title	: 'collatz problem',
+							link	: [
+								b+'131974796760',
+								b+'131975078015',
+								b+'131975519215',
+								b+'131975967130'
+							],
+							tags	: ['programming','blog']
+						},
+						27:[
+							{
+								title	: 'english departments',
+								link	: 'http://b.trew.moe/post/132007914660',
+								tags	: ['blog','anti-english departments']
+							},
+							{
+								title	: 'arm scribbled to do lists',
+								link	: 'http://b.trew.moe/post/132056809675',
+								tags	: ['blog']
+							}
+						],
+						28:{
+							title	: 'fucking idiot doesnt know "melancholy"',
+							link	: 'http://b.trew.moe/post/132072853645',
+							tags	: ['blog','poem']
+						},
+						29:[
+							{
+								title	: '"office chair provides fun, convenience, comfort"',
+								link	: 'http://uwrfvoice.com/etcetera/14981',
+								tags	: ['writing','column']
+							},
+							{
+								title	: 'a dream of not talking',
+								link	: 'http://b.trew.moe/post/132149392590',
+								tags	: ['blog','love','poem']
+							},
+							{
+								title	: 'comparing shaving w sensitive skin to english classes',
+								link	: 'http://b.trew.moe/post/132190687675',
+								tags	: ['blog','anti-english departments']
+							}
+						],
+						30:[
+							{
+								title	: 'student voice vol 102 iss 07',
+								link	: 'http://uwrfvoice.com/pdf/151030studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'compass',
+								link	: 'http://b.trew.moe/post/132244649780',
+								tags	: ['blog']
+							},
+							{
+								title	: 'birthdays',
+								link	: 'http://b.trew.moe/post/132245853890',
+								tags	: ['blog','love','poem']
+							}
+						]
+					},
+					11:{
+						01:[
+							{
+								title	: 'euler',
+								link	: 'http://b.trew.moe/post/132318522935',
+								tags	: ['blog','programming']
+							},
+							{
+								title	: 'normal convo',
+								link	: 'http://b.trew.moe/post/132342423410',
+								tags	: ['blog','poem','love']
+							},
+							{
+								title	: 'death',
+								link	: 'http://b.trew.moe/post/132317950720',
+								tags	: ['blog','poem']
+							},
+							{
+								title	: 'cake',
+								link	: 'http://b.trew.moe/post/132349481325',
+								tags	: ['blog']
+							},
+							{
+								title	: 'cyclical',
+								link	: 'http://b.trew.moe/post/132379802780',
+								tags	: ['blog','poem']
+							},
+							{
+								title	: 'drowning',
+								link	: 'http://b.trew.moe/post/132380856890',
+								tags	: ['blog','poem']
+							},
+							{
+								title	: 'fuck fuck fuck...',
+								link	: 'http://b.trew.moe/post/132382024870',
+								tags	: ['blog']
+							}
+						],
+						02:[
+							{
+								title	: 'unwanted dependency',
+								link	: 'http://b.trew.moe/post/132447599050',
+								tags	: ['blog']
+							},
+							{
+								title	: 'counseling',
+								link	: 'http://b.trew.moe/post/132452361500',
+								tags	: ['blog']
+							}
+						],
+						05:{
+							title	: 'sustainable emotions',
+							link	: 'http://b.trew.moe/post/132648618420',
+							tags	: ['blog','poem']
+						},
+						06:[
+							{
+								title	: 'student voice vol 102 iss 08',
+								link	: 'http://uwrfvoice.com/pdf/151106studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'effort',
+								link	: 'http://b.trew.moe/post/132654809825',
+								tags	: ['blog']
+							}
+						],
+						08:[
+							{
+								title	: 'two factor authentication',
+								link	: 'http://b.trew.moe/post/132801727535',
+								tags	: ['blog']
+							},
+							{
+								title	: 'plans i then neglected',
+								link	: 'http://b.trew.moe/post/132802338145',
+								tags	: ['blog']
+							},
+							{
+								title	: 'complete loss of motivation',
+								link	: 'http://b.trew.moe/post/132844476645',
+								tags	: ['blog']
+							}
+						],
+						09:[
+							{
+								title	: 'batteries dying',
+								link	: 'http://b.trew.moe/post/132858315665',
+								tags	: ['blog','poem']
+							},
+							{
+								title	: 'actually just happier when i dont talk to ppl at all tbh',
+								link	: 'http://b.trew.moe/post/132884828710',
+								tags	: ['blog']
+							}
+						],
+						12:{
+							title	: 'superconductor races',
+							link	: 'http://b.trew.moe/post/133052843225',
+							tags	: ['blog','idea']
+						},
+						13:[
+							{
+								title	: 'student voice vol 102 iss 09',
+								link	: 'http://uwrfvoice.com/pdf/151113studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'lukewarm optimism',
+								link	: 'http://b.trew.moe/post/133167265365',
+								tags	: ['blog']
+							}
+						],
+						14:[
+							{
+								title	: 'people',
+								link	: 'http://b.trew.moe/post/133230057690',
+								tags	: ['blog']
+							},
+							{
+								title	: 'i finally got to see her again',
+								link	: 'http://b.trew.moe/post/133242549735',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'rebasing emotion',
+								link	: 'http://b.trew.moe/post/133242734785',
+								tags	: ['blog']
+							}
+						],
+						15:[
+							{
+								title	: 'i dont feel anything right now',
+								link	: 'http://b.trew.moe/post/133249888625',
+								tags	: ['blog']
+							},
+							{
+								title	: 'clothes budget',
+								link	: 'http://b.trew.moe/post/133282723740',
+								tags	: ['blog','budgeting']
+							}
+						],
+						16:[
+							{
+								title	: 'coffee',
+								link	: 'http://b.trew.moe/post/133323041290',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'ideal date',
+								link	: 'http://b.trew.moe/post/133326189115',
+								tags	: ['blog']
+							},
+							{
+								title	: 'she asked what made me so depressed',
+								link	: 'http://b.trew.moe/post/133327232955',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'stupid fucking book things',
+								link	: 'http://b.trew.moe/post/133352604900',
+								tags	: ['blog','books']
+							}
+						],
+						17:[
+							{
+								title	: 'coming of age novels',
+								link	: 'http://b.trew.moe/post/133423129320',
+								tags	: ['blog','books']
+							},
+							{
+								title	: 'merely dreaming happiness',
+								link	: 'http://b.trew.moe/post/133423345070',
+								tags	: ['blog']
+							}
+						],
+						18:[
+							{
+								title	: 'ppl follow trends',
+								link	: 'http://b.trew.moe/post/133507380390',
+								tags	: ['blog']
+							},
+							{
+								title	: '"einstein\'s theory of general relativity explains occurences in the universe"',
+								link	: 'http://uwrfvoice.com/viewpoints/15181',
+								tags	: ['writing','column'],
+								note	: 'except for the fact that the editor changed an independent clause to a sentence, the first letter of each sentence spells "fuck the english department"'
+							},
+							{
+								title	: '^ the title of that was going to be a pun',
+								link	: 'http://b.trew.moe/post/133507895580',
+								tags	: ['blog']
+							}
+						],
+						19:[
+							{
+								title	: 'asking if she hates me',
+								link	: 'http://b.trew.moe/post/133514743580',
+								tags	: ['blog']
+							},
+							{
+								title	: 'stone arch cinema',
+								link	: 'http://b.trew.moe/post/133514831450',
+								tags	: ['blog'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/72a137a4d133bbe9218d85fb07b42738/tumblr_ny1t5z81us1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'fucking phone calls',
+								link	: 'http://b.trew.moe/post/133533465935',
+								tags	: ['blog']
+							},
+							{
+								title	: 'my antonia analysis',
+								link	: 'http://b.trew.moe/post/133550153710',
+								tags	: ['blog','books']
+							}
+						],
+						20:[
+							{
+								title	: 'student voice vol 102 iss 10',
+								link	: 'http://uwrfvoice.com/pdf/151120studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'loving her just feels better',
+								link	: 'http://b.trew.moe/post/133621070835',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'anti-anti-millenial',
+								link	: 'http://b.trew.moe/post/133623978725',
+								tags	: ['blog']
+							}
+						],
+						21:[
+							{
+								title	: 'disappointingly unhappy',
+								link	: 'http://b.trew.moe/post/133647419030',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'i just want to love her',
+								link	: 'http://b.trew.moe/post/133700812700',
+								tags	: ['blog','love']
+							}
+						],
+						22:{
+							title	: 'my brother flapping his arms',
+							link	: 'https://twitter.com/Trewbot/status/668612695894204416',
+							tags	: ['gif','art','photography'],
+							media	: {
+								type	: 'video',
+								loop	: true,
+								src		: 'https://video.twimg.com/tweet_video/CUdjtCtUsAASTwE.mp4'
+							}
+						},
+						23:{
+							title	: 'living observationally',
+							link	: 'http://b.trew.moe/post/133825089570',
+							tags	: ['blog']
+						},
+						25:[
+							{
+								title	: 'despair',
+								link	: 'http://b.trew.moe/post/133918863245',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'schedule cycle',
+								link	: 'http://b.trew.moe/post/133919081625',
+								tags	: ['blog']
+							}
+						],
+						26:[
+							{
+								title	: 'we used to talk more',
+								link	: 'http://b.trew.moe/post/133980032440',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'being insecure',
+								link	: 'http://b.trew.moe/post/133980105445',
+								tags	: ['blog']
+							},
+							{
+								title	: 'more like obsession, actually',
+								link	: 'http://b.trew.moe/post/133980184615',
+								tags	: ['blog','love']
+							}
+						],
+						28:{
+							title	: 'misc. motivation',
+							link	: 'http://b.trew.moe/post/134112515370',
+							tags	: ['blog']
+						},
+						29:{
+							title	: 'physical attraction',
+							link	: 'http://b.trew.moe/post/134187219460',
+							tags	: ['blog','love']
+						}
+					},
+					12:{
+						02:{
+							title	: '"a students guide to pencils"',
+							link	: 'http://uwrfvoice.com/etcetera/15411',
+							tags	: ['student voice','writing','column','pencils','guide']
+						},
+						03:{
+							title	: '17 credits',
+							link	: 'http://b.trew.moe/post/134500702980',
+							tags	: ['blog']
+						},
+						04:[
+							{
+								title	: 'student voice vol 102 iss 11',
+								link	: 'http://uwrfvoice.com/pdf/151204studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'checking my phone',
+								link	: 'http://b.trew.moe/post/134526033190',
+								tags	: ['blog']
+							},
+							{
+								title	: 'autopilot',
+								link	: 'http://b.trew.moe/post/134556705305',
+								tags	: ['blog']
+							}
+						],
+						06:[
+							{
+								title	: 'new camera test w ornaments',
+								link	: 'http://b.trew.moe/post/134639680695',
+								tags	: ['photography','test','ornaments'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/657d414009d158e6015064abb6d5c3e7/tumblr_nyxciorwIQ1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'need to start working on things again',
+								link	: 'http://b.trew.moe/post/134641211940',
+								tags	: ['blog','programming']
+							},
+							{
+								title	: 'blogs n journals idea',
+								link	: 'http://b.trew.moe/post/134690999495',
+								tags	: ['blog','programming']
+							}
+						],
+						07:[
+							{
+								title	: 'photo test of cats',
+								link	: 'http://b.trew.moe/post/134748679445',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/8804222e577005ab8809dcffde0bcae3/tumblr_nz0d3ycIBb1utn57jo2_1280.jpg'
+								}
+							},
+							{
+								title	: 'more test of cats',
+								link	: 'http://b.trew.moe/post/134748908805',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/fe95e8cb7103c840afe309c1bd1a7174/tumblr_nz0da4wkmb1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'test of notes',
+								link	: 'http://b.trew.moe/post/134749118135',
+								tags	: ['photography','notes'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/26e5be9231ad4c80d15fa055137ad538/tumblr_nz0dg1LEqp1utn57jo3_1280.jpg'
+								}
+							}
+						],
+						08:[
+							{
+								title	: 'variable names',
+								link	: 'http://b.trew.moe/post/134779300970',
+								tags	: ['blog','programming']
+							},
+							{
+								title	: 'the basic idea of margins',
+								link	: 'http://b.trew.moe/post/134783091915',
+								tags	: ['blog','layout','design']
+							}
+						],
+						10:[
+							{
+								title	: 'i wanted to hug her',
+								link	: 'http://b.trew.moe/post/134943563700',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'i couldnt get over her n i added her on facebook again',
+								link	: 'http://b.trew.moe/post/134943914290',
+								tags	: ['blog','love']
+							}
+						],
+						11:[
+							{
+								title	: 'student voice vol 102 iss 12',
+								link	: 'http://uwrfvoice.com/pdf/151211studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'air traffic noise pollution presentation',
+								link	: yt+'SsS4VTLDNBY',
+								tags	: ['school','environmentalism'],
+								media	: {
+									type	: 'youtube',
+									src		: 'SsS4VTLDNBY'
+								}
+							}
+						],
+						12:{
+							title	: 'elected secretary of uwrf acm',
+							link	: 'http://uwrf.acm.org/',
+							tags	: ['school','club','officer']
+						},
+						13:[
+							{
+								title	: 'terribly out of focus mirror picture',
+								link	: 'http://b.trew.moe/post/135166365335',
+								tags	: ['photography','selfie'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/bf3dbbb00183f0e2dcbd1ad105317333/tumblr_nzc0yhTOUr1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'you can see my monitors reflecting in my eyes',
+								link	: 'http://b.trew.moe/post/135168510065',
+								tags	: ['photography','selfie'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/a3581a36ce5cb81982b4f2ec1053fc89/tumblr_nzc2pqELRG1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'all the books i had on my shelf,,, it was actually a really heavy duty shelf',
+								link	: 'http://b.trew.moe/post/135168660575',
+								tags	: ['photography','books'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/8e9cde9f195d32902bcc1f331d22b3f2/tumblr_nzc2udcBrX1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						14:{
+							title	: 'some scribbles and a pen',
+							link	: 'http://b.trew.moe/post/135192721356',
+							tags	: ['photography','art'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/4323fc08e9dadddfe8ccc32f974be672/tumblr_nzc124eTng1utn57jo1_1280.jpg'
+							}
+						},
+						15:{
+							title	: 'more pictures of my notes w better lighting',
+							link	: 'http://b.trew.moe/post/135259364589',
+							tags	: ['photography','notes'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/b0effa7932953af50186f8e86fb5c149/tumblr_nzc14ptAq21utn57jo2_1280.jpg'
+							}
+						},
+						16:[
+							{
+								title	: 'just a distraction',
+								link	: 'http://b.trew.moe/post/135307210445',
+								tags	: ['blog']
+							},
+							{
+								title	: 'tiny bowling game',
+								link	: 'http://b.trew.moe/post/135324711395',
+								tags	: ['photography'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/fad5b3a9ca90428c6494b8afb28f2b93/tumblr_nzc16iQuaU1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'the hope of waking up',
+								link	: 'http://b.trew.moe/post/135331564590',
+								tags	: ['blog']
+							},
+							{
+								title	: 'if i weren\'t me would i talk to me?',
+								link	: 'http://b.trew.moe/post/135365718995',
+								tags	: ['blog']
+							}
+						],
+						17:{
+							title	: 'me being edgy bc im on edge',
+							link	: 'http://b.trew.moe/post/135410516815',
+							tags	: ['blog','capitalism']
+						},
+						18:{
+							title	: 'still not organized enough',
+							link	: 'http://b.trew.moe/post/135478904465',
+							tags	: ['blog','programming'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/9387aca9887533e1df84b65cf18c888c/tumblr_nzl2uqrDoa1utn57jo1_500.png'
+							}
+						},
+						22:{
+							title	: 'i suck at school',
+							link	: 'http://b.trew.moe/post/135696086590',
+							tags	: ['blog']
+						},
+						27:[
+							{
+								title	: 'its all lies',
+								link	: 'http://b.trew.moe/post/136032885545',
+								tags	: ['blog','love']
+							},
+							{
+								title	: 'christmas cookie pics',
+								link	: 'http://b.trew.moe/post/136032986285',
+								tags	: ['photography','cookies','food'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/3c6996fe12866ac59e73410c388ab5eb/tumblr_o00gtb1iOC1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						29:{
+							title	: 'buttered bread n swedish fish',
+							link	: 'http://b.trew.moe/post/136175229330',
+							tags	: ['photography','food'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/49c626c8d2ccb9ec5c5ff66df029d08a/tumblr_o0449aWyMw1utn57jo1_1280.jpg'
+							}
+						},
+						31:[
+							{
+								title	: 'logistics ramblings',
+								link	: 'http://b.trew.moe/post/136319369870',
+								tags	: ['blog','student voice']
+							},
+							{
+								title	: 'morning',
+								link	: 'http://b.trew.moe/post/136367281175',
+								tags	: ['photography'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/cae20ba4bc5ae09d2377cbc0bb5e85b0/tumblr_o09cl8lGmh1utn57jo1_1280.jpg'
+								}
+							}
+						]
+					}
+				},
+				2016:{
+					01:{
+						01:[
+							{
+								title	: 'cc is dumb cat',
+								link	: 'http://b.trew.moe/post/136383822272',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/92d2a1c7244b292f5f8a6b86af0c3c65/tumblr_o09colR7WQ1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'out of focus cat',
+								link	: 'http://b.trew.moe/post/136407769390',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/ae1426da6805c38544f9c3a2dfbc8bfc/tumblr_o09cugtaMy1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						02:[
+							{
+								title	: 'a very color coordinated fridge',
+								link	: 'http://b.trew.moe/post/136441619160',
+								tags	: ['photography','food','orange'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/19fdff01e2c932b72453645cefe58ec1/tumblr_o0bb3cGX3g1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'cc staring out the window',
+								link	: 'http://b.trew.moe/post/136456404108',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/88d8bc93245c7747e4825a08ceb61ed8/tumblr_o09cvyfsaC1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'blurry window sill',
+								link	: 'http://b.trew.moe/post/136480880342',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/c036bae6642330a9bdc3eea2b7e1963a/tumblr_o09cxnl6w11utn57jo1_1280.jpg'
+								}
+							}
+						],
+						03:[
+							{
+								title	: 'shoes',
+								link	: 'http://b.trew.moe/post/136529721194',
+								tags	: ['photography','shoes'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/a410f114f206557680768cf51f4a2d15/tumblr_o09cznql1r1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'some nice lighting',
+								link	: 'http://b.trew.moe/post/136555340298',
+								tags	: ['photography','shelf'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/e5c92b374db1e7966698a5a9905bf1d1/tumblr_o09d1gL9ho1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						04:[
+							{
+								title	: 'quiggly little idiot',
+								link	: 'http://b.trew.moe/post/136604825170',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/9330d7578a927088551309c1e0fce2d3/tumblr_o09d2vcQho1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'soft face',
+								link	: 'http://b.trew.moe/post/136628191742',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/15a2d5e0b363f22f695c532aaef68d24/tumblr_o09d4mdocc1utn57jo1_1280.jpg'
+								}
+							},
+						],
+						05:[
+							{
+								title	: 'staring bottom left',
+								link	: 'http://b.trew.moe/post/136604825170',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/9330d7578a927088551309c1e0fce2d3/tumblr_o09d2vcQho1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'past the camera',
+								link	: 'http://b.trew.moe/post/136697876955',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/57b258d7cd0f16f97dc429ec3da22cdb/tumblr_o09d6eaO9N1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						06:[
+							{
+								title	: 'top shelf',
+								link	: 'http://b.trew.moe/post/136743554083',
+								tags	: ['photography','cat','shelf'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/cb45b618a3d2c6b9cf128154fa7e4e12/tumblr_o09d7o6mzU1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'flat',
+								link	: 'http://b.trew.moe/post/136765848402',
+								tags	: ['photography','cat'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/5602ad7523ce5896b228fb5c4f7de844/tumblr_o09d8rEfR01utn57jo1_1280.jpg'
+								}
+							}
+						],
+						07:{
+							title	: 'collection of cc looking at camera',
+							link	: 'http://b.trew.moe/post/136810554916',
+							tags	: ['photography','cat'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/ce0ef75ee5fe26f9232716669fdf286a/tumblr_o09debwQlr1utn57jo2_1280.jpg'
+							}
+						},
+						10:{
+							title	: 'powdered trees',
+							link	: 'http://b.trew.moe/post/137018476915',
+							tags	: ['photography','snow','nature','trees'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/78b1ec5132d3e7d3825ccbb8e256db7f/tumblr_o0qt7lwr6G1utn57jo1_1280.jpg'
+							}
+						},
+						22:{
+							title	: 'river falls winter pics',
+							link	: 'https://www.flickr.com/photos/trewbot/sets/72157666826027862',
+							tags	: ['photography','nature','school'],
+							media	: {
+								type	: 'img',
+								src		: 'https://c1.staticflickr.com/2/1684/26065804420_b59c69728a_k.jpg'
+							}
+						},
+						23:{
+							title	: 'rationalizing everything',
+							link	: 'http://b.trew.moe/post/137862408745',
+							tags	: ['blog']
+						},
+						24:{
+							title	: 'wanting things',
+							link	: 'http://b.trew.moe/post/137935140335',
+							tags	: ['blog']
+						}
+					},
+					02:{
+						05:[
+							{
+								title	: '"the feasability of spontaneously morphing into an octopus"',
+								link	: 'http://uwrfvoice.com/etcetera/15704',
+								tags	: ['column','writing','student voice']
+							},
+							{
+								title	: 'student voice vol 102 iss 13',
+								link	: 'http://uwrfvoice.com/pdf/160205studentvoice.pdf',
+								tags	: ['student voice','layout']
+							}
+						],
+						12:{
+							title	: 'student voice vol 102 iss 14 w logo i designed',
+							link	: 'http://uwrfvoice.com/pdf/160212studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						18:{
+							title	: 'waiting for a burger',
+							link	: 'http://b.trew.moe/post/139585923315',
+							tags	: ['blog','food']
+						},
+						19:{
+							title	: 'student voice vol 102 iss 15',
+							link	: 'http://uwrfvoice.com/pdf/160219studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						22:{
+							title	: 'blurry selfie',
+							link	: 'https://twitter.com/Trewbot/status/701682718485053440',
+							tags	: ['photography','slefie'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/CbzgtmNUUAAeCyl.jpg:large'
+							}
+						},
+						23:{
+							title	: 'acm ad slides',
+							link	: 'https://twitter.com/Trewbot/status/702335635269427200',
+							tags	: ['design','photography','club'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/Cb8yideUcAEta_e.jpg:large'
+							}
+						},
+						24:[
+							{
+								title	: 'disc pic',
+								link	: 'http://b.trew.moe/post/139907381563',
+								tags	: ['photography'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/6cdbff81ad7e1c0f433890a71c2dd87e/tumblr_o318yoCxuP1utn57jo1_1280.jpg'
+								}
+							},
+							{
+								title	: 'tickets',
+								link	: 'http://b.trew.moe/post/139927944326',
+								tags	: ['photography'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/9753c029e4ebf34eb5f67abcb4e2f971/tumblr_o31911BQgB1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						25:[
+							{
+								title	: 'repository for object oriented programming',
+								link	: 'https://github.com/Trewbot/CS235',
+								tags	: ['programming','school']
+							},
+							{
+								title	: 'student voice header design',
+								link	: 'http://b.trew.moe/post/139967164392',
+								tags	: ['student voice','design'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/6fd00d4ae367011a1982264398223b4d/tumblr_o319tji1KC1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						26:{
+							title	: 'student voice vol 102 iss 16',
+							link	: 'http://uwrfvoice.com/pdf/160226studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						29:[
+							{
+								title	: 'word fill cat',
+								link	: 'http://b.trew.moe/post/158775805475',
+								tags	: ['art','drawing'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/5bff99f1c3e939ab2211a52d929fcdb4/tumblr_o3alw8Fau31udosl4o1_1280.jpg'
+								}
+							},
+							{
+								title	: 'all hail ternary operators',
+								link	: 'http://b.trew.moe/post/140245348265',
+								tags	: ['blog','programming']
+							}
+						]
+					},
+					03:{
+						04:[
+							{
+								title	: 'student voice vol 102 iss 17',
+								link	: 'http://uwrfvoice.com/pdf/160304studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'translucent square image painter',
+								link	: 'https://github.com/Trewbot/TSIP',
+								tags	: ['programming']
+							},
+							{
+								title	: '... demo',
+								link	: yt+'hitpFpkAy3Q',
+								tags	: ['programming'],
+								media	: {
+									type	: 'youtube',
+									src		: 'hitpFpkAy3Q'
+								}
+							}
+						],
+						07:{
+							title	: 'campus infrared statistics',
+							link	: 'http://i.imgur.com/Wzs85SU.png',
+							tags	: ['school','research'],
+							media	: {
+								type	: 'img',
+								src		: 'http://i.imgur.com/Wzs85SU.png'
+							}
+						},
+						09:{
+							title	: 'ghost cat',
+							link	: 'http://b.trew.moe/post/158775824420',
+							tags	: ['photography','cat'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/f2cb778a54d91accf512d4cb43da6abf/tumblr_o3t2yztxm01udosl4o1_1280.jpg'
+							}
+						},
+						11:{
+							title	: 'student voice vol 102 iss 18',
+							link	: 'http://uwrfvoice.com/pdf/160311studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						13:{
+							title	: 'river falls pics',
+							link	: 'https://www.flickr.com/photos/trewbot/sets/72157664671744804',
+							tags	: ['photography','nature','river'],
+							media	: {
+								type	: 'img',
+								src		: 'https://c1.staticflickr.com/2/1683/26246410962_49dd0753d6_k.jpg'
+							}
+						},
+						14:[
+							{
+								title	: 'drag system.gif',
+								link	: 'https://twitter.com/Trewbot/status/709244746368036864',
+								tags	: ['gif','research','physics'],
+								media	: {
+									type	: 'video',
+									loop	: true,
+									src		: 'https://video.twimg.com/tweet_video/Cde-TiRVAAANcSa.mp4'
+								}
+							},
+							{
+								title	: 'picture of myself in the mirror',
+								link	: 'http://b.trew.moe/post/141027222284',
+								tags	: ['photography','selfie'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/5ca6d327ac2d48b26c957d4eb76ea490/tumblr_o40k7cjaPA1utn57jo1_1280.jpg'
+								}
+							}
+						],
+						25:{
+							title	: 'student voice vol 102 iss 19',
+							link	: 'http://uwrfvoice.com/pdf/160325studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						27:[
+							{
+								title	: 'the time-dependent schrodinger equation on rose quartz (pantone color of the year, 2016)',
+								link	: 'http://b.trew.moe/post/158775541055',
+								tags	: ['art','physics','pixel'],
+								media	: {
+									type	: 'img',
+									src		: 'http://68.media.tumblr.com/4fa20de454225c0d95af7e6c4b9fdebd/tumblr_o4pux9Zvqe1udosl4o1_500.png'
+								}
+							},
+							{
+								title	: 'pop tarts (god)',
+								link	: 'https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot',
+								tags	: ['writing','music'],
+								media	: {
+									type	: 'bandcamp',
+									src		: '706583445'
+								}
+							}
+						],
+						28:{
+							title	: 'posterized water tower',
+							link	: 'http://b.trew.moe/post/158775864300',
+							tags	: ['photography','art'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/ba6a1ec5e959a77ea2eaaf28e9899d9e/tumblr_o4qiasw10X1udosl4o1_1280.jpg'
+							}
+						}
+					},
+					04:{
+						01:{
+							title	: 'student voice vol 102 iss 20',
+							link	: 'http://uwrfvoice.com/pdf/160401studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						02:{
+							title	: 'mpe ii assignment 6',
+							link	: 'http://trew.moe/js/phys/poisson',
+							tags	: ['programming','physics','js','school']
+						},
+						03:{
+							title	: 'news printing.gif',
+							link	: 'https://twitter.com/Trewbot/status/716826069228191745',
+							tags	: ['student voice','gif','art'],
+							media	: {
+								type	: 'video',
+								loop	: true,
+								src		: 'https://video.twimg.com/tweet_video/CfKteLSWwAATfc4.mp4'
+							}
+						},
+						08:{
+							title	: 'student voice vol 102 iss 21',
+							link	: 'http://uwrfvoice.com/pdf/160408studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						09:{
+							title	: 'rocket test launch',
+							link	: 'https://www.flickr.com/photos/trewbot/albums/72157666926540776',
+							tags	: ['rocket','photography','physics'],
+							media	: {
+								type	: 'img',
+								src		: 'https://c1.staticflickr.com/2/1674/25747682923_476f35ca0e_k.jpg'
+							}
+						},
+						12:{
+							title	: 'appointed to elections committee',
+							link	: 'https://uwrf.orgsync.com/files/download/994227',
+							tags	: ['school','club']
+						},
+						15:[
+							{
+								title	: 'student voice vol 102 iss 22',
+								link	: 'http://uwrfvoice.com/pdf/160415studentvoice.pdf',
+								tags	: ['student voice','layout']
+							},
+							{
+								title	: 'the hassles of enrolling for classes',
+								link	: 'http://b.trew.moe/post/142847922385',
+								tags	: ['blog']
+							}
+						],
+						20:{
+							title	: 'measure at time zero',
+							link	: 'http://b.trew.moe/post/143145860615',
+							tags	: ['blog','physics']
+						},
+						22:{
+							title	: 'student voice vol 102 iss 23',
+							link	: 'http://uwrfvoice.com/pdf/160422studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						27:{
+							title	: 'trying to overcome melancholy w some made up motivation',
+							link	: 'http://b.trew.moe/post/143514149270',
+							tags	: ['blog']
+						},
+						28:{
+							title	: 'calculating heat efficiency on campus using infrared imaging',
+							link	: 'http://www.academia.edu/23586068/Calculating_Heat_Efficiency_on_Campus_Using_Infrared_Imaging',
+							tags	: ['research','school','paper']
+						},
+						29:{
+							title	: 'student voice vol 102 iss 24',
+							link	: 'http://uwrfvoice.com/pdf/160429studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						30:{
+							title	: 'calling ppl by name',
+							link	: 'http://b.trew.moe/post/143666333395',
+							tags	: ['blog']
+						}
+					},
+					05:{
+						05:{
+							title	: 'infrared selfie',
+							link	: 'https://twitter.com/Trewbot/status/730793162164293632',
+							tags	: ['photography','infrared','selfie'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/CiRMginWwAEcg8h.jpg:large'
+							}
+						},
+						06:{
+							title	: 'student voice vol 102 iss 25',
+							link	: 'http://uwrfvoice.com/pdf/160506studentvoice.pdf',
+							tags	: ['student voice','layout']
+						},
+						07:{
+							title	: 'posterized cat',
+							link	: 'http://b.trew.moe/post/158775890905',
+							tags	: ['photography','cat','art'],
+							media	: {
+								type	: 'img',
+								src		: 'http://68.media.tumblr.com/48384c9428485e4b209b32cb954adb01/tumblr_o6sk6pB3d11udosl4o1_1280.jpg'
+							}
+						},
+						11:{
+							title	: 'when i ended up being 30m late to a final (n still passed)',
+							link	: 'https://twitter.com/Trewbot/status/730384141141708805',
+							tags	: ['school'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/CiLYgNvUoAAAZ4x.jpg:large'
+							}
+						}
+					},
+					07:{
+						18:{
+							title	: '<a href="https://instagram.com">instagram</a> account',
+							link	: 'https://www.instagram.com/trewbot/',
+							tags	: ['instagram','photography','account']
+						}
+					},
+					08:{
+						07:{
+							title	: 'somebody left a review of me at work',
+							link	: 'https://twitter.com/Trewbot/status/767467780937486336',
+							tags	: ['work']
+						},
+						20:{
+							title	: 'civilization thread #6.1',
+							link	: 'https://archived.moe/b/thread/700331677',
+							tags	: ['art','pixel']
+						},
+						30:{
+							title	: 'civilization thread #7.1 (<a href="https://archived.moe/b/thread/701793900">#7.2</a>)',
+							link	: 'https://archived.moe/b/thread/701784688',
+							tags	: ['art','pixel']
+						}
+					},
+					09:{
+						09:{
+							title	: 'rant abt condescending customers',
+							link	: 'http://b.trew.moe/post/150154719540',
+							tags	: ['blog','work']
+						},
+						12:{
+							title	: 'video abt me that doesnt tell u anything abt me',
+							link	: yt+'Nv9eDLYYndA',
+							tags	: ['video','blog'],
+							media	: {
+								type	: 'youtube',
+								src		: 'Nv9eDLYYndA'
+							}
+						},
+						16:{
+							title	: 'here come de broglie',
+							link	: 'https://twitter.com/Trewbot/status/776982345266044928',
+							tags	: ['meme','physics'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/CshlQpMUMAAjofr.jpg:large'
+							}
+						},
+						15:{
+							title	: 'trebuchet',
+							link	: yt+'kgT2N6JDOdk',
+							tags	: ['physics','video','french','school','club'],
+							media	: {
+								type	: 'youtube',
+								src		: 'kgT2N6JDOdk'
+							}
+						},
+						20:[
+							{
+								title	: 'acm window painting',
+								link	: 'https://twitter.com/Trewbot/status/778382238241153024',
+								tags	: ['school','club','communism','art'],
+								media	: {
+									type	: 'img',
+									src		: 'https://pbs.twimg.com/media/Cs1eg9TWgAAQqs2.jpg:large'
+								}
+							},
+							{
+								title	: 'civilization thread #8.1',
+								link	: 'https://archived.moe/b/thread/704790633/',
+								tags	: ['art','pixel']
+							}
+						],
+						21:[
+							{
+								title	: 'pressure explosion',
+								link	: yt+'z5F_Dop3i90',
+								tags	: ['school','club','physics','video','explosion'],
+								media	: {
+									type	: 'youtube',
+									src		: 'z5F_Dop3i90'
+								}
+							},
+							{
+								title	: 'bottle flipping video',
+								link	: yt+'Ok0x_oQQVXE',
+								tags	: ['school','club','meme','video'],
+								media	: {
+									type	: 'youtube',
+									src		: 'Ok0x_oQQVXE'
+								}
+							}
+						],
+						22:[
+							{
+								title	: 'dmm spring vibrating',
+								link	: yt+'RIUByAGRi4Q',
+								tags	: ['physics','school','video','electronics'],
+								media	: {
+									type	: 'youtube',
+									src		: 'RIUByAGRi4Q'
+								}
+							},
+							{
+								title	: 'my electronics lab partner blew up a resistor',
+								link	: 'https://twitter.com/Trewbot/status/779048022525083648',
+								tags	: ['physics','electronics'],
+								media	: {
+									type	: 'img',
+									src		: 'https://pbs.twimg.com/media/Cs-8CzeVYAAbPHm.jpg:large'
+								}
+							}
+						],
+						25:{
+							title	: 'what if we did choose this life?',
+							link	: 'http://b.trew.moe/post/150924491390',
+							tags	: ['blog']
+						},
+						28:{
+							title	: 'hbar on nationstates',
+							link	: 'https://www.nationstates.net/nation=hbar',
+							tags	: ['nationstates']
+						},
+						29:{
+							title	: 'when i found out i was completely surrounded by idiots',
+							link	: 'https://twitter.com/Trewbot/status/781623937192996864',
+							tags	: ['school','club']
+						},
+						30:{
+							title	: 'transistor gain lab',
+							link	: yt+'DC9fzm60JIM',
+							tags	: ['school','physics','electronics'],
+							note	: 'in which i use the word \'amperage\' repeatedly even tho my prof hated that word',
+							media	: {
+								type	: 'youtube',
+								src		: 'DC9fzm60JIM'
+							}
+						}
+					},
+					10:{
+						02:{
+							title	: 'the important alligator picture',
+							link	: 'https://twitter.com/Trewbot/status/782441417067024384',
+							tags	: ['photography','selfie','alligator'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/CtvKUE_UsAAEMJm.jpg:large'
+							}
+						},
+						06:{
+							title	: 'arduino keyboard',
+							link	: yt+'wRmKDBhc8Xg',
+							tags	: ['electronics','video'],
+							media	: {
+								type	: 'youtube',
+								src		: 'wRmKDBhc8Xg'
+							}
+						},
+						14:{
+							title	: '3m science stuff feat. an eagle',
+							link	: yt+'u_fUir8YsY8',
+							tags	: ['physics','club','event'],
+							note	: 'the degrees of freedom joke is extremely good content&trade;',
+							media	: {
+								type	: 'youtube',
+								src		: 'u_fUir8YsY8'
+							}
+						},
+						26:{
+							title	: 'uwrf acm promo [draft 1]',
+							link	: 'EYIr89_BXqg',
+							tags	: ['video','school','club','programming'],
+							media	: {
+								type	: 'youtube',
+								src		: 'EYIr89_BXqg'
+							}
+						}
+					},
+					11:{
+						02:{
+							title	: 'went to ca',
+							link	: 'http://www.sigmapisigma.org/sigmapisigma/congress/2016',
+							tags	: ['event','physics','school','conference'],
+							media	: {
+								type	: 'img',
+								src		: 'http://www.sigmapisigma.org/sites/default/files/images/congress/2016/physcon-aip-display-ken-cole.jpg'
+							}
+						},
+						05:{
+							title	: 'uwrf acm promo [draft 2]',
+							link	: yt+'zW3a33f_MY8',
+							tags	: ['school','club','programming','video'],
+							media	: {
+								type	: 'youtube',
+								src		: 'zW3a33f_MY8'
+							}
+						},
+						06:{
+							title	: 'the san fran vlog',
+							link	: yt+'S3-9qgIFDA0',
+							tags	: ['blog','video','vaporwave'],
+							media	: {
+								type	: 'youtube',
+								src		: 'S3-9qgIFDA0'
+							}
+						},
+						10:{
+							title	: 'passive filters lab',
+							link	: yt+'Elo6dmMCtNQ',
+							tags	: ['physics','school','electronics','video'],
+							note	: 'it says (original speed) bc there\'s another version where some parts are sped up to fit w/in the time limit for submission',
+							media	: {
+								type	: 'youtube',
+								src		: 'Elo6dmMCtNQ'
+							}
+						},
+						15:{
+							title	: 'dribbling some eggs',
+							link	: yt+'Sb1BGQFAKqc',
+							tags	: ['physics','school','club','video','food'],
+							media	: {
+								type	: 'youtube',
+								src		: 'Sb1BGQFAKqc'
+							}
+						},
+						24:{
+							title	: 'joined the communist bloc on nationstates',
+							link	: 'https://www.nationstates.net/region=the_communist_bloc',
+							tags	: ['nationstates']
+						},
+						25:{
+							title	: '<a href="http://bloc.red">the communist bloc</a> account',
+							link	: 'https://bloc.red/index.php?members/trewbot.957/',
+							tags	: ['communism','account','nationstates']
+						}
+					},
+					12:{
+						10:{
+							title	: 'updated hbar flag',
+							link	: 'http://md.phene.co/hbar/flags/002.png',
+							tags	: ['art','design','nationstates'],
+							media	: {
+								type	: 'img',
+								src		: 'http://md.phene.co/hbar/flags/002.png'
+							}
+						},
+						18:{
+							title	: 'dream car',
+							link	: 'https://twitter.com/Trewbot/status/810596577240879104',
+							note	: 'this is a repost of a meme i made on snapchat, i dont know the actual date, but i made it while working at walgreens which i quit working at about halfway thru <a href="#2016.10">2016.10</a>',
+							tags	: ['meme','video'],
+							media	: {
+								type	: 'video',
+								src		: 'https://video.twimg.com/ext_tw_video/810596518713389056/pu/vid/358x640/8HCi5TLzAGqsLXOK.mp4'
+							}
+						},
+						20:{
+							title	: 'markdown preprocessing server',
+							link	: 'http://md.phene.co',
+							tags	: ['programming']
+						},
+						30:{
+							title	: 'geometrical art',
+							link	: 'https://twitter.com/Trewbot/status/814764864853966848',
+							tags	: ['art'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/C06gTD8UQAYcctL.jpg:large'
+							}
+						}
+					}
+				},
+				2017:{
+					01:{
+						03:{
+							title	: 'et2 solo',
+							link	: 'https://www.youtube.com/playlist?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C',
+							tags	: ['reading','video','audio'],
+							media	: {
+								type	: 'youtube',
+								src		: 'qFMGggjO2QY?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C'
+							}
+						},
+						05:{
+							title	: 'typing 100 words',
+							link	: yt+'2rJMo222Zp8',
+							tags	: ['video'],
+							media	: {
+								type	: 'youtube',
+								src		: '2rJMo222Zp8'
+							}
+						},
+						06:[
+							{
+								title	: 'suspended from uwrf',
+								link	: 'http://uwrf.edu',
+								tags	: ['school','event']
+							},
+							{
+								title	: 'selfie w new sweater',
+								link	: 'https://twitter.com/Trewbot/status/817430288431247360',
+								tags	: ['photography','selfie'],
+								media	: {
+									type	: 'img',
+									src		: 'https://pbs.twimg.com/media/C1gYgrnUcAE7N_7.jpg:large'
+								}
+							}
+						],
+						11:{
+							title	: 'sweater vlog',
+							link	: yt+'NXsVQIf3xsw',
+							tags	: ['blog','video'],
+							media	: {
+								type	: 'youtube',
+								src		: 'NXsVQIf3xsw'
+							}
+						},
+						13:{
+							title	: 'et2 pt1',
+							link	: 'https://omny.fm/shows/now-we-re-talking/special-episode-e-t-2-part-1',
+							tags	: ['reading','podcast']
+						},
+						20:{
+							title	: 'that time i was stuck in a walmart for five hours',
+							link	: 'https://twitter.com/Trewbot/status/822657145527275521',
+							tags	: ['blog','photography'],
+							media	: {
+								type	: 'img',
+								src		: 'https://pbs.twimg.com/media/C2qqSZVWgAYCzRZ.jpg:large'
+							}
+						},
+						23:{
+							title	: 'et2 pt2',
+							link	: 'https://omny.fm/shows/now-we-re-talking/special-episode-e-t-2-part-2',
+							tags	: ['reading','podcast']
+						},
+						24:{
+							title	: 'deleting facebook',
+							link	: 'https://twitter.com/Trewbot/status/823764769647820800',
+							tags	: ['video'],
+							media	: {
+								type	: 'video',
+								src		: 'https://video.twimg.com/ext_tw_video/823764176212357120/pu/vid/1280x720/7e_2-0oDI9WIAFB7.mp4'
+							}
+						},
+						27:{
+							title	: 'renamed _g.popup to _g.modal',
+							link	: 'https://github.com/Trewbot/_g.modal/commit/3ff135b3d6dd484384226b571e04b04f3f7ed368',
+							tags	: ['graphene','programming']
+						},
+						28:{
+							title	: 'graphene <a href="https://notepad-plus-plus.org">notepad++</a> themes',
+							link	: 'https://gist.github.com/Trewbot/4860ff7e70d164afb1b9f09155d97276',
+							tags	: ['graphene','programming','design']
+						},
+						29:[
+							{
+								title	: 'consistent texting',
+								link	: 'http://b.trew.moe/post/156526379100',
+								tags	: ['blog']
+							},
+							{
+								title	: '<a href="https://pinboard.in">pinboard</a> account',
+								link	: 'https://pinboard.in/u:trewbot',
+								tags	: ['account']
+							},
+							{
+								title	: 'fetish videos',
+								link	: 'https://twitter.com/Trewbot/status/825916941286113281',
+								tags	: ['video'],
+								media	: {
+									type	: 'video',
+									src		: 'https://video.twimg.com/ext_tw_video/825916693226459136/pu/vid/1280x720/ReszPvYT2RkFZuQs.mp4'
+								}
+							}
+						]
+					},
+					02:{
+						03:{
+							title	: 'et2 pt3',
+							link	: 'https://omny.fm/shows/now-we-re-talking/special-episode-e-t-2-part-3',
+							tags	: ['reading','podcast']
+						},
+						05:{
+							title	: 'scene 7 of opposite jurassic park',
+							link	: 'https://www.docdroid.net/tm2dnu4',
+							tags	: ['writing','script','comedy']
+						},
+						06:[
+							{
+								title	: 'making cereal',
+								link	: 'https://twitter.com/Trewbot/status/828617354011635713',
+								tags	: ['video']
+							},
+							{
+								title	: 'cat cant act apparently',
+								link	: 'https://twitter.com/Trewbot/status/828620814891249665',
+								tags	: ['video','cat']
+							}
+						],
+						07:[
+							{
+								title	: 'bowl of goldfish',
+								link	: 'https://twitter.com/Trewbot/status/829063377976717312',
+								tags	: ['video']
+							},
+							{
+								title	: 'goldfish => santa transformation steps',
+								link	: 'https://twitter.com/Trewbot/status/829103497505361921',
+								tags	: ['video','meme']
+							}
+						],
+						08:{
+							title	: 'playing "the scariest game ever"',
+							link	: yt+'tCqW4TEZ0Kk',
+							tags	: ['video','sad satan'],
+							media	: {
+								type	: 'youtube',
+								src		: 'tCqW4TEZ0Kk'
+							}
+						},
+						09:[
+							{
+								title	: 'unflattering cat selfie',
+								link	: 'https://twitter.com/Trewbot/status/829894487354834945',
+								tags	: ['photography','selfie'],
+								media	: {
+									type	: 'img',
+									src		: 'https://pbs.twimg.com/media/C4RgoaOUcAAc8Am.jpg:large'
+								}
+							},
+							{
+								title	: 'notes archive on <a href="https://drive.google.com">google drive</a>',
+								link	: 'https://drive.google.com/drive/folders/0B1bCQKuzgQZ-MTlEUkJfdkxDRVE',
+								tags	: ['notes']
+							}
+						],
+						12:{
+							title	: 'updated hbar flag',
+							link	: 'http://md.phene.co/hbar/flags/003.png',
+							tags	: ['art','design','nationstates'],
+							media	: {
+								type	: 'img',
+								src		: 'http://md.phene.co/hbar/flags/003.png'
+							}
+						},
+						19:{
+							title	: 'gravity playground',
+							link	: 'http://trew.moe/js/phys/gravity',
+							tags	: ['programming','js','physics','game']
+						},
+						22:[
+							{
+								title	: 'hug me.txt',
+								link	: 'http://md.phene.co/notes/ramblings/hug me.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'how are you.txt',
+								link	: 'http://md.phene.co/notes/ramblings/how are you.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'stabbing.txt',
+								link	: 'http://md.phene.co/notes/ramblings/stabbing.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'concern.txt',
+								link	: 'http://md.phene.co/notes/ramblings/concern.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'sleep.txt',
+								link	: 'http://md.phene.co/notes/ramblings/sleep.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'alignment.txt',
+								link	: 'http://md.phene.co/notes/ramblings/alignment.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'pity.txt',
+								link	: 'http://md.phene.co/notes/ramblings/pity.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'breathe.txt',
+								link	: 'http://md.phene.co/notes/ramblings/breathe.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'tired.txt',
+								link	: 'http://md.phene.co/notes/ramblings/tired.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'neighbors.txt',
+								link	: 'http://md.phene.co/notes/ramblings/neighbors.txt',
+								tags	: ['blog']
+							}
+						],
+						23:[
+							{
+								title	: 'i swear im sorry.txt',
+								link	: 'http://md.phene.co/notes/ramblings/i swear im sorry.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'manipulation.txt',
+								link	: 'http://md.phene.co/notes/ramblings/manipulation.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'screen.txt',
+								link	: 'http://md.phene.co/notes/ramblings/screen.txt',
+								tags	: ['blog']
+							}
+						]
+					},
+					03:{
+						02:{
+							title	: 'i just.txt',
+							link	: 'http://md.phene.co/notes/ramblings/i just.txt',
+							tags	: ['blog']
+						},
+						03:{
+							title	: 'the opinion box',
+							link	: 'https://twitter.com/Trewbot/status/837769264786464770',
+							tags	: ['video'],
+							media	: {
+								type	: 'video',
+								src		: 'https://video.twimg.com/ext_tw_video/837769167063269376/pu/vid/1280x720/hWQ0i1KFVUGTCv9k.mp4'
+							}
+						},
+						05:{
+							title	: 'scene 9 of muppets yakuza',
+							link	: 'https://www.docdroid.net/tm2dnu4',
+							tags	: ['writing','script']
+						},
+						06:{
+							title	: 'hey.txt',
+							link	: 'http://md.phene.co/notes/ramblings/hey.txt',
+							tags	: ['blog']
+						},
+						07:{
+							title	: 'nostalgia.txt',
+							link	: 'http://md.phene.co/notes/ramblings/nostalgia.txt',
+							tags	: ['blog']
+						},
+						15:{
+							title	: 'video moshing test',
+							link	: 'https://twitter.com/Trewbot/status/841866031702368256',
+							tags	: ['video','art'],
+							media	: {
+								type	: 'video',
+								src		: 'https://video.twimg.com/ext_tw_video/841865836696612865/pu/vid/640x360/B0WzlLlYTmR-iuO5.mp4'
+							}
+						},
+						16:[
+							{
+								title	: 'me installing electron',
+								link	: 'https://twitter.com/Trewbot/status/842268966689116160',
+								tags	: ['blog','programming']
+							},
+							{
+								title	: 'readable code tutorial',
+								link	: '4dhgAfdURJg',
+								tags	: ['video','progamming'],
+								media	: {
+									type	: 'youtube',
+									src		: '4dhgAfdURJg'
+								}
+							},
+							{
+								title	: 'lots of money [vaporwave]',
+								link	: yt+'8_FlhvUiGCY',
+								tags	: ['meme','vaporwave','video','art'],
+								media	: {
+									type	: 'youtube',
+									src		: '8_FlhvUiGCY'
+								}
+							},
+							{
+								title	: 'let it snow.js',
+								link	: 'http://trew.moe/js/3/snow',
+								tags	: ['physics','js','programming']
+							}
+						],
+						17:{
+							title	: 'stem majors.mov',
+							link	: 'https://twitter.com/Trewbot/status/842623343136329729',
+							tags	: ['video','meme'],
+							media	: {
+								type	: 'video',
+								src		: 'https://video.twimg.com/ext_tw_video/842623259136815104/pu/vid/720x720/rJs4I9uSXT1UgOe2.mp4'
+							}
+						},
+						18:[
+							{
+								title	: 'sex robot.txt',
+								link	: 'http://md.phene.co/notes/ramblings/sex robot.txt',
+								tags	: ['blog']
+							},
+							{
+								title	: 'revolution.js',
+								link	: 'http://trew.moe/js/3/waves',
+								tags	: ['programming','js','physics']
+							}
+						],
+						19:{
+							title	: 'moved personal site to trew.moe using <a href="https://github.io">github pages</a>',
+							link	: 'http://trew.moe',
+							tags	: ['programming']
+						},
+						23:{
+							title	: 'log of my contributions to the world wide web&trade;',
+							link	: '#',
+							tags	: ['programming']
+						}
+					}
+				}
+			}
+
+			function collapse(e){
+				e.innerText = '+';
+				e.setAttribute('onclick','expand(this)');
+				var p = e.parentElement.parentElement.parentElement;
+				p.style.overflow = 'hidden';
+				p.style.height = '1.2em';
+			}
+			function expand(e){
+				e.innerText = '-';
+				e.setAttribute('onclick','collapse(this)');
+				var p = e.parentElement.parentElement.parentElement;
+				p.style.overflow = '';
+				p.style.height = '';
+			}
+			function embed(e,o){
+				e.innerHTML = '&#x25B4;';
+				e.setAttribute('onclick','debed(this,'+JSON.stringify(o)+')');
+				var p = e.parentElement,
+					out = '';
+				if(o.type=='img')
+					out = '<img class="embedee" src="'
+						+o.src
+						+'">';
+				if(o.type=='youtube')
+					out = '<iframe class="embedee" width="560" height="315" src="https://www.youtube.com/embed/'
+						+o.src
+						+'" frameborder="0" allowfullscreen></iframe>';
+				if(o.type=='video')
+					out = '<video class="embedee" controls '
+						+(o.loop?'loop autoplay':'')
+						+'><source src="'
+						+o.src
+						+'">yr browser doesnt support video tags</video>';
+				if(o.type=='bandcamp')
+					out = '<iframe class="embedee" style="border:0;width:calc(100% - 1rem);height:42px;" src="https://bandcamp.com/EmbeddedPlayer/album='+o.src+'/size=small/bgcol=ffffff/linkcol=0687f5/artwork=none/track=1379676702/transparent=true/" seamless><a href="http://ruinedpicnic.bandcamp.com/album/ruined-picnic-and-friends">Ruined Picnic and Friends by ruined picnic and friends</a></iframe>'
+				p.insertAdjacentHTML('beforeend',out);
+			}
+			function debed(e,o){
+				e.innerHTML = '&#x25BE;';
+				e.setAttribute('onclick','embed(this,'+JSON.stringify(o)+')');
+				var p = e.parentElement;
+				p.removeChild(p.getElementsByClassName('embedee')[0]);
+			}
+			function render(links){
+				var out = '',
+					alpha = ((a,z)=>{
+						var r=[],i=a.charCodeAt(0),j=z.charCodeAt(0);
+						for (;i<=j;++i)
+							r.push(String.fromCharCode(i));
+						return r;
+					})('a','z'),
+					renderLink = (k,o,h)=>{
+						return '<a href="'+o.link+'">'+k
+							+'</a>'
+							+(k=='XX'?'<a href="#X"><sup>?</sup></a>':k.length==2?':':'')
+							+' '+o.title
+							+(o.media!=[][[]]?' <a href="#'+h+'" onclick=\'embed(this,'
+								+JSON.stringify(o.media)
+								+')\'>&#x25BE;</a>':'')
+							+'<br>';
+					};
+				for(var i in links){
+					out	   += '<div id="'+i+'">';
+					var i0	= 0;
+					for(var j in links[i]){
+						var j0	= 0,
+							j1	= ""+((""+j).length==1?"0":"")+j;
+						out	   +='<div id="'+i+'.'+j1+'">';
+						for(var k in links[i][j]){
+							var tab	= '',
+								k1	= ""+((""+k).length==1?"0":"")+k;
+							tab	   += i0==0&&j0==0
+										?'[<a href="#" onclick="collapse(this)">-</a>] '
+											+'<a href="#'+i+'">'+i+'</a>.'
+										:'<t></t><t></t>';
+							tab	   += j0==0
+										?(i0?'&nbsp;':'')+'<a href="#'+i+'.'+j1+'">'+j1+'</a>.'
+										:'<t></t>'
+							if(Array.isArray(links[i][j][k])){
+								for(var l in links[i][j][k])
+									out	+='<div id="'+i+'.'+j1+'.'+k1+alpha[l]+'">'
+										+(l==0?tab:'<t></t><t></t><t></t>')
+										//+renderLink(k1+alpha[l],links[i][j][k][l],i+'.'+j1+'.'+k1+alpha[l])
+										+renderLink(l==0?k1:'..',links[i][j][k][l],i+'.'+j1+'.'+k1+alpha[l])
+										+'</div>';
+							}else{
+								out += '<div id="'+i+'.'+j1+'.'+k1+'">'
+									+ tab+renderLink(k1,links[i][j][k],i+'.'+j1+'.'+k1)
+									+'</div>';
+							}
+							j0++;
+						}
+						out+='</div>';
+						i0++;
+					}
+					out+='</div>';
+				}
+				return out;
+			}
+		</script>
 	</head>
 	<body>
-		things abt/by me on the internet<a href="#1"><sup>1</sup></a><br>
+		things abt/by me on the internet<br>
 		<br>
-		<div id="2010">
-			<div id="2010.05">
-				<a href="#2010">2010</a>.<a href="#2010.05">05</a>.<a href="http://joshandtrevorsimcity4.wikia.com">08</a>: wiki for lore abt a <a href="https://en.wikipedia.org/wiki/SimCity_4">SC4</a> region my brother n i made<br>
-			</div>
-			<div id="2010.09">
-				<t></t>&nbsp;<a href="#2010.09">09</a>.<a href="http://hs.hudson.k12.wi.us">XX</a><a href="#X"><sup>?</sup></a> started high school<br>
-			</div>
-		</div>
-		<div id="2011">
-			<div id="2011.10">
-				<a href="#2011">2011</a>.<a href="#2011.10">10</a>.<a href="http://community.simtropolis.com/profile/441163-shadadorianpro/">03</a>: <a href="http://community.simtropolis.com/">simtropolis</a> account<br>
-			</div>
-			<div id="2011.12">
-				<t></t>&nbsp;<a href="#2011.12">12</a>.<a href="https://www.flickr.com/people/trewbot">XX</a><a href="#X"><sup>?</sup></a> <a href="https://flickr.com">flickr</a> account<br>
-			</div>
-		</div>
-		<div id="2012">
-			<div id="2012.05">
-				<a href="#2012">2012</a>.<a href="#2012.05">05</a>.<a href="http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod">05</a>: wip <a href="https://minecraft.net/en-us/">minecraft</a> mod<br>
-				<t></t><t></t><a href="http://www.minecraftforum.net/members/Shadadorian">06</a>: <a href="http://www.minecraftforum.net/">minecraft forum</a> account<br>
-			</div>
-			<div id="2012.06">
-				<t></t>&nbsp;<a href="#2012.06">06</a>.<a href="http://blog.wolfire.com/2012/06/Overgrowth-a182-changelog#comment-559946318">16</a>: some comment i made about <a href="http://www.wolfire.com/overgrowth">overgrowth</a>'s development<br>
-			</div>
-			<div id="2012.07">
-				<t></t>&nbsp;<a href="#2012.07">07</a>.<a href="https://sessionserver.mojang.com/session/minecraft/profile/8bc10277341a48348e46a51856877c67">06</a>: minecraft account<br>
-			</div>
-			<div id="2012.08">
-				<t></t>&nbsp;<a href="#2012.08">08</a>.<a href="https://twitter.com/Trewbot">15</a>: <a href="https://twitter.com">twitter</a> account<br>
-				<t></t><t></t><a href="http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs">30</a>: minecraft language packs<br>
-			</div>
-			<div id="2012.12">
-				<t></t>&nbsp;<a href="#2012.12">12</a>.<a href="https://soundcloud.com/shadadorianpro">XX</a><a href="#X"><sup>?</sup></a> old <a href="https://soundcloud.com">soundcloud</a> account<br>
-			</div>
-		</div>
-		<div id="2013">
-			<div id="2013.05">
-				<a href="#2013">2013</a>.<a href="#2013.05">05</a>.<a href="https://www.youtube.com/watch?v=Opa83EsG8Ds">04</a>: mason playing some minecraft thing w me in the background<br>
-			</div>
-			<div id="2013.09">
-				<t></t>&nbsp;<a href="#2013.09">09</a>.<a href="http://gra.phene.co">11</a>: renamed social network project to "graphene"<br>
-			</div>
-			<div id="2013.12">
-				<t></t>&nbsp;<a href="#2013.12">12</a>.<a href="http://www.mxpulse.com/board/viewtopic.php?f=34&t=3212&p=19078">02</a>: boxed someone's city in bc they were being an asshole (n so was i, tbh)<br>
-			</div>
-		</div>
-		<div id="2014">
-			<div id="2014.01">
-				<a href="#2014">2014</a>.<a href="#2014.01">01</a>.<a href="https://www.youtube.com/watch?v=nAHu-n3GXA4">10</a>: mason's documentary [draft 1]<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=IBMWlyCBqUg">22</a>: ... [draft 2]<br>
-			</div>
-			<div id="2014.07">
-				<t></t>&nbsp;<a href="#2014.07">07</a>.<a href="https://github.com/Trewbot/_g.crop">08</a>: _g.crop (gra_crop)<br>
-				<t></t><t></t><a href="https://trewbot.svbtle.com/fanfest">13</a>: fanfest<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=yTCGrSxYo7k">15</a>: minecraft ep1<br>
-			</div>
-			<div id="2014.08">
-				<t></t>&nbsp;<a href="#2014.08">08</a>.<a href="https://www.youtube.com/watch?v=pg6QxouEHw8">07</a>: minecraft ep1 redo<br>
-			</div>
-			<div id="2014.09">
-				<t></t>&nbsp;<a href="#2014.09">09</a>.<a href="https://www.youtube.com/watch?v=77yGUSS8B3Y">07</a>: minecraft ep3<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/_g.color">20</a>: _g.color (gra_clr)<br>
-				<t></t><t></t><a href="http://scripts.phene.co/player">30</a>: _g.player (gra_aud)<br>
-			</div>
-			<div id="2014.10">
-				<t></t>&nbsp;<a href="#2014.10">10</a>.<a href="https://gra.phene.co">03</a>: graphene v0.3.0<br>
-				<t></t><t></t><a href="http://gra.phene.co">19a</a> graphene v0.3.1<br>
-				<t></t><t></t><a href="http://gra.phene.co">19b</a> graphene v0.3.2<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/_g.menu">21</a>: _g.menu (gra_cm)<br>
-				<t></t><t></t><a href="https://www.naqt.com/stats/team-performance.jsp?team_id=74788">30</a>: mn hs quiz bowl league<br>
-			</div>
-			<div id="2014.11">
-				<t></t>&nbsp;<a href="#2014.11">11</a>.<a href="http://gra.phene.co">05</a>: graphene v0.3.3<br>
-				<t></t><t></t><a href="https://www.naqt.com/stats/team-performance.jsp?team_id=71915">15</a>: rosemount annual thumb-racing academic competition event<a href="#2"><sup>2</sup></a><br>
-				<t></t><t></t><a href="https://github.com/Trewbot">22</a>: <a href="https://github.com">github</a> account<br>
-			</div>
-		</div>
-		<div id="2015">
-			<div id="2015.01">
-				<a href="#2015">2015</a>.<a href="#2015.01">01</a>.<a href="http://gra.phene.co">07</a>: graphene v0.3.3-s0.1.0<br>
-				<t></t><t></t><a href="https://www.naqt.com/stats/team-performance.jsp?team_id=76226">31</a>: 2015 snow cat<br>
-			</div>
-			<div id="2015.02">
-				<t></t>&nbsp;<a href="#2015.02">02</a>.<a href="https://www.naqt.com/stats/team-performance.jsp?team_id=77117">21</a>: run for the roses<br>
-			</div>
-			<div id="2015.03">
-				<t></t>&nbsp;<a href="#2015.03">03</a>.<a href="https://soundcloud.com/trewbot">XX</a><a href="#X"><sup>?</sup></a> new soundcloud account<br>
-				<t></t><t></t><a href="https://www.naqt.com/stats/team-performance.jsp?team_id=82473">14</a>: 4th annual ranger academic tournament<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/_g.modal">23</a>: _g.popup<br>
-			</div>
-			<div id="2015.04">
-				<t></t>&nbsp;<a href="#2015.04">04</a>.<a href="https://www.naqt.com/stats/team-performance.jsp?team_id=85031">25</a>: naqt wi state championship<br>
-			</div>
-			<div id="2015.05">
-				<t></t>&nbsp;<a href="#2015.05">05</a>.<a href="http://www.hudsonstarobserver.com/news/education/3759403-390-members-class-2015-graduate-chilly-evening-newton-field">30</a>: graduated high school<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/120260721903/butterfly">30</a>: willow river pics:
-					<a href="http://b.trew.moe/post/120260721903/">"butterfly"</a>
-					<a href="http://b.trew.moe/post/120290532981/">moss</a>
-					<a href="http://b.trew.moe/post/120344814766/">stairs</a>
-					<a href="http://b.trew.moe/post/120377226089/">eagle</a>
-					<a href="http://b.trew.moe/post/120435630333/">fluff</a>
-					<a href="http://b.trew.moe/post/120464495831/">falls</a>
-					<a href="http://b.trew.moe/post/120521446599/">lake</a>
-					<br>
-			</div>
-			<div id="2015.06">
-				<t></t>&nbsp;<a href="#2015.06">06</a>.<a href="http://www.hudsonstarobserver.com/news/education/3755579-hhs-qualifies-national-quiz-bowl-competition">02a</a> my mom made me go to my graduation instead of another thing<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/120550054117/crick">02b</a> illinois pics:
-					<a href="http://b.trew.moe/post/120550054117/crick">crick</a>
-					<a href="http://b.trew.moe/post/120605592461/sleep">sleep</a>
-					<a href="http://b.trew.moe/post/120633328039/farms">farms</a>
-					<a href="http://b.trew.moe/post/120688566307/contrast">constrast</a>
-					<a href="http://b.trew.moe/post/120716533669/dilapidated">dilapidated</a>
-					<a href="http://b.trew.moe/post/120769998062/pseudo-llama">pseudo llama</a>
-					<a href="http://b.trew.moe/post/120797149363/thirty-fifth-street">35th st</a>
-					<a href="http://b.trew.moe/post/120848151929/quaint">quaint</a>
-					<br>
-				<t></t><t></t><a href="https://trewbot.svbtle.com/the-briefcase">05</a>: the briefcase<br>
-			</div>
-			<div id="2015.08">
-				<t></t>&nbsp;<a href="#2015.08">08</a>.<a href="https://www.flickr.com/photos/trewbot/sets/72157664669982134">05</a>: coulee pics<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775588155">13a</a> space loans<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775681530">13b</a> night trail<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/127828156145/">28</a>: new richmond pics:
-					<a href="http://b.trew.moe/post/127828156145/">wind</a>
-					<a href="http://b.trew.moe/post/127870279885/">wheel</a>
-					<a href="http://b.trew.moe/post/127950557186/">buckets</a>
-					<br>
-				<t></t><t></t><a href="http://gra.phene.co">30</a>: graphene v0.3.3-s0.2.0<br>
-			</div>
-			<div id="2015.09">
-				<t></t>&nbsp;<a href="#2015.09">09</a>.<a href="http://b.trew.moe/post/128115024591">01</a>: nerds<br>
-				<t></t><t></t><a href="http://uwrf.edu">02a</a> started college at uwrf<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/128192325992">02b</a> ok ok fail ok ok<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/128267083002">03</a>: rain<br>
-				<t></t><t></t><a href="https://trewbot.svbtle.com/sunny-day">04a</a> sunny day<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/128339109471">04b</a> linear<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/128410890309">05</a>: headache<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/128410890309">06</a>: headache<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/641457942277959680">08</a>: the proletaricat and purrgeoisie<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/150918studentvoice.pdf">18</a>: student voice vol 102 iss 01<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/128486714600/squiggle">20</a>: cc pics:
-					<a href="http://b.trew.moe/post/128486714600">squiggle</a>
-					<a href="http://b.trew.moe/post/128564824786">stare</a>
-					<a href="http://b.trew.moe/post/128642520010">sideways</a>
-					<a href="http://b.trew.moe/post/128712976740">rage</a>
-					<a href="http://b.trew.moe/post/128782061671">difficulty</a>
-					<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775521935">23</a>: cat boards<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/150925studentvoice.pdf">25</a>: student voice vol 102 iss 02<br>
-			</div>
-			<div id="2015.10">
-				<t></t>&nbsp;<a href="#2015.10">10</a>.<a href="http://uwrfvoice.com/pdf/151002studentvoice.pdf">02</a>: student voice vol 102 iss 03<br>
-				<t></t><t></t><a href="http://gra.phene.co">05</a>: graphene w0.4.0-s0.2.0<br>
-				<t></t><t></t><a href="https://trewbot.svbtle.com/the-road">06</a>: the road<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/etcetera/14704">08</a>: "uwrf society of physics students visits 3m"<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151009studentvoice.pdf">09</a>: student voice vol 102 iss 04<br>
-				<t></t><t></t><a href="https://archive.b-stats.org/b/thread/645668865">10</a>: civilization thread #5.2<br>
-				<t></t><t></t><a href="http://gra.phene.co">11</a>: graphene w0.4.0-s0.2.1<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/Graphene">13</a>: repository for graphene (w0.4.1-s0.3.0)<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775779025">14</a>: some stupid existential shit<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/CS162">15a</a> repository for programming ii<br>
-				<t></t><t></t><a href="https://www.tumblr.com/theme/40029">15b</a> "about" theme<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151016studentvoice.pdf">16</a>: student voice vol 012 iss 05<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/Graphene/commit/f3e85b28796229e0e25129768e8c63d4bf83b00f">17</a>: graphene w0.4.2-s0.3.0<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/131474743180">19</a>: i cant even relate to myself anymore<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/Euler">20</a>: started project euler<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/131665318960">21</a>: blog stuff<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/Graphene/commit/2ab9dd3cc57851b36bf85c93ee79076c7f0f7b75">22a</a> graphene w0.4.2-s0.3.1<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/131716242410">22b</a> asynchronous coding<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/131718789050">22c</a> fu[k]<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151023studentvoice.pdf">23</a>: student voice vol 102 iss 06<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/Graphene/commit/d3056a141c888f5f656f6d6f1b83c995c45a53e8">25a</a> graphene w0.4.2-s0.3.2<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/Graphene/releases/tag/w0.4.3-s0.4.0">25b</a> graphene w0.4.3-s0.4.0<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/131974796760">26</a>: collatz problem
-					<a href="http://b.trew.moe/post/131974796760">1</a>
-					<a href="http://b.trew.moe/post/131975078015">2</a>
-					<a href="http://b.trew.moe/post/131975519215">3</a>
-					<a href="http://b.trew.moe/post/131975967130">4</a>
-					<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132007914660">27a</a> english departments<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132056809675">27b</a> arm scribbled to do lists<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132072853645">28</a>: fucking idiot doesnt know "melancholy"<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/etcetera/14981">29a</a> "office chair provides fun, convenience, comfort"<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132149392590">29b</a> a dream of not talking<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132190687675">29c</a> comparing shaving w sensitive skin to english classes<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151030studentvoice.pdf">30a</a> student voice vol 102 iss 07<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132244649780">30b</a> compass<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132245853890">30c</a> birthdays<br>
-			</div>
-			<div id="2015.11">
-				<t></t>&nbsp;<a href="#2015.11">11</a>.<a href="http://b.trew.moe/post/132318522935">01</a>: depressing 'just turned 18' blogs:
-					<a href="http://b.trew.moe/post/132318522935">euler</a>
-					<a href="http://b.trew.moe/post/132342423410">normal convo</a>
-					<a href="http://b.trew.moe/post/132317950720">death</a>
-					<a href="http://b.trew.moe/post/132349481325">cake</a>
-					<a href="http://b.trew.moe/post/132379802780">cyclical</a>
-					<a href="http://b.trew.moe/post/132380856890">drowning</a>
-					<a href="http://b.trew.moe/post/132382024870">fuck fuck fuck...</a>
-					<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132447599050">02a</a> unwanted dependency<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132452361500">02b</a> counseling<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132648618420">05</a>: sustainable emotions<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151106studentvoice.pdf">06a</a> student voice vol 102 iss 08<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132654809825">06b</a> effort<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132801727535">08a</a> two factor authentication<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132802338145">08b</a> plans i then neglected<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132844476645">08c</a> complete loss of motivation<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132858315665">09a</a> batteries dying<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/132884828710">09b</a> actually just happier when i dont talk to ppl at all tbh<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133052843225">12</a>: superconductor races<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151113studentvoice.pdf">13a</a> student voice vol 102 iss 09<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133167265365">13b</a> lukewarm optimism<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133230057690">14a</a> people<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133242549735">14b</a> i finally got to see her again<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133242734785">14c</a> rebasing emotion<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133249888625">15a</a> i dont feel anything right now<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133282723740">15b</a> clothes budget<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133323041290">16a</a> coffee<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133326189115">16b</a> ideal date<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133327232955">16c</a> she asked what made me so depressed<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133352604900">16d</a> stupid fucking book things<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133423129320">17a</a> coming of age novels<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133423345070">17b</a> merely dreaming happiness<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133507380390">18a</a> ppl follow trends<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/viewpoints/15181">18b</a> "einstein's theory of general relativity explains occurences in the universe"<a href="#3"><sup>3</sup></a><br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133507895580">18c</a> ^ the title of that was going to be a pun<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133514743580">19a</a> asking if she hates me<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133514831450">19b</a> stone arch cinema<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133533465935">19c</a> fucking phone calls<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133550153710">19d</a> my antonia analysis<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151120studentvoice.pdf">20a</a> student voice vol 102 iss 10<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133621070835">20b</a> loving her just feels better<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133623978725">20c</a> anti-anti-millenial<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133647419030">21a</a> disappointingly unhappy<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133700812700">21b</a> i just want to love her<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/668612695894204416">22</a>: my brother flapping his arms<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133825089570">23</a>: living observationally<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133918863245">25a</a> despair<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133919081625">25b</a> schedule cycle<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133980032440">26a</a> we used to talk more<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133980105445">26b</a> being insecure<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/133980184615">26c</a> more like obsession, actually<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134112515370">28</a>: misc. motivation<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134187219460">29</a>: physical attraction<br>
-			</div>
-			<div id="2015.12">
-				<t></t>&nbsp;<a href="#2015.12">12</a>.<a href="http://uwrfvoice.com/etcetera/15411">02</a>: "a students guide to pencils"<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134500702980">03</a>: 17 credits<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151204studentvoice.pdf">04</a>: student voice vol 102 iss 11<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134526033190">04a</a> checking my phone<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134556705305">04b</a> autopilot<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134639680695">06a</a> new camera test w ornaments<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134641211940">06b</a> need to start working on things again<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134690999495">06c</a> blogs n journals idea<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134748679445">07</a>: more camera tests:
-					<a href="http://b.trew.moe/post/134748679445">cats</a>
-					<a href="http://b.trew.moe/post/134748908805">more cats</a>
-					<a href="http://b.trew.moe/post/134749118135">notes</a>
-					<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134779300970">08a</a> variable names<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134783091915">08b</a> the basic idea of margins<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134943563700">10a</a> i wanted to hug her<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/134943914290">10b</a> i couldnt get over her n i added her on facebook again<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/151211studentvoice.pdf">11a</a> student voice vol 102 iss 12<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=SsS4VTLDNBY">11b</a> air traffic noise pollution presentation<br>
-				<t></t><t></t><a href="http://uwrf.acm.org/">12</a>: elected secretary of uwrf acm<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135166365335">13a</a> terribly out of focus mirror picture<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135168510065">13b</a> you can see my monitors reflecting in my eyes<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135168660575">13c</a> all the books i had on my shelf,,, it was actually a really heavy duty shelf<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135192721356">14</a>: some scribbles and a pen<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135259364589">15</a>: more pictures of my notes w better lighting<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135307210445">16a</a> just a distraction<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135324711395">16b</a> tiny bowling game<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135331564590">16c</a> the hope of waking up<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135365718995">16d</a> if i weren't me would i talk to me?<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135410516815">17</a>: me being edgy bc im on edge<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135478904465">18</a>: still not organized enough<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/135696086590">22</a>: i suck at school<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136032885545">27a</a> its all lies<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136032986285">27b</a> christmas cookie pics<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136175229330">29</a>: buttered bread n swedish fish<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136319369870">31a</a> logistics ramblings<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136367281175">31b</a> morning<br>
-			</div>
-		</div>
-		<div id="2016">
-			<div id="2016.01">
-				<a href="#2016">2016</a>.<a href="#2016.01">01</a>.<a href="http://b.trew.moe/post/136383822272">01a</a> cc is dumb cat<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136407769390">01b</a> out of focus cat<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136441619160">02a</a> a very color coordinated fridge<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136456404108">02b</a> cc in the window sill
-					<a href="http://b.trew.moe/post/136456404108">1</a>
-					<a href="http://b.trew.moe/post/136480880342">2</a>
-					<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136529721194">03a</a> shoes<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136555340298">03b</a> some nice lighting<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/136604825170">04</a>: cat pics:
-					<a href="http://b.trew.moe/post/136604825170">quiggly</a>
-					<a href="http://b.trew.moe/post/136628191742">soft face</a>
-					<a href="http://b.trew.moe/post/136675339298">at bottom left</a>
-					<a href="http://b.trew.moe/post/136697876955">at camera</a>
-					<a href="http://b.trew.moe/post/136743554083">top shelf</a>
-					<a href="http://b.trew.moe/post/136765848402">flat</a>
-					<a href="http://b.trew.moe/post/136810554916">collection of cc looking at the camera</a>
-					<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/137018476915">10</a>: powdered trees<br>
-				<t></t><t></t><a href="https://www.flickr.com/photos/trewbot/sets/72157666826027862">22</a>: river falls winter pics<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/137862408745">23</a>: rationalizing everything<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/137935140335">24</a>: wanting things<br>
-			</div>
-			<div id="2016.02">
-				<t></t>&nbsp;<a href="#2016.02">02</a>.<a href="http://uwrfvoice.com/etcetera/15704">05a</a> "the feasability of spontaneously morphing into an octopus"<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160205studentvoice.pdf">05b</a> student voice vol 102 iss 13<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160212studentvoice.pdf">12</a>: student voice vol 102 iss 14 w logo i designed<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/139585923315">18</a>: waiting for a burger<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160219studentvoice.pdf">19</a>: student voice vol 102 iss 15<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/701682718485053440">22</a>: blurry selfie<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/702335635269427200">23</a>: acm ad slides<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/139907381563">24a</a> disc pic<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/139927944326">24b</a> tickets<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/CS235">25a</a> repository for object oriented programming<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/139967164392">25b</a> student voice header design<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160226studentvoice.pdf">26</a>: student voice vol 102 iss 16<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775805475">29a</a> word fill cat<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/140245348265">29b</a> all hail ternary operators<br>
-			</div>
-			<div id="2016.03">
-				<t></t>&nbsp;<a href="#2016.03">03</a>.<a href="http://uwrfvoice.com/pdf/160304studentvoice.pdf">04a</a> student voice vol 102 iss 17<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/TSIP">04b</a> translucent square image painter<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=hitpFpkAy3Q">04c</a> ... demo<br>
-				<t></t><t></t><a href="http://i.imgur.com/Wzs85SU.png">07</a>: campus infrared statistics<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775824420">09</a>: ghost cat<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160311studentvoice.pdf">11</a>: student voice vol 102 iss 18<br>
-				<t></t><t></t><a href="https://www.flickr.com/photos/trewbot/sets/72157664671744804">13</a>: river falls pics<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/709244746368036864">14a</a> drag system.gif<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/141027222284">14b</a> picture of myself in the mirror<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160325studentvoice.pdf">25</a>: student voice vol 102 iss 19<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775541055">27a</a> the time-dependent schrodinger equation on rose quartz (pantone color of the year, 2016)<br>
-				<t></t><t></t><a href="https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot">27b</a> pop tarts (god)<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775864300">28</a>: posterized water tower<br>
-			</div>
-			<div id="2016.04">
-				<t></t>&nbsp;<a href="#2016.04">04</a>.<a href="http://uwrfvoice.com/pdf/160401studentvoice.pdf">01</a>: student voice vol 102 iss 20<br>
-				<t></t><t></t><a href="http://trew.moe/js/phys/poisson">02</a>: mpe ii assignment 6<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/716826069228191745">03</a>: news printing.gif<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160408studentvoice.pdf">08</a>: student voice vol 102 iss 21<br>
-				<t></t><t></t><a href="https://www.flickr.com/photos/trewbot/albums/72157666926540776">09</a>: rocket test launch<br>
-				<t></t><t></t><a href="https://uwrf.orgsync.com/files/download/994227">12</a>: appointed to elections committee<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160415studentvoice.pdf">15a</a> student voice vol 102 iss 22<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/142847922385">15b</a> the hassles of enrolling for classes<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/143145860615">20</a>: measure at time zero<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160422studentvoice.pdf">22</a>: student voice vol 102 iss 23<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/143514149270">27</a>: trying to overcome melancholy w some made up motivation<br>
-				<t></t><t></t><a href="http://www.academia.edu/23586068/Calculating_Heat_Efficiency_on_Campus_Using_Infrared_Imaging">28</a>: calculating heat efficiency on campus using infrared imaging<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160429studentvoice.pdf">29</a>: student voice vol 102 iss 24<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/143666333395">30</a>: calling ppl by name<br>
-			</div>
-			<div id="2016.05">
-				<t></t>&nbsp;<a href="#2016.05">05</a>.<a href="https://twitter.com/Trewbot/status/730793162164293632">05</a>: infrared selfie<br>
-				<t></t><t></t><a href="http://uwrfvoice.com/pdf/160506studentvoice.pdf">06</a>: student voice vol 102 iss 25<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/158775890905">07</a>: posterized cat<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/730384141141708805">11</a>: when i ended up being 30m late to a final (n still passed)<br>
-			</div>
-			<div id="2016.07">
-				<t></t>&nbsp;<a href="#2016.07">07</a>.<a href="https://www.instagram.com/trewbot/">18</a>: <a href="https://instagram.com">instagram</a> account<br>
-			</div>
-			<div id="2016.08">
-				<t></t>&nbsp;<a href="#2016.08">08</a>.<a href="https://twitter.com/Trewbot/status/767467780937486336">07</a>: somebody left a review of me at work<br>
-				<t></t><t></t><a href="https://archived.moe/b/thread/700331677">20</a>: civilization thread #6.1<br>
-				<t></t><t></t><a href="https://archived.moe/b/thread/701784688">30</a>: civilization thread #7.1 (<a href="https://archived.moe/b/thread/701793900">#7.2</a>)<br>
-			</div>
-			<div id="2016.09">
-				<t></t>&nbsp;<a href="#2016.09">09</a>.<a href="http://b.trew.moe/post/150154719540">09</a>: rant abt condescending customers<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=Nv9eDLYYndA">12</a>: video abt me that doesnt tell u anything abt me<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/776982345266044928">16</a>: here come de broglie<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=kgT2N6JDOdk">15</a>: trebuchet<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/778382238241153024">20a</a> acm window painting<br>
-				<t></t><t></t><a href="https://archived.moe/b/thread/704790633/">20b</a> civilization thread #8.1<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=z5F_Dop3i90">21a</a> pressure explosion<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=Ok0x_oQQVXE">21b</a> bottle flipping video<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=RIUByAGRi4Q">22a</a> dmm spring vibrating<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/779048022525083648">22b</a> my electronics lab partner blew up a resistor<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/150924491390">25</a>: what if we did choose this life?<br>
-				<t></t><t></t><a href="https://www.nationstates.net/nation=hbar">28</a>: hbar on nationstates<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/781623937192996864">29</a>: when i found out i was completely surrounded by idiots<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=DC9fzm60JIM">30</a>: transistor gain lab<a href="#4"><sup>4</sup></a><br>
-			</div>
-			<div id="2016.10">
-				<t></t>&nbsp;<a href="#2016.10">10</a>.<a href="https://twitter.com/Trewbot/status/782441417067024384">02</a>: the important alligator picture<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=wRmKDBhc8Xg">06</a>: arduino keyboard<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=u_fUir8YsY8">14</a>: 3m science stuff feat. an eagle<a href="#5"><sup>5</sup></a><br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=EYIr89_BXqg">26</a>: uwrf acm promo [draft 1]<br>
-			</div>
-			<div id="2016.11">
-				<t></t>&nbsp;<a href="#2016.11">11</a>.<a href="http://www.sigmapisigma.org/sigmapisigma/congress/2016">02</a>: went to ca<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=zW3a33f_MY8">05</a>: uwrf acm promo [draft 2]<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=S3-9qgIFDA0">06</a>: the san fran vlog<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=Elo6dmMCtNQ">10</a>: passive filters lab<a href="#6"><sup>6</sup></a><br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=Sb1BGQFAKqc">15</a>: dribbling some eggs<br>
-				<t></t><t></t><a href="https://www.nationstates.net/region=the_communist_bloc">24</a>: joined the communist bloc on nationstates<br>
-				<t></t><t></t><a href="https://bloc.red/index.php?members/trewbot.957/">25</a>: <a href="http://bloc.red">the communist bloc</a> account<br>
-			</div>
-			<div id="2016.12">
-				<t></t>&nbsp;<a href="#2016.12">12</a>.<a href="http://md.phene.co/hbar/flags/002.png">10</a>: updated hbar flag<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/810596577240879104">18</a>: dream car<a href="#7"><sup>7</sup></a><br>
-				<t></t><t></t><a href="http://md.phene.co">20</a>: markdown preprocessing server<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/814764864853966848">30</a>: geometrical art<br>
-			</div>
-		</div>
-		<div id="2017">
-			<div id="2017.01">
-				<a href="#2017">2017</a>.<a href="#2017.01">01</a>.<a href="https://www.youtube.com/playlist?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C">03</a>: et2 solo<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=2rJMo222Zp8">05</a>: typing 100 words<br>
-				<t></t><t></t><a href="http://uwrf.edu">06a</a> suspended from uwrf<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/817430288431247360">06b</a> selfie w new sweater<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=NXsVQIf3xsw">11</a>: sweater vlog<br>
-				<t></t><t></t><a href="https://omny.fm/shows/now-we-re-talking/special-episode-e-t-2-part-1">13</a>: et2 pt1<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/822657145527275521">20</a>: that time i was stuck in a walmart for five hours<br>
-				<t></t><t></t><a href="https://omny.fm/shows/now-we-re-talking/special-episode-e-t-2-part-2">23</a>: et2 pt2<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/823764769647820800">24</a>: deleting facebook<br>
-				<t></t><t></t><a href="https://github.com/Trewbot/_g.modal/commit/3ff135b3d6dd484384226b571e04b04f3f7ed368">27</a>: renamed _g.popup to _g.modal<br>
-				<t></t><t></t><a href="https://gist.github.com/Trewbot/4860ff7e70d164afb1b9f09155d97276">28</a>: graphene <a href="https://notepad-plus-plus.org/">notepad++</a> themes<br>
-				<t></t><t></t><a href="http://b.trew.moe/post/156526379100">29a</a> consistent texting<br>
-				<t></t><t></t><a href="https://pinboard.in/u:trewbot">29b</a> <a href="https://pinboard.in">pinboard</a> account<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/825916941286113281">29c</a> fetish videos<br>
-			</div>
-			<div id="2017.02">
-				<t></t>&nbsp;<a href="#2017.02">02</a>.<a href="https://omny.fm/shows/now-we-re-talking/special-episode-e-t-2-part-3">03</a>: et2 pt3<br>
-				<t></t><t></t><a href="https://www.docdroid.net/tm2dnu4">05</a>: scene 7 of opposite jurassic park<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/828617354011635713">06a</a> making cereal<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/828620814891249665">06b</a> cat cant act apparently<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/829063377976717312">07a</a> bowl of goldfish<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/829103497505361921">07a</a> goldfish => santa transformation steps<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=tCqW4TEZ0Kk">08</a>: playing "the scariest game ever"<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/829894487354834945">09</a>: unflattering cat selfie<br>
-				<t></t><t></t><a href="https://drive.google.com/drive/folders/0B1bCQKuzgQZ-MTlEUkJfdkxDRVE">09</a>: notes archive on <a href="https://drive.google.com">google drive</a><br>
-				<t></t><t></t><a href="http://md.phene.co/hbar/flags/003.png">12</a>: updated hbar flag<br>
-				<t></t><t></t><a href="http://trew.moe/js/phys/gravity">19</a>: gravity playground<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/hug me.txt">22a</a> hug me.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/how are you.txt">22b</a> how are you.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/stabbing.txt">22c</a> stabbing.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/concern.txt">22d</a> concern.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/sleep.txt">22e</a> sleep.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/alignment.txt">22f</a> alignment.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/pity.txt">22f</a> pity.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/breathe.txt">22g</a> breathe.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/tired.txt">22h</a> tired.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/neighbors.txt">22i</a> neighbors.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/i swear im sorry.txt">23a</a> i swear im sorry.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/manipulation.txt">23b</a> manipulation.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/screen.txt">23c</a> screen.txt<br>
-			</div>
-			<div id="2017.03">
-				<t></t>&nbsp;<a href="#2017.03">03</a>.<a href="http://md.phene.co/notes/ramblings/i just.txt">02</a>: i just.txt<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/837769264786464770">03</a>: the opinion box<br>
-				<t></t><t></t><a href="https://www.docdroid.net/tm2dnu4">05</a>: scene 9 of muppets yakuza<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/hey.txt">06</a>: hey.txt<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/nostalgia.txt">07</a>: nostalgia.txt<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/841866031702368256">15</a>: video moshing test<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/842268966689116160">16a</a> me installing electron<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=4dhgAfdURJg">16b</a> readable code tutorial<br>
-				<t></t><t></t><a href="https://www.youtube.com/watch?v=8_FlhvUiGCY">16c</a> lots of money [vaporwave]<br>
-				<t></t><t></t><a href="http://trew.moe/js/3/snow">16d</a> let it snow.js<br>
-				<t></t><t></t><a href="https://twitter.com/Trewbot/status/842623343136329729">17</a>: stem majors.mov<br>
-				<t></t><t></t><a href="http://md.phene.co/notes/ramblings/sex robot.txt">18a</a> sex robot.txt<br>
-				<t></t><t></t><a href="http://trew.moe/js/3/waves">18b</a> revolution.js<br>
-				<t></t><t></t><a href="http://trew.moe">19</a>: moved personal site to trew.moe using <a href="https://github.io">github pages</a><br>
-				<t></t><t></t><a href="#">23</a>: log of my contributions to the world wide web&trade;<br>
-			</div>
-			<br>
-			notes:<br>
-			<div id="1"><sup>1</sup>im not proud of a lot of this, but i included it anyway bc u live n grow, yknow?</div>
-			<div id="2"><sup>2</sup>that feeling when ur on a team w the girl u have a crush on n the guy she has a crush on</div>
-			<div id="3"><sup>3</sup>except for the fact that the editor changed an independent clause to a sentence, the first letter of each sentence spells "fuck the english department"</div>
-			<div id="4"><sup>4</sup>in which i use the word 'amperage' repeatedly even tho my prof hated that word</div>
-			<div id="5"><sup>5</sup>the degrees of freedom joke is extremely good content&trade;</div>
-			<div id="6"><sup>6</sup>it says (original speed) bc there's another version where some parts are sped up to fit w/in the time limit for submission</div>
-			<div id="7"><sup>7</sup>this is a repost of a meme i made on snapchat, i dont know the actual date, but i made it while working at walgreens which i quit working at about halfway thru <a href="#2016.10">2016.10</a></div>
-			<div id="X"><sup>X</sup>some accounts or projects are difficult to pin down start dates for, i can barely guarantee the months on these</div>
-			<br>
-			if you find anything i missed pls email me at <a href="mailto:trewbot@phene.co">trewbot at phene.co</a><br>
-		</div>
+		<div id="list"></div>
+		<script>
+			document.getElementById('list').innerHTML = render(links);
+		</script>
 	</body>
 </html>
