@@ -2763,7 +2763,7 @@
 							+'<br>';
 					};
 				for(var i in links){
-					out	   += '<div id="'+i+'" style="height:1.2em;overflow:hidden;">';
+					out	   += '<div id="'+i+'">';
 					var i0	= 0;
 					for(var j in links[i]){
 						var j0	= 0,
@@ -2773,7 +2773,7 @@
 							var tab	= '',
 								k1	= ""+((""+k).length==1?"0":"")+k;
 							tab	   += i0==0&&j0==0
-										?'[<a href="#" onclick="expand(this)">+</a>] '
+										?'[<a href="#" onclick="collapse(this)">+</a>] '
 											+'<a href="#'+i+'">'+i+'</a>.'
 										:'<t></t><t></t>';
 							tab	   += j0==0
