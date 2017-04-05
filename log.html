@@ -2755,7 +2755,7 @@
 							+'</a>'
 							+(k=='XX'?'<a href="#X"><sup>?</sup></a>':k.length==2?':':'')
 							+' '+o.title
-							+(o.note!=[][[]]?'<a href="#'+notes.length+'"><sup>'+notes.length+'</sup></a>':'')
+							+(o.note!=[][[]]?'<a href="#'+notes.length+'"><sup title="'+o.note+'">'+notes.length+'</sup></a>':'')
 							+(Array.isArray(o.link)?' '+listlinks(o.link):'')
 							+(o.media!=[][[]]?' <a href="#'+h+'" onclick=\'embed(this,'
 								+JSON.stringify(o.media)
@@ -2763,7 +2763,7 @@
 							+'<br>';
 					};
 				for(var i in links){
-					out	   += '<div id="'+i+'">';
+					out	   += '<div id="'+i+'" style="height:1.2em;overflow:hidden;">';
 					var i0	= 0;
 					for(var j in links[i]){
 						var j0	= 0,
@@ -2773,7 +2773,7 @@
 							var tab	= '',
 								k1	= ""+((""+k).length==1?"0":"")+k;
 							tab	   += i0==0&&j0==0
-										?'[<a href="#" onclick="collapse(this)">-</a>] '
+										?'[<a href="#" onclick="expand(this)">+</a>] '
 											+'<a href="#'+i+'">'+i+'</a>.'
 										:'<t></t><t></t>';
 							tab	   += j0==0
@@ -2816,6 +2816,10 @@
 			document.getElementById('list').innerHTML = render(links);
 		</script>
 		<p>
+			<a href="http://trew.moe">
+				<img src="./assets/button.png"
+					alt="trewbot" />
+			</a>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">
 				<img src="./assets/css.png"
 					alt="Valid CSS!" />
@@ -2824,6 +2828,8 @@
 				<img src="./assets/html5.png"
 					alt="Valid HTML 5!" />
 			</a>
+			<img src="./assets/js.png"
+				alt="Generated with ECMAScript2015" />
 		</p>
 	</body>
 </html>
