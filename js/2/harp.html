@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--
+  --	harp.js
+  --	written by trevor j hoglund (trewbot)
+  --	2017.05.06
+  --
+  --	inspired by:
+  --		- https://dschool.stanford.edu/
+  --		- https://www.awwwards.com/sites/stanford-d-school
+  --		- https://tympanus.net/codrops/2016/12/06/interactive-musical-instruments/
+  --		- https://tympanus.net/Development/MusicalInteractions/
+  --		- http://jonobr1.com/Physics/examples/strings.html
+  --
+  --	sources based on:
+  --		- https://dschool.stanford.edu/scripts/index.js
+  --		- https://github.com/codrops/MusicalInteractions/
+  --		- http://victorjs.org/
+  --
+  --	libraries used:
+  --		- https://github.com/adsr/traer-js
+  -->
+<html>
+	<head>
+		<title>harp.js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1">
+		<style>
+			html,body{margin:0;padding:0;overflow:hidden;}
+			#harp{position:absolute;top:0;left:0;width:100%;height:100%;}
+			.me{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
+		</style>
+	</head>
+	<body>
+		<canvas id="harp"></canvas>
+		<script src="assets/traer.js"></script>
+		<script>
+			
+			/*
+			 *	Line class
+			 *	based on _handlers from https://dschool.stanford.edu/scripts/index.js
+			 *	replaced Victor.js class w default Vector class calls
+			 */
+			 
+			function Line(p1,p1c,p2,p2c){
+				this.p1		= p1	|| new Vector();
+				this.p1c	= p1c	|| new Vector();
+				this.p2		= p2	|| new Vector();
+				this.p2c	= p2c	|| new Vector();
+				this.interpolate = function(l1,l2,factor){
+					(this.p1 = l1.p1).mix(l2.p1,factor);
+					(this.p1c = l1.p1c).mix(l2.p1c,factor);
+					(this.p2 = l1.p2).mix(l2.p2,factor);
+					(this.p2c = l1.p2c).mix(l2.p2c,factor);
+				}
+				this.multiply = function(scale){
+					this.p1.multiply(scale);
+					this.p1c.multiply(scale);
+					this.p2.multiply(scale);
+					this.p2c.multiply(scale);
+					return this;
+				}
+			}
+			
+			/*
+			 *	Extensions to Vector class
+			 *	based on Victor.js
+			 *	at some point it almost makes more sense to just use Victor.js
+			 */
+			
+			var degrees = 180 / Math.PI;
+			function random(min,max){
+				return ~~(Math.random()*(max-min+1)+min);
+			}
+			function radian2degrees(rad){
+				return rad*degrees;
+			}
+			function degrees2radian(deg){
+				return deg/degrees;
+			}
+			Vector.prototype.mixX = function(v,a=0.5) {
+				this.x = (1-a)*this.x+a*v.x;
+				return this;
+			};
+			Vector.prototype.mixY = function(v,a=0.5) {
+				this.y = (1-a)*this.y+a*v.y;
+				return this;
+			};
+			Vector.prototype.mix = function(v,a=0.5) {
+				return this.mixX(v,a).mixY(v,a);
+			};
+			Vector.prototype.multiply = function(v){
+				this.x *= v.x;
+				this.y *= v.y;
+				return this;
+			};
+			Vector.prototype.horizontalAngle = function(){
+				return Math.atan2(this.y, this.x);
+			};
+			Vector.prototype.horizontalAngleDeg = function(){
+				return radian2degrees(this.horizontalAngle());
+			};
+			Vector.prototype.verticalAngle = function(){
+				return Math.atan2(this.x, this.y);
+			};
+			Vector.prototype.verticalAngleDeg = function(){
+				return radian2degrees(this.verticalAngle());
+			};
+			Vector.prototype.angle = Vector.prototype.horizontalAngle;
+			Vector.prototype.angleDeg = Vector.prototype.horizontalAngleDeg;
+			Vector.prototype.direction = Vector.prototype.horizontalAngle;
+			Vector.prototype.rotate = function(angle){
+				var nx = (this.x*Math.cos(angle))-(this.y*Math.sin(angle));
+				var ny = (this.x*Math.sin(angle))+(this.y*Math.cos(angle));
+				this.x = nx;
+				this.y = ny;
+				return this;
+			};
+			Vector.prototype.rotateDeg = function(angle){
+				angle = degrees2radian(angle);
+				return this.rotate(angle);
+			};
+			Vector.prototype.rotateTo = function(rotation){
+				return this.rotate(rotation-this.angle());
+			};
+			Vector.prototype.rotateToDeg = function(rotation){
+				rotation = degrees2radian(rotation);
+				return this.rotateTo(rotation);
+			};
+			Vector.prototype.rotateBy = function(rotation){
+				var angle = this.angle()+rotation;
+				return this.rotate(angle);
+			};
+			Vector.prototype.rotateByDeg = function(rotation){
+				rotation = degrees2radian(rotation);
+				return this.rotateBy(rotation);
+			};
+			
+			/*
+			 *	Pattern class
+			 *	based on designPattern from https://dschool.stanford.edu/scripts/index.js
+			 *	rewritten with more ecmascript2015 functions
+			 *	plan to replace eventually, probably, its convoluted af
+			 */
+			 
+			function Pattern(_ref){
+				var size	= new Vector(1440,720,0),
+					//	Theres probably a destructuring assignment for this
+					a1		= _ref.a1,
+					a1c		= _ref.a1c,
+					a2		= _ref.a2,
+					a2c		= _ref.a2c,
+					b1		= _ref.b1,
+					b1c		= _ref.b1c,
+					b2		= _ref.b2,
+					b2c		= _ref.b2c,
+					l1		= new Line(),
+					l2		= new Line(),
+					scale	= new Vector();
+				return function(_ref2){
+					var width	= _ref2.width,
+						height	= _ref2.height;
+					scale.x		= width/size.x;
+					scale.y		= Math.min(height/size.y,width/size.y,1);
+					//	This is all thrown together shit
+					l1.p1.set(a1);
+					lines.set(l1.p1c,a1c[0]).rotateDeg(-a1c[1]).add(l1.p1);
+					l1.p2.set(a2);
+					lines.set(l1.p2c,a2c[0]).rotateDeg(-a2c[1]).add(l1.p2);
+					l2.p1.set(b1);
+					lines.set(l2.p1c,b1c[0]).rotateDeg(-b1c[1]).add(l2.p1);
+					l2.p2.set(b2);
+					lines.set(l2.p2c,b2c[0]).rotateDeg(-b2c[1]).add(l2.p2);
+					return {
+						l1: l1.multiply(scale),
+						l2: l2.multiply(scale)
+					};
+				}
+			}
+			const patterns = [
+				Pattern({
+					a1:		new Vector(0, 570,0),
+					a1c:	[643, 134],
+					a2:		new Vector(1457, 588,0),
+					a2c:	[1607, 157],
+					b1:		new Vector(-50, 600,0),
+					b1c:	[1290, -36],
+					b2:		new Vector(1457, 54,0),
+					b2c:	[377, -123]
+				}),
+				Pattern({
+					a1:		new Vector(0,54,0),
+					a1c:	[241, 43],
+					a2:		new Vector(1440,432,0),
+					a2c:	[1290, -144],
+					b1:		new Vector(0,445,0),
+					b1c:	[1600, 23.5],
+					b2:		new Vector(1440,670,0),
+					b2c:	[950, 174]
+				}),
+				Pattern({
+					a1:		new Vector(0,54,0),
+					a1c:	[241, 43],
+					a2:		new Vector(1440,108,0),
+					a2c:	[1290, -135],
+					b1:		new Vector(0,647,0),
+					b1c:	[940, 37],
+					b2:		new Vector(1440,659,0),
+					b2c:	[651, 94]
+				})
+				//	...will add more patterns later
+			];
+			
+			/*
+			 *	Main class
+			 *	based on HeroLines from https://dschool.stanford.edu/scripts/index.js
+			 */
+			 
+			const
+				LINE_COUNT	= 50,
+				PIVOT_COUNT	= 40,
+				parts		= new ParticleSystem();
+			var	lines	= {
+				attractions : [],
+				bezier(points,t){
+					[x1,y1,x2,y2,x3,y3,x4,y4] = points;
+					var d=(a,b,t1=t)=>{return (b-a)*t1+a},
+						x23	= d(x2,x3),
+						y23	= d(y2,y3),
+						x	= d(d(d(x1,x2),x23),d(x23,d(x3,x4))),
+						y	= d(d(d(y1,y2),y23),d(y23,d(y3,y4)));
+					return {x,y};
+				},
+				big		: parts.makeParticle(0.1,0,0,0),
+				canvas	: document.getElementById('harp'),
+				ctx		: document.getElementById('harp').getContext('2d'),
+				draw(){
+					var canvas		= lines.canvas,
+						context 	= lines.ctx,
+						pixelRatio	= window.devicePixelRatio;
+					canvas.height = window.innerHeight;
+					canvas.width = window.innerWidth;
+					context.clearRect(0, 0, canvas.width, canvas.height);
+					context.strokeStyle = '#B2E1D9';
+					for(var i=1;i<LINE_COUNT-1;i++){
+						var line = lines.pivots[i];
+						context.beginPath();
+						//context.moveTo(lines.lines[i].p1.x*pixelRatio,lines.lines[i].p1.y*pixelRatio);
+						context.moveTo(line[0].position.x*pixelRatio,line[0].position.y*pixelRatio);
+						for(var j=1,pivot;pivot=line[j];j++)
+							context.lineTo(pivot.position.x*pixelRatio,pivot.position.y*pixelRatio);
+						//context.lineTo(lines.lines[i].p2.x*pixelRatio,lines.lines[i].p2.y*pixelRatio);
+						context.stroke();
+					}
+				},
+				initiated : !1,
+				init(){
+					lines.big.makeFixed();
+					for(var i=0;i<LINE_COUNT;i++){
+						lines.lines.push(new Line());
+						lines.pivots[i] = [];
+						lines.pivotsFixed[i] = [];
+						lines.attractions[i] = [];
+						for(var j=0;j<PIVOT_COUNT;j++){
+							lines.pivots[i][j] = parts.makeParticle(0.4,0,0,0);
+							lines.pivotsFixed[i][j] = parts.makeParticle(0.4,0,0,0);
+							lines.pivotsFixed[i][j].makeFixed();
+							//lines.attractions[i][j] = new Attraction(lines.big, lines.pivots[i][j], 150000, 20.0);
+							//parts.addAttraction(lines.attractions[i][j]);
+							parts.makeAttraction(lines.big, lines.pivots[i][j], 150000, 20.0);
+							parts.makeSpring(this.pivots[i][j],this.pivotsFixed[i][j],0.2,0.3,5);
+							if(j>0) parts.makeSpring(lines.pivots[i][j-1],lines.pivots[i][j],0.5,0.1,5);
+						}
+					}
+					lines.tick();
+				},
+				lines 	: [],
+				//pattern	: patterns[~~(Math.random()*patterns.length)],
+				pattern	: patterns[1],
+				pivots	: [],
+				pivotsFixed:[],
+				set(v,x,y,z){
+					v.x = x || 0;
+					v.y = y || 0;
+					v.z = z || 0;
+					return v;
+				},
+				tick(){
+					lines.update(lines.pattern({
+						height	: window.innerHeight,
+						width	: window.innerWidth
+					}));
+					parts.tick();
+					lines.draw();
+					requestAnimationFrame(lines.tick);
+				},
+				update(_ref){
+					var l1 = _ref.l1,
+						l2 = _ref.l2;
+					for(var i=1;i<LINE_COUNT-1;i++)
+						lines.lines[i].interpolate(l1,l2,i/(LINE_COUNT-1));
+					for(var j=0;j<PIVOT_COUNT;j++){
+						var np0 = lines.bezier([l1.p1.x,l1.p1.y,l1.p1c.x,l1.p1c.y,l1.p2c.x,l1.p2c.y,l1.p2.x,l1.p2.y],j/PIVOT_COUNT),
+							npN = lines.bezier([l2.p1.x,l2.p1.y,l2.p1c.x,l2.p1c.y,l2.p2c.x,l2.p2c.y,l2.p2.x,l2.p2.y],j/PIVOT_COUNT);
+						lines.pivotsFixed[0][j].position.set(np0.x,np0.y,0);
+						lines.pivotsFixed[LINE_COUNT-1][j].position.set(npN.x,npN.y,0);
+						if(!lines.initiated){
+							lines.pivots[0][j].position.set(np0.x,np0.y,0);
+							lines.pivots[LINE_COUNT-1][j].position.set(npN.x,npN.y,0);
+						}
+						for(var _i=1;_i<LINE_COUNT-1;_i++){
+							var nX = (np0.x+(npN.x-np0.x))*_i/LINE_COUNT,
+								nY = (np0.y+(npN.y-np0.y))*_i/LINE_COUNT;
+							lines.pivotsFixed[_i][j].position.set(nX,nY,0);
+							if(!lines.initiated)
+								lines.pivots[_i][j].position.set(nX,nY,0);
+						}
+					}
+					lines.initiated = !0;
+				}
+			};
+			lines.init();
+			document.addEventListener('mousemove',(e)=>{
+				lines.big.position.set(e.pageX, e.pageY, 0);
+			})
+		</script>
+		<a href="http://trew.moe">
+			<img class="me" src="http://trew.moe/assets/button.png" alt="trewbot"/>
+		</a>
+	</body>
+</html>
