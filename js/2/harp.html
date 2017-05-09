@@ -284,6 +284,8 @@
 			const
 				LINE_COUNT	= 50,
 				PIVOT_COUNT	= 100,
+				PATH_LEN	= 10,
+				CACHE_LEN	= 10,
 				parts		= new ParticleSystem();
 			var	lines	= {
 				attractions : [],
@@ -305,7 +307,18 @@
 					canvas.height = window.innerHeight;
 					canvas.width = window.innerWidth;
 					context.clearRect(0, 0, canvas.width, canvas.height);
-					context.strokeStyle = lines.diag?'rgba(255,0,0,0.6)':'#B2E1D9';
+					if(lines.diag){
+						context.strokeStyle = 'rgba(0,0,0,0.8)';
+						for(var i=1;i<LINE_COUNT-1;i++){
+							var line = lines.pivotsFixed[i];
+							context.beginPath();
+							context.moveTo(line[0].position.x*pixelRatio,line[0].position.y*pixelRatio);
+							for(var j=1,pivot;pivot=line[j];j++)
+								context.lineTo(pivot.position.x*pixelRatio,pivot.position.y*pixelRatio);
+							context.stroke();
+						}
+					}
+					context.strokeStyle = '#B2E1D9';
 					for(var i=1;i<LINE_COUNT-1;i++){
 						var line = lines.pivots[i];
 						context.beginPath();
@@ -315,21 +328,35 @@
 						context.stroke();
 					}
 					if(lines.diag){
-						context.strokeStyle = '#333';
-						for(var i=1;i<LINE_COUNT-1;i++){
-							var line = lines.pivotsFixed[i];
+						if(lines.posCache.length){
+							context.strokeStyle = '#00f';
 							context.beginPath();
-							context.moveTo(line[0].position.x*pixelRatio,line[0].position.y*pixelRatio);
-							for(var j=1,pivot;pivot=line[j];j++)
-								context.lineTo(pivot.position.x*pixelRatio,pivot.position.y*pixelRatio);
+							context.moveTo(lines.posCache[0].x*pixelRatio,lines.posCache[0].y*pixelRatio);
+							for(var p of lines.posCache)
+								context.lineTo(p.x*pixelRatio,p.y*pixelRatio);
+							context.lineTo(lines.big.position.x*pixelRatio,lines.big.position.y*pixelRatio);
 							context.stroke();
 						}
-						context.strokeStyle = '#00f';
-						context.beginPath();
-						context.moveTo(lines.posCache.x*pixelRatio,lines.posCache.y*pixelRatio);
-						context.lineTo(lines.big.position.x*pixelRatio,lines.big.position.y*pixelRatio);
-						context.stroke();
-						lines.posCache.set(lines.lastPos);
+						if(lines.xsCache.length){
+							context.strokeStyle = '#0f0';
+							context.fillStyle	= '#f00';
+							for(var l of lines.xsCache){
+								context.beginPath();
+								context.moveTo(l.line[0].x*pixelRatio,l.line[0].y*pixelRatio);
+								context.lineTo(l.line[1].x*pixelRatio,l.line[1].y*pixelRatio);
+								context.stroke();
+							}
+							for(var l of lines.xsCache)
+								for(var p of l.points)
+									context.fillRect(p.x-1,p.y-1,pixelRatio,pixelRatio);
+						}
+						lines.posCache.push(new Vector(lines.lastPos));
+						while(lines.posCache.length>PATH_LEN){
+							lines.posCache.shift();
+						}
+						while(lines.xsCache.length>CACHE_LEN){
+							lines.xsCache.shift();
+						}
 					}
 				},
 				initiated : !1,
@@ -352,17 +379,21 @@
 					lines.tick();
 				},
 				intersects(a,b){
-					var ret = [];
+					var ret = [], xList = [];
 					for(var i=1;i<LINE_COUNT-1;i++){
 						var l	= lines.lines[i],
 							px	= [l.p0.x,l.p1.x,l.p2.x,l.p3.x],
 							py	= [l.p0.y,l.p1.y,l.p2.y,l.p3.y],
 							xs	= computeIntersections(px,py,[a.x,b.x],[a.y,b.y]);
 						for(let j of xs) if(j[0]>0&&j[1]>0){
-							ret.push(i);
-							//break;
+							if(!~ret.indexOf(i)) ret.push(i);
+							xList.push(new Vector(...j,0));
 						}
 					}
+					if(xList.length) lines.xsCache.push({
+						line	: [new Vector(a),new Vector(b)],
+						points	: xList
+					});
 					return ret;
 				},
 				lastPos	: new Vector(),
@@ -372,7 +403,7 @@
 				//pattern	: patterns[3],
 				pivots	: [],
 				pivotsFixed:[],
-				posCache: new Vector(),
+				posCache: [],
 				set(v,x,y,z){
 					v.x = x || 0;
 					v.y = y || 0;
@@ -409,7 +440,8 @@
 						}
 					}
 					lines.initiated = !0;
-				}
+				},
+				xsCache	: []
 			};
 			var instrument_name = "whistle";
 			MIDI.loadPlugin({
@@ -440,6 +472,10 @@
 				if(lines.initiated)movement(t.pageX,t.pageY);
 				//	this just handles the first touch it sees
 				//	id like to add multitouch support eventually
+			});
+			document.addEventListener('keypress',(e)=>{
+				if(e.key=='d') lines.diag = !lines.diag;
+				if(+e.key<patterns.length) lines.pattern = patterns[+e.key];
 			});
 		</script>
 		<a href="https://trew.moe">
