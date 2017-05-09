@@ -13,9 +13,9 @@
   --
   --	sources based on:
   --		- https://dschool.stanford.edu/scripts/index.js
-  --		- https://github.com/codrops/MusicalInteractions/
   --		- http://victorjs.org/
   --		- https://www.particleincell.com/2013/cubic-line-intersection/
+  --		- https://github.com/mudcube/MIDI.js/blob/master/examples/Basic.html
   --
   --	libraries used:
   --		- https://github.com/adsr/traer-js
@@ -30,15 +30,19 @@
 			html,body{margin:0;padding:0;overflow:hidden;}
 			#harp{position:absolute;top:0;left:0;width:100%;height:100%;}
 			.me{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
+			#loading{position:absolute;left:0;top:0;width:100%;height:100%;
+			text-align:center;line-height:100vh;font-size:12pt;
+			font-family:monospace;color:#444;}
 		</style>
 		<script src="assets/Base64.js" type="text/javascript"></script>
 		<script src="assets/Base64binary.js" type="text/javascript"></script>
 		<script src="assets/WebAudioAPI.js" type="text/javascript"></script>
 		<script src="assets/traer.js"></script>
 		<script src="assets/MIDI.min.js"></script>
-		<script src="assets/soundfont/sitar-mp3.js"></script>
+		<script src="assets/soundfont/whistle-mp3.js"></script>
 	</head>
 	<body>
+		<div id="loading">loading...</div>
 		<canvas id="harp"></canvas>
 		<script>
 			
@@ -298,16 +302,6 @@
 				},
 				initiated : !1,
 				init(){
-					var instrument_name = "sitar";
-					MIDI.loadPlugin({
-						soundfontUrl: "assets/soundfont/",
-						instrument: instrument_name ,
-						onsuccess: function() {
-							MIDI.programChange(0, MIDI.GM.byName[instrument_name].number);
-							MIDI.setVolume(0, 64);
-							lines.midiLoad = !0;
-						}
-					});
 					lines.big.makeFixed();
 					for(var i=0;i<LINE_COUNT;i++){
 						lines.lines.push(new Curve());
@@ -384,18 +378,34 @@
 					lines.initiated = !0;
 				}
 			};
-			lines.init();
-			document.addEventListener('mousemove',(e)=>{
-				var newPos = new Vector(e.pageX,e.pageY,0);
+			var instrument_name = "whistle";
+			MIDI.loadPlugin({
+				soundfontUrl: "assets/soundfont/",
+				instrument: instrument_name ,
+				onsuccess: function() {
+					MIDI.programChange(0, MIDI.GM.byName[instrument_name].number);
+					MIDI.setVolume(0, 20);
+					lines.midiLoad = !0;
+					document.getElementById('loading').style.display='none';
+					lines.init();
+				}
+			});
+			function movement(x,y){
+				var newPos = new Vector(x,y,0);
 				lines.big.position.set(newPos);
 				var iscts = lines.intersects(lines.lastPos,newPos);
-				console.log(iscts);
-				//	handle note playing here
 				if(lines.midiLoad)
 					for(var i of iscts)
-						MIDI.noteOn(0, 50+i, 127, 0);
+						MIDI.noteOn(0, 50+~~(i/2), 127, 0);
 				lines.lastPos.set(newPos);
-			})
+			};
+			document.addEventListener('mousemove',(e)=>{
+				movement(e.pageX,e.pageY);
+			});
+			document.addEventListener('touchmove',(e)=>{
+				var t = e.changedTouches[0]
+				movement(t.pageX,t.pageY);
+			});
 		</script>
 		<a href="http://trew.moe">
 			<img class="me" src="http://trew.moe/assets/button.png" alt="trewbot"/>
