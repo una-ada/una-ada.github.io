@@ -2,7 +2,7 @@
 <!--
   --	harp.js
   --	written by trevor j hoglund (trewbot)
-  --	2017.05.06
+  --	2017.05.09
   --
   --	inspired by:
   --		- https://dschool.stanford.edu/
@@ -168,14 +168,28 @@
 					c1		: new Curve(
 						new Vector(0,0,0),
 						new Vector(0,0,0),
-						new Vector(1,1,0),
-						new Vector(0,0,0)
+						new Vector(1,0,0),
+						new Vector(1,1,0)
 					),
 					c2		: new Curve(
 						new Vector(0,0,0),
-						new Vector(1,0,0),
+						new Vector(0,1,0),
 						new Vector(1,1,0),
 						new Vector(1,1,0)
+					)
+				}),
+				Pattern({
+					c1		: new Curve(
+						new Vector(0,0,0),
+						new Vector(0,0.5,0),
+						new Vector(1,0.5,0),
+						new Vector(1,1,0)
+					),
+					c2		: new Curve(
+						new Vector(0,1,0),
+						new Vector(0.5,1,0),
+						new Vector(0.5,0,0),
+						new Vector(1,0,0)
 					)
 				})
 				//	...will add more patterns later
@@ -283,6 +297,7 @@
 				big		: parts.makeParticle(0.1,0,0,0),
 				canvas	: document.getElementById('harp'),
 				ctx		: document.getElementById('harp').getContext('2d'),
+				diag	: location.hash=='#diag',
 				draw(){
 					var canvas		= lines.canvas,
 						context 	= lines.ctx,
@@ -290,7 +305,7 @@
 					canvas.height = window.innerHeight;
 					canvas.width = window.innerWidth;
 					context.clearRect(0, 0, canvas.width, canvas.height);
-					context.strokeStyle = '#B2E1D9';
+					context.strokeStyle = lines.diag?'rgba(255,0,0,0.6)':'#B2E1D9';
 					for(var i=1;i<LINE_COUNT-1;i++){
 						var line = lines.pivots[i];
 						context.beginPath();
@@ -298,6 +313,23 @@
 						for(var j=1,pivot;pivot=line[j];j++)
 							context.lineTo(pivot.position.x*pixelRatio,pivot.position.y*pixelRatio);
 						context.stroke();
+					}
+					if(lines.diag){
+						context.strokeStyle = '#333';
+						for(var i=1;i<LINE_COUNT-1;i++){
+							var line = lines.pivotsFixed[i];
+							context.beginPath();
+							context.moveTo(line[0].position.x*pixelRatio,line[0].position.y*pixelRatio);
+							for(var j=1,pivot;pivot=line[j];j++)
+								context.lineTo(pivot.position.x*pixelRatio,pivot.position.y*pixelRatio);
+							context.stroke();
+						}
+						context.strokeStyle = '#00f';
+						context.beginPath();
+						context.moveTo(lines.posCache.x*pixelRatio,lines.posCache.y*pixelRatio);
+						context.lineTo(lines.big.position.x*pixelRatio,lines.big.position.y*pixelRatio);
+						context.stroke();
+						lines.posCache.set(lines.lastPos);
 					}
 				},
 				initiated : !1,
@@ -328,7 +360,7 @@
 							xs	= computeIntersections(px,py,[a.x,b.x],[a.y,b.y]);
 						for(let j of xs) if(j[0]>0&&j[1]>0){
 							ret.push(i);
-							break;
+							//break;
 						}
 					}
 					return ret;
@@ -337,9 +369,10 @@
 				lines 	: [],
 				midiLoad: !1,
 				pattern	: patterns[~~(Math.random()*patterns.length)],
-				//pattern	: patterns[2],
+				//pattern	: patterns[3],
 				pivots	: [],
 				pivotsFixed:[],
+				posCache: new Vector(),
 				set(v,x,y,z){
 					v.x = x || 0;
 					v.y = y || 0;
@@ -400,15 +433,17 @@
 				lines.lastPos.set(newPos);
 			};
 			document.addEventListener('mousemove',(e)=>{
-				movement(e.pageX,e.pageY);
+				if(lines.initiated)movement(e.pageX,e.pageY);
 			});
 			document.addEventListener('touchmove',(e)=>{
 				var t = e.changedTouches[0]
-				movement(t.pageX,t.pageY);
+				if(lines.initiated)movement(t.pageX,t.pageY);
+				//	this just handles the first touch it sees
+				//	id like to add multitouch support eventually
 			});
 		</script>
-		<a href="http://trew.moe">
-			<img class="me" src="http://trew.moe/assets/button.png" alt="trewbot"/>
+		<a href="https://trew.moe">
+			<img class="me" src="https://trew.moe/assets/button.png" alt="trewbot"/>
 		</a>
 	</body>
 </html>
