@@ -1,7 +1,7 @@
 a			{text-decoration:underline;color:#444;}
 body		{font-family:monospace;}
 div:target	{background:#eee;}
-html		{background:url('../img/grad.png');color:#444;font-size:9pt;}
+html		{/*background:url('../img/grad.png');*/color:#444;font-size:9pt;}
 img,video	{max-width:calc(100% - 1rem);}
 sup			{vertical-align:top;position:relative;top:-0.3em;}
 
