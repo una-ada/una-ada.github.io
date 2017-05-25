@@ -5,11 +5,18 @@ blockquote p {margin:0.5rem 0;}
 div:target	{background:#eee;}
 html		{/*background:url('../img/grad.png');*/color:#444;font-size:9pt;}
 img,video	{max-width:calc(100% - 1rem);}
+sub			{vertical-align:bottom;position:relative;bottom:-0.3em;}
 sup			{vertical-align:top;position:relative;top:-0.3em;}
+table		{border-collapse:collapse;}
+thead		{font-weight:bold;}
+tr:nth-child(even){background:#f0f0f0;}
+
+hist		{color:limegreen;}
+kw			{color:blue;}
 
 .open,
 .closer,
 .opener		{display:inline;}
 .close		{display:none;}
 .embedee	{margin:0.5rem;}
-.me			{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
+.me			{bottom:1rem;position:fixed;right:1rem;z-index:1000;}
