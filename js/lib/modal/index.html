@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>modal</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<script	src="modal.js"></script>
+</head>
+<body>
+	<div class="content">
+		<b><a href="https://github.com/trewbot/_g.modal" id="scripts">modal</a></b><hr>
+		<p>
+			_g.modal is a javascript script built to render modals for user interfaces, this includes not only informational modals but also user input, lightboxes, <span>and tutorials</span>.
+			the script was originally designed for <a href="http://gra.phene.co">Graphene</a> and therefore uses the conventions for related _g scripts.
+		</p>
+		<br><br>
+		<br><br>
+		<div id="start">
+			<b><a href="#start">getting started</a></b><hr>
+			<p>
+				to begin using the modal script, one must first include the library in the html file.
+				<a target="_blank" href="modal.js">the source file can be downloaded here and put on a cdn</a>
+			</p>
+		</div>
+		<br><br>
+		<br><br>
+		<div id="info-modal">
+			<b><a href="#info-modal">informational modals</a></b><hr>
+			<p>
+				info modals are made using the <code>_g.modal.open()</code> function.
+				the only argument for this function is the options object.
+				here is a simple example:
+			</p>
+<pre><code class="language-javascript">_g.modal.open({
+	title	: "Pop!",
+	text	: "Goes the weasel!"
+});</code></pre>
+			<p>
+				<a onclick="_g.mo.open({title:'Pop!',text:'Goes the weasel!'});">click here to test</a>
+			</p>
+			<p>
+				here is a list of options for the info modal:
+			</p>
+			<table>
+				<thead>
+					<td>option:</td>
+					<td>value:</td>
+					<td>description:</td>
+				</thead>
+				<tr>
+					<td>width</td>
+					<td>string</td>
+					<td>the width of the modal, should include units (default: 500px)</td>
+				</tr>
+				<tr>
+					<td>title</td>
+					<td>string</td>
+					<td>the title which is displayed at the top of the modal, if not present then there is no title bar rendered</td>
+				</tr>
+				<tr>
+					<td>titleColor</td>
+					<td>string</td>
+					<td>the background color of the title bar (default: #f8f8f8)</td>
+				</tr>
+				<tr>
+					<td>titleTextColor</td>
+					<td>string</td>
+					<td>the text color of the title (default designed by page css)</td>
+				</tr>
+				<tr>
+					<td>text</td>
+					<td>string</td>
+					<td>the main text of the modal (required)</td>
+				</tr>
+				<tr>
+					<td>textCenter</td>
+					<td>boolean</td>
+					<td>centers the main text (default: false)</td>
+				</tr>
+				<tr>
+					<td>confirm</td>
+					<td>boolean</td>
+					<td>creates a 'yes' and 'no' button for confirmation, returns a promise that can be handled with <code>.then()</code>.</td>
+				</tr>
+			</table>
+			<p>
+				here is a quick example of using the confirm option.
+				here the <code>window.setTimeout()</code> is used to ensure the modals made after the user input are only opened once all events are ran to close the original prompt.
+			</p>
+<pre><code class="language-javascript">_g.modal.open({
+	title	: "Approval Required!",
+	text	: "Allow this action?",
+    confirm : true
+}).then(
+	()=>
+		window.setTimeout(()=>{
+			_g.mo.open({
+				text : 'Approved',
+				textCenter : true
+			})
+		},0),
+	()=>
+		window.setTimeout(()=>{
+			_g.mo.open({
+				text : 'Rejected',
+				textCenter : true
+			})
+		},0)
+);</code></pre>
+			<p>
+				<a onclick="_g.modal.open({title:'Approval Required!',text:'Allow this action?',confirm:true}).then(()=>window.setTimeout(()=>{_g.mo.open({text:'Approved',textCenter:true})},0),()=>window.setTimeout(()=>{_g.mo.open({text:'Rejected',textCenter:true})},0));">click here to test.</a>	
+			</p>
+		</div>
+		
+		<br><br>
+		<br><br>
+		
+		<div id="info-modal-events">
+			<b><a href="#info-modal-events">informational modal events</a></b>
+			<p>
+				an informational modal will fire the following events:
+			</p>
+			<table>
+				<thead>
+					<td>event:</td>
+					<td>fired when:</td>
+				</thead>
+				<tr>
+					<td>MODAL_OPEN</td>
+					<td>the modal is opened, after insertion into document</td>
+				</tr>
+				<tr>
+					<td>MODAL_CLOSE</td>
+					<td>the modal is closed, after removal from document</td>
+				</tr>
+			</table>
+			<p>
+				these events can be used to further integrate the modals into the user itnerface.
+				as an example, the body of the document can be blurred by adding a class with some styling and appending said class name to the content element.
+			</p>
+<pre><code class="language-css">.content				{transition:filter 0.3s;}
+.content.is-blurred		{filter:blur(3px);}</code></pre>
+			<script>
+				window.modalOpen = function(){
+					document.getElementsByClassName('content')[0].className = 'content is-blurred';
+				};
+				window.modalClose = function(){
+					document.getElementsByClassName('content is-blurred')[0].className = 'content';
+				}
+				window.effectOn = function(){
+					_g.mo.style.modal.shade.background = 'rgba(0,0,0,0.1)';
+					window.addEventListener('MODAL_OPEN',modalOpen);
+					window.addEventListener('MODAL_CLOSE',modalClose);
+				}
+				window.effectOff = function(){
+					_g.mo.style.modal.shade.background = 'rgba(0,0,0,0.6)';
+					window.removeEventListener('MODAL_OPEN',modalOpen);
+					window.removeEventListener('MODAL_CLOSE',modalClose);
+				}
+			</script>
+<pre><code class="language-javascript">_g.mo.style.modal.shade.background = 'rgba(0,0,0,0.1)';
+
+window.addEventListener('MODAL_OPEN',function(){
+	document
+		.getElementsByClassName('content')[0]
+		.className = 'content is-blurred';
+});
+
+window.addEventListener('MODAL_CLOSE',function(){
+	document
+		.getElementsByClassName('content is-blurred')[0]
+		.className = 'content';
+});</code></pre>
+			<p>
+				this can be seen by toggling this example <a href="javascript:effectOn();">ON</a> and <a href="javascript:effectOff();">OFF</a>.
+				<a onclick="_g.mo.open({title:'Test',text:'This modal is a test.'});">then opening a test modal by clicking here.</a>
+			</p>
+		</div>
+		
+		<br><br>
+		<br><br>
+		
+		<div id="lightboxes">
+			<b><a href="#lightboxes">lightboxes</a></b><hr>
+			<p>
+				similarly, lightboxes are called with the <code>_g.modal.lightbox()</code> function.
+				this function has four arguments like so:
+			</p>
+			<pre><code class="language-javascript">_g.modal.lightbox(type,source,layout,index);</code></pre>
+			<p>
+				the type is either <code>object</code> or <code>api</code>, anything other than these is treated as <code>object</code>.
+			</p>
+			<p>
+				source changes depending on your type.
+				for the object type the source will be an object containing the list of images.
+				for the api type it will be the url of a json object that will then be read to contain the list of images.
+			</p>
+			<p>
+				layout is what tells the script where to find your images.
+				for an object where the images are found at <code>pages[0], pages[1], pages[2]...</code> the layout would be <code>pages.*</code>.
+				the asterisk is the index of pages and can only be used once in the layout, it doesn't necessarily need to be at the end.
+			</p>
+			<p>
+				the last argument, index, is the starting index.
+				this tells the script which image in the list to open first.
+				as with any index, it begins at 0.
+			</p>
+			<p>
+				here is an example used on <a href="http://notes.phene.co/diffeq/1ed">notes.phene.co</a> to read the pages of notes:
+			</p>
+<pre><code class="language-javascript">_g.modal.lightbox(
+	'api',
+	'http://notes.phene.co/diffeq/1ed/read.php',
+	'pages.*',
+	0
+);</code></pre>
+			<p>
+				<a lightbox onclick="_g.mo.lightbox('api','http://notes.phene.co/diffeq/1ed/read.php','pages.*',0);">click here to test</a>
+			</p>
+		</div>
+		<br><br>
+		<br><br>
+		<div id="tutorials">
+			<b><a href="#tutorials">tutorials</a></b><hr>
+			<p>
+				the tutorial framework allows you to create an array of defined steps that the user should follow.
+				running the <code>_g.mo.tutorial()</code> command returns the tutorial as an object.
+				this command has two parameters: first is the array of steps, second is an optional object of parameters to be used when rendering modals.
+				here is an example tutorial command:
+			</p>
+<pre><code class="language-javascript">var tut = new _g.modal.tutorial(
+	[
+		{
+			type : "modal",
+			title : "Welcome!",
+			text : "This modal would contain a greeting.",
+			showExitButton : true
+		},
+		{
+			type : "modal",
+			title : "Welcome!",
+			text : "This would be the second info box."
+		}
+	],
+	{
+		titleColor : "#B2E1D9",
+		titleTextColor : "#FFFFFF"
+	}
+);</code></pre>
+			<p>
+				<a onclick='new _g.modal.tutorial([{type:"modal",title:"Welcome!",text:"This modal would contain a greeting.",showExitButton:true},{type:"modal",title:"Welcome!",text:"This would be the second info box."}],{titleColor:"#B2E1D9",titleTextColor:"#FFFFFF"});'>click here to test.</a>
+			</p>
+		</div>
+	</div>
+	<script	src="assets/prism.js"></script>
+</body>
+</html>
