@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>menu</title>
+	<link rel="stylesheet" href="assets/style.css">
+	<script	src="menu.js"></script>
+</head>
+<body>
+	<div class="content">
+		<b><a href="https://github.com/trewbot/_g.menu" id="scripts">menu</a></b><hr>
+		<p>
+			_g.menu was created to allow the developer to easily create customized context menus on elements.
+			to do this, the script must first override the default context menus set by the browser.
+			this may be convenient as it sets a standard design across all browsers.
+			however, this feature may not be for everyone and it is recommended that you look elsewhere if this behavior is not suitable for your situation.
+			the script was originally designed for <a href="http://gra.phene.co">Graphene</a> and therefore uses the conventions for related _g scripts.
+		</p>
+		<br><br>
+		<br><br>
+		<div id="start">
+			<b><a href="#start">getting started</a></b><hr>
+			<p>
+				to begin using the menu script, one must first include the library in the html file.
+				<a target="_blank" href="http://scripts.phene.co/menu/0.4.3.0046">the source file can be downloaded here and put on a cdn</a>
+				the inclusion of this script will immediately begin to override the browser&apos;s context menu without further implementation.
+			</p>
+		</div>
+		<br><br>
+		<br><br>
+		<div id="basics">
+			<b><a href="#basics">basic features of the default menu</a></b><hr>
+			<p>
+				the basic menu, when not targeting a particular element, includes navigation options: <code>Back</code>, <code>Reload</code>, <code>Forward</code>, and <code>Scroll to top</code>.
+				this last option only shows when the user has scrolled down the page beyond one screen height, and implements a smooth scroll script to scroll to the top of the page.
+				it will also contain a link to the page source: <code>View Source</code>.
+			</p>
+			<p>
+				when text is selected (you may test this by selecting this text) the menu will show options to <code>Copy</code> the selected text or <code>Search <a href="https://google.com">Google</a></code> for the text.
+				the menu when a link is targeted will show the options: <code>Open Link in New Tab</code>, <code>Copy Link Address</code>, and <code>Save Link As...</code>, you may test this with this link: <code><a href="https://google.com">Google</a></code>.
+			</p>
+			<p>
+				if the user targets a video when right clicking, the menu will show options to control the playback of the video: <code>Play</code>/<code>Pause</code>, <code>Mute</code>; it will also show options to <code>Copy Video Source</code> or <code>Save Video As...</code>
+				here is a video on which you can test these features:
+			</p>
+			<video src="assets/afraid.webm" controls style="height:auto;width:500px;margin-left:-100px;"></video>
+		</div>
+		<br><br>
+		<br><br>
+		<div id="next">
+			<b><a href="#next">adding callback functions</a></b><hr>
+			<p>
+				to add more fluidity between the context menu and the page, callback functions can be added to both <code>_g.open()</code> and <code>_g.close()</code>.
+				for <code>_g.open()</code>, the callback function is stored as <code>_g.m.onOpen()</code>, and for <code>_g.close()</code> it is <code>_g.m.onClose()</code>.
+				<script>
+					window.effectOn = function(){
+						_g.m.onOpen = function(){
+							document.getElementsByClassName('content')[0].className = 'content is-blurred';
+						}
+						_g.m.onClose = function(){
+							document.getElementsByClassName('content is-blurred')[0].className = 'content';
+						}
+					}
+					window.effectOff = function(){
+						_g.m.onOpen = function(){}
+						_g.m.onClose = function(){}
+					}
+				</script>
+				as an example, the content of the page can be blurred using <code>filter:blur</code> when opening the context menu and unblur when closing.
+				this can be seen by toggling this example <a href="javascript:effectOn();">ON</a> and <a href="javascript:effectOff();">OFF</a>.
+			</p>
+		</div>
+	</div>
+	<script	src="assets/prism.js"></script>
+</body>
