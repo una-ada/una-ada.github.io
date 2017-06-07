@@ -30,8 +30,8 @@
 					document.location.hash.split('#')[1]
 				));
 			}catch(e){console.log(e)}
-			
-			
+
+
 			//	Scene Setup
 			const
 				scene		= new THREE.Scene(),
@@ -97,12 +97,12 @@
 					}
 				};
 			scene.background	= new THREE.Color(0xffffff);
-			camera.position.x	= 
-			camera.position.z	= 
+			camera.position.x	=
+			camera.position.z	=
 			camera.position.y	= typeof o.dist=='number'?o.dist:75;
 			renderer.setSize(window.innerWidth,window.innerHeight);
 			document.body.appendChild(renderer.domElement);
-			
+
 			//	Snow Generation
 			const
 				particles	= [],
@@ -127,8 +127,8 @@
 				scene.add(p);
 				particles.push(p);
 			}
-			
-			
+
+
 			//	Rendering Loop
 			(render	= ()=>{
 				//	Loop
@@ -147,7 +147,7 @@
 				//	Iterate Time
 				t++;
 			})();
-			
+
 			const updateSprites = (URL)=>{
 				var loader = new THREE.TextureLoader();
 				loader.crossOrigin = '';
@@ -158,7 +158,7 @@
 				for(var p of particles)
 					p.material = mat;
 			}
-			
+
 			//	Handle Resize
 			window.addEventListener('resize',()=>{
 				camera.aspect = window.innerWidth / window.innerHeight;
@@ -166,8 +166,8 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 			},!1);
 		</script>
-		<a href="http://trew.moe">
-			<img class="me" src="http://trew.moe/assets/button.png" alt="trewbot"/>
+		<a href="https://trew.moe">
+			<img class="me" src="../../assets/button.png" alt="trewbot"/>
 		</a>
 	</body>
 </html>

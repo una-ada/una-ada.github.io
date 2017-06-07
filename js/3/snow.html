@@ -26,12 +26,12 @@
 				renderer	= new THREE.WebGLRenderer(),
 				r			= ()=>Math.random();
 			scene.background	= new THREE.Color(0xffffff);
-			camera.position.x	= 
+			camera.position.x	=
 			camera.position.z	= 1;
 			camera.position.y	= 0;
 			renderer.setSize(window.innerWidth,window.innerHeight);
 			document.body.appendChild(renderer.domElement);
-			
+
 			//	Snow Generation
 			const particles	= [];
 			var	spriteMap 	= new THREE.TextureLoader().load('assets/hns.png'),
@@ -45,7 +45,7 @@
 				scene.add(p);
 				particles.push(p);
 			}
-			
+
 			//	Rendering Loop
 			(render	= ()=>{
 				//	Loop
@@ -59,7 +59,7 @@
 				controls.update();
 				renderer.render(scene,camera);
 			})();
-			
+
 			//	Handle Resize
 			if(!window.mobilecheck())window.addEventListener('resize',()=>{
 				camera.aspect = window.innerWidth / window.innerHeight;
@@ -67,8 +67,8 @@
 				renderer.setSize( window.innerWidth, window.innerHeight );
 			},!1);
 		</script>
-		<a href="http://trew.moe">
-			<img class="me" src="http://trew.moe/assets/button.png" alt="trewbot"/>
+		<a href="https://trew.moe">
+			<img class="me" src="https://trew.moe/assets/button.png" alt="trewbot"/>
 		</a>
 	</body>
 </html>
