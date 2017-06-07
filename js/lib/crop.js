@@ -94,14 +94,14 @@
 								'southeast',
 								'southwest'
 							];
-				
+
 				this.values		= {
 					top		: 0,
 					left	: 0,
 					height	: 0,
 					width	: 0
 				};
-				
+
 				this.cutting	=
 				this.moving		=
 				this.resize		=
@@ -112,7 +112,7 @@
 				this.rsz_ne		=
 				this.rsz_sw		=
 				this.rsz_se		= !1;
-				
+
 				this.y3                    = this.elem.getBoundingClientRect().height;
 				this.x3                    = this.elem.getBoundingClientRect().width;
 				this.square                = (typeof o.square == 'boolean')?o.square:!1;
@@ -164,7 +164,7 @@
 					if(this.x2 - this.x1 < this.min){ this.x2 = this.x1 + this.min; }
 
 					if(this.square){if(this.y2 - this.y1 < this.x2 - this.x1){this.squareX();} else {this.squareY();}}
-					
+
 					if(this.x2 > this.x3){ this.x2 = this.x3; this.squareY();}
 					if(this.y2 > this.y3){ this.y2 = this.y3; this.squareX();}
 					if(this.x1 > this.x3){ this.x1 = this.x3; this.squareY();}
@@ -175,8 +175,8 @@
 					if(this.y2 < 0)      { this.y2 = 0;       this.squareX();}
 					if(this.x2 < this.x1){ this.x2 = this.x1; this.squareY();}
 					if(this.y2 < this.y1){ this.y2 = this.y1; this.squareX();}
-					
-					
+
+
 					this.rendered          = !0;
 
 					this.cdn.style.top     = "0px";
@@ -185,29 +185,29 @@
 					this.cdn.style.width   = this.x3 + "px";
 					this.cdn.style.backgroundPositionX = "0px";
 					this.cdn.style.backgroundPositionY = "0px";
-					
+
 					this.cdw.style.top     = this.y1 + "px";
 					this.cdw.style.left    = "0px";
 					this.cdw.style.height  = this.y2 - this.y1 + "px";
 					this.cdw.style.width   = this.x1 + "px";
 					this.cdw.style.backgroundPositionX = "0px";
 					this.cdw.style.backgroundPositionY = - this.y1 + "px";
-					
+
 					this.cde.style.top     = this.y1 + "px";
 					this.cde.style.left    = this.x2 + "px";
 					this.cde.style.height  = this.y2 - this.y1 + "px";
 					this.cde.style.width   = this.x3 - this.x2 + "px";
 					this.cde.style.backgroundPositionX = - this.x2 + "px";
 					this.cde.style.backgroundPositionY = - this.y1 + "px";
-					
+
 					this.cds.style.top     = this.y2 + "px";
 					this.cds.style.left    = "0px";
 					this.cds.style.height  = this.y3 - this.y2 + "px";
 					this.cds.style.width   = this.x3 + "px";
 					this.cds.style.backgroundPositionX = "0px";
 					this.cds.style.backgroundPositionY = - this.y2 + "px";
-					
-					
+
+
 					if(!this.square && this.eh){
 					this.chn.style.top     = this.y1 - (this.hw / 2) + "px";
 					this.chn.style.left    = this.x1 + ((this.x2 - this.x1) / 2) - (this.hw / 2) + "px";
@@ -225,12 +225,12 @@
 					this.che.style.left    = this.x2 - (this.hw / 2) + "px";
 					this.che.style.display = 'block';
 					}
-					
-					
+
+
 					this.chnw.style.top    = this.y1 - (this.hw / 2) + "px";
 					this.chnw.style.left   = this.x1 - (this.hw / 2) + "px";
 					this.chnw.style.display= 'block';
-					
+
 					this.chne.style.top    = this.y1 - (this.hw / 2) + "px";
 					this.chne.style.left   = this.x2 - (this.hw / 2) + "px";
 					this.chne.style.display= 'block';
@@ -243,7 +243,7 @@
 					this.chse.style.left   = this.x2 - (this.hw / 2) + "px";
 					this.chse.style.display= 'block';
 
-					
+
 					this.values.top        = this.y1;
 					this.values.left       = this.x1;
 					this.values.height     = this.y2 - this.y1;
@@ -252,9 +252,9 @@
 				this.mouseup               = function(e){
 					if(this.cutting || this.moving || this.resize || this.linear){
 						this.elem.style.cursor = 'move';
-						this.cdn.style.cursor  = 
-						this.cde.style.cursor  = 
-						this.cds.style.cursor  = 
+						this.cdn.style.cursor  =
+						this.cde.style.cursor  =
+						this.cds.style.cursor  =
 						this.cdw.style.cursor  = 'crosshair';
 						this.sendEvent('crop');
 					}
@@ -438,13 +438,13 @@
 					this.y2 = crop.top + crop.height;
 					this.render();
 				}
-				
+
 				this.stop = function(){
 					document.removeEventListener('mouseup',   this.mouseup);
 					document.removeEventListener('mousedown', this.mousedown);
 					document.removeEventListener('mousemove', this.mousemove);
 				}
-				
+
 				if(typeof o.preset == 'object' && typeof o.preset.left == 'number' && typeof o.preset.width == 'number' && typeof o.preset.top == 'number' && typeof o.preset.height == 'number'){
 					this.x1 = o.preset.left;
 					this.x2 = o.preset.left + o.preset.width;
@@ -480,7 +480,7 @@
 				}
 				if(this.force_width){this.elem.style.backgroundSize = o.frame.width + "px auto"; if(this.bleed) this.ghost.style.width = o.frame.width + "px";}
 				else if(this.force_height){this.elem.style.backgroundSize = "auto " + o.frame.height + "px"; if(this.bleed) this.ghost.style.height = o.frame.height + "px";}
-				
+
 				this.getValues             = function(){
 					var ret = {
 						left: - this.x1,

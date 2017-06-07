@@ -2,21 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>crop tool</title>
-	<link rel="stylesheet"	href="assets/style.css">
+	<link rel="stylesheet"	href="../../assets/style.css">
 	<script src="assets/prism.js"></script>
 	<script	src="crop.js"></script>
 </head>
 <body>
 	<div class="content">
-		<b><a href="https://github.com/trewbot/_g.crop" id="scripts">crop tool</a></b><hr>
+		<h1><a href="https://github.com/trewbot/_g.crop" id="scripts">crop tool</a></h1>
 		<p>
 			_g.crop is a javascript script built to render an image cropping tool and return the necessary values for a server or image library to create a cropped version of the image.
 			the script was originally designed for <a href="//gra.phene.co">Graphene</a> and therefore uses the conventions for related _g scripts.
 		</p>
-		<br><br>
-		<br><br>
 		<div id="start">
-			<b><a href="#start">getting started</a></b><hr>
+			<h2><a href="#start">getting started</a></h2>
 			<p>
 				the first step in setting up the crop tool is to include the library in the html file.
 				<a href="crop.js">the source file can be downloaded here and put on a cdn</a>
@@ -43,7 +41,7 @@
 				cut allows the user to specify a region of the image to be cropped to.
 				here is an example of the cut kind:
 			</p>
-			<div id="example-1" style="width:500px;margin-left:-100px;margin-bottom:10px;"></div>
+			<div id="example-1" style="width:500px;margin-bottom:10px;"></div>
 			<script>
 				var element	= document.getElementById('example-1'),
 					image	= 'assets/cookies.jpg',
@@ -67,7 +65,7 @@
 				<code>force_height</code> does the same with height, only allowing horizontal movement.
 				here is an example of <code>force_width</code>:
 			</p>
-			<div id="example-2" style="width:500px;margin-left:-100px;margin-bottom:10px;"></div>
+			<div id="example-2" style="width:500px;margin-bottom:10px;"></div>
 			<script>
 				var element	= document.getElementById('example-2'),
 					image	= 'assets/street.jpg',
@@ -82,10 +80,8 @@
 					ex2     = new _g.x(element, image, kind, options);
 			</script>
 		</div>
-		<br><br>
-		<br><br>
 		<div id="cut">
-			<b><a href="#cut">the cut kind</a></b><hr>
+			<h2><a href="#cut">the cut kind</a></h2>
 			<p>
 				the cut kind was originally developed for use as a way to crop images for user avatars.
 				as such, many of its options are centered around usability in this situation.
@@ -172,7 +168,7 @@
 			<p>
 				these options will produce a tool like this one:
 			</p>
-			<div id="example-3" style="width:500px;margin-left:-100px;margin-bottom:10px;"></div>
+			<div id="example-3" style="width:500px;margin-bottom:10px;"></div>
 			<script>
 				var element	= document.getElementById('example-3'),
 					image	= 'assets/eagle.jpg',
@@ -194,9 +190,8 @@
 					ex3		= new _g.x(element, image, kind, options);
 			</script>
 		</div>
-		<br><br>
 		<div id="cut-returns">
-			<b><a href="#cut-returns">returns and values of the cut kind</a></b><br>
+			<h3><a href="#cut-returns">returns and values of the cut kind</a></h3>
 			<p>
 				the goal of this cropping script is not to create new cropped version of images.
 				it is a light-weight script whose main purpose is to render an interface, however, the developer can easily access the properties of the cropping.
@@ -221,9 +216,8 @@
 				these are updated differently and may at some points return differing values, however, this should not be the case when the tool is in a standby state.
 			</p>
 		</div>
-		<br><br>
 		<div id="cut-functions">
-			<b><a href="#cut-functions">functions of the cut kind</a></b><br>
+			<h3><a href="#cut-functions">functions of the cut kind</a></h3>
 			<p>
 				when the tool is rendered, several event listeners are added to the page that assume the existence of the tool.
 				if the developer chooses to remove the tool without reloading the page, this would cause errors to be thrown constantly which could lag the web page.
@@ -242,9 +236,8 @@
 	height	: 110
 });</code></pre>
 		</div>
-		<br><br>
 		<div id="cut-events">
-			<b><a href="#cut-events">events of the cut kind</a></b><br>
+			<h3><a href="#cut-events">events of the cut kind</a></h3>
 			<p>
 				events are fired using the custom event api in javascript, and therefore may not be compatible with internet explorer (though edge should be fine).
 				they are fired on the crop tool's element, so listeners should be added to that.
@@ -287,7 +280,7 @@ crop2.elem.addEventListener('crop',function(e){
 			<p>
 				assuming <code>crop1</code> and <code>crop1</code> are both crop tools, this should turn out like this:
 			</p>
-			<div style="width:500px;margin-left:-100px;margin-bottom:10px;position:relative;">
+			<div style="width:500px;margin-bottom:10px;position:relative;">
 				<div id="example-5" style="width:245px;float:left;"></div>
 				<div id="example-6" style="width:245px;margin-left:10px;float:left;"></div>
 				<div style="clear:both"></div>
@@ -312,10 +305,8 @@ crop2.elem.addEventListener('crop',function(e){
 				this may be added in the future, but may be costly when it comes to efficiency.
 			</p>
 		</div>
-		<br><br>
-		<br><br>
 		<div id="frame">
-			<b><a href="#frame">the frame kind</a></b><hr>
+			<h2><a href="#frame">the frame kind</a></h2>
 			<p>
 				the frame kind was developed for editing cover photos, something for which the user would be given an already defined frame that the image would be moved around within.
 				as the focus of the script was the cut kind originaly, there are not as many options available for the frame as the cut kind.
@@ -374,7 +365,7 @@ crop2.elem.addEventListener('crop',function(e){
 			<p>
 				these options would produce a tool such as this:
 			</p>
-			<div id="example-4" style="margin:110px 0;"></div>
+			<div id="example-4" style="margin:100px;"></div>
 			<script>
 				var element	= document.getElementById('example-4'),
 					image	= 'assets/cat.jpg',

@@ -2,29 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>modal</title>
-	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="../../assets/style.css">
 	<script	src="modal.js"></script>
 </head>
 <body>
 	<div class="content">
-		<b><a href="https://github.com/trewbot/_g.modal" id="scripts">modal</a></b><hr>
+		<h1><a href="https://github.com/trewbot/_g.modal" id="scripts">modal</a></h1>
 		<p>
 			_g.modal is a javascript script built to render modals for user interfaces, this includes not only informational modals but also user input, lightboxes, <span>and tutorials</span>.
 			the script was originally designed for <a href="http://gra.phene.co">Graphene</a> and therefore uses the conventions for related _g scripts.
 		</p>
-		<br><br>
-		<br><br>
 		<div id="start">
-			<b><a href="#start">getting started</a></b><hr>
+			<h2><a href="#start">getting started</a></h2>
 			<p>
 				to begin using the modal script, one must first include the library in the html file.
 				<a target="_blank" href="modal.js">the source file can be downloaded here and put on a cdn</a>
 			</p>
 		</div>
-		<br><br>
-		<br><br>
 		<div id="info-modal">
-			<b><a href="#info-modal">informational modals</a></b><hr>
+			<h2><a href="#info-modal">informational modals</a></h2>
 			<p>
 				info modals are made using the <code>_g.modal.open()</code> function.
 				the only argument for this function is the options object.
@@ -107,22 +103,19 @@
 		},0)
 );</code></pre>
 			<p>
-				<a onclick="_g.modal.open({title:'Approval Required!',text:'Allow this action?',confirm:true}).then(()=>window.setTimeout(()=>{_g.mo.open({text:'Approved',textCenter:true})},0),()=>window.setTimeout(()=>{_g.mo.open({text:'Rejected',textCenter:true})},0));">click here to test.</a>	
+				<a onclick="_g.modal.open({title:'Approval Required!',text:'Allow this action?',confirm:true}).then(()=>window.setTimeout(()=>{_g.mo.open({text:'Approved',textCenter:true})},0),()=>window.setTimeout(()=>{_g.mo.open({text:'Rejected',textCenter:true})},0));">click here to test.</a>
 			</p>
 		</div>
-		
-		<br><br>
-		<br><br>
-		
+
 		<div id="info-modal-events">
-			<b><a href="#info-modal-events">informational modal events</a></b>
+			<h3><a href="#info-modal-events">informational modal events</a></h3>
 			<p>
 				an informational modal will fire the following events:
 			</p>
-			<table>
+			<table style="width:100%;">
 				<thead>
-					<td>event:</td>
-					<td>fired when:</td>
+					<td style="width:25%;">event:</td>
+					<td style="width:75%;">fired when:</td>
 				</thead>
 				<tr>
 					<td>MODAL_OPEN</td>
@@ -175,12 +168,8 @@ window.addEventListener('MODAL_CLOSE',function(){
 				<a onclick="_g.mo.open({title:'Test',text:'This modal is a test.'});">then opening a test modal by clicking here.</a>
 			</p>
 		</div>
-		
-		<br><br>
-		<br><br>
-		
 		<div id="lightboxes">
-			<b><a href="#lightboxes">lightboxes</a></b><hr>
+			<h2><a href="#lightboxes">lightboxes</a></h2>
 			<p>
 				similarly, lightboxes are called with the <code>_g.modal.lightbox()</code> function.
 				this function has four arguments like so:
@@ -217,10 +206,8 @@ window.addEventListener('MODAL_CLOSE',function(){
 				<a lightbox onclick="_g.mo.lightbox('api','http://notes.phene.co/diffeq/1ed/read.php','pages.*',0);">click here to test</a>
 			</p>
 		</div>
-		<br><br>
-		<br><br>
 		<div id="tutorials">
-			<b><a href="#tutorials">tutorials</a></b><hr>
+			<h2><a href="#tutorials">tutorials</a></h2>
 			<p>
 				the tutorial framework allows you to create an array of defined steps that the user should follow.
 				running the <code>_g.mo.tutorial()</code> command returns the tutorial as an object.

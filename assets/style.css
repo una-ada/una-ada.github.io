@@ -1,22 +1,45 @@
+/* Elements */
 a			{text-decoration:underline;color:#444;}
 body		{font-family:monospace;}
 blockquote	{padding-left:10px;border-left:2px solid #444;margin:0;}
 blockquote p {margin:0.5rem 0;}
+code        {font-family:monospace;}
 div:target	{background:#eee;}
 html		{/*background:url('../img/grad.png');*/color:#444;font-size:9pt;}
 img,video	{max-width:calc(100% - 1rem);}
+pre         {background:#fff;border:1px solid #555;overflow:visible !important;padding:10px !important;}
+small       {font-size:7pt;}
 sub			{vertical-align:bottom;position:relative;bottom:-0.3em;}
 sup			{vertical-align:top;position:relative;top:-0.3em;}
 table		{border-collapse:collapse;}
 thead		{font-weight:bold;}
 tr:nth-child(even){background:#f0f0f0;}
 
-hist		{color:limegreen;}
-kw			{color:blue;}
+/* Button */
+.me			{bottom:1rem;position:fixed;right:1rem;z-index:1000;}
 
+/* Docs */
+.content    {width:500px;padding-left:calc(50vw - 250px);}
+.content.is-blurred{filter:blur(3px);}
+
+/* Log */
 .open,
 .closer,
 .opener		{display:inline;}
 .close		{display:none;}
 .embedee	{margin:0.5rem;}
-.me			{bottom:1rem;position:fixed;right:1rem;z-index:1000;}
+
+/* Notes */
+hist		{color:limegreen;}
+kw			{color:blue;}
+
+/* Prism */
+.token.comment,.token.prolog,.token.doctype,.token.cdata,.token.punctuation{color:#9E9E9E}
+.namespace{opacity:.7}
+.token.property,.token.tag,.token.boolean,.token.number,.token.constant,.token.symbol{color:#FFC107}
+.token.attr-name,.token.attr-value,.token.string,.token.char,.token.entity,.token.url,.language-css .token.string,.style .token.string,.token.variable,.token.inserted{color:#FF5722}
+.token.atrule,.token.attr-value,.token.keyword{color:#8BC34A}
+.token.regex,.token.important{color:#A1887F}
+.token.important{font-weight:bold}
+.token.entity{cursor:help}
+.language-markup .token.tag,.language-markup .token.attr-name,.language-markup .token.punctuation{color:#607D8B}
