@@ -7,7 +7,7 @@ code        {font-family:monospace;}
 div:target	{background:#eee;}
 html		{/*background:url('../img/grad.png');*/color:#444;font-size:9pt;}
 img,video	{max-width:calc(100% - 1rem);}
-pre         {background:#fff;border:1px solid #555;overflow:visible !important;padding:10px !important;}
+pre         {background:#fff;border:1px solid #555;overflow:visible !important;padding:10px !important;tab-size:4;}
 small       {font-size:7pt;}
 sub			{vertical-align:bottom;position:relative;bottom:-0.3em;}
 sup			{vertical-align:top;position:relative;top:-0.3em;}
