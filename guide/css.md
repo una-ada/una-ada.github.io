@@ -10,7 +10,7 @@ This document is written to create a standard coding styleguide for CSS or CSS p
 
 ### Preprocessors
 
-To allow for more efficient production, it is recommended that a CSS preprocessor be used. This permits the usage of variables for colors or repetitive styling techniques as well as to write more concise CSS overall without losing any stylign in the end product. The prepocessor of choice for most Phene.co projects is [Sass](http://sass-lang.com/), particularly using the `scss` style. The use of [node-sass](https://www.npmjs.com/package/node-sass) rather than [Ruby Sass](http://sass-lang.com/install) is highly recommended as it removes the Ruby dependency from a project (it is also supposedly a more efficient implementation using a C library rather than a Ruby one).
+To allow for more efficient production, it is recommended that a CSS preprocessor be used. This permits the usage of variables for colors or repetitive styling techniques as well as to write more concise CSS overall without losing any styling in the end product. The preprocessor of choice for most Phene.co projects is [Sass](http://sass-lang.com/), particularly using the `scss` style. The use of [node-sass](https://www.npmjs.com/package/node-sass) rather than [Ruby Sass](http://sass-lang.com/install) is highly recommended as it removes the Ruby dependency from a project (it is also supposedly a more efficient implementation using a C library rather than a Ruby one).
 
 ### Linting
 
@@ -34,7 +34,7 @@ This section is based in part on [18F's Front End Guide](https://pages.18f.gov/f
 
 - Tabulate the `{` in rule declarations to column 29 or 7 tabs from the baseline.
 
-- Keep all declarations in a single line. Add a new line when the declarations in a rule reach 200 characters, tabbing out the next line to column 29. This may cause difficulty in line-by-line error reporting; however, all CSS debuging should be done in browser.
+- Keep all declarations in a single line. Add a new line when the declarations in a rule reach 200 characters, tabbing out the next line to column 29. This may cause difficulty in line-by-line error reporting; however, all CSS debugging should be done in browser.
 
 - Multiple selectors should each be on a single line, with no space after the comma.
 
@@ -117,21 +117,21 @@ selector					{top:$variable;}
 - Within a selector, the following order should be used:
 
   1. Variables
-  
+
   2. @extend directives
-  
+
   3. @include directives
-  
+
   4. Property declaration list (`name:value;`)
-  
+
   5. Media queries
-  
+
   6. Pseudo-States (`:checked`,`:target`,etc.) and pseudo-elements (`::after`,`::selection`,etc.)
-  
+
   7. Nested Elements
-  
+
   8. Nested Classes
-  
+
 ```scss
 selector                    {
     $variable:value;
