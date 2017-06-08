@@ -10,9 +10,14 @@
 	<title>ap chem notes</title>
 	<link rel="stylesheet" href="../assets/style.css">
 	<link rel="shortcut icon" type="image/png" href="../assets/headshot.jpg"/>
-	<script type="text/javascript" async src="https://example.com/MathJax.js?config=TeX-AMS_CHTML"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+	</script>
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
-<body style="width:500px;padding-left:calc(50vw - 250px);">
+<body class="notes" style="width:500px;padding-left:calc(50vw - 250px);">
 	<div id="0.0">
 		<h1>ap chem notes</h1>
 		<p>
@@ -55,7 +60,7 @@
 			<kw>matter</kw> is anything that occupies space and has mass... vague as hell...
 			a specification of matter is called a <kw>substance</kw>.
 			'we' classify it based on <kw>state</kw> n <kw>composition</kw>.
-			anwyay, blah blah blah <kw>solid -> liquid -> gas</kw> (-> plasma, oh right, high school).
+			anwyay, blah blah blah <kw>solid &rarr; liquid &rarr; gas</kw> (&rarr; plasma, oh right, high school).
 			<kw>crystalline</kw> solids have structures, <kw>amorphous</kw> dont, they also dont have an exact emlting point.
 			gases are free to move abt &there4; compressible.
 			here's a chart:
@@ -329,6 +334,44 @@
 		<p>
 			<kw>hydrated ionic compounds</kw> called <kw>hydrates</kw> contain a specific amount of water molecules per unit, measured in waters.
 			these are named like <kw>compound prefix-hydrate</kw>, i.e. copper (II) sulfate pentahydrate.
+		</p>
+	</div>
+
+	<div id="3.6">
+		<h2>&sect;3.6 molecular things!</h2>
+		<p>
+			naming molecular compounds is failr straighforward, for binary nonmetals it is: <kw>prefix-element prefix-elemenent-ide</kw>.
+			mono is ommitted from the first one bc it got its ??? i.e. nitrogen monoxide.
+		</p>
+		<p>
+			for now <kw>acids</kw> are molecules that emit a H<sup>+</sup>.
+			<kw>Binary acids</kw> contain a hydrogen &amp; a non-metal, we name them <kw>hydro-element-ic acid</kw> i.e. hydrobromic acid.
+			the spine is really hitting me today.* :l
+			<kw>oxyacids</kw> are an acid with a hydrogen &amp; an oxyanion.
+			if it's a -ate then <kw>oxyanion-ic acid</kw>, or -ite: <kw>oxyanion-ous acid</kw>.
+			i.e. nitrate &rarr; nitric acid, sulfite &rarr; sulfurous acid.
+		</p>
+		<p>
+			<i>*bc this is on a left page so my hand kept bumping against the binding spine thing</i>
+		</p>
+	</div>
+
+	<div id="3.8">
+		<h2>&sect;3.8 formula mass</h2>
+		<p>
+			the <kw>formula mass/molecular mass</kw> is
+			$$\sum_{k=0}^n N_k*m_k$$
+			where $n$ is the number of unique elements, $N_k$ is the number of element $k$ in the molecule, n $m_k$ is the atomic mass of element $k$.
+			the molecular mass is numerically equivalent to the <kw>moral mass</kw> except the latter is in g/mol rather than amu.
+			to get the ampount of molecules in a sample just divide the mass by the molar mass then multiple by <kw>Avogadro's number</kw>.
+		</p>
+	</div>
+
+	<div id="3.9">
+		<h2>&sect;3.9 composition</h2>
+		<p>
+			$$P = \frac{m_x}{m_{mol}} \times 100%$$
+			where $P$ is the percentage of the mass contributed by element $x$, $m_x$ is the mass of element $x$ in 1mol of the compound, n $m_{mol}$ is the mass of 1mol of the compound.
 		</p>
 	</div>
 
