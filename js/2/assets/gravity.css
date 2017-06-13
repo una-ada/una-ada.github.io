@@ -1,0 +1,28 @@
+*						{border:0;margin:0px;outline:0;user-select:none;-moz-user-select:none;-webkit-user-select:none;zoom:1;}
+a						{cursor:pointer;color:#333 !important;box-shadow:inset 0 -3px 0 #333;text-decoration:none;}
+h1						{font-family:'Roboto',sans-serif;font-size:28pt;font-weight:900;}
+hitbox					{height:100%;left:0;opacity:0;position:absolute;top:0;width:100%;}
+html					{color:#333;font-family:'Roboto',sans-serif;font-size:14pt;}
+sub						{position:relative;top:0.4em;vertical-align:baseline;}
+
+.material-icons			{font-size:14pt;}
+.math					{font-family:'Droid Serif',serif;font-style:italic;font-weight:700;}
+.unit					{font-family:'Droid Serif',serif;font-style:italic;}
+
+#nav					{position:fixed;z-index:100;}
+    #planet				{position:absolute;width:102px;height:102px;}
+    #planet .info		{display:none;}
+    #planet:hover .info	{display:block;}
+    .moon				{position:absolute;width:18px;height:18px;}
+    .moon .shell		{border:9px solid #333;border-radius:50%;height:0px;position:absolute;width:0px;}
+    .moon.current .shell{height:0px;margin:5px;width:0px;}
+    .info				{color:#333;height:20px;left:12px;line-height:20px;position:absolute;top:-10px;width:150px;}
+#settings				{bottom:10px;font-weight:400;left:10px;position:absolute;z-index:200;}
+#frame-info				{left:10px;position:absolute;top:10px;}
+
+#idfk					{font-family:'Roboto',sans-serif;font-size:144pt;font-weight:900;line-height:1em;left:1rem;opacity:0.1;position:fixed;top:1rem;z-index:10;}
+
+.dark *					{color:#fff;}
+.dark .moon .shell		{border:9px solid #fff;}
+.dark .to-kill			{background:rgba(255,255,255,0.3);}
+.me						{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
