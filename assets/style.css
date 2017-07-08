@@ -42,7 +42,7 @@ body.notes  	{font-family:'Lora',serif;font-size:16px;margin-left:calc(50vw - 36
 .notes table	{line-height:2.2rem;}
 .notes thead	{font-family:'Playfair Display','Lora',sans-serif;}
 .notes thead td	{padding-bottom:1rem;}
-.table-container{overflow-x:scroll;}
+.table-container{max-width:100%;overflow-x:scroll;}
 hist			{color:limegreen;}
 kw				{color:blue;}
 
