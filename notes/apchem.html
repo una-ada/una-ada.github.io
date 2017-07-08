@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <!--
-  --	ap chemistry notes
-  --	by trevor hoglund (trewbot)
-  --	originally written april 2015
-  --	transcribed in html may-june 2017
+  -	 AP Chemistry Notes
+  -	 Written by Trewbot
+  -  2017.07.08
+  -
+  -	 originally written april 2015
+  -	 transcribed in html may-july 2017
   -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<title>ap chem notes</title>
 	<link rel="stylesheet" href="../assets/style.css">
 	<link rel="shortcut icon" type="image/png" href="../assets/headshot.jpg"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i|Playfair+Display:700i">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=device-width">
 	<script type="text/x-mathjax-config">
+		MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
 		MathJax.Hub.Config({
-			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+			TeX: {extensions: ["[mhchem]/mhchem.js"]},
+			SVG: {
+				font: "Gyre-Termes",
+				matchFontHeight: true,
+				scale: 90
+			}
 		});
+		MathJax.Hub.setRenderer("SVG");
 	</script>
 	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
-<body class="notes" style="width:500px;padding-left:calc(50vw - 250px);">
+<body class="notes">
 	<div id="0.0">
-		<h1>ap chem notes</h1>
+		<h1>AP Chem Notes</h1>
 		<p>
 			so the month is april, date the fourth*.
 			ap exams are a month away and i signed up for the chemistry exam w/o attending the class &there4; i am taking notes independently.
@@ -208,7 +222,7 @@
 		<p>
 			just use <kw>chemical formulae</kw>: an <kw>emprical formula</kw> give relative amounts while <kw>molecular forumlae</kw> give actual numbers...
 			a <kw>structural formula</kw> uses lines to represent the bonds, here's the book's shitty example:
-			hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>): H-O-O-H...
+			hydrogen peroxide ($\ce{H2O2}$): $\ce{H-O-O-H}$...
 			u can also represent geometry n double bonds w this shit n i feel like im going to throw up, not just bc the simplicity of this shit.
 		</p>
 		<p>
@@ -237,7 +251,7 @@
 			many lame compounds are found in the crust cuz y not.
 			so lets write them!
 			first take two elements, find their charges, put the cation first, multiple their charges of w/e by numbers to get a balanced charge:
-			i.e. Al<sup>3+</sup>, O<sup>2-</sup>... Al<sub>2</sub>O<sub>2</sub> easy as pie.
+			i.e. $\ce{Al^3+, O^2-... Al2O2}$ easy as pie.
 		</p>
 		<p>
 			elements have <kw>common names</kw> which are familiarities<sup>?</sup>, and <kw>systematic names</kw> which are found by a simple algorithm.
@@ -260,73 +274,73 @@
 			</thead>
 			<tr>
 				<td>acetate</td>
-				<td>C<sub>2</sub>H<sub>3</sub>O<sub>2</sub><sup>-</sup></td>
+				<td>$\ce{C2H3O2^2-}$</td>
 				<td>bisulfate</td>
-				<td>HSO<sub>4</sub><sup>-</sup></td>
+				<td>$\ce{HSO4^-}$</td>
 			</tr>
 			<tr>
 				<td>carbonate</td>
-				<td>CO<sub>3</sub><sup>2-</sup></td>
+				<td>$\ce{CO3^2-}$</td>
 				<td>phosphate</td>
-				<td>PO<sub>4</sub><sup>3-</sup></td>
+				<td>$\ce{PO4^3-}$</td>
 			</tr>
 			<tr>
 				<td>bicarbonate</td>
-				<td>HCO<sub>3</sub><sup>-</sup></td>
+				<td>$\ce{HCO3^-}$</td>
 				<td>hy. phosphate</td>
-				<td>HPO<sub>4</sub><sup>2-</sup></td>
+				<td>$\ce{HPO4^2-}$</td>
 			</tr>
 			<tr>
 				<td>hydroxide</td>
-				<td>HO<sup>-</sup></td>
+				<td>$\ce{HO^-}$</td>
 				<td>dihy. phosphate</td>
-				<td>H<sub>2</sub>PO<sub>4</sub><sup>-</sup></td>
+				<td>$\ce{H2PO4^-}$</td>
 			</tr>
 			<tr>
 				<td>nitrite</td>
-				<td>NO<sub>2</sub><sup>-</sup></td>
+				<td>$\ce{NO2^-}$</td>
 				<td>ammonium</td>
-				<td>NH<sub>4</sub><sup>+</sup></td>
+				<td>$\ce{NH4^+}$</td>
 			</tr>
 			<tr>
 				<td>nitrate</td>
-				<td>NO<sub>3</sub><sup>-</sup></td>
+				<td>$\ce{NO3^-}$</td>
 				<td>hypchlorite</td>
-				<td>ClO<sup>-</sup></td>
+				<td>$\ce{ClO^-}$</td>
 			</tr>
 			<tr>
 				<td>chromate</td>
-				<td>CrO<sub>4</sub><sup>2-</sup></td>
+				<td>$\ce{CrO4^2-}$</td>
 				<td>chlorite</td>
-				<td>ClO<sub>2</sub><sup>-</sup></td>
+				<td>$\ce{ClO2^-}$</td>
 			</tr>
 			<tr>
 				<td>dichromate</td>
-				<td>Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup></td>
+				<td>$\ce{Cr2O7^2-}$</td>
 				<td>chlorate</td>
-				<td>ClO<sub>3</sub><sup>-</sup></td>
+				<td>$\ce{ClO3^-}$</td>
 			</tr>
 			<tr>
 				<td>permanganate</td>
-				<td>MnO<sub>4</sub><sup>-</sup></td>
+				<td>$\ce{MnO4^-}$</td>
 				<td>perchlorate</td>
-				<td>ClO<sub>4</sub><sup>-</sup></td>
+				<td>$\ce{ClO4^-}$</td>
 			</tr>
 			<tr>
 				<td>sulfite</td>
-				<td>SO<sub>3</sub><sup>2-</sup></td>
+				<td>$\ce{SO3^2-}$</td>
 				<td>cyanide</td>
-				<td>CN<sup>-</sup></td>
+				<td>$\ce{CN^-}$</td>
 			</tr>
 			<tr>
 				<td>bisulfite</td>
-				<td>HSO<sub>3</sub><sup>-</sup></td>
+				<td>$\ce{HSO3^-}$</td>
 				<td>peroxide</td>
-				<td>O<sub>2</sub><sup>2-</sup></td>
+				<td>$\ce{O2^2-}$</td>
 			</tr>
 			<tr>
 				<td>sulfate</td>
-				<td>SO<sub>4</sub><sup>2-</sup></td>
+				<td>$\ce{SO4^2-}$</td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -383,8 +397,8 @@
 	<div id="3.11">
 		<h2>&sect;3.11 chemical equations</h2>
 		<p>
-			a <kw>chemical reaction</kw> is a reaction of chemicals, a <kw>combustion reaction</kw> is a specific type that a molecule combines w O<sub>2</sub> to make CO<sub>2</sub> &amp; H<sub>2</sub>O.
-			we represent these w <kw>chemical equations</kw> such as: CH<sub>4</sub> + O<sub>2</sub> &rarr; CO<sub>2</sub> + H<sub>2</sub>O... such that it goes reactants &rarr; products.
+			a <kw>chemical reaction</kw> is a reaction of chemicals, a <kw>combustion reaction</kw> is a specific type that a molecule combines w $\ce{O2}$ to make $\ce{CO2}$ &amp; $\ce{H2O}$
+			we represent these w <kw>chemical equations</kw> such as: $\ce{CH4 + O2 -> CO2 + H2O}$... such that it goes reactants &rarr; products.
 			these need to be <kw>balanced</kw> so that the same number of an element is on each side.
 			we can also label states:
 		</p>
@@ -418,8 +432,8 @@
 	<div id="3.12">
 		<h2>&sect;3.12 organic compounds</h2>
 		<p>
-			an <kw>organic compound</kw> is composed of C &amp; H n a few other things... just mostly those two.
-			<kw>hydrocarbons</kw> are compounds of just C &amp; H, whose types are <kw>alkanes</kw>, <kw>alkenes</kw>, n <kw>alkynes</kw> called so by a single, double, triple bonds respectively and share the suffix of thei constituents.
+			an <kw>organic compound</kw> is composed of $\ce{C}$ &amp; $\ce{H}$ n a few other things... just mostly those two.
+			<kw>hydrocarbons</kw> are compounds of just $\ce{C}$ &amp; $\ce{H}$, whose types are <kw>alkanes</kw>, <kw>alkenes</kw>, n <kw>alkynes</kw> called so by a single, double, triple bonds respectively and share the suffix of thei constituents.
 			naming is as so: <kw>(# name) - (-ane,-ene,-yne)</kw> where the # name is found by:
 		</p>
 		<table style="width:100%">
@@ -430,24 +444,24 @@
 				<td style="width:30%">name</td>
 			</thead>
 			<tr>
-				<td>1</td><td>meth</td>
-				<td>6</td><td>hex</td>
+				<td>1</td><td>meth-</td>
+				<td>6</td><td>hex-</td>
 			</tr>
 			<tr>
-				<td>2</td><td>eth</td>
-				<td>7</td><td>hept</td>
+				<td>2</td><td>eth-</td>
+				<td>7</td><td>hept-</td>
 			</tr>
 			<tr>
-				<td>3</td><td>prop</td>
-				<td>8</td><td>oct</td>
+				<td>3</td><td>prop-</td>
+				<td>8</td><td>oct-</td>
 			</tr>
 			<tr>
-				<td>4</td><td>but</td>
-				<td>9</td><td>non</td>
+				<td>4</td><td>but-</td>
+				<td>9</td><td>non-</td>
 			</tr>
 			<tr>
-				<td>5</td><td>pent</td>
-				<td>10</td><td>dec</td>
+				<td>5</td><td>pent-</td>
+				<td>10</td><td>dec-</td>
 			</tr>
 		</table>
 		<p>
@@ -455,8 +469,42 @@
 		</p>
 		<p>
 			<kw>functionalized hydrocrabons</kw> have <kw>functional groups</kw> added.
-			like how <kw>alcohols</kw> have the -OH functional croup added.
+			like how <kw>alcohols</kw> have the $\ce{-OH}$ functional group added.
 		</p>
+	</div>
+
+	<div id="4">
+		<h2>&sect;4 chemical quantities &amp; aqueous solutions</h2>
+		<p>
+			<kw>stoichiometry</kw> is a numerical relationing<sup>?</sup> in a chemical reaction.
+			this is all done w math i could train a dog to do but just know its finding amnts of stuff.
+			in which the <kw>limiting reactant</kw> is the one whose value produces the least product.
+			the <kw> theoretical yield</kw> is the amnt of product u could produce w the limiting reactant and blah blah blah.
+			a <kw>solution</kw> is a solute dissolved in a <kw>solvent</kw>.
+			an <kw>aqueous solution</kw> has a water soolvent.
+			something something <kw>$M_1V_1=M_2V_2$</kw>, molarity is $M$ and volume $V$... n u thought it was the law of conservation of momentum, lol!.
+		</p>
+		<p>
+			as for the <kw>in/solubility</kw> of ions, u can refer to this handy chart:
+		</p>
+		<table style="width:100%">
+			<thead>
+				<td style="width:30%">Generally Soluble</td>
+				<td style="width:70%">Exceptions</td>
+			</thead>
+			<tr>
+				<td>$\ce{Li^+, Na^+, K^+, NH4^+}$</td>
+				<td>None</td>
+			</tr>
+			<tr>
+				<td>$\ce{NO3^-, C2H3O2^-}$</td>
+				<td>None</td>
+			</tr>
+			<tr>
+				<td>$\ce{Cl^-, Br^-, I^-}$</td>
+				<td>$\ce{Ag^+, Hg2^2+, Pb^2+}$</td>
+			</tr>
+		</table>
 	</div>
 
 	<a href="https://trew.moe">

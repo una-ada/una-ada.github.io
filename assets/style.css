@@ -1,7 +1,6 @@
 /* Elements */
 a			{text-decoration:underline;color:#444;}
 body		{font-family:monospace;}
-body.notes  {font-family:serif;font-size:10pt;}
 blockquote	{padding-left:10px;border-left:2px solid #444;margin:0;}
 blockquote p {margin:0.5rem 0;}
 code        {font-family:monospace;}
@@ -32,6 +31,11 @@ tr:nth-child(even){background:#f0f0f0;}
 .embedee	{margin:0.5rem;}
 
 /* Notes */
+body.notes  {font-family:'Lora',serif;font-size:16px;padding-left:2rem;width:720px;}
+.notes h1,.notes h2,.notes h3,.notes h4{font-family:'Playfair Display','Lora',sans-serif;font-style:italic;text-transform:capitalize;}
+.notes p    {text-align:justify;}
+.notes thead {font-family:'Playfair Display','Lora',sans-serif;}
+.notes thead td {padding-bottom:1rem;}
 hist		{color:limegreen;}
 kw			{color:blue;}
 
@@ -45,3 +49,11 @@ kw			{color:blue;}
 .token.important{font-weight:bold}
 .token.entity{cursor:help}
 .language-markup .token.tag,.language-markup .token.attr-name,.language-markup .token.punctuation{color:#607D8B}
+
+@media print, screen and (max-width: 720px) {
+	body {margin:0 1rem;padding:0 !important;position:static;width:auto !important;}
+}
+@media print {
+	html {background:white;}
+	body {color:black;font-size:12pt;padding:0.4in 0;}
+}
