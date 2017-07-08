@@ -22,14 +22,16 @@
 			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
 			TeX: {extensions: ["[mhchem]/mhchem.js"]},
 			SVG: {
-				font: "Gyre-Termes",
+				font: "Latin-Modern",
 				matchFontHeight: true,
-				scale: 90
+				scale: 90,
+				blacker: 0
 			}
 		});
 		MathJax.Hub.setRenderer("SVG");
 	</script>
 	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<script type="text/javascript" src="http://twemoji.maxcdn.com/2/twemoji.min.js"></script>
 </head>
 <body class="notes">
 	<div id="0.0">
@@ -184,7 +186,7 @@
 			wherein he stated that in a chemical reaction, matter is neither created nor destroyed.
 			8yrs later, in 1797, <hist>joseph proust</hist> (a french dude) summarized his observations in the <kw>law of definite proportions</kw>:
 			all samples of a given compound, regardless of their source or how they were prepared, have the same proportions of the constituent elements...
-			pretty fucking obvious, that's what make them said compound -_-.
+			pretty fucking obvious, that's what make them said compound &#x1F611;.
 			in 1804, <hist>john dalton</hist> published his <kw>law of multiple proportions</kw>:
 			when two elements, A n B, form two different compounds, the masses of element B that combine w one gram of A can be expressed as a ration of small whole numbers.
 			pimpin' aint easy but elementary chemistry is*.
@@ -489,26 +491,43 @@
 		</p>
 		<table style="width:100%">
 			<thead>
-				<td style="width:30%">Generally Soluble</td>
-				<td style="width:70%">Exceptions</td>
+				<td style="width:30%">Generally Soluble</td><td style="width:70%">Exceptions</td>
 			</thead>
 			<tr>
-				<td>$\ce{Li^+, Na^+, K^+, NH4^+}$</td>
-				<td>None</td>
+				<td>$\ce{Li^+, Na^+, K^+, NH4^+}$</td><td>None</td>
 			</tr>
 			<tr>
-				<td>$\ce{NO3^-, C2H3O2^-}$</td>
-				<td>None</td>
+				<td>$\ce{NO3^-, C2H3O2^-}$</td><td>None</td>
 			</tr>
 			<tr>
-				<td>$\ce{Cl^-, Br^-, I^-}$</td>
-				<td>$\ce{Ag^+, Hg2^2+, Pb^2+}$</td>
+				<td>$\ce{Cl^-, Br^-, I^-}$</td><td>$\ce{Ag^+, Hg2^2+, Pb^2+}$</td>
+			</tr>
+			<tr>
+				<td>$\ce{SO4^2+}$</td><td>$\ce{sr^2+, Ba^2+, Pb^2+, Ag^2+, Ca^2+}$</td>
 			</tr>
 		</table>
+		<table style="width:100%">
+			<thead>
+				<td style="width:30%">Generally Insoluble</td><td style="width:70%">Exceptions</td>
+			</thead>
+			<tr>
+				<td>$\ce{OH^-, S^2-}$</td><td>$\ce{Li^+, Na^+, K^+, NH4^+, Ca^2+, Sr^2+, Ba^2+}$</td>
+			</tr>
+			<tr>
+				<td>$\ce{CO3^2-, PO4^3-}$</td><td>$\ce{Li^+, Na^+, K^+, NH4^+}$</td>
+			</tr>
+		</table>
+		<p>
+			a <kw>precipitation reaction</kw> is when (aq) compounds react to form a solid that is called the <kw>precipitate</kw>.
+			some people denote this (&darr;).
+			you can predict this w the above chart.
+		</p>
 	</div>
 
 	<a href="https://trew.moe">
 		<img class="me" src="https://trew.moe/assets/button.png" alt="trewbot"/>
 	</a>
+
+	<script>twemoji.parse(document.body)</script>
 </body>
 </html>
