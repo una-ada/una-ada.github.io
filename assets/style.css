@@ -46,8 +46,9 @@ tr:nth-child(even){background:#f0f0f0;}
 .notes thead td	{padding-bottom:1rem;}
 .table-container{max-width:100%;/*overflow-x:scroll;*/}
 p>span.MathJax_SVG{margin-bottom: -1em !important;}
-hist			{color:limegreen;}
-kw				{color:blue;}
+hist			{color:#4d8;}
+kw				{color:#36d;}
+proof			{color:#e44;}
 
 /* Prism */
 .token.comment,.token.prolog,.token.doctype,.token.cdata,.token.punctuation{color:#9E9E9E}
