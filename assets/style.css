@@ -61,11 +61,13 @@ kw				{color:blue;}
 .language-markup .token.tag,.language-markup .token.attr-name,.language-markup .token.punctuation{color:#607D8B}
 
 @media print, screen and (max-width: 750px) {
-	body		{margin:0 1rem !important;padding:0 !important;position:static;width:auto !important;}
+	body.notes	{margin:0 1rem !important;padding:0 !important;position:static;width:auto !important;}
 	table		{max-width:100%;}
 }
-@media print, screen and (max-width: 450px) {
-	body.notes	{text-align:left;}
+@media print, screen and (max-width: 520px) {
+	body		{margin:0 1rem !important;padding:0 !important;position:static;width:auto !important;text-align:left;}
+	.headshot	{margin-bottom:1rem;max-width:none;width:100%;}
+	.me			{position:relative;}
 }
 @media print {
 	html		{background:white;}
