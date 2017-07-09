@@ -5,6 +5,7 @@ blockquote		{padding-left:10px;border-left:2px solid #444;margin:0;}
 blockquote p	{margin:0.5rem 0;}
 code        	{font-family:monospace;}
 div:target		{background:#eee;}
+h1 a,h2 a,h3 a,h4 a{text-decoration:none;}
 h2          	{margin-top:3em;}
 html			{color:#444;font-size:9pt;}
 img,video		{max-width:calc(100% - 1rem);}
@@ -19,7 +20,7 @@ tr:nth-child(even){background:#f0f0f0;}
 .emoji			{height:1rem;}
 
 /* Button */
-.me				{bottom:1rem;position:fixed;right:1rem;z-index:1000;}
+.me				{bottom:1rem;max-width:150px;position:fixed;right:1rem;z-index:1000;}
 
 /* Docs */
 .content    	{width:500px;padding-left:calc(50vw - 250px);}
@@ -33,7 +34,8 @@ tr:nth-child(even){background:#f0f0f0;}
 .embedee		{margin:0.5rem;}
 
 /* Notes */
-body.notes  	{font-family:'Lora',serif;font-size:16px;margin-left:calc(50vw - 360px);width:720px;}
+.notes 		 	{font-family:'Lora',serif;font-size:16px;margin-left:calc(50vw - 360px);width:720px;}
+.notes div:target {background:none;}
 .notes h1,
 .notes h2,
 .notes h3,
