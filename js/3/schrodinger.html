@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--
+   -	Schrodinger.js
+   -	Trevor Hoglund <trewbot@gmail.com>
+   -	2017.08.09
+   -
+   -	REQUIRES ES2015 AND WEBGL
+   -
+   -	References:
+   -		https://en.wikipedia.org/wiki/Quantum_tunnelling
+   -		https://stemkoski.github.io/Three.js/Graphulus-Function.html
+   -		https://github.com/josdirksen/learning-threejs/blob/master/chapter-06/06-parametric-geometries.html
+   -		https://threejs.org/docs/#api/geometries/ParametricGeometry
+   -		https://jakevdp.github.io/blog/2012/09/05/quantum-python/
+   -		https://github.com/dntj/jsfft
+   -		https://github.com/corbanbrook/dsp.js
+   -		https://en.wikipedia.org/wiki/Wave_packet
+   -		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+   -		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+   -		https://stackoverflow.com/questions/15399340/how-to-calculate-with-imaginary-numbers-in-javascript
+   -		https://github.com/josdejong/mathjs/blob/master/docs/datatypes/complex_numbers.md
+   -		http://mathjs.org/docs/datatypes/complex_numbers.html
+   -		http://mathjs.org/docs/core/chaining.html
+   -
+   -	Sources used:
+   -		https://github.com/josdirksen/learning-threejs/blob/master/chapter-06/06-parametric-geometries.html
+   -		https://github.com/jakevdp/pySchrodinger/blob/master/schrodinger.py
+   -
+   -	Libraries used:
+   -		https://threejs.org/
+   -		https://github.com/corbanbrook/dsp.js
+   -		http://mathjs.org/
+  -->
+<html>
+<head>
+	<title>Schrodinger.js</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.0/math.min.js"></script>
+	<script src="assets/dep.js"></script>
+	<script src="assets/dsp.js"></script>
+	<script src="assets/OrbitControls.js"></script>
+	<style>
+		html,body{margin:0;padding:0;overflow:hidden;}
+		.me{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
+	</style>
+</head>
+<body>
+	<script>
+		//	Scene Setup
+		const
+			scene		= new THREE.Scene(),
+			aspect		= window.innerWidth/window.innerHeight,
+			camera		= new THREE.PerspectiveCamera(75,aspect,0.1,1e3),
+			controls	= new THREE.OrbitControls(camera),
+			renderer	= new THREE.WebGLRenderer(),
+			r			= ()=>Math.random();
+		var tick		= 0;
+		scene.background	= new THREE.Color(0xffffff);
+		camera.position.x	=
+		camera.position.z	=
+		camera.position.y	= 50;
+		renderer.setSize(window.innerWidth,window.innerHeight);
+		document.body.appendChild(renderer.domElement);
+
+		// Math
+		const
+			ℏ			= 1, // 1.05e-34 m2kg/s
+			π			= Math.PI;
+		/** Schrodinger Equation Solver */
+		class Ψ {
+			/**
+			 *	Create a Schrodinger solver
+			 *	@param {array} x - Points to solve at (must be evenly spaced)
+			 *	@param {array} ψ_0 - ψ at time t_0 at each point x
+			 *	@param {array} V - Potential energy at each point x
+			 *	@param {number} [m=mass] - Mass of the particle
+			 *	@param {number} [k_min=null] - Minimum value of k
+			 *	@param {number} [t_0=0] - Initial time
+			 */
+			constructor(x,ψ_0,V,m=mass,k_min=null,t_0=0){
+				this.x		= x;
+				this.ψ_0	= ψ_0;
+				this.V		= V;
+				this.m		= m;
+				this.k_min	= k_min;
+				this.t_0	= t_0;
+				this.N		= x.length,
+				this.t		= t_0,
+				this.Δt		= null,
+				this.Δx		= this.x[1]-this.x[0],
+				this.Δk		= 2*π/(this.N*this.Δx);
+				if(this.k_0	==null)
+					this.k_0= -0.5*this.N*this.Δk;
+				this.k		= new Array(this.N);
+				for(let i of this.k)
+					this.k[i] = this.k_0+(this.Δk*i);
+				this.xStep	= null;
+				this.xStepH	= null;
+				this.kStep	= null;
+				// sample rate of an arbitrary buffer is 1/Δx maybe???
+				this.X		= new FFT(this.N,1/this.Δx);
+			}
+
+			/**
+			 *	Get the value of ψ(x)
+			 *	@return {array} ψ(x) - Values of ψ(x)
+			 */
+			get ψx(){
+				var j	= math.complex(0,1),
+					ψx	= math.chain(this.ψ_x)
+			                  .multiply(
+						    	  math.exp(
+									  math.chain(j)
+									      .multiply(this.k[0])
+										  .multiply(this.x)
+										  .done()
+								  )
+					          )
+							  .multiply(math.sqrt(2*π))
+							  .divide(this.Δx)
+					          .done();
+				return ψx;
+			};
+
+			/**
+			 *	Set the value of ψ(x)
+			 *	@param {array} ψx - Values of ψ(x)
+			 */
+			set ψx(ψx){
+				var j	= math.complex(0,-1);
+				this.ψ_x= math.chain(ψx)
+				              .multiply(
+								  math.exp(
+									  math.chain(j)
+									      .multiply(this.k[0])
+										  .multiply(this.x)
+								  )
+							  )
+							  .multiply(this.Δx)
+							  .divide(math.sqrt(2*π))
+							  .done();
+			};
+
+			/**
+			 *	Get the value of ψ(k)
+			 *	@return {array} ψ(k) - Values of ψ(k)
+			 */
+			get ψk(){
+				var j	= math.complex(0,-1),
+					A	= new Array(this.N);
+				for(let i=0;i<this.N;) A[i]=++i;
+				var ψk	= math.chain(this.ψ_k)
+					          .multiply(
+								  math.exp(
+									  math.chain(j)
+									      .multiply(this.x[0])
+										  .multiply(this.Δk)
+										  .multiply(A)
+										  .done()
+								  )
+							  )
+							  .done();
+				return ψk;
+			};
+
+			/**
+			 *	Set the value of ψ(k)
+			 *	@param {array} ψk - Values of ψ(k)
+			 */
+			set ψk(ψk){
+				var j	= math.complex(0,1),
+					A	= new Array(this.N);
+				for(let i=0;i<this.N;) A[i]=++i;
+				this.ψ_k= math.chain(ψk)
+				              .multiply(
+								  math.exp(
+									  math.chain(j)
+									      .multiply(this.x[0])
+										  .multiply(this.Δk)
+										  .multiply(A)
+										  .done()
+								  )
+							  )
+							  .done();
+			};
+
+			/**
+			 *	Get the value of Δt
+			 *	@return {number} Δt - Value of Δt
+			 *	THIS SHOULDNT BE DECLARED BC IT JUST CALLS ITSELF
+			 */
+			//get Δt(){
+			//	return this.Δt;
+			//};
+
+			/**
+			 *	Set the value of Δt
+			 *	@param {number} Δt - Value of Δt
+			 */
+			set Δt(Δt){
+				if(Δt!=this.Δt){
+					var j		= math.complex(0,1);
+					this.Δt		= Δt;
+					this.xStepH	= math.exp(
+						math.chain(-0.5)
+						    .multiply(j)
+							.multiply(this.V)
+							.multiply(this.Δt)
+							.divide(ℏ)
+							.done()
+					);
+					this.xStep	= math.pow(this.xStepH,2);
+					this.kStep	= math.exp(
+						math.chain(-0.5)
+						    .multiply(j)
+							.multiply(math.pow(k,2))
+							.multiply(this.Δt)
+							.multiply(ℏ)
+							.divide(this.m)
+							.done()
+					);
+				}
+			};
+
+			/**
+			 *	Compute k from x using an FFT (X(k))
+			 */
+			kx(){
+				ψ_k = this.X.forward(math.re(ψ_x));
+			}
+
+			/**
+			 *	Compute x from k using an IFFT (K(x))
+			 */
+			xk(){
+				ψ_x = this.X.inverse(math.re(ψ_k),math.im(ψ_k));
+			}
+
+			/**
+			 *	Perform a series of time steps via the TDSE
+			 *	@param {number} Δt - Time interval over which to integrate
+			 *	@param {number} [steps=1] - Number of intervals to compute
+			 */
+			step(Δt,steps=1){
+				this.Δt = Δt;
+				if(steps>0)
+					this.ψ_x = math.multiply(this.ψ_x,this.xStepH);
+				for(let i=0;i<steps;i++){
+					this.kx();
+					this.ψ_k = math.multiply(this.ψ_k,this.kStep);
+					this.xk();
+					this.ψ_x = math.multiply(this.ψ_x,this.xStep);
+				}
+				this.kx();
+				this.ψ_k = math.multiply(this.ψ_k,this.kStep);
+				this.xk();
+				this.ψ_x = math.multiply(this.ψ_x,this.xStepH);
+				this.kx();
+				this.t+=Δt*steps;
+			}
+
+			/**
+			 *	Gaussian wave packet
+			 *	@param {array} x - Points at which to render Gaussian
+			 *	@param {number} a - Packet width
+			 *	@param {number} x_0 - Center of packet
+			 *	@param {number} k_0 - Momentum of packet
+			 */
+			static ux(x,a,x_0,k_0){
+				return math.multiply(
+					math.pow(math.multiply(a,math.sqrt(π)),-0.5),
+					math.exp(
+						math.chain(-0.5)
+						    .multiply(
+								math.chain(x)
+							        .subtract(x_0)
+								    .divide(a)
+								    .done(),
+							)
+						    .multiply(
+								math.chain(x)
+							        .subtract(x_0)
+								    .divide(a)
+								    .done(),
+							)
+							.add(
+								math.chain(math.complex(0,1))
+								    .multiply(x)
+									.multiply(k_0)
+									.done()
+							)
+							.done()
+					)
+				);
+			};
+
+			/**
+			 *	Analytical fourier transform of a gaussian wave packet
+			 *	@param {array} k - Momentums at which to render Gaussian
+			 *	@param {number} a - Packet width
+			 *	@param {number} x_0 - Center of packet
+			 *	@param {number} k_0 - Momentum of packet
+			 */
+			static uk(k,a,x_0,k_0){
+				return math.multiply(
+					math.pow(math.divide(a,math.sqrt(π)),0.5),
+					math.exp(
+						math.chain(-0.5)
+						    .multiply(
+								math.chain(k)
+								    .subtract(k_0)
+									.multiply(a)
+									.pow(2)
+									.done()
+							)
+							.subtract(
+								math.chain(math.complex(0,1))
+								    .multiply(math.subtract(k,k_0))
+									.multiply(x_0)
+									.done()
+							)
+							.done()
+					)
+				);
+			};
+
+			/**
+			 *	Theta function
+			 *	@param {array} x - Array of input values
+			 *	@return {array} Array of values 0 if x<=0 and 1 if x>0 at index
+			 */
+			static θ(x){
+				var y = new Array(x.length);
+				for(let i=0;i<y.length;i++) y[i]=+(x[i]>0);
+				return y;
+			}
+
+			/**
+			 *	Square barrier
+			 *	@param {array} x - Values over which to build barrier
+			 *	@param {number} width - Width of the barrier
+			 *	@param {number} height - Height of the barrier
+			 */
+			static squareBarrier(x,width,height){
+				return math.multiply(
+					height,
+					math.subtract(
+						this.θ(x),
+						this.θ(math.subtract(x,width))
+					)
+				)
+			}
+
+		};
+
+
+		// Graphing
+
+		var N			= 2**11,
+			x			= new Array(N),
+			dx			= 0.1;
+		for(let i=0;i<N;i++) x[i] = dx * (i-0.5*N);
+		var V_0			= 1.5,
+			mass		= 1.9,
+			L			= ℏ/math.sqrt(2*mass*V_0),
+			a			= 3*L,
+			x_0			= -60/L,
+			V			= Ψ.squareBarrier(x,a,V_0),
+			p_0			= math.sqrt(2*mass*0.2*V_0),
+			dp2			= (p_0**2)/80,
+			d			= ℏ/math.sqrt(2*dp2),
+			k_0			= p_0/ℏ,
+			ψ_0			= Ψ.ux(x,d,x_0,k_0),
+			k_min		= -28,
+
+			ψ			= new Ψ(x,ψ_0,V,mass,k_min);
+
+		var	func		= (u,v)=>{
+				return new THREE.Vector3(
+					(u-0.5)*64,
+					Math.sin(((((u-0.5)**2 + (v-0.5)**2)**0.5)-((tick/128)%Math.PI))*16)*2,
+					(v-0.5)*64
+				)
+			},
+			geometry	= new THREE.ParametricGeometry(func,30,30),
+			material	= new THREE.MeshLambertMaterial({color:0x555555,side:THREE.DoubleSide}),
+			graph		= new THREE.Mesh(geometry,material);
+		scene.add(graph);
+
+		// Lighting
+		var light		= new THREE.DirectionalLight(0xffffff,0.6);
+		scene.add(light);
+
+		//	Rendering Loop
+		(render	= ()=>{
+			if(tick%2){
+				scene.remove(graph);
+				geometry	= new THREE.ParametricGeometry(func,20,20);
+				graph		= new THREE.Mesh(geometry,material);
+				scene.add(graph);
+			}
+			//	Loop
+			requestAnimationFrame(render);
+			//	Scene Control
+			controls.update();
+			renderer.render(scene,camera);
+			tick++;
+		})();
+
+		//	Handle Resize
+		if(!window.mobilecheck())window.addEventListener('resize',()=>{
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+		},!1);
+	</script>
+	<a href="https://trew.moe">
+		<img class="me" src="https://trew.moe/assets/button.png" alt="trewbot"/>
+	</a>
+</body>
+</html>
