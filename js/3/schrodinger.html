@@ -21,6 +21,8 @@
    -		https://github.com/josdejong/mathjs/blob/master/docs/datatypes/complex_numbers.md
    -		http://mathjs.org/docs/datatypes/complex_numbers.html
    -		http://mathjs.org/docs/core/chaining.html
+   -		https://stackoverflow.com/questions/7821473/fft-in-javascript
+   -		https://www.nayuki.io/page/free-small-fft-in-multiple-languages
    -
    -	Sources used:
    -		https://github.com/josdirksen/learning-threejs/blob/master/chapter-06/06-parametric-geometries.html
@@ -28,7 +30,7 @@
    -
    -	Libraries used:
    -		https://threejs.org/
-   -		https://github.com/corbanbrook/dsp.js
+   -		~~ https://github.com/corbanbrook/dsp.js ~~
    -		http://mathjs.org/
   -->
 <html>
@@ -39,7 +41,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.0/math.min.js"></script>
 	<script src="assets/dep.js"></script>
-	<script src="assets/dsp.js"></script>
+	<script src="assets/fft.js"></script>
 	<script src="assets/OrbitControls.js"></script>
 	<style>
 		html,body{margin:0;padding:0;overflow:hidden;}
@@ -84,23 +86,25 @@
 				this.ψ_0	= ψ_0;
 				this.V		= V;
 				this.m		= m;
-				this.k_min	= k_min;
 				this.t_0	= t_0;
 				this.N		= x.length,
 				this.t		= t_0,
 				this.Δt		= null,
 				this.Δx		= this.x[1]-this.x[0],
 				this.Δk		= 2*π/(this.N*this.Δx);
-				if(this.k_0	==null)
-					this.k_0= -0.5*this.N*this.Δk;
+				if(k_min==null)
+					this.k_min = -0.5*this.N*this.Δk;
+				else
+					this.k_min = k_min;
 				this.k		= new Array(this.N);
-				for(let i of this.k)
-					this.k[i] = this.k_0+(this.Δk*i);
+				for(let i=0;i<this.N;i++)
+					this.k[i] = this.k_min+(this.Δk*i);
+				this.ψx		= ψ_0;
+				//this.kx();
 				this.xStep	= null;
 				this.xStepH	= null;
 				this.kStep	= null;
-				// sample rate of an arbitrary buffer is 1/Δx maybe???
-				this.X		= new FFT(this.N,1/this.Δx);
+
 			}
 
 			/**
@@ -136,11 +140,13 @@
 									  math.chain(j)
 									      .multiply(this.k[0])
 										  .multiply(this.x)
+										  .done()
 								  )
 							  )
 							  .multiply(this.Δx)
 							  .divide(math.sqrt(2*π))
 							  .done();
+				console.log(ψx,this.ψ_x);
 			};
 
 			/**
@@ -202,21 +208,21 @@
 			set Δt(Δt){
 				if(Δt!=this.Δt){
 					var j		= math.complex(0,1);
-					this.Δt		= Δt;
 					this.xStepH	= math.exp(
 						math.chain(-0.5)
 						    .multiply(j)
 							.multiply(this.V)
-							.multiply(this.Δt)
+							.multiply(Δt)
 							.divide(ℏ)
 							.done()
 					);
-					this.xStep	= math.pow(this.xStepH,2);
+					this.xStep	= math.multiply(this.xStepH,this.xStepH);
 					this.kStep	= math.exp(
 						math.chain(-0.5)
 						    .multiply(j)
-							.multiply(math.pow(k,2))
-							.multiply(this.Δt)
+							.multiply(this.k)
+							.multiply(this.k)
+							.multiply(Δt)
 							.multiply(ℏ)
 							.divide(this.m)
 							.done()
@@ -228,14 +234,14 @@
 			 *	Compute k from x using an FFT (X(k))
 			 */
 			kx(){
-				ψ_k = this.X.forward(math.re(ψ_x));
+				this.ψ_k = transform(math.re(this.ψ_x),math.im(this.ψ_x));
 			}
 
 			/**
 			 *	Compute x from k using an IFFT (K(x))
 			 */
 			xk(){
-				ψ_x = this.X.inverse(math.re(ψ_k),math.im(ψ_k));
+				this.ψ_x = inverseTransform(math.re(this.ψ_k),math.im(this.ψ_k));
 			}
 
 			/**
@@ -245,6 +251,7 @@
 			 */
 			step(Δt,steps=1){
 				this.Δt = Δt;
+				if(typeof this.ψ_x.length != "number") this.ψ_x = this.ψ_0;
 				if(steps>0)
 					this.ψ_x = math.multiply(this.ψ_x,this.xStepH);
 				for(let i=0;i<steps;i++){
@@ -274,16 +281,11 @@
 					math.exp(
 						math.chain(-0.5)
 						    .multiply(
+								//this is supposed to be square but then EVERYHRING IS ZERO IDGI
 								math.chain(x)
 							        .subtract(x_0)
 								    .divide(a)
-								    .done(),
-							)
-						    .multiply(
-								math.chain(x)
-							        .subtract(x_0)
-								    .divide(a)
-								    .done(),
+								    .done()
 							)
 							.add(
 								math.chain(math.complex(0,1))
