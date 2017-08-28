@@ -1,3 +1,5 @@
 repository: trewbot/trewbot.github.io
 title: Trewbot
 url: https://trew.moe/
+
+theme: jekyll-theme-minimal
