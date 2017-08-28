@@ -1,0 +1,70 @@
+---
+---
+
+/* Elements */
+a				{text-decoration:underline;color:#444;}
+body			{font-family:monospace;}
+blockquote		{padding-left:10px;border-left:2px solid #444;margin:0;}
+blockquote p	{margin:0.5rem 0;}
+code        	{font-family:monospace;}
+div:target		{background:#eee;}
+h1 a,h2 a,h3 a,h4 a{text-decoration:none;}
+h2          	{margin-top:3em;}
+html			{color:#444;font-size:9pt;}
+img,video		{max-width:calc(100% - 1rem);}
+pre        		{background:#fff;border:1px solid #555;overflow:visible !important;padding:10px !important;tab-size:4;}
+small       	{font-size:7pt;}
+sub				{vertical-align:bottom;position:relative;bottom:-0.3em;}
+sup				{vertical-align:top;position:relative;top:-0.3em;}
+table			{border-collapse:collapse;margin:1em 0;}
+thead			{font-weight:bold;}
+tr:nth-child(even){background:#f0f0f0;}
+
+.emoji			{height:1rem;}
+
+/* Button */
+.me				{bottom:1rem;max-width:150px;position:fixed;right:1rem;z-index:1000;}
+
+/* Notes */
+.notes 		 	{font-family:'Lora',serif;font-size:16px;margin-left:calc(50vw - 360px);width:720px;}
+.notes div:target {background:none;}
+.notes h1,
+.notes h2,
+.notes h3,
+.notes h4		{font-family:'Playfair Display','Lora',sans-serif;font-style:italic;text-align:center;text-transform:capitalize;}
+.notes p    	{line-height:2.2rem;text-align:justify;}
+.notes table	{line-height:2.2rem;}
+.notes thead	{font-family:'Playfair Display','Lora',sans-serif;}
+.notes thead td	{padding-bottom:1rem;}
+.table-container{max-width:100%;/*overflow-x:scroll;*/}
+p>span.MathJax_SVG{margin-bottom: -1em !important;}
+hist			{color:#4d8;}
+kw				{color:#36d;}
+proof			{color:#e44;}
+
+/* Prism */
+.token.comment,.token.prolog,.token.doctype,.token.cdata,.token.punctuation{color:#9E9E9E}
+.namespace{opacity:.7}
+.token.property,.token.tag,.token.boolean,.token.number,.token.constant,.token.symbol{color:#FFC107}
+.token.attr-name,.token.attr-value,.token.string,.token.char,.token.entity,.token.url,.language-css .token.string,.style .token.string,.token.variable,.token.inserted{color:#FF5722}
+.token.atrule,.token.attr-value,.token.keyword{color:#8BC34A}
+.token.regex,.token.important{color:#A1887F}
+.token.important{font-weight:bold}
+.token.entity{cursor:help}
+.language-markup .token.tag,.language-markup .token.attr-name,.language-markup .token.punctuation{color:#607D8B}
+
+@media print, screen and (max-width: 750px) {
+	body.notes	{margin:0 1rem !important;padding:0 !important;position:static;width:auto !important;}
+	table		{max-width:100%;}
+}
+@media print, screen and (max-width: 520px) {
+	body		{margin:0 1rem !important;padding:0 !important;position:static;width:auto !important;text-align:left;}
+	.headshot	{margin-bottom:1rem;max-width:none;width:100%;}
+	.me			{position:relative;}
+}
+@media print {
+	html		{background:white;}
+	h2			{margin-top:1em;}
+	body		{color:black;font-size:11pt;padding:0.4in 0;}
+	.me			{display:none;}
+}
