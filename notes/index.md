@@ -4,7 +4,7 @@ title: Trewbot / Notes
 
 # [Notes](https://trew.moe/notes)
 Do you like learning things?
-Do you <i>want</i> to learn <i>more</i> things?
+Do you _want_ to learn _more_ things?
 Are you fine with listening to someone complain about their loneliness and constant existential crisis while also kind of explaining said things?
 Then, uhh, check out this assortment of notes from classes I may or may not have taken.
 _&mdash; Trewbot_
@@ -41,4 +41,4 @@ Then smash this motherfucking like button:
 
 &nbsp;
 
-https:// <a href="https://trew.moe">Trew.bot</a> / <a href="https://trew.moe/notes">Notes</a>
+https:// [Trew.bot](https://trew.moe) / [Notes](https://trew.moe/notes)
