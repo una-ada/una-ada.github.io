@@ -27,7 +27,7 @@ Download logo: [.ai](/assets/img/pvf/logo.ai), [.svg](/assets/img/pvf/logo.svg).
 
 ## Usage with Text
 
-To keep with the theme of electronics in the design, Consolas is the best font to use alongside the logo.
+To keep with the theme of electronics in the design, Courier New is the best font to use alongside the logo.
 As this is a fixed-width font, there are a couple issues related to the typesetting.
 
 <img src="/assets/img/pvf/header.png" style="width:400px;float:right;">
@@ -35,7 +35,7 @@ As this is a fixed-width font, there are a couple issues related to the typesett
 First, the usage of the word "the" before "People's Virtual Front" has either the issue that it would significantly expand the line for "People's" if put on the same line as would normally be done, or it would create an odd misbalance of the text block if given its own line based on the vertical extension from three to four lines with a chunk missing from the top right.
 This was remedied by placing the word "the" on a separate line but with a font-size approximately 70% of the rest of the text.
 
-Second, the apostrophe in the Consolas font is much thicker than the rest of the font, this goes back to the issue mentioned in the previous section of the usage of line art, the thicker apostrophe gives a significant weight to this singular character amongst all the text and the logo.
+Second, the apostrophe in the Courier New font is much thicker than the rest of the font, this goes back to the issue mentioned in the previous section of the usage of line art, the thicker apostrophe gives a significant weight to this singular character amongst all the text and the logo.
 This is worsened by the spacing provided from the fixed-width of the font.
 To fix this issue a separate font can be used for the apostrophe, in this case Century Schoolbook is used.
 
