@@ -8,7 +8,7 @@ After much consideration of different manners of creating a design for the Peopl
 While I do agree that to some extent the hammer and sickle is overused, the goal of this project is to provide a platform for informative content about leftist thought, particularly in video format, and so it may be preferable to in some way use common communist symbolism to represent this.
 Of course, the hammer and sickle does have a reputation of being associated with the U.S.S.R., the policies and ideologies of which many members and viewers of this project may significantly disagree with; the hope is that the representation of the symbol with a circuit design will serve as a powerful enough obfuscation of the symbol such that viewers will not immediately assume the intent to defend the U.S.S.R. (if this does come up at any point, members of the project are free to denounce any associations with the U.S.S.R., Russia, Marxism-Leninism, etc. and bring the issue back to the group as a whole to reassess the necessity of a redesign).
 In general, I do not believe that it is necessary that the logo be 100% original, or that we should avoid Soviet symbolism completely.
-Other leftist symbolism also has its associations with unfavorable groups and other generally negative perceptions, a lot of these, however, do not lend themselves as easily to manipulation due to either the basic structure of the symbol or the lack of variation in the past so as to not set enough precedent the people will be looking to recognize it in various forms.
+Other leftist symbolism also has its associations with unfavorable groups and other generally negative perceptions, a lot of these, however, do not lend themselves as easily to manipulation due to either the basic structure of the symbol or the lack of variation in the past so as to not set enough precedent that people will be looking to recognize it in various forms.
 
 >“Things which are different in order to be different are seldom better, but that which is made to be better is almost always different.” — Dieter Rams
 
@@ -32,8 +32,7 @@ As this is a fixed-width font, there are a couple issues related to the typesett
 
 <img src="/assets/img/pvf/header.png" style="width:400px;float:right;">
 
-First, the usage of the word "the" before "People's Virtual Front" has either the issue that it would significantly expand the line for "People's" if put on the same line as would normally be done.
-Additionally, it would create an odd misbalance of the text block if given its own line based on the vertical extension from three to four lines with a chunk missing from the top right.
+First, the usage of the word "the" before "People's Virtual Front" has either the issue that it would significantly expand the line for "People's" if put on the same line as would normally be done, or it would create an odd misbalance of the text block if given its own line based on the vertical extension from three to four lines with a chunk missing from the top right.
 This was remedied by placing the word "the" on a separate line but with a font-size approximately 70% of the rest of the text.
 
 Second, the apostrophe in the Consolas font is much thicker than the rest of the font, this goes back to the issue mentioned in the previous section of the usage of line art, the thicker apostrophe gives a significant weight to this singular character amongst all the text and the logo.
