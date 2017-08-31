@@ -1,5 +1,5 @@
 ---
-title: Praxis and the Report from the Real Minority
+title: Praxis and the "Report from the Real Minority"
 ---
 
 # Praxis and the Report from the Real Minority
