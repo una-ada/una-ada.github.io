@@ -2,7 +2,7 @@
 title: Praxis and the "Report from the Real Minority"
 ---
 
-# Praxis and the Report from the Real Minority
+# Praxis and the "Report from the Real Minority"
 
 This report needs a real breakdown from an experienced political analyst that isn't just some neoliberal corporate sellout, but as I'm me and I've not slept in something like 24 hours now, I don't feel qualified to do this.
 However, perhaps because I have not slept, or perhaps because I do believe it to be necessary, I want to write a quick piece about the false idea of praxis that is described in this "report."
