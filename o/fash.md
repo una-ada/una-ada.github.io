@@ -22,9 +22,4 @@
             - This scheme gives people some manner to easily associate themselves with the group _if they choose to_
         - The community as a part of the self
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">fashion is an inefficient and classist idea</p>&mdash; Trevor Hoglund 🏴 (@trewbot) <a href="https://twitter.com/trewbot/status/892793001097011200">August 2, 2017</a></blockquote>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">this is true however only for the time being, fashion itself essentially will have a post revolution phase where it can only serve corp.s</p>&mdash; Trevor Hoglund 🏴 (@trewbot) <a href="https://twitter.com/trewbot/status/892799472278876167">August 2, 2017</a></blockquote>
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I think it does but that clothing should be flexible to meet that expression rather than weekly fashion cycles n new pieces used for it</p>&mdash; Trevor Hoglund 🏴 (@trewbot) <a href="https://twitter.com/trewbot/status/892801656177524737">August 2, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+My tweets abt this from Aug 2, 2017: [A](https://twitter.com/trewbot/status/892793001097011200), [B](https://twitter.com/trewbot/status/892799472278876167), [C](https://twitter.com/trewbot/status/892801656177524737).
