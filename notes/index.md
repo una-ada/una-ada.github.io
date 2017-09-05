@@ -2,7 +2,7 @@
 title: Trewbot / Notes
 ---
 
-# [Notes](https://trew.moe/notes)
+# [Notes](https://trew.moe/n)
 Do you like learning things?
 Do you _want_ to learn _more_ things?
 Are you fine with listening to someone complain about their loneliness and constant existential crisis while also kind of explaining said things?
@@ -41,4 +41,4 @@ Then smash this motherfucking like button:
 
 &nbsp;
 
-https:// [Trew.bot](https://trew.moe) / [Notes](https://trew.moe/notes)
+https:// [Trew.bot](https://trew.moe) / [Notes](https://trew.moe/n)
