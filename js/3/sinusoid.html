@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+   -	Sinusoid.js
+   -	Trevor Hoglund <trewbot@gmail.com>
+   -	2017.09.24
+   -
+   -	REQUIRES ES2015 AND WEBGL
+   -
+   -	References:
+   -		https://en.wikipedia.org/wiki/Quantum_tunnelling
+   -		https://stemkoski.github.io/Three.js/Graphulus-Function.html
+   -		https://github.com/josdirksen/learning-threejs/blob/master/chapter-06/06-parametric-geometries.html
+   -		https://threejs.org/docs/#api/geometries/ParametricGeometry
+   -
+   -	Sources used:
+   -		https://github.com/josdirksen/learning-threejs/blob/master/chapter-06/06-parametric-geometries.html
+   -
+   -	Libraries used:
+   -		https://threejs.org/
+   -		http://mathjs.org/
+  -->
+<html>
+<head>
+	<title>Sinusoid.js</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.16.0/math.min.js"></script>
+	<script src="assets/dep.js"></script>
+	<script src="assets/OrbitControls.js"></script>
+	<style>
+		html,body{margin:0;padding:0;overflow:hidden;}
+	</style>
+</head>
+<body>
+	<script>
+		//	Scene Setup
+		const
+			scene		= new THREE.Scene(),
+			aspect		= window.innerWidth/window.innerHeight,
+			camera		= new THREE.PerspectiveCamera(75,aspect,0.1,1e3),
+			controls	= new THREE.OrbitControls(camera),
+			renderer	= new THREE.WebGLRenderer(),
+			r			= ()=>Math.random();
+		var tick		= 0;
+		scene.background	= new THREE.Color(0xffffff);
+		camera.position.x	=
+		camera.position.z	=
+		camera.position.y	= 50;
+		renderer.setSize(window.innerWidth,window.innerHeight);
+		document.body.appendChild(renderer.domElement);
+
+		var	func		= (u,v)=>{
+				return new THREE.Vector3(
+					(u-0.5)*64,
+					Math.sin(((((u-0.5)**2 + (v-0.5)**2)**0.5)-((tick/128)%Math.PI))*16)*2,
+					(v-0.5)*64
+				)
+			},
+			geometry	= new THREE.ParametricGeometry(func,30,30),
+			material	= new THREE.MeshLambertMaterial({color:0x555555,side:THREE.DoubleSide}),
+			graph		= new THREE.Mesh(geometry,material);
+		scene.add(graph);
+
+		// Lighting
+		var light		= new THREE.DirectionalLight(0xffffff,0.6);
+		scene.add(light);
+
+		//	Rendering Loop
+		(render	= ()=>{
+			if(tick%2){
+				scene.remove(graph);
+				geometry	= new THREE.ParametricGeometry(func,20,20);
+				graph		= new THREE.Mesh(geometry,material);
+				scene.add(graph);
+			}
+			//	Loop
+			requestAnimationFrame(render);
+			//	Scene Control
+			controls.update();
+			renderer.render(scene,camera);
+			tick++;
+		})();
+
+		//	Handle Resize
+		if(!window.mobilecheck())window.addEventListener('resize',()=>{
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+		},!1);
+	</script>
+</body>
+</html>
