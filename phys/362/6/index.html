@@ -1,0 +1,212 @@
+<html>
+	<head>
+		<style>
+			#graph		{position:relative;top:0;left:0;width:500px;height:300px;margin:30px 0 40px 50px;border:0 0 1px 1px solid #ccc;border-width:0 0 1px 1px;border-color:#ccc;border-style:solid;}
+			.plot-line	{position:absolute;bottom:0;background:blue;}
+			.plot-point	{position:absolute;bottom:0;width:1px;border-top-color:#444444;border-top-style:solid;}
+			.plot-tick	{position:absolute;top:calc(100%);width:1px;height:10px;background:#ccc;}
+			.plot-tick-label	{position:absolute;top:calc(100% + 13px);width:21px;text-align:center;color:#ccc;}
+			.plot-mark	{position:absolute;bottom:calc(100% + 10px);width:21px;text-align:center;color:#444;}
+			.plot-side-tick	{position:absolute;right:100%;height:1px;width:10px;background:#ccc;}
+			.plot-side-mark	{position:absolute;right:calc(100% + 13px);color:#ccc;}
+		</style>
+		<title>Poisson Distribution</title>
+		<script src='http://scripts.phene.co/color/0.1.0.0008'></script>
+		<link rel="stylesheet" href="http://gra.phene.co/assets/style.css" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+</head>
+<body>
+	<div id="body">
+	
+	<div class="post">
+		<div class="post-header">
+			<a><img class="post-avatar"></a>
+			<div class="post-name"><a><b>Poisson Distribution</b></a></div>
+			<div class="post-time"><a>Javascript Test</a></div>
+		</div>
+		<div class="post-content">
+			<div id="graph"></div>
+			<table>
+				<tr style="vertical-align:top;">
+					<td class="settings-label">Average</td>
+					<td class="settings-inputs">
+						<input id="avg" type="range" min="1" max="100" style="margin-bottom:10px;">
+					</td>
+				</tr>
+				<tr style="vertical-align:top;">
+					<td class="settings-label">Poisson Color</td>
+					<td class="settings-inputs">
+						<input id="color-input" type="text" class="settings-text" value="#FFAACC">
+						<div id="settings-clr" style="margin-bottom:10px;"></div>
+					</td>
+				</tr>
+				<tr style="vertical-align:top;">
+					<td class="settings-label">Reduced Chi Squared</td>
+					<td class="settings-inputs" id="rcs">
+						
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	</div>
+	
+	<audio id="music" src="music.mp3"></audio>
+	
+	<script>
+		function poisson(a,rounds){
+			var a = a || 40, rounds = rounds || 100;
+			var ret = [Math.exp(-a)];
+			for(var i = 1; i < rounds; i++)
+				ret[i] = (a * ret[i - 1]) / i;
+			return ret;
+		}
+		function gaussian(a,s,x){
+			return (1 / (s * Math.sqrt(2 * Math.PI))) * Math.exp((-1 / 2) * Math.pow(((x - a) / s),2));
+		}
+		function reducedChiSquared(a,min,max){
+			var a		= a || 40,
+				min		= min || 0,
+				max		= max || 100,
+				val		= poisson(a,max+1),
+				v		= (max - min),
+				tot		= 0;
+			for(let i = min; i <= max; i++)
+				tot += Math.pow(val[i] - gaussian(a,Math.sqrt(a),i),2);
+			return tot / v;
+		}
+		function poissonSum(a,rounds){
+			var a		= a || 40,
+				rounds	= rounds || 100,
+				val		= poisson(a,rounds),
+				tot		= 0;
+			for(let i = 0; i < val.length; i++)
+				tot += val[i];
+			return tot;
+		}
+		function plot(n){
+			var val = poisson(n),
+				e = document.getElementById('graph');
+				b = e.getBoundingClientRect(),
+				h = b.height,
+				w = b.width,
+				m = Math.max.apply(Math,val);
+			e.innerHTML = '';
+			//	PLOT THE POISSON
+			for(let i = 0; i < val.length; i++){
+				let l = document.createElement('div');
+					l.className = 'plot-line';
+					l.style.height = (val[i] * h) / m + 'px';
+					l.style.width = (w / val.length) + 'px';
+					l.style.left = (w / val.length) * i + 'px';
+					e.appendChild(l);
+			}
+			//	PLOT THE GAUSSIAN
+			for(let i = 1; i < w; i++){
+				let l = document.createElement('div'),
+					prev = (gaussian(n, Math.sqrt(n), (i - 1) / (w / val.length)) * h) / m,
+					next = (gaussian(n, Math.sqrt(n), (i) / (w / val.length)) * h) / m;
+					l.className = 'plot-point';
+					l.style.height = Math.min(prev,next) + 'px';
+					l.style.borderTopWidth = Math.max(prev,next) - Math.min(prev,next) + 'px';
+					l.style.left = i + 'px';
+					e.appendChild(l);
+			}
+			//	PLOT TICK MARKS
+			for(let i = 0; i <= val.length; i ++){
+				let t = document.createElement('div');
+					t.className = 'plot-tick';
+					t.style.left = (w / val.length) * i + 'px';
+					if(i%5==0) t.style.height = 13 + 'px';
+					e.appendChild(t);
+				if(i%10==0){
+					let l = document.createElement('div');
+						l.className = 'plot-tick-label';
+						l.innerText = i;
+						l.style.left = ((w / val.length) * i) - 11 + 'px';
+						e.appendChild(l);
+				}
+			}
+			//	PLOT SIDE TICKS
+			for(let i = 1; i < 5; i++){
+				let t = document.createElement('div');
+					t.className = 'plot-side-tick';
+					t.style.bottom = i * (h/4) + 'px';
+					e.appendChild(t);
+				let k = document.createElement('div');
+					k.className = 'plot-side-mark';
+					k.style.bottom = (i * (h/4)) - 7 + 'px';
+					k.innerText = ~~(i * (m/4) * 1e4) / 100 + '%';
+					e.appendChild(k);
+			}
+			//	PLOT MEAN AND STD DEV
+			for(let i = -1; i <= 1; i++){
+				if(n + (i * Math.sqrt(n))>val.length) break;
+				let m = document.createElement('div');
+					m.className = 'plot-line';
+					m.style.width = 1 + 'px';
+					m.style.backgroundColor = '#444';
+					m.style.height = h + 'px';
+					m.style.left = Math.min(w,(w / val.length) * (n + (i * Math.sqrt(n)))) + 'px';
+					e.appendChild(m);
+				let k = document.createElement('div');
+					k.className = 'plot-mark';
+					k.innerText = i == 0 ? '⟨j⟩' : 'σ';
+					k.style.left = Math.min(w,(w / val.length) * (n + (i * Math.sqrt(n)))) - 11 + 'px';
+					e.appendChild(k);
+			}
+			document.getElementById('rcs').innerText = reducedChiSquared(n);
+		}
+		function colorize(c){document.styleSheets[0].cssRules[1].style['background-color'] = c;}
+		var element	= document.getElementById('settings-clr'),
+			options	= {
+				color	: '#FFAACC',
+				input	: document.getElementById('color-input'),
+				func	: colorize
+			},
+			color	= new _g.color.picker(element, options);
+		function setSize(){
+			var w = 500 * ~~((window.innerWidth-80) / 500);
+			document.getElementById('body').style.width = w + 80 + 'px';
+			document.getElementsByClassName('post')[0].style.width = w + 80 + 'px';
+			document.getElementById('graph').style.width = w + 'px';
+			plot(+document.getElementById('avg').value);
+		}
+		document.getElementById('avg').oninput = function(){plot(+this.value);};
+		window.onresize = setSize;
+		window.onload = setSize;
+		plot(40);
+		if(window.location.hash == '#swoop'){
+			window.avgthing = 40;
+			window.tggle = true;
+			window.setInterval(function(){
+				if(window.avgthing == 100 || window.avgthing < 2)
+					window.tggle = !window.tggle;
+				window.tggle ? window.avgthing++ : window.avgthing--;
+				plot(window.avgthing);
+			},100);
+		}
+		
+		//	WEB AUDIO API BECAUSE ITS FUN
+		function useAudio(){
+			var audioCtx	= new(window.AudioContext || window.webkitAudioContext)(),
+				audio		= document.getElementById('music'),
+				source		= audioCtx.createMediaElementSource(audio),
+				analyser	= audioCtx.createAnalyser();
+			analyser.fftSize = 256;
+			source.connect(analyser);
+			analyser.connect(audioCtx.destination);	// this part is what makes it also play the sound IMPORTANT
+			var data		= new Uint8Array(analyser.frequencyBinCount);
+			function render(){
+				requestAnimationFrame(render);
+				analyser.getByteFrequencyData(data);
+				plot(Math.max((data[5]/255)*100,1));
+			}
+			audio.play();
+			render();
+		}
+		if(window.location.hash == '#music') useAudio();
+	</script>
+</body>
+</html>
