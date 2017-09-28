@@ -1,0 +1,5305 @@
+<Document>
+  <FileCoherence>1</FileCoherence>
+  <Version>3.10.1</Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>Aug 27 2015 10:31:28</ApplicationBuildDateTime>
+  <FileName>B v X.cmbl</FileName>
+  <FileIDString>2/8/2016 15:31:50Your name here2444415904</FileIDString>
+  <CreatorOS>2</CreatorOS>
+  <CreatorApp>1</CreatorApp>
+  <AbsoluteVersion>1</AbsoluteVersion>
+  <Radians>1</Radians>
+  <NumDerivativePoints>7</NumDerivativePoints>
+  <NumSmoothingPoints>7</NumSmoothingPoints>
+  <ShowZeroOnToolbar>0</ShowZeroOnToolbar>
+  <ShowDataMarkOnToolbar>0</ShowDataMarkOnToolbar>
+  <ShowGraphMatchOnToolbar>0</ShowGraphMatchOnToolbar>
+  <GraphMatchUseConstant>1</GraphMatchUseConstant>
+  <GraphMatchUseLinear>1</GraphMatchUseLinear>
+  <GraphMatchUseQuadratic>1</GraphMatchUseQuadratic>
+  <GraphMatchNumSections>0</GraphMatchNumSections>
+  <Stationery>0</Stationery>
+  <CreationDateTime>2/8/2016 15:31:50</CreationDateTime>
+  <ModifiedDateTime>2/9/2016 10:21:10</ModifiedDateTime>
+  <PageBounds>0 0 14.1875 6.65625</PageBounds>
+  <ScreenResolution>0 0 1365 767</ScreenResolution>
+  <MathType>0</MathType>
+  <AllowOptionsDialogs>1</AllowOptionsDialogs>
+  <AllowAutoCurveFit>1</AllowAutoCurveFit>
+  <CustomCurveFit>A*(x+C)^B</CustomCurveFit>
+  <CustomCurveFitDescription>Proportional</CustomCurveFitDescription>
+  <ReplayWindowPosition>0 76 116 350 270 1</ReplayWindowPosition>
+  <ReplayWindowSpeed>1</ReplayWindowSpeed>
+  <ReplayWindowRepeat>0</ReplayWindowRepeat>
+  <SensorConflictEnabled>1</SensorConflictEnabled>
+  <MathConstantValue>3.141592653590</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>0</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>pi</MathConstantName>
+  <Page>
+    <ID>100 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <PageTitle></PageTitle>
+    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0xffffffff</PageColor>
+    <PageDisplayPageInfo>0 </PageDisplayPageInfo>
+    <PagePageInfo></PagePageInfo>
+    <PageGraphPaper>0 </PageGraphPaper>
+    <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0xffffffff</PageGraphPaperLineColor>
+    <PageReplayWindowPosition>0 76 116 350 270</PageReplayWindowPosition>
+    <PageGraphCartesian>
+      <ID>106 </ID>
+      <BroadcastTo>1 151 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>2.33577 0.015 14.1725 6.64125 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle></GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>115 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>2 115 152 115 117 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphShowUncertaintyBoxes>0</GraphShowUncertaintyBoxes>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>0</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0xffffffff</GraphMinorTickColor>
+      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>2</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>-0.3428</GraphPlotYMin>
+      <GraphPlotYMax>-0.3421</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>2</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>-0.32</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>0.32</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <AudioTraceIDs>2 152 117 </AudioTraceIDs>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageHelperDataCurveFit>
+      <ID>151 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>3.83577 1.515 5.92665860711 2.78953710332 </Bounds>
+      <SubordinateToID>106</SubordinateToID>
+      <SubordinateOffset>1.5 1.5</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 9 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GUIHelperRangeMin>0</GUIHelperRangeMin>
+      <GUIHelperRangeMax>1.9998</GUIHelperRangeMax>
+      <GUIHelperTraceColumnID>117</GUIHelperTraceColumnID>
+      <GUIHelperBaseColumnID>115</GUIHelperBaseColumnID>
+      <GUIHelperPrecision>4</GUIHelperPrecision>
+      <GUIHelperPrecisionDecimal>0</GUIHelperPrecisionDecimal>
+      <GUIHelperMinimized>0</GUIHelperMinimized>
+      <GUIHelperUseEntireRange>0</GUIHelperUseEntireRange>
+      <GUIHelperUnderlyingHistogramFFTColumnID>0</GUIHelperUnderlyingHistogramFFTColumnID>
+      <CurveFitFunctionID>152</CurveFitFunctionID>
+      <CurveFitColumnID>0</CurveFitColumnID>
+      <CurveFitError>8.96893083242e-005</CurveFitError>
+      <CurveFitMethod>1</CurveFitMethod>
+      <CurveFitUncertainty>1</CurveFitUncertainty>
+      <ManualCurveFitIncrements>3 0.1 0.1 0.1 </ManualCurveFitIncrements>
+      <ManualCurveFitShowRMSE>1</ManualCurveFitShowRMSE>
+      <ManualCurveFitWeightColumnId>4294967295</ManualCurveFitWeightColumnId>
+      <CurveFitCorrelation>0.0531294206867</CurveFitCorrelation>
+    </PageHelperDataCurveFit>
+    <PageMeter>
+      <ID>119 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.0075 5.49891 2.30327 6.63875 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 1 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <MeterColumnID>117</MeterColumnID>
+      <MeterAudio>0</MeterAudio>
+      <MeterUseShortName>0</MeterUseShortName>
+      <MeterDisplayBlackText>0</MeterDisplayBlackText>
+      <MeterAlarmEnabled>0</MeterAlarmEnabled>
+      <MeterAlarmAbove>1</MeterAlarmAbove>
+      <MeterAlarmValue>0</MeterAlarmValue>
+      <MeterAlertSound>0</MeterAlertSound>
+    </PageMeter>
+    <PageTable>
+      <ID>107 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.01125 0.01125 2.30952 5.46016 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>1</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 2 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <TableColumn> 115 0.8 </TableColumn>
+      <TableColumn> 117 0.8 </TableColumn>
+      <TableColumn> 125 0.8 </TableColumn>
+      <TableColumn> 128 0.8 </TableColumn>
+      <StartIndex> 0 </StartIndex>
+      <DisplayBlackAndWhite> 0 </DisplayBlackAndWhite>
+    </PageTable>
+    <PageGraphCartesian>
+      <ID>131 </ID>
+      <BroadcastTo>1 154 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>2.38333333333 0.0499996666667 14.1333333333 6.60208 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>2.11458333333 -0.0625003333333</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle>Magnetic Field v Distance</GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x0</GraphTitleColor>
+      <GraphShowPoints>0</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>125 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>2 125 128 125 155 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphShowUncertaintyBoxes>0</GraphShowUncertaintyBoxes>
+      <GraphConnectLines>0</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>1</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMajorTickColor>
+      <GraphMinorTickStyle>3</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x0</GraphMinorTickColor>
+      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0.03</GraphPlotXMin>
+      <GraphPlotXMax>0.15</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>-0.36</GraphPlotYMin>
+      <GraphPlotYMax>0</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0.03</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>0.15</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>-0.36</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>0</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <AudioTraceIDs>2 128 155 </AudioTraceIDs>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageHelperDataCurveFit>
+      <ID>154 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>9.425 2.21666633334 11.6617345612 3.60386738314 </Bounds>
+      <SubordinateToID>131</SubordinateToID>
+      <SubordinateOffset>7.04166666666 2.16666666667</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0xffffffff</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 10 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Times New Roman</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GUIHelperRangeMin>0.049674572918</GUIHelperRangeMin>
+      <GUIHelperRangeMax>0.15</GUIHelperRangeMax>
+      <GUIHelperTraceColumnID>128</GUIHelperTraceColumnID>
+      <GUIHelperBaseColumnID>125</GUIHelperBaseColumnID>
+      <GUIHelperPrecision>4</GUIHelperPrecision>
+      <GUIHelperPrecisionDecimal>0</GUIHelperPrecisionDecimal>
+      <GUIHelperMinimized>0</GUIHelperMinimized>
+      <GUIHelperUseEntireRange>0</GUIHelperUseEntireRange>
+      <GUIHelperUnderlyingHistogramFFTColumnID>0</GUIHelperUnderlyingHistogramFFTColumnID>
+      <CurveFitFunctionID>155</CurveFitFunctionID>
+      <CurveFitColumnID>0</CurveFitColumnID>
+      <CurveFitError>0.00102171344991</CurveFitError>
+      <CurveFitMethod>1</CurveFitMethod>
+      <CurveFitUncertainty>1</CurveFitUncertainty>
+      <ManualCurveFitIncrements>3 0.1 0.1 0.1 </ManualCurveFitIncrements>
+      <ManualCurveFitShowRMSE>1</ManualCurveFitShowRMSE>
+      <ManualCurveFitWeightColumnId>4294967295</ManualCurveFitWeightColumnId>
+      <CurveFitCorrelation>0.9999064663</CurveFitCorrelation>
+    </PageHelperDataCurveFit>
+  </Page>
+  <CurrentPageIndex>0</CurrentPageIndex>
+  <DataSet>
+    <ID>114 </ID>
+    <BroadcastTo>2 4 107 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>Latest</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetPosition>1</DataSetPosition>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>1</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>1</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <Metadata>
+      <DataMark>
+      </DataMark>
+      <DataTag>
+      </DataTag>
+    </Metadata>
+    <DataColumn>
+      <ID>115 </ID>
+      <BroadcastTo>4 17 106 107 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Time</DataObjectName>
+      <DataObjectShortName>t</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>6</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>s</ColumnUnits>
+      <ColumnCollectionTimeUnit>1</ColumnCollectionTimeUnit>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1454968581</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>0</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag>Time</ColumnMatchTag>
+      <ColumnStartCollectTime>1454968581</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>116</ColumnGroupID>
+      <ColumnCells>
+0
+0.0009
+0.0018
+0.0027
+0.0036
+0.0045
+0.0054
+0.0063
+0.0072
+0.0081
+0.009
+0.0099
+0.0108
+0.0117
+0.0126
+0.0135
+0.0144
+0.0153
+0.0162
+0.0171
+0.018
+0.0189
+0.0198
+0.0207
+0.0216
+0.0225
+0.0234
+0.0243
+0.0252
+0.0261
+0.027
+0.0279
+0.0288
+0.0297
+0.0306
+0.0315
+0.0324
+0.0333
+0.0342
+0.0351
+0.036
+0.0369
+0.0378
+0.0387
+0.0396
+0.0405
+0.0414
+0.0423
+0.0432
+0.0441
+0.045
+0.0459
+0.0468
+0.0477
+0.0486
+0.0495
+0.0504
+0.0513
+0.0522
+0.0531
+0.054
+0.0549
+0.0558
+0.0567
+0.0576
+0.0585
+0.0594
+0.0603
+0.0612
+0.0621
+0.063
+0.0639
+0.0648
+0.0657
+0.0666
+0.0675
+0.0684
+0.0693
+0.0702
+0.0711
+0.072
+0.0729
+0.0738
+0.0747
+0.0756
+0.0765
+0.0774
+0.0783
+0.0792
+0.0801
+0.081
+0.0819
+0.0828
+0.0837
+0.0846
+0.0855
+0.0864
+0.0873
+0.0882
+0.0891
+0.09
+0.0909
+0.0918
+0.0927
+0.0936
+0.0945
+0.0954
+0.0963
+0.0972
+0.0981
+0.099
+0.0999
+0.1008
+0.1017
+0.1026
+0.1035
+0.1044
+0.1053
+0.1062
+0.1071
+0.108
+0.1089
+0.1098
+0.1107
+0.1116
+0.1125
+0.1134
+0.1143
+0.1152
+0.1161
+0.117
+0.1179
+0.1188
+0.1197
+0.1206
+0.1215
+0.1224
+0.1233
+0.1242
+0.1251
+0.126
+0.1269
+0.1278
+0.1287
+0.1296
+0.1305
+0.1314
+0.1323
+0.1332
+0.1341
+0.135
+0.1359
+0.1368
+0.1377
+0.1386
+0.1395
+0.1404
+0.1413
+0.1422
+0.1431
+0.144
+0.1449
+0.1458
+0.1467
+0.1476
+0.1485
+0.1494
+0.1503
+0.1512
+0.1521
+0.153
+0.1539
+0.1548
+0.1557
+0.1566
+0.1575
+0.1584
+0.1593
+0.1602
+0.1611
+0.162
+0.1629
+0.1638
+0.1647
+0.1656
+0.1665
+0.1674
+0.1683
+0.1692
+0.1701
+0.171
+0.1719
+0.1728
+0.1737
+0.1746
+0.1755
+0.1764
+0.1773
+0.1782
+0.1791
+0.18
+0.1809
+0.1818
+0.1827
+0.1836
+0.1845
+0.1854
+0.1863
+0.1872
+0.1881
+0.189
+0.1899
+0.1908
+0.1917
+0.1926
+0.1935
+0.1944
+0.1953
+0.1962
+0.1971
+0.198
+0.1989
+0.1998
+0.2007
+0.2016
+0.2025
+0.2034
+0.2043
+0.2052
+0.2061
+0.207
+0.2079
+0.2088
+0.2097
+0.2106
+0.2115
+0.2124
+0.2133
+0.2142
+0.2151
+0.216
+0.2169
+0.2178
+0.2187
+0.2196
+0.2205
+0.2214
+0.2223
+0.2232
+0.2241
+0.225
+0.2259
+0.2268
+0.2277
+0.2286
+0.2295
+0.2304
+0.2313
+0.2322
+0.2331
+0.234
+0.2349
+0.2358
+0.2367
+0.2376
+0.2385
+0.2394
+0.2403
+0.2412
+0.2421
+0.243
+0.2439
+0.2448
+0.2457
+0.2466
+0.2475
+0.2484
+0.2493
+0.2502
+0.2511
+0.252
+0.2529
+0.2538
+0.2547
+0.2556
+0.2565
+0.2574
+0.2583
+0.2592
+0.2601
+0.261
+0.2619
+0.2628
+0.2637
+0.2646
+0.2655
+0.2664
+0.2673
+0.2682
+0.2691
+0.27
+0.2709
+0.2718
+0.2727
+0.2736
+0.2745
+0.2754
+0.2763
+0.2772
+0.2781
+0.279
+0.2799
+0.2808
+0.2817
+0.2826
+0.2835
+0.2844
+0.2853
+0.2862
+0.2871
+0.288
+0.2889
+0.2898
+0.2907
+0.2916
+0.2925
+0.2934
+0.2943
+0.2952
+0.2961
+0.297
+0.2979
+0.2988
+0.2997
+0.3006
+0.3015
+0.3024
+0.3033
+0.3042
+0.3051
+0.306
+0.3069
+0.3078
+0.3087
+0.3096
+0.3105
+0.3114
+0.3123
+0.3132
+0.3141
+0.315
+0.3159
+0.3168
+0.3177
+0.3186
+0.3195
+0.3204
+0.3213
+0.3222
+0.3231
+0.324
+0.3249
+0.3258
+0.3267
+0.3276
+0.3285
+0.3294
+0.3303
+0.3312
+0.3321
+0.333
+0.3339
+0.3348
+0.3357
+0.3366
+0.3375
+0.3384
+0.3393
+0.3402
+0.3411
+0.342
+0.3429
+0.3438
+0.3447
+0.3456
+0.3465
+0.3474
+0.3483
+0.3492
+0.3501
+0.351
+0.3519
+0.3528
+0.3537
+0.3546
+0.3555
+0.3564
+0.3573
+0.3582
+0.3591
+0.36
+0.3609
+0.3618
+0.3627
+0.3636
+0.3645
+0.3654
+0.3663
+0.3672
+0.3681
+0.369
+0.3699
+0.3708
+0.3717
+0.3726
+0.3735
+0.3744
+0.3753
+0.3762
+0.3771
+0.378
+0.3789
+0.3798
+0.3807
+0.3816
+0.3825
+0.3834
+0.3843
+0.3852
+0.3861
+0.387
+0.3879
+0.3888
+0.3897
+0.3906
+0.3915
+0.3924
+0.3933
+0.3942
+0.3951
+0.396
+0.3969
+0.3978
+0.3987
+0.3996
+0.4005
+0.4014
+0.4023
+0.4032
+0.4041
+0.405
+0.4059
+0.4068
+0.4077
+0.4086
+0.4095
+0.4104
+0.4113
+0.4122
+0.4131
+0.414
+0.4149
+0.4158
+0.4167
+0.4176
+0.4185
+0.4194
+0.4203
+0.4212
+0.4221
+0.423
+0.4239
+0.4248
+0.4257
+0.4266
+0.4275
+0.4284
+0.4293
+0.4302
+0.4311
+0.432
+0.4329
+0.4338
+0.4347
+0.4356
+0.4365
+0.4374
+0.4383
+0.4392
+0.4401
+0.441
+0.4419
+0.4428
+0.4437
+0.4446
+0.4455
+0.4464
+0.4473
+0.4482
+0.4491
+0.45
+0.4509
+0.4518
+0.4527
+0.4536
+0.4545
+0.4554
+0.4563
+0.4572
+0.4581
+0.459
+0.4599
+0.4608
+0.4617
+0.4626
+0.4635
+0.4644
+0.4653
+0.4662
+0.4671
+0.468
+0.4689
+0.4698
+0.4707
+0.4716
+0.4725
+0.4734
+0.4743
+0.4752
+0.4761
+0.477
+0.4779
+0.4788
+0.4797
+0.4806
+0.4815
+0.4824
+0.4833
+0.4842
+0.4851
+0.486
+0.4869
+0.4878
+0.4887
+0.4896
+0.4905
+0.4914
+0.4923
+0.4932
+0.4941
+0.495
+0.4959
+0.4968
+0.4977
+0.4986
+0.4995
+0.5004
+0.5013
+0.5022
+0.5031
+0.504
+0.5049
+0.5058
+0.5067
+0.5076
+0.5085
+0.5094
+0.5103
+0.5112
+0.5121
+0.513
+0.5139
+0.5148
+0.5157
+0.5166
+0.5175
+0.5184
+0.5193
+0.5202
+0.5211
+0.522
+0.5229
+0.5238
+0.5247
+0.5256
+0.5265
+0.5274
+0.5283
+0.5292
+0.5301
+0.531
+0.5319
+0.5328
+0.5337
+0.5346
+0.5355
+0.5364
+0.5373
+0.5382
+0.5391
+0.54
+0.5409
+0.5418
+0.5427
+0.5436
+0.5445
+0.5454
+0.5463
+0.5472
+0.5481
+0.549
+0.5499
+0.5508
+0.5517
+0.5526
+0.5535
+0.5544
+0.5553
+0.5562
+0.5571
+0.558
+0.5589
+0.5598
+0.5607
+0.5616
+0.5625
+0.5634
+0.5643
+0.5652
+0.5661
+0.567
+0.5679
+0.5688
+0.5697
+0.5706
+0.5715
+0.5724
+0.5733
+0.5742
+0.5751
+0.576
+0.5769
+0.5778
+0.5787
+0.5796
+0.5805
+0.5814
+0.5823
+0.5832
+0.5841
+0.585
+0.5859
+0.5868
+0.5877
+0.5886
+0.5895
+0.5904
+0.5913
+0.5922
+0.5931
+0.594
+0.5949
+0.5958
+0.5967
+0.5976
+0.5985
+0.5994
+0.6003
+0.6012
+0.6021
+0.603
+0.6039
+0.6048
+0.6057
+0.6066
+0.6075
+0.6084
+0.6093
+0.6102
+0.6111
+0.612
+0.6129
+0.6138
+0.6147
+0.6156
+0.6165
+0.6174
+0.6183
+0.6192
+0.6201
+0.621
+0.6219
+0.6228
+0.6237
+0.6246
+0.6255
+0.6264
+0.6273
+0.6282
+0.6291
+0.63
+0.6309
+0.6318
+0.6327
+0.6336
+0.6345
+0.6354
+0.6363
+0.6372
+0.6381
+0.639
+0.6399
+0.6408
+0.6417
+0.6426
+0.6435
+0.6444
+0.6453
+0.6462
+0.6471
+0.648
+0.6489
+0.6498
+0.6507
+0.6516
+0.6525
+0.6534
+0.6543
+0.6552
+0.6561
+0.657
+0.6579
+0.6588
+0.6597
+0.6606
+0.6615
+0.6624
+0.6633
+0.6642
+0.6651
+0.666
+0.6669
+0.6678
+0.6687
+0.6696
+0.6705
+0.6714
+0.6723
+0.6732
+0.6741
+0.675
+0.6759
+0.6768
+0.6777
+0.6786
+0.6795
+0.6804
+0.6813
+0.6822
+0.6831
+0.684
+0.6849
+0.6858
+0.6867
+0.6876
+0.6885
+0.6894
+0.6903
+0.6912
+0.6921
+0.693
+0.6939
+0.6948
+0.6957
+0.6966
+0.6975
+0.6984
+0.6993
+0.7002
+0.7011
+0.702
+0.7029
+0.7038
+0.7047
+0.7056
+0.7065
+0.7074
+0.7083
+0.7092
+0.7101
+0.711
+0.7119
+0.7128
+0.7137
+0.7146
+0.7155
+0.7164
+0.7173
+0.7182
+0.7191
+0.72
+0.7209
+0.7218
+0.7227
+0.7236
+0.7245
+0.7254
+0.7263
+0.7272
+0.7281
+0.729
+0.7299
+0.7308
+0.7317
+0.7326
+0.7335
+0.7344
+0.7353
+0.7362
+0.7371
+0.738
+0.7389
+0.7398
+0.7407
+0.7416
+0.7425
+0.7434
+0.7443
+0.7452
+0.7461
+0.747
+0.7479
+0.7488
+0.7497
+0.7506
+0.7515
+0.7524
+0.7533
+0.7542
+0.7551
+0.756
+0.7569
+0.7578
+0.7587
+0.7596
+0.7605
+0.7614
+0.7623
+0.7632
+0.7641
+0.765
+0.7659
+0.7668
+0.7677
+0.7686
+0.7695
+0.7704
+0.7713
+0.7722
+0.7731
+0.774
+0.7749
+0.7758
+0.7767
+0.7776
+0.7785
+0.7794
+0.7803
+0.7812
+0.7821
+0.783
+0.7839
+0.7848
+0.7857
+0.7866
+0.7875
+0.7884
+0.7893
+0.7902
+0.7911
+0.792
+0.7929
+0.7938
+0.7947
+0.7956
+0.7965
+0.7974
+0.7983
+0.7992
+0.8001
+0.801
+0.8019
+0.8028
+0.8037
+0.8046
+0.8055
+0.8064
+0.8073
+0.8082
+0.8091
+0.81
+0.8109
+0.8118
+0.8127
+0.8136
+0.8145
+0.8154
+0.8163
+0.8172
+0.8181
+0.819
+0.8199
+0.8208
+0.8217
+0.8226
+0.8235
+0.8244
+0.8253
+0.8262
+0.8271
+0.828
+0.8289
+0.8298
+0.8307
+0.8316
+0.8325
+0.8334
+0.8343
+0.8352
+0.8361
+0.837
+0.8379
+0.8388
+0.8397
+0.8406
+0.8415
+0.8424
+0.8433
+0.8442
+0.8451
+0.846
+0.8469
+0.8478
+0.8487
+0.8496
+0.8505
+0.8514
+0.8523
+0.8532
+0.8541
+0.855
+0.8559
+0.8568
+0.8577
+0.8586
+0.8595
+0.8604
+0.8613
+0.8622
+0.8631
+0.864
+0.8649
+0.8658
+0.8667
+0.8676
+0.8685
+0.8694
+0.8703
+0.8712
+0.8721
+0.873
+0.8739
+0.8748
+0.8757
+0.8766
+0.8775
+0.8784
+0.8793
+0.8802
+0.8811
+0.882
+0.8829
+0.8838
+0.8847
+0.8856
+0.8865
+0.8874
+0.8883
+0.8892
+0.8901
+0.891
+0.8919
+0.8928
+0.8937
+0.8946
+0.8955
+0.8964
+0.8973
+0.8982
+0.8991
+0.9
+0.9009
+0.9018
+0.9027
+0.9036
+0.9045
+0.9054
+0.9063
+0.9072
+0.9081
+0.909
+0.9099
+0.9108
+0.9117
+0.9126
+0.9135
+0.9144
+0.9153
+0.9162
+0.9171
+0.918
+0.9189
+0.9198
+0.9207
+0.9216
+0.9225
+0.9234
+0.9243
+0.9252
+0.9261
+0.927
+0.9279
+0.9288
+0.9297
+0.9306
+0.9315
+0.9324
+0.9333
+0.9342
+0.9351
+0.936
+0.9369
+0.9378
+0.9387
+0.9396
+0.9405
+0.9414
+0.9423
+0.9432
+0.9441
+0.945
+0.9459
+0.9468
+0.9477
+0.9486
+0.9495
+0.9504
+0.9513
+0.9522
+0.9531
+0.954
+0.9549
+0.9558
+0.9567
+0.9576
+0.9585
+0.9594
+0.9603
+0.9612
+0.9621
+0.963
+0.9639
+0.9648
+0.9657
+0.9666
+0.9675
+0.9684
+0.9693
+0.9702
+0.9711
+0.972
+0.9729
+0.9738
+0.9747
+0.9756
+0.9765
+0.9774
+0.9783
+0.9792
+0.9801
+0.981
+0.9819
+0.9828
+0.9837
+0.9846
+0.9855
+0.9864
+0.9873
+0.9882
+0.9891
+0.99
+0.9909
+0.9918
+0.9927
+0.9936
+0.9945
+0.9954
+0.9963
+0.9972
+0.9981
+0.999
+0.9999
+1.0008
+1.0017
+1.0026
+1.0035
+1.0044
+1.0053
+1.0062
+1.0071
+1.008
+1.0089
+1.0098
+1.0107
+1.0116
+1.0125
+1.0134
+1.0143
+1.0152
+1.0161
+1.017
+1.0179
+1.0188
+1.0197
+1.0206
+1.0215
+1.0224
+1.0233
+1.0242
+1.0251
+1.026
+1.0269
+1.0278
+1.0287
+1.0296
+1.0305
+1.0314
+1.0323
+1.0332
+1.0341
+1.035
+1.0359
+1.0368
+1.0377
+1.0386
+1.0395
+1.0404
+1.0413
+1.0422
+1.0431
+1.044
+1.0449
+1.0458
+1.0467
+1.0476
+1.0485
+1.0494
+1.0503
+1.0512
+1.0521
+1.053
+1.0539
+1.0548
+1.0557
+1.0566
+1.0575
+1.0584
+1.0593
+1.0602
+1.0611
+1.062
+1.0629
+1.0638
+1.0647
+1.0656
+1.0665
+1.0674
+1.0683
+1.0692
+1.0701
+1.071
+1.0719
+1.0728
+1.0737
+1.0746
+1.0755
+1.0764
+1.0773
+1.0782
+1.0791
+1.08
+1.0809
+1.0818
+1.0827
+1.0836
+1.0845
+1.0854
+1.0863
+1.0872
+1.0881
+1.089
+1.0899
+1.0908
+1.0917
+1.0926
+1.0935
+1.0944
+1.0953
+1.0962
+1.0971
+1.098
+1.0989
+1.0998
+1.1007
+1.1016
+1.1025
+1.1034
+1.1043
+1.1052
+1.1061
+1.107
+1.1079
+1.1088
+1.1097
+1.1106
+1.1115
+1.1124
+1.1133
+1.1142
+1.1151
+1.116
+1.1169
+1.1178
+1.1187
+1.1196
+1.1205
+1.1214
+1.1223
+1.1232
+1.1241
+1.125
+1.1259
+1.1268
+1.1277
+1.1286
+1.1295
+1.1304
+1.1313
+1.1322
+1.1331
+1.134
+1.1349
+1.1358
+1.1367
+1.1376
+1.1385
+1.1394
+1.1403
+1.1412
+1.1421
+1.143
+1.1439
+1.1448
+1.1457
+1.1466
+1.1475
+1.1484
+1.1493
+1.1502
+1.1511
+1.152
+1.1529
+1.1538
+1.1547
+1.1556
+1.1565
+1.1574
+1.1583
+1.1592
+1.1601
+1.161
+1.1619
+1.1628
+1.1637
+1.1646
+1.1655
+1.1664
+1.1673
+1.1682
+1.1691
+1.17
+1.1709
+1.1718
+1.1727
+1.1736
+1.1745
+1.1754
+1.1763
+1.1772
+1.1781
+1.179
+1.1799
+1.1808
+1.1817
+1.1826
+1.1835
+1.1844
+1.1853
+1.1862
+1.1871
+1.188
+1.1889
+1.1898
+1.1907
+1.1916
+1.1925
+1.1934
+1.1943
+1.1952
+1.1961
+1.197
+1.1979
+1.1988
+1.1997
+1.2006
+1.2015
+1.2024
+1.2033
+1.2042
+1.2051
+1.206
+1.2069
+1.2078
+1.2087
+1.2096
+1.2105
+1.2114
+1.2123
+1.2132
+1.2141
+1.215
+1.2159
+1.2168
+1.2177
+1.2186
+1.2195
+1.2204
+1.2213
+1.2222
+1.2231
+1.224
+1.2249
+1.2258
+1.2267
+1.2276
+1.2285
+1.2294
+1.2303
+1.2312
+1.2321
+1.233
+1.2339
+1.2348
+1.2357
+1.2366
+1.2375
+1.2384
+1.2393
+1.2402
+1.2411
+1.242
+1.2429
+1.2438
+1.2447
+1.2456
+1.2465
+1.2474
+1.2483
+1.2492
+1.2501
+1.251
+1.2519
+1.2528
+1.2537
+1.2546
+1.2555
+1.2564
+1.2573
+1.2582
+1.2591
+1.26
+1.2609
+1.2618
+1.2627
+1.2636
+1.2645
+1.2654
+1.2663
+1.2672
+1.2681
+1.269
+1.2699
+1.2708
+1.2717
+1.2726
+1.2735
+1.2744
+1.2753
+1.2762
+1.2771
+1.278
+1.2789
+1.2798
+1.2807
+1.2816
+1.2825
+1.2834
+1.2843
+1.2852
+1.2861
+1.287
+1.2879
+1.2888
+1.2897
+1.2906
+1.2915
+1.2924
+1.2933
+1.2942
+1.2951
+1.296
+1.2969
+1.2978
+1.2987
+1.2996
+1.3005
+1.3014
+1.3023
+1.3032
+1.3041
+1.305
+1.3059
+1.3068
+1.3077
+1.3086
+1.3095
+1.3104
+1.3113
+1.3122
+1.3131
+1.314
+1.3149
+1.3158
+1.3167
+1.3176
+1.3185
+1.3194
+1.3203
+1.3212
+1.3221
+1.323
+1.3239
+1.3248
+1.3257
+1.3266
+1.3275
+1.3284
+1.3293
+1.3302
+1.3311
+1.332
+1.3329
+1.3338
+1.3347
+1.3356
+1.3365
+1.3374
+1.3383
+1.3392
+1.3401
+1.341
+1.3419
+1.3428
+1.3437
+1.3446
+1.3455
+1.3464
+1.3473
+1.3482
+1.3491
+1.35
+1.3509
+1.3518
+1.3527
+1.3536
+1.3545
+1.3554
+1.3563
+1.3572
+1.3581
+1.359
+1.3599
+1.3608
+1.3617
+1.3626
+1.3635
+1.3644
+1.3653
+1.3662
+1.3671
+1.368
+1.3689
+1.3698
+1.3707
+1.3716
+1.3725
+1.3734
+1.3743
+1.3752
+1.3761
+1.377
+1.3779
+1.3788
+1.3797
+1.3806
+1.3815
+1.3824
+1.3833
+1.3842
+1.3851
+1.386
+1.3869
+1.3878
+1.3887
+1.3896
+1.3905
+1.3914
+1.3923
+1.3932
+1.3941
+1.395
+1.3959
+1.3968
+1.3977
+1.3986
+1.3995
+1.4004
+1.4013
+1.4022
+1.4031
+1.404
+1.4049
+1.4058
+1.4067
+1.4076
+1.4085
+1.4094
+1.4103
+1.4112
+1.4121
+1.413
+1.4139
+1.4148
+1.4157
+1.4166
+1.4175
+1.4184
+1.4193
+1.4202
+1.4211
+1.422
+1.4229
+1.4238
+1.4247
+1.4256
+1.4265
+1.4274
+1.4283
+1.4292
+1.4301
+1.431
+1.4319
+1.4328
+1.4337
+1.4346
+1.4355
+1.4364
+1.4373
+1.4382
+1.4391
+1.44
+1.4409
+1.4418
+1.4427
+1.4436
+1.4445
+1.4454
+1.4463
+1.4472
+1.4481
+1.449
+1.4499
+1.4508
+1.4517
+1.4526
+1.4535
+1.4544
+1.4553
+1.4562
+1.4571
+1.458
+1.4589
+1.4598
+1.4607
+1.4616
+1.4625
+1.4634
+1.4643
+1.4652
+1.4661
+1.467
+1.4679
+1.4688
+1.4697
+1.4706
+1.4715
+1.4724
+1.4733
+1.4742
+1.4751
+1.476
+1.4769
+1.4778
+1.4787
+1.4796
+1.4805
+1.4814
+1.4823
+1.4832
+1.4841
+1.485
+1.4859
+1.4868
+1.4877
+1.4886
+1.4895
+1.4904
+1.4913
+1.4922
+1.4931
+1.494
+1.4949
+1.4958
+1.4967
+1.4976
+1.4985
+1.4994
+1.5003
+1.5012
+1.5021
+1.503
+1.5039
+1.5048
+1.5057
+1.5066
+1.5075
+1.5084
+1.5093
+1.5102
+1.5111
+1.512
+1.5129
+1.5138
+1.5147
+1.5156
+1.5165
+1.5174
+1.5183
+1.5192
+1.5201
+1.521
+1.5219
+1.5228
+1.5237
+1.5246
+1.5255
+1.5264
+1.5273
+1.5282
+1.5291
+1.53
+1.5309
+1.5318
+1.5327
+1.5336
+1.5345
+1.5354
+1.5363
+1.5372
+1.5381
+1.539
+1.5399
+1.5408
+1.5417
+1.5426
+1.5435
+1.5444
+1.5453
+1.5462
+1.5471
+1.548
+1.5489
+1.5498
+1.5507
+1.5516
+1.5525
+1.5534
+1.5543
+1.5552
+1.5561
+1.557
+1.5579
+1.5588
+1.5597
+1.5606
+1.5615
+1.5624
+1.5633
+1.5642
+1.5651
+1.566
+1.5669
+1.5678
+1.5687
+1.5696
+1.5705
+1.5714
+1.5723
+1.5732
+1.5741
+1.575
+1.5759
+1.5768
+1.5777
+1.5786
+1.5795
+1.5804
+1.5813
+1.5822
+1.5831
+1.584
+1.5849
+1.5858
+1.5867
+1.5876
+1.5885
+1.5894
+1.5903
+1.5912
+1.5921
+1.593
+1.5939
+1.5948
+1.5957
+1.5966
+1.5975
+1.5984
+1.5993
+1.6002
+1.6011
+1.602
+1.6029
+1.6038
+1.6047
+1.6056
+1.6065
+1.6074
+1.6083
+1.6092
+1.6101
+1.611
+1.6119
+1.6128
+1.6137
+1.6146
+1.6155
+1.6164
+1.6173
+1.6182
+1.6191
+1.62
+1.6209
+1.6218
+1.6227
+1.6236
+1.6245
+1.6254
+1.6263
+1.6272
+1.6281
+1.629
+1.6299
+1.6308
+1.6317
+1.6326
+1.6335
+1.6344
+1.6353
+1.6362
+1.6371
+1.638
+1.6389
+1.6398
+1.6407
+1.6416
+1.6425
+1.6434
+1.6443
+1.6452
+1.6461
+1.647
+1.6479
+1.6488
+1.6497
+1.6506
+1.6515
+1.6524
+1.6533
+1.6542
+1.6551
+1.656
+1.6569
+1.6578
+1.6587
+1.6596
+1.6605
+1.6614
+1.6623
+1.6632
+1.6641
+1.665
+1.6659
+1.6668
+1.6677
+1.6686
+1.6695
+1.6704
+1.6713
+1.6722
+1.6731
+1.674
+1.6749
+1.6758
+1.6767
+1.6776
+1.6785
+1.6794
+1.6803
+1.6812
+1.6821
+1.683
+1.6839
+1.6848
+1.6857
+1.6866
+1.6875
+1.6884
+1.6893
+1.6902
+1.6911
+1.692
+1.6929
+1.6938
+1.6947
+1.6956
+1.6965
+1.6974
+1.6983
+1.6992
+1.7001
+1.701
+1.7019
+1.7028
+1.7037
+1.7046
+1.7055
+1.7064
+1.7073
+1.7082
+1.7091
+1.71
+1.7109
+1.7118
+1.7127
+1.7136
+1.7145
+1.7154
+1.7163
+1.7172
+1.7181
+1.719
+1.7199
+1.7208
+1.7217
+1.7226
+1.7235
+1.7244
+1.7253
+1.7262
+1.7271
+1.728
+1.7289
+1.7298
+1.7307
+1.7316
+1.7325
+1.7334
+1.7343
+1.7352
+1.7361
+1.737
+1.7379
+1.7388
+1.7397
+1.7406
+1.7415
+1.7424
+1.7433
+1.7442
+1.7451
+1.746
+1.7469
+1.7478
+1.7487
+1.7496
+1.7505
+1.7514
+1.7523
+1.7532
+1.7541
+1.755
+1.7559
+1.7568
+1.7577
+1.7586
+1.7595
+1.7604
+1.7613
+1.7622
+1.7631
+1.764
+1.7649
+1.7658
+1.7667
+1.7676
+1.7685
+1.7694
+1.7703
+1.7712
+1.7721
+1.773
+1.7739
+1.7748
+1.7757
+1.7766
+1.7775
+1.7784
+1.7793
+1.7802
+1.7811
+1.782
+1.7829
+1.7838
+1.7847
+1.7856
+1.7865
+1.7874
+1.7883
+1.7892
+1.7901
+1.791
+1.7919
+1.7928
+1.7937
+1.7946
+1.7955
+1.7964
+1.7973
+1.7982
+1.7991
+1.8
+1.8009
+1.8018
+1.8027
+1.8036
+1.8045
+1.8054
+1.8063
+1.8072
+1.8081
+1.809
+1.8099
+1.8108
+1.8117
+1.8126
+1.8135
+1.8144
+1.8153
+1.8162
+1.8171
+1.818
+1.8189
+1.8198
+1.8207
+1.8216
+1.8225
+1.8234
+1.8243
+1.8252
+1.8261
+1.827
+1.8279
+1.8288
+1.8297
+1.8306
+1.8315
+1.8324
+1.8333
+1.8342
+1.8351
+1.836
+1.8369
+1.8378
+1.8387
+1.8396
+1.8405
+1.8414
+1.8423
+1.8432
+1.8441
+1.845
+1.8459
+1.8468
+1.8477
+1.8486
+1.8495
+1.8504
+1.8513
+1.8522
+1.8531
+1.854
+1.8549
+1.8558
+1.8567
+1.8576
+1.8585
+1.8594
+1.8603
+1.8612
+1.8621
+1.863
+1.8639
+1.8648
+1.8657
+1.8666
+1.8675
+1.8684
+1.8693
+1.8702
+1.8711
+1.872
+1.8729
+1.8738
+1.8747
+1.8756
+1.8765
+1.8774
+1.8783
+1.8792
+1.8801
+1.881
+1.8819
+1.8828
+1.8837
+1.8846
+1.8855
+1.8864
+1.8873
+1.8882
+1.8891
+1.89
+1.8909
+1.8918
+1.8927
+1.8936
+1.8945
+1.8954
+1.8963
+1.8972
+1.8981
+1.899
+1.8999
+1.9008
+1.9017
+1.9026
+1.9035
+1.9044
+1.9053
+1.9062
+1.9071
+1.908
+1.9089
+1.9098
+1.9107
+1.9116
+1.9125
+1.9134
+1.9143
+1.9152
+1.9161
+1.917
+1.9179
+1.9188
+1.9197
+1.9206
+1.9215
+1.9224
+1.9233
+1.9242
+1.9251
+1.926
+1.9269
+1.9278
+1.9287
+1.9296
+1.9305
+1.9314
+1.9323
+1.9332
+1.9341
+1.935
+1.9359
+1.9368
+1.9377
+1.9386
+1.9395
+1.9404
+1.9413
+1.9422
+1.9431
+1.944
+1.9449
+1.9458
+1.9467
+1.9476
+1.9485
+1.9494
+1.9503
+1.9512
+1.9521
+1.953
+1.9539
+1.9548
+1.9557
+1.9566
+1.9575
+1.9584
+1.9593
+1.9602
+1.9611
+1.962
+1.9629
+1.9638
+1.9647
+1.9656
+1.9665
+1.9674
+1.9683
+1.9692
+1.9701
+1.971
+1.9719
+1.9728
+1.9737
+1.9746
+1.9755
+1.9764
+1.9773
+1.9782
+1.9791
+1.98
+1.9809
+1.9818
+1.9827
+1.9836
+1.9845
+1.9854
+1.9863
+1.9872
+1.9881
+1.989
+1.9899
+1.9908
+1.9917
+1.9926
+1.9935
+1.9944
+1.9953
+1.9962
+1.9971
+1.998
+1.9989
+1.9998
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>117 </ID>
+      <BroadcastTo>6 4 17 106 107 119 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Magnetic Field</DataObjectName>
+      <DataObjectShortName>B</DataObjectShortName>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>108</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>mT</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1454967115</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>1</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag>Magnetic Field</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>118</ColumnGroupID>
+      <ColumnCells>
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342114871181
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342700951754
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342700951754
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342310231372
+-0.342505591563
+-0.342505591563
+-0.342505591563
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+  <DataSet>
+    <ID>122 </ID>
+    <BroadcastTo>2 4 107 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>Latest 2</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetPosition>1</DataSetPosition>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>1</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <Metadata>
+      <DataMark>
+      </DataMark>
+      <DataTag>
+      </DataTag>
+    </Metadata>
+    <DataColumn>
+      <ID>125 </ID>
+      <BroadcastTo>4 17 106 107 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Distance</DataObjectName>
+      <DataObjectShortName>x</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>6</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <ColumnUnits>m</ColumnUnits>
+      <ColumnCollectionTimeUnit>1</ColumnCollectionTimeUnit>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1454968581</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>2</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag>Time</ColumnMatchTag>
+      <ColumnStartCollectTime>1454968581</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>116</ColumnGroupID>
+      <ColumnCells>
+0.15
+0.14
+0.13
+0.12
+0.11
+0.1
+0.09
+0.08
+0.07
+0.06
+0.05
+0.04
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>128 </ID>
+      <BroadcastTo>6 4 17 106 107 119 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Magnetic Field</DataObjectName>
+      <DataObjectShortName>B</DataObjectShortName>
+      <DataObjectColor>0x9999 0x0 0x0| 0xffff 0xffffffff</DataObjectColor>
+      <DataObjectDataSource>108</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <ColumnUnits>mT</ColumnUnits>
+      <ColumnProtected>0</ColumnProtected>
+      <ColumnUserEditable>1</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1454967115</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>1</ColumnUserCreated>
+      <ColumnPPStyle>3</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>0</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>1</ColumnAllowUserDelete>
+      <ColumnMatchTag>Magnetic Field</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>118</ColumnGroupID>
+      <ColumnCells>
+-0.0105
+-0.01307
+-0.01625
+-0.02099
+-0.02501
+-0.03412
+-0.04593
+-0.06217
+-0.09197
+-0.1359
+-0.2265
+-0.3424
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+  <DataSet>
+    <ID>133 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>&#38;&#38;^% CurveFitFunctions %^&#38;&#38;</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetPosition>3</DataSetPosition>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>0</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>0</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <Metadata>
+      <DataMark>
+      </DataMark>
+      <DataTag>
+      </DataTag>
+    </Metadata>
+    <FunctionModel>
+      <ID>134 </ID>
+      <BroadcastTo>1 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>m*x+b</DataObjectName>
+      <DataObjectShortName>Linear</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>m*x+b</FunctionModelString>
+      <FunctionModelLinear>1</FunctionModelLinear>
+      <FunctionModelType>1</FunctionModelType>
+      <FunctionCoefficientArray>2 0.0240822027972 -0.314181759907 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>2 0.00485917288408 0.0491153183249 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>m
+b
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>146 </ID>
+      <BroadcastTo>1 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*(x+C)^B</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*(x+C)^B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>3 -32717172.3128 10.5405834834 -6.86162771504 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0 0 0 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>149 </ID>
+      <BroadcastTo>1 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*(x+C)^B 2</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*(x+C)^B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>3 -1.25187747362 -2.21121590611 -1.66697079631 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 0 0 0 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>152 </ID>
+      <BroadcastTo>1 106 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*(x+C)^B 3</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x2e</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*(x+C)^B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>3 -0.34244909767 8.30973633766e-015 1.25100148994e-005 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 4.16001881805e-007 1.74282577395e-013 4.24971355377e-007 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+    <FunctionModel>
+      <ID>155 </ID>
+      <BroadcastTo>1 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>A*(x+C)^B 4</DataObjectName>
+      <DataObjectShortName>Fit</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>0</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>4</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>0</DataObjectThickLines>
+      <FunctionModelPower>1</FunctionModelPower>
+      <FunctionModelString>A*(x+C)^B</FunctionModelString>
+      <FunctionModelLinear>0</FunctionModelLinear>
+      <FunctionModelType>1000</FunctionModelType>
+      <FunctionCoefficientArray>3 -5.65944306313e-005 0.00134248666477 -2.79296005435 </FunctionCoefficientArray>
+      <FunctionCoefficientUncertaintyArray>3 1.25439795631e-005 0.00319451119066 0.131896227699 </FunctionCoefficientUncertaintyArray>
+      <FunctionModelParameterNames>A
+C
+B
+</FunctionModelParameterNames>
+      <FunctionModelTimeOffset>0</FunctionModelTimeOffset>
+      <FunctionModelTimeOffsetValue>0</FunctionModelTimeOffsetValue>
+    </FunctionModel>
+  </DataSet>
+  <DataSourceServer>
+    <ID>13 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+  </DataSourceServer>
+  <MBLBrain>
+    <MBLCollectionUserCollectMode>0</MBLCollectionUserCollectMode>
+    <MBLCollectionDropCounterMode>0</MBLCollectionDropCounterMode>
+    <MBLCollectionTimeUnit>1</MBLCollectionTimeUnit>
+    <MBLCollectionSampleAtZero>1</MBLCollectionSampleAtZero>
+    <MBLCollectionRepeat>0</MBLCollectionRepeat>
+    <MBLCollectionEnhancedTiming>0</MBLCollectionEnhancedTiming>
+    <MBLFastStart>0</MBLFastStart>
+    <MBLCollectionDeltaT>0.000900000009</MBLCollectionDeltaT>
+    <MBLCollectionNumSamples>2223</MBLCollectionNumSamples>
+    <MBLCollectionMaxDuration>2</MBLCollectionMaxDuration>
+    <MBLCollectionOversampling>1</MBLCollectionOversampling>
+    <MBLCollectionNumEWEColumns>1</MBLCollectionNumEWEColumns>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName>Entry</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Entry</MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLCollectionSelectedEventTime>0</MBLCollectionSelectedEventTime>
+    <MBLCollectionSelectedEventName>Event Number</MBLCollectionSelectedEventName>
+    <MBLCollectionSelectedEventShortName>Event</MBLCollectionSelectedEventShortName>
+    <MBLCollectionSelectedEventUnits></MBLCollectionSelectedEventUnits>
+    <MBLCollectionEndDigitalAfterNum>0</MBLCollectionEndDigitalAfterNum>
+    <MBLCollectionNumDigitalEvents>10</MBLCollectionNumDigitalEvents>
+    <MBLCollectionTriggerEnabled>0</MBLCollectionTriggerEnabled>
+    <MBLTriggerType>0</MBLTriggerType>
+    <MBLTriggerValue>0</MBLTriggerValue>
+    <MBLTriggerUseConstant>0</MBLTriggerUseConstant>
+    <MBLTriggerConstant></MBLTriggerConstant>
+    <MBLTriggerPreTriggerData>0</MBLTriggerPreTriggerData>
+    <MBLRadiationInterval>5</MBLRadiationInterval>
+    <MBLRadiationIntervalTimeUnit>1</MBLRadiationIntervalTimeUnit>
+    <MBLStoreLatestMax>0</MBLStoreLatestMax>
+    <MBLEWEAverageData>0</MBLEWEAverageData>
+    <MBLSEAverageData>0</MBLSEAverageData>
+    <MBLContinuous>0</MBLContinuous>
+    <MBLCollectionMiniGCStartTemp>35</MBLCollectionMiniGCStartTemp>
+    <MBLCollectionMiniGCHoldTime>2</MBLCollectionMiniGCHoldTime>
+    <MBLCollectionMiniGCRampRate>5</MBLCollectionMiniGCRampRate>
+    <MBLCollectionMiniGCFinalTemp>65</MBLCollectionMiniGCFinalTemp>
+    <MBLCollectionMiniGCFinalHoldTime>12</MBLCollectionMiniGCFinalHoldTime>
+    <MBLCollectionMiniGCTotalLength>20</MBLCollectionMiniGCTotalLength>
+    <MBLCollectionMiniGCPressure>7</MBLCollectionMiniGCPressure>
+    <MBLGoogleMapsMarkerOptions>0</MBLGoogleMapsMarkerOptions>
+    <MBLGoogleMapsOpenAnnotations>0</MBLGoogleMapsOpenAnnotations>
+    <GoogleMapsSettings>
+      <GoogleMapsLatitudeColumnID>0</GoogleMapsLatitudeColumnID>
+      <GoogleMapsLongitudeColumnID>0</GoogleMapsLongitudeColumnID>
+      <GoogleMapsShowMarkers>1</GoogleMapsShowMarkers>
+      <GoogleMapsMarkerOptions>0</GoogleMapsMarkerOptions>
+      <GoogleMapsValueColumnID>0</GoogleMapsValueColumnID>
+      <GoogleMapsOpenAnnotations>0</GoogleMapsOpenAnnotations>
+      <GoogleMapsDrawLine>0</GoogleMapsDrawLine>
+      <GoogleMapsDrawLineSingleColor>0</GoogleMapsDrawLineSingleColor>
+      <GoogleMapsingleColor>0x0 0x0 0x0| 0xffff 0x2e</GoogleMapsingleColor>
+      <GoogleMapsDrawLineColumnID>0</GoogleMapsDrawLineColumnID>
+      <GoogleMapsDrawLineAutoScale>0</GoogleMapsDrawLineAutoScale>
+      <GoogleMapsDrawLineSmooth>1</GoogleMapsDrawLineSmooth>
+      <GoogleMapsDrawLineMin>0</GoogleMapsDrawLineMin>
+      <GoogleMapsDrawLineMax>0</GoogleMapsDrawLineMax>
+    </GoogleMapsSettings>
+  </MBLBrain>
+  <FileCoherence>1</FileCoherence>
+</Document>
