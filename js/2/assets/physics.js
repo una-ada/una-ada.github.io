@@ -1,3 +1,13 @@
+/**
+ *  physics.js
+ *  A general vector based physics library for consistency across small simula-
+ *  -tions on https://trew.moe.
+ *
+ *  @author Trevor Hoglund <trewbot@gmail.com>
+ *  @version 0.1.0
+ *  2017.09.29
+ */
+
 const phys	= {
     centerOfMass(){
         var sum		= 0,
@@ -22,7 +32,8 @@ const phys	= {
             if(phys.objects.length > 1)
                 for(let i of phys.objects){
                     if(o == i) continue;
-                    let s   = new Vector(o.position.x-i.position.x,o.position.y-i.position.y,0),
+                    let s   = new Vector(o.position.x-i.position.x,o.position.y-
+                                i.position.y,0),
                         a   = i.mass/(s.magnitude()**2);
                     g.x	   += s.cos()*a;
                     g.y	   += s.sin()*a;
@@ -38,6 +49,7 @@ const phys	= {
             phys.move
         ];
         window.scale = phys.scale;
+        callback();
     },
     move		(){
         for(let o of phys.objects){
