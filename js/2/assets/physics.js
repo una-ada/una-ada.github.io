@@ -20,7 +20,7 @@ class Phys {
         this.ℏ		= 1.05e-34; // m^2 kg / s
         this.t      = t;        // s
         this.particles = [];
-        this.steps = [
+        this.steps  = [
             this.gravity,
             this.move
         ];
@@ -89,9 +89,28 @@ class Phys {
     }
 }
 
-class Particle {}
+class Particle {
 
-class Vector {}
+}
+
+class Vector {
+    /**
+     *  A 3D Vector class
+     *  Based on Vector class from traer.js
+     */
+    constructor(){
+        switch(arguments.length){
+            case 0:
+            case 3:
+                [this.x=0,this.y=0,this.z=0]=arguments;
+                break;
+            case 1:
+                [this.x=0,this.y=0,this.z=0]=arguments[0];
+            default:
+                throw new Error('Invalid argument count');
+        }
+    }
+}
 
 
 
