@@ -80,9 +80,7 @@ $$i\hbar\frac{\partial A}{\partial t} = \frac{\hbar^2 k^2}{2m} A + V(x)(i\frac{\
 From there we go on to solve portions of these equations, if you've done any quantum mechanics this might look a bit familiar as the time-dependency of the solution to the TDSE is fairly universal.
 These are the forms of solutions for some small time step $\Delta t$ in the $x$- and $k$-space respectively:
 
-$$\begin{eq1}
-\Psi(x, t + \Delta t) = \Psi(x, t) e^{-i V(x) \Delta t / \hbar},\tag5 \\
-A(k, t + \Delta t) = A(k, t) e^{-i \hbar k^2 \Delta t / 2m}.\tag6 \\
-\end{eq1}$$
+$$\Psi(x, t + \Delta t) = \Psi(x, t) e^{-i V(x) \Delta t / \hbar},\tag5 \\$$
+$$A(k, t + \Delta t) = A(k, t) e^{-i \hbar k^2 \Delta t / 2m}.\tag6 \\$$
 
 ## Fast Fourier Transforms
