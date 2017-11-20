@@ -180,14 +180,6 @@
 		window.draggingS = false;
 		window.globalM = 690;
 		window.globalS = 150;
-		//document.getElementById('graph').addEventListener('mousedown',function(e){
-		//	window.draggingJ = true;
-		//	var g = document.getElementById('graph'),
-		//		r = g.getBoundingClientRect(),
-		//		p = e.pageX - r.left,
-		//		j = Math.min(Math.max(1,~~((p / r.width) * 1440)),1440);
-		//	plot(j);
-		//});
 		window.addEventListener('mouseup',function(e){
 			draggingM = false;
 			draggingS = false;
@@ -199,7 +191,9 @@
 					p = e.pageX-r.left,
 					j = Math.min(Math.max(1,~~((p / r.width)*1440)),1440);
 				plot(
-					draggingM?globalM=j:globalM,
+					draggingM
+						? globalM = j
+						: globalM,
 					draggingS
 						? globalS = j < globalM
 							? globalM - j
