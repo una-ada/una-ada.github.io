@@ -9,6 +9,8 @@ The beginning of this story may sound familiar to a lot of readers; it's taught 
 
 ## 1920s
 
+By 1920 over a million people in America had cars [[1](http://l3d.cs.colorado.edu/systems/agentsheets/New-Vista/automobile/)], and problems had already began to arise. 
+
  - "Jaywalking," the view that cars should have primacy on roads, derived from attempts to sell more cars and making pedestrians who would potentially case incidents out to be criminals and drivers to be good citizens.
  
   - https://www.vox.com/2015/1/15/7551873/jaywalking-history
