@@ -27,7 +27,7 @@ $$
 \begin{align}
 \sigma_{I_R}^2 &= \left(\frac{\partial I_R}{\partial m}\right)^2\sigma^2_m + \left(\frac{\partial I_R}{\partial r}\right)^2\sigma^2_r + \left(\frac{\partial I_R}{\partial t}\right)^2\sigma^2_t\tag{4a}\\
 &=\left(\frac{r^2}{4}+\frac{t^2}{12}\right)^2\sigma^2_m + \left(\frac{mr}{2}\right)^2\sigma^2_r + \left(\frac{mt}{6}\right)^2\sigma^2_t\tag{4b}\\
-&=\left(\frac{0.002^2}{4}+\frac{0.30^2}{12}\right)^20.0001^2 + \left(\frac{0.030(0.002)}{2}\right)^20.001^2 + \left(\frac{0.030(0.300)}{6}\right)^20.001^2\tag{4c}\\
+&=\left(\frac{0.002^2}{4}+\frac{0.30^2}{12}\right)^20.0001^2 + \left(\frac{0.030(0.002)}{2}\right)^20.001^2\\ &+ \left(\frac{0.030(0.300)}{6}\right)^20.001^2\tag{4c}\\
 &=2.81355...*10^{-12}kg^2m^4\tag{4d}\\
 \sigma_{I_R}&=\sqrt{2.81355...*10^{-12}}\tag{4e}\\
 &=1.67736...*10^{-6}kgm^2.\tag{4f}
