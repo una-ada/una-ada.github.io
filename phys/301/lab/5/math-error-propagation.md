@@ -40,4 +40,4 @@ $$
 I_R=(2.250\pm0.017)*10^{-4}kgm^2.\tag{5}
 $$
 
-<a name="n1">1</a>: http://hyperphysics.phy-astr.gsu.edu/hbase/icyl.html#icyl
+<a name="n1">1</a>: [Hyperphysics - Moment of Inertia: Cylinder](http://hyperphysics.phy-astr.gsu.edu/hbase/icyl.html#icyl)
