@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Poisson Distribution</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i,700i|Roboto:400|Material+Icons" rel="stylesheet">
+		<style>
+			*						{font-size:13pt;font-family:'Roboto',sans-serif;}
+			html					{color:#333;background:#fff;}
+			sup, sub				{font-size:6pt;}
+			#graph					{height:100%;left:0;position:absolute;top:0;width:100%;}
+
+			.me						{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
+		</style>
+</head>
+<body>
+	<canvas id="graph"></canvas>
+	<script>
+		function poisson(a=40,rounds=100){
+			var p = [Math.exp(-a)];
+			for(var i = 1; i < rounds; i++) p[i] = (a * p[i - 1]) / i;
+			return p;
+		}
+		function loadAxes(ctx){
+			//	Calculate Positions
+			var width	= 500 * ~~((window.innerWidth - 60) / 500),
+		        height  = 300,
+		        left	= ~~((window.innerWidth - width) / 2) + 60,
+		        top     = ~~((window.innerHeight - height) / 2);
+
+			//	Draw Axes
+			ctx.lineWidth = 2;
+			ctx.beginPath();
+			ctx.moveTo(left,top);
+			ctx.lineTo(left,top+height);
+			ctx.lineTo(left+width,top+height);
+			ctx.stroke();
+		}
+		var graph = document.getElementById("graph"),
+			rect = graph.getBoundingClientRect();
+		graph.width = rect.width;
+		graph.height = rect.height;
+		var ctx = graph.getContext("2d");
+		loadAxes(ctx);
+	</script>
+	<a href="http://trewbot.github.io">
+		<img class="me" src="http://trewbot.github.io/assets/img/button.png" alt="trewbot"/>
+	</a>
+</body>
+</html>
