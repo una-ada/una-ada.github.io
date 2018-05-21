@@ -25,12 +25,12 @@
 			EXTEND_LENGTH	= 13,
 			EXTEND_RATE		= 5,
 			LABEL_RATE		= 10;
-		function loadAxes(ctx, ticks=[100,5], labelMax=[100,1]){
+		function loadAxes(ctx, ticks=[100,4], labelMax=[100,1]){
 			//	Calculate Positions
 			var width	= 500 * ~~((window.innerWidth - 60) / 500),
 		        height  = 300,
 		        left	= ~~((window.innerWidth - width) / 2) + 30.5,
-		        top     = ~~((window.innerHeight - height) / 2) + 0.5;
+		        top     = ~~(window.innerHeight / 2) - 170 + 0.5;
 
 			//	Draw Axes
 			ctx.lineWidth = 1;
@@ -98,7 +98,7 @@
 			graph.width = rect.width;
 			graph.height= rect.height;
 			var ctx		= graph.getContext("2d"),
-				pos		= loadAxes(ctx,[100,5],[100,max]);
+				pos		= loadAxes(ctx,[100,4],[100,max]);
 
 			ctx.fillStyle = "#333";
 			for(let i = 0; i < val.length; i++){
@@ -108,8 +108,47 @@
 					y = ~~(pos.top + (pos.height - h));
 				ctx.fillRect(x+1,y,w-2,h);
 			}
+
+			//	Plot Mean & Std. Dev.
+			ctx.textAlign		= "center";
+			ctx.textBaseline	= "bottom";
+			for(let i = -1; i <= 1; i++){
+				if(n + (i * Math.sqrt(n)) > val.length) break;
+				let x		= (n + (i * Math.sqrt(n))),
+					left	= pos.left + (x * (pos.width / val.length));
+				ctx.fillText(i == 0 ? '⟨ j ⟩' : 'σ', left, pos.top - 5);
+				if(i != 0){
+					ctx.beginPath();
+					ctx.moveTo(left, pos.top);
+					ctx.lineTo(left, pos.top + pos.height);
+					ctx.stroke();
+				}
+			}
 		}
 		plot(40);
+
+		//	Drag Setup
+		window.draggingJ = false;
+		window.addEventListener('mousedown',function(e){
+			window.draggingJ = true;
+			var width	= 500 * ~~((window.innerWidth - 60) / 500),
+		        left	= ~~((window.innerWidth - width) / 2) + 30.5;
+			var p = e.pageX - left,
+				j = Math.min(Math.max(1,~~((p / width) * 100)),100);
+			plot(j);
+		});
+		window.addEventListener('mouseup',function(e){
+			window.draggingJ = false;
+		});
+		window.addEventListener('mousemove',function(e){
+			if(window.draggingJ){
+				var width	= 500 * ~~((window.innerWidth - 60) / 500),
+			        left	= ~~((window.innerWidth - width) / 2) + 30.5;
+				var p = e.pageX - left,
+					j = Math.min(Math.max(1,~~((p / width) * 100)),100);
+				plot(j);
+			}
+		});
 	</script>
 	<a href="http://trewbot.github.io">
 		<img class="me" src="http://trewbot.github.io/assets/img/button.png" alt="trewbot"/>
