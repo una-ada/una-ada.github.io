@@ -134,7 +134,7 @@
 			var width	= 500 * ~~((window.innerWidth - 60) / 500),
 		        left	= ~~((window.innerWidth - width) / 2) + 30.5;
 			var p = e.pageX - left,
-				j = Math.min(Math.max(1,~~((p / width) * 100)),100);
+				j = Math.min(Math.max(1,((p / width) * 100)),100);
 			plot(j);
 		});
 		window.addEventListener('mouseup',function(e){
@@ -145,7 +145,7 @@
 				var width	= 500 * ~~((window.innerWidth - 60) / 500),
 			        left	= ~~((window.innerWidth - width) / 2) + 30.5;
 				var p = e.pageX - left,
-					j = Math.min(Math.max(1,~~((p / width) * 100)),100);
+					j = Math.min(Math.max(1,((p / width) * 100)),100);
 				plot(j);
 			}
 		});
