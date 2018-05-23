@@ -1,0 +1,177 @@
+<html>
+	<head>
+		<title>Poisson Distribution</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i,700i|Roboto:400|Material+Icons" rel="stylesheet">
+		<style>
+			*						{font-size:13pt;font-family:'Roboto',sans-serif;}
+			html					{color:#333;background:#fff;}
+			sup, sub				{font-size:6pt;}
+			#graph					{height:100%;left:0;position:absolute;top:0;width:100%;}
+
+			.me						{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
+		</style>
+</head>
+<body>
+	<canvas id="graph"></canvas>
+	<script>
+		function poisson(a=40,rounds=100){
+			var p = [Math.exp(-a)];
+			for(var i = 1; i < rounds; i++) p[i] = (a * p[i - 1]) / i;
+			return p;
+		}
+		function gaussian(a,s,x){
+			return (1 / (s * Math.sqrt(2 * Math.PI)))
+				* Math.exp((-1 / 2) * Math.pow(((x - a) / s),2));
+		}
+		const
+			TICK_LENGTH		= 10,
+			EXTEND_LENGTH	= 13,
+			EXTEND_RATE		= 5,
+			LABEL_RATE		= 10;
+		function loadAxes(ctx, ticks=[100,4], labelMax=[100,1]){
+			//	Calculate Positions
+			var width	= 500 * ~~((window.innerWidth - 60) / 500),
+		        height  = 300,
+		        left	= ~~((window.innerWidth - width) / 2) + 30.5,
+		        top     = ~~(window.innerHeight / 2) - 170 + 0.5;
+
+			//	Draw Axes
+			ctx.lineWidth = 1;
+			ctx.strokeStyle = "#333";
+			ctx.beginPath();
+			ctx.moveTo(left, top - 0.5);
+			ctx.lineTo(left, top + height);
+			ctx.lineTo(left + width + 0.5, top + height);
+			ctx.stroke();
+
+			ctx.font 			= "13pt 'Roboto'";
+			ctx.textAlign		= "center";
+			ctx.textBaseline	= "top";
+			ctx.fillStyle		= "#333";
+
+			//	Draw x-axis Ticks
+			for(let i = 0; i <= ticks[0]; i++){
+				ctx.beginPath();
+				let x = ~~((width / ticks[0]) * i) + left;
+				ctx.moveTo(x, 0.5 + top + height);
+				ctx.lineTo(x, 0.5 + top + height + (
+					i % EXTEND_RATE == 0 ? EXTEND_LENGTH : TICK_LENGTH
+				));
+				ctx.stroke();
+
+				//	Write Tick Labels
+				if(i % LABEL_RATE == 0 || ticks[0] < LABEL_RATE)
+					ctx.fillText((i / ticks[0]) * labelMax[0], x,
+						top + height + EXTEND_LENGTH + 1);
+			}
+
+			ctx.textAlign		= "right";
+			ctx.textBaseline	= "middle";
+
+			//	Draw y-axis Ticks
+			for(let i = 0; i <= ticks[1]; i++){
+				ctx.beginPath();
+				let y = ~~((height / ticks[1]) * i) + top;
+				ctx.moveTo(0.5 + left, y);
+				ctx.lineTo(0.5 + left - (
+					i % EXTEND_RATE == 0 ? EXTEND_LENGTH : TICK_LENGTH
+				), y);
+				ctx.stroke();
+
+				//	Write Tick Labels
+				if(i % LABEL_RATE == 0 || ticks[1] < LABEL_RATE)
+					ctx.fillText(
+						~~(((ticks[1]-i)/ticks[1])*labelMax[1]*1e4)/100+"%",
+						left - EXTEND_LENGTH - 1, y);
+			}
+
+
+			return {
+				"height" : height,
+				"left"   : left,
+				"top"    : top,
+				"width"  : width
+			};
+		}
+		function plot(n){
+			var val 	= poisson(n),
+				max		= Math.max.apply(Math,val),
+				graph	= document.getElementById("graph"),
+				rect 	= graph.getBoundingClientRect();
+			graph.width = rect.width;
+			graph.height= rect.height;
+			var ctx		= graph.getContext("2d"),
+				pos		= loadAxes(ctx,[100,4],[100,max]);
+
+			//	Plot Poisson
+			ctx.fillStyle = "#333";
+			for(let i = 0; i < val.length; i++){
+				var w = ~~(pos.width / val.length),
+					h = ~~((pos.height * val[i]) / max),
+					x = ~~(pos.left + (w * i)),
+					y = ~~(pos.top + (pos.height - h));
+				ctx.fillRect(x+1,y,w-2,h);
+			}
+
+			//	Plot Gaussian
+			ctx.strokeStyle	= "#f00";
+			ctx.lineWidth	= 2;
+			ctx.beginPath();
+			for(let i = 0; i < pos.width; i++){
+				var g = gaussian(n, Math.sqrt(n), i / (pos.width / val.length));
+				ctx[i==0 ? 'moveTo' : 'lineTo'](
+					pos.left + i,
+					(pos.top + pos.height) - ((g * pos.height) / max)
+				);
+			}
+			ctx.stroke();
+
+			//	Plot Mean & Std. Dev.
+			ctx.textAlign		= "center";
+			ctx.textBaseline	= "bottom";
+			ctx.lineWidth		= 1;
+			ctx.strokeStyle		= "#333";
+			for(let i = -1; i <= 1; i++){
+				if(n + (i * Math.sqrt(n)) > val.length) break;
+				let x		= (n + (i * Math.sqrt(n))),
+					left	= pos.left + (x * (pos.width / val.length));
+				ctx.fillText(i == 0 ? '⟨ j ⟩' : 'σ', left, pos.top - 5);
+				if(i != 0){
+					ctx.beginPath();
+					ctx.moveTo(left, pos.top);
+					ctx.lineTo(left, pos.top + pos.height);
+					ctx.stroke();
+				}
+			}
+		}
+		plot(40);
+
+		//	Drag Setup
+		window.draggingJ = false;
+		window.addEventListener('mousedown',function(e){
+			window.draggingJ = true;
+			var width	= 500 * ~~((window.innerWidth - 60) / 500),
+		        left	= ~~((window.innerWidth - width) / 2) + 30.5;
+			var p = e.pageX - left,
+				j = Math.min(Math.max(1,((p / width) * 100)),100);
+			plot(j);
+		});
+		window.addEventListener('mouseup',function(e){
+			window.draggingJ = false;
+		});
+		window.addEventListener('mousemove',function(e){
+			if(window.draggingJ){
+				var width	= 500 * ~~((window.innerWidth - 60) / 500),
+			        left	= ~~((window.innerWidth - width) / 2) + 30.5;
+				var p = e.pageX - left,
+					j = Math.min(Math.max(1,((p / width) * 100)),100);
+				plot(j);
+			}
+		});
+	</script>
+	<a href="http://trewbot.github.io">
+		<img class="me" src="http://trewbot.github.io/assets/img/button.png" alt="trewbot"/>
+	</a>
+</body>
+</html>
