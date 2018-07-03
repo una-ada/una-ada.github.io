@@ -1,1 +1,0 @@
-the primary issue w markets as w government is the placement of a hierarchy above the people, with government it is authoritarianism and police, with markets it is capital, in a non-capitalist society what one would call a free market is merely the freedom to create and distribute goods as you please gaining only your personal satisfaction and the validation of your peers
