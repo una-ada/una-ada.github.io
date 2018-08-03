@@ -94,10 +94,19 @@
     <body>
         <div class="container">
             <div class="js-output-container" role="presentation"></div>
-            <div class="form-control">
+            <div class="form-control" style="margin-top:1em;">
             	<input type="file" accept="image/*" class="js-input-image">
                 <input type="button" value="Stop/Continue" onclick="pause?run():stop()">
             </div>
+            <p>
+                This is just a cleaned up version of
+                <a href="https://timseverien.com/posts/2017-08-17-sorting-pixels-with-webgl/">
+                Tim Severien's pixel sorter</a> using a more basic color
+                comparison; I tried to do further modifications but most of them
+                failed because I'm not that good at writing fragment shaders as
+                it turns out, thought I was able to easily implement a stop
+                button to make it easier to save partial results.
+            </p>
         </div>
         <script>
             const SORT_SHADER = `
