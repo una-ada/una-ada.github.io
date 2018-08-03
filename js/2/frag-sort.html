@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+    Pixel Sorter using WebGL Shaders
+    by Una Ada <trewbot@phene.co>
+    2018.08.03
+
+    Inspired by:
+    - https://www.youtube.com/watch?v=JUDYkxU6J0o
+    - https://codepen.io/zapplebee/pen/mRbVze/
+    - http://www.pixelsort.me/
+
+    Sources based on:
+    - https://timseverien.com/posts/2017-08-17-sorting-pixels-with-webgl/
+    - - https://codepen.io/timseverien/pen/qjKYQK
+    - - https://github.com/genekogan/Processing-Shader-Examples/blob/master/TextureShaders/data/hue.glsl
+    - https://bl.ocks.org/zz85/cafa1b8b3098b5a40e918487422d47f6
+
+    See also:
+    - https://www.youtube.com/watch?v=bV2Br6e_bd8
+    - https://www.reddit.com/r/pixelsorting/top/
+    - https://wunkolo.itch.io/pixsort
+    - - https://www.reddit.com/r/pixelsorting/comments/4t5sjz/after_effects_pixel_sorting_plugin/
+    - - https://imgur.com/gallery/CGB6L/
+    - - https://www.reddit.com/r/glitch_art/comments/83dxiq/glsl_pixel_sorting/
+    - - - https://www.shadertoy.com/view/MstyDl
+    - - - https://i.imgur.com/07epR9T.gif
+    - - http://www8.cs.umu.se/kurser/TDBD13/VT00/extra/p263-cabral.pdf
+    - https://github.com/kimasendorf/ASDFPixelSort
+    - - http://kimasendorf.com/mountain-tour/
+    - - http://kimasendorf.com/sorted-aerial/
+    - https://www.shadertoy.com/view/4ssXWn
+    - https://www.reddit.com/r/glitch_art/comments/93y8yr/just_writing_my_name/
+    - https://stackoverflow.com/questions/
+    - https://www.alanzucconi.com/2017/12/13/gpu-sorting-1/
+    - - https://www.alanzucconi.com/2017/12/13/gpu-sorting-2/
+    - https://github.com/OpenGLInsights/OpenGLInsightsCode
+    - http://satyarth.me/articles/pixel-sorting/
+    - - https://github.com/satyarth/pixelsort/
+    - - https://gist.github.com/LycaonIsAWolf/667c5554e5d9d9a25ae6
+-->
+
+<html>
+    <head>
+        <title>Pixel Sort</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1">
+        <style>
+            canvas {
+                display: block;
+                height: auto !important;
+                max-width: 100%;
+                image-rendering: pixelated;
+            }
+            .container {
+                max-width: 36em;
+                margin: auto;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+        <script src="https://threejs.org/examples/js/GPUComputationRenderer.js"></script>
+        <script type="x-shader/x-fragment" id="fragmentshader">
+            uniform sampler2D uMap;
+            varying vec2 vUv;
+            void main() {
+                gl_FragColor = texture2D(uMap, vUv);
+            }
+        </script>
+        <script>
+            const createPlane = () => {
+                let fragmentShader = `
+                    uniform sampler2D uMap;
+                    varying vec2 vUv;
+                    void main() {
+                        gl_FragColor = texture2D(uMap, vUv);
+                    }`;
+                let vertexShader = `
+                    varying vec2 vUv;
+                    void main() {
+                        vUv = uv;
+                        ${THREE.ShaderChunk.begin_vertex}
+                        ${THREE.ShaderChunk.project_vertex}
+                    }`;
+                let geometry = new THREE.PlaneGeometry(2, 2, 1, 1);
+                let material = new THREE.ShaderMaterial({
+                        uniforms: {
+                            uMap: { value: null },
+                        },
+                        fragmentShader,
+                        vertexShader,
+                    });
+                return new THREE.Mesh(geometry, material);
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="js-output-container" role="presentation"></div>
+            <div class="form-control">
+            	<input type="file" accept="image/*" class="js-input-image">
+                <input type="button" value="Stop/Continue" onclick="pause?run():stop()">
+            </div>
+        </div>
+        <script>
+            const SORT_SHADER = `
+                bool compareColor(vec4 a, vec4 b) {
+                    return (a.x + a.y + a.z) / 3.0 > (b.x + b.y + b.z) / 3.0;
+                }
+                uniform float uPass;
+                uniform float uStage2;
+                uniform float uPassModStage;
+                uniform float uStage2PmS1;
+                void main() {
+                    vec2 coord = gl_FragCoord.xy;
+                    float i = coord.x;
+                    float j = floor(mod(i, uStage2));
+                    float compare =
+                        (j < uPassModStage || j > uStage2PmS1)
+                            ? 0.
+                            : mod((j + uPassModStage) / uPass, 2.0) < 1.0
+                                ? 1.0
+                                :-1.0;
+                    vec2 offset = vec2(compare * uPass, 0.0) / resolution.xy;
+                    vec2 uv = coord / resolution.xy;
+                    vec4 current = texture2D(uTexture, uv);
+                    vec4 reference = texture2D(uTexture, uv + offset);
+                    bool results = compareColor(current * compare, reference * compare);
+                    gl_FragColor = results ? current : reference;
+                }`;
+
+            const
+                GPU_COMPUTE_TEXTURE_SIZE = 512;
+            var input = document.querySelector('.js-input-image'),
+                outputContainer = document.querySelector('.js-output-container'),
+                plane = createPlane(),
+                camera = new THREE.Camera(),
+                renderer = new THREE.WebGLRenderer({ antialias: false }),
+                scene = new THREE.Scene();
+            camera.position.z = 1;
+            renderer.setSize(GPU_COMPUTE_TEXTURE_SIZE, GPU_COMPUTE_TEXTURE_SIZE);
+            scene.add(plane);
+            let gpuCompute,
+        		textureSorted,
+        		variableSorted;
+            var init = (img = null, dispose = false) => {
+            	if(dispose){
+            		variableSorted.renderTargets.forEach(rt => rt.dispose());
+            		textureSorted.dispose();
+            	}
+            	gpuCompute = new GPUComputationRenderer(GPU_COMPUTE_TEXTURE_SIZE, GPU_COMPUTE_TEXTURE_SIZE, renderer);
+            	textureSorted = gpuCompute.createTexture();
+                //  Use image data if set
+            	if(img)
+            		textureSorted.image.data.set(img);
+                //  Else generate image
+            	else {
+                    //  Removed default from source
+                    //  *MIGHT* put something else here later
+            	}
+
+        	variableSorted = gpuCompute.addVariable('uTexture', SORT_SHADER, textureSorted);
+        	gpuCompute.setVariableDependencies(variableSorted, [variableSorted]);
+            uniforms = variableSorted.material.uniforms;
+        	uniforms.uStage2 = { value: 0 };
+        	uniforms.uPassModStage = { value: 0 };
+        	uniforms.uStage2PmS1 = { value: 0 };
+        	uniforms.uPass = { value: 0 };
+            //  Initialize renderer
+            let err = gpuCompute.init();
+            if(err !== null) console.error(err);
+        };
+
+        var getImageData = (image, size = 1) => {
+        	var canvas     = document.createElement('canvas');
+        	canvas.height  = size;
+        	canvas.width   = size;
+        	var ctx        = canvas.getContext('2d');
+        	ctx.scale(1, -1);
+        	ctx.drawImage(image, 0, 0, size, -size);
+        	return ctx.getImageData(0, 0, size, size).data;
+        };
+
+        var readFile = (file) => {
+            var reader = new FileReader();
+            return new Promise((resolve, reject) => {
+                reader.addEventListener('load', () => resolve(reader.result));
+                reader.readAsDataURL(file);
+            });
+        };
+        input.addEventListener('change', () => {
+        	var file = input.files[0],
+                image = new Image();
+            if(!file) return;
+        	readFile(file)
+        		.then(dataUrl => new Promise((resolve, reject) => {
+        			image.addEventListener('load', () => resolve())
+        			image.src = dataUrl;
+        		}))
+        		.then(() => {
+        			const textureData = new Float32Array(getImageData(image, GPU_COMPUTE_TEXTURE_SIZE))
+        				.map(value => value / 256);
+                    reset();
+        			init(textureData, true);
+        		});
+        });
+
+        //  Initialize
+        init();
+        outputContainer.appendChild(renderer.domElement);
+        var pause   = false,
+            stage   = 0,
+            pass    = 0;
+            reset   = () => {stage=0;pass=0;}
+
+        //  Rendering loop
+        (render = () => {
+            //	Loop
+            if(!pause) requestAnimationFrame(render);
+            if(stage > Math.log2(GPU_COMPUTE_TEXTURE_SIZE) + 1) return;
+            //  Render frame
+        	gpuCompute.compute();
+        	let texture = gpuCompute.getCurrentRenderTarget(variableSorted).texture;
+        	plane.material.uniforms.uMap.value = texture;
+            //  Update Passes
+            var tPass = 1 << pass,
+        	    tStage = 1 << stage,
+        	    uStage2 = tStage + tStage,
+        	    uPassModStage = tPass % tStage,
+        	    uStage2PmS1 = uStage2 - uPassModStage - 1,
+                uniforms = variableSorted.material.uniforms;
+        	uniforms.uStage2.value = uStage2;
+        	uniforms.uPassModStage.value = uPassModStage;
+        	uniforms.uStage2PmS1.value = uStage2PmS1;
+        	uniforms.uPass.value = tPass;
+            //  Update stages
+            if(--pass < 0) pass = ++stage;
+            //  Scene control
+        	renderer.render(scene, camera);
+        })();
+        var run = () => {
+            pause = false;
+            render();
+        }
+        var stop = () => pause = true;
+        </script>
+    </body>
+</html>
