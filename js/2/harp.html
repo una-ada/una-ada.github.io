@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <!--
-  --	harp.js
-  --	written by trevor j hoglund (trewbot)
-  --	2017.05.09
-  --
-  --	inspired by:
-  --		- https://dschool.stanford.edu/
-  --		- https://www.awwwards.com/sites/stanford-d-school
-  --		- https://tympanus.net/codrops/2016/12/06/interactive-musical-instruments/
-  --		- https://tympanus.net/Development/MusicalInteractions/
-  --		- http://jonobr1.com/Physics/examples/strings.html
-  --
-  --	sources based on:
-  --		- https://dschool.stanford.edu/scripts/index.js
-  --		- http://victorjs.org/
-  --		- https://www.particleincell.com/2013/cubic-line-intersection/
-  --		- https://github.com/mudcube/MIDI.js/blob/master/examples/Basic.html
-  --
-  --	libraries used:
-  --		- https://github.com/adsr/traer-js
-  --		- https://github.com/mudcube/MIDI.js
+	Canvas Harp
+	by Una Ada <trewbot@phene.co>
+	2017.05.09
+
+	Inspired by:
+	- https://dschool.stanford.edu/
+	- https://www.awwwards.com/sites/stanford-d-school
+	- https://tympanus.net/codrops/2016/12/06/interactive-musical-instruments/
+	- https://tympanus.net/Development/MusicalInteractions/
+	- http://jonobr1.com/Physics/examples/strings.html
+
+	Sources based on:
+	- https://dschool.stanford.edu/scripts/index.js
+	- http://victorjs.org/
+	- https://www.particleincell.com/2013/cubic-line-intersection/
+	- https://github.com/mudcube/MIDI.js/blob/master/examples/Basic.html
+
+	Libraries used:
+	- https://github.com/adsr/traer-js
+	- https://github.com/mudcube/MIDI.js
   -->
 <html>
 	<head>
@@ -45,13 +45,13 @@
 		<div id="loading">loading...</div>
 		<canvas id="harp"></canvas>
 		<script>
-			
+
 			/*
 			 *	Curve class
 			 *	based on _handlers from https://dschool.stanford.edu/scripts/index.js
 			 *	replaced Victor.js class w default Vector class calls
 			 */
-			 
+
 			function Curve(p0,p1,p2,p3){
 				var argc = arguments.length;
 				if(argc===4){
@@ -86,13 +86,13 @@
 					return this;
 				}
 			}
-			
+
 			/*
 			 *	Extensions to Vector class
 			 *	based on Victor.js
 			 *	at some point it almost makes more sense to just use Victor.js
 			 */
-			
+
 			Vector.prototype.mixX = function(v,a=0.5) {
 				this.x = (1-a)*this.x+a*v.x;
 				return this;
@@ -109,14 +109,14 @@
 				this.y *= v.y;
 				return this;
 			};
-			
+
 			/*
 			 *	Pattern class
 			 *	based on designPattern from https://dschool.stanford.edu/scripts/index.js
 			 *	rewritten with more ecmascript2015 functions
 			 *	plan to replace eventually, probably, its convoluted af
 			 */
-			 
+
 			function Pattern(_ref){
 				var size	= new Vector(1,1,0),
 					c1		= _ref.c1,
@@ -194,12 +194,12 @@
 				})
 				//	...will add more patterns later
 			];
-			
+
 			/*
 			 *	Line-Cubic Bezier Intersect Calculator
 			 *	based on computeIntersections() from https://www.particleincell.com/wp-content/uploads/2013/08/cubic-line.svg
 			 */
-			
+
 			function sgn(x){
 				if(x<0) return -1;
 				return 1;
@@ -263,7 +263,7 @@
 					ret	= [];
 				for(var t of r){
 					X[0]	= bx[0]*(t**3)+bx[1]*(t**2)+bx[2]*t+bx[3];
-					X[1]	= by[0]*(t**3)+by[1]*(t**2)+by[2]*t+by[3];            
+					X[1]	= by[0]*(t**3)+by[1]*(t**2)+by[2]*t+by[3];
 					var s;
 					if((lx[1]-lx[0])!=0) s=(X[0]-lx[0])/(lx[1]-lx[0]);
 					else s=(X[1]-ly[0])/(ly[1]-ly[0]);
@@ -275,12 +275,12 @@
 				}
 				return ret;
 			}
-			
+
 			/*
 			 *	Main class
 			 *	based on HeroLines from https://dschool.stanford.edu/scripts/index.js
 			 */
-			 
+
 			const
 				LINE_COUNT	= 50,
 				PIVOT_COUNT	= 100,
