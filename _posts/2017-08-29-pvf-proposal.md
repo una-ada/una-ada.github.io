@@ -1,5 +1,6 @@
 ---
 title: PVF Design Proposal
+layout: default
 ---
 
 # PVF Design Proposal
