@@ -55,8 +55,7 @@
                 margin: auto;
             }
         </style>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
-        <script src="https://threejs.org/examples/js/GPUComputationRenderer.js"></script>
+        <script src="../3/assets/three.min.js"></script>
         <script type="x-shader/x-fragment" id="fragmentshader">
             uniform sampler2D uMap;
             varying vec2 vUv;
@@ -104,11 +103,12 @@
                 Tim Severien's pixel sorter</a> using a more basic color
                 comparison; I tried to do further modifications but most of them
                 failed because I'm not that good at writing fragment shaders as
-                it turns out, thought I was able to easily implement a stop
+                it turns out, tho I was able to easily implement a stop
                 button to make it easier to save partial results.
             </p>
         </div>
-        <script>
+        <script type="module">
+            import { GPUComputationRenderer } from "../3/assets/GPUComputationRenderer.js";
             const SORT_SHADER = `
                  bool compareColor(vec4 a, vec4 b) {
                      return (a.x + a.y + a.z) / 3.0 > (b.x + b.y + b.z) / 3.0;
@@ -206,7 +206,8 @@
         //  Initialize
         init();
         outputContainer.appendChild(renderer.domElement);
-        var pause = false;
+        var pause = false,
+            render;
         //  Rendering loop
         (render = ()=>{
             //	Loop
