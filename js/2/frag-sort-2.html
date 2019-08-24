@@ -57,7 +57,6 @@
             }
         </style>
         <script src="../3/assets/three.min.js"></script>
-        <!-- <script src="../3/assets/GPUComputationRenderer.js" type="module"></script> -->
         <script type="x-shader/x-fragment" id="fragmentshader">
             uniform sampler2D uMap;
             varying vec2 vUv;
@@ -219,8 +218,8 @@
         //  Initialize
         init();
         outputContainer.appendChild(renderer.domElement);
-        var pause   = false,
-            stage   = 0,
+        window.pause   = false;
+        var stage   = 0,
             pass    = 0,
             reset   = () => {stage=0;pass=0;},
             render;
@@ -250,11 +249,11 @@
             //  Scene control
         	renderer.render(scene, camera);
         })();
-        var run = () => {
-            pause = false;
+        window.run = () => {
+            window.pause = false;
             render();
         }
-        var stop = () => pause = true;
+        window.stop = () => window.pause = true;
         </script>
     </body>
 </html>

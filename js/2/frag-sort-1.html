@@ -206,8 +206,8 @@
         //  Initialize
         init();
         outputContainer.appendChild(renderer.domElement);
-        var pause = false,
-            render;
+        window.pause = false;
+        var render;
         //  Rendering loop
         (render = ()=>{
             //	Loop
@@ -220,12 +220,12 @@
             //  Scene control
         	renderer.render(scene, camera);
         })();
-        var run = ()=>{
-            pause = false;
+        window.run = ()=>{
+            window.pause = false;
             render();
         }
-        var stop = ()=>{
-            pause = true;
+        window.stop = ()=>{
+            window.pause = true;
         }
 
         </script>
