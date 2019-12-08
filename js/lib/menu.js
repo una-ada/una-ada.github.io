@@ -1,6 +1,6 @@
 /*
  *	Graphene Context Menu
- *	Written by Trevor J Hoglund and Savoron
+ *	Written by REDACTED and Savoron
  *	2017.01.21
  */
 

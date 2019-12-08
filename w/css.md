@@ -1,6 +1,6 @@
 # CSS Guide
 
-By [Trevor J Hoglund](http://trevorjhoglund.com) for [Phene.co](http://phene.co).
+By [REDACTED](http://REDACTED) for [Phene.co](http://phene.co).
 
 ## Purpose
 

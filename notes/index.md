@@ -2,7 +2,7 @@
 title: Trewbot / Notes
 ---
 
-# [Notes](https://trewbot.github.io/notes)
+# [Notes](https://una-ada.github.io/notes)
 Do you like learning things?
 Do you _want_ to learn _more_ things?
 Are you fine with listening to someone complain about their loneliness and constant existential crisis while also kind of explaining said things?
@@ -41,4 +41,4 @@ Then smash this motherfucking like button:
 
 &nbsp;
 
-https:// [Trew.bot](https://trewbot.github.io) / [Notes](https://trewbot.github.io/notes)
+https:// [Trew.bot](https://una-ada.github.io) / [Notes](https://una-ada.github.io/notes)

@@ -1,6 +1,6 @@
 /*
  *	Graphene Modal
- *	Written by Trevor J Hoglund
+ *	Written by REDACTED
  *	2017.01.27
  *
  *	REQUIRES ECMASCRIPT 2015+

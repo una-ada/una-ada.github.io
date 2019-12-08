@@ -1,9 +1,9 @@
 /**
  *  physics.js
  *  A general vector based physics library for consistency across small simula-
- *  -tions on https://trewbot.github.io.
+ *  -tions on https://una-ada.github.io.
  *
- *  @author Trevor Hoglund <trewbot@gmail.com>
+ *  @author REDACTED <trewbot@gmail.com>
  *  @version 0.1.0
  *  2017.09.29
  */
