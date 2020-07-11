@@ -3,3 +3,6 @@ title: una
 url: https://una-ada.github.io/
 
 theme: jekyll-theme-minimal
+kramdown:
+    smart_quotes: ["apos", "apos", "quot", "quot"]
+    

@@ -3,34 +3,15 @@
 <head>
 	<title>{{ page.title | default: site.github.repository_name }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="shortcut icon" type="image/jpg" href="/assets/img/headshot.jpg"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i|Playfair+Display:700i">
+    <link rel="shortcut icon" type="image/jpg" href="/assets/img/fav.png"/>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width">
-	<script type="text/x-mathjax-config">
-		MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.1.0";
-		MathJax.Hub.Config({
-			tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-			TeX: {extensions: ["[mhchem]/mhchem.js"]},
-			SVG: {
-				font: "Latin-Modern",
-				matchFontHeight: true,
-				//scale: 90,
-				blacker: 0,
-				linebreaks: {automatic: true}
-			}
-		});
-		MathJax.Hub.setRenderer("SVG");
-	</script>
-	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-	<script type="text/javascript" src="https://twemoji.maxcdn.com/2/twemoji.min.js"></script>
 </head>
 <body class="notes" style="margin-bottom:50vh !important;">
     {{ content }}
     <a href="https://una-ada.github.io">
         <img class="me" src="/assets/img/button.png" alt="trewbot"/>
     </a>
-    <script>twemoji.parse(document.body)</script>
 </body>
 </html>
