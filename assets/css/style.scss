@@ -36,6 +36,11 @@ blockquote {
 blockquote p {
 	margin: 0.5rem 0;
 }
+body {
+	margin: 0 auto;
+	position: relative;
+	width: 720px;
+}
 code {
 	font-family: monospace;
 	font-size: 0.7em;
@@ -58,8 +63,6 @@ html {
 	color: $black;
 	font-family: 'Una', sans-serif;
 	font-size: 24px;
-	margin-left: calc(50vw - 360px);
-	width: 720px;
 }
 img,
 video {
@@ -103,21 +106,25 @@ tr:nth-child(even){
 	background: $highlight;
 }
 
-/* Button */
-.me				{bottom:1rem;max-width:150px;position:fixed;right:1rem;z-index:1000;}
-
 @media print, screen and (max-width: 750px) {
-	body.notes	{margin:0 1rem !important;padding:0 !important;position:static;width:auto !important;}
-	table		{max-width:100%;}
-}
-@media print, screen and (max-width: 520px) {
-	body		{margin:0 1rem !important;padding:0 !important;position:static;width:auto !important;text-align:left;}
-	.headshot	{margin-bottom:1rem;max-width:none;width:100%;}
-	.me			{position:relative;}
+	body {
+		margin: 0 1rem !important;
+		padding: 0 !important;
+		width: 100% !important;
+	}
+	table {
+		max-width: 100%;
+	}
 }
 @media print {
-	html		{background:white;}
-	h2			{margin-top:1em;}
-	body		{color:black;font-size:11pt;padding:0.4in 0;}
-	.me			{display:none;}
+	html {
+		background:white;
+	}
+	h2 {
+		margin-top: 1em;
+	}
+	body {
+		color:black;
+		padding:0.4in 0;
+	}
 }
