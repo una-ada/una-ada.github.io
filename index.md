@@ -35,7 +35,7 @@ title: Una's "Work"
 		7.	[Isekai July 1: The Saga of Tanya the Definitely Absolutely
 			Evil][32]
 	2.	Featured on [The Angry Birds Drink P*ss in The Angry Birds Movie][33]
-		1.	[Episode 40: Come Talk About P*ss][34] ([Wiki][35])
+		1.	[Episode 40: Come Talk About P*ss!][34] ([Wiki][35])
 	3.	[Goth Angel Sinners][36] ([SoundCloud][37])
 		1.	[Pt. I: Shoplifting][38] ([Notes][39])
 		2.	[Pt. II: Catalonia][40] ([Notes][41])
@@ -54,7 +54,7 @@ title: Una's "Work"
 		2.	[Gravity][56]
 		3.	[Revolution.js][57]
 		4.	[Harp.js][58]
-		5.	[Alone][59]
+		5.	[Sad][73] and [Alone][59]
 		6.	[Poisson v.2][60] ([Blog][61])
 		7.	[Pixel Sort][62] ([v.2][63])
 4.	Design
@@ -62,12 +62,14 @@ title: Una's "Work"
 		1.	[Anarchy.Website][1]
 		2.	[All That Is Left][66]
 		3.	[una-ada.github.io](/)
-	2.	Graphics
+	2.	Branding
 		1.	[ORCA Logo][64]
 		2.	[Student Voice][2] [Logo Proposal][65]
 		3.	[All That Is Left][66] Logo and Layout
 		4.	[Revolutionary Labor Party][69] [Logo][67]
 		5.	People's Virtual Front [Branding Proposal][68]
+	3.	Fonts
+		1.	[Una Script][72]
 
 [1]:	https://anarchy.website/
 [2]:	http://uwrfvoice.com/
@@ -140,3 +142,5 @@ title: Una's "Work"
 [69]:	https://revlabor.wixsite.com/revlaborparty/see-the-rlp
 [70]:	https://atil.xyz/issue/001/syndicalism
 [71]:	https://anarchy.website/2017/10/14/syndicalism.html
+[72]:	https://github.com/una-ada/unascript
+[73]:	/sad/
