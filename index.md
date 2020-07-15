@@ -12,8 +12,8 @@ title: Una's "Work"
 		4.	[Einstein's Theory of General Relativity explains occurrences in
 			the universe][9] ([Mirror][10])
 		5.	[A student's guide to pencils][11] ([Mirror][12])
-		6.	[The feasibility of spontaneously morphing into an
-		octopus][13] ([Mirror][14])
+		6.	[The feasibility of spontaneously morphing into an octopus][13]
+			([Mirror][14])
 	2.	Lyrics
 		1.	[Pop Tarts (God)][24]
 	3.	[Screenplay Collaborations][15]
@@ -50,13 +50,12 @@ title: Una's "Work"
 		4.	[Graph][52] ([Blog][53])
 		5.	[Modal][54]
 	2.	Web Pages
-		1.	[Poisson][55]
+		1.	[Poisson][55] ([v.2][60], [Blog][61])
 		2.	[Gravity][56]
 		3.	[Revolution.js][57]
 		4.	[Harp.js][58]
 		5.	[Sad][73] and [Alone][59]
-		6.	[Poisson v.2][60] ([Blog][61])
-		7.	[Pixel Sort][62] ([v.2][63])
+		6.	[Pixel Sort][62] ([v.2][63])
 4.	Design
 	1.	Web Design
 		1.	[Anarchy.Website][1]
