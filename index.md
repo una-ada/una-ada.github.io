@@ -42,6 +42,7 @@ title: Una's "Work"
 		3.	[Pt. III: Spiderman 3][42] ([Notes][43])
 		4.	[Pt. IV: The Paris Commune][44] ([Notes][45])
 		5.	[Pt. V: Post-Scarcity][46] ([Notes][47])
+		6.	[Pt. VI: A Real Podcast][74] ([Notes][75])
 3.	[Programming][48]
 	1.	JavaScript Libraries
 		1.	[Color Picker][49]
@@ -143,3 +144,5 @@ title: Una's "Work"
 [71]:	https://anarchy.website/2017/10/14/syndicalism.html
 [72]:	https://github.com/una-ada/unascript
 [73]:	/sad/
+[74]:	https://anchor.fm/gthnglsnnrs/episodes/Part-VI-A-Real-Podcast-ehud7n
+[75]:	https://anarchy.website/gthnglsnnrs/6/notes
