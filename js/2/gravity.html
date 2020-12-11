@@ -8,6 +8,64 @@
     <script src="assets/physics.js"></script>
 </head>
 <body>
+    <script>
+        const F_ = {
+            //  Startup
+            running : !0,
+            steps   : [],
+            init    (startup=()=>{}, callback=()=>{}){
+                startup();
+                F_.render.init();
+                callback();
+            },
 
+            //  Function groups
+            render  : {
+                //  Startup
+                steps   : [],
+                loop    (){
+                    if(F_.running)
+                        requestAnimationFrame(F_.render.loop);
+                    F_.render.step = (function*(s){
+                        for(let i of s) yield i;
+                    })(F_.render.steps);
+                    F_.render.step.next().value();
+                },
+                init    (){
+                    F_.render.steps = [
+                        F_.render.frame,
+                        F_.render.cursor
+                    ];
+                    F_.render.loop();
+                },
+
+                //  Functions
+                frame   (){},
+                cursor  (){}
+            },
+            phys    : {
+                //  Constants
+                G       : 6.67e-11,
+                
+                //  Startup
+                steps   : [],
+                loop    (){
+                    window.setInterval(()=>{
+						if(!F_.running) return !1;
+						F_.phys.step = (function*(s){
+							for(let i of s) yield i;
+						})(F_.phys.steps);
+						F_.phys.step.next().value();
+					},1e3/120);
+                },
+                init    (){
+                    F_.phys.steps = [
+
+                    ];
+                    F_.phys.loop();
+                }
+            }
+        }
+    </script>
 </body>
 </html>

@@ -42,6 +42,15 @@ body {
 	position: relative;
 	width: 720px;
 }
+.c-mid {
+    border-right: 2px solid $black;
+}
+.c-name {
+    width: 30%;
+}
+.c-title {
+    width: 20%;
+}
 code {
 	font-family: monospace;
 	font-size: 0.7em;
@@ -54,10 +63,13 @@ h2,
 h3,
 h4 {
 	font-weight: normal;
-	text-align: center;
+}
+h1 {
+    text-align: center;
 }
 h2 {
-	margin-top: 3em;
+	margin-top: 2rem;
+    margin-bottom: 0;
 }
 html {
 	background: $white;
@@ -69,8 +81,14 @@ img,
 video {
 	max-width: calc(100% - 1rem);
 }
+img.emoji {
+    height: 0.8em;
+    width: 0.8em;
+    vertical-align: middle;
+}
 p {
-	line-height: 1.5rem;
+	line-height: 1rem;
+    margin: 0.5rem 0;
 }
 pre {
 	background: $white;
@@ -94,17 +112,20 @@ sup {
 }
 table {
 	border-collapse: collapse;
-	line-height: 1.5rem;
-	margin: 1em 0;
-}
-thead {
-	font-weight: bold;
-}
-thead td {
-	padding-bottom: 1rem;
-}
-tr:nth-child(even){
-	background: $highlight;
+    width: 100%;
+    td {
+        padding: 0 0.5rem;
+        vertical-align: top;
+    }
+    td:nth-child(even){
+        text-align: right;
+    }
+    thead {
+    	text-align: center;
+        td {
+            padding: 0.5rem;
+        }
+    }
 }
 
 @media print, screen and (max-width: 750px) {
