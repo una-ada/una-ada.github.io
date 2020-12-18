@@ -132,7 +132,7 @@ table {
 	body {
 		margin: 0 1rem !important;
 		padding: 0 !important;
-		width: 100% !important;
+		width: calc(100% - 2rem) !important;
 	}
 	table {
 		max-width: 100%;
