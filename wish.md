@@ -5,7 +5,8 @@ title: Wish List
 This is a list of things I've found that I just didn't have money for at the
 time. Maybe one day I'll be able to buy them, but things go out of stock and
 international shipping is expensive. So, for now, these just live here for me
-to gush and cry over.
+to gush and cry over. Anything crossed out was either acquired or I got
+something close enough to it, categories are crossed out if they're empty.
 
 Fun note: some brands name their items, most do not. For items that fall in the
 latter category I've put some shortened version of the title the supplier put
@@ -19,24 +20,26 @@ estimate baseline, a lot of items are frequently on sale.
 ## Clothes &c.
 
 1.  Headwear
-    1.  Helmets
-    2.  Hats
+    1.  ~~Helmets~~
+    2.  ~~Hats~~
     3.  Hair Accessories
-        -   g3p [Nekomimi Unit (Matte Black)][25] (3,500 JPY)
+        -   g3p
+            -   ~~[Nekomimi Unit 02_Prototype (Black x Black)][68] (5,500 JPY)~~
+            -   [Nekomimi Unit Mk.3 (Matte Black)][25] (3,500 JPY)
 2.  Eyewear
-    1.  Glasses Frames
-    2.  Shades
+    1.  ~~Glasses Frames~~
+    2.  ~~Shades~~
     3.  Visors
         -   g3p [Visor Glass Unit 02 ][34] (4,500 JPY)
 3.  Face Coverings
-    1.  Masks
+    1.  ~~Masks~~
     2.  Accessories
         -   morph8ne [Face mask chain holder][8] (480.00 THB)
         -   g3p [Armored Nose Guard Unit][33] (3,500 JPY)
 4.  Neckwear
     1.  Mufflers &c.
         -   EVA STORE Original [Knit Neck Warmer (6th Angel)][62] (3,850 JPY)
-    2.  Necklaces
+    2.  ~~Necklaces~~
     3.  Chokers
         -   Alice-R [Cat Choker][37] (764 JPY)
         -   g3p [Armored Choker Unit mk2 (Matte Black)][35] (4,000 JPY)
@@ -56,6 +59,7 @@ estimate baseline, a lot of items are frequently on sale.
         -   Catwish [Demon Fox Sweatshirt][28] (149.00 CNY)
         -   Cecile [Lined V-neck Sweater][61] (4,389 JPY)
         -   Neploe [Striped Sailor Collar Zipper Sweatshirt][16] (20.23 USD)
+        -   Predator Rat [Long Length Cat Ear Parka (Black)][64] (30,800 JPY)
         -   snbl. [Navy Collar Sweater][26] (256.00 CNY)
         -   SUNDAYOFFCLUB
             -   [Shoulder Patch Detail Half-Zip 1/2 Hoodie (white)][9] (89,000
@@ -69,7 +73,8 @@ estimate baseline, a lot of items are frequently on sale.
     1.  Dresses
         -   1234x4 [Dark punk style JK uniform][21] (356.00 CNY)
         -   Adidas [Glam-On Dress (Black)][40] (55.00 USD)
-        -   No Sleep Tonight [Maid Outfit Nightdress][51] (119.60 CNY)
+        -   ~~LilithHouse [Cyber Maid No. 2][69] (220.00 CNY)~~
+        -   ~~No Sleep Tonight [Maid Outfit Nightdress][51] (119.60 CNY)~~
         -   Sensen Home Original [Japanese Maid Costume][52] (148.00 CNY)
         -   snbl. [Wizard's Cat Sweater Dress][30] (316.00 CNY)
     2.  Coveralls/Jumpsuits
@@ -96,7 +101,13 @@ estimate baseline, a lot of items are frequently on sale.
         -   Sushio [Slime Bunny][49] (4,370 JPY)
     4.  Pullovers
         -   ESC STUDIO [Warmer point pola (black)][6] (46,000 KRW)
-9.  Bottoms
+9.  Belts
+    1. Garter
+        -   Predator Rat
+            -   [Chiffon Garter Belt (2pc, Black)][66] (4,620 JPY)
+            -   [Cotton Garter Belt (Black x Black Ribbon)][67] (3,850 JPY)
+            -   [Lace Ribbon Garter (Black)][65] (5,280 JPY)
+10. Bottoms
     1.  Pants
         -   TRIPP NYC
             -   [Ever Ready Pant][55] (137.00 USD)
@@ -107,29 +118,33 @@ estimate baseline, a lot of items are frequently on sale.
         -   OZOD [Suit skirt (black)][7] (79,000 KRW)
         -   Scottish Kilt [Deluxe Hybrid Kilt for Women - Tartan Box
             Pleated][12] (99.99 USD)
+        -   TGT x RMTCRW [Long Pleats Skirt Black][63] (76,000 KRW)
         -   TRIPP NYC
             -   [Chain Skirt][56] (63.00 USD)
             -   [Pleated Belted Skirt][57] (59.00 USD)
         -   ZOZOTOWN (WEGO) [Line Box Pleated Mini Skirt (Black)][50]
             (2,189 JPY)
     4.  Leggings
-10. Socks
-    1.  Thigh High
+11. Socks
+    1.  ~~Thigh High~~
     2.  Knee
         -   Adidas [Copa Zone Cushion 4 Socks (Black)][41] (12.00 USD)
-    3.  Crew & Ankle
-11. Shoes
+    3.  ~~Crew & Ankle~~
+12. Shoes
     1.  Boots
         -   Demonia [Riot-21MP][1] (129.95 USD)
-12. Bags
+    2.  ~~High Top~~
+13. Bags
     1.  Backpacks
         - Grafea
             -   [Hari Blossom][42] (295.00 USD)
             -   [Showbusiness Black][43] (255.00 USD)
-13. Other Accessories
+14. Other Accessories
     1.  Rings
         -   Alice-R [Cat Ear Ring][38] (344 JPY)
         -   Cospa [Akemi Homura Soul Gem Silver Ring][18] (12,000 JPY)
+    2.  Wallets
+        -   Super Groupies [Devil Homura Model Two-Fold Wallet][70] (11,880 JPY)
 
 ## Electronics
 
@@ -147,6 +162,7 @@ estimate baseline, a lot of items are frequently on sale.
     -   Evangelion Store [Episode Title Zippo (Episode 2)][22] (9,900 JPY)
 2.  Miscellaneous
     -   Evangelion Store [Guitar strap (Rei)][23] (2,090 JPY)
+
 
 [1]:    https://demoniacult.com/products/riot-21mpble
 [2]:    http://global.romanticcrown.com/product/-/3518/
@@ -210,3 +226,11 @@ estimate baseline, a lot of items are frequently on sale.
 [60]:   https://www.cecile.co.jp/detail/TB-547/
 [61]:   https://www.cecile.co.jp/detail/TB-1926/
 [62]:   https://www.evastore.jp/products/detail/14662
+[63]:   http://romanticcrown.com/product/detail.html?product_no=3507
+[64]:   https://predatorrat.com/c/outer/out-0006
+[65]:   https://predatorrat.com/c/garter-belt/gar-0032
+[66]:   https://predatorrat.com/c/garter-belt/gar-0007
+[67]:   https://predatorrat.com/c/garter-belt/gar-0014
+[68]:   https://g3p.booth.pm/items/2595299
+[69]:   https://item.taobao.com/item.htm?id=637674904122
+[70]:   https://www.super-groupies.com/product/6401

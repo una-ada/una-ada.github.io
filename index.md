@@ -35,6 +35,7 @@ title: Una's "Work"
 		6.	[5x11 Turning into a Witch is a Voluntary Choice][31]
 		7.	[Isekai July 1: The Saga of Tanya the Definitely Absolutely
 			Evil][32]
+		8.	[7x09 Golden Kamuy, Pt. 1][79]
 	2.	Featured on [The Angry Birds Drink P*ss in The Angry Birds Movie][33]
 		1.	[Episode 40: Come Talk About P*ss!][34] ([Wiki][35])
 	3.	[Goth Angel Sinners][36] ([SoundCloud][37])
@@ -44,6 +45,8 @@ title: Una's "Work"
 		4.	[Pt. IV: The Paris Commune][44] ([Notes][45])
 		5.	[Pt. V: Post-Scarcity][46] ([Notes][47])
 		6.	[Pt. VI: A Real Podcast][74] ([Notes][75])
+		7.	[Pt. VII: (T)suki][80]<br/>
+			(I really need to add some basic Japanese to this font!)
 3.	[Programming][48]
 	1.	JavaScript Libraries
 		1.	[Color Picker][49]
@@ -151,3 +154,5 @@ title: Una's "Work"
 [76]:	https://ruinedpicnic.bandcamp.com/album/ruined-picnic-and-friends
 [77]:	https://twitter.com/punished_picnic
 [78]:	https://www.tumblr.com/theme/40029
+[79]:	https://www.neighborsciencepodcast.com/e/709-golden-kamuy-pt-1/
+[80]:	https://amitypark.bandcamp.com/album/--2
