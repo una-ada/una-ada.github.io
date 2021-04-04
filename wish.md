@@ -17,15 +17,15 @@ why I put it on this list.
 All prices listed are the original retail price, which works best as an
 estimate baseline, a lot of items are frequently on sale.
 
-## Clothes &c.
+## Apparel
 
 1.  Headwear
     1.  ~~Helmets~~
     2.  ~~Hats~~
-    3.  Hair Accessories
-        -   g3p
-            -   ~~[Nekomimi Unit 02_Prototype (Black x Black)][68] (5,500 JPY)~~
-            -   [Nekomimi Unit Mk.3 (Matte Black)][25] (3,500 JPY)
+    3.  Accessories
+        -   ~~g3p [Nekomimi Unit 02_Prototype (Black x Black)][68] (5,500 JPY)~~
+        -   Hardcore Tactics [Nekomimi Velcro Patches (Black)][71] (3,080 JPY)
+        -   Morph8ne [Lil Corpus Set][75] (280.00 THB)
 2.  Eyewear
     1.  ~~Glasses Frames~~
     2.  ~~Shades~~
@@ -39,10 +39,12 @@ estimate baseline, a lot of items are frequently on sale.
 4.  Neckwear
     1.  Mufflers &c.
         -   EVA STORE Original [Knit Neck Warmer (6th Angel)][62] (3,850 JPY)
-    2.  ~~Necklaces~~
-    3.  Chokers
+    2.  Chokers
         -   Alice-R [Cat Choker][37] (764 JPY)
         -   g3p [Armored Choker Unit mk2 (Matte Black)][35] (4,000 JPY)
+    3.  ~~Necklaces~~
+    4.  Ties
+        -   Ties [The Essential Black Skinny Tie (2")][79] (35.00 USD)
 5.  Outerwear
     1.  Blazers
         -   Cecile [Antifouling and Water Repellent Blazer][59] (7,900 JPY)
@@ -60,6 +62,7 @@ estimate baseline, a lot of items are frequently on sale.
         -   Cecile [Lined V-neck Sweater][61] (4,389 JPY)
         -   Neploe [Striped Sailor Collar Zipper Sweatshirt][16] (20.23 USD)
         -   Predator Rat [Long Length Cat Ear Parka (Black)][64] (30,800 JPY)
+        -   REFLEM [Nekomimi Parka][74] (12,980 JPY)
         -   snbl. [Navy Collar Sweater][26] (256.00 CNY)
         -   SUNDAYOFFCLUB
             -   [Shoulder Patch Detail Half-Zip 1/2 Hoodie (white)][9] (89,000
@@ -89,6 +92,7 @@ estimate baseline, a lot of items are frequently on sale.
     3.  T-Shirts
         -   Adidas [3-Stripes Tee (Black)][39] (35.00 USD)
         -   Amnibus [Fate/Apocrypha "Rider of Black"][14] (3,800 JPY)
+        -   Attack Anxiety [Attack Anxiety (Black)][78] (24.00 USD)
         -   Cospa [Idolmaster Cinderella Girls "You lose if you work"][15]
             (2,900 JPY)
         -   Evangelion [Unit 00 Acid Graphic][46] (3,190 JPY)
@@ -103,6 +107,7 @@ estimate baseline, a lot of items are frequently on sale.
         -   ESC STUDIO [Warmer point pola (black)][6] (46,000 KRW)
 9.  Belts
     1. Garter
+        -   Morph8ne [Leather Bow Garter][76] (1,080.00 THB)
         -   Predator Rat
             -   [Chiffon Garter Belt (2pc, Black)][66] (4,620 JPY)
             -   [Cotton Garter Belt (Black x Black Ribbon)][67] (3,850 JPY)
@@ -116,16 +121,18 @@ estimate baseline, a lot of items are frequently on sale.
     3.  Skirts
         -   Cecile [Pleated Skirt with Line][58] (4,500 JPY)
         -   OZOD [Suit skirt (black)][7] (79,000 KRW)
-        -   Scottish Kilt [Deluxe Hybrid Kilt for Women - Tartan Box
-            Pleated][12] (99.99 USD)
+        -   Roseapple [203-Buckle Pleats Skirt][77] (62,000 KRW)
+        -   ~~Scottish Kilt [Deluxe Hybrid Kilt for Women - Tartan Box
+            Pleated][12] (99.99 USD)~~
         -   TGT x RMTCRW [Long Pleats Skirt Black][63] (76,000 KRW)
         -   TRIPP NYC
             -   [Chain Skirt][56] (63.00 USD)
             -   [Pleated Belted Skirt][57] (59.00 USD)
+        -   Verillas [Outland Half-Kilt][80] (44.99 USD)
         -   ZOZOTOWN (WEGO) [Line Box Pleated Mini Skirt (Black)][50]
             (2,189 JPY)
     4.  Leggings
-11. Socks
+11. Hosiery
     1.  ~~Thigh High~~
     2.  Knee
         -   Adidas [Copa Zone Cushion 4 Socks (Black)][41] (12.00 USD)
@@ -133,18 +140,24 @@ estimate baseline, a lot of items are frequently on sale.
 12. Shoes
     1.  Boots
         -   Demonia [Riot-21MP][1] (129.95 USD)
+        -   ??? ["Ciara" Knee Boots][72] (71.99 USD)<br/>
+            From a U.S. reseller, no origin brand listed.
     2.  ~~High Top~~
 13. Bags
     1.  Backpacks
         - Grafea
             -   [Hari Blossom][42] (295.00 USD)
             -   [Showbusiness Black][43] (255.00 USD)
+        - ~~Innesbags [Black Roll Top Backpack][81] (262.45+ USD) DISCONTINUED~~
 14. Other Accessories
-    1.  Rings
+    1.  Sleeves
+        -   Kalaqtic by Kaeden [KO-OP Gauntlet (Double, Black)][73] (400.00 USD)
+    2.  Rings
         -   Alice-R [Cat Ear Ring][38] (344 JPY)
         -   Cospa [Akemi Homura Soul Gem Silver Ring][18] (12,000 JPY)
-    2.  Wallets
+    3.  Wallets
         -   Super Groupies [Devil Homura Model Two-Fold Wallet][70] (11,880 JPY)
+            DISCONTINUED
 
 ## Electronics
 
@@ -157,10 +170,12 @@ estimate baseline, a lot of items are frequently on sale.
 
 ## Tools &c.
 
-1.  Lighters
+1.  Blades
+    -   Swords of Northshire [Ninjato, Black Steel][82] (169.99 USD)
+2.  Lighters
     -   Philia Online [Code Geass (C.C.) Zippo][20] (10,450 JPY)
     -   Evangelion Store [Episode Title Zippo (Episode 2)][22] (9,900 JPY)
-2.  Miscellaneous
+3.  Miscellaneous
     -   Evangelion Store [Guitar strap (Rei)][23] (2,090 JPY)
 
 
@@ -175,7 +190,7 @@ estimate baseline, a lot of items are frequently on sale.
 [9]:    https://sundayoffclub.com/product/detail.html?product_no=459
 [10]:   https://sundayoffclub.com/product/detail.html?product_no=836
 [11]:   https://sundayoffclub.com/product/detail.html?product_no=828
-[12]:   https://scottishkiltshop.com/tartan-box-pleated-hybrid-kilt-356.html
+[12]:   https://scottishkiltshop.com/deluxe-hybrid-kilt-for-women-tartan-box-pleated.html
 [13]:   https://www.cecile.co.jp/detail/TB-844/
 [14]:   https://amnibus.com/products/detail/2593
 [15]:   https://nijigencospa.com/detail/id/00000090569
@@ -188,7 +203,7 @@ estimate baseline, a lot of items are frequently on sale.
 [22]:   https://www.evastore.jp/products/detail/11448
 [23]:   https://www.evastore.jp/products/detail/12450
 [24]:   https://item.taobao.com/item.htm?id=611633978793
-[25]:   https://booth.pm/en/items/1747165
+[25]:   /
 [26]:   https://item.taobao.com/item.htm?id=623393757344
 [27]:   https://amilige.jp/collections/123/products/82022425001
 [28]:   https://item.taobao.com/item.htm?id=574728827709
@@ -234,3 +249,15 @@ estimate baseline, a lot of items are frequently on sale.
 [68]:   https://g3p.booth.pm/items/2595299
 [69]:   https://item.taobao.com/item.htm?id=637674904122
 [70]:   https://www.super-groupies.com/product/6401
+[71]:   https://hxctacs.com/items/5ed46010cee9ea4b01e0b0f1
+[72]:   https://ntbhshop.com/products/ciara-knee-boots-nothin-basic-here
+[73]:   https://kalaqtic.com/products/ko-op-gauntlet?variant=31610415284309
+[74]:   https://civarize.jp/fs/civarize/reflem/rf21-e08
+[75]:   https://morph8ne.com/shop/accessories/lil-corpus-set/
+[76]:   https://morph8ne.com/shop/accessories/belts-harnesses-garters/morph8ne-leather-bow-garter/
+[77]:   http://otherbalance.kr/product/203-buckle-pleats-skirt/3368/
+[78]:   https://www.attackanxiety.us/product/attack-anxiety-black-t-shirt
+[79]:   https://www.ties.com/v/a/elite-solid-2inch-skinny-black-black-narrow-tie
+[80]:   https://www.verillas.com/outland-half-kilt/
+[81]:   https://www.etsy.com/listing/216669563/
+[82]:   https://www.swordsofnorthshire.com/ninja-swords/ninjato/hand-forged-ninjato-1060-high-carbon-black-steel-blade-full-tang-samurai-ninja-sword
