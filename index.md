@@ -36,6 +36,7 @@ title: Una's "Work"
 		7.	[Isekai July 1: The Saga of Tanya the Definitely Absolutely
 			Evil][32]
 		8.	[7x09 Golden Kamuy, Pt. 1][79]
+		9.	[7x12 The Old Bear Hunter][81]
 	2.	Featured on [The Angry Birds Drink P*ss in The Angry Birds Movie][33]
 		1.	[Episode 40: Come Talk About P*ss!][34] ([Wiki][35])
 	3.	[Goth Angel Sinners][36] ([SoundCloud][37])
@@ -75,6 +76,7 @@ title: Una's "Work"
 		5.	People's Virtual Front [Branding Proposal][68]
 	3.	Fonts
 		1.	[Una Script][72]
+		2.  [Una Nota][82]
 
 [1]:	https://anarchy.website/
 [2]:	http://uwrfvoice.com/
@@ -156,3 +158,5 @@ title: Una's "Work"
 [78]:	https://www.tumblr.com/theme/40029
 [79]:	https://www.neighborsciencepodcast.com/e/709-golden-kamuy-pt-1/
 [80]:	https://amitypark.bandcamp.com/album/--2
+[81]:	https://www.neighborsciencepodcast.com/e/712-the-old-bear-hunter/
+[82]:	https://github.com/una-ada/una-nota
