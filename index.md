@@ -2,30 +2,32 @@
 title: Una's "Work"
 ---
 
-1.	[Writing][1]
-	1.	[Student Voice][2] [Columns][3]
-		1.	[UWRF Society of Physics Students Chapter visits 3M][4]
-			([Mirror][5])
-		2.	[Office chair provides fun, convenience, comfort][6]
-			([Mirror][7])
-		3.	SPS and Chem Demons Host Annual Haunted Lab ([Mirror][8])
-		4.	[Einstein's Theory of General Relativity explains occurrences in
-			the universe][9] ([Mirror][10])
-		5.	[A student's guide to pencils][11] ([Mirror][12])
-		6.	[The feasibility of spontaneously morphing into an octopus][13]
-			([Mirror][14])
-	2.	Lyrics
-		1.	[Ruined Picnic][77] - [Ruined Picnic and Friends][76]
-			1.	[Pop Tarts (God)][24]
-	3.	[Screenplay Collaborations][15]
-		1.	[Opposite Jurassic Park][16] ([Scene 7][17])
-		2.	[The Muppets Yakuza][18] ([Scene 9][19])
-		3.	[Sonic's Last Adventure][20] ([Scene 10][21])
-		4.	[Thelma and Louise 2: Army of Darkness][22] ([Scene 10][23])
-	4.	[All That Is Left][66] Articles
-		1.	Introduction to [Syndicalism][70] ([Mirror][71])
+1.	Design
+	1.	Branding
+		1.	[ORCA Logo][64]
+		2.	[Student Voice][2] [Logo Proposal][65]
+		3.	[All That Is Left][66] Logo and Layout
+		4.	[Revolutionary Labor Party][69] [Logo][67]
+		5.	People's Virtual Front [Branding Proposal][68]
+	2.	Fonts
+		1.	[Una Script][72]
+		2.  [Una Nota][82]
+	3.	Web Design
+		1.	["About"][78] Tumblr theme
+		2.	[Anarchy.Website][1]
+		3.	[All That Is Left][66]
+		4.	[una-ada.github.io](/)
 2.	Podcasts
-	1.	Featured on [Neighbor Science][25]
+	1.	[Goth Angel Sinners][36] ([SoundCloud][37])
+		1.	[Pt. I: Shoplifting][38] ([Notes][39])
+		2.	[Pt. II: Catalonia][40] ([Notes][41])
+		3.	[Pt. III: Spiderman 3][42] ([Notes][43])
+		4.	[Pt. IV: The Paris Commune][44] ([Notes][45])
+		5.	[Pt. V: Post-Scarcity][46] ([Notes][47])
+		6.	[Pt. VI: A Real Podcast][74] ([Notes][75])
+		7.	[Pt. VII: (T)suki][80]<br/>
+			(I really need to add some basic Japanese to this font!)
+	2.	[Neighbor Science][25] (Featured)
 		1.	[2x29 Neighborhood Bloc Party][26]
 		2.	[4x10 The Joker But He's a Horny Shark][27]
 		3.	[4x13 Neighbor Science Pot Luck Live in
@@ -37,17 +39,6 @@ title: Una's "Work"
 			Evil][32]
 		8.	[7x09 Golden Kamuy, Pt. 1][79]
 		9.	[7x12 The Old Bear Hunter][81]
-	2.	Featured on [The Angry Birds Drink P*ss in The Angry Birds Movie][33]
-		1.	[Episode 40: Come Talk About P*ss!][34] ([Wiki][35])
-	3.	[Goth Angel Sinners][36] ([SoundCloud][37])
-		1.	[Pt. I: Shoplifting][38] ([Notes][39])
-		2.	[Pt. II: Catalonia][40] ([Notes][41])
-		3.	[Pt. III: Spiderman 3][42] ([Notes][43])
-		4.	[Pt. IV: The Paris Commune][44] ([Notes][45])
-		5.	[Pt. V: Post-Scarcity][46] ([Notes][47])
-		6.	[Pt. VI: A Real Podcast][74] ([Notes][75])
-		7.	[Pt. VII: (T)suki][80]<br/>
-			(I really need to add some basic Japanese to this font!)
 3.	[Programming][48]
 	1.	JavaScript Libraries
 		1.	[Color Picker][49]
@@ -62,35 +53,36 @@ title: Una's "Work"
 		4.	[Harp.js][58]
 		5.	[Sad][73] and [Alone][59]
 		6.	[Pixel Sort][62] ([v.2][63])
-4.	Design
-	1.	Web Design
-		1.	["About"][78] Tumblr theme
-		2.	[Anarchy.Website][1]
-		3.	[All That Is Left][66]
-		4.	[una-ada.github.io](/)
-	2.	Branding
-		1.	[ORCA Logo][64]
-		2.	[Student Voice][2] [Logo Proposal][65]
-		3.	[All That Is Left][66] Logo and Layout
-		4.	[Revolutionary Labor Party][69] [Logo][67]
-		5.	People's Virtual Front [Branding Proposal][68]
-	3.	Fonts
-		1.	[Una Script][72]
-		2.  [Una Nota][82]
+4.	[Writing][1]
+	1.	[All That Is Left][66], Introduction to [Syndicalism][71]
+	2.	[Ruined Picnic and Friends][76], [Pop Tarts (God)][24]
+	3.	[Screenplay Collaborations][15]
+		1.	[Opposite Jurassic Park][16] ([Scene 7][17])
+		2.	[The Muppets Yakuza][18] ([Scene 9][19])
+		3.	[Sonic's Last Adventure][20] ([Scene 10][21])
+		4.	[Thelma and Louise 2: Army of Darkness][22] ([Scene 10][23])
+	4.	[Student Voice][2] Columns
+		1.	[UWRF Society of Physics Students Chapter visits 3M][5]
+		2.	[Office chair provides fun, convenience, comfort][7]
+		3.	SPS and Chem Demons Host Annual Haunted Lab ([Mirror][8])
+		4.	[Einstein's Theory of General Relativity explains occurrences in
+			the universe][10]
+		5.	[A student's guide to pencils][12]
+		6.	[The feasibility of spontaneously morphing into an octopus][14]
 
 [1]:	https://anarchy.website/
 [2]:	http://uwrfvoice.com/
-[3]:	http://uwrfvoice.com/author/hoglund
-[4]:	https://uwrfvoice.com/2015/uwrf-spsc-visits-3m/
+[3]:	/
+[4]:	/
 [5]:	https://anarchy.website/2015/10/08/sps-at-3m.html
-[6]:	https://uwrfvoice.com/2015/office-chair-provides-fun-convenience-comfort/
+[6]:	/
 [7]:	https://anarchy.website/2015/10/29/chair.html
 [8]:	https://anarchy.website/2015/11/01/haunted-lab.html
-[9]:	https://uwrfvoice.com/2015/einsteins-theory-of-general-relativity-explains-occurrences-in-the-universe/
+[9]:	/
 [10]:	https://anarchy.website/2015/11/18/einstein.html
-[11]:	https://uwrfvoice.com/2015/a-students-guide-to-pencils/
+[11]:	/
 [12]:	https://anarchy.website/2015/12/02/pencils.html
-[13]:	https://uwrfvoice.com/2016/the-feasibility-of-spontaneously-morphing-into-an-octopus/
+[13]:	/
 [14]:	https://anarchy.website/2016/02/05/octopodes.html
 [15]:	https://medium.com/@ruinedpicnic/the-picnic-archive-cd2751818964
 [16]:	https://www.docdroid.net/tm2dnu4
@@ -110,9 +102,9 @@ title: Una's "Work"
 [30]:	http://www.neighborsciencepodcast.com/e/510-ecocommunist-utopia/
 [31]:	http://www.neighborsciencepodcast.com/e/511-turning-into-a-witch-is-a-voluntary-choice/
 [32]:	http://www.neighborsciencepodcast.com/e/isekai-july-1-the-saga-of-tanya-the-definitely-absolutely-evil/
-[33]:	https://anchor.fm/the-angry-birds-drink-pss-in-the-angry-birds-movie/
-[34]:	https://anchor.fm/the-angry-birds-drink-pss-in-the-angry-birds-movie/episodes/Episode-40-Come-Talk-About-Pss--w-Audrey--Keaton--many-more-e2mn8q/a-a77rqs
-[35]:	https://tabdpitabm.fandom.com/wiki/Episode_40:_Come_Talk_About_P*ss!
+[33]:	/
+[34]:	/
+[35]:	/
 [36]:	https://anarchy.website/gthnglsnnrs
 [37]:	https://soundcloud.com/gthnglsnnrs
 [38]:	https://anchor.fm/gthnglsnnrs/episodes/Part-I-Shoplifting-e24qpj
@@ -147,14 +139,14 @@ title: Una's "Work"
 [67]:	/assets/img/rlp/background.png
 [68]:	/2017/08/29/pvf-proposal
 [69]:	https://revlabor.wixsite.com/revlaborparty/see-the-rlp
-[70]:	https://atil.xyz/issue/001/syndicalism
+[70]:	/
 [71]:	https://anarchy.website/2017/10/14/syndicalism.html
 [72]:	https://github.com/una-ada/unascript
 [73]:	/sad/
 [74]:	https://anchor.fm/gthnglsnnrs/episodes/Part-VI-A-Real-Podcast-ehud7n
 [75]:	https://anarchy.website/gthnglsnnrs/6/notes
 [76]:	https://ruinedpicnic.bandcamp.com/album/ruined-picnic-and-friends
-[77]:	https://twitter.com/punished_picnic
+[77]:	/
 [78]:	https://www.tumblr.com/theme/40029
 [79]:	https://www.neighborsciencepodcast.com/e/709-golden-kamuy-pt-1/
 [80]:	https://amitypark.bandcamp.com/album/--2
