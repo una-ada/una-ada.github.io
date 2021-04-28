@@ -9,10 +9,14 @@ title: Una's "Work"
 		3.	[All That Is Left][66] Logo and Layout
 		4.	[Revolutionary Labor Party][69] [Logo][67]
 		5.	People's Virtual Front [Branding Proposal][68]
-	2.	Fonts
+	2.	Covers
+		1.	[amitypark][3], [øøø][4]
+		2.  [amitypark][3]x[jisa2][11], [T(suki)][80]
+		3.	[Hermes The Magi][6], [Revolt][9]
+	3.	Fonts
 		1.	[Una Script][72]
 		2.  [Una Nota][82]
-	3.	Web Design
+	4.	Web Design
 		1.	["About"][78] Tumblr theme
 		2.	[Anarchy.Website][1]
 		3.	[All That Is Left][66]
@@ -72,15 +76,15 @@ title: Una's "Work"
 
 [1]:	https://anarchy.website/
 [2]:	http://uwrfvoice.com/
-[3]:	/
-[4]:	/
+[3]:	https://amitypark.bandcamp.com/
+[4]:	https://amitypark.bandcamp.com/album/-
 [5]:	https://anarchy.website/2015/10/08/sps-at-3m.html
-[6]:	/
+[6]:	https://soundcloud.com/hermesthemagi
 [7]:	https://anarchy.website/2015/10/29/chair.html
 [8]:	https://anarchy.website/2015/11/01/haunted-lab.html
-[9]:	/
+[9]:	https://soundcloud.com/hermesthemagi/revolt
 [10]:	https://anarchy.website/2015/11/18/einstein.html
-[11]:	/
+[11]:	https://jisa2.bandcamp.com/
 [12]:	https://anarchy.website/2015/12/02/pencils.html
 [13]:	/
 [14]:	https://anarchy.website/2016/02/05/octopodes.html
