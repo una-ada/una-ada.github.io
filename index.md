@@ -22,7 +22,9 @@ title: Una's "Work"
 		3.	[All That Is Left][66]
 		4.	[una-ada.github.io](/)
 2.	Podcasts
-	1.	[Goth Angel Sinners][36] ([SoundCloud][37])
+	1.	[Chloe & Una's Tentacular Experience][33]
+		1.	[Vol. 1: Alignment You! You!][34] ([Notes][35])
+	2.	[Goth Angel Sinners][36] ([SoundCloud][37])
 		1.	[Pt. I: Shoplifting][38] ([Notes][39])
 		2.	[Pt. II: Catalonia][40] ([Notes][41])
 		3.	[Pt. III: Spiderman 3][42] ([Notes][43])
@@ -31,7 +33,7 @@ title: Una's "Work"
 		6.	[Pt. VI: A Real Podcast][74] ([Notes][75])
 		7.	[Pt. VII: (T)suki][80]<br/>
 			(I really need to add some basic Japanese to this font!)
-	2.	[Neighbor Science][25] (Featured)
+	3.	[Neighbor Science][25] (Featured)
 		1.	[2x29 Neighborhood Bloc Party][26]
 		2.	[4x10 The Joker But He's a Horny Shark][27]
 		3.	[4x13 Neighbor Science Pot Luck Live in
@@ -106,9 +108,9 @@ title: Una's "Work"
 [30]:	http://www.neighborsciencepodcast.com/e/510-ecocommunist-utopia/
 [31]:	http://www.neighborsciencepodcast.com/e/511-turning-into-a-witch-is-a-voluntary-choice/
 [32]:	http://www.neighborsciencepodcast.com/e/isekai-july-1-the-saga-of-tanya-the-definitely-absolutely-evil/
-[33]:	/
-[34]:	/
-[35]:	/
+[33]:	https://anchor.fm/cutecast
+[34]:	https://anchor.fm/cutecast/episodes/Volume-1-Alignment-You--You-evocvf
+[35]:	https://anarchy.website/cute/1/notes
 [36]:	https://anarchy.website/gthnglsnnrs
 [37]:	https://soundcloud.com/gthnglsnnrs
 [38]:	https://anchor.fm/gthnglsnnrs/episodes/Part-I-Shoplifting-e24qpj
