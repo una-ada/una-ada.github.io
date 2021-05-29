@@ -5,7 +5,7 @@
 ### Immediate Updates
 
 - [ ] Update [index](index.md)
-    - [ ] Move current [index](index.md) to [/works](works.md)
+    - [x] Move current [index](index.md) to [/works](works.md)
     - [ ] Write new [index](index.md) (placeholder)
 - [ ] Update [/works](works.md)
     - [ ] Write descriptions for works
