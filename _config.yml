@@ -1,8 +1,8 @@
-repository: una-ada/una-ada.github.io
-title: una
-url: https://una-ada.github.io/
-
-theme: jekyll-theme-minimal
 kramdown:
     smart_quotes: ["apos", "apos", "quot", "quot"]
-    
+repository: una-ada/una-ada.github.io
+sass:
+    sass_dir: _sass
+title: una
+theme: jekyll-theme-minimal
+url: https://una-ada.github.io/

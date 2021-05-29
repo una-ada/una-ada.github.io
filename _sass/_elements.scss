@@ -1,0 +1,98 @@
+/**
+ *  @file Override default vendor styles for elements
+ *  @author Una Ada <una@anarchy.website>
+ *  May 28, 2021
+ */
+
+a {
+  text-decoration: underline;
+  color: $accent;
+}
+blockquote {
+  padding-left: 10px;
+  border-left: 2px solid $black;
+  margin: 0;
+}
+blockquote p {
+  margin: 0.5rem 0;
+}
+body {
+  line-height: 1.1;
+  margin: 0 auto;
+  position: relative;
+  width: 720px;
+}
+code {
+  font-family: monospace;
+  font-size: 0.7em;
+}
+div:target {
+  background: $highlight;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $title-font;
+}
+h1 {
+  font-size: 3.5em;
+  font-weight: normal;
+  margin-bottom: 0;
+  text-align: center;
+}
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+html {
+  background: $white;
+  color: $black;
+  font-family: $copy-font;
+  font-size: 24px;
+}
+img,
+video {
+  max-width: calc(100% - 1rem);
+}
+p {
+  line-height: 1rem;
+  margin: 0.5rem 0;
+}
+pre {
+  background: $white;
+  border: 1px solid $black;
+  overflow: visible !important;
+  padding: 10px !important;
+  tab-size: 4;
+}
+small {
+  font-size: 7pt;
+}
+sub {
+  vertical-align: bottom;
+  position: relative;
+  bottom: -0.3em;
+}
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.3em;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  td {
+    padding: 0 0.5rem;
+    vertical-align: top;
+  }
+  td:nth-child(even) {
+    text-align: right;
+  }
+  thead {
+    text-align: center;
+    td {
+      padding: 0.5rem;
+    }
+  }
+}

@@ -11,7 +11,7 @@
     - [ ] Write descriptions for works
     - [ ] Show/hide descriptions feature
 - [ ] Redesign default layout
-    - [ ] Refactor SCSS as imports
+    - [x] Refactor SCSS as imports
     - [ ] Add header
         - [ ] Add masthead
         - [ ] Add breadcrumbs

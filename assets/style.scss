@@ -1,0 +1,49 @@
+---
+---
+
+//	Fonts
+@font-face {
+  font-family: "Una Nota";
+  src: url("/assets/fonts/Una Nota.eot");
+  src: url("/assets/fonts/Una Nota.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Una Nota.woff2") format("woff2"),
+    url("/assets/fonts/Una Nota.woff") format("woff"),
+    url("/assets/fonts/Una Nota.svg#Una Nota") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-007E;
+}
+@font-face {
+  font-family: "Una Script";
+  src: url("/assets/fonts/Una Script.eot");
+  src: url("/assets/fonts/Una Script.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Una Script.woff2") format("woff2"),
+    url("/assets/fonts/Una Script.woff") format("woff"),
+    url("/assets/fonts/Una Script.svg#Una Script") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-0300;
+}
+$title-font: "Una Nota", serif;
+$copy-font: "Una Script", sans-serif;
+
+//	Colors
+$black: #0a2619;
+$white: white;
+$accent: #de2136;
+$highlight: #d68067;
+
+// General styles
+@import "elements";
+
+// Handle libraries
+@import "vs", "twemoji";
+
+@media print, screen and (max-width: 750px) {
+	@import "elements_mobile";
+}
+@media print {
+	@import "elements_print";
+}
