@@ -17,14 +17,15 @@ blockquote p {
   margin: 0.5rem 0;
 }
 body {
-  line-height: 1.1;
+  line-height: $line-height;
   margin: 0 auto;
   position: relative;
   width: 720px;
 }
 code {
-  font-family: monospace;
-  font-size: 0.7em;
+  font-family: $mono-font;
+  font-size: 1.2em;
+  line-height: $line-height;
 }
 div:target {
   background: $highlight;
@@ -49,14 +50,14 @@ html {
   background: $white;
   color: $black;
   font-family: $copy-font;
-  font-size: 24px;
+  font-size: $em-size;
 }
 img,
 video {
   max-width: calc(100% - 1rem);
 }
 p {
-  line-height: 1rem;
+  line-height: $line-height-script;
   margin: 0.5rem 0;
 }
 pre {
@@ -65,9 +66,6 @@ pre {
   overflow: visible !important;
   padding: 10px !important;
   tab-size: 4;
-}
-small {
-  font-size: 7pt;
 }
 sub {
   vertical-align: bottom;

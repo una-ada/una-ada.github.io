@@ -1,14 +1,14 @@
 ---
 ---
 
-//	Fonts
+// Fonts
 @font-face {
   font-family: "Una Nota";
-  src: url("/assets/fonts/Una Nota.eot");
-  src: url("/assets/fonts/Una Nota.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/Una Nota.woff2") format("woff2"),
-    url("/assets/fonts/Una Nota.woff") format("woff"),
-    url("/assets/fonts/Una Nota.svg#Una Nota") format("svg");
+  src: url("/assets/fonts/UnaNota-Regular.eot");
+  src: url("/assets/fonts/UnaNota-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/UnaNota-Regular.woff2") format("woff2"),
+    url("/assets/fonts/UnaNota-Regular.woff") format("woff"),
+    url("/assets/fonts/UnaNota-Regular.svg#Una Nota Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -16,24 +16,42 @@
 }
 @font-face {
   font-family: "Una Script";
-  src: url("/assets/fonts/Una Script.eot");
-  src: url("/assets/fonts/Una Script.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/Una Script.woff2") format("woff2"),
-    url("/assets/fonts/Una Script.woff") format("woff"),
-    url("/assets/fonts/Una Script.svg#Una Script") format("svg");
+  src: url("/assets/fonts/UnaScript-Regular.eot");
+  src: url("/assets/fonts/UnaScript-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/UnaScript-Regular.woff2") format("woff2"),
+    url("/assets/fonts/UnaScript-Regular.woff") format("woff"),
+    url("/assets/fonts/UnaScript-Regular.svg#Una Script Regular") format("svg");
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-0300;
+  unicode-range: U+0020-0457;
+}
+@font-face {
+  font-family: "Una Mono";
+  src: url("/assets/fonts/UnaMono-Regular.eot");
+  src: url("/assets/fonts/UnaMono-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/UnaMono-Regular.woff2") format("woff2"),
+    url("/assets/fonts/UnaMono-Regular.woff") format("woff"),
+    url("/assets/fonts/UnaMono-Regular.svg#Una Mono Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-007E;
 }
 $title-font: "Una Nota", serif;
 $copy-font: "Una Script", sans-serif;
+$mono-font: "Una Mono", monospace;
 
-//	Colors
+// Colors
 $black: #0a2619;
 $white: white;
 $accent: #de2136;
 $highlight: #d68067;
+
+// Sizes
+$em-size: 12pt;
+$line-height: 1.1;
+$line-height-script: 2;
 
 // General styles
 @import "elements";

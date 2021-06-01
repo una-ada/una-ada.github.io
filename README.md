@@ -6,7 +6,7 @@
 
 - [ ] Update [index](index.md)
     - [x] Move current [index](index.md) to [/works](works.md)
-    - [ ] Write new [index](index.md) (placeholder)
+    - [x] Write new [index](index.md) (placeholder)
 - [ ] Update [/works](works.md)
     - [ ] Write descriptions for works
     - [ ] Show/hide descriptions feature
@@ -21,8 +21,8 @@
         - [ ] Add author information
         - [ ] Add repo information
     - [ ] Fix post styles
-- [ ] Add monospace font for code blocks <br/>
-    &rarr; [una-ada/una-fonts](https://github.com/una-ada/una-fonts)
+- [x] Add monospace font for code blocks <br/>
+    &rarr; [una-ada/una-mono](https://github.com/una-ada/una-mono)
 - [ ] Update [README.md](README.md)
 
 ### Future Updates
