@@ -57,7 +57,7 @@ $line-height-script: 2;
 @import "elements";
 
 // Handle libraries
-@import "vs", "twemoji";
+@import "prism", "twemoji";
 
 @media print, screen and (max-width: 750px) {
 	@import "elements_mobile";
