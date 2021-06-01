@@ -56,6 +56,9 @@ img,
 video {
   max-width: calc(100% - 1rem);
 }
+li {
+  line-height: $line-height-script;
+}
 p {
   line-height: $line-height-script;
   margin: 0.5rem 0;
