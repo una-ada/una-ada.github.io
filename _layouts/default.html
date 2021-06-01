@@ -9,6 +9,20 @@
 	<meta name="viewport" content="width=device-width">
 	<script type="text/javascript" src="https://twemoji.maxcdn.com/2/twemoji.min.js"></script>
 	<script type="text/javascript" src="/assets/prism.js"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+			inlineMath: [['$','$'], ['\\(','\\)']],
+				processEscapes: true
+			},
+			"HTML-CSS": {
+				matchFontHeight: true,
+				linebreaks: {automatic: true}
+			}
+		});
+		MathJax.Hub.setRenderer("HTML-CSS");
+	  </script>
+	  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 </head>
 <body>
 	<h1>{{ page.title }}</h1>
