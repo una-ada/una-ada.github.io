@@ -1,58 +1,62 @@
 <html>
-	<head>
-		<title>"You'll meet somebody someday."</title>
-		<style>
-			*		{margin:0;padding:0;font-size:42px;font-family:monospace;opacity:0.9;}
-			html	{overflow:hidden;background:#f8f8f8}
-			body	{width:200%;}
-			.line	{display:inline-block;position:relative;line-height:35px;}
-		</style>
-	</head>
-	<body>
-		<div id="fill"></div>
-		<script>
-			var colors = [
-					"green",
-					"blue",
-					"yellow",
-					"red",
-					"orange"
-				],
-				numbers = [
-					1,
-					2,
-					3,
-					4,
-					5,
-					6,
-					8,
-					9,
-					0
-				],
-				fill = document.getElementById("fill"),
-				i = 0;
-				
-			while(1){
-				fill.innerHTML += "<span style='color:" + colors[~~(Math.random()*colors.length)] + "'>" + numbers[~~(Math.random()*numbers.length)] + "</span>";
-				if( fill.scrollWidth > ((window.innerWidth/2)-200) &&
-					fill.scrollWidth < ((window.innerWidth/2)) &&
-					fill.getBoundingClientRect().top > ((window.innerHeight/2)-40) &&
-					fill.getBoundingClientRect().top < ((window.innerHeight/2)))
-						fill.innerHTML += "<span>FIND</span>" +
-										"<span style='color:" + colors[~~(Math.random()*colors.length)] + "'>" + numbers[~~(Math.random()*numbers.length)] + "</span>" +
-										"<span>THE</span>" +
-										"<span style='color:" + colors[~~(Math.random()*colors.length)] + "'>" + numbers[~~(Math.random()*numbers.length)] + "</span>" +
-										"<span>PURPLE</span>" +
-										"<span style='color:" + colors[~~(Math.random()*colors.length)] + "'>" + numbers[~~(Math.random()*numbers.length)] + "</span>" +
-										"<span>7</span>";
-				if(fill.scrollWidth > window.innerWidth){
-					fill.outerHTML += "<div class='line' id='fill-" + i + "'>";
-					fill = document.getElementById('fill-' + i);
-					i++;
-				}
-				if(fill.getBoundingClientRect().top > window.innerHeight + 50) break;
-			}
-			document.getElementById("fill").style.display = "none";
-		</script>
-	</body>
+  <head>
+    <title>You'll find it someday.</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: 42px;
+        font-family: monospace;
+        opacity: 0.9;
+      }
+      html {
+        overflow: hidden;
+        background: #222222;
+      }
+      body {
+        width: 200%;
+      }
+      .instruction {
+        color: #e0c1bf;
+      }
+      .line {
+        display: inline-block;
+        position: relative;
+        line-height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fill"></div>
+    <script>
+      var colors = ['#729a89', '#145c62', '#dccca1', '#de2136', '#d68067'],
+        numbers = [1, 2, 3, 4, 5, 6, 8, 9, 0],
+        fill = document.getElementById('fill'),
+        i = 0;
+
+      while (1) {
+        fill.innerHTML +=
+          "<span style='color:" +
+          colors[~~(Math.random() * colors.length)] +
+          "'>" +
+          numbers[~~(Math.random() * numbers.length)] +
+          '</span>';
+        if (
+          fill.scrollWidth > window.innerWidth / 2 - 240 &&
+          fill.scrollWidth < window.innerWidth / 2 &&
+          fill.getBoundingClientRect().top > window.innerHeight / 2 - 40 &&
+          fill.getBoundingClientRect().top < window.innerHeight / 2
+        )
+          fill.innerHTML +=
+            '<span class="instruction"> FIND THE PURPLE 7 </span>';
+        if (fill.scrollWidth > window.innerWidth) {
+          fill.outerHTML += "<div class='line' id='fill-" + i + "'>";
+          fill = document.getElementById('fill-' + i);
+          i++;
+        }
+        if (fill.getBoundingClientRect().top > window.innerHeight + 50) break;
+      }
+      document.getElementById('fill').style.display = 'none';
+    </script>
+  </body>
 </html>
