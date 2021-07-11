@@ -22,464 +22,533 @@
 	- https://github.com/mudcube/MIDI.js
   -->
 <html>
-	<head>
-		<title>harp.js</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="user-scalable=no, initial-scale=1">
-		<style>
-			html,body{margin:0;padding:0;overflow:hidden;}
-			#harp{position:absolute;top:0;left:0;width:100%;height:100%;}
-			.me{bottom:1rem;position:absolute;right:1rem;z-index:1000;}
-			#loading{position:absolute;left:0;top:0;width:100%;height:100%;
-			text-align:center;line-height:100vh;font-size:12pt;
-			font-family:monospace;color:#444;}
-		</style>
-		<script src="assets/Base64.js" type="text/javascript"></script>
-		<script src="assets/Base64binary.js" type="text/javascript"></script>
-		<script src="assets/WebAudioAPI.js" type="text/javascript"></script>
-		<script src="assets/traer.js"></script>
-		<script src="assets/MIDI.min.js"></script>
-		<script src="assets/soundfont/whistle-mp3.js"></script>
-	</head>
-	<body>
-		<div id="loading">loading...</div>
-		<canvas id="harp"></canvas>
-		<script>
+  <head>
+    <title>harp.js</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      #harp {
+        background: #222;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #loading {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 100vh;
+        font-size: 12pt;
+        font-family: monospace;
+        color: #444;
+      }
+    </style>
+    <script src="assets/Base64.js" type="text/javascript"></script>
+    <script src="assets/Base64binary.js" type="text/javascript"></script>
+    <script src="assets/WebAudioAPI.js" type="text/javascript"></script>
+    <script src="assets/traer.js"></script>
+    <script src="assets/MIDI.min.js"></script>
+    <script src="assets/soundfont/whistle-mp3.js"></script>
+  </head>
+  <body>
+    <div id="loading">loading...</div>
+    <canvas id="harp"></canvas>
+    <script>
+      /*
+       *	Curve class
+       *	based on _handlers from https://dschool.stanford.edu/scripts/index.js
+       *	replaced Victor.js class w default Vector class calls
+       */
 
-			/*
-			 *	Curve class
-			 *	based on _handlers from https://dschool.stanford.edu/scripts/index.js
-			 *	replaced Victor.js class w default Vector class calls
-			 */
+      function Curve(p0, p1, p2, p3) {
+        var argc = arguments.length;
+        if (argc === 4) {
+          this.p0 = new Vector(arguments[0]);
+          this.p1 = new Vector(arguments[1]);
+          this.p2 = new Vector(arguments[2]);
+          this.p3 = new Vector(arguments[3]);
+        } else if (argc === 1) {
+          this.p0 = new Vector(arguments[0].p0);
+          this.p1 = new Vector(arguments[0].p1);
+          this.p2 = new Vector(arguments[0].p2);
+          this.p3 = new Vector(arguments[0].p3);
+        } else {
+          this.p0 = new Vector();
+          this.p1 = new Vector();
+          this.p2 = new Vector();
+          this.p3 = new Vector();
+        }
+        this.interpolate = function (c1, c2, factor) {
+          this.p0.set(c1.p0);
+          this.p0.mix(c2.p0, factor);
+          this.p1.set(c1.p1);
+          this.p1.mix(c2.p1, factor);
+          this.p2.set(c1.p2);
+          this.p2.mix(c2.p2, factor);
+          this.p3.set(c1.p3);
+          this.p3.mix(c2.p3, factor);
+        };
+        this.multiply = function (scale) {
+          this.p0.multiply(scale);
+          this.p1.multiply(scale);
+          this.p2.multiply(scale);
+          this.p3.multiply(scale);
+          return this;
+        };
+      }
 
-			function Curve(p0,p1,p2,p3){
-				var argc = arguments.length;
-				if(argc===4){
-					this.p0 = new Vector(arguments[0]);
-					this.p1 = new Vector(arguments[1]);
-					this.p2 = new Vector(arguments[2]);
-					this.p3 = new Vector(arguments[3]);
-				}
-				else if(argc===1){
-					this.p0 = new Vector(arguments[0].p0);
-					this.p1 = new Vector(arguments[0].p1);
-					this.p2 = new Vector(arguments[0].p2);
-					this.p3 = new Vector(arguments[0].p3);
-				}
-				else {
-					this.p0		= new Vector();
-					this.p1		= new Vector();
-					this.p2		= new Vector();
-					this.p3		= new Vector();
-				}
-				this.interpolate = function(c1,c2,factor){
-					this.p0.set(c1.p0);this.p0.mix(c2.p0,factor);
-					this.p1.set(c1.p1);this.p1.mix(c2.p1,factor);
-					this.p2.set(c1.p2);this.p2.mix(c2.p2,factor);
-					this.p3.set(c1.p3);this.p3.mix(c2.p3,factor);
-				}
-				this.multiply = function(scale){
-					this.p0.multiply(scale);
-					this.p1.multiply(scale);
-					this.p2.multiply(scale);
-					this.p3.multiply(scale);
-					return this;
-				}
-			}
+      /*
+       *	Extensions to Vector class
+       *	based on Victor.js
+       *	at some point it almost makes more sense to just use Victor.js
+       */
 
-			/*
-			 *	Extensions to Vector class
-			 *	based on Victor.js
-			 *	at some point it almost makes more sense to just use Victor.js
-			 */
+      Vector.prototype.mixX = function (v, a = 0.5) {
+        this.x = (1 - a) * this.x + a * v.x;
+        return this;
+      };
+      Vector.prototype.mixY = function (v, a = 0.5) {
+        this.y = (1 - a) * this.y + a * v.y;
+        return this;
+      };
+      Vector.prototype.mix = function (v, a = 0.5) {
+        return this.mixX(v, a).mixY(v, a);
+      };
+      Vector.prototype.multiply = function (v) {
+        this.x *= v.x;
+        this.y *= v.y;
+        return this;
+      };
 
-			Vector.prototype.mixX = function(v,a=0.5) {
-				this.x = (1-a)*this.x+a*v.x;
-				return this;
-			};
-			Vector.prototype.mixY = function(v,a=0.5) {
-				this.y = (1-a)*this.y+a*v.y;
-				return this;
-			};
-			Vector.prototype.mix = function(v,a=0.5) {
-				return this.mixX(v,a).mixY(v,a);
-			};
-			Vector.prototype.multiply = function(v){
-				this.x *= v.x;
-				this.y *= v.y;
-				return this;
-			};
+      /*
+       *	Pattern class
+       *	based on designPattern from https://dschool.stanford.edu/scripts/index.js
+       *	rewritten with more ecmascript2015 functions
+       *	plan to replace eventually, probably, its convoluted af
+       */
 
-			/*
-			 *	Pattern class
-			 *	based on designPattern from https://dschool.stanford.edu/scripts/index.js
-			 *	rewritten with more ecmascript2015 functions
-			 *	plan to replace eventually, probably, its convoluted af
-			 */
+      function Pattern(_ref) {
+        var size = new Vector(1, 1, 0),
+          c1 = _ref.c1,
+          c2 = _ref.c2,
+          scale = new Vector();
+        return function (_ref2) {
+          var width = _ref2.width,
+            height = _ref2.height,
+            curve1 = new Curve(c1),
+            curve2 = new Curve(c2);
+          scale.x = width / size.x;
+          scale.y = height / size.y;
+          return {
+            c1: curve1.multiply(scale),
+            c2: curve2.multiply(scale),
+          };
+        };
+      }
+      const patterns = [
+        Pattern({
+          c1: new Curve(
+            new Vector(0, 0, 0),
+            new Vector(0, 0.92, 0),
+            new Vector(1, 1, 0),
+            new Vector(1, 0.35, 0)
+          ),
+          c2: new Curve(
+            new Vector(0, 0, 0),
+            new Vector(0.71, 0, 0),
+            new Vector(1, 1, 0),
+            new Vector(0.21, 1, 0)
+          ),
+        }),
+        Pattern({
+          c1: new Curve(
+            new Vector(0, 1, 0),
+            new Vector(0.23, -0.42, 0),
+            new Vector(1, 0, 0),
+            new Vector(0.85, 1.45, 0)
+          ),
+          c2: new Curve(
+            new Vector(-0.1, -0.1, 0),
+            new Vector(0.71, 0, 0),
+            new Vector(1, 1, 0),
+            new Vector(0.21, 1, 0)
+          ),
+        }),
+        Pattern({
+          c1: new Curve(
+            new Vector(0, 0, 0),
+            new Vector(0, 0, 0),
+            new Vector(1, 0, 0),
+            new Vector(1, 1, 0)
+          ),
+          c2: new Curve(
+            new Vector(0, 0, 0),
+            new Vector(0, 1, 0),
+            new Vector(1, 1, 0),
+            new Vector(1, 1, 0)
+          ),
+        }),
+        Pattern({
+          c1: new Curve(
+            new Vector(0, 0, 0),
+            new Vector(0, 0.5, 0),
+            new Vector(1, 0.5, 0),
+            new Vector(1, 1, 0)
+          ),
+          c2: new Curve(
+            new Vector(0, 1, 0),
+            new Vector(0.5, 1, 0),
+            new Vector(0.5, 0, 0),
+            new Vector(1, 0, 0)
+          ),
+        }),
+        //	...will add more patterns later
+      ];
 
-			function Pattern(_ref){
-				var size	= new Vector(1,1,0),
-					c1		= _ref.c1,
-					c2		= _ref.c2,
-					scale	= new Vector();
-				return function(_ref2){
-					var width	= _ref2.width,
-						height	= _ref2.height,
-						curve1	= new Curve(c1),
-						curve2	= new Curve(c2);
-					scale.x		= width/size.x;
-					scale.y		= height/size.y;
-					return {
-						c1: curve1.multiply(scale),
-						c2: curve2.multiply(scale)
-					};
-				}
-			}
-			const patterns = [
-				Pattern({
-					c1		: new Curve(
-						new Vector(0,0,0),
-						new Vector(0,.92,0),
-						new Vector(1,1,0),
-						new Vector(1,.35,0)
-					),
-					c2		: new Curve(
-						new Vector(0,0,0),
-						new Vector(.71,0,0),
-						new Vector(1,1,0),
-						new Vector(.21,1,0)
-					)
-				}),
-				Pattern({
-					c1		: new Curve(
-						new Vector(0,1,0),
-						new Vector(.23,-0.42,0),
-						new Vector(1,0,0),
-						new Vector(.85,1.45,0)
-					),
-					c2		: new Curve(
-						new Vector(-0.1,-0.1,0),
-						new Vector(.71,0,0),
-						new Vector(1,1,0),
-						new Vector(.21,1,0)
-					)
-				}),
-				Pattern({
-					c1		: new Curve(
-						new Vector(0,0,0),
-						new Vector(0,0,0),
-						new Vector(1,0,0),
-						new Vector(1,1,0)
-					),
-					c2		: new Curve(
-						new Vector(0,0,0),
-						new Vector(0,1,0),
-						new Vector(1,1,0),
-						new Vector(1,1,0)
-					)
-				}),
-				Pattern({
-					c1		: new Curve(
-						new Vector(0,0,0),
-						new Vector(0,0.5,0),
-						new Vector(1,0.5,0),
-						new Vector(1,1,0)
-					),
-					c2		: new Curve(
-						new Vector(0,1,0),
-						new Vector(0.5,1,0),
-						new Vector(0.5,0,0),
-						new Vector(1,0,0)
-					)
-				})
-				//	...will add more patterns later
-			];
+      /*
+       *	Line-Cubic Bezier Intersect Calculator
+       *	based on computeIntersections() from https://www.particleincell.com/wp-content/uploads/2013/08/cubic-line.svg
+       */
 
-			/*
-			 *	Line-Cubic Bezier Intersect Calculator
-			 *	based on computeIntersections() from https://www.particleincell.com/wp-content/uploads/2013/08/cubic-line.svg
-			 */
+      function sgn(x) {
+        if (x < 0) return -1;
+        return 1;
+      }
+      function cubicRoots(P) {
+        var [a, b, c, d] = P,
+          A = b / a,
+          B = c / a,
+          C = d / a,
+          Q = (3 * B - A ** 2) / 9,
+          R = (9 * A * B - 27 * C - 2 * A ** 3) / 54,
+          D = Q ** 3 + R ** 2,
+          t = [],
+          S,
+          T,
+          Im;
+        if (D >= 0) {
+          var E = D ** 0.5,
+            S = sgn(R + E) * Math.abs(R + E) ** (1 / 3),
+            T = sgn(R - E) * Math.abs(R - E) ** (1 / 3);
+          t[0] = -A / 3 + (S + T);
+          t[1] = -A / 3 - (S + T) / 2;
+          t[2] = -A / 3 - (S + T) / 2;
+          Im = Math.abs((Math.sqrt(3) * (S - T)) / 2);
+          if (Im != 0) {
+            t[1] = -1;
+            t[2] = -1;
+          }
+        } else {
+          var th = Math.acos(R / Math.sqrt(-(Q ** 3)));
+          S = Math.sqrt(-Q);
+          t[0] = 2 * S * Math.cos(th / 3) - A / 3;
+          t[1] = 2 * S * Math.cos((th + 2 * Math.PI) / 3) - A / 3;
+          t[2] = 2 * S * Math.cos((th + 4 * Math.PI) / 3) - A / 3;
+          Im = 0;
+        }
+        for (var i = 0; i < 3; i++) if (t[i] < 0 || t[i] > 1) t[i] = -1;
+        return t;
+      }
+      function bezierCoeffs(P0, P1, P2, P3) {
+        return [
+          -P0 + 3 * P1 + -3 * P2 + P3,
+          3 * P0 - 6 * P1 + 3 * P2,
+          -3 * P0 + 3 * P1,
+          P0,
+        ];
+      }
+      function computeIntersections(px, py, lx, ly) {
+        var X = [],
+          A = ly[1] - ly[0],
+          B = lx[0] - lx[1],
+          C = lx[0] * (ly[0] - ly[1]) + ly[0] * (lx[1] - lx[0]),
+          bx = bezierCoeffs(...px),
+          by = bezierCoeffs(...py),
+          P = [
+            A * bx[0] + B * by[0],
+            A * bx[1] + B * by[1],
+            A * bx[2] + B * by[2],
+            A * bx[3] + B * by[3] + C,
+          ],
+          r = cubicRoots(P),
+          ret = [];
+        for (var t of r) {
+          X[0] = bx[0] * t ** 3 + bx[1] * t ** 2 + bx[2] * t + bx[3];
+          X[1] = by[0] * t ** 3 + by[1] * t ** 2 + by[2] * t + by[3];
+          var s;
+          if (lx[1] - lx[0] != 0) s = (X[0] - lx[0]) / (lx[1] - lx[0]);
+          else s = (X[1] - ly[0]) / (ly[1] - ly[0]);
+          if (t < 0 || t > 1 || s < 0 || s > 1) {
+            X[0] = -1;
+            X[1] = -1;
+          }
+          ret.push(X);
+        }
+        return ret;
+      }
 
-			function sgn(x){
-				if(x<0) return -1;
-				return 1;
-			}
-			function cubicRoots(P){
-				var	[a,b,c,d] = P,
-					A	= b/a,
-					B	= c/a,
-					C	= d/a,
-					Q	= (3*B - (A**2))/9,
-					R	= (9*A*B - 27*C - 2*(A**3))/54,
-					D	= (Q**3)+(R**2),
-					t	= [],
-					S, T, Im;
-				if(D >= 0){
-					var E	= D**0.5,
-						S 	= sgn(R + E)*(Math.abs(R + E)**(1/3)),
-						T 	= sgn(R - E)*(Math.abs(R-E)**(1/3));
-					t[0]	= -A/3 + (S+T);
-					t[1]	= -A/3 - (S+T)/2;
-					t[2]	= -A/3 - (S+T)/2;
-					Im		= Math.abs(Math.sqrt(3)*(S - T)/2);
-					if (Im!=0){
-						t[1]=-1;
-						t[2]=-1;
-					}
-				}
-				else{
-					var th	= Math.acos(R/Math.sqrt(-(Q**3)));
-						S	= Math.sqrt(-Q)
-					t[0]	= 2*S*Math.cos(th/3) - A/3;
-					t[1]	= 2*S*Math.cos((th + 2*Math.PI)/3) - A/3;
-					t[2]	= 2*S*Math.cos((th + 4*Math.PI)/3) - A/3;
-					Im = 0;
-				}
-				for(var i=0;i<3;i++) if(t[i]<0||t[i]>1)t[i]=-1;
-				return t;
-			}
-			function bezierCoeffs(P0,P1,P2,P3){
-				return [
-					-P0 + 3*P1 + -3*P2 + P3,
-					3*P0 - 6*P1 + 3*P2,
-					-3*P0 + 3*P1,
-					P0
-				];
-			}
-			function computeIntersections(px,py,lx,ly){
-				var X	= [],
-					A	= ly[1]-ly[0],
-					B	= lx[0]-lx[1],
-					C	= lx[0]*(ly[0]-ly[1]) + ly[0]*(lx[1]-lx[0]),
-					bx	= bezierCoeffs(...px),
-					by	= bezierCoeffs(...py),
-					P	= [
-						A*bx[0]+B*by[0],
-						A*bx[1]+B*by[1],
-						A*bx[2]+B*by[2],
-						A*bx[3]+B*by[3] + C
-					],
-					r	= cubicRoots(P),
-					ret	= [];
-				for(var t of r){
-					X[0]	= bx[0]*(t**3)+bx[1]*(t**2)+bx[2]*t+bx[3];
-					X[1]	= by[0]*(t**3)+by[1]*(t**2)+by[2]*t+by[3];
-					var s;
-					if((lx[1]-lx[0])!=0) s=(X[0]-lx[0])/(lx[1]-lx[0]);
-					else s=(X[1]-ly[0])/(ly[1]-ly[0]);
-					if (t<0||t>1||s<0||s>1){
-						X[0]=-1;
-						X[1]=-1;
-					}
-					ret.push(X);
-				}
-				return ret;
-			}
+      /*
+       *	Main class
+       *	based on HeroLines from https://dschool.stanford.edu/scripts/index.js
+       */
 
-			/*
-			 *	Main class
-			 *	based on HeroLines from https://dschool.stanford.edu/scripts/index.js
-			 */
-
-			const
-				LINE_COUNT	= 50,
-				PIVOT_COUNT	= 100,
-				PATH_LEN	= 10,
-				CACHE_LEN	= 10,
-				parts		= new ParticleSystem();
-			var	lines	= {
-				attractions : [],
-				bezier(curve,t){
-					[p0,p1,p2,p3] = [curve.p0,curve.p1,curve.p2,curve.p3];
-					var s 	= 1-t,
-						x	= (s**3)*p0.x+3*((s**2)*t*p1.x+s*(t**2)*p2.x)+(t**3)*p3.x,
-						y	= (s**3)*p0.y+3*((s**2)*t*p1.y+s*(t**2)*p2.y)+(t**3)*p3.y;
-					return new Vector(x,y,0);
-				},
-				big		: parts.makeParticle(0.1,0,0,0),
-				canvas	: document.getElementById('harp'),
-				ctx		: document.getElementById('harp').getContext('2d'),
-				diag	: location.hash=='#diag',
-				draw(){
-					var canvas		= lines.canvas,
-						context 	= lines.ctx,
-						pixelRatio	= window.devicePixelRatio;
-					canvas.height = window.innerHeight;
-					canvas.width = window.innerWidth;
-					context.clearRect(0, 0, canvas.width, canvas.height);
-					if(lines.diag){
-						context.strokeStyle = 'rgba(0,0,0,0.8)';
-						for(var i=1;i<LINE_COUNT-1;i++){
-							var line = lines.pivotsFixed[i];
-							context.beginPath();
-							context.moveTo(line[0].position.x*pixelRatio,line[0].position.y*pixelRatio);
-							for(var j=1,pivot;pivot=line[j];j++)
-								context.lineTo(pivot.position.x*pixelRatio,pivot.position.y*pixelRatio);
-							context.stroke();
-						}
-					}
-					context.strokeStyle = '#B2E1D9';
-					for(var i=1;i<LINE_COUNT-1;i++){
-						var line = lines.pivots[i];
-						context.beginPath();
-						context.moveTo(line[0].position.x*pixelRatio,line[0].position.y*pixelRatio);
-						for(var j=1,pivot;pivot=line[j];j++)
-							context.lineTo(pivot.position.x*pixelRatio,pivot.position.y*pixelRatio);
-						context.stroke();
-					}
-					if(lines.diag){
-						if(lines.posCache.length){
-							context.strokeStyle = '#00f';
-							context.beginPath();
-							context.moveTo(lines.posCache[0].x*pixelRatio,lines.posCache[0].y*pixelRatio);
-							for(var p of lines.posCache)
-								context.lineTo(p.x*pixelRatio,p.y*pixelRatio);
-							context.lineTo(lines.big.position.x*pixelRatio,lines.big.position.y*pixelRatio);
-							context.stroke();
-						}
-						if(lines.xsCache.length){
-							context.strokeStyle = '#0f0';
-							context.fillStyle	= '#f00';
-							for(var l of lines.xsCache){
-								context.beginPath();
-								context.moveTo(l.line[0].x*pixelRatio,l.line[0].y*pixelRatio);
-								context.lineTo(l.line[1].x*pixelRatio,l.line[1].y*pixelRatio);
-								context.stroke();
-							}
-							for(var l of lines.xsCache)
-								for(var p of l.points)
-									context.fillRect(p.x-1,p.y-1,pixelRatio,pixelRatio);
-						}
-						lines.posCache.push(new Vector(lines.lastPos));
-						while(lines.posCache.length>PATH_LEN){
-							lines.posCache.shift();
-						}
-						while(lines.xsCache.length>CACHE_LEN){
-							lines.xsCache.shift();
-						}
-					}
-				},
-				initiated : !1,
-				init(){
-					lines.big.makeFixed();
-					for(var i=0;i<LINE_COUNT;i++){
-						lines.lines.push(new Curve());
-						lines.pivots[i] = [];
-						lines.pivotsFixed[i] = [];
-						lines.attractions[i] = [];
-						for(var j=0;j<PIVOT_COUNT;j++){
-							lines.pivots[i][j] = parts.makeParticle(0.4,0,0,0);
-							lines.pivotsFixed[i][j] = parts.makeParticle(0.4,0,0,0);
-							lines.pivotsFixed[i][j].makeFixed();
-							parts.makeAttraction(lines.big, lines.pivots[i][j], 5e3, 10);
-							parts.makeSpring(this.pivots[i][j],this.pivotsFixed[i][j],0.2,0.3,5);
-							if(j>0) parts.makeSpring(lines.pivots[i][j-1],lines.pivots[i][j],0.5,0.1,5);
-						}
-					}
-					lines.tick();
-				},
-				intersects(a,b){
-					var ret = [], xList = [];
-					for(var i=1;i<LINE_COUNT-1;i++){
-						var l	= lines.lines[i],
-							px	= [l.p0.x,l.p1.x,l.p2.x,l.p3.x],
-							py	= [l.p0.y,l.p1.y,l.p2.y,l.p3.y],
-							xs	= computeIntersections(px,py,[a.x,b.x],[a.y,b.y]);
-						for(let j of xs) if(j[0]>0&&j[1]>0){
-							if(!~ret.indexOf(i)) ret.push(i);
-							xList.push(new Vector(...j,0));
-						}
-					}
-					if(xList.length) lines.xsCache.push({
-						line	: [new Vector(a),new Vector(b)],
-						points	: xList
-					});
-					return ret;
-				},
-				lastPos	: new Vector(),
-				lines 	: [],
-				midiLoad: !1,
-				pattern	: patterns[~~(Math.random()*patterns.length)],
-				//pattern	: patterns[3],
-				pivots	: [],
-				pivotsFixed:[],
-				posCache: [],
-				set(v,x,y,z){
-					v.x = x || 0;
-					v.y = y || 0;
-					v.z = z || 0;
-					return v;
-				},
-				tick(){
-					lines.update(lines.pattern({
-						height	: window.innerHeight,
-						width	: window.innerWidth
-					}));
-					parts.tick();
-					lines.draw();
-					requestAnimationFrame(lines.tick);
-				},
-				update(_ref){
-					for(var i=1;i<LINE_COUNT-1;i++)
-						lines.lines[i].interpolate(_ref.c1,_ref.c2,i/(LINE_COUNT-1));
-					for(var j=0;j<PIVOT_COUNT;j++){
-						var np0 = lines.bezier(_ref.c1,j/PIVOT_COUNT),
-							npN = lines.bezier(_ref.c2,j/PIVOT_COUNT);
-						lines.pivotsFixed[0][j].position.set(np0);
-						lines.pivotsFixed[LINE_COUNT-1][j].position.set(npN);
-						if(!lines.initiated){
-							lines.pivots[0][j].position.set(np0);
-							lines.pivots[LINE_COUNT-1][j].position.set(npN);
-						}
-						for(var _i=1;_i<LINE_COUNT-1;_i++){
-							var n = new Vector(np0);
-							n.mix(npN,_i/LINE_COUNT);
-							lines.pivotsFixed[_i][j].position.set(n);
-							if(!lines.initiated)
-								lines.pivots[_i][j].position.set(n);
-						}
-					}
-					lines.initiated = !0;
-				},
-				xsCache	: []
-			};
-			var instrument_name = "whistle";
-			MIDI.loadPlugin({
-				soundfontUrl: "assets/soundfont/",
-				instrument: instrument_name ,
-				onsuccess: function() {
-					MIDI.programChange(0, MIDI.GM.byName[instrument_name].number);
-					MIDI.setVolume(0, 20);
-					lines.midiLoad = !0;
-					document.getElementById('loading').style.display='none';
-					lines.init();
-				}
-			});
-			function movement(x,y){
-				var newPos = new Vector(x,y,0);
-				lines.big.position.set(newPos);
-				var iscts = lines.intersects(lines.lastPos,newPos);
-				if(lines.midiLoad)
-					for(var i of iscts)
-						MIDI.noteOn(0, 50+~~(i/2), 127, 0);
-				lines.lastPos.set(newPos);
-			};
-			document.addEventListener('mousemove',(e)=>{
-				if(lines.initiated)movement(e.pageX,e.pageY);
-			});
-			document.addEventListener('touchmove',(e)=>{
-				var t = e.changedTouches[0]
-				if(lines.initiated)movement(t.pageX,t.pageY);
-				//	this just handles the first touch it sees
-				//	id like to add multitouch support eventually
-			});
-			document.addEventListener('keypress',(e)=>{
-				if(e.key=='d') lines.diag = !lines.diag;
-				if(+e.key<patterns.length) lines.pattern = patterns[+e.key];
-			});
-		</script>
-		<a href="https://una-ada.github.io">
-			<img class="me" src="https://una-ada.github.io/assets/img/button.png" alt="trewbot"/>
-		</a>
-	</body>
+      const LINE_COUNT = 50,
+        PIVOT_COUNT = 100,
+        PATH_LEN = 10,
+        CACHE_LEN = 10,
+        parts = new ParticleSystem();
+      var lines = {
+        attractions: [],
+        bezier(curve, t) {
+          [p0, p1, p2, p3] = [curve.p0, curve.p1, curve.p2, curve.p3];
+          var s = 1 - t,
+            x =
+              s ** 3 * p0.x +
+              3 * (s ** 2 * t * p1.x + s * t ** 2 * p2.x) +
+              t ** 3 * p3.x,
+            y =
+              s ** 3 * p0.y +
+              3 * (s ** 2 * t * p1.y + s * t ** 2 * p2.y) +
+              t ** 3 * p3.y;
+          return new Vector(x, y, 0);
+        },
+        big: parts.makeParticle(0.1, 0, 0, 0),
+        canvas: document.getElementById('harp'),
+        ctx: document.getElementById('harp').getContext('2d'),
+        diag: location.hash == '#diag',
+        draw() {
+          var canvas = lines.canvas,
+            context = lines.ctx,
+            pixelRatio = window.devicePixelRatio;
+          canvas.height = window.innerHeight;
+          canvas.width = window.innerWidth;
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          if (lines.diag) {
+            // base lines
+            context.strokeStyle = '#0ff';
+            for (var i = 1; i < LINE_COUNT - 1; i++) {
+              var line = lines.pivotsFixed[i];
+              context.beginPath();
+              context.moveTo(
+                line[0].position.x * pixelRatio,
+                line[0].position.y * pixelRatio
+              );
+              for (var j = 1, pivot; (pivot = line[j]); j++)
+                context.lineTo(
+                  pivot.position.x * pixelRatio,
+                  pivot.position.y * pixelRatio
+                );
+              context.stroke();
+            }
+          }
+          // actual harp strokes
+          context.strokeStyle = '#e0c1bf';
+          for (var i = 1; i < LINE_COUNT - 1; i++) {
+            var line = lines.pivots[i];
+            context.beginPath();
+            context.moveTo(
+              line[0].position.x * pixelRatio,
+              line[0].position.y * pixelRatio
+            );
+            for (var j = 1, pivot; (pivot = line[j]); j++)
+              context.lineTo(
+                pivot.position.x * pixelRatio,
+                pivot.position.y * pixelRatio
+              );
+            context.stroke();
+          }
+          if (lines.diag) {
+            if (lines.posCache.length) {
+              // mouse movements
+              context.strokeStyle = '#00f';
+              context.beginPath();
+              context.moveTo(
+                lines.posCache[0].x * pixelRatio,
+                lines.posCache[0].y * pixelRatio
+              );
+              for (var p of lines.posCache)
+                context.lineTo(p.x * pixelRatio, p.y * pixelRatio);
+              context.lineTo(
+                lines.big.position.x * pixelRatio,
+                lines.big.position.y * pixelRatio
+              );
+              context.stroke();
+            }
+            if (lines.xsCache.length) {
+              // intersecting paths
+              context.strokeStyle = '#0f0';
+              // path intersections
+              context.fillStyle = '#f00';
+              for (var l of lines.xsCache) {
+                context.beginPath();
+                context.moveTo(
+                  l.line[0].x * pixelRatio,
+                  l.line[0].y * pixelRatio
+                );
+                context.lineTo(
+                  l.line[1].x * pixelRatio,
+                  l.line[1].y * pixelRatio
+                );
+                context.stroke();
+              }
+              for (var l of lines.xsCache)
+                for (var p of l.points)
+                  context.fillRect(p.x - 1, p.y - 1, pixelRatio, pixelRatio);
+            }
+            lines.posCache.push(new Vector(lines.lastPos));
+            while (lines.posCache.length > PATH_LEN) {
+              lines.posCache.shift();
+            }
+            while (lines.xsCache.length > CACHE_LEN) {
+              lines.xsCache.shift();
+            }
+          }
+        },
+        initiated: !1,
+        init() {
+          lines.big.makeFixed();
+          for (var i = 0; i < LINE_COUNT; i++) {
+            lines.lines.push(new Curve());
+            lines.pivots[i] = [];
+            lines.pivotsFixed[i] = [];
+            lines.attractions[i] = [];
+            for (var j = 0; j < PIVOT_COUNT; j++) {
+              lines.pivots[i][j] = parts.makeParticle(0.4, 0, 0, 0);
+              lines.pivotsFixed[i][j] = parts.makeParticle(0.4, 0, 0, 0);
+              lines.pivotsFixed[i][j].makeFixed();
+              parts.makeAttraction(lines.big, lines.pivots[i][j], 5e3, 10);
+              parts.makeSpring(
+                this.pivots[i][j],
+                this.pivotsFixed[i][j],
+                0.2,
+                0.3,
+                5
+              );
+              if (j > 0)
+                parts.makeSpring(
+                  lines.pivots[i][j - 1],
+                  lines.pivots[i][j],
+                  0.5,
+                  0.1,
+                  5
+                );
+            }
+          }
+          lines.tick();
+        },
+        intersects(a, b) {
+          var ret = [],
+            xList = [];
+          for (var i = 1; i < LINE_COUNT - 1; i++) {
+            var l = lines.lines[i],
+              px = [l.p0.x, l.p1.x, l.p2.x, l.p3.x],
+              py = [l.p0.y, l.p1.y, l.p2.y, l.p3.y],
+              xs = computeIntersections(px, py, [a.x, b.x], [a.y, b.y]);
+            for (let j of xs)
+              if (j[0] > 0 && j[1] > 0) {
+                if (!~ret.indexOf(i)) ret.push(i);
+                xList.push(new Vector(...j, 0));
+              }
+          }
+          if (xList.length)
+            lines.xsCache.push({
+              line: [new Vector(a), new Vector(b)],
+              points: xList,
+            });
+          return ret;
+        },
+        lastPos: new Vector(),
+        lines: [],
+        midiLoad: !1,
+        pattern: patterns[~~(Math.random() * patterns.length)],
+        //pattern	: patterns[3],
+        pivots: [],
+        pivotsFixed: [],
+        posCache: [],
+        set(v, x, y, z) {
+          v.x = x || 0;
+          v.y = y || 0;
+          v.z = z || 0;
+          return v;
+        },
+        tick() {
+          lines.update(
+            lines.pattern({
+              height: window.innerHeight,
+              width: window.innerWidth,
+            })
+          );
+          parts.tick();
+          lines.draw();
+          requestAnimationFrame(lines.tick);
+        },
+        update(_ref) {
+          for (var i = 1; i < LINE_COUNT - 1; i++)
+            lines.lines[i].interpolate(_ref.c1, _ref.c2, i / (LINE_COUNT - 1));
+          for (var j = 0; j < PIVOT_COUNT; j++) {
+            var np0 = lines.bezier(_ref.c1, j / PIVOT_COUNT),
+              npN = lines.bezier(_ref.c2, j / PIVOT_COUNT);
+            lines.pivotsFixed[0][j].position.set(np0);
+            lines.pivotsFixed[LINE_COUNT - 1][j].position.set(npN);
+            if (!lines.initiated) {
+              lines.pivots[0][j].position.set(np0);
+              lines.pivots[LINE_COUNT - 1][j].position.set(npN);
+            }
+            for (var _i = 1; _i < LINE_COUNT - 1; _i++) {
+              var n = new Vector(np0);
+              n.mix(npN, _i / LINE_COUNT);
+              lines.pivotsFixed[_i][j].position.set(n);
+              if (!lines.initiated) lines.pivots[_i][j].position.set(n);
+            }
+          }
+          lines.initiated = !0;
+        },
+        xsCache: [],
+      };
+      var instrument_name = 'whistle';
+      MIDI.loadPlugin({
+        soundfontUrl: 'assets/soundfont/',
+        instrument: instrument_name,
+        onsuccess: function () {
+          MIDI.programChange(0, MIDI.GM.byName[instrument_name].number);
+          MIDI.setVolume(0, 20);
+          lines.midiLoad = !0;
+          document.getElementById('loading').style.display = 'none';
+          lines.init();
+        },
+      });
+      function movement(x, y) {
+        var newPos = new Vector(x, y, 0);
+        lines.big.position.set(newPos);
+        var iscts = lines.intersects(lines.lastPos, newPos);
+        if (lines.midiLoad)
+          for (var i of iscts) MIDI.noteOn(0, 50 + ~~(i / 2), 127, 0);
+        lines.lastPos.set(newPos);
+      }
+      document.addEventListener('mousemove', e => {
+        if (lines.initiated) movement(e.pageX, e.pageY);
+      });
+      document.addEventListener('touchmove', e => {
+        var t = e.changedTouches[0];
+        if (lines.initiated) movement(t.pageX, t.pageY);
+        //	this just handles the first touch it sees
+        //	id like to add multitouch support eventually
+      });
+      document.addEventListener('keypress', e => {
+        if (e.key == 'd') lines.diag = !lines.diag;
+        if (+e.key < patterns.length) lines.pattern = patterns[+e.key];
+      });
+    </script>
+  </body>
 </html>

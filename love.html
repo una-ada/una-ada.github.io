@@ -46,7 +46,9 @@
             labelCopy.length &&
             j >= arrJ.length / 2 - labelCopy.length / 2
               ? (fill.innerHTML += `<char>${labelCopy.shift()}</char>`)
-              : (fill.innerHTML += `<char style="color: ${color}">${number}</char>`)
+              : (fill.innerHTML += `<char style="color: ${color}">
+                  ${number}
+                </char>`)
           );
           fill.innerHTML += `<br/>`;
         });
