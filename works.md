@@ -146,9 +146,9 @@ title: Una's "Work"
 [63]: /js/2/frag-sort-2
 [64]: /assets/img/orca/olf.png
 [65]: /assets/img/student-voice/black.png
-[66]: https://atil.xyz
+[66]: https://allthatisleft.github.io/
 [67]: /assets/img/rlp/background.png
-[68]: /2017/08/29/pvf-proposal
+[68]: https://anarchy.website/2017/08/29/pvf-proposal
 [69]: https://revlabor.wixsite.com/revlaborparty/see-the-rlp
 [70]: https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much
 [71]: https://anarchy.website/2017/10/14/syndicalism.html
