@@ -29,6 +29,7 @@ title: Una's "Work"
 2. Podcasts
    1. [Chloe & Una's Tentacular Experience][33]
       1. [Vol. 1: Alignment You! You!][34] ([Notes][35])
+      2. [Vol. 2: Your Neighborhood Tentacle Shop][83] ([Notes][84])
    2. [Goth Angel Sinners][36] ([SoundCloud][37])
       1. [Pt. I: Shoplifting][38] ([Notes][39])
       2. [Pt. II: Catalonia][40] ([Notes][41])
@@ -162,4 +163,6 @@ title: Una's "Work"
 [80]: https://amitypark.bandcamp.com/album/--2
 [81]: https://www.neighborsciencepodcast.com/e/712-the-old-bear-hunter/
 [82]: https://github.com/una-ada/una-nota
+[83]: https://anchor.fm/cutecast/episodes/Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto/a-a60mv6l
+[84]: https://anarchy.website/cute/2/notes
 <!-- prettier-ignore-end -->
