@@ -1,0 +1,126 @@
+/*----- Variables ------------------------------------------------------------*/
+:root {
+  /*----- Color Palette ------------------------------------------------------*/
+  --color-black: #222222ff;
+  --color-lotus: #e0c1bfff;
+  --color-baked: #d68067ff;
+  --color-reeds: #dccca1ff;
+  --color-olive: #2e2d1cff;
+  --color-chive: #555f47ff;
+  --color-foamy: #729a89ff;
+  --color-coral: #145c62ff;
+  --color-royal: #0e2d31ff;
+  --color-berry: #2a2858ff;
+  --color-candy: #de2136ff;
+  --color-wines: #703d41ff;
+  --color-blank: #00000000;
+
+  --size-em: 12px;
+
+  --font-mono: 'Roboto Mono', monospace;
+}
+
+a {
+  color: var(--color-foamy);
+}
+h1 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin: 2.8rem 0 0 0;
+}
+html {
+  background: var(--color-black);
+  color: var(--color-lotus);
+  line-height: 1.4;
+  font-family: var(--font-mono);
+  font-size: var(--size-em);
+}
+ul,
+ol {
+  margin: 0;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 0;
+}
+header h1::before,
+section h2::before {
+  color: var(--color-coral);
+  content: 'const ';
+}
+header h1::after,
+section h2::after {
+  color: var(--color-chive);
+  content: ' = ';
+}
+header a {
+  color: var(--color-lotus);
+}
+header ul {
+  display: inline-block;
+  font-size: 2.4em;
+  margin: 0;
+  padding: 0;
+}
+header ul::before {
+  color: var(--color-chive);
+  content: '{ ';
+}
+header ul::after {
+  color: var(--color-chive);
+  content: ' };';
+}
+header ul li {
+  display: inline;
+  list-style: none;
+}
+header ul li::after {
+  content: ', ';
+}
+header ul li:last-child::after {
+  content: '';
+}
+
+article h1 {
+  color: var(--color-chive);
+}
+article h1::before {
+  content: '/*----- ';
+}
+article h1::after {
+  content: ' ----------*/';
+}
+
+.section--list {
+  column-width: 25rem;
+}
+section h2 {
+  column-span: all;
+  margin: 1.4rem 0 0 0;
+}
+
+.tech-list,
+.tech-list ul {
+  list-style: none;
+  padding: 0;
+}
+.tech-list li {
+  display: block;
+  break-inside: avoid-column;
+}
+.tech-list li ul li::before {
+  content: '├── ';
+}
+.tech-list li ul li:last-child::before {
+  content: '└── ';
+}
+
+@media print, screen and (max-width: 50rem) {
+  article h1::before {
+    content: '/* ';
+  }
+  article h1::after {
+    content: ' */';
+  }
+}
