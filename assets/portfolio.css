@@ -133,6 +133,9 @@ section {
   column-gap: 3rem;
   column-width: 22rem;
 }
+section img {
+  width: 100%;
+}
 
 .tech-list,
 .tech-list ul {
