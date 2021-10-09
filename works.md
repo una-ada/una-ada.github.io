@@ -75,7 +75,7 @@ title: Una's "Work"
       1. [Ctrl+␣][94]
       2. [Gravity][85] ([repo][86], [blog][87])
    5. Utilities
-      1. [KSF][97] ([repo][98])
+      1. [Kramdown Sort Footnote][97] ([repo][98])
 4. [Writing][1]
    1. [All That Is Left][66], Introduction to [Syndicalism][71]
    2. [Ruined Picnic and Friends][76], [Pop Tarts (God)][24]
