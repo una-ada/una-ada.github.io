@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>things by me on the internet</title>
+    <style type="text/css">
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        color: steelblue;
+      }
+      body {
+        font-family: monospace;
+        background: #fff;
+      }
+      div:target {
+        background: #eee;
+      }
+      html {
+        font-size: 9pt;
+      }
+      img,
+      video {
+        max-width: calc(100% - 1rem);
+      }
+      span.title {
+        display: inline-block;
+        vertical-align: text-top;
+        width: calc(100% - 16em);
+      }
+      sup {
+        vertical-align: top;
+        position: relative;
+        top: -0.3em;
+      }
+      t:before {
+        content: '\a0\a0';
+      }
+      t:after {
+        content: '\a0\a0';
+      }
+
+      .open,
+      .closer,
+      .opener {
+        display: inline;
+      }
+      .close {
+        display: none;
+      }
+      .embedee {
+        margin: 0.5rem 0;
+      }
+    </style>
+    <script>
+      const an = 'https://anchor.fm/-/episodes/',
+        aw = 'https://anarchy.website/',
+        git = 'https://github.com/una-ada/',
+        ns = 'https://www.neighborsciencepodcast.com/e/',
+        yt = 'https://www.youtube.com/watch?v=',
+        links = {
+          2012: {
+            05: {
+              05: {
+                title:
+                  'wip <a href="https://minecraft.net/en-us/">minecraft</a> mod',
+                link: 'http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod',
+                tags: ['minecraft', 'programming'],
+              },
+            },
+            08: {
+              30: {
+                title: 'minecraft language packs',
+                link: 'http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs',
+                tags: ['minecraft'],
+              },
+            },
+          },
+          2013: {
+            09: {
+              11: {
+                title: 'renamed social network project to "graphene"',
+                link: 'http://gra.phene.co',
+                tags: ['graphene', 'programming'],
+              },
+            },
+            10: {
+              03: {
+                title:
+                  '<a href="https://myanimelist.net">myanimelist</a> account',
+                link: 'https://myanimelist.net/profile/unasareyou',
+                tags: ['account'],
+              },
+            },
+          },
+          2014: {
+            07: {
+              08: {
+                title: '_g.crop',
+                link: 'https://github.com/pheneco/crop',
+                tags: ['programming', 'script', 'graphene'],
+              },
+            },
+            09: {
+              20: {
+                title: '_g.color',
+                link: 'https://github.com/pheneco/color',
+                tags: ['programming', 'script', 'graphene'],
+              },
+            },
+            10: {
+              21: {
+                title: '_g.menu',
+                link: 'https://github.com/pheneco/menu',
+                tags: ['programming', 'script', 'graphene'],
+              },
+            },
+            11: {
+              22: {
+                title: '<a href="https://github.com">github</a> account',
+                link: git,
+                tags: ['account'],
+              },
+            },
+          },
+          2015: {
+            03: {
+              23: {
+                title: '_g.popup',
+                link: 'https://github.com/pheneco/modal',
+                tags: ['programming', 'script', 'graphene'],
+              },
+            },
+            09: {
+              04: {
+                title: '"sunny day"',
+                link: aw + '2015/09/04/sunny-day.html',
+                tags: ['writing', 'short'],
+              },
+              14: [
+                {
+                  title: '"nihilism on aisle 7"',
+                  link: aw + '2015/09/14/aisle-7.html',
+                  tags: ['writing', 'short'],
+                },
+                {
+                  title: '"awkward smile day"',
+                  link: aw + '2015/09/14/awkward-smile-day.html',
+                },
+              ],
+              18: {
+                title: 'student voice vol 102 iss 1',
+                link: 'https://uwrfvoice.com/pdf/2015-09-18-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              25: {
+                title: 'student voice vol 102 iss 2',
+                link: 'https://uwrfvoice.com/pdf/2015-09-25-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+            },
+            10: {
+              02: {
+                title: 'student voice vol 102 iss 3',
+                link: 'https://uwrfvoice.com/pdf/2015-10-02-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              06: {
+                title: '"the road"',
+                link: aw + '2015/10/06/the-road.html',
+                tags: ['writing', 'short'],
+              },
+              08: {
+                title: '"uwrf society of physics students visits 3m"',
+                link: aw + '2015/10/08/sps-at-3m.html',
+                tags: ['writing', 'column'],
+              },
+              09: {
+                title: 'student voice vol 102 iss 4',
+                link: 'https://uwrfvoice.com/pdf/2015-10-09-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              13: {
+                title: 'repo for graphene (w0.4.1-s0.3.0)',
+                link: git + 'Graphene',
+                tags: ['graphene', 'programming'],
+                note: 'the version added to github was after i began rewriting the project from php and mysql to node.js and mongodb',
+              },
+              15: [
+                {
+                  title: 'repo for programming ii',
+                  link: git + 'CS162',
+                  tags: ['programming', 'school'],
+                },
+                {
+                  title: '"about" tumblr theme',
+                  link: 'https://www.tumblr.com/theme/40029',
+                  tags: ['programming', 'theme', 'layout'],
+                },
+              ],
+              16: {
+                title: 'student voice vol 102 iss 5',
+                link: 'https://uwrfvoice.com/pdf/2015-10-16-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              23: {
+                title: 'student voice vol 102 iss 6',
+                link: 'https://uwrfvoice.com/pdf/2015-10-23-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              29: {
+                title: '"office chair provides fun, convenience, comfort"',
+                link: aw + '2015/10/29/chair.html',
+                tags: ['writing', 'column'],
+              },
+              30: {
+                title: 'student voice vol 102 iss 7',
+                link: 'https://uwrfvoice.com/pdf/2015-10-30-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+            },
+            11: {
+              01: {
+                title: 'sps and chem demons host annual haunted lab',
+                link: aw + '2015/11/01/haunted-lab.html',
+                tags: ['writing', 'column'],
+              },
+              06: {
+                title: 'student voice vol 102 iss 8',
+                link: 'https://uwrfvoice.com/pdf/2015-11-06-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              13: {
+                title: 'student voice vol 102 iss 9',
+                link: 'https://uwrfvoice.com/pdf/2015-11-13-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              15: {
+                title:
+                  '"orca" national high power rocketry competition project proposal',
+                link: aw + '2015/11/15/orca-proposal.html',
+                tags: ['writing', 'proposal', 'school', 'club'],
+              },
+              16: {
+                title:
+                  'calculating heat efficiency on campus using infrared imaging project proposal',
+                link: aw + '2015/11/16/cheocuii-proposal.html',
+                tags: ['writing', 'proposal', 'school', 'research'],
+              },
+              18: {
+                title: '"general relativity\'s astronomical effects"',
+                link: aw + '2015/11/18/einstein.html',
+                tags: ['writing', 'column'],
+                note: 'except for the fact that the editor changed an independent clause to a sentence, the first letter of each sentence spells "fuck the english department"',
+              },
+              20: {
+                title: 'student voice vol 102 iss 10',
+                link: 'https://uwrfvoice.com/pdf/2015-11-20-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+            },
+            12: {
+              02: {
+                title: '"a students guide to pencils"',
+                link: 'https://anarchy.website/2015/12/02/pencils.html',
+                tags: ['student voice', 'writing', 'column'],
+              },
+              04: {
+                title: 'student voice vol 102 iss 11',
+                link: 'https://uwrfvoice.com/pdf/2015-12-04-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              11: {
+                title: 'student voice vol 102 iss 12',
+                link: 'https://uwrfvoice.com/pdf/2015-12-11-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              24: {
+                title: '"using pens for math is not bad"',
+                link: 'https://anarchy.website/2015/12/24/pens.html',
+                tags: ['writing', 'column'],
+              },
+            },
+          },
+          2016: {
+            01: {
+              24: [
+                {
+                  title: 'ghost with hat that jumps and stuff',
+                  link: 'https://scratch.mit.edu/projects/95254858/',
+                  tags: ['code', 'scratch'],
+                },
+                {
+                  title: 'ghost with hat that jumps and stuff ii',
+                  link: 'https://scratch.mit.edu/projects/95255016/',
+                  tags: ['code', 'scratch'],
+                },
+              ],
+            },
+            02: {
+              05: [
+                {
+                  title: 'student voice vol 102 iss 13',
+                  link: 'https://uwrfvoice.com/pdf/2016-02-05-StudentVoice.pdf',
+                  tags: ['design', 'student voice'],
+                },
+                {
+                  title:
+                    '"the feasability of spontaneously morphing into an octopus"',
+                  link: 'https://anarchy.website/2016/02/05/octopodes.html',
+                  tags: ['column', 'writing', 'student voice'],
+                },
+              ],
+              12: {
+                title: 'student voice vol 102 iss 14 w logo i designed',
+                link: 'https://uwrfvoice.com/pdf/2016-02-12-StudentVoice.pdf',
+                tags: ['student voice', 'layout'],
+              },
+              19: {
+                title: 'student voice vol 102 iss 15',
+                link: 'https://uwrfvoice.com/pdf/2016-02-19-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              25: {
+                title: 'repo for oop',
+                link: 'https://github.com/Trewbot/CS235',
+                tags: ['programming', 'school'],
+              },
+              26: {
+                title: 'student voice vol 102 iss 16',
+                link: 'https://uwrfvoice.com/pdf/2016-02-26-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+            },
+            03: {
+              04: [
+                {
+                  title: 'student voice vol 102 iss 17',
+                  link: 'https://uwrfvoice.com/pdf/2016-03-04-StudentVoice.pdf',
+                  tags: ['design', 'student voice'],
+                },
+                {
+                  title: 'translucent square image painter',
+                  link: git + 'TSIP',
+                  tags: ['programming'],
+                },
+              ],
+              11: {
+                title: 'student voice vol 102 iss 18',
+                link: 'https://uwrfvoice.com/pdf/2016-03-11-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              12: {
+                title:
+                  '"calculating heat efficiency on campus using infrared imaging"',
+                link: aw + '2016/03/12/cheocuii.html',
+                tags: ['writing', 'school', 'research'],
+              },
+              25: {
+                title: 'student voice vol 102 iss 19',
+                link: 'https://uwrfvoice.com/pdf/2016-03-25-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              27: {
+                title: 'pop tarts (god)',
+                link: 'https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot',
+                tags: ['writing', 'music'],
+                media: {
+                  type: 'bandcamp',
+                  src: '706583445',
+                  track: '1379676702',
+                },
+              },
+            },
+            04: {
+              01: {
+                title: 'student voice vol 102 iss 20',
+                link: 'https://uwrfvoice.com/pdf/2016-04-01-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              02: {
+                title: 'mpe ii assignment 6',
+                link: 'https://xn--z7x.dev/js/phys/poisson',
+                tags: ['programming', 'physics', 'js', 'school'],
+              },
+              08: {
+                title: 'student voice vol 102 iss 21',
+                link: 'https://uwrfvoice.com/pdf/2016-04-08-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              09: {
+                title: 'uwrf high power rocket team ("orca") test launch',
+                link: yt + '5KFDJpNjc_E',
+                tags: ['school', 'club', 'video'],
+                media: {
+                  type: 'youtube',
+                  src: '5KFDJpNjc_E',
+                },
+              },
+              15: {
+                title: 'student voice vol 102 iss 22',
+                link: 'https://uwrfvoice.com/pdf/2016-04-15-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              22: {
+                title: 'student voice vol 102 iss 23',
+                link: 'https://uwrfvoice.com/pdf/2016-04-22-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+              28: {
+                title:
+                  'calculating heat efficiency on campus using infrared imaging',
+                link: 'http://www.academia.edu/23586068/Calculating_Heat_Efficiency_on_Campus_Using_Infrared_Imaging',
+                tags: ['research', 'school', 'paper'],
+              },
+              29: {
+                title: 'student voice vol 102 iss 24',
+                link: 'https://uwrfvoice.com/pdf/2016-04-29-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+            },
+            05: {
+              06: {
+                title: 'student voice vol 102 iss 25',
+                link: 'https://uwrfvoice.com/pdf/2016-05-06-StudentVoice.pdf',
+                tags: ['design', 'student voice'],
+              },
+            },
+            09: {
+              21: {
+                title: 'bottle flipping video',
+                link: yt + 'Ok0x_oQQVXE',
+                tags: ['school', 'club', 'meme', 'video'],
+                media: {
+                  type: 'youtube',
+                  src: 'Ok0x_oQQVXE',
+                },
+              },
+            },
+            10: {
+              17: {
+                title: '"building and acousto-optical deflector"',
+                link: 'https://anarchy.website/2016/10/17/acousto-optical.html',
+                tags: ['writing', 'proposal', 'school', 'research'],
+              },
+              26: {
+                title: 'uwrf acm promo [draft 2]',
+                link: yt + 'zW3a33f_MY8',
+                tags: ['school', 'club', 'programming', 'video'],
+                media: {
+                  type: 'youtube',
+                  src: 'zW3a33f_MY8',
+                },
+              },
+            },
+            11: {
+              03: {
+                title: 'went to physcon',
+                link: 'http://www.sigmapisigma.org/sigmapisigma/congress/2016',
+                tags: ['event', 'physics', 'school', 'conference'],
+                media: {
+                  type: 'img',
+                  src: 'http://www.sigmapisigma.org/sites/default/files/images/congress/2016/physcon-aip-display-ken-cole.jpg',
+                },
+              },
+              06: {
+                title: 'the san fran vlog',
+                link: yt + 'S3-9qgIFDA0',
+                tags: ['blog', 'video', 'vaporwave'],
+                media: {
+                  type: 'youtube',
+                  src: 'S3-9qgIFDA0',
+                },
+              },
+              19: {
+                title: '"playing and fps on a drawing tablet"',
+                link: aw + '2016/11/19/fps-drawing-tablet.html',
+                tags: ['writing', 'column'],
+              },
+            },
+          },
+          2017: {
+            01: {
+              03: {
+                title: 'et2 reading',
+                link: 'https://www.youtube.com/playlist?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C',
+                tags: ['reading', 'video', 'audio'],
+                media: {
+                  type: 'youtube',
+                  src: 'qFMGggjO2QY?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C',
+                },
+              },
+            },
+            02: {
+              05: {
+                title: 'scene 7 of opposite jurassic park',
+                link: 'https://www.docdroid.net/tm2dnu4',
+                tags: ['writing', 'script', 'comedy'],
+              },
+              19: {
+                title: 'gravity playground',
+                link: 'https://xn--z7x.dev/js/phys/gravity',
+                tags: ['programming', 'js', 'physics', 'game'],
+              },
+              23: [
+                {
+                  title: 'a collection of .txt files from feb 22 and 23, 2017',
+                  link: 'https://anarchy.website/2017/02/23/txt.html',
+                  tags: ['writing', 'poetry'],
+                },
+                {
+                  title: 'y r u crying.txt',
+                  link: 'https://anarchy.website/2017/02/23/y-r-u-crying.html',
+                  tags: ['writing', 'poetry'],
+                },
+              ],
+            },
+            03: {
+              05: {
+                title: 'scene 9 of muppets yakuza',
+                link: 'https://www.docdroid.net/tm2dnu4',
+                tags: ['writing', 'script'],
+              },
+              10: {
+                title: '@tinyhatebot',
+                link: [
+                  'https://twitter.com/tinyhatebot',
+                  'https://gist.github.com/Trewbot/4acf59bd3875912f066243c19225ed0b',
+                ],
+                tags: ['bot', 'twitter'],
+              },
+              16: {
+                title: 'let it snow.js',
+                link: 'https://xn--z7x.dev/js/3/snow',
+                tags: ['physics', 'js', 'programming'],
+              },
+              18: {
+                title: 'revolution.js',
+                link: 'https://xn--z7x.dev/js/3/waves',
+                tags: ['programming', 'js', 'physics'],
+              },
+              19: {
+                title:
+                  'moved personal site to <a href="https://github.io">github pages</a>',
+                link: 'https://xn--z7x.dev/',
+                tags: ['programming'],
+              },
+            },
+            04: {
+              05: {
+                title: "scene 10 of sonic's last adventure",
+                link: 'https://www.docdroid.net/Nphxbj2',
+                tags: ['writing', 'script'],
+              },
+            },
+            05: {
+              07: {
+                title: 'scene 10 of thelma and louise 2: army of darkness',
+                link: 'https://www.docdroid.net/sVlHBLX',
+                tags: ['writing', 'script'],
+              },
+              09: {
+                title: 'harp.js',
+                link: 'https://xn--z7x.dev/js/2/harp',
+                tags: ['physics', 'js', 'programming'],
+              },
+            },
+            07: {
+              22: {
+                title: 'the chi town vlog',
+                link: yt + 'l9d5AwhesoY',
+                tags: ['video', 'vlog'],
+                media: {
+                  type: 'youtube',
+                  src: 'l9d5AwhesoY',
+                },
+              },
+            },
+            08: {
+              29: {
+                title: 'pvf design proposal',
+                link: 'https://anarchy.website/2017/08/29/pvf-proposal.html',
+                tags: ['writing', 'proposal', 'design'],
+              },
+              31: {
+                title: `"praxis and the 'report from the real minority'"`,
+                link: aw + '2017/08/31/praxis-and-the-report.html',
+                tags: ['writing', 'column', 'politics'],
+              },
+            },
+            10: {
+              14: {
+                title: '"introduction to syndicalism"',
+                link: 'https://anarchy.website/2017/10/14/syndicalism.html',
+                tags: ['writing', 'column', 'politics'],
+              },
+            },
+          },
+          2018: {
+            03: {
+              15: {
+                title: '"fear and death"',
+                link: 'https://anarchy.website/2018/03/15/fear.html',
+                tags: ['writing', 'column', 'philosophy'],
+              },
+              20: {
+                title: `"death isn't real and neither are you"`,
+                link: aw + '2018/03/20/death-isnt-real.html',
+                tags: ['writing', 'column', 'philosophy'],
+              },
+            },
+            05: {
+              20: {
+                title: 'poisson v.2',
+                link: 'https://xn--z7x.dev/js/phys/poisson2',
+                tags: ['programming', 'js', 'math'],
+              },
+              21: {
+                title: '"graphing a poisson distribution using canvas"',
+                link: 'https://anarchy.website/2018/05/21/poisson.html',
+                tags: ['writing', 'blog', 'programming'],
+              },
+            },
+            07: {
+              09: {
+                title: 'neighbor science 229: neighborhood bloc party',
+                link: ns + 'neighborhood-bloc-party/',
+                tags: ['podcast'],
+                media: {
+                  type: 'podbean',
+                  src: 'h5pnj-999a74',
+                },
+              },
+              14: {
+                title: '_g.graph - mathematical graphing library',
+                link: [
+                  'https://pheneco.github.io/graph/',
+                  'https://anarchy.website/2018/07/14/graphs.html',
+                ],
+                tags: ['programming', 'blog'],
+              },
+              19: {
+                title: `"ai isn't going to kill us"`,
+                link: 'https://anarchy.website/2018/07/19/ai.html',
+                tags: ['writing', 'column', 'philosophy'],
+              },
+              26: {
+                title: '"the windbreak forest lattice in hokkaido"',
+                link: aw + '2018/07/26/windbreak-lattice.html',
+                tags: ['writing', 'column'],
+              },
+            },
+            08: {
+              03: [
+                {
+                  title: 'pixel sort',
+                  link: 'https://xn--z7x.dev/js/2/frag-sort-1',
+                  tags: ['programming', 'js'],
+                },
+                {
+                  title: 'pixel sort v.2',
+                  link: 'https://xn--z7x.dev/js/2/frag-sort-2',
+                  tags: ['programming', 'js'],
+                },
+              ],
+              30: {
+                title: '"does shoplifting \'hurt\' workers?"',
+                link: 'https://anarchy.website/2018/08/30/shoplifting.html',
+                tags: ['writing', 'column', 'politics'],
+              },
+            },
+            09: {
+              02: {
+                title: 'goth angel sinners pt. i: shoplifting',
+                link: [
+                  an + 'Part-I-Shoplifting-e24qpj',
+                  aw + 'gthnglsnnrs/1/notes',
+                ],
+                tags: ['podcast', 'politics'],
+                media: {
+                  type: 'anchor',
+                  src: 'Part-I-Shoplifting-e24qpj',
+                },
+              },
+              20: {
+                title: 'goth angel sinners pt. ii: catalonia',
+                link: [
+                  an + 'Part-II-Catalonia-e28v8l',
+                  aw + 'gthnglsnnrs/2/notes',
+                ],
+                tags: ['podcast', 'politics'],
+                media: {
+                  type: 'anchor',
+                  src: 'Part-II-Catalonia-e28v8l',
+                },
+              },
+            },
+            10: {
+              06: {
+                title: '"overreliance on connotation"',
+                link: 'https://anarchy.website/2018/10/06/connotation.html',
+                tags: ['writing', 'column', 'philosophy'],
+              },
+            },
+            12: {
+              08: {
+                title: 'goth angel sinners pt. iii: spiderman 3',
+                link: [
+                  an + 'Part-III-Spiderman-3-e2nmr0',
+                  aw + 'gthnglsnnrs/3/notes',
+                ],
+                tags: ['podcast', 'media'],
+                media: {
+                  type: 'anchor',
+                  src: 'Part-III-Spiderman-3-e2nmr0',
+                },
+              },
+            },
+          },
+          2019: {
+            01: {
+              17: {
+                title: 'goth angel sinners pt. iv: the paris commune',
+                link: [
+                  an + 'Part-IV-The-Paris-Commune-e2viul',
+                  aw + 'gthnglsnnrs/4/notes',
+                ],
+                tags: ['podcast', 'politics', 'history'],
+                media: {
+                  type: 'anchor',
+                  src: 'Part-IV-The-Paris-Commune-e2viul',
+                },
+              },
+            },
+            04: {
+              25: {
+                title: "neighbor science 410: the joker but he's a horny shark",
+                link: ns + '410-the-joker-but-hes-a-horny-shark/',
+                tags: ['podcast', 'media', 'politics'],
+                media: {
+                  type: 'podbean',
+                  src: '4kycv-af305a',
+                },
+                note: 'i didnt show up in this one til about 31:20',
+              },
+            },
+            05: {
+              19: {
+                title:
+                  'neighbor science 413: neighbor science pot luck (live in czechochechnyoslovenoslovakia)',
+                link: 'https://www.podbean.com/ew/pb-e4xzn-b1b606',
+                tags: ['podcast'],
+                media: {
+                  type: 'podbean',
+                  src: 'e4xzn-b1b606',
+                },
+              },
+            },
+            06: {
+              25: {
+                title: 'goth angel sinners pt. v: post-scarcity',
+                link: [
+                  an + 'Part-V-Post-Scarcity-e4ef1p',
+                  aw + 'gthnglsnnrs/5/notes',
+                ],
+                tags: ['podcast', 'politics'],
+                media: {
+                  type: 'anchor',
+                  src: 'Part-V-Post-Scarcity-e4ef1p',
+                },
+              },
+            },
+            07: {
+              08: {
+                title:
+                  'neighbor science 418: colonialism is when you wear khakis',
+                link: ns + '418-colonialism-is-when-you-wear-khakis/',
+                tags: ['podcast', 'politics'],
+                media: {
+                  type: 'podbean',
+                  src: 'bdnxe-b73bce',
+                },
+              },
+            },
+            11: {
+              01: {
+                title: 'neighbor science 510: ecocommunist utopia',
+                link: ns + '510-ecocommunist-utopia/',
+                tags: ['podcast', 'politics'],
+                media: {
+                  type: 'podbean',
+                  src: 'rtrfx-c5a4d6',
+                },
+                note: 'im not even listed in the description of this one cuz i just showed up while on break around 1h35m in. also covid rly dunked on some of what i said :(',
+              },
+              06: {
+                title:
+                  'neighbor science 511: turning into a witch is a voluntary choice',
+                link: ns + '511-turning-into-a-witch-is-a-voluntary-choice/',
+                tags: ['podcast', 'media'],
+                media: {
+                  type: 'podbean',
+                  src: 'wu2nr-c66a85',
+                },
+              },
+            },
+            12: {
+              11: {
+                title: 'anarchy.website ni furigana to chiikika',
+                link: 'https://anarchy.website/2019/12/11/furigana.html',
+                tags: ['writing', 'blog', 'programming'],
+              },
+            },
+          },
+          2020: {
+            07: {
+              01: {
+                title:
+                  'neighbor science isekai july 1: the saga of tanya the definitely absolutely evil',
+                link: 'https://www.podbean.com/ew/pb-cfvzi-e1d26f',
+                tags: ['podcast', 'media'],
+                media: {
+                  type: 'podbean',
+                  src: 'cfvzi-e1d26f',
+                },
+              },
+              11: {
+                title: 'una script',
+                link: ['#', 'https://anarchy.website/2020/07/11/fonts.html'],
+                tags: ['design', 'font'],
+              },
+            },
+            08: {
+              10: {
+                title: 'goth angel sinners pt. vi: a real podcast',
+                link: [
+                  an + 'Part-VI-A-Real-Podcast-ehud7n',
+                  aw + 'gthnglsnnrs/6/notes',
+                ],
+                tags: ['podcast'],
+                media: {
+                  type: 'anchor',
+                  src: 'Part-VI-A-Real-Podcast-ehud7n',
+                },
+              },
+            },
+            09: {
+              26: {
+                title: '"mumei no joshi"',
+                link: aw + '2020/09/26/nameless.html',
+                tags: ['writing', 'short'],
+              },
+            },
+            12: {
+              04: {
+                title: 'jisa2 - watashi mou zettai ni',
+                link: 'https://soundcloud.com/jisa_tsu/watashimou',
+                tags: ['music'],
+                media: {
+                  type: 'soundcloud',
+                  src: '941665492',
+                },
+              },
+              06: {
+                title: 'jisa2 - shiranai tenjou da',
+                link: 'https://soundcloud.com/jisa_tsu/tenjou',
+                tags: ['music'],
+                media: {
+                  type: 'soundcloud',
+                  src: '942827437',
+                },
+              },
+              18: {
+                title: 'jisa2 - densha line',
+                link: 'https://jisa2.bandcamp.com/track/-',
+                tags: ['music'],
+                media: {
+                  type: 'bandcamp-single',
+                  src: '1683078004',
+                },
+              },
+              19: {
+                title: 'art for amitypark - øøø',
+                link: 'https://amitypark.bandcamp.com/album/-',
+                tags: ['design', 'music'],
+                media: {
+                  type: 'bandcamp',
+                  src: '1808311980',
+                },
+              },
+            },
+          },
+          2021: {
+            01: {
+              05: {
+                title: 'jisa2 - lullaby for eternity',
+                link: 'https://jisa2.bandcamp.com/track/lullaby-for-eternity',
+                tags: ['music'],
+                media: {
+                  type: 'bandcamp-single',
+                  src: '1616197059',
+                },
+              },
+            },
+            03: {
+              05: {
+                title: 'amitypark x jisa2 - tsuki',
+                link: 'https://amitypark.bandcamp.com/album/--2',
+                tags: ['music', 'design'],
+                note: 'id embed a stream of this, but there isnt supposed 2 b a stream! buy 1 of the 5 limited release cassettes with j-cards designed by yrs truly <3',
+              },
+              14: {
+                title: 'neighbor science 709: golden kamuy pt. 1',
+                link: ns + '709-golden-kamuy-pt-1/',
+                tags: ['podcast', 'media'],
+                media: {
+                  type: 'podbean',
+                  src: 'xxy3w-fd9300',
+                },
+              },
+            },
+            04: {
+              18: {
+                title: 'neighbor science 712: the old bear hunter',
+                link: ns + '712-the-old-bear-hunter/',
+                tags: ['podcast', 'media'],
+                media: {
+                  type: 'podbean',
+                  src: '8vewr-101039e',
+                },
+              },
+              20: {
+                title: 'una nota',
+                link: ['#', aw + '2021/04/20/una-nota.html'],
+                tags: ['design', 'font'],
+              },
+              27: {
+                title:
+                  "chloe &amp; una's tentacular experience vol. 1: alignment you! you!",
+                link: [
+                  an + 'Volume-1-Alignment-You--You-evocvf',
+                  aw + 'cute/1/notes',
+                ],
+                tags: ['podcast', 'media'],
+                media: {
+                  type: 'anchor',
+                  src: 'Volume-1-Alignment-You--You-evocvf',
+                },
+              },
+            },
+            05: {
+              31: {
+                title: 'una mono',
+                link: ['#', aw + '2021/05/31/una-mono.html'],
+              },
+            },
+            06: {
+              06: {
+                title: 'ga sei-r proj 1 - gravity remake + blogs',
+                link: [
+                  'https://xn--z7x.dev/gravity/',
+                  git + 'gravity',
+                  aw + '2021/06/01/gravdev1.html',
+                  aw + '2021/06/01/gravdev2.html',
+                  aw + '2021/06/03/gravdev3.html',
+                  aw + '2021/06/06/gravdev4.html',
+                ],
+                tags: ['writing', 'blog', 'programming'],
+              },
+              20: {
+                title: 'art for amitypark - better off rmx',
+                link: 'https://amitypark.bandcamp.com/track/better-off-rmx',
+                tags: ['design', 'music'],
+                media: {
+                  type: 'bandcamp-single',
+                  src: '3394708964',
+                },
+              },
+              25: {
+                title: 'ga sei-r proj 2 - xylem',
+                link: [
+                  'https://proj-xylem.herokuapp.com/',
+                  'https://github.com/una-ada/Xylem',
+                ],
+                tags: ['programming', 'js'],
+              },
+              27: {
+                title:
+                  "chloe &amp; una's tentacular experience vol. 2: your neighborhood tentacle shop",
+                link: [
+                  an + 'Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto',
+                  aw + 'cute/2/notes',
+                ],
+                tags: ['podcast', 'media'],
+                media: {
+                  type: 'anchor',
+                  src: 'Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto',
+                },
+              },
+            },
+            07: {
+              06: {
+                title:
+                  'amitypark - song for a chunibyo anarchist (i do not like the united states government very much)',
+                link: 'https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much',
+                tags: ['writing', 'design', 'music'],
+                media: {
+                  type: 'bandcamp-single',
+                  src: '4035136281',
+                },
+                note: 'i wrote a draft of the lyrics 4 this, chloe edited them n performed the song, i also did the cover art!',
+              },
+              16: {
+                title: 'ga sei-r proj 3 - tabby',
+                link: [
+                  'https://tabi-tabby.herokuapp.com/',
+                  'https://github.com/una-ada/Tabby',
+                ],
+                tags: ['programming', 'python'],
+                note: 'this was the group project for the code camp i did, it had 2 b a django app :(',
+              },
+            },
+            08: {
+              16: {
+                title: 'ga sei-r proj 4 - bopomo',
+                link: [
+                  'https://bopomo.herokuapp.com/',
+                  'https://github.com/una-ada/Bopomo',
+                ],
+                tags: ['programming', 'mern'],
+                note: 'i didnt finish this project on time at all! i spent all my time on fixing back end stuff n rly want 2 come back 2 it eventually!!',
+              },
+            },
+            09: {
+              02: {
+                title: 'kramdown sort footnotes (ksf)',
+                link: [
+                  'https://www.npmjs.com/package/@una-ada/ksf',
+                  'https://github.com/una-ada/ksf',
+                ],
+                tags: ['programming', 'utility'],
+              },
+            },
+            10: {
+              06: {
+                title: 'jisa2 - i gave up on my dreams again today',
+                link: 'https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today',
+                tags: ['music'],
+                media: {
+                  type: 'bandcamp-single',
+                  src: '3122118483',
+                },
+              },
+            },
+            11: {
+              05: {
+                title: 'amitypark x jisa2 - this is a cry for help',
+                link: [
+                  'https://jisa2.bandcamp.com/album/this-is-a-cry-for-help-split-w-amitypark',
+                  'https://amitypark.bandcamp.com/album/this-is-a-cry-for-help-split-w',
+                ],
+                tags: ['music'],
+                media: {
+                  type: 'bandcamp',
+                  src: '2838847327',
+                },
+                note: 'this is a split ep w me n my gf. track 3 was written by her, then i remixed it, then she finished it... the cover art was done much the same way.',
+              },
+            },
+          },
+          2022: {
+            04: {
+              16: {
+                title: '"how to be broken and never get better"',
+                link: 'https://anarchy.website/2022/04/16/broken.html',
+                tags: ['writing', 'short'],
+              },
+            },
+          },
+        };
+
+      function collapse(e) {
+        e.innerText = '+';
+        e.setAttribute('onclick', 'expand(this)');
+        var p = e.parentElement.parentElement.parentElement;
+        p.style.overflow = 'hidden';
+        p.style.height = '1.2em';
+      }
+      function expand(e) {
+        e.innerText = '-';
+        e.setAttribute('onclick', 'collapse(this)');
+        var p = e.parentElement.parentElement.parentElement;
+        p.style.overflow = '';
+        p.style.height = '';
+      }
+      function embed(e, o) {
+        e.innerHTML = '&#x25B4;';
+        e.setAttribute('onclick', 'debed(this,' + JSON.stringify(o) + ')');
+        var p = e.parentElement,
+          out = '';
+        if (o.type == 'img') out = '<img class="embedee" src="' + o.src + '">';
+        if (o.type == 'youtube')
+          out =
+            '<iframe class="embedee" width="560" height="315" src="https://www.youtube.com/embed/' +
+            o.src +
+            '" frameborder="0" allowfullscreen></iframe>';
+        if (o.type == 'video')
+          out =
+            '<video class="embedee" controls ' +
+            (o.loop ? 'loop autoplay' : '') +
+            '><source src="' +
+            o.src +
+            '">yr browser doesnt support video tags</video>';
+        if (o.type == 'bandcamp')
+          out = `<iframe class="embedee" style="border:0;width:100%;height:120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${
+            o.src
+          }/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small${
+            o.track != [][[]] ? '/track=' + o.track : ''
+          }/transparent=true/" seamless></iframe>`;
+        if (o.type == 'bandcamp-single')
+          out = `<iframe class="embedee" style="border:0;width:100%;height:120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${o.src}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless></iframe>`;
+        if (o.type == 'podbean')
+          out = `<iframe class="embedee" allowtransparency="true" style="border:0;height:150px;min-width:430px;width:100%;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?from=embed&i=${o.src}-pb&share=1&download=1&fonts=Arial&skin=1&font-color=&rtl=0&logo_link=&btn-skin=7&size=150"></iframe>`;
+        if (o.type == 'anchor')
+          out = `<iframe class="embedee" style="border:0;height:98px;max-width:700px;width:100%;" src="https://anchor.fm/-/embed/episodes/${o.src}" frameborder="0" scrolling="no"></iframe>`;
+        if (o.type == 'soundcloud')
+          out = `<iframe class="embedee" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${o.src}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>`;
+        p.insertAdjacentHTML('beforeend', out);
+      }
+      function debed(e, o) {
+        e.innerHTML = '&#x25BE;';
+        e.setAttribute('onclick', 'embed(this,' + JSON.stringify(o) + ')');
+        var p = e.parentElement;
+        p.removeChild(p.getElementsByClassName('embedee')[0]);
+      }
+      function listlinks(l) {
+        return l
+          .map((v, i) => `<a href="${v}" target="_blank">${i + 1}</a>`)
+          .join(' ');
+      }
+      function render(links) {
+        var out = '',
+          notes = [],
+          alpha = ((a, z) => {
+            var r = [],
+              i = a.charCodeAt(0),
+              j = z.charCodeAt(0);
+            for (; i <= j; ++i) r.push(String.fromCharCode(i));
+            return r;
+          })('a', 'z'),
+          renderLink = (k, o, h) => {
+            if (o.note != [][[]]) notes.push(o.note);
+            return (
+              '<a href="' +
+              (Array.isArray(o.link) ? o.link[0] : o.link) +
+              '" target="_blank">' +
+              k +
+              '</a>' +
+              (k == 'XX'
+                ? '<a href="#X"><sup>?</sup></a>'
+                : k.length == 2
+                ? ':'
+                : '') +
+              ' <span class="title">' +
+              o.title +
+              (o.note != [][[]]
+                ? '<a href="#' +
+                  notes.length +
+                  '"><sup title="' +
+                  o.note +
+                  '">' +
+                  notes.length +
+                  '</sup></a>'
+                : '') +
+              (Array.isArray(o.link) ? ' ' + listlinks(o.link) : '') +
+              (o.media != [][[]]
+                ? ' <a href="#' +
+                  h +
+                  '" onclick=\'embed(this,' +
+                  JSON.stringify(o.media) +
+                  ")'>&#x25BE;</a>"
+                : '') +
+              '</span><br>'
+            );
+          };
+        for (var i in links) {
+          out += '<div id="' + i + '">';
+          var i0 = 0;
+          for (var j in links[i]) {
+            var j0 = 0,
+              j1 = '' + (('' + j).length == 1 ? '0' : '') + j;
+            out += '<div id="' + i + '.' + j1 + '">';
+            for (var k in links[i][j]) {
+              var tab = '',
+                k1 = '' + (('' + k).length == 1 ? '0' : '') + k;
+              tab +=
+                i0 == 0 && j0 == 0
+                  ? '[<a href="#" onclick="collapse(this)">-</a>] ' +
+                    '<a href="#' +
+                    i +
+                    '">' +
+                    i +
+                    '</a>.'
+                  : '<t></t><t></t>';
+              tab +=
+                j0 == 0
+                  ? (i0 ? '&nbsp;' : '') +
+                    '<a href="#' +
+                    i +
+                    '.' +
+                    j1 +
+                    '">' +
+                    j1 +
+                    '</a>.'
+                  : '<t></t>';
+              if (Array.isArray(links[i][j][k])) {
+                for (var l in links[i][j][k])
+                  out +=
+                    '<div id="' +
+                    i +
+                    '.' +
+                    j1 +
+                    '.' +
+                    k1 +
+                    alpha[l] +
+                    '">' +
+                    (l == 0 ? tab : '<t></t><t></t><t></t>') +
+                    //+renderLink(k1+alpha[l],links[i][j][k][l],i+'.'+j1+'.'+k1+alpha[l])
+                    renderLink(
+                      l == 0 ? k1 : '..',
+                      links[i][j][k][l],
+                      i + '.' + j1 + '.' + k1 + alpha[l]
+                    ) +
+                    '</div>';
+              } else {
+                out +=
+                  '<div id="' +
+                  i +
+                  '.' +
+                  j1 +
+                  '.' +
+                  k1 +
+                  '">' +
+                  tab +
+                  renderLink(k1, links[i][j][k], i + '.' + j1 + '.' + k1) +
+                  '</div>';
+              }
+              j0++;
+            }
+            out += '</div>';
+            i0++;
+          }
+          out += '</div>';
+        }
+        out += '<br>notes:<br>';
+        for (var i = 0; i < notes.length; )
+          out +=
+            '<div id="' +
+            ++i +
+            '"><sup>' +
+            i +
+            '</sup>' +
+            notes[i - 1] +
+            '</div>';
+        return out;
+      }
+    </script>
+  </head>
+  <body>
+    things by me on the internet<br />
+    <br />
+    <div id="list"></div>
+    <script>
+      document.getElementById('list').innerHTML = render(links);
+    </script>
+  </body>
+</html>
