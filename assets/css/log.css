@@ -1,3 +1,4 @@
+/*----- fonts ----------------------------------------------------------------*/
 @font-face {
   font-family: 'cozette';
   src: url('../fonts/cozette.woff2') format('woff2'),
@@ -5,32 +6,47 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/*----- variables ------------------------------------------------------------*/
+:root {
+  --color-black: #111111;
+  --color-darky: #222222;
+  --color-lotus: #e0c1bf;
+  --color-baked: #d68067;
+  --color-reeds: #dccca1;
+  --color-olive: #2e2d1c;
+  --color-chive: #555f47;
+  --color-foamy: #729a89;
+  --color-coral: #145c62;
+  --color-royal: #0e2d31;
+  --color-berry: #2a2858;
+  --color-candy: #de2136;
+  --color-wines: #703d41;
+}
+
+/*----- elements -------------------------------------------------------------*/
 a {
+  color: var(--color-foamy);
   text-decoration: none;
 }
 a:visited {
-  color: steelblue;
+  color: var(--color-foamy);
 }
 body {
-  background: #fff;
+  background: var(--color-black);
   line-height: 1.2;
   font-family: 'cozette', monospace;
 }
 div:target {
-  background: #eee;
+  background: var(--color-darky);
 }
 html {
-  color: #222;
+  color: var(--color-lotus);
   font-size: 12px;
 }
 img,
 video {
   max-width: calc(100% - 1rem);
-}
-span.title {
-  display: inline-block;
-  vertical-align: text-top;
-  width: calc(100vw - 16em);
 }
 sup {
   vertical-align: top;
@@ -44,6 +60,7 @@ t:after {
   content: '\a0\a0';
 }
 
+/*----- classes --------------------------------------------------------------*/
 .open,
 .closer,
 .opener {
@@ -53,8 +70,14 @@ t:after {
   display: none;
 }
 .embedee {
+  border: 0;
   display: block;
   margin: 0.5rem 0;
   width: calc(100vw - 16em);
   height: calc(calc(9 / 16) * calc(100vw - 16em));
+}
+span.title {
+  display: inline-block;
+  vertical-align: text-top;
+  width: calc(100vw - 16em);
 }
