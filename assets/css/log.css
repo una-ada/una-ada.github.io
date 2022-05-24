@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'cozette';
+  src: url('../fonts/cozette.woff2') format('woff2'),
+    url('../fonts/cozette.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: steelblue;
+}
+body {
+  background: #fff;
+  line-height: 1.2;
+  font-family: 'cozette', monospace;
+}
+div:target {
+  background: #eee;
+}
+html {
+  color: #222;
+  font-size: 12px;
+}
+img,
+video {
+  max-width: calc(100% - 1rem);
+}
+span.title {
+  display: inline-block;
+  vertical-align: text-top;
+  width: calc(100vw - 16em);
+}
+sup {
+  vertical-align: top;
+  position: relative;
+  top: -0.3em;
+}
+t:before {
+  content: '\a0\a0';
+}
+t:after {
+  content: '\a0\a0';
+}
+
+.open,
+.closer,
+.opener {
+  display: inline;
+}
+.close {
+  display: none;
+}
+.embedee {
+  display: block;
+  margin: 0.5rem 0;
+  width: calc(100vw - 16em);
+  height: calc(calc(9 / 16) * calc(100vw - 16em));
+}

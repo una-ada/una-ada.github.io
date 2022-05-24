@@ -2,57 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <title>things by me on the internet</title>
-    <style type="text/css">
-      a {
-        text-decoration: none;
-      }
-      a:visited {
-        color: steelblue;
-      }
-      body {
-        font-family: monospace;
-        background: #fff;
-      }
-      div:target {
-        background: #eee;
-      }
-      html {
-        font-size: 9pt;
-      }
-      img,
-      video {
-        max-width: calc(100% - 1rem);
-      }
-      span.title {
-        display: inline-block;
-        vertical-align: text-top;
-        width: calc(100% - 16em);
-      }
-      sup {
-        vertical-align: top;
-        position: relative;
-        top: -0.3em;
-      }
-      t:before {
-        content: '\a0\a0';
-      }
-      t:after {
-        content: '\a0\a0';
-      }
-
-      .open,
-      .closer,
-      .opener {
-        display: inline;
-      }
-      .close {
-        display: none;
-      }
-      .embedee {
-        display: block;
-        margin: 0.5rem 0;
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/css/log.css" />
     <script>
       const an = 'https://anchor.fm/-/episodes/',
         aw = 'https://anarchy.website/',
@@ -1292,6 +1242,13 @@
                 tags: ['writing', 'short'],
               },
             },
+            05: {
+              27: {
+                title: 'aokan v0.1.0 will be here!',
+                link: '#',
+                tags: ['programming']
+              }
+            }
           },
         };
 
@@ -1317,7 +1274,7 @@
         if (o.type == 'img') out = '<img class="embedee" src="' + o.src + '">';
         if (o.type == 'youtube')
           out =
-            '<iframe class="embedee" width="560" height="315" src="https://www.youtube.com/embed/' +
+            '<iframe class="embedee" src="https://www.youtube.com/embed/' +
             o.src +
             '" frameborder="0" allowfullscreen></iframe>';
         if (o.type == 'video')
@@ -1441,7 +1398,6 @@
                     alpha[l] +
                     '">' +
                     (l == 0 ? tab : '<t></t><t></t><t></t>') +
-                    //+renderLink(k1+alpha[l],links[i][j][k][l],i+'.'+j1+'.'+k1+alpha[l])
                     renderLink(
                       l == 0 ? k1 : '..',
                       links[i][j][k][l],
