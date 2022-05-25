@@ -478,15 +478,6 @@
       }
     },
     "11": {
-      "3": {
-        "title": "went to physcon",
-        "link": "http://www.sigmapisigma.org/sigmapisigma/congress/2016",
-        "tags": ["event", "physics", "school", "conference"],
-        "media": {
-          "type": "img",
-          "src": "http://www.sigmapisigma.org/sites/default/files/images/congress/2016/physcon-aip-display-ken-cole.jpg"
-        }
-      },
       "6": {
         "title": "the san fran vlog",
         "link": "https://www.youtube.com/watch?v=S3-9qgIFDA0",
@@ -1181,13 +1172,6 @@
         "title": "\"how to be broken and never get better\"",
         "link": "https://anarchy.website/2022/04/16/broken.html",
         "tags": ["writing", "short"]
-      }
-    },
-    "5": {
-      "27": {
-        "title": "aokan v0.1.0 will be here!",
-        "link": "#",
-        "tags": ["programming"]
       }
     }
   }

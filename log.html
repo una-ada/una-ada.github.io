@@ -10,24 +10,17 @@
         e.setAttribute('onclick', 'debed(this,' + JSON.stringify(o) + ')');
         var p = e.parentElement,
           out = '';
-        if (o.type == 'img') out = '<img class="embedee" src="' + o.src + '">';
         if (o.type == 'youtube')
           out =
             '<iframe class="embedee" src="https://www.youtube.com/embed/' +
             o.src +
             '" frameborder="0" allowfullscreen></iframe>';
         if (o.type == 'video')
-          out =
-            '<video class="embedee" controls ' +
-            (o.loop ? 'loop autoplay' : '') +
-            '><source src="' +
-            o.src +
-            '">yr browser doesnt support video tags</video>';
         if (o.type == 'bandcamp')
           out = `<iframe class="embedee" style="border:0;width:100%;height:120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${
             o.src
           }/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small${
-            o.track != [][[]] ? '/track=' + o.track : ''
+            o.track ? '/track=' + o.track : ''
           }/transparent=true/" seamless></iframe>`;
         if (o.type == 'bandcamp-single')
           out = `<iframe class="embedee" style="border:0;width:100%;height:120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${o.src}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless></iframe>`;
