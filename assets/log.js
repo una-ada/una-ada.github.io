@@ -3,6 +3,7 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
     adobe_illustrator: 'ai.png',
     adobe_indesign: 'id.png',
     adobe_photoshop: 'ps.png',
+    adobe_xd: 'xd.png',
     c: 'c.png',
     cpp: 'cpp.png',
     csharp: 'cs.png',
@@ -84,9 +85,22 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                       })
                     );
                     entryDiv.innerHTML += ': ';
-                    let entryText = newElement('span', v.title, {
+                    let entryText = newElement('span', '', {
                       class: 'title',
                     });
+                    v.tags && v.tags.forEach(
+                      tag =>
+                        icons[tag] &&
+                        entryText.appendChild(
+                          newElement('img', '', {
+                            class: 'tag-icon',
+                            src: iconsPath + icons[tag],
+                            alt: tag,
+                            title: tag,
+                          })
+                        )
+                    );
+                    entryText.innerHTML += v.title;
                     v.note &&
                       notes.push(v.note) &&
                       (entryText.innerHTML += `<a href="#${notes.length}"><sup title="${v.note}">${notes.length}</sup></a>`);
@@ -105,18 +119,6 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                       }" onclick=\'embed(this, ${JSON.stringify(
                         v.media
                       )} )'>&#x25BE;</a>`);
-                    v.tags && v.tags.forEach(
-                      tag =>
-                        icons[tag] &&
-                        entryDiv.appendChild(
-                          newElement('img', '', {
-                            class: 'tag-icon',
-                            src: iconsPath + icons[tag],
-                            alt: tag,
-                            title: tag,
-                          })
-                        )
-                    );
                     entryDiv.appendChild(entryText);
                     monthContainer.appendChild(entryDiv);
                   });
