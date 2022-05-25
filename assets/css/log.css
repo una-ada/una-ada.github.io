@@ -10,7 +10,6 @@
 /*----- variables ------------------------------------------------------------*/
 :root {
   --color-black: #111111;
-  --color-darky: #222222;
   --color-lotus: #e0c1bf;
   --color-baked: #d68067;
   --color-reeds: #dccca1;
@@ -38,7 +37,7 @@ body {
   font-family: 'cozette', monospace;
 }
 div:target {
-  background: var(--color-darky);
+  background: var(--color-olive);
 }
 html {
   color: var(--color-lotus);
