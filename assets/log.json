@@ -1233,7 +1233,7 @@
           "expressjs",
           "react",
           "nodejs"
-        ],
+        ]
       }
     }
   },
