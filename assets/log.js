@@ -1,4 +1,34 @@
 const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
+  icons = {
+    adobe_illustrator: 'ai.png',
+    adobe_indesign: 'id.png',
+    adobe_photoshop: 'ps.png',
+    c: 'c.png',
+    cpp: 'cpp.png',
+    csharp: 'cs.png',
+    design: 'img.png',
+    font: 'font.png',
+    git: 'git.png',
+    haskell: 'hs.png',
+    handlebars: 'hbs.png',
+    // html: 'html.png',
+    java: 'java.png',
+    javascript: 'js.png',
+    markdown: 'md.png',
+    mongodb: 'mongo.png',
+    music: 'music.png',
+    nodejs: 'npm.png',
+    php: 'php.png',
+    podcast: 'aud.png',
+    pug: 'pug.png',
+    python: 'py.png',
+    react: 'react.png',
+    scss: 'sass.png',
+    typescript: 'ts.png',
+    vscode: 'folder_vs.png',
+    writing: 'readme.png',
+  },
+  iconsPath = '/assets/img/icons/',
   zeroPad = (num, length) =>
     `${'0'.repeat(Math.max(0, length - `${num}`.length))}${num}`,
   newElement = (tag, contents = '', attributes = {}) => {
@@ -75,6 +105,18 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                       }" onclick=\'embed(this, ${JSON.stringify(
                         v.media
                       )} )'>&#x25BE;</a>`);
+                    v.tags && v.tags.forEach(
+                      tag =>
+                        icons[tag] &&
+                        entryDiv.appendChild(
+                          newElement('img', '', {
+                            class: 'tag-icon',
+                            src: iconsPath + icons[tag],
+                            alt: tag,
+                            title: tag,
+                          })
+                        )
+                    );
                     entryDiv.appendChild(entryText);
                     monthContainer.appendChild(entryDiv);
                   });

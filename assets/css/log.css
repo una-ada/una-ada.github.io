@@ -68,6 +68,10 @@ t:after {
 .close {
   display: none;
 }
+img.tag-icon {
+  padding-right: 6px;
+  vertical-align: middle;
+}
 .embedee {
   border: 0;
   display: block;

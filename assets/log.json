@@ -67,7 +67,7 @@
       "21": {
         "title": "_g.menu split from graphene",
         "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "javscript"]
+        "tags": ["programming", "javascript"]
       }
     },
     "11": {
@@ -239,7 +239,7 @@
       "15": {
         "title": "repo for programming ii",
         "link": "https://github.com/una-ada/CS162",
-        "tags": ["programming", "java"]
+        "tags": ["programming", "git", "java"]
       },
       "16": [
         {
@@ -391,7 +391,7 @@
         {
           "title": "\"the feasability of spontaneously morphing into an octopus\"",
           "link": "https://anarchy.website/2016/02/05/octopodes.html",
-          "tags": ["column"]
+          "tags": ["writing"]
         }
       ],
       "12": {
@@ -718,7 +718,7 @@
       "13": {
         "title": "box-muller time generator",
         "link": "https://xn--z7x.dev/js/2/normal",
-        "tags": ["programming", "javscript"]
+        "tags": ["programming", "javascript"]
       },
       "29": {
         "title": "sad.moe",
@@ -990,7 +990,7 @@
       "19": {
         "title": "art for amitypark - øøø",
         "link": "https://amitypark.bandcamp.com/album/-",
-        "tags": ["design", "music"],
+        "tags": ["design"],
         "media": { "type": "bandcamp", "src": "1808311980" }
       }
     }
@@ -1098,7 +1098,7 @@
       "20": {
         "title": "art for amitypark - better off rmx",
         "link": "https://amitypark.bandcamp.com/track/better-off-rmx",
-        "tags": ["design", "music"],
+        "tags": ["design"],
         "media": { "type": "bandcamp-single", "src": "3394708964" }
       },
       "25": {
@@ -1109,6 +1109,7 @@
         ],
         "tags": [
           "programming",
+          "adobe_xd",
           "javascript",
           "css",
           "scss",
@@ -1136,7 +1137,7 @@
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           "https://github.com/una-ada/una-theme"
         ],
-        "tags": ["design", "programming"]
+        "tags": ["design", "programming", "vscode"]
       },
       "30": {
         "title": "una's (vs code) theme v1.1.0 - now with icons",
@@ -1144,7 +1145,8 @@
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           "https://github.com/una-ada/una-theme"
         ],
-        "tags": ["design", "programming"]
+        "tags": ["design", "programming", "vscode"],
+        "note": "the icons r all 12px which is 2 small 4 vsc normally, but u can mod it. also! some of them r used in this page!"
       }
     },
     "7": {
@@ -1156,7 +1158,7 @@
       "6": {
         "title": "amitypark - song for a chunibyo anarchist (i do not like the united states government very much)",
         "link": "https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much",
-        "tags": ["writing", "design", "music"],
+        "tags": ["writing", "design"],
         "media": { "type": "bandcamp-single", "src": "4035136281" },
         "note": "i wrote a draft of the lyrics 4 this, chloe edited them n performed the song, i also did the cover art!"
       },
@@ -1179,6 +1181,7 @@
         ],
         "tags": [
           "programming",
+          "adobe_xd",
           "javascript",
           "css",
           "scss",
@@ -1242,7 +1245,7 @@
       "7": {
         "title": "art for amitypark - suffocate",
         "link": "https://amitypark.bandcamp.com/album/suffocate-single",
-        "tags": ["design", "music"],
+        "tags": ["design"],
         "media": { "type": "bandcamp", "src": "2725227738" }
       }
     },
