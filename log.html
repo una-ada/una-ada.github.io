@@ -1302,20 +1302,6 @@
           },
         };
 
-      function collapse(e) {
-        e.innerText = '+';
-        e.setAttribute('onclick', 'expand(this)');
-        var p = e.parentElement.parentElement.parentElement;
-        p.style.overflow = 'hidden';
-        p.style.height = '1.2em';
-      }
-      function expand(e) {
-        e.innerText = '-';
-        e.setAttribute('onclick', 'collapse(this)');
-        var p = e.parentElement.parentElement.parentElement;
-        p.style.overflow = '';
-        p.style.height = '';
-      }
       function embed(e, o) {
         e.innerHTML = '&#x25B4;';
         e.setAttribute('onclick', 'debed(this,' + JSON.stringify(o) + ')');
