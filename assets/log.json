@@ -1173,6 +1173,13 @@
         "link": "https://anarchy.website/2022/04/16/broken.html",
         "tags": ["writing", "short"]
       }
+    },
+    "5": {
+      "24": {
+        "title": "refactored n restyled log.html - it's back!",
+        "link": "#",
+        "tags": ["programming", "html", "js", "css"]
+      }
     }
   }
 }
