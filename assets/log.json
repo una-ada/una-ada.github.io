@@ -605,9 +605,9 @@
         "title": "@tinyhatebot",
         "link": [
           "https://twitter.com/tinyhatebot",
-          "https://gist.github.com/Trewbot/4acf59bd3875912f066243c19225ed0b"
+          "https://gist.github.com/una-ada/4acf59bd3875912f066243c19225ed0b"
         ],
-        "tags": ["programming"]
+        "tags": ["programming", "json"]
       },
       "16": {
         "title": "let it snow.js",
@@ -818,7 +818,13 @@
           "https://anchor.fm/-/episodes/Part-I-Shoplifting-e24qpj",
           "https://anarchy.website/gthnglsnnrs/1/notes"
         ],
-        "tags": ["podcast"],
+        "tags": [
+          "podcast",
+          "audacity",
+          "writing",
+          "design",
+          "adobe_illustrator"
+        ],
         "media": { "type": "anchor", "src": "Part-I-Shoplifting-e24qpj" }
       },
       "20": {
@@ -827,7 +833,7 @@
           "https://anchor.fm/-/episodes/Part-II-Catalonia-e28v8l",
           "https://anarchy.website/gthnglsnnrs/2/notes"
         ],
-        "tags": ["podcast"],
+        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": { "type": "anchor", "src": "Part-II-Catalonia-e28v8l" }
       }
     },
@@ -845,7 +851,13 @@
           "https://anchor.fm/-/episodes/Part-III-Spiderman-3-e2nmr0",
           "https://anarchy.website/gthnglsnnrs/3/notes"
         ],
-        "tags": ["podcast"],
+        "tags": [
+          "podcast",
+          "writing",
+          "design",
+          "adobe_photoshop",
+          "adobe_illustrator"
+        ],
         "media": { "type": "anchor", "src": "Part-III-Spiderman-3-e2nmr0" }
       }
     }
@@ -886,7 +898,7 @@
           "https://anchor.fm/-/episodes/Part-V-Post-Scarcity-e4ef1p",
           "https://anarchy.website/gthnglsnnrs/5/notes"
         ],
-        "tags": ["podcast"],
+        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": { "type": "anchor", "src": "Part-V-Post-Scarcity-e4ef1p" }
       }
     },
@@ -945,7 +957,7 @@
           "https://anchor.fm/-/episodes/Part-VI-A-Real-Podcast-ehud7n",
           "https://anarchy.website/gthnglsnnrs/6/notes"
         ],
-        "tags": ["podcast"],
+        "tags": ["podcast", "design", "adobe_photoshop"],
         "media": { "type": "anchor", "src": "Part-VI-A-Real-Podcast-ehud7n" }
       }
     },
@@ -972,25 +984,25 @@
       "4": {
         "title": "jisa2 - watashi mou zettai ni",
         "link": "https://soundcloud.com/jisa_tsu/watashimou",
-        "tags": ["music"],
+        "tags": ["music", "ableton_live"],
         "media": { "type": "soundcloud", "src": "941665492" }
       },
       "6": {
         "title": "jisa2 - shiranai tenjou da",
         "link": "https://soundcloud.com/jisa_tsu/tenjou",
-        "tags": ["music"],
+        "tags": ["music", "ableton_live"],
         "media": { "type": "soundcloud", "src": "942827437" }
       },
       "18": {
         "title": "jisa2 - densha line",
         "link": "https://jisa2.bandcamp.com/track/-",
-        "tags": ["music"],
+        "tags": ["music", "ableton_live", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "1683078004" }
       },
       "19": {
         "title": "art for amitypark - øøø",
         "link": "https://amitypark.bandcamp.com/album/-",
-        "tags": ["design"],
+        "tags": ["design", "adobe_photoshop"],
         "media": { "type": "bandcamp", "src": "1808311980" }
       }
     }
@@ -1000,7 +1012,7 @@
       "5": {
         "title": "jisa2 - lullaby for eternity",
         "link": "https://jisa2.bandcamp.com/track/lullaby-for-eternity",
-        "tags": ["music"],
+        "tags": ["music", "ableton_live", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "1616197059" }
       }
     },
@@ -1008,7 +1020,7 @@
       "5": {
         "title": "amitypark x jisa2 - tsuki",
         "link": "https://amitypark.bandcamp.com/album/--2",
-        "tags": ["music", "design"],
+        "tags": ["music", "design", "adobe_photoshop"],
         "note": "id embed a stream of this, but there isnt supposed 2 b a stream! buy 1 of the 5 limited release cassettes with j-cards designed by yrs truly <3"
       },
       "14": {
@@ -1029,13 +1041,19 @@
         {
           "title": "una nota v2021.04.18",
           "link": "https://github.com/una-ada/una-nota/tree/main/old/2021.04.18",
-          "tags": ["design", "font", "adobe_illustrator", "fontforge"]
+          "tags": [
+            "design",
+            "font",
+            "adobe_photoshop",
+            "adobe_illustrator",
+            "fontforge"
+          ]
         }
       ],
       "20": {
         "title": "una nota blog",
         "link": "https://anarchy.website/2021/04/20/una-nota.html",
-        "tags": ["writing", "design", "adobe_illustrator", "fontforge"]
+        "tags": ["writing"]
       },
       "27": {
         "title": "chloe &amp; una's tentacular experience vol. 1: alignment you! you!",
@@ -1043,7 +1061,7 @@
           "https://anchor.fm/-/episodes/Volume-1-Alignment-You--You-evocvf",
           "https://anarchy.website/cute/1/notes"
         ],
-        "tags": ["podcast"],
+        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": {
           "type": "anchor",
           "src": "Volume-1-Alignment-You--You-evocvf"
@@ -1067,7 +1085,13 @@
           "https://github.com/una-ada/una-mono",
           "https://anarchy.website/2021/05/31/una-mono.html"
         ],
-        "tags": ["design", "font", "adobe_illustrator", "fontforge"]
+        "tags": [
+          "design",
+          "font",
+          "adobe_photoshop",
+          "adobe_illustrator",
+          "fontforge"
+        ]
       }
     },
     "6": {
@@ -1098,7 +1122,7 @@
       "20": {
         "title": "art for amitypark - better off rmx",
         "link": "https://amitypark.bandcamp.com/track/better-off-rmx",
-        "tags": ["design"],
+        "tags": ["design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "3394708964" }
       },
       "25": {
@@ -1125,7 +1149,7 @@
           "https://anchor.fm/-/episodes/Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto",
           "https://anarchy.website/cute/2/notes"
         ],
-        "tags": ["podcast"],
+        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": {
           "type": "anchor",
           "src": "Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
@@ -1158,7 +1182,7 @@
       "6": {
         "title": "amitypark - song for a chunibyo anarchist (i do not like the united states government very much)",
         "link": "https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much",
-        "tags": ["writing", "design"],
+        "tags": ["writing", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "4035136281" },
         "note": "i wrote a draft of the lyrics 4 this, chloe edited them n performed the song, i also did the cover art!"
       },
@@ -1200,14 +1224,14 @@
           "https://www.npmjs.com/package/@una-ada/ksf",
           "https://github.com/una-ada/ksf"
         ],
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "javascript", "npm"]
       }
     },
     "10": {
       "6": {
         "title": "jisa2 - i gave up on my dreams again today",
         "link": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today",
-        "tags": ["music"],
+        "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "3122118483" }
       }
     },
@@ -1218,7 +1242,7 @@
           "https://jisa2.bandcamp.com/album/this-is-a-cry-for-help-split-w-amitypark",
           "https://amitypark.bandcamp.com/album/this-is-a-cry-for-help-split-w"
         ],
-        "tags": ["music"],
+        "tags": ["music", "logic_pro"],
         "media": { "type": "bandcamp", "src": "2838847327" },
         "note": "this is a split ep w me n my gf. track 3 was written by her, then i remixed it, then she finished it... the cover art was done much the same way."
       },
@@ -1245,7 +1269,7 @@
       "7": {
         "title": "art for amitypark - suffocate",
         "link": "https://amitypark.bandcamp.com/album/suffocate-single",
-        "tags": ["design"],
+        "tags": ["design", "adobe_photoshop"],
         "media": { "type": "bandcamp", "src": "2725227738" }
       }
     },
@@ -1253,14 +1277,14 @@
       "16": {
         "title": "\"how to be broken and never get better\"",
         "link": "https://anarchy.website/2022/04/16/broken.html",
-        "tags": ["writing", "short"]
+        "tags": ["writing", "design", "adobe_photoshop"]
       }
     },
     "5": {
       "24": {
         "title": "refactored n restyled log.html - it's back!",
         "link": "#",
-        "tags": ["programming", "html", "css", "javascript"]
+        "tags": ["programming", "html", "css", "javascript", "json"]
       }
     }
   }
