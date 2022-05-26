@@ -102,7 +102,7 @@
       "7": {
         "title": "graphene v0.3.3-s0.1.0 - separated server files",
         "link": "http://gra.phene.co",
-        "ttags": [
+        "tags": [
           "programming",
           "mongodb",
           "expressjs",
@@ -921,7 +921,7 @@
       "6": {
         "title": "neighbor science 511: turning into a witch is a voluntary choice",
         "link": "https://www.neighborsciencepodcast.com/e/511-turning-into-a-witch-is-a-voluntary-choice/",
-        "tags": ["podcast"],
+        "tags": ["podcast", "design", "adobe_illustrator", "adobe_photoshop"],
         "media": { "type": "podbean", "src": "wu2nr-c66a85" }
       }
     },
@@ -1192,7 +1192,7 @@
           "https://tabi-tabby.herokuapp.com/",
           "https://github.com/una-ada/Tabby"
         ],
-        "tags": ["programming", "python", "django", "mysql"],
+        "tags": ["programming", "python", "django", "postgresql"],
         "note": "this was the group project for the code camp i did, it had 2 b a django app :("
       }
     },
