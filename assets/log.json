@@ -19,7 +19,7 @@
     "9": {
       "11": {
         "title": "renamed social network project to \"graphene\"",
-        "link": "http://gra.phene.co",
+        "link": "https://github.com/pheneco/Graphene",
         "tags": ["programming", "apache", "mysql", "php", "css", "javascript"]
       }
     },
@@ -54,15 +54,8 @@
     "10": {
       "3": {
         "title": "graphene v0.3.0",
-        "link": "http://gra.phene.co",
-        "tags": [
-          "programming",
-          "mongodb",
-          "expressjs",
-          "nodejs",
-          "handlebars",
-          "pug"
-        ]
+        "link": "https://github.com/pheneco/Graphene",
+        "tags": ["programming", "apache", "mysql", "php", "css", "javascript"]
       },
       "21": {
         "title": "_g.menu split from graphene",
@@ -100,15 +93,17 @@
   "2015": {
     "1": {
       "7": {
-        "title": "graphene v0.3.3-s0.1.0 - separated server files",
-        "link": "http://gra.phene.co",
+        "title": "graphene v0.3.3-s0.1.0 - started converting to node!",
+        "link": "https://github.com/pheneco/Graphene",
         "tags": [
           "programming",
-          "mongodb",
-          "expressjs",
+          "apache",
           "nodejs",
-          "handlebars",
-          "pug"
+          "mysql",
+          "mongodb",
+          "php",
+          "javascript",
+          "css"
         ]
       },
       "15": {
@@ -141,14 +136,14 @@
     "8": {
       "30": {
         "title": "graphene v0.3.3-s0.2.0",
-        "link": "http://gra.phene.co",
+        "link": "https://github.com/pheneco/Graphene",
         "tags": [
           "programming",
           "mongodb",
-          "expressjs",
           "nodejs",
-          "handlebars",
-          "pug"
+          "expressjs",
+          "javascript",
+          "css"
         ]
       }
     },
@@ -189,14 +184,14 @@
       },
       "5": {
         "title": "graphene w0.4.0-s0.2.0",
-        "link": "http://gra.phene.co",
+        "link": "https://github.com/pheneco/Graphene",
         "tags": [
           "programming",
           "mongodb",
-          "expressjs",
           "nodejs",
-          "handlebars",
-          "pug"
+          "javascript",
+          "expressjs",
+          "handlebars"
         ]
       },
       "6": {
@@ -221,12 +216,12 @@
           "programming",
           "git",
           "mongodb",
-          "expressjs",
           "nodejs",
-          "handlebars",
-          "pug"
+          "javascript",
+          "expressjs",
+          "handlebars"
         ],
-        "note": "the version added to github was after i began rewriting the project from php and mysql to node.js and mongodb"
+        "note": "the version added to github was after i rewrote the project from php and mysql to node.js and mongodb"
       },
       "14": {
         "title": "\"about\" tumblr theme",
@@ -260,10 +255,10 @@
           "programming",
           "git",
           "mongodb",
-          "expressjs",
           "nodejs",
-          "handlebars",
-          "pug"
+          "javascript",
+          "expressjs",
+          "handlebars"
         ]
       },
       "23": {
@@ -278,8 +273,9 @@
           "programming",
           "git",
           "mongodb",
-          "expressjs",
           "nodejs",
+          "javascript",
+          "expressjs",
           "handlebars",
           "pug"
         ]
@@ -407,7 +403,7 @@
       "25": {
         "title": "repo for oop",
         "link": "https://github.com/Trewbot/CS235",
-        "tags": ["programming", "java", "git"]
+        "tags": ["programming", "git", "java"]
       },
       "26": {
         "title": "student voice vol 102 iss 16",
@@ -554,6 +550,19 @@
           "type": "youtube",
           "src": "qFMGggjO2QY?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C"
         }
+      },
+      "13": {
+        "title": "amber",
+        "link": "https://github.com/pheneco/amber",
+        "tags": [
+          "programming",
+          "nodejs",
+          "meteor",
+          "typescript",
+          "angular",
+          "css"
+        ],
+        "note": "this was a test project using meteor and angular to test a new stack for graphene"
       },
       "21": {
         "title": "_g.menu v0.4.3 - add video ops, fixes, n styles",
@@ -1134,13 +1143,12 @@
         "tags": [
           "programming",
           "adobe_xd",
-          "javascript",
-          "css",
-          "scss",
           "mongodb",
-          "express",
           "nodejs",
-          "ejs"
+          "javascript",
+          "expressjs",
+          "ejs",
+          "scss"
         ]
       },
       "27": {
@@ -1206,13 +1214,12 @@
         "tags": [
           "programming",
           "adobe_xd",
-          "javascript",
-          "css",
-          "scss",
           "mongodb",
+          "nodejs",
+          "javascript",
           "expressjs",
           "react",
-          "nodejs"
+          "scss"
         ],
         "note": "i didnt finish this project on time at all! i spent all my time on fixing back end stuff n rly want 2 come back 2 it eventually!!"
       }
@@ -1254,12 +1261,12 @@
         ],
         "tags": [
           "programming",
-          "javascript",
-          "css",
           "mongodb",
+          "nodejs",
+          "javascript",
           "expressjs",
           "react",
-          "nodejs"
+          "css"
         ]
       }
     }
