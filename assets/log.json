@@ -229,7 +229,7 @@
           "https://www.tumblr.com/theme/40029",
           "https://github.com/una-ada/About"
         ],
-        "tags": ["programming", "html"]
+        "tags": ["programming", "tumblr", "git", "html"]
       },
       "15": {
         "title": "repo for programming ii",
@@ -245,7 +245,7 @@
         {
           "title": "\"blocks\" tumblr theme",
           "link": "https://github.com/una-ada/Blocks",
-          "tags": ["programming", "html"]
+          "tags": ["programming", "tumblr", "git", "html"]
         }
       ],
       "22": {
@@ -310,7 +310,7 @@
       "14": {
         "title": "_g.popup v0.1.0",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "git", "javascript"]
       },
       "15": {
         "title": "\"orca\" national high power rocketry competition project proposal",
@@ -348,7 +348,7 @@
       "5": {
         "title": "\"pipe\" tumblr theme",
         "link": "https://github.com/una-ada/Pipe",
-        "tags": ["programming", "html"]
+        "tags": ["programming", "tumblr", "git", "html"]
       },
       "11": {
         "title": "student voice vol 102 iss 12",
@@ -421,7 +421,7 @@
         {
           "title": "translucent square image painter",
           "link": "https://github.com/una-ada/TSIP",
-          "tags": ["programming", "java"]
+          "tags": ["programming", "git", "java"]
         }
       ],
       "11": {
@@ -437,7 +437,7 @@
       "17": {
         "title": "_g.crop v0.1.0 - refactoring n debug",
         "link": "https://github.com/pheneco/crop",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "git", "javascript"]
       },
       "25": {
         "title": "student voice vol 102 iss 19",
@@ -556,6 +556,7 @@
         "link": "https://github.com/pheneco/amber",
         "tags": [
           "programming",
+          "git",
           "nodejs",
           "meteor",
           "typescript",
@@ -567,17 +568,17 @@
       "21": {
         "title": "_g.menu v0.4.3 - add video ops, fixes, n styles",
         "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "git", "javascript"]
       },
       "22": {
         "title": "_g.popup v0.2.0 - add \"tutorial\" framework",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "git", "javascript"]
       },
       "27": {
         "title": "_g.popup renamed _g.modal",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "git", "javascript"]
       }
     },
     "2": {
@@ -616,7 +617,7 @@
           "https://twitter.com/tinyhatebot",
           "https://gist.github.com/una-ada/4acf59bd3875912f066243c19225ed0b"
         ],
-        "tags": ["programming", "json"]
+        "tags": ["programming", "twitter", "json"]
       },
       "16": {
         "title": "let it snow.js",
@@ -631,7 +632,7 @@
       "19": {
         "title": "moved personal site to <a href=\"https://github.io\">github pages</a>",
         "link": "https://xn--z7x.dev/",
-        "tags": ["programming", "html", "css", "markdown"]
+        "tags": ["programming", "git", "html", "css", "markdown"]
       },
       "25": {
         "title": "added js to log.html",
@@ -669,7 +670,7 @@
       "29": {
         "title": "_g.modal v0.3.0 - add events n promises",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "git", "javascript"]
       }
     },
     "7": {
@@ -679,7 +680,7 @@
           "https://pheneco.github.io/",
           "https://github.com/pheneco/pheneco.github.io"
         ],
-        "tags": ["programming", "design", "html", "css", "javascript"],
+        "tags": ["programming", "design", "git", "html", "css", "javascript"],
         "note": "this design was never finished, the animation lead into making my gravity toy tho! also the original url (phene.co) was changed bc i have no $!"
       },
       "22": {
@@ -708,7 +709,15 @@
           "https://allthatisleft.github.io/",
           "https://github.com/AllThatisLeft/allthatisleft.github.io"
         ],
-        "tags": ["programming", "design", "html", "css"]
+        "tags": [
+          "programming",
+          "git",
+          "jekyll",
+          "yaml",
+          "liquid",
+          "design",
+          "scss"
+        ]
       },
       "24": {
         "title": "sinusoid.js",
@@ -735,7 +744,7 @@
           "https://una-ada.github.io/sad",
           "https://github.com/una-ada/sad"
         ],
-        "tags": ["programming", "javascript", "threejs"],
+        "tags": ["programming", "git", "javascript", "threejs"],
         "note": "this was @ sad.moe but i dont have the $ to keep that up so its just on my github pages site now"
       }
     }
@@ -749,6 +758,24 @@
           "https://allthatisleft.github.io/issue/001/"
         ],
         "tags": ["design", "adobe_indesign"]
+      },
+      "24": {
+        "title": "anarchy.website",
+        "link": [
+          "https://anarchy.website",
+          "https://github.com/una-ada/anarchy.website"
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "jekyll",
+          "yaml",
+          "liquid",
+          "design",
+          "scss",
+          "writing",
+          "markdown"
+        ]
       }
     },
     "3": {
@@ -1126,7 +1153,7 @@
           "https://anarchy.website/2021/06/03/gravdev3.html",
           "https://anarchy.website/2021/06/06/gravdev4.html"
         ],
-        "tags": ["programming", "html", "css", "javascript", "writing"]
+        "tags": ["programming", "git", "html", "css", "javascript", "writing"]
       },
       "20": {
         "title": "art for amitypark - better off rmx",
@@ -1143,6 +1170,7 @@
         "tags": [
           "programming",
           "adobe_xd",
+          "git",
           "mongodb",
           "nodejs",
           "javascript",
@@ -1169,7 +1197,7 @@
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           "https://github.com/una-ada/una-theme"
         ],
-        "tags": ["design", "programming", "vscode"]
+        "tags": ["design", "programming", "git", "vscode"]
       },
       "30": {
         "title": "una's (vs code) theme v1.1.0 - now with icons",
@@ -1177,7 +1205,7 @@
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           "https://github.com/una-ada/una-theme"
         ],
-        "tags": ["design", "programming", "vscode"],
+        "tags": ["design", "programming", "git", "vscode"],
         "note": "the icons r all 12px which is 2 small 4 vsc normally, but u can mod it. also! some of them r used in this page!"
       }
     },
@@ -1200,7 +1228,7 @@
           "https://tabi-tabby.herokuapp.com/",
           "https://github.com/una-ada/Tabby"
         ],
-        "tags": ["programming", "python", "django", "postgresql"],
+        "tags": ["programming", "git", "python", "django", "postgresql"],
         "note": "this was the group project for the code camp i did, it had 2 b a django app :("
       }
     },
@@ -1214,6 +1242,7 @@
         "tags": [
           "programming",
           "adobe_xd",
+          "git",
           "mongodb",
           "nodejs",
           "javascript",
@@ -1231,7 +1260,7 @@
           "https://www.npmjs.com/package/@una-ada/ksf",
           "https://github.com/una-ada/ksf"
         ],
-        "tags": ["programming", "javascript", "npm"]
+        "tags": ["programming", "git", "npm", "javascript"]
       }
     },
     "10": {
@@ -1261,6 +1290,7 @@
         ],
         "tags": [
           "programming",
+          "git",
           "mongodb",
           "nodejs",
           "javascript",
