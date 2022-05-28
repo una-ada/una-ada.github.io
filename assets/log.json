@@ -983,7 +983,7 @@
           "https://github.com/una-ada/una-script",
           "https://anarchy.website/2020/07/11/fonts.html"
         ],
-        "tags": ["design", "font", "writing"]
+        "tags": ["font", "writing"]
       }
     },
     "8": {
@@ -1008,12 +1008,12 @@
       "2": {
         "title": "una script v2020.10.02 - fixes n added latin-1 supplement",
         "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.02",
-        "tags": ["design", "font"]
+        "tags": ["font"]
       },
       "4": {
         "title": "una script v2020.10.04 - fix kern tables n thorn",
         "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.04",
-        "tags": ["design", "font"]
+        "tags": ["font"]
       }
     },
     "12": {
@@ -1108,12 +1108,12 @@
       "29": {
         "title": "una script v2021.05.29 - fix metrics",
         "link": "https://github.com/una-ada/una-script/tree/master/old/2021.05.29",
-        "tags": ["design", "font", "fontforge"]
+        "tags": ["font", "fontforge"]
       },
       "30": {
         "title": "una script v2021.05.30 - fix metadata",
         "link": "https://github.com/una-ada/una-script/tree/master/old/2021.05.30",
-        "tags": ["design", "font", "fontforge"]
+        "tags": ["font", "fontforge"]
       },
       "31": {
         "title": "una mono v2021.05.31",
@@ -1135,12 +1135,12 @@
         {
           "title": "una script v2021.06.01 - fix webfont accent spacing",
           "link": "https://github.com/una-ada/una-script/tree/master/old/2021.06.01",
-          "tags": ["design", "font", "adobe_illustrator", "fontforge"]
+          "tags": ["font", "adobe_illustrator", "fontforge"]
         },
         {
           "title": "una nota v2021.06.01 - update ps names",
           "link": "https://github.com/una-ada/una-nota/tree/master/old/2021.06.01",
-          "tags": ["design", "font", "fontforge"]
+          "tags": ["font", "fontforge"]
         }
       ],
       "6": {
