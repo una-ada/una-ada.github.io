@@ -612,7 +612,7 @@
         "tags": ["writing"]
       },
       "10": {
-        "title": "@tinyhatebot",
+        "title": "@tinyhatebot - cbdq twitter bot",
         "link": [
           "https://twitter.com/tinyhatebot",
           "https://gist.github.com/una-ada/4acf59bd3875912f066243c19225ed0b"
@@ -738,14 +738,22 @@
         "link": "https://xn--z7x.dev/js/2/normal",
         "tags": ["programming", "javascript"]
       },
-      "29": {
-        "title": "sad.moe",
+      "23": {
+        "title": "alone",
         "link": [
-          "https://una-ada.github.io/sad",
+          "https://una-ada.github.io/sad/alone",
+          "https://github.com/una-ada/sad"
+        ],
+        "tags": ["programming", "git", "javascript", "threejs"]
+      },
+      "29": {
+        "title": "sad v2017",
+        "link": [
+          "https://una-ada.github.io/sad/v2017",
           "https://github.com/una-ada/sad"
         ],
         "tags": ["programming", "git", "javascript", "threejs"],
-        "note": "this was @ sad.moe but i dont have the $ to keep that up so its just on my github pages site now"
+        "note": "this was @ sad.moe, thus the original name was 'sad.moe' but i dont have the $ to keep that up so its just on my github pages site now"
       }
     }
   },
