@@ -739,7 +739,7 @@
         "tags": ["programming", "javascript"]
       },
       "23": {
-        "title": "alone",
+        "title": "sad - v0.1 \"alone\"",
         "link": [
           "https://una-ada.github.io/sad/alone",
           "https://github.com/una-ada/sad"
@@ -747,9 +747,9 @@
         "tags": ["programming", "git", "javascript", "threejs"]
       },
       "29": {
-        "title": "sad v2017",
+        "title": "sad - v1.0 \"aimless\"",
         "link": [
-          "https://una-ada.github.io/sad/v2017",
+          "https://xn--z7x.dev/sad/aimless",
           "https://github.com/una-ada/sad"
         ],
         "tags": ["programming", "git", "javascript", "threejs"],
@@ -1330,6 +1330,16 @@
         "title": "refactored n restyled log.html - it's back!",
         "link": "#",
         "tags": ["programming", "html", "css", "javascript", "json"]
+      }
+    },
+    "6": {
+      "2": {
+        "title": "sad v2.0 - typescript rewrite w cannon phys",
+        "link": [
+          "https://xn--z7x.dev/sad/",
+          "https://github.com/una-ada/sad/releases/tag/v2.0.1"
+        ],
+        "tags": ["programming", "git", "webpack", "typescript", "threejs"]
       }
     }
   }
