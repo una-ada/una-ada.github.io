@@ -1161,7 +1161,15 @@
           "https://anarchy.website/2021/06/03/gravdev3.html",
           "https://anarchy.website/2021/06/06/gravdev4.html"
         ],
-        "tags": ["programming", "git", "html", "css", "javascript", "writing"]
+        "tags": [
+          "programming",
+          "git",
+          "html",
+          "css",
+          "javascript",
+          "github_pages",
+          "writing"
+        ]
       },
       "20": {
         "title": "art for amitypark - better off rmx",
@@ -1184,7 +1192,8 @@
           "javascript",
           "expressjs",
           "ejs",
-          "scss"
+          "scss",
+          "heroku"
         ]
       },
       "27": {
@@ -1236,7 +1245,14 @@
           "https://tabi-tabby.herokuapp.com/",
           "https://github.com/una-ada/Tabby"
         ],
-        "tags": ["programming", "git", "python", "django", "postgresql"],
+        "tags": [
+          "programming",
+          "git",
+          "python",
+          "django",
+          "postgresql",
+          "heroku"
+        ],
         "note": "this was the group project for the code camp i did, it had 2 b a django app :("
       }
     },
@@ -1256,7 +1272,8 @@
           "javascript",
           "expressjs",
           "react",
-          "scss"
+          "scss",
+          "heroku"
         ],
         "note": "i didnt finish this project on time at all! i spent all my time on fixing back end stuff n rly want 2 come back 2 it eventually!!"
       }
@@ -1304,7 +1321,8 @@
           "javascript",
           "expressjs",
           "react",
-          "css"
+          "css",
+          "vercel"
         ]
       }
     }
@@ -1326,6 +1344,11 @@
       }
     },
     "5": {
+      "6": {
+        "title": "relearning angular w task tracker tutorial",
+        "link": "https://github.com/una-ada/angular-task-tracker",
+        "tags": ["programming", "git", "typescript", "angular"]
+      },
       "24": {
         "title": "refactored n restyled log.html - it's back!",
         "link": "#",
@@ -1339,7 +1362,14 @@
           "https://xn--z7x.dev/sad/",
           "https://github.com/una-ada/sad/releases/tag/v2.0.1"
         ],
-        "tags": ["programming", "git", "webpack", "typescript", "threejs"]
+        "tags": [
+          "programming",
+          "git",
+          "webpack",
+          "typescript",
+          "threejs",
+          "github_pages"
+        ]
       }
     }
   }
