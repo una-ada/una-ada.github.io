@@ -1382,6 +1382,18 @@
           "threejs",
           "github_pages"
         ]
+      },
+      "11": {
+        "title": "chloe &amp; una's tentacular experience vol. 3: the pollinic girls attack!",
+        "link": [
+          "https://anchor.fm/-/episodes/Volume-3-The-Pollinic-Girls-Attack-e1jr5g0",
+          "https://anarchy.website/cute/3/notes"
+        ],
+        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
+        "media": {
+          "type": "anchor",
+          "src": "Volume-3-The-Pollinic-Girls-Attack-e1jr5g0"
+        }
       }
     }
   }
