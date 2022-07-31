@@ -4,7 +4,7 @@
       "5": {
         "title": "wip <a href=\"https://minecraft.net/en-us/\">minecraft</a> mod",
         "link": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod",
-        "tags": ["programming", "java"]
+        "tags": ["programming", "minecraft", "java"]
       }
     },
     "8": {
@@ -27,7 +27,7 @@
       "3": {
         "title": "<a href=\"https://myanimelist.net\">myanimelist</a> account",
         "link": "https://myanimelist.net/profile/unasareyou",
-        "tags": []
+        "tags": ["account", "myanimelist"]
       }
     }
   },
@@ -67,7 +67,7 @@
       "22": {
         "title": "<a href=\"https://github.com\">github</a> account",
         "link": "https://github.com/una-ada/",
-        "tags": []
+        "tags": ["account", "github"]
       }
     },
     "12": {
@@ -385,7 +385,7 @@
           "tags": ["design", "adobe_indesign"]
         },
         {
-          "title": "\"the feasability of spontaneously morphing into an octopus\"",
+          "title": "\"the feasibility of spontaneously morphing into an octopus\"",
           "link": "https://anarchy.website/2016/02/05/octopodes.html",
           "tags": ["writing"]
         }
@@ -1271,6 +1271,15 @@
           "heroku"
         ],
         "note": "this was the group project for the code camp i did, it had 2 b a django app :("
+      },
+      "22": {
+        "title": "census t-shirt - \"i am illiterate and i do not pay taxes\"",
+        "link": [
+          "https://shop.xn--z7x.dev/listing/pink-census?product=87",
+          "https://shop.xn--z7x.dev/listing/pink-census?product=2",
+          "https://shop.xn--z7x.dev/listing/pink-census?product=658"
+        ],
+        "tags": ["design", "merchandise", "spring"]
       }
     },
     "8": {
@@ -1293,17 +1302,36 @@
           "heroku"
         ],
         "note": "i didnt finish this project on time at all! i spent all my time on fixing back end stuff n rly want 2 come back 2 it eventually!!"
+      },
+      "20": {
+        "title": "ga sei-r portfolio",
+        "link": [
+          "https://xn--z7x.dev",
+          "https://github.com/una-ada/una-ada.github.io/compare/91b9e41...191d5f3"
+        ],
+        "tags": ["programming", "git", "jekyll", "design", "github_pages"],
+        "note": "this was j a quick portfolio 2 meet the reqs 4 the code camp, i wanted 2 replace it soon but... things take time lol"
       }
     },
     "9": {
-      "2": {
-        "title": "kramdown sort footnotes (ksf)",
-        "link": [
-          "https://www.npmjs.com/package/@una-ada/ksf",
-          "https://github.com/una-ada/ksf"
-        ],
-        "tags": ["programming", "git", "nodejs", "javascript", "npm"]
-      }
+      "2": [
+        {
+          "title": "moved personal site to xn--z7x.dev",
+          "link": [
+            "https://xn--z7x.dev",
+            "https://github.com/una-ada/una-ada.github.io/commit/dc857c0"
+          ],
+          "tags": ["programming", "google_domains", "github_pages"]
+        },
+        {
+          "title": "kramdown sort footnotes (ksf)",
+          "link": [
+            "https://www.npmjs.com/package/@una-ada/ksf",
+            "https://github.com/una-ada/ksf"
+          ],
+          "tags": ["programming", "git", "nodejs", "javascript", "npm"]
+        }
+      ]
     },
     "10": {
       "6": {

@@ -18,8 +18,10 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
     font: 'font.png',
     fontforge: 'fontforge.png',
     git: 'git.png',
+    github: 'github.png',
     github_pages: 'github.png',
     glyphs: 'glyphs.png',
+    google_domains: 'google_domains.png',
     google_fonts: 'google_fonts.png',
     graphql: 'graphql.png',
     haskell: 'hs.png',
@@ -30,12 +32,15 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
     javascript: 'js.png',
     jekyll: 'jekyll.png',
     json: 'json.png',
-    liquid: "liquid.png",
+    liquid: 'liquid.png',
     logic_pro: 'logic.png',
     markdown: 'md.png',
-    meteor: "meteor.png",
+    merchandise: 'merch.png',
+    meteor: 'meteor.png',
+    minecraft: 'minecraft.png',
     mongodb: 'mongo.png',
     music: 'music.png',
+    myanimelist: 'myanimelist.png',
     myfonts: 'myfonts.png',
     mysql: 'mysql.png',
     nodejs: 'node.png',
@@ -49,9 +54,11 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
     python: 'py.png',
     react: 'react.png',
     scss: 'sass.png',
+    spring: 'spring.png',
     threejs: 'threejs.png',
     typescript: 'ts.png',
     vercel: 'vercel.png',
+    video: 'video.png',
     vscode: 'folder_vs.png',
     webpack: 'webpack.png',
     writing: 'readme.png',
@@ -116,18 +123,19 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                     let entryText = newElement('span', '', {
                       class: 'title',
                     });
-                    v.tags && v.tags.forEach(
-                      tag =>
-                        icons[tag] &&
-                        entryText.appendChild(
-                          newElement('img', '', {
-                            class: 'tag-icon',
-                            src: iconsPath + icons[tag],
-                            alt: tag,
-                            title: tag.replace('_', ' '),
-                          })
-                        )
-                    );
+                    v.tags &&
+                      v.tags.forEach(
+                        tag =>
+                          icons[tag] &&
+                          entryText.appendChild(
+                            newElement('img', '', {
+                              class: 'tag-icon',
+                              src: iconsPath + icons[tag],
+                              alt: tag,
+                              title: tag.replace('_', ' '),
+                            })
+                          )
+                      );
                     entryText.innerHTML += v.title;
                     v.note &&
                       notes.push(v.note) &&
@@ -163,6 +171,6 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
     out.innerHTML += '<br>notes:<br>';
     for (var i = 0; i < notes.length; )
       out.innerHTML +=
-        '<div id="' + ++i + '"><sup>' + i + '</sup>' + notes[i - 1] + '</div>';
+        '<div id="' + ++i + '"><sup>' + i + '</sup> ' + notes[i - 1] + '</div>';
     return out;
   };
