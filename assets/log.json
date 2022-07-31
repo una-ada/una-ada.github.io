@@ -1226,7 +1226,7 @@
         }
       },
       "29": {
-        "title": "una's (vs code) theme v1.0.0",
+        "title": "una's theme [vs code] v1.0.0",
         "link": [
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           "https://github.com/una-ada/una-theme"
@@ -1234,7 +1234,7 @@
         "tags": ["design", "programming", "git", "vscode"]
       },
       "30": {
-        "title": "una's (vs code) theme v1.1.0 - now with icons",
+        "title": "una's theme [vs code] v1.1.0 - now with icons",
         "link": [
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           "https://github.com/una-ada/una-theme"
@@ -1395,6 +1395,22 @@
           "src": "Volume-3-The-Pollinic-Girls-Attack-e1jr5g0"
         }
       }
+    },
+    "7": {
+      "31": [
+        {
+          "title": "una's theme: ocean breeze color theme",
+          "link": "https://color.adobe.com/Ocean-Breeze-color-theme-20394941/",
+          "tags": ["design", "asset", "adobe_color"],
+          "note": "5 cool tones from my palette (adobe color only supports 5 color themes, i chose 10/12 colors to split btwn cool n warm)"
+        },
+        {
+          "title": "una's theme: night lights color theme",
+          "link": "https://color.adobe.com/Night-Lights-color-theme-20394921/",
+          "tags": ["design", "asset", "adobe_color"],
+          "note": "5 warm tones from my palette (see note on the other theme)"
+        }
+      ]
     }
   }
 }
