@@ -68,6 +68,9 @@ t:after {
 .close {
   display: none;
 }
+img.link-icon {
+  vertical-align: middle;
+}
 img.tag-icon {
   padding-right: 6px;
   vertical-align: middle;

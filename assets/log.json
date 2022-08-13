@@ -227,7 +227,7 @@
         "title": "\"about\" tumblr theme",
         "link": [
           "https://www.tumblr.com/theme/40029",
-          "https://github.com/una-ada/About"
+          { "title": "github", "url": "https://github.com/una-ada/About" }
         ],
         "tags": ["programming", "tumblr", "git", "html"]
       },
@@ -615,7 +615,10 @@
         "title": "@tinyhatebot - cbdq twitter bot",
         "link": [
           "https://twitter.com/tinyhatebot",
-          "https://gist.github.com/una-ada/4acf59bd3875912f066243c19225ed0b"
+          {
+            "title": "src",
+            "url": "https://cheapbotsdonequick.com/source/tinyhatebot"
+          }
         ],
         "tags": ["programming", "twitter", "json"]
       },
@@ -685,7 +688,10 @@
         "title": "phene.co website",
         "link": [
           "https://pheneco.github.io/",
-          "https://github.com/pheneco/pheneco.github.io"
+          {
+            "title": "github",
+            "url": "https://github.com/pheneco/pheneco.github.io"
+          }
         ],
         "tags": [
           "programming",
@@ -722,7 +728,10 @@
         "title": "all that is left website",
         "link": [
           "https://allthatisleft.github.io/",
-          "https://github.com/AllThatisLeft/allthatisleft.github.io"
+          {
+            "title": "github",
+            "url": "https://github.com/AllThatisLeft/allthatisleft.github.io"
+          }
         ],
         "tags": [
           "programming",
@@ -757,8 +766,8 @@
       "23": {
         "title": "sad - v0.1 \"alone\"",
         "link": [
-          "https://una-ada.github.io/sad/alone",
-          "https://github.com/una-ada/sad"
+          "https://xn--z7x.dev/sad/alone",
+          { "title": "github", "url": "https://github.com/una-ada/sad" }
         ],
         "tags": ["programming", "git", "javascript", "threejs", "github_pages"]
       },
@@ -766,7 +775,7 @@
         "title": "sad - v1.0 \"aimless\"",
         "link": [
           "https://xn--z7x.dev/sad/aimless",
-          "https://github.com/una-ada/sad"
+          { "title": "github", "url": "https://github.com/una-ada/sad" }
         ],
         "tags": ["programming", "git", "javascript", "threejs", "github_pages"],
         "note": "this was @ sad.moe, thus the original name was 'sad.moe' but i dont have the $ to keep that up so its just on my github pages site now"
@@ -778,8 +787,11 @@
       "9": {
         "title": "all that is left iss 001",
         "link": [
-          "https://allthatisleft.github.io/issue/001.pdf",
-          "https://allthatisleft.github.io/issue/001/"
+          "https://allthatisleft.github.io/issue/001/",
+          {
+            "title": "pdf",
+            "url": "https://allthatisleft.github.io/issue/001.pdf"
+          }
         ],
         "tags": ["design", "adobe_indesign"]
       },
@@ -787,7 +799,10 @@
         "title": "anarchy.website",
         "link": [
           "https://anarchy.website",
-          "https://github.com/una-ada/anarchy.website"
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/anarchy.website"
+          }
         ],
         "tags": [
           "programming",
@@ -838,7 +853,10 @@
         "title": "_g.graph - mathematical graphing library",
         "link": [
           "https://pheneco.github.io/graph/",
-          "https://anarchy.website/2018/07/14/graphs.html"
+          {
+            "title": "blog",
+            "url": "https://anarchy.website/2018/07/14/graphs.html"
+          }
         ],
         "tags": ["programming", "javascript", "writing"]
       },
@@ -877,7 +895,10 @@
         "title": "goth angel sinners pt. i: shoplifting",
         "link": [
           "https://anchor.fm/-/episodes/Part-I-Shoplifting-e24qpj",
-          "https://anarchy.website/gthnglsnnrs/1/notes"
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/1/notes"
+          }
         ],
         "tags": [
           "podcast",
@@ -892,7 +913,10 @@
         "title": "goth angel sinners pt. ii: catalonia",
         "link": [
           "https://anchor.fm/-/episodes/Part-II-Catalonia-e28v8l",
-          "https://anarchy.website/gthnglsnnrs/2/notes"
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/2/notes"
+          }
         ],
         "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": { "type": "anchor", "src": "Part-II-Catalonia-e28v8l" }
@@ -910,7 +934,10 @@
         "title": "goth angel sinners pt. iii: spiderman 3",
         "link": [
           "https://anchor.fm/-/episodes/Part-III-Spiderman-3-e2nmr0",
-          "https://anarchy.website/gthnglsnnrs/3/notes"
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/3/notes"
+          }
         ],
         "tags": [
           "podcast",
@@ -929,7 +956,10 @@
         "title": "goth angel sinners pt. iv: the paris commune",
         "link": [
           "https://anchor.fm/-/episodes/Part-IV-The-Paris-Commune-e2viul",
-          "https://anarchy.website/gthnglsnnrs/4/notes"
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/4/notes"
+          }
         ],
         "tags": ["podcast"],
         "media": { "type": "anchor", "src": "Part-IV-The-Paris-Commune-e2viul" }
@@ -957,7 +987,10 @@
         "title": "goth angel sinners pt. v: post-scarcity",
         "link": [
           "https://anchor.fm/-/episodes/Part-V-Post-Scarcity-e4ef1p",
-          "https://anarchy.website/gthnglsnnrs/5/notes"
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/5/notes"
+          }
         ],
         "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": { "type": "anchor", "src": "Part-V-Post-Scarcity-e4ef1p" }
@@ -1083,8 +1116,14 @@
       "5": {
         "title": "jisa2 - lullaby for eternity",
         "link": [
-          "https://soundcloud.com/jisa_tsu/lullaby-for-eternity",
-          "https://jisa2.bandcamp.com/track/lullaby-for-eternity"
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/jisa_tsu/lullaby-for-eternity"
+          },
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/track/lullaby-for-eternity"
+          }
         ],
         "tags": [
           "music",
@@ -1101,8 +1140,14 @@
       "5": {
         "title": "amitypark x jisa2 - tsuki",
         "link": [
-          "https://amitypark.bandcamp.com/album/--2",
-          "https://music.yandex.com/album/19208693/"
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/--2"
+          },
+          {
+            "title": "yandex_music",
+            "url": "https://music.yandex.com/album/19208693/"
+          }
         ],
         "tags": ["music", "design", "adobe_photoshop", "bandcamp", "distrokid"],
         "note": "id embed a stream of this, but there isnt supposed 2 b a stream! buy 1 of the 5 limited release cassettes with j-cards designed by yrs truly <3"
@@ -1143,7 +1188,7 @@
         "title": "chloe &amp; una's tentacular experience vol. 1: alignment you! you!",
         "link": [
           "https://anchor.fm/-/episodes/Volume-1-Alignment-You--You-evocvf",
-          "https://anarchy.website/cute/1/notes"
+          { "title": "notes", "url": "https://anarchy.website/cute/1/notes" }
         ],
         "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": {
@@ -1195,7 +1240,7 @@
         "title": "ga sei-r proj 1 - gravity remake + blogs",
         "link": [
           "https://xn--z7x.dev/gravity/",
-          "https://github.com/una-ada/gravity",
+          { "title": "github", "url": "https://github.com/una-ada/gravity" },
           "https://anarchy.website/2021/06/01/gravdev1.html",
           "https://anarchy.website/2021/06/01/gravdev2.html",
           "https://anarchy.website/2021/06/03/gravdev3.html",
@@ -1221,7 +1266,7 @@
         "title": "ga sei-r proj 2 - xylem",
         "link": [
           "https://proj-xylem.herokuapp.com/",
-          "https://github.com/una-ada/Xylem"
+          { "title": "github", "url": "https://github.com/una-ada/Xylem" }
         ],
         "tags": [
           "programming",
@@ -1240,7 +1285,7 @@
         "title": "chloe &amp; una's tentacular experience vol. 2: your neighborhood tentacle shop",
         "link": [
           "https://anchor.fm/-/episodes/Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto",
-          "https://anarchy.website/cute/2/notes"
+          { "title": "notes", "url": "https://anarchy.website/cute/2/notes" }
         ],
         "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": {
@@ -1252,7 +1297,7 @@
         "title": "una's theme [vs code] v1.0.0",
         "link": [
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
-          "https://github.com/una-ada/una-theme"
+          { "title": "github", "url": "https://github.com/una-ada/una-theme" }
         ],
         "tags": ["design", "programming", "git", "vscode"]
       },
@@ -1260,7 +1305,7 @@
         "title": "una's theme [vs code] v1.1.0 - now with icons",
         "link": [
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
-          "https://github.com/una-ada/una-theme"
+          { "title": "github", "url": "https://github.com/una-ada/una-theme" }
         ],
         "tags": ["design", "programming", "git", "vscode"],
         "note": "the icons r all 12px which is 2 small 4 vsc normally, but u can mod it. also! some of them r used in this page!"
@@ -1283,7 +1328,7 @@
         "title": "ga sei-r proj 3 - tabby",
         "link": [
           "https://tabi-tabby.herokuapp.com/",
-          "https://github.com/una-ada/Tabby"
+          { "title": "github", "url": "https://github.com/una-ada/Tabby" }
         ],
         "tags": [
           "programming",
@@ -1299,8 +1344,14 @@
         "title": "census t-shirt - \"i am illiterate and i do not pay taxes\"",
         "link": [
           "https://shop.xn--z7x.dev/listing/pink-census?product=87",
-          "https://shop.xn--z7x.dev/listing/pink-census?product=2",
-          "https://shop.xn--z7x.dev/listing/pink-census?product=658"
+          {
+            "title": "tshirt",
+            "url": "https://shop.xn--z7x.dev/listing/pink-census?product=2"
+          },
+          {
+            "title": "mug",
+            "url": "https://shop.xn--z7x.dev/listing/pink-census?product=658"
+          }
         ],
         "tags": ["design", "merchandise", "spring"]
       }
@@ -1310,7 +1361,7 @@
         "title": "ga sei-r proj 4 - bopomo",
         "link": [
           "https://bopomo.herokuapp.com/",
-          "https://github.com/una-ada/Bopomo"
+          { "title": "github", "url": "https://github.com/una-ada/Bopomo" }
         ],
         "tags": [
           "programming",
@@ -1330,7 +1381,10 @@
         "title": "ga sei-r portfolio",
         "link": [
           "https://xn--z7x.dev",
-          "https://github.com/una-ada/una-ada.github.io/compare/91b9e41...191d5f3"
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-ada.github.io/compare/91b9e41...191d5f3"
+          }
         ],
         "tags": ["programming", "git", "jekyll", "design", "github_pages"],
         "note": "this was j a quick portfolio 2 meet the reqs 4 the code camp, i wanted 2 replace it soon but... things take time lol"
@@ -1342,15 +1396,21 @@
           "title": "moved personal site to xn--z7x.dev",
           "link": [
             "https://xn--z7x.dev",
-            "https://github.com/una-ada/una-ada.github.io/commit/dc857c0"
+            {
+              "title": "github",
+              "url": "https://github.com/una-ada/una-ada.github.io/commit/dc857c0"
+            }
           ],
           "tags": ["programming", "google_domains", "github_pages"]
         },
         {
           "title": "kramdown sort footnotes (ksf)",
           "link": [
-            "https://www.npmjs.com/package/@una-ada/ksf",
-            "https://github.com/una-ada/ksf"
+            {
+              "title": "npm",
+              "url": "https://www.npmjs.com/package/@una-ada/ksf"
+            },
+            { "title": "github", "url": "https://github.com/una-ada/ksf" }
           ],
           "tags": ["programming", "git", "nodejs", "javascript", "npm"]
         }
@@ -1368,30 +1428,58 @@
       "5": {
         "title": "amitypark x jisa2 - this is a cry for help",
         "link": [
-          "https://jisa2.bandcamp.com/album/this-is-a-cry-for-help-split-w-amitypark",
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/album/this-is-a-cry-for-help-split-w-amitypark"
+          },
           "https://amitypark.bandcamp.com/album/this-is-a-cry-for-help-split-w",
-          "https://distrokid.com/hyperfollow/amityparkx/this-is-a-cry-for-help",
-          "https://open.spotify.com/album/6yAs9FsB9yX5U8MwvOErAm",
-          "https://music.apple.com/us/album/-/1593461597",
-          "https://music.youtube.com/playlist?list=OLAK5uy_kKe5AfRQcphgLbnLXJJFcP43ws4n6Z4s4",
-          "https://www.deezer.com/us/album/270308382",
-          "https://www.iheart.com/artist/-37075084/albums/-149732353/",
-          "https://www.boomplay.com/albums/34318537",
-          "https://play.anghami.com/album/1023662329",
-          "https://play.kkbox.com/album/XXLThA7qEjhjDaiIzG",
-          "https://music.163.com/#/album?id=135657954",
-          "https://www.qobuz.com/us-en/album/-/j6u3zs4dq12ub",
-          "https://triller.co/tracks/5bf171d5-47b9-48ae-92e1-1aaa823e17ba",
+          {
+            "title": "distrokid",
+            "url": "https://distrokid.com/hyperfollow/amityparkx/this-is-a-cry-for-help"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/album/6yAs9FsB9yX5U8MwvOErAm"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1593461597"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_kKe5AfRQcphgLbnLXJJFcP43ws4n6Z4s4"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/270308382"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/-37075084/albums/-149732353/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/albums/34318537"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/album/1023662329"
+          },
+          {
+            "title": "kkbox",
+            "url": "https://play.kkbox.com/album/XXLThA7qEjhjDaiIzG"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/album?id=135657954"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/j6u3zs4dq12ub"
+          },
           "https://music.yandex.com/album/19158516"
         ],
-        "tags": [
-          "music",
-          "logic_pro",
-          "design",
-          "adobe_photoshop",
-          "bandcamp",
-          "distrokid"
-        ],
+        "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp", "src": "2838847327" },
         "note": "this is a split ep w me n my gf. track 3 was written by her, then i remixed it, then she finished it... the cover art was done much the same way."
       },
@@ -1399,7 +1487,7 @@
         "title": "live online hackathon - go go grandparents",
         "link": [
           "http://go-go-grandparents.vercel.app/",
-          "https://github.com/Go-Go-Grandparents"
+          { "title": "github", "url": "https://github.com/Go-Go-Grandparents" }
         ],
         "tags": [
           "programming",
@@ -1443,7 +1531,10 @@
         "title": "sad v2.0 - typescript rewrite w cannon phys",
         "link": [
           "https://xn--z7x.dev/sad/",
-          "https://github.com/una-ada/sad/releases/tag/v2.0.1"
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/sad/releases/tag/v2.0.1"
+          }
         ],
         "tags": [
           "programming",
@@ -1458,7 +1549,7 @@
         "title": "chloe &amp; una's tentacular experience vol. 3: the pollinic girls attack!",
         "link": [
           "https://anchor.fm/-/episodes/Volume-3-The-Pollinic-Girls-Attack-e1jr5g0",
-          "https://anarchy.website/cute/3/notes"
+          { "title": "notes", "url": "https://anarchy.website/cute/3/notes" }
         ],
         "tags": ["podcast", "writing", "design", "adobe_illustrator"],
         "media": {
@@ -1487,28 +1578,56 @@
       "9": {
         "title": "the town of forgotten nightmares",
         "link": [
-          "https://jisa2.bandcamp.com/track/the-town-of-forgotten-nightmares",
-          "https://distrokid.com/hyperfollow/f31f9b0/the-town-of-forgotten-nightmares",
-          "https://open.spotify.com/album/72uRiRTx9hfPm8a2mKvuKb",
-          "https://music.apple.com/us/album/-/1638988058",
-          "https://music.youtube.com/watch?v=si8Rtdw81bw",
-          "https://music.amazon.com/albums/B0B94RY3D4?trackAsin=B0B952W2N7",
-          "https://www.deezer.com/us/album/344966207",
-          "https://www.iheart.com/artist/-38585318/albums/-178986803/",
-          "https://www.boomplay.com/songs/98383638",
-          "https://play.anghami.com/song/1072703886",
-          "https://music.163.com/#/song?id=1970997599",
-          "https://www.qobuz.com/us-en/album/-/s7gvnpzdiydra",
-          "https://triller.co/tracks/cd221af9-2f59-4c73-b88a-c2f866424389"
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/track/the-town-of-forgotten-nightmares"
+          },
+          {
+            "title": "distrokid",
+            "url": "https://distrokid.com/hyperfollow/f31f9b0/the-town-of-forgotten-nightmares"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/album/72uRiRTx9hfPm8a2mKvuKb"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1638988058"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=si8Rtdw81bw"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/albums/B0B94RY3D4"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/344966207"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/-38585318/albums/-178986803/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/songs/98383638"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/song/1072703886"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/song?id=1970997599"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/s7gvnpzdiydra"
+          }
         ],
-        "tags": [
-          "music",
-          "logic_pro",
-          "design",
-          "adobe_photoshop",
-          "bandcamp",
-          "distrokid"
-        ],
+        "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "3723950676" },
         "note": "this was supposed 2 b a 4 part ep but w/o touching it for several months i j released the finished part"
       }

@@ -157,11 +157,21 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                       (entryText.innerHTML += `<a href="#${notes.length}"><sup title="${v.note}">${notes.length}</sup></a>`);
                     Array.isArray(v.link) &&
                       (entryText.innerHTML +=
-                        ' ' +
+                        '. ' +
                         v.link
-                          .map(
-                            (v, i) =>
-                              `<a href="${v}" target="_blank">${i + 1}</a>`
+                          .map((l, i) =>
+                            i > 0 || l.title
+                              ? `<a href="${l.title ? l.url : l}" ${
+                                  l.title &&
+                                  `title="${l.title.replace('_', ' ')}"`
+                                } target="_blank">${
+                                  l.title && icons[l.title]
+                                    ? `<img src="${
+                                        iconsPath + icons[l.title]
+                                      }" alt="${l.title}" class="link-icon" />`
+                                    : l.title || i + 1
+                                }</a>`
+                              : ''
                           )
                           .join(' '));
                     v.media &&
