@@ -6,7 +6,7 @@
     <script src="/assets/log.js" type="text/javascript"></script>
     <script>
       function embed(e, o) {
-        e.innerHTML = '&#x25B4;';
+        e.innerHTML = 'remove';
         e.setAttribute('onclick', 'debed(this,' + JSON.stringify(o) + ')');
         var p = e.parentElement,
           out = '';
@@ -32,7 +32,7 @@
         p.insertAdjacentHTML('beforeend', out);
       }
       function debed(e, o) {
-        e.innerHTML = '&#x25BE;';
+        e.innerHTML = 'embed';
         e.setAttribute('onclick', 'embed(this,' + JSON.stringify(o) + ')');
         var p = e.parentElement;
         p.removeChild(p.getElementsByClassName('embedee')[0]);

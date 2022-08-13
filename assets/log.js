@@ -175,11 +175,11 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                           )
                           .join(' '));
                     v.media &&
-                      (entryText.innerHTML += ` <a href="#${year}.${monthPadded}.${dayPadded}${
+                      (entryText.innerHTML += ` [<a href="#${year}.${monthPadded}.${dayPadded}${
                         k == 0 ? '' : alpha[k]
                       }" onclick=\'embed(this, ${JSON.stringify(
                         v.media
-                      )} )'>&#x25BE;</a>`);
+                      )} )'>embed</a>]`);
                     entryDiv.appendChild(entryText);
                     monthContainer.appendChild(entryDiv);
                   });
