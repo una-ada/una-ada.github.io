@@ -1100,7 +1100,10 @@
     "3": {
       "5": {
         "title": "amitypark x jisa2 - tsuki",
-        "link": "https://amitypark.bandcamp.com/album/--2",
+        "link": [
+          "https://amitypark.bandcamp.com/album/--2",
+          "https://music.yandex.com/album/19208693/"
+        ],
         "tags": ["music", "design", "adobe_photoshop", "bandcamp", "distrokid"],
         "note": "id embed a stream of this, but there isnt supposed 2 b a stream! buy 1 of the 5 limited release cassettes with j-cards designed by yrs truly <3"
       },
@@ -1367,7 +1370,19 @@
         "link": [
           "https://jisa2.bandcamp.com/album/this-is-a-cry-for-help-split-w-amitypark",
           "https://amitypark.bandcamp.com/album/this-is-a-cry-for-help-split-w",
-          "https://distrokid.com/hyperfollow/amityparkx/this-is-a-cry-for-help"
+          "https://distrokid.com/hyperfollow/amityparkx/this-is-a-cry-for-help",
+          "https://open.spotify.com/album/6yAs9FsB9yX5U8MwvOErAm",
+          "https://music.apple.com/us/album/-/1593461597",
+          "https://music.youtube.com/playlist?list=OLAK5uy_kKe5AfRQcphgLbnLXJJFcP43ws4n6Z4s4",
+          "https://www.deezer.com/us/album/270308382",
+          "https://www.iheart.com/artist/-37075084/albums/-149732353/",
+          "https://www.boomplay.com/albums/34318537",
+          "https://play.anghami.com/album/1023662329",
+          "https://play.kkbox.com/album/XXLThA7qEjhjDaiIzG",
+          "https://music.163.com/#/album?id=135657954",
+          "https://www.qobuz.com/us-en/album/-/j6u3zs4dq12ub",
+          "https://triller.co/tracks/5bf171d5-47b9-48ae-92e1-1aaa823e17ba",
+          "https://music.yandex.com/album/19158516"
         ],
         "tags": [
           "music",
@@ -1471,8 +1486,29 @@
     "8": {
       "9": {
         "title": "the town of forgotten nightmares",
-        "link": "https://jisa2.bandcamp.com/track/the-town-of-forgotten-nightmares",
-        "tags": ["music", "logic_pro", "design", "adobe_photoshop", "bandcamp", "distrokid"],
+        "link": [
+          "https://jisa2.bandcamp.com/track/the-town-of-forgotten-nightmares",
+          "https://distrokid.com/hyperfollow/f31f9b0/the-town-of-forgotten-nightmares",
+          "https://open.spotify.com/album/72uRiRTx9hfPm8a2mKvuKb",
+          "https://music.apple.com/us/album/-/1638988058",
+          "https://music.youtube.com/watch?v=si8Rtdw81bw",
+          "https://music.amazon.com/albums/B0B94RY3D4?trackAsin=B0B952W2N7",
+          "https://www.deezer.com/us/album/344966207",
+          "https://www.iheart.com/artist/-38585318/albums/-178986803/",
+          "https://www.boomplay.com/songs/98383638",
+          "https://play.anghami.com/song/1072703886",
+          "https://music.163.com/#/song?id=1970997599",
+          "https://www.qobuz.com/us-en/album/-/s7gvnpzdiydra",
+          "https://triller.co/tracks/cd221af9-2f59-4c73-b88a-c2f866424389"
+        ],
+        "tags": [
+          "music",
+          "logic_pro",
+          "design",
+          "adobe_photoshop",
+          "bandcamp",
+          "distrokid"
+        ],
         "media": { "type": "bandcamp-single", "src": "3723950676" },
         "note": "this was supposed 2 b a 4 part ep but w/o touching it for several months i j released the finished part"
       }
