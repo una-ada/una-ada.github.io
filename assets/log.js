@@ -138,7 +138,9 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                       : (entryDiv.innerHTML += '&nbsp;'.repeat(3));
                     entryDiv.appendChild(
                       newElement('a', k == 0 ? dayPadded : '..', {
-                        href: Array.isArray(v.link) ? v.link[0] : v.link,
+                        href: Array.isArray(v.link)
+                          ? v.link[0].url || v.link[0]
+                          : v.link.url || v.link,
                         target: '_blank',
                       })
                     );
