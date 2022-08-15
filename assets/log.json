@@ -845,7 +845,20 @@
     "7": {
       "9": {
         "title": "neighbor science 229: neighborhood bloc party",
-        "link": "https://www.neighborsciencepodcast.com/e/neighborhood-bloc-party/",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/neighborhood-bloc-party/"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842720"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-29720030"
+          }
+        ],
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "h5pnj-999a74" }
       },
@@ -1084,7 +1097,60 @@
     "4": {
       "25": {
         "title": "neighbor science 410: the joker but he's a horny shark",
-        "link": "https://www.neighborsciencepodcast.com/e/410-the-joker-but-hes-a-horny-shark/",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/410-the-joker-but-hes-a-horny-shark/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000436528682"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/1b3d799c-3fe3-4b0b-a7cf-c8c551db70a6/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7ZGYVP"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/f6e7b2cf13302c37"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842797"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzQxMC10aGUtam9rZXItYnV0LWhlcy1hLWhvcm55LXNoYXJrLTY2ZWJmOGI5MmRhYjY2NjlhNjkwMjI1OThlYzAxODFh"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1556231936"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-39111318"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168201"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/1xhQpgX5QYkS9ukaTLsgrg"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/410-the-joker-but-hes-a-horny-shark-60290153"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=gO7gaABHYBc"
+          }
+        ],
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "4kycv-af305a" },
         "note": "i didnt show up in this one til about 31:20"
@@ -1093,7 +1159,60 @@
     "5": {
       "19": {
         "title": "neighbor science 413: neighbor science pot luck (live in czechochechnyoslovenoslovakia)",
-        "link": "https://www.podbean.com/ew/pb-e4xzn-b1b606",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.podbean.com/ew/pb-e4xzn-b1b606"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000438787990"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/38e365a5-8b9b-44e1-aec6-487646757828/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7ZZGTW"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/9c06ccefa769d6fd"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842800"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tL25laWdoYm9yLXNjaWVuY2UtcG90LWx1Y2stbGl2ZS1pbi1jemVjaG9jaGVjaG55b3Nsb3Zlbm9zbG92YWtpYS1kZmFhZTc5MDk5ZjU5YjdkZDkwOTY1NTVmMjU3NDk2Mw"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1558273934"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-39780628"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168198"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/2MoBL4vLbBl1PkLcfTZV1o"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/413-neighbor-science-pot-luck-live-in-czechochechnyoslovenoslovakia-60807340"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=7KPZ1WRHU3A"
+          }
+        ],
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "e4xzn-b1b606" }
       }
@@ -1146,7 +1265,56 @@
     "7": {
       "8": {
         "title": "neighbor science 418: colonialism is when you wear khakis",
-        "link": "https://www.neighborsciencepodcast.com/e/418-colonialism-is-when-you-wear-khakis/",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/418-colonialism-is-when-you-wear-khakis/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000444004119"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/a872d7ab-8d34-4d0a-8cb4-7da6bb492ec9/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7V3ZK6"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/0ee711e33d6a3953"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzQxOC1jb2xvbmlhbGlzbS1pcy13aGVuLXlvdS13ZWFyLWtoYWtpcy1hZDY2NTEyOGViNzI0MjU2NTljNTE3MzlmMDZhZWQwMA"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1562641352"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-41787248"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168193"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/0mD5o63o6LHsZMXfWo1XYu"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/418-colonialism-is-when-you-wear-khakis-62441937"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=3k5lzC72wTQ"
+          }
+        ],
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "bdnxe-b73bce" }
       }
@@ -1154,14 +1322,116 @@
     "11": {
       "1": {
         "title": "neighbor science 510: ecocommunist utopia",
-        "link": "https://www.neighborsciencepodcast.com/e/510-ecocommunist-utopia/",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/510-ecocommunist-utopia/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000455709623"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/27528499-0977-48a3-94fc-7700ffa051d1/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7WWXLQ"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/36852a53a245c9f0"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842829"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzUxMC1lY29jb21tdW5pc3QtdXRvcGlhLTcyNmMwZWQzNTlmYzEyOGMyYTIwNjQ3NTUwMzU3NmRl"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1572640987"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-47326624"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168176"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/50FegQ5lE6YwELYS6DrCX3"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/510-ecocommunist-utopia-65001649"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=RhEYcIEPEsA"
+          }
+        ],
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "rtrfx-c5a4d6" },
         "note": "im not even listed in the description of this one cuz i just showed up while on break around 1h35m in. also covid rly dunked on some of what i said :("
       },
       "6": {
         "title": "neighbor science 511: turning into a witch is a voluntary choice",
-        "link": "https://www.neighborsciencepodcast.com/e/511-turning-into-a-witch-is-a-voluntary-choice/",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/511-turning-into-a-witch-is-a-voluntary-choice/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000456116174"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/9ec1e0c7-7ca2-4d79-955e-d15788020b1b/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7Z7T59"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/be148f1f3cc4f908"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842830"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzUxMS10dXJuaW5nLWludG8tYS13aXRjaC1pcy1hLXZvbHVudGFyeS1jaG9pY2UtZDY2Njc5YWRlOWQyNTBmMTJmMThiNzNjYTgwYTVhZGQ"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1573092545"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-47577010"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168174"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/2tYfReoETLKJrTP30AY7rF"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/511-turning-into-a-witch-is-a-voluntary-choice-65110117"
+          }
+        ],
         "tags": ["podcast", "design", "adobe_illustrator", "adobe_photoshop"],
         "media": { "type": "podbean", "src": "wu2nr-c66a85" }
       }
@@ -1178,7 +1448,56 @@
     "7": {
       "1": {
         "title": "neighbor science isekai july 1: the saga of tanya the definitely absolutely evil",
-        "link": "https://www.podbean.com/ew/pb-cfvzi-e1d26f",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.podbean.com/ew/pb-cfvzi-e1d26f"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000481716629"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/ea00a98b-f94c-4cd5-8c52-919cd49584b2/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7WPD21"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/4ffabfa43081d3b4"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id282143016"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzE5ZjE2ZWQ1LWM5NGMtNWQyMS04M2MwLWU4NjIwMTU1ZGYyYQ"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1593652099"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-66786777"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168156"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/2TuhtC7962jcwU3Rtg8xGL"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/-/episode/isekai-july-1-the-saga-of-tanya-the-definitely-absolutely-evil-w-una-74195275"
+          }
+        ],
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "cfvzi-e1d26f" }
       },
@@ -1344,7 +1663,60 @@
       },
       "14": {
         "title": "neighbor science 709: golden kamuy pt. 1",
-        "link": "https://www.neighborsciencepodcast.com/e/709-golden-kamuy-pt-1/",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/709-golden-kamuy-pt-1/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000512931423"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/e12def80-428b-4f6d-897a-2a6277d725d1/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08YWM191D"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/315fde2f96f92580"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/709%3A-Golden-Kamuy%2C-pt.-1-id2526128-id364179842"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzc2YzVmN2RiLTY1ZjEtMzI1Mi1hYWJhLWIxMzA1N2QyNTc3ZQ"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1615734268"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-86253156"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168137"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/65iPYj1EWXEI2c5JDo83zU"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/709-golden-kamuy-pt-1-82371356"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=BVyHBkNzdNE"
+          }
+        ],
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "xxy3w-fd9300" }
       }
@@ -1353,7 +1725,52 @@
       "18": [
         {
           "title": "neighbor science 712: the old bear hunter",
-          "link": "https://www.neighborsciencepodcast.com/e/712-the-old-bear-hunter/",
+          "link": [
+            {
+              "title": "podbean",
+              "url": "https://www.neighborsciencepodcast.com/e/712-the-old-bear-hunter/"
+            },
+            {
+              "title": "apple_podcasts",
+              "url": "https://podcasts.apple.com/us/podcast/712-the-old-bear-hunter/id1234104939?i=1000517653477"
+            },
+            {
+              "title": "audible",
+              "url": "https://www.audible.com/pd/-/B092PTD4BP"
+            },
+            {
+              "title": "backtracks",
+              "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/79d0e13d32d7d152"
+            },
+            {
+              "title": "castbox",
+              "url": "https://castbox.fm/episode/712%3A-The-Old-Bear-Hunter-id2526128-id375048786"
+            },
+            {
+              "title": "google_podcasts",
+              "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzE1MzYxODNjLWI2MTQtM2NmNi04OGZmLWFhMTM2NmQ5MmY0ZA"
+            },
+            {
+              "title": "podbay",
+              "url": "https://podbay.fm/p/neighbor-science/e/1618777107"
+            },
+            {
+              "title": "podchaser",
+              "url": "https://www.podchaser.com/podcasts/-522908/episodes/-89458393"
+            },
+            {
+              "title": "podyssey",
+              "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168134"
+            },
+            {
+              "title": "spotify",
+              "url": "https://open.spotify.com/episode/3D8l48WdnkMapPqvZlWvTj"
+            },
+            {
+              "title": "stitcher",
+              "url": "https://www.stitcher.com/show/neighbor-science/episode/712-the-old-bear-hunter-83265677"
+            }
+          ],
           "tags": ["podcast"],
           "media": { "type": "podbean", "src": "8vewr-101039e" }
         },
