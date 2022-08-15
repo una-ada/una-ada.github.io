@@ -1586,7 +1586,7 @@
             "url": "https://soundcloud.com/jisa_tsu/watashimou"
           }
         ],
-        "tags": ["music", "ableton_live", "soundcloud"],
+        "tags": ["music", "ableton_live"],
         "media": { "type": "soundcloud", "src": "941665492" }
       },
       "6": {
@@ -1597,7 +1597,7 @@
             "url": "https://soundcloud.com/jisa_tsu/tenjou"
           }
         ],
-        "tags": ["music", "ableton_live", "soundcloud"],
+        "tags": ["music", "ableton_live"],
         "media": { "type": "soundcloud", "src": "942827437" }
       },
       "18": {
@@ -1634,14 +1634,7 @@
             "url": "https://jisa2.bandcamp.com/track/lullaby-for-eternity"
           }
         ],
-        "tags": [
-          "music",
-          "ableton_live",
-          "design",
-          "adobe_photoshop",
-          "soundcloud",
-          "bandcamp"
-        ],
+        "tags": ["music", "ableton_live", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "1616197059" }
       }
     },
@@ -1658,7 +1651,7 @@
             "url": "https://music.yandex.com/album/19208693/"
           }
         ],
-        "tags": ["music", "design", "adobe_photoshop", "bandcamp", "distrokid"],
+        "tags": ["music", "design", "adobe_photoshop"],
         "note": "id embed a stream of this, but there isnt supposed 2 b a stream! buy 1 of the 5 limited release cassettes with j-cards designed by yrs truly <3"
       },
       "14": {
@@ -1973,7 +1966,7 @@
       "6": {
         "title": "amitypark - song for a chunibyo anarchist (i do not like the united states government very much)",
         "link": "https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much",
-        "tags": ["writing", "design", "adobe_photoshop", "distrokid"],
+        "tags": ["writing", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "4035136281" },
         "note": "i wrote a draft of the lyrics 4 this, chloe edited them n performed the song, i also did the cover art!"
       },
@@ -2073,7 +2066,7 @@
       "6": {
         "title": "jisa2 - i gave up on my dreams again today",
         "link": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today",
-        "tags": ["music", "logic_pro", "design", "adobe_photoshop", "bandcamp"],
+        "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "3122118483" }
       }
     },
