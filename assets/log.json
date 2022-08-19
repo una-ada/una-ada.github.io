@@ -515,7 +515,7 @@
     },
     "10": {
       "17": {
-        "title": "\"building and acousto-optical deflector\"",
+        "title": "\"building an acousto-optical deflector\"",
         "link": "https://anarchy.website/2016/10/17/acousto-optical.html",
         "tags": ["writing"]
       },
@@ -1614,7 +1614,32 @@
       },
       "19": {
         "title": "art for amitypark - øøø",
-        "link": "https://amitypark.bandcamp.com/album/-",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/-"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/album/3KDdne9zpK5xQ3Tixi1Kp5"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1546242513"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_nKRODWrJbrkJ0eK32RO1MBZxPTbo4SPLk"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/195422822"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/album?id=120809918"
+          }
+        ],
         "tags": ["design", "adobe_photoshop"],
         "media": { "type": "bandcamp", "src": "1808311980" }
       }
@@ -1864,10 +1889,22 @@
         "link": [
           "https://xn--z7x.dev/gravity/",
           { "title": "github", "url": "https://github.com/una-ada/gravity" },
-          "https://anarchy.website/2021/06/01/gravdev1.html",
-          "https://anarchy.website/2021/06/01/gravdev2.html",
-          "https://anarchy.website/2021/06/03/gravdev3.html",
-          "https://anarchy.website/2021/06/06/gravdev4.html"
+          {
+            "title": "blog 1",
+            "url": "https://anarchy.website/2021/06/01/gravdev1.html"
+          },
+          {
+            "title": "2",
+            "url": "https://anarchy.website/2021/06/01/gravdev2.html"
+          },
+          {
+            "title": "3",
+            "url": "https://anarchy.website/2021/06/03/gravdev3.html"
+          },
+          {
+            "title": "4",
+            "url": "https://anarchy.website/2021/06/06/gravdev4.html"
+          }
         ],
         "tags": [
           "programming",
@@ -1875,8 +1912,8 @@
           "html",
           "css",
           "javascript",
-          "github_pages",
-          "writing"
+          "writing",
+          "github_pages"
         ]
       },
       "20": {
@@ -1888,7 +1925,7 @@
       "25": {
         "title": "ga sei-r proj 2 - xylem",
         "link": [
-          "https://proj-xylem.herokuapp.com/",
+          { "title": "heroku", "url": "https://proj-xylem.herokuapp.com/" },
           { "title": "github", "url": "https://github.com/una-ada/Xylem" }
         ],
         "tags": [
@@ -1900,8 +1937,7 @@
           "javascript",
           "expressjs",
           "ejs",
-          "scss",
-          "heroku"
+          "scss"
         ]
       },
       "27": {
@@ -1965,7 +2001,44 @@
       },
       "6": {
         "title": "amitypark - song for a chunibyo anarchist (i do not like the united states government very much)",
-        "link": "https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/track/5P9AGPfqHZDwAPLhNAY2jJ"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1592908957"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=2dXw3inH_E8"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/269436712"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/amitypark-33719101/albums/song-for-a-chunibyo-anarchist-i-149408097/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/songs/74360163?from=search"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/song?id=1891349571"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/xx526ysai30la"
+          }
+        ],
         "tags": ["writing", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "4035136281" },
         "note": "i wrote a draft of the lyrics 4 this, chloe edited them n performed the song, i also did the cover art!"
@@ -1973,17 +2046,10 @@
       "16": {
         "title": "ga sei-r proj 3 - tabby",
         "link": [
-          "https://tabi-tabby.herokuapp.com/",
+          { "title": "heroku", "url": "https://tabi-tabby.herokuapp.com/" },
           { "title": "github", "url": "https://github.com/una-ada/Tabby" }
         ],
-        "tags": [
-          "programming",
-          "git",
-          "python",
-          "django",
-          "postgresql",
-          "heroku"
-        ],
+        "tags": ["programming", "git", "python", "django", "postgresql"],
         "note": "this was the group project for the code camp i did, it had 2 b a django app :("
       },
       "22": {
@@ -2006,7 +2072,7 @@
       "16": {
         "title": "ga sei-r proj 4 - bopomo",
         "link": [
-          "https://bopomo.herokuapp.com/",
+          { "title": "heroku", "url": "https://bopomo.herokuapp.com/" },
           { "title": "github", "url": "https://github.com/una-ada/Bopomo" }
         ],
         "tags": [
@@ -2018,8 +2084,7 @@
           "javascript",
           "expressjs",
           "react",
-          "scss",
-          "heroku"
+          "scss"
         ],
         "note": "i didnt finish this project on time at all! i spent all my time on fixing back end stuff n rly want 2 come back 2 it eventually!!"
       },
@@ -2135,7 +2200,7 @@
       "17": {
         "title": "live online hackathon - go go grandparents",
         "link": [
-          "http://go-go-grandparents.vercel.app/",
+          { "title": "vercel", "url": "http://go-go-grandparents.vercel.app/" },
           { "title": "github", "url": "https://github.com/Go-Go-Grandparents" }
         ],
         "tags": [
@@ -2146,8 +2211,7 @@
           "javascript",
           "expressjs",
           "react",
-          "css",
-          "vercel"
+          "css"
         ]
       }
     }
@@ -2156,7 +2220,44 @@
     "3": {
       "7": {
         "title": "art for amitypark - suffocate",
-        "link": "https://amitypark.bandcamp.com/album/suffocate-single",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/suffocate-single"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/track/1WNXbJ02tbRj2LL46hiCOi"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1613134720"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=Ak66hjDsXGY"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/300960727"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/amitypark-33719101/songs/suffocate-161543889/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/albums/42063751"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/song?id=1926301473"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/kzyhg0up6qhwc"
+          }
+        ],
         "tags": ["design", "adobe_photoshop"],
         "media": { "type": "bandcamp", "src": "2725227738" }
       }
