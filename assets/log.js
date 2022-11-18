@@ -1,4 +1,7 @@
-const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
+const dummy = 0,
+  ALPHA = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
+  superScript = ['⁰', '¹', '²', '³', '⁴', '⁵', '⁶', '⁷', '⁸', '⁹'],
+  toSuper = n => [...n.toString()].map(i => superScript[i]).join(''),
   icons = {
     ableton_live: 'live.png',
     adobe_color: 'adobe_color.png',
@@ -129,7 +132,7 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                   dayEntries.forEach((v, k) => {
                     let entryDiv = newElement('div', '', {
                       id: `${year}.${monthPadded}.${dayPadded}${
-                        k == 0 ? '' : alpha[k]
+                        k == 0 ? '' : ALPHA[k]
                       }`,
                     });
                     i + j + k == 0
@@ -172,7 +175,7 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                     entryText.innerHTML += v.title;
                     v.note &&
                       notes.push(v.note) &&
-                      (entryText.innerHTML += `<a href="#${notes.length}"><sup title="${v.note}">${notes.length}</sup></a>`);
+                      (entryText.innerHTML += `<a href="#${notes.length}" title="${v.note}">${toSuper(notes.length)}</a>`);
                     Array.isArray(v.link) &&
                       (entryText.innerHTML +=
                         '. ' +
@@ -194,7 +197,7 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
                           .join(' '));
                     v.media &&
                       (entryText.innerHTML += ` [<a href="#${year}.${monthPadded}.${dayPadded}${
-                        k == 0 ? '' : alpha[k]
+                        k == 0 ? '' : ALPHA[k]
                       }" onclick=\'embed(this, ${JSON.stringify(
                         v.media
                       )} )'>embed</a>]`);
@@ -214,6 +217,6 @@ const alpha = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
     out.innerHTML += '<br>notes:<br>';
     for (var i = 0; i < notes.length; )
       out.innerHTML +=
-        '<div id="' + ++i + '"><sup>' + i + '</sup> ' + notes[i - 1] + '</div>';
+        '<div id="' + ++i + '">' + toSuper(i) + ' ' + notes[i - 1] + '</div>';
     return out;
   };
