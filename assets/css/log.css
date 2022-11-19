@@ -43,20 +43,21 @@ html {
   color: var(--color-lotus);
   font-size: 12px;
 }
-img,
-video {
-  max-width: calc(100% - 1rem);
-}
-sup {
-  vertical-align: top;
-  position: relative;
-  top: -0.3em;
-}
 t:before {
   content: '\a0\a0';
 }
 t:after {
   content: '\a0\a0';
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  padding: 0 6px 0 0;
+  vertical-align: top;
+}
+tr:hover {
+  background: var(--color-royal);
 }
 
 /*----- classes --------------------------------------------------------------*/
@@ -86,4 +87,14 @@ span.title {
   display: inline-block;
   vertical-align: text-top;
   width: calc(100vw - 16em);
+}
+td.date {
+  text-align: right;
+}
+td.tags {
+  max-width: 9em;
+  padding: 0;
+}
+td.title {
+  max-width: 48em;
 }

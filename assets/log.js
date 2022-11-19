@@ -69,7 +69,7 @@ const dummy = 0,
   ruby: 'lang/ruby.png',
   scss: 'lang/sass.png',
   typescript: 'lang/ts.png',
-  yaml: "lang/yml.png",
+  yaml: 'lang/yml.png',
   // Libraries
   angular: 'lib/angular.png',
   graphql: 'lib/graphql.png',
@@ -119,46 +119,40 @@ const dummy = 0,
     return el;
   }),
   (render = (links, container) => {
-    // Loop over the top level of the links (years)
     let [out, notes] = Object.keys(links)
       .reverse()
       .reduce(
         ([acc, notes], year) => {
-          let yearDiv = newElement('div', '', { id: year });
-          // Loop over months in a year
           Object.keys(links[year])
             .reverse()
-            .reduce((yearContainer, month, i) => {
-              let monthPadded = zeroPad(month, 2),
-                monthDiv = newElement('div', '', {
-                  id: `${year}.${monthPadded}`,
-                });
-              // Loop over days in a month
+            .forEach((month, i) => {
+              let monthPadded = zeroPad(month, 2);
               Object.keys(links[year][month])
                 .reverse()
-                .reduce((monthContainer, day, j) => {
+                .forEach((day, j) => {
                   let dayPadded = zeroPad(day, 2),
                     dayEntries = links[year][month][day];
                   Array.isArray(dayEntries) || (dayEntries = [dayEntries]);
                   dayEntries.forEach((v, k) => {
-                    let entryDiv = newElement('div', '', {
-                      id: `${year}.${monthPadded}.${dayPadded}${
-                        k == 0 ? '' : ALPHA[k]
-                      }`,
-                    });
-                    i + j + k == 0
-                      ? entryDiv.appendChild(
-                          newElement('a', year, { href: `#${year}` })
-                        ) && (entryDiv.innerHTML += '.')
-                      : (entryDiv.innerHTML += '<t></t>&nbsp;');
-                    j + k == 0
-                      ? entryDiv.appendChild(
-                          newElement('a', monthPadded, {
-                            href: `#${year}.${monthPadded}`,
-                          })
-                        ) && (entryDiv.innerHTML += '.')
-                      : (entryDiv.innerHTML += '&nbsp;'.repeat(3));
-                    entryDiv.appendChild(
+                    let entryDiv = newElement('tr', '', {
+                        id: `${year}.${monthPadded}.${dayPadded}${
+                          k == 0 ? '' : ALPHA[k]
+                        }`,
+                      }),
+                      entryDate = newElement('td', '', { class: 'date' });
+                    i + j + k == 0 &&
+                      entryDate.appendChild(
+                        newElement('a', year, { href: `#${year}` })
+                      ) &&
+                      (entryDate.innerHTML += '.');
+                    j + k == 0 &&
+                      entryDate.appendChild(
+                        newElement('a', monthPadded, {
+                          href: `#${year}.${monthPadded}`,
+                        })
+                      ) &&
+                      (entryDate.innerHTML += '.');
+                    entryDate.appendChild(
                       newElement('a', k == 0 ? dayPadded : '..', {
                         href: Array.isArray(v.link)
                           ? v.link[0].url || v.link[0]
@@ -166,15 +160,14 @@ const dummy = 0,
                         target: '_blank',
                       })
                     );
-                    entryDiv.innerHTML += ': ';
-                    let entryText = newElement('span', '', {
-                      class: 'title',
-                    });
+                    entryDate.innerHTML += ': ';
+                    entryDiv.appendChild(entryDate);
+                    let entryTags = newElement('td', '', { class: 'tags' });
                     v.tags &&
-                      v.tags.forEach(
+                      (Array.isArray(v.tags) ? v.tags : [v.tags]).forEach(
                         tag =>
                           icons[tag] &&
-                          entryText.appendChild(
+                          entryTags.appendChild(
                             newElement('img', '', {
                               class: 'tag-icon',
                               src: iconsPath + icons[tag],
@@ -183,53 +176,59 @@ const dummy = 0,
                             })
                           )
                       );
-                    entryText.innerHTML += v.title;
+                    entryDiv.appendChild(entryTags);
+                    let entryText = newElement('td', v.title, {
+                      class: 'title',
+                    });
                     v.note &&
                       notes.push(v.note) &&
                       (entryText.innerHTML += `<a href="#${
                         notes.length
                       }" title="${v.note}">${SUPERSCRIPT(notes.length)}</a>`);
-                    Array.isArray(v.link) &&
-                      (entryText.innerHTML +=
-                        '. ' +
-                        v.link
-                          .map((l, i) =>
-                            i > 0 || l.title
-                              ? `<a href="${l.title ? l.url : l}" ${
-                                  l.title &&
-                                  `title="${l.title.replace('_', ' ')}"`
-                                } target="_blank">${
-                                  l.title && icons[l.title]
-                                    ? `<img src="${
-                                        iconsPath + icons[l.title]
-                                      }" alt="${l.title}" class="link-icon" />`
-                                    : l.title || i + 1
-                                }</a>`
-                              : ''
-                          )
-                          .join(' '));
                     v.media &&
                       (entryText.innerHTML += ` [<a href="#${year}.${monthPadded}.${dayPadded}${
                         k == 0 ? '' : ALPHA[k]
                       }" onclick=\'embed(this, ${JSON.stringify(
                         v.media
                       )} )'>embed</a>]`);
+                    acc.appendChild(entryDiv);
                     entryDiv.appendChild(entryText);
-                    monthContainer.appendChild(entryDiv);
+                    let entryLinks = newElement('td', '', { class: 'links' });
+                    Array.isArray(v.link) &&
+                      (entryLinks.innerHTML += v.link
+                        .map((l, m) =>
+                          m > 0 || l.title
+                            ? `<a href="${l.title ? l.url : l}" ${
+                                l.title &&
+                                `title="${l.title.replace('_', ' ')}"`
+                              } target="_blank">${
+                                l.title && icons[l.title]
+                                  ? `<img src="${
+                                      iconsPath + icons[l.title]
+                                    }" alt="${l.title}" class="link-icon" />`
+                                  : l.title || m + 1
+                              }</a>`
+                            : ''
+                        )
+                        .join(' '));
+                    entryDiv.appendChild(entryLinks);
                   });
-                  return monthContainer;
-                }, monthDiv);
-              yearContainer.appendChild(monthDiv);
-              return yearContainer;
-            }, yearDiv);
-          acc.appendChild(yearDiv);
+                });
+            });
           return [acc, notes];
         },
         [container, []]
       );
-    out.innerHTML += '<br>notes:<br>';
+    let noteBlock = newElement('div');
+    noteBlock.innerHTML += '<br>notes:<br>';
     for (var i = 0; i < notes.length; )
-      out.innerHTML +=
-        '<div id="' + ++i + '">' + SUPERSCRIPT(i) + ' ' + notes[i - 1] + '</div>';
-    return out;
+      noteBlock.innerHTML +=
+        '<div id="' +
+        ++i +
+        '">' +
+        SUPERSCRIPT(i) +
+        ' ' +
+        notes[i - 1] +
+        '</div>';
+    document.body.appendChild(noteBlock);
   });

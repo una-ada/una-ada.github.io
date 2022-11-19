@@ -4,14 +4,21 @@
       "5": {
         "title": "wip <a href=\"https://minecraft.net/en-us/\">minecraft</a> mod",
         "link": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod",
-        "tags": ["programming", "minecraft", "java"]
+        "tags": ["programming", "eclipse", "java", "minecraft"]
       }
     },
     "8": {
       "30": {
         "title": "minecraft language packs",
         "link": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs",
-        "tags": ["minecraft"]
+        "tags": [
+          "programming",
+          "design",
+          "notepad++",
+          "paint.net",
+          "config",
+          "minecraft"
+        ]
       }
     }
   },
@@ -20,7 +27,17 @@
       "11": {
         "title": "renamed social network project to \"graphene\"",
         "link": "https://github.com/pheneco/Graphene",
-        "tags": ["programming", "apache", "mysql", "php", "css", "javascript"]
+        "tags": [
+          "programming",
+          "apache",
+          "mysql",
+          "css",
+          "html",
+          "javascript",
+          "json",
+          "php",
+          "sql"
+        ]
       }
     },
     "10": {
@@ -2399,6 +2416,14 @@
         "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "3723950676" },
         "note": "this was supposed 2 b a 4 part ep but w/o touching it for several months i j released the finished part"
+      }
+    },
+    "10": {
+      "08": {
+        "title": "una theme icons",
+        "link": "https://github.com/una-ada/una-theme-icons",
+        "tags": ["design", "asset", "git", "vscode"],
+        "note": "these r the icons used on this page, made 4 this page n now as their own repo!"
       }
     },
     "11": {
