@@ -9,18 +9,22 @@
 
 /*----- variables ------------------------------------------------------------*/
 :root {
-  --color-black: #111111;
+  --color-wines: #703d41;
+  --color-candy: #bf3041; /* UPDATED! */
   --color-lotus: #e0c1bf;
+  --color-shoyu: #46302a; /* NEW! */
   --color-baked: #d68067;
-  --color-reeds: #dccca1;
   --color-olive: #2e2d1c;
   --color-chive: #555f47;
+  --color-reeds: #dccca1;
+  --color-grass: #264d39; /* NEW! */
   --color-foamy: #729a89;
-  --color-coral: #145c62;
   --color-royal: #0e2d31;
+  --color-coral: #145c62;
+  --color-plush: #a2c9cb; /* NEW! */
+  --color-black: #111111;
   --color-berry: #2a2858;
-  --color-candy: #de2136;
-  --color-wines: #703d41;
+  --color-lilac: #b2adcc; /* NEW! */
 }
 
 /*----- elements -------------------------------------------------------------*/
