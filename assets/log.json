@@ -11,13 +11,7 @@
       "30": {
         "title": "minecraft language packs",
         "link": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs",
-        "tags": [
-          "asset",
-          "notepad++",
-          "paint.net",
-          "config",
-          "minecraft"
-        ]
+        "tags": ["asset", "notepad++", "paint.net", "config", "minecraft"]
       }
     }
   },
@@ -210,22 +204,41 @@
         }
       ],
       "18": {
-        "title": "student voice vol 102 iss 1",
-        "link": "https://uwrfvoice.com/pdf/2015-09-18-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
-      "25": {
-        "title": "student voice vol 102 iss 2",
-        "link": "https://uwrfvoice.com/pdf/2015-09-25-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
+        "title": "student voice vol 102 iss 1-25",
+        "link": [
+          {
+            "title": "1",
+            "url": "https://uwrfvoice.com/pdf/2015-09-18-StudentVoice.pdf"
+          },
+          "https://uwrfvoice.com/pdf/2015-09-25-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-02-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-09-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-16-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-23-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-30-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-11-06-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-11-13-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-11-20-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-12-04-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-12-11-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-05-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-12-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-19-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-26-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-03-04-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-03-11-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-03-25-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-01-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-08-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-15-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-22-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-29-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-05-06-StudentVoice.pdf"
+        ],
+        "tags": ["design", "adobe_illustrator", "adobe_indesign"]
       }
     },
     "10": {
-      "2": {
-        "title": "student voice vol 102 iss 3",
-        "link": "https://uwrfvoice.com/pdf/2015-10-02-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
       "5": {
         "title": "graphene w0.4.0-s0.2.0",
         "link": "https://github.com/pheneco/Graphene",
@@ -255,11 +268,6 @@
         "title": "\"uwrf society of physics students visits 3m\"",
         "link": "https://anarchy.website/2015/10/08/sps-at-3m.html",
         "tags": ["writing", "microsoft_word"]
-      },
-      "9": {
-        "title": "student voice vol 102 iss 4",
-        "link": "https://uwrfvoice.com/pdf/2015-10-09-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       },
       "13": {
         "title": "graphene w0.4.1-s0.3.0 (now w git repo!)",
@@ -299,11 +307,6 @@
       },
       "16": [
         {
-          "title": "student voice vol 102 iss 5",
-          "link": "https://uwrfvoice.com/pdf/2015-10-16-StudentVoice.pdf",
-          "tags": ["design", "adobe_indesign"]
-        },
-        {
           "title": "\"blocks\" tumblr theme",
           "link": "https://github.com/una-ada/Blocks",
           "tags": ["programming", "tumblr", "git", "html", "github"]
@@ -330,11 +333,6 @@
           "github",
           "name.com"
         ]
-      },
-      "23": {
-        "title": "student voice vol 102 iss 6",
-        "link": "https://uwrfvoice.com/pdf/2015-10-23-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       },
       "26": {
         "title": "graphene w0.4.3-s0.4.0 - more user interactivity",
@@ -363,11 +361,6 @@
         "title": "\"office chair provides fun, convenience, comfort\"",
         "link": "https://anarchy.website/2015/10/29/chair.html",
         "tags": ["writing", "microsoft_word"]
-      },
-      "30": {
-        "title": "student voice vol 102 iss 7",
-        "link": "https://uwrfvoice.com/pdf/2015-10-30-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       }
     },
     "11": {
@@ -375,16 +368,6 @@
         "title": "sps and chem demons host annual haunted lab",
         "link": "https://anarchy.website/2015/11/01/haunted-lab.html",
         "tags": ["writing", "microsoft_word"]
-      },
-      "6": {
-        "title": "student voice vol 102 iss 8",
-        "link": "https://uwrfvoice.com/pdf/2015-11-06-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
-      "13": {
-        "title": "student voice vol 102 iss 9",
-        "link": "https://uwrfvoice.com/pdf/2015-11-13-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       },
       "14": {
         "title": "_g.popup v0.1.0",
@@ -406,11 +389,6 @@
         "link": "https://anarchy.website/2015/11/18/einstein.html",
         "tags": ["writing", "microsoft_word"],
         "note": "except for the fact that the editor changed an independent clause to a sentence, the first letter of each sentence spells \"fuck the english department\""
-      },
-      "20": {
-        "title": "student voice vol 102 iss 10",
-        "link": "https://uwrfvoice.com/pdf/2015-11-20-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       }
     },
     "12": {
@@ -419,20 +397,10 @@
         "link": "https://anarchy.website/2015/12/02/pencils.html",
         "tags": ["writing", "microsoft_word"]
       },
-      "4": {
-        "title": "student voice vol 102 iss 11",
-        "link": "https://uwrfvoice.com/pdf/2015-12-04-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
       "5": {
         "title": "\"pipe\" tumblr theme",
         "link": "https://github.com/una-ada/Pipe",
         "tags": ["programming", "git", "notepad++", "html", "tumblr"]
-      },
-      "11": {
-        "title": "student voice vol 102 iss 12",
-        "link": "https://uwrfvoice.com/pdf/2015-12-11-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       },
       "24": {
         "title": "\"using pens for math is not bad\"",
@@ -459,55 +427,25 @@
     "2": {
       "5": [
         {
-          "title": "student voice vol 102 iss 13",
-          "link": "https://uwrfvoice.com/pdf/2016-02-05-StudentVoice.pdf",
-          "tags": ["design", "adobe_indesign"]
-        },
-        {
           "title": "\"the feasibility of spontaneously morphing into an octopus\"",
           "link": "https://anarchy.website/2016/02/05/octopodes.html",
           "tags": ["writing", "microsoft_word"]
         }
       ],
-      "12": {
-        "title": "student voice vol 102 iss 14 w logo i designed",
-        "link": "https://uwrfvoice.com/pdf/2016-02-12-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign", "adobe_illustrator"]
-      },
-      "19": {
-        "title": "student voice vol 102 iss 15",
-        "link": "https://uwrfvoice.com/pdf/2016-02-19-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
       "25": {
         "title": "repo for oop",
         "link": "https://github.com/Trewbot/CS235",
         "tags": ["programming", "eclipse", "git", "java", "github"]
-      },
-      "26": {
-        "title": "student voice vol 102 iss 16",
-        "link": "https://uwrfvoice.com/pdf/2016-02-26-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       }
     },
     "3": {
       "4": [
-        {
-          "title": "student voice vol 102 iss 17",
-          "link": "https://uwrfvoice.com/pdf/2016-03-04-StudentVoice.pdf",
-          "tags": ["design", "adobe_indesign"]
-        },
         {
           "title": "translucent square image painter",
           "link": "https://github.com/una-ada/TSIP",
           "tags": ["programming", "eclipse", "git", "java", "github"]
         }
       ],
-      "11": {
-        "title": "student voice vol 102 iss 18",
-        "link": "https://uwrfvoice.com/pdf/2016-03-11-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
       "12": {
         "title": "\"calculating heat efficiency on campus using infrared imaging\"",
         "link": [
@@ -521,11 +459,6 @@
         "link": "https://github.com/pheneco/crop",
         "tags": ["programming", "notepad++", "git", "javascript", "github"]
       },
-      "25": {
-        "title": "student voice vol 102 iss 19",
-        "link": "https://uwrfvoice.com/pdf/2016-03-25-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
       "27": {
         "title": "pop tarts (god)",
         "link": "https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot",
@@ -538,48 +471,16 @@
       }
     },
     "4": {
-      "1": {
-        "title": "student voice vol 102 iss 20",
-        "link": "https://uwrfvoice.com/pdf/2016-04-01-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
       "2": {
         "title": "mpe ii assignment 6",
         "link": "https://xn--z7x.dev/js/phys/poisson",
         "tags": ["programming", "atom", "javascript"]
-      },
-      "8": {
-        "title": "student voice vol 102 iss 21",
-        "link": "https://uwrfvoice.com/pdf/2016-04-08-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       },
       "9": {
         "title": "uwrf high power rocket team (\"orca\") test launch",
         "link": "https://www.youtube.com/watch?v=5KFDJpNjc_E",
         "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "5KFDJpNjc_E" }
-      },
-      "15": {
-        "title": "student voice vol 102 iss 22",
-        "link": "https://uwrfvoice.com/pdf/2016-04-15-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
-      "22": {
-        "title": "student voice vol 102 iss 23",
-        "link": "https://uwrfvoice.com/pdf/2016-04-22-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      },
-      "29": {
-        "title": "student voice vol 102 iss 24",
-        "link": "https://uwrfvoice.com/pdf/2016-04-29-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
-      }
-    },
-    "5": {
-      "6": {
-        "title": "student voice vol 102 iss 25",
-        "link": "https://uwrfvoice.com/pdf/2016-05-06-StudentVoice.pdf",
-        "tags": ["design", "adobe_indesign"]
       }
     },
     "9": {
@@ -1958,12 +1859,7 @@
         {
           "title": "una nota v2021.04.18",
           "link": "https://github.com/una-ada/una-nota/tree/main/old/2021.04.18",
-          "tags": [
-            "font",
-            "adobe_photoshop",
-            "adobe_illustrator",
-            "fontforge"
-          ]
+          "tags": ["font", "adobe_photoshop", "adobe_illustrator", "fontforge"]
         }
       ],
       "20": {
@@ -2685,13 +2581,7 @@
       "08": {
         "title": "una theme icons",
         "link": "https://github.com/una-ada/una-theme-icons",
-        "tags": [
-          "asset",
-          "aseprite",
-          "git",
-          "visual_studio_code",
-          "github"
-        ],
+        "tags": ["asset", "aseprite", "git", "visual_studio_code", "github"],
         "note": "these r the icons used on this page, made 4 this page n now as their own repo!"
       }
     },
