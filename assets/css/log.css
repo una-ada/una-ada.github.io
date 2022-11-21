@@ -38,6 +38,7 @@ a:visited {
 body {
   background: var(--color-black);
   line-height: 1.5;
+  min-width: 60em;
   font-family: 'cozette', monospace;
 }
 div:target {
@@ -95,10 +96,15 @@ span.title {
 td.date {
   text-align: right;
 }
+td.links {
+  width: 18em;
+  padding: 0;
+}
 td.tags {
-  max-width: 9em;
+  width: 9em;
   padding: 0;
 }
 td.title {
   max-width: 48em;
+  min-width: 27em;
 }
