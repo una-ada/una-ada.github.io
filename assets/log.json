@@ -16,24 +16,6 @@
     }
   },
   "2013": {
-    "9": {
-      "11": {
-        "title": "renamed social network project to \"graphene\"",
-        "link": "https://github.com/pheneco/Graphene",
-        "tags": [
-          "programming",
-          "apache",
-          "mysql",
-          "notepad++",
-          "css",
-          "html",
-          "javascript",
-          "php",
-          "sql",
-          "name.com"
-        ]
-      }
-    },
     "10": {
       "3": {
         "title": "<a href=\"https://myanimelist.net\">myanimelist</a> account",
@@ -45,43 +27,26 @@
   "2014": {
     "7": {
       "8": {
-        "title": "_g.crop split from graphene",
+        "title": "_g.crop - image cropping tool",
         "link": "https://github.com/pheneco/crop",
         "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "9": {
       "20": {
-        "title": "_g.color split from graphene",
+        "title": "_g.color - color picker",
         "link": "https://github.com/pheneco/color",
         "tags": ["programming", "notepad++", "javascript"]
       },
       "30": {
-        "title": "_g.player split from graphene",
+        "title": "_g.player - html5 video controls",
         "link": "https://github.com/pheneco/player",
         "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "10": {
-      "3": {
-        "title": "graphene v0.3.0",
-        "link": "https://github.com/pheneco/Graphene",
-        "tags": [
-          "programming",
-          "notepad++",
-          "paint.net",
-          "apache",
-          "mysql",
-          "css",
-          "html",
-          "javascript",
-          "php",
-          "sql",
-          "name.com"
-        ]
-      },
       "21": {
-        "title": "_g.menu split from graphene",
+        "title": "_g.menu - context menu",
         "link": "https://github.com/pheneco/menu",
         "tags": ["programming", "notepad++", "javascript"]
       }
@@ -92,97 +57,14 @@
         "link": "https://github.com/una-ada/",
         "tags": ["account", "github"]
       }
-    },
-    "12": {
-      "26": [
-        {
-          "title": "_g.menu v0.1.0 - add link ops n oop refactor",
-          "link": "https://github.com/pheneco/menu",
-          "tags": ["programming", "notepad++", "javascript", "github"]
-        },
-        {
-          "title": "_g.menu v0.2.0 - dynamically load styling",
-          "link": "https://github.com/pheneco/menu",
-          "tags": ["programming", "notepad++", "javascript", "github"]
-        }
-      ],
-      "29": {
-        "title": "_g.menu v0.3.0 - fix positioning, scroll, n errors",
-        "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "notepad++", "javascript", "github"]
-      }
     }
   },
   "2015": {
-    "1": {
-      "7": {
-        "title": "graphene v0.3.3-s0.1.0 - started converting to node!",
-        "link": "https://github.com/pheneco/Graphene",
-        "tags": [
-          "programming",
-          "adobe_illustrator",
-          "apache",
-          "mongodb",
-          "nodejs",
-          "notepad++",
-          "mysql",
-          "css",
-          "html",
-          "javascript",
-          "json",
-          "php",
-          "sql",
-          "expressjs",
-          "github",
-          "name.com"
-        ]
-      },
-      "15": {
-        "title": "_g.menu v0.4.2 - add text ops n more link ops",
-        "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "notepad++", "javascript", "github"]
-      }
-    },
     "3": {
       "23": {
-        "title": "_g.popup split from graphene",
+        "title": "_g.popup - js modal library",
         "link": "https://github.com/pheneco/modal",
         "tags": ["programming", "notepad++", "javascript", "github"]
-      }
-    },
-    "6": {
-      "20": [
-        {
-          "title": "_g.color v0.1.0 - reformatted",
-          "link": "https://github.com/pheneco/color",
-          "tags": ["programming", "notepad++", "javascript", "github"]
-        },
-        {
-          "title": "_g.player v0.1.0 - update styling",
-          "link": "https://github.com/pheneco/player",
-          "tags": ["programming", "notepad++", "javascript", "github"]
-        }
-      ]
-    },
-    "8": {
-      "30": {
-        "title": "graphene v0.3.3-s0.2.0",
-        "link": "https://github.com/pheneco/Graphene",
-        "tags": [
-          "programming",
-          "adobe_illustrator",
-          "mongodb",
-          "nodejs",
-          "notepad++",
-          "css",
-          "html",
-          "javascript",
-          "json",
-          "expressjs",
-          "sharp",
-          "github",
-          "name.com"
-        ]
       }
     },
     "9": {
@@ -239,26 +121,6 @@
       }
     },
     "10": {
-      "5": {
-        "title": "graphene w0.4.0-s0.2.0",
-        "link": "https://github.com/pheneco/Graphene",
-        "tags": [
-          "programming",
-          "adobe_illustrator",
-          "mongodb",
-          "nodejs",
-          "notepad++",
-          "css",
-          "handlebars",
-          "html",
-          "javascript",
-          "json",
-          "expressjs",
-          "sharp",
-          "github",
-          "name.com"
-        ]
-      },
       "6": {
         "title": "\"the road\"",
         "link": "https://anarchy.website/2015/10/06/the-road.html",
@@ -270,7 +132,7 @@
         "tags": ["writing", "microsoft_word"]
       },
       "13": {
-        "title": "graphene w0.4.1-s0.3.0 (now w git repo!)",
+        "title": "repo for graphene",
         "link": "https://github.com/una-ada/Graphene",
         "tags": [
           "programming",
@@ -285,6 +147,7 @@
           "html",
           "javascript",
           "json",
+          "pug",
           "expressjs",
           "sharp",
           "github",
@@ -305,37 +168,13 @@
         "link": "https://github.com/una-ada/CS162",
         "tags": ["programming", "git", "java", "github"]
       },
-      "16": [
-        {
-          "title": "\"blocks\" tumblr theme",
-          "link": "https://github.com/una-ada/Blocks",
-          "tags": ["programming", "tumblr", "git", "html", "github"]
-        }
-      ],
-      "22": {
-        "title": "graphene w0.4.2-s0.3.1 - settings, hovercards, n feeds",
-        "link": "https://github.com/una-ada/Graphene",
-        "tags": [
-          "programming",
-          "adobe_illustrator",
-          "git",
-          "mongodb",
-          "nodejs",
-          "notepad++",
-          "batch",
-          "css",
-          "handlebars",
-          "html",
-          "javascript",
-          "json",
-          "expressjs",
-          "sharp",
-          "github",
-          "name.com"
-        ]
+      "16": {
+        "title": "\"blocks\" tumblr theme",
+        "link": "https://github.com/una-ada/Blocks",
+        "tags": ["programming", "tumblr", "git", "html", "github"]
       },
-      "26": {
-        "title": "graphene w0.4.3-s0.4.0 - more user interactivity",
+      "25": {
+        "title": "graphene w0.4.3-s0.4.0",
         "link": "https://github.com/pheneco/Graphene/releases/tag/w0.4.3-s0.4.0",
         "tags": [
           "programming",
@@ -454,11 +293,6 @@
         ],
         "tags": ["writing", "adobe_indesign", "microsoft_word", "origin_lab"]
       },
-      "17": {
-        "title": "_g.crop v0.1.0 - refactoring n debug",
-        "link": "https://github.com/pheneco/crop",
-        "tags": ["programming", "notepad++", "git", "javascript", "github"]
-      },
       "27": {
         "title": "pop tarts (god)",
         "link": "https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot",
@@ -543,21 +377,6 @@
           "github"
         ],
         "note": "this was a test project using meteor and angular to test a new stack for graphene"
-      },
-      "21": {
-        "title": "_g.menu v0.4.3 - add video ops, fixes, n styles",
-        "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "atom", "git", "javascript", "github"]
-      },
-      "22": {
-        "title": "_g.popup v0.2.0 - add \"tutorial\" framework",
-        "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "atom", "git", "javascript", "github"]
-      },
-      "27": {
-        "title": "_g.popup renamed 2 _g.modal",
-        "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "atom", "git", "javascript", "github"]
       }
     },
     "2": {
@@ -593,7 +412,7 @@
       "10": {
         "title": "@tinyhatebot - cbdq twitter bot",
         "link": [
-          "https://twitter.com/tinyhatebot",
+          { "title": "twitter", "url": "https://twitter.com/tinyhatebot" },
           {
             "title": "src",
             "url": "https://cheapbotsdonequick.com/source/tinyhatebot"
@@ -624,11 +443,6 @@
           "github_pages",
           "name.com"
         ]
-      },
-      "25": {
-        "title": "added js to log.html",
-        "link": "#",
-        "tags": ["programming", "atom", "javascript"]
       }
     },
     "4": {
@@ -655,13 +469,6 @@
         "title": "harp.js",
         "link": "https://xn--z7x.dev/js/2/harp",
         "tags": ["programming", "atom", "javascript", "traer.js"]
-      }
-    },
-    "6": {
-      "29": {
-        "title": "_g.modal v0.3.0 - add events n promises",
-        "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "atom", "git", "javascript", "github"]
       }
     },
     "7": {
@@ -817,6 +624,9 @@
           "scss",
           "yaml",
           "google_fonts",
+          "mathjax",
+          "prism.js",
+          "twemoji",
           "github",
           "github_pages",
           "name.com"
@@ -2228,24 +2038,6 @@
     "9": {
       "2": [
         {
-          "title": "moved personal site to xn--z7x.dev",
-          "link": [
-            "https://xn--z7x.dev",
-            {
-              "title": "github",
-              "url": "https://github.com/una-ada/una-ada.github.io/commit/dc857c0"
-            }
-          ],
-          "tags": [
-            "programming",
-            "git",
-            "cloudflare",
-            "github",
-            "github_pages",
-            "google_domains"
-          ]
-        },
-        {
           "title": "kramdown sort footnotes (ksf)",
           "link": [
             {
@@ -2282,7 +2074,10 @@
             "title": "bandcamp",
             "url": "https://jisa2.bandcamp.com/album/this-is-a-cry-for-help-split-w-amitypark"
           },
-          "https://amitypark.bandcamp.com/album/this-is-a-cry-for-help-split-w",
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/this-is-a-cry-for-help-split-w"
+          },
           {
             "title": "distrokid",
             "url": "https://distrokid.com/hyperfollow/amityparkx/this-is-a-cry-for-help"
@@ -2416,20 +2211,6 @@
           "google_docs",
           "visual_studio_code",
           "markdown"
-        ]
-      }
-    },
-    "5": {
-      "24": {
-        "title": "refactored n restyled log.html - it's back!",
-        "link": "#",
-        "tags": [
-          "programming",
-          "visual_studio_code",
-          "css",
-          "html",
-          "javascript",
-          "json"
         ]
       }
     },
