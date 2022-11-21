@@ -12,8 +12,7 @@
         "title": "minecraft language packs",
         "link": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs",
         "tags": [
-          "programming",
-          "design",
+          "asset",
           "notepad++",
           "paint.net",
           "config",
@@ -31,12 +30,13 @@
           "programming",
           "apache",
           "mysql",
+          "notepad++",
           "css",
           "html",
           "javascript",
-          "json",
           "php",
-          "sql"
+          "sql",
+          "name.com"
         ]
       }
     },
@@ -53,31 +53,43 @@
       "8": {
         "title": "_g.crop split from graphene",
         "link": "https://github.com/pheneco/crop",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "9": {
       "20": {
         "title": "_g.color split from graphene",
         "link": "https://github.com/pheneco/color",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "notepad++", "javascript"]
       },
       "30": {
         "title": "_g.player split from graphene",
         "link": "https://github.com/pheneco/player",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "10": {
       "3": {
         "title": "graphene v0.3.0",
         "link": "https://github.com/pheneco/Graphene",
-        "tags": ["programming", "apache", "mysql", "php", "css", "javascript"]
+        "tags": [
+          "programming",
+          "notepad++",
+          "paint.net",
+          "apache",
+          "mysql",
+          "css",
+          "html",
+          "javascript",
+          "php",
+          "sql",
+          "name.com"
+        ]
       },
       "21": {
         "title": "_g.menu split from graphene",
         "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "11": {
@@ -92,18 +104,18 @@
         {
           "title": "_g.menu v0.1.0 - add link ops n oop refactor",
           "link": "https://github.com/pheneco/menu",
-          "tags": ["programming", "javascript"]
+          "tags": ["programming", "notepad++", "javascript", "github"]
         },
         {
           "title": "_g.menu v0.2.0 - dynamically load styling",
           "link": "https://github.com/pheneco/menu",
-          "tags": ["programming", "javascript"]
+          "tags": ["programming", "notepad++", "javascript", "github"]
         }
       ],
       "29": {
         "title": "_g.menu v0.3.0 - fix positioning, scroll, n errors",
         "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "notepad++", "javascript", "github"]
       }
     }
   },
@@ -114,26 +126,34 @@
         "link": "https://github.com/pheneco/Graphene",
         "tags": [
           "programming",
+          "adobe_illustrator",
           "apache",
-          "nodejs",
-          "mysql",
           "mongodb",
-          "php",
+          "nodejs",
+          "notepad++",
+          "mysql",
+          "css",
+          "html",
           "javascript",
-          "css"
+          "json",
+          "php",
+          "sql",
+          "expressjs",
+          "github",
+          "name.com"
         ]
       },
       "15": {
         "title": "_g.menu v0.4.2 - add text ops n more link ops",
         "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "notepad++", "javascript", "github"]
       }
     },
     "3": {
       "23": {
         "title": "_g.popup split from graphene",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "notepad++", "javascript", "github"]
       }
     },
     "6": {
@@ -141,12 +161,12 @@
         {
           "title": "_g.color v0.1.0 - reformatted",
           "link": "https://github.com/pheneco/color",
-          "tags": ["programming", "javascript"]
+          "tags": ["programming", "notepad++", "javascript", "github"]
         },
         {
           "title": "_g.player v0.1.0 - update styling",
           "link": "https://github.com/pheneco/player",
-          "tags": ["programming", "javascript"]
+          "tags": ["programming", "notepad++", "javascript", "github"]
         }
       ]
     },
@@ -156,11 +176,18 @@
         "link": "https://github.com/pheneco/Graphene",
         "tags": [
           "programming",
+          "adobe_illustrator",
           "mongodb",
           "nodejs",
-          "expressjs",
+          "notepad++",
+          "css",
+          "html",
           "javascript",
-          "css"
+          "json",
+          "expressjs",
+          "sharp",
+          "github",
+          "name.com"
         ]
       }
     },
@@ -168,18 +195,18 @@
       "4": {
         "title": "\"sunny day\"",
         "link": "https://anarchy.website/2015/09/04/sunny-day.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
       },
       "14": [
         {
           "title": "\"nihilism on aisle 7\"",
           "link": "https://anarchy.website/2015/09/14/aisle-7.html",
-          "tags": ["writing"]
+          "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
         },
         {
           "title": "\"awkward smile day\"",
           "link": "https://anarchy.website/2015/09/14/awkward-smile-day.html",
-          "tags": ["writing"]
+          "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
         }
       ],
       "18": {
@@ -204,22 +231,30 @@
         "link": "https://github.com/pheneco/Graphene",
         "tags": [
           "programming",
+          "adobe_illustrator",
           "mongodb",
           "nodejs",
+          "notepad++",
+          "css",
+          "handlebars",
+          "html",
           "javascript",
+          "json",
           "expressjs",
-          "handlebars"
+          "sharp",
+          "github",
+          "name.com"
         ]
       },
       "6": {
         "title": "\"the road\"",
         "link": "https://anarchy.website/2015/10/06/the-road.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
       },
       "8": {
         "title": "\"uwrf society of physics students visits 3m\"",
         "link": "https://anarchy.website/2015/10/08/sps-at-3m.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word"]
       },
       "9": {
         "title": "student voice vol 102 iss 4",
@@ -231,12 +266,21 @@
         "link": "https://github.com/una-ada/Graphene",
         "tags": [
           "programming",
+          "adobe_illustrator",
           "git",
           "mongodb",
           "nodejs",
+          "notepad++",
+          "batch",
+          "css",
+          "handlebars",
+          "html",
           "javascript",
+          "json",
           "expressjs",
-          "handlebars"
+          "sharp",
+          "github",
+          "name.com"
         ],
         "note": "the version added to github was after i rewrote the project from php and mysql to node.js and mongodb"
       },
@@ -246,12 +290,12 @@
           "https://www.tumblr.com/theme/40029",
           { "title": "github", "url": "https://github.com/una-ada/About" }
         ],
-        "tags": ["programming", "tumblr", "git", "html"]
+        "tags": ["programming", "git", "notepad++", "html", "tumblr", "github"]
       },
       "15": {
         "title": "repo for programming ii",
         "link": "https://github.com/una-ada/CS162",
-        "tags": ["programming", "git", "java"]
+        "tags": ["programming", "git", "java", "github"]
       },
       "16": [
         {
@@ -262,7 +306,7 @@
         {
           "title": "\"blocks\" tumblr theme",
           "link": "https://github.com/una-ada/Blocks",
-          "tags": ["programming", "tumblr", "git", "html"]
+          "tags": ["programming", "tumblr", "git", "html", "github"]
         }
       ],
       "22": {
@@ -270,12 +314,21 @@
         "link": "https://github.com/una-ada/Graphene",
         "tags": [
           "programming",
+          "adobe_illustrator",
           "git",
           "mongodb",
           "nodejs",
+          "notepad++",
+          "batch",
+          "css",
+          "handlebars",
+          "html",
           "javascript",
+          "json",
           "expressjs",
-          "handlebars"
+          "sharp",
+          "github",
+          "name.com"
         ]
       },
       "23": {
@@ -288,19 +341,28 @@
         "link": "https://github.com/pheneco/Graphene/releases/tag/w0.4.3-s0.4.0",
         "tags": [
           "programming",
+          "adobe_illustrator",
           "git",
           "mongodb",
           "nodejs",
-          "javascript",
-          "expressjs",
+          "notepad++",
+          "batch",
+          "css",
           "handlebars",
-          "pug"
+          "html",
+          "javascript",
+          "json",
+          "pug",
+          "expressjs",
+          "sharp",
+          "github",
+          "name.com"
         ]
       },
       "29": {
         "title": "\"office chair provides fun, convenience, comfort\"",
         "link": "https://anarchy.website/2015/10/29/chair.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word"]
       },
       "30": {
         "title": "student voice vol 102 iss 7",
@@ -312,7 +374,7 @@
       "1": {
         "title": "sps and chem demons host annual haunted lab",
         "link": "https://anarchy.website/2015/11/01/haunted-lab.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word"]
       },
       "6": {
         "title": "student voice vol 102 iss 8",
@@ -327,22 +389,22 @@
       "14": {
         "title": "_g.popup v0.1.0",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "git", "javascript"]
+        "tags": ["programming", "git", "notepad++", "javascript", "github"]
       },
       "15": {
         "title": "\"orca\" national high power rocketry competition project proposal",
         "link": "https://anarchy.website/2015/11/15/orca-proposal.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word"]
       },
       "16": {
         "title": "calculating heat efficiency on campus using infrared imaging project proposal",
         "link": "https://anarchy.website/2015/11/16/cheocuii-proposal.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word"]
       },
       "18": {
         "title": "\"general relativity's astronomical effects\"",
         "link": "https://anarchy.website/2015/11/18/einstein.html",
-        "tags": ["writing"],
+        "tags": ["writing", "microsoft_word"],
         "note": "except for the fact that the editor changed an independent clause to a sentence, the first letter of each sentence spells \"fuck the english department\""
       },
       "20": {
@@ -355,7 +417,7 @@
       "2": {
         "title": "\"a students guide to pencils\"",
         "link": "https://anarchy.website/2015/12/02/pencils.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word"]
       },
       "4": {
         "title": "student voice vol 102 iss 11",
@@ -365,7 +427,7 @@
       "5": {
         "title": "\"pipe\" tumblr theme",
         "link": "https://github.com/una-ada/Pipe",
-        "tags": ["programming", "tumblr", "git", "html"]
+        "tags": ["programming", "git", "notepad++", "html", "tumblr"]
       },
       "11": {
         "title": "student voice vol 102 iss 12",
@@ -375,7 +437,7 @@
       "24": {
         "title": "\"using pens for math is not bad\"",
         "link": "https://anarchy.website/2015/12/24/pens.html",
-        "tags": ["writing"]
+        "tags": ["writing", "microsoft_word", "wordpress"]
       }
     }
   },
@@ -385,12 +447,12 @@
         {
           "title": "ghost with hat that jumps and stuff",
           "link": "https://scratch.mit.edu/projects/95254858/",
-          "tags": ["programming", "scratch"]
+          "tags": ["programming", "microsoft_paint", "scratch"]
         },
         {
           "title": "ghost with hat that jumps and stuff ii",
           "link": "https://scratch.mit.edu/projects/95255016/",
-          "tags": ["programming", "scratch"]
+          "tags": ["programming", "microsoft_paint", "scratch"]
         }
       ]
     },
@@ -404,7 +466,7 @@
         {
           "title": "\"the feasibility of spontaneously morphing into an octopus\"",
           "link": "https://anarchy.website/2016/02/05/octopodes.html",
-          "tags": ["writing"]
+          "tags": ["writing", "microsoft_word"]
         }
       ],
       "12": {
@@ -420,7 +482,7 @@
       "25": {
         "title": "repo for oop",
         "link": "https://github.com/Trewbot/CS235",
-        "tags": ["programming", "git", "java"]
+        "tags": ["programming", "eclipse", "git", "java", "github"]
       },
       "26": {
         "title": "student voice vol 102 iss 16",
@@ -438,7 +500,7 @@
         {
           "title": "translucent square image painter",
           "link": "https://github.com/una-ada/TSIP",
-          "tags": ["programming", "git", "java"]
+          "tags": ["programming", "eclipse", "git", "java", "github"]
         }
       ],
       "11": {
@@ -448,13 +510,16 @@
       },
       "12": {
         "title": "\"calculating heat efficiency on campus using infrared imaging\"",
-        "link": "https://anarchy.website/2016/03/12/cheocuii.html",
-        "tags": ["writing"]
+        "link": [
+          "https://anarchy.website/2016/03/12/cheocuii.html",
+          "http://www.academia.edu/23586068/Calculating_Heat_Efficiency_on_Campus_Using_Infrared_Imaging"
+        ],
+        "tags": ["writing", "adobe_indesign", "microsoft_word", "origin_lab"]
       },
       "17": {
         "title": "_g.crop v0.1.0 - refactoring n debug",
         "link": "https://github.com/pheneco/crop",
-        "tags": ["programming", "git", "javascript"]
+        "tags": ["programming", "notepad++", "git", "javascript", "github"]
       },
       "25": {
         "title": "student voice vol 102 iss 19",
@@ -464,7 +529,7 @@
       "27": {
         "title": "pop tarts (god)",
         "link": "https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot",
-        "tags": ["writing", "music"],
+        "tags": ["writing", "music", "google_docs"],
         "media": {
           "type": "bandcamp",
           "src": "706583445",
@@ -481,7 +546,7 @@
       "2": {
         "title": "mpe ii assignment 6",
         "link": "https://xn--z7x.dev/js/phys/poisson",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "atom", "javascript"]
       },
       "8": {
         "title": "student voice vol 102 iss 21",
@@ -491,7 +556,7 @@
       "9": {
         "title": "uwrf high power rocket team (\"orca\") test launch",
         "link": "https://www.youtube.com/watch?v=5KFDJpNjc_E",
-        "tags": ["video", "adobe_premierepro"],
+        "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "5KFDJpNjc_E" }
       },
       "15": {
@@ -503,11 +568,6 @@
         "title": "student voice vol 102 iss 23",
         "link": "https://uwrfvoice.com/pdf/2016-04-22-StudentVoice.pdf",
         "tags": ["design", "adobe_indesign"]
-      },
-      "28": {
-        "title": "calculating heat efficiency on campus using infrared imaging",
-        "link": "http://www.academia.edu/23586068/Calculating_Heat_Efficiency_on_Campus_Using_Infrared_Imaging",
-        "tags": ["writing"]
       },
       "29": {
         "title": "student voice vol 102 iss 24",
@@ -526,7 +586,7 @@
       "21": {
         "title": "bottle flipping video",
         "link": "https://www.youtube.com/watch?v=Ok0x_oQQVXE",
-        "tags": ["video", "adobe_premierepro"],
+        "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "Ok0x_oQQVXE" }
       }
     },
@@ -534,12 +594,12 @@
       "17": {
         "title": "\"building an acousto-optical deflector\"",
         "link": "https://anarchy.website/2016/10/17/acousto-optical.html",
-        "tags": ["writing"]
+        "tags": ["writing", "adobe_illustrator", "microsoft_word"]
       },
       "26": {
         "title": "uwrf acm promo [draft 2]",
         "link": "https://www.youtube.com/watch?v=zW3a33f_MY8",
-        "tags": ["video", "adobe_premierepro"],
+        "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "zW3a33f_MY8" }
       }
     },
@@ -547,13 +607,13 @@
       "6": {
         "title": "the san fran vlog",
         "link": "https://www.youtube.com/watch?v=S3-9qgIFDA0",
-        "tags": ["video", "adobe_premierepro"],
+        "tags": ["video", "adobe_illustrator", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "S3-9qgIFDA0" }
       },
       "19": {
-        "title": "\"playing and fps on a drawing tablet\"",
+        "title": "\"playing an fps on a drawing tablet\"",
         "link": "https://anarchy.website/2016/11/19/fps-drawing-tablet.html",
-        "tags": ["writing"]
+        "tags": ["writing", "google_docs"]
       }
     }
   },
@@ -562,7 +622,7 @@
       "3": {
         "title": "et2 reading",
         "link": "https://www.youtube.com/playlist?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C",
-        "tags": ["podcast"],
+        "tags": ["podcast", "audacity", "adobe_premiere_pro"],
         "media": {
           "type": "youtube",
           "src": "qFMGggjO2QY?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C"
@@ -576,49 +636,50 @@
           "git",
           "nodejs",
           "meteor",
-          "typescript",
           "angular",
-          "css"
+          "css",
+          "typescript",
+          "github"
         ],
         "note": "this was a test project using meteor and angular to test a new stack for graphene"
       },
       "21": {
         "title": "_g.menu v0.4.3 - add video ops, fixes, n styles",
         "link": "https://github.com/pheneco/menu",
-        "tags": ["programming", "git", "javascript"]
+        "tags": ["programming", "atom", "git", "javascript", "github"]
       },
       "22": {
         "title": "_g.popup v0.2.0 - add \"tutorial\" framework",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "git", "javascript"]
+        "tags": ["programming", "atom", "git", "javascript", "github"]
       },
       "27": {
-        "title": "_g.popup renamed _g.modal",
+        "title": "_g.popup renamed 2 _g.modal",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "git", "javascript"]
+        "tags": ["programming", "atom", "git", "javascript", "github"]
       }
     },
     "2": {
       "5": {
         "title": "scene 7 of opposite jurassic park",
         "link": "https://www.docdroid.net/tm2dnu4",
-        "tags": ["writing"]
+        "tags": ["writing", "google_docs"]
       },
       "19": {
         "title": "gravity playground",
         "link": "https://xn--z7x.dev/js/phys/gravity",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "atom", "javascript", "google_fonts"]
       },
       "23": [
         {
           "title": "a collection of .txt files from feb 22 and 23, 2017",
           "link": "https://anarchy.website/2017/02/23/txt.html",
-          "tags": ["writing"]
+          "tags": ["writing", "atom"]
         },
         {
           "title": "y r u crying.txt",
           "link": "https://anarchy.website/2017/02/23/y-r-u-crying.html",
-          "tags": ["writing"]
+          "tags": ["writing", "atom"]
         }
       ]
     },
@@ -626,7 +687,7 @@
       "5": {
         "title": "scene 9 of muppets yakuza",
         "link": "https://www.docdroid.net/tm2dnu4",
-        "tags": ["writing"]
+        "tags": ["writing", "google_docs"]
       },
       "10": {
         "title": "@tinyhatebot - cbdq twitter bot",
@@ -637,41 +698,43 @@
             "url": "https://cheapbotsdonequick.com/source/tinyhatebot"
           }
         ],
-        "tags": ["programming", "twitter", "json"]
+        "tags": ["programming", "atom", "cbdq", "json", "twitter"]
       },
       "16": {
         "title": "let it snow.js",
         "link": "https://xn--z7x.dev/js/3/snow",
-        "tags": ["programming", "javascript", "threejs"]
+        "tags": ["programming", "atom", "javascript", "threejs"]
       },
       "18": {
         "title": "revolution.js",
         "link": "https://xn--z7x.dev/js/3/waves",
-        "tags": ["programming", "javascript", "threejs"]
+        "tags": ["programming", "atom", "javascript", "threejs"]
       },
       "19": {
         "title": "moved personal site to <a href=\"https://github.io\">github pages</a>",
         "link": "https://xn--z7x.dev/",
         "tags": [
           "programming",
+          "atom",
           "git",
-          "html",
           "css",
+          "html",
           "markdown",
-          "github_pages"
+          "github_pages",
+          "name.com"
         ]
       },
       "25": {
         "title": "added js to log.html",
         "link": "#",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "atom", "javascript"]
       }
     },
     "4": {
       "5": {
         "title": "scene 10 of sonic's last adventure",
         "link": "https://www.docdroid.net/Nphxbj2",
-        "tags": ["writing"]
+        "tags": ["writing", "google_docs"]
       }
     },
     "5": {
@@ -679,25 +742,25 @@
         {
           "title": "scene 10 of thelma and louise 2: army of darkness",
           "link": "https://www.docdroid.net/sVlHBLX",
-          "tags": ["writing"]
+          "tags": ["writing", "google_docs"]
         },
         {
           "title": "corn.html",
           "link": "https://xn--z7x.dev/corn/",
-          "tags": ["writing", "html"]
+          "tags": ["writing", "adobe_photoshop", "atom", "css", "html"]
         }
       ],
       "9": {
         "title": "harp.js",
         "link": "https://xn--z7x.dev/js/2/harp",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "atom", "javascript", "traer.js"]
       }
     },
     "6": {
       "29": {
         "title": "_g.modal v0.3.0 - add events n promises",
         "link": "https://github.com/pheneco/modal",
-        "tags": ["programming", "git", "javascript"]
+        "tags": ["programming", "atom", "git", "javascript", "github"]
       }
     },
     "7": {
@@ -712,19 +775,21 @@
         ],
         "tags": [
           "programming",
-          "design",
+          "adobe_illustrator",
+          "atom",
           "git",
-          "html",
           "css",
+          "html",
           "javascript",
-          "github_pages"
+          "github_pages",
+          "name.com"
         ],
         "note": "this design was never finished, the animation lead into making my gravity toy tho! also the original url (phene.co) was changed bc i have no $!"
       },
       "22": {
         "title": "the chi town vlog",
         "link": "https://www.youtube.com/watch?v=l9d5AwhesoY",
-        "tags": ["video", "adobe_premierepro"],
+        "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "l9d5AwhesoY" }
       }
     },
@@ -732,12 +797,12 @@
       "29": {
         "title": "pvf design proposal",
         "link": "https://anarchy.website/2017/08/29/pvf-proposal.html",
-        "tags": ["writing", "design", "adobe_illustrator"]
+        "tags": ["design", "adobe_illustrator", "html", "markdown"]
       },
       "31": {
         "title": "\"praxis and the 'report from the real minority'\"",
         "link": "https://anarchy.website/2017/08/31/praxis-and-the-report.html",
-        "tags": ["writing"]
+        "tags": ["writing", "google_docs"]
       }
     },
     "9": {
@@ -752,19 +817,23 @@
         ],
         "tags": [
           "programming",
+          "adobe_illustrator",
+          "atom",
           "git",
+          "html",
           "jekyll",
-          "yaml",
           "liquid",
-          "design",
           "scss",
+          "yaml",
+          "google_fonts",
+          "github",
           "github_pages"
         ]
       },
       "24": {
         "title": "sinusoid.js",
         "link": "https://xn--z7x.dev/js/3/sinusoid",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "javascript", "threejs"]
       }
     },
     "10": {
@@ -786,7 +855,15 @@
           "https://xn--z7x.dev/sad/alone",
           { "title": "github", "url": "https://github.com/una-ada/sad" }
         ],
-        "tags": ["programming", "git", "javascript", "threejs", "github_pages"]
+        "tags": [
+          "programming",
+          "git",
+          "javascript",
+          "threejs",
+          "github",
+          "github_pages",
+          "name.com"
+        ]
       },
       "29": {
         "title": "sad - v1.0 \"aimless\"",
@@ -794,7 +871,15 @@
           "https://xn--z7x.dev/sad/aimless",
           { "title": "github", "url": "https://github.com/una-ada/sad" }
         ],
-        "tags": ["programming", "git", "javascript", "threejs", "github_pages"],
+        "tags": [
+          "programming",
+          "git",
+          "javascript",
+          "threejs",
+          "github",
+          "github_pages",
+          "name.com"
+        ],
         "note": "this was @ sad.moe, thus the original name was 'sad.moe' but i dont have the $ to keep that up so its just on my github pages site now"
       }
     }
@@ -810,7 +895,7 @@
             "url": "https://allthatisleft.github.io/issue/001.pdf"
           }
         ],
-        "tags": ["design", "adobe_indesign"]
+        "tags": ["design", "adobe_indesign", "adobe_photoshop"]
       },
       "24": {
         "title": "anarchy.website",
@@ -825,13 +910,15 @@
           "programming",
           "git",
           "jekyll",
-          "yaml",
+          "javascript",
           "liquid",
-          "design",
-          "scss",
-          "writing",
           "markdown",
-          "github_pages"
+          "scss",
+          "yaml",
+          "google_fonts",
+          "github",
+          "github_pages",
+          "name.com"
         ]
       }
     },
@@ -839,24 +926,24 @@
       "15": {
         "title": "\"fear and death\"",
         "link": "https://anarchy.website/2018/03/15/fear.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       },
       "20": {
         "title": "\"death isn't real and neither are you\"",
         "link": "https://anarchy.website/2018/03/20/death-isnt-real.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       }
     },
     "5": {
       "20": {
         "title": "poisson v.2",
         "link": "https://xn--z7x.dev/js/phys/poisson2",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "atom", "javascript"]
       },
       "21": {
         "title": "\"graphing a poisson distribution using canvas\"",
         "link": "https://anarchy.website/2018/05/21/poisson.html",
-        "tags": ["writing", "programming"]
+        "tags": ["writing", "programming", "atom", "markdown"]
       }
     },
     "7": {
@@ -888,17 +975,17 @@
             "url": "https://anarchy.website/2018/07/14/graphs.html"
           }
         ],
-        "tags": ["programming", "javascript", "writing"]
+        "tags": ["programming", "writing", "atom", "javascript", "markdown"]
       },
       "19": {
         "title": "\"ai isn't going to kill us\"",
         "link": "https://anarchy.website/2018/07/19/ai.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       },
       "26": {
         "title": "\"the windbreak forest lattice in hokkaido\"",
         "link": "https://anarchy.website/2018/07/26/windbreak-lattice.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       }
     },
     "8": {
@@ -906,18 +993,18 @@
         {
           "title": "pixel sort",
           "link": "https://xn--z7x.dev/js/2/frag-sort-1",
-          "tags": ["programming", "javascript"]
+          "tags": ["programming", "atom", "javascript"]
         },
         {
           "title": "pixel sort v.2",
           "link": "https://xn--z7x.dev/js/2/frag-sort-2",
-          "tags": ["programming", "javascript"]
+          "tags": ["programming", "atom", "javascript"]
         }
       ],
       "30": {
         "title": "\"does shoplifting 'hurt' workers?\"",
         "link": "https://anarchy.website/2018/08/30/shoplifting.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       }
     },
     "9": {
@@ -959,10 +1046,13 @@
         ],
         "tags": [
           "podcast",
+          "atom",
           "audacity",
-          "writing",
-          "design",
-          "adobe_illustrator"
+          "google_docs",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "markdown",
+          "anchor"
         ],
         "media": { "type": "anchor", "src": "Part-I-Shoplifting-e24qpj" }
       },
@@ -1002,7 +1092,15 @@
             "url": "https://anarchy.website/gthnglsnnrs/2/notes"
           }
         ],
-        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
         "media": { "type": "anchor", "src": "Part-II-Catalonia-e28v8l" }
       }
     },
@@ -1010,7 +1108,7 @@
       "6": {
         "title": "\"overreliance on connotation\"",
         "link": "https://anarchy.website/2018/10/06/connotation.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       }
     },
     "12": {
@@ -1056,10 +1154,12 @@
         ],
         "tags": [
           "podcast",
-          "writing",
-          "design",
           "adobe_photoshop",
-          "adobe_illustrator"
+          "adobe_illustrator",
+          "atom",
+          "google_docs",
+          "markdown",
+          "anchor"
         ],
         "media": { "type": "anchor", "src": "Part-III-Spiderman-3-e2nmr0" }
       }
@@ -1107,7 +1207,16 @@
             "url": "https://anarchy.website/gthnglsnnrs/4/notes"
           }
         ],
-        "tags": ["podcast"],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "audacity",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
         "media": { "type": "anchor", "src": "Part-IV-The-Paris-Commune-e2viul" }
       }
     },
@@ -1168,7 +1277,7 @@
             "url": "https://www.youtube.com/watch?v=gO7gaABHYBc"
           }
         ],
-        "tags": ["podcast"],
+        "tags": ["podcast", "audacity"],
         "media": { "type": "podbean", "src": "4kycv-af305a" },
         "note": "i didnt show up in this one til about 31:20"
       }
@@ -1275,7 +1384,16 @@
             "url": "https://anarchy.website/gthnglsnnrs/5/notes"
           }
         ],
-        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "audacity",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
         "media": { "type": "anchor", "src": "Part-V-Post-Scarcity-e4ef1p" }
       }
     },
@@ -1449,7 +1567,7 @@
             "url": "https://www.stitcher.com/show/neighbor-science/episode/511-turning-into-a-witch-is-a-voluntary-choice-65110117"
           }
         ],
-        "tags": ["podcast", "design", "adobe_illustrator", "adobe_photoshop"],
+        "tags": ["podcast", "adobe_illustrator", "adobe_photoshop"],
         "media": { "type": "podbean", "src": "wu2nr-c66a85" }
       }
     },
@@ -1457,7 +1575,7 @@
       "11": {
         "title": "\"anarchy.website ni furigana to chiikika\"",
         "link": "https://anarchy.website/2019/12/11/furigana.html",
-        "tags": ["writing", "programming", "html", "css"]
+        "tags": ["writing", "programming", "css", "html", "liquid", "markdown"]
       }
     }
   },
@@ -1527,7 +1645,16 @@
             "url": "https://anarchy.website/2020/07/11/fonts.html"
           }
         ],
-        "tags": ["font", "writing"]
+        "tags": [
+          "font",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "fontforge",
+          "git",
+          "markdown",
+          "github"
+        ]
       }
     },
     "8": {
@@ -1571,7 +1698,14 @@
             "url": "https://anarchy.website/gthnglsnnrs/6/notes"
           }
         ],
-        "tags": ["podcast", "design", "adobe_photoshop"],
+        "tags": [
+          "podcast",
+          "adobe_photoshop",
+          "atom",
+          "logic_pro",
+          "markdown",
+          "anchor"
+        ],
         "media": { "type": "anchor", "src": "Part-VI-A-Real-Podcast-ehud7n" }
       }
     },
@@ -1579,19 +1713,19 @@
       "26": {
         "title": "\"mumei no joshi\"",
         "link": "https://anarchy.website/2020/09/26/nameless.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       }
     },
     "10": {
       "2": {
         "title": "una script v2020.10.02 - fixes n added latin-1 supplement",
         "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.02",
-        "tags": ["font"]
+        "tags": ["font", "adobe_illustrator", "fontforge"]
       },
       "4": {
         "title": "una script v2020.10.04 - fix kern tables n thorn",
         "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.04",
-        "tags": ["font"]
+        "tags": ["font", "fontforge"]
       }
     },
     "12": {
@@ -1603,7 +1737,7 @@
             "url": "https://soundcloud.com/jisa_tsu/watashimou"
           }
         ],
-        "tags": ["music", "ableton_live"],
+        "tags": ["music", "ableton_live", "adobe_photoshop", "soundcloud"],
         "media": { "type": "soundcloud", "src": "941665492" }
       },
       "6": {
@@ -1614,7 +1748,7 @@
             "url": "https://soundcloud.com/jisa_tsu/tenjou"
           }
         ],
-        "tags": ["music", "ableton_live"],
+        "tags": ["music", "ableton_live", "adobe_photoshop", "soundcloud"],
         "media": { "type": "soundcloud", "src": "942827437" }
       },
       "18": {
@@ -1626,7 +1760,13 @@
           },
           { "title": "bandcamp", "url": "https://jisa2.bandcamp.com/track/-" }
         ],
-        "tags": ["music", "ableton_live", "design", "adobe_photoshop"],
+        "tags": [
+          "music",
+          "ableton_live",
+          "adobe_photoshop",
+          "bandcamp",
+          "soundcloud"
+        ],
         "media": { "type": "bandcamp-single", "src": "1683078004" }
       },
       "19": {
@@ -1676,7 +1816,13 @@
             "url": "https://jisa2.bandcamp.com/track/lullaby-for-eternity"
           }
         ],
-        "tags": ["music", "ableton_live", "design", "adobe_photoshop"],
+        "tags": [
+          "music",
+          "ableton_live",
+          "adobe_photoshop",
+          "bandcamp",
+          "soundcloud"
+        ],
         "media": { "type": "bandcamp-single", "src": "1616197059" }
       }
     },
@@ -1693,7 +1839,7 @@
             "url": "https://music.yandex.com/album/19208693/"
           }
         ],
-        "tags": ["music", "design", "adobe_photoshop"],
+        "tags": ["music", "adobe_photoshop", "bandcamp"],
         "note": "id embed a stream of this, but there isnt supposed 2 b a stream! buy 1 of the 5 limited release cassettes with j-cards designed by yrs truly <3"
       },
       "14": {
@@ -1752,7 +1898,7 @@
             "url": "https://www.youtube.com/watch?v=BVyHBkNzdNE"
           }
         ],
-        "tags": ["podcast"],
+        "tags": ["podcast", "logic_pro"],
         "media": { "type": "podbean", "src": "xxy3w-fd9300" }
       }
     },
@@ -1813,7 +1959,6 @@
           "title": "una nota v2021.04.18",
           "link": "https://github.com/una-ada/una-nota/tree/main/old/2021.04.18",
           "tags": [
-            "design",
             "font",
             "adobe_photoshop",
             "adobe_illustrator",
@@ -1824,7 +1969,7 @@
       "20": {
         "title": "una nota blog",
         "link": "https://anarchy.website/2021/04/20/una-nota.html",
-        "tags": ["writing"]
+        "tags": ["writing", "atom", "markdown"]
       },
       "27": {
         "title": "chloe &amp; una's tentacular experience vol. 1: alignment you! you!",
@@ -1855,7 +2000,15 @@
           },
           { "title": "notes", "url": "https://anarchy.website/cute/1/notes" }
         ],
-        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
         "media": {
           "type": "anchor",
           "src": "Volume-1-Alignment-You--You-evocvf"
@@ -1880,11 +2033,13 @@
           "https://anarchy.website/2021/05/31/una-mono.html"
         ],
         "tags": [
-          "design",
           "font",
+          "writing",
           "adobe_photoshop",
           "adobe_illustrator",
-          "fontforge"
+          "atom",
+          "fontforge",
+          "markdown"
         ]
       }
     },
@@ -1925,11 +2080,15 @@
         ],
         "tags": [
           "programming",
-          "git",
-          "html",
-          "css",
-          "javascript",
           "writing",
+          "git",
+          "trello",
+          "visual_studio_code",
+          "css",
+          "html",
+          "javascript",
+          "markdown",
+          "github",
           "github_pages"
         ]
       },
@@ -1948,13 +2107,18 @@
         "tags": [
           "programming",
           "adobe_xd",
+          "lucid_chart",
+          "trello",
           "git",
           "mongodb",
           "nodejs",
+          "visual_studio_code",
           "javascript",
-          "expressjs",
           "ejs",
-          "scss"
+          "scss",
+          "expressjs",
+          "github",
+          "heroku"
         ]
       },
       "27": {
@@ -1986,7 +2150,14 @@
           },
           { "title": "notes", "url": "https://anarchy.website/cute/2/notes" }
         ],
-        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "visual_studio_code",
+          "markdown",
+          "anchor"
+        ],
         "media": {
           "type": "anchor",
           "src": "Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
@@ -1998,7 +2169,14 @@
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           { "title": "github", "url": "https://github.com/una-ada/una-theme" }
         ],
-        "tags": ["design", "programming", "git", "vscode"]
+        "tags": [
+          "programming",
+          "git",
+          "visual_studio_code",
+          "json",
+          "github",
+          "vscode_marketplace"
+        ]
       },
       "30": {
         "title": "una's theme [vs code] v1.1.0 - now with icons",
@@ -2006,7 +2184,14 @@
           "https://marketplace.visualstudio.com/items?itemName=una.theme",
           { "title": "github", "url": "https://github.com/una-ada/una-theme" }
         ],
-        "tags": ["design", "programming", "git", "vscode"],
+        "tags": [
+          "programming",
+          "git",
+          "visual_studio_code",
+          "json",
+          "github",
+          "vscode_marketplace"
+        ],
         "note": "the icons r all 12px which is 2 small 4 vsc normally, but u can mod it. also! some of them r used in this page!"
       }
     },
@@ -2014,7 +2199,7 @@
       "5": {
         "title": "rewrote love.html code",
         "link": "https://xn--z7x.dev/love.html",
-        "tags": ["programming", "javascript"]
+        "tags": ["programming", "visual_studio_code", "javascript"]
       },
       "6": {
         "title": "amitypark - song for a chunibyo anarchist (i do not like the united states government very much)",
@@ -2066,7 +2251,20 @@
           { "title": "heroku", "url": "https://tabi-tabby.herokuapp.com/" },
           { "title": "github", "url": "https://github.com/una-ada/Tabby" }
         ],
-        "tags": ["programming", "git", "python", "django", "postgresql"],
+        "tags": [
+          "programming",
+          "git",
+          "lucid_chart",
+          "trello",
+          "postgresql",
+          "visual_studio_code",
+          "python",
+          "sql",
+          "django",
+          "aws",
+          "github",
+          "heroku"
+        ],
         "note": "this was the group project for the code camp i did, it had 2 b a django app :("
       },
       "22": {
@@ -2082,7 +2280,7 @@
             "url": "https://shop.xn--z7x.dev/listing/pink-census?product=658"
           }
         ],
-        "tags": ["design", "merchandise", "spring"]
+        "tags": ["merchandise", "adobe_photoshop", "spring"]
       }
     },
     "8": {
@@ -2096,12 +2294,18 @@
           "programming",
           "adobe_xd",
           "git",
+          "lucid_chart",
+          "trello",
           "mongodb",
           "nodejs",
+          "visual_studio_code",
           "javascript",
+          "scss",
           "expressjs",
           "react",
-          "scss"
+          "aws",
+          "github",
+          "heroku"
         ],
         "note": "i didnt finish this project on time at all! i spent all my time on fixing back end stuff n rly want 2 come back 2 it eventually!!"
       },
@@ -2114,7 +2318,18 @@
             "url": "https://github.com/una-ada/una-ada.github.io/compare/91b9e41...191d5f3"
           }
         ],
-        "tags": ["programming", "git", "jekyll", "design", "github_pages"],
+        "tags": [
+          "programming",
+          "adobe_photoshop",
+          "git",
+          "jekyll",
+          "visual_studio_code",
+          "css",
+          "html",
+          "cloudflare",
+          "github",
+          "github_pages"
+        ],
         "note": "this was j a quick portfolio 2 meet the reqs 4 the code camp, i wanted 2 replace it soon but... things take time lol"
       }
     },
@@ -2129,7 +2344,14 @@
               "url": "https://github.com/una-ada/una-ada.github.io/commit/dc857c0"
             }
           ],
-          "tags": ["programming", "google_domains", "github_pages"]
+          "tags": [
+            "programming",
+            "git",
+            "cloudflare",
+            "github",
+            "github_pages",
+            "google_domains"
+          ]
         },
         {
           "title": "kramdown sort footnotes (ksf)",
@@ -2140,7 +2362,15 @@
             },
             { "title": "github", "url": "https://github.com/una-ada/ksf" }
           ],
-          "tags": ["programming", "git", "nodejs", "javascript", "npm"]
+          "tags": [
+            "programming",
+            "git",
+            "visual_studio_code",
+            "nodejs",
+            "javascript",
+            "github",
+            "npm"
+          ]
         }
       ]
     },
@@ -2148,7 +2378,7 @@
       "6": {
         "title": "джіса2 - i gave up on my dreams again today",
         "link": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today",
-        "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
+        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
         "media": { "type": "bandcamp-single", "src": "3122118483" }
       }
     },
@@ -2210,7 +2440,7 @@
             "url": "https://music.yandex.com/album/19158516"
           }
         ],
-        "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
+        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
         "media": { "type": "bandcamp", "src": "2838847327" },
         "note": "this is a split ep w me n my gf. track 3 was written by her, then i remixed it, then she finished it... the cover art was done much the same way."
       },
@@ -2223,12 +2453,17 @@
         "tags": [
           "programming",
           "git",
+          "lucid_chart",
+          "trello",
           "mongodb",
           "nodejs",
+          "css",
           "javascript",
+          "aws",
           "expressjs",
           "react",
-          "css"
+          "github",
+          "vercel"
         ]
       }
     }
@@ -2283,14 +2518,27 @@
       "16": {
         "title": "\"how to be broken and never get better\"",
         "link": "https://anarchy.website/2022/04/16/broken.html",
-        "tags": ["writing", "design", "adobe_photoshop"]
+        "tags": [
+          "writing",
+          "adobe_photoshop",
+          "google_docs",
+          "visual_studio_code",
+          "markdown"
+        ]
       }
     },
     "5": {
       "24": {
         "title": "refactored n restyled log.html - it's back!",
         "link": "#",
-        "tags": ["programming", "html", "css", "javascript", "json"]
+        "tags": [
+          "programming",
+          "visual_studio_code",
+          "css",
+          "html",
+          "javascript",
+          "json"
+        ]
       }
     },
     "6": {
@@ -2306,9 +2554,11 @@
         "tags": [
           "programming",
           "git",
-          "webpack",
+          "visual_studio_code",
           "typescript",
+          "webpack",
           "threejs",
+          "github",
           "github_pages"
         ]
       },
@@ -2337,7 +2587,14 @@
           },
           { "title": "notes", "url": "https://anarchy.website/cute/3/notes" }
         ],
-        "tags": ["podcast", "writing", "design", "adobe_illustrator"],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "google_docs",
+          "visual_studio_code",
+          "markdown"
+        ],
         "media": {
           "type": "anchor",
           "src": "Volume-3-The-Pollinic-Girls-Attack-e1jr5g0"
@@ -2349,13 +2606,13 @@
         {
           "title": "una's theme: ocean breeze color theme",
           "link": "https://color.adobe.com/Ocean-Breeze-color-theme-20394941/",
-          "tags": ["design", "asset", "adobe_color"],
+          "tags": ["asset", "adobe_color"],
           "note": "5 cool tones from my palette (adobe color only supports 5 color themes, i chose 10/12 colors to split btwn cool n warm)"
         },
         {
           "title": "una's theme: night lights color theme",
           "link": "https://color.adobe.com/Night-Lights-color-theme-20394921/",
-          "tags": ["design", "asset", "adobe_color"],
+          "tags": ["asset", "adobe_color"],
           "note": "5 warm tones from my palette (see note on the other theme)"
         }
       ]
@@ -2413,7 +2670,13 @@
             "url": "https://www.qobuz.com/us-en/album/-/s7gvnpzdiydra"
           }
         ],
-        "tags": ["music", "logic_pro", "design", "adobe_photoshop"],
+        "tags": [
+          "music",
+          "logic_pro",
+          "adobe_photoshop",
+          "bandcamp",
+          "distrokid"
+        ],
         "media": { "type": "bandcamp-single", "src": "3723950676" },
         "note": "this was supposed 2 b a 4 part ep but w/o touching it for several months i j released the finished part"
       }
@@ -2422,7 +2685,13 @@
       "08": {
         "title": "una theme icons",
         "link": "https://github.com/una-ada/una-theme-icons",
-        "tags": ["design", "asset", "git", "vscode"],
+        "tags": [
+          "asset",
+          "aseprite",
+          "git",
+          "visual_studio_code",
+          "github"
+        ],
         "note": "these r the icons used on this page, made 4 this page n now as their own repo!"
       }
     },
@@ -2430,7 +2699,7 @@
       "08": {
         "title": "\"library classification systems &amp; some critiques thereof\"",
         "link": "https://anarchy.website/2022/11/08/classification-systems",
-        "tags": ["writing"]
+        "tags": ["writing", "visual_studio_code", "markdown"]
       }
     }
   }
