@@ -15,15 +15,6 @@
       }
     }
   },
-  "2013": {
-    "10": {
-      "3": {
-        "title": "<a href=\"https://myanimelist.net\">myanimelist</a> account",
-        "link": "https://myanimelist.net/profile/unasareyou",
-        "tags": ["account", "myanimelist"]
-      }
-    }
-  },
   "2014": {
     "7": {
       "8": {
@@ -49,13 +40,6 @@
         "title": "_g.menu - context menu",
         "link": "https://github.com/pheneco/menu",
         "tags": ["programming", "notepad++", "javascript"]
-      }
-    },
-    "11": {
-      "22": {
-        "title": "<a href=\"https://github.com\">github</a> account",
-        "link": "https://github.com/una-ada/",
-        "tags": ["account", "github"]
       }
     }
   },
@@ -86,7 +70,7 @@
         }
       ],
       "18": {
-        "title": "student voice vol 102 iss 1-25",
+        "title": "front page editor for student voice vol 102",
         "link": [
           {
             "title": "1",
@@ -1346,7 +1330,7 @@
       "11": {
         "title": "una script v2020.07.11",
         "link": [
-          "https://github.com/una-ada/una-script",
+          { "title": "github", "url": "https://github.com/una-ada/una-script" },
           {
             "title": "blog",
             "url": "https://anarchy.website/2020/07/11/fonts.html"
@@ -1731,8 +1715,11 @@
       "31": {
         "title": "una mono v2021.05.31",
         "link": [
-          "https://github.com/una-ada/una-mono",
-          "https://anarchy.website/2021/05/31/una-mono.html"
+          { "title": "github", "url": "https://github.com/una-ada/una-mono" },
+          {
+            "title": "blog",
+            "url": "https://anarchy.website/2021/05/31/una-mono.html"
+          }
         ],
         "tags": [
           "font",
@@ -1764,7 +1751,7 @@
           "https://xn--z7x.dev/gravity/",
           { "title": "github", "url": "https://github.com/una-ada/gravity" },
           {
-            "title": "blog 1",
+            "title": "blog",
             "url": "https://anarchy.website/2021/06/01/gravdev1.html"
           },
           {
