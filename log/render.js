@@ -1,3 +1,6 @@
+fetch('icons.json')
+        .then(response => response.json())
+        .then(json => [icons, iconsPath] = json);
 const dummy = 0,
   ALPHA = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
   SUPERSCRIPT = n =>
