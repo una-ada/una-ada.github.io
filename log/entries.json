@@ -1,0 +1,2360 @@
+{
+  "2012": {
+    "5": {
+      "5": {
+        "title": "wip <a href=\"https://minecraft.net/en-us/\">minecraft</a> mod",
+        "link": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod",
+        "tags": ["programming", "eclipse", "java", "minecraft"]
+      }
+    },
+    "8": {
+      "30": {
+        "title": "minecraft language packs",
+        "link": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs",
+        "tags": ["asset", "notepad++", "paint.net", "config", "minecraft"]
+      }
+    }
+  },
+  "2014": {
+    "7": {
+      "8": {
+        "title": "_g.crop - image cropping tool",
+        "link": "https://github.com/pheneco/crop",
+        "tags": ["programming", "notepad++", "javascript"]
+      }
+    },
+    "9": {
+      "20": {
+        "title": "_g.color - color picker",
+        "link": "https://github.com/pheneco/color",
+        "tags": ["programming", "notepad++", "javascript"]
+      },
+      "30": {
+        "title": "_g.player - html5 video controls",
+        "link": "https://github.com/pheneco/player",
+        "tags": ["programming", "notepad++", "javascript"]
+      }
+    },
+    "10": {
+      "21": {
+        "title": "_g.menu - context menu",
+        "link": "https://github.com/pheneco/menu",
+        "tags": ["programming", "notepad++", "javascript"]
+      }
+    }
+  },
+  "2015": {
+    "3": {
+      "23": {
+        "title": "_g.popup - js modal library",
+        "link": "https://github.com/pheneco/modal",
+        "tags": ["programming", "notepad++", "javascript", "github"]
+      }
+    },
+    "9": {
+      "4": {
+        "title": "\"sunny day\"",
+        "link": "https://anarchy.website/2015/09/04/sunny-day.html",
+        "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
+      },
+      "14": [
+        {
+          "title": "\"nihilism on aisle 7\"",
+          "link": "https://anarchy.website/2015/09/14/aisle-7.html",
+          "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
+        },
+        {
+          "title": "\"awkward smile day\"",
+          "link": "https://anarchy.website/2015/09/14/awkward-smile-day.html",
+          "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
+        }
+      ],
+      "18": {
+        "title": "front page editor for student voice vol 102",
+        "link": [
+          {
+            "title": "1",
+            "url": "https://uwrfvoice.com/pdf/2015-09-18-StudentVoice.pdf"
+          },
+          "https://uwrfvoice.com/pdf/2015-09-25-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-02-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-09-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-16-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-23-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-10-30-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-11-06-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-11-13-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-11-20-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-12-04-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2015-12-11-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-05-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-12-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-19-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-02-26-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-03-04-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-03-11-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-03-25-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-01-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-08-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-15-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-22-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-04-29-StudentVoice.pdf",
+          "https://uwrfvoice.com/pdf/2016-05-06-StudentVoice.pdf"
+        ],
+        "tags": ["design", "adobe_illustrator", "adobe_indesign"]
+      }
+    },
+    "10": {
+      "6": {
+        "title": "\"the road\"",
+        "link": "https://anarchy.website/2015/10/06/the-road.html",
+        "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
+      },
+      "8": {
+        "title": "\"uwrf society of physics students visits 3m\"",
+        "link": "https://anarchy.website/2015/10/08/sps-at-3m.html",
+        "tags": ["writing", "microsoft_word"]
+      },
+      "13": {
+        "title": "repo for graphene",
+        "link": "https://github.com/una-ada/Graphene",
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "git",
+          "mongodb",
+          "nodejs",
+          "notepad++",
+          "batch",
+          "css",
+          "handlebars",
+          "html",
+          "javascript",
+          "json",
+          "pug",
+          "expressjs",
+          "sharp",
+          "github",
+          "name.com"
+        ],
+        "note": "the version added to github was after i rewrote the project from php and mysql to node.js and mongodb"
+      },
+      "14": {
+        "title": "\"about\" tumblr theme",
+        "link": [
+          "https://www.tumblr.com/theme/40029",
+          { "title": "github", "url": "https://github.com/una-ada/About" }
+        ],
+        "tags": ["programming", "git", "notepad++", "html", "tumblr", "github"]
+      },
+      "15": {
+        "title": "repo for programming ii",
+        "link": "https://github.com/una-ada/CS162",
+        "tags": ["programming", "git", "java", "github"]
+      },
+      "16": {
+        "title": "\"blocks\" tumblr theme",
+        "link": "https://github.com/una-ada/Blocks",
+        "tags": ["programming", "tumblr", "git", "html", "github"]
+      },
+      "25": {
+        "title": "graphene w0.4.3-s0.4.0",
+        "link": "https://github.com/pheneco/Graphene/releases/tag/w0.4.3-s0.4.0",
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "git",
+          "mongodb",
+          "nodejs",
+          "notepad++",
+          "batch",
+          "css",
+          "handlebars",
+          "html",
+          "javascript",
+          "json",
+          "pug",
+          "expressjs",
+          "sharp",
+          "github",
+          "name.com"
+        ]
+      },
+      "29": {
+        "title": "\"office chair provides fun, convenience, comfort\"",
+        "link": "https://anarchy.website/2015/10/29/chair.html",
+        "tags": ["writing", "microsoft_word"]
+      }
+    },
+    "11": {
+      "1": {
+        "title": "sps and chem demons host annual haunted lab",
+        "link": "https://anarchy.website/2015/11/01/haunted-lab.html",
+        "tags": ["writing", "microsoft_word"]
+      },
+      "14": {
+        "title": "_g.popup v0.1.0",
+        "link": "https://github.com/pheneco/modal",
+        "tags": ["programming", "git", "notepad++", "javascript", "github"]
+      },
+      "15": {
+        "title": "\"orca\" national high power rocketry competition project proposal",
+        "link": "https://anarchy.website/2015/11/15/orca-proposal.html",
+        "tags": ["writing", "microsoft_word"]
+      },
+      "16": {
+        "title": "calculating heat efficiency on campus using infrared imaging project proposal",
+        "link": "https://anarchy.website/2015/11/16/cheocuii-proposal.html",
+        "tags": ["writing", "microsoft_word"]
+      },
+      "18": {
+        "title": "\"general relativity's astronomical effects\"",
+        "link": "https://anarchy.website/2015/11/18/einstein.html",
+        "tags": ["writing", "microsoft_word"],
+        "note": "except for the fact that the editor changed an independent clause to a sentence, the first letter of each sentence spells \"fuck the english department\""
+      }
+    },
+    "12": {
+      "2": {
+        "title": "\"a students guide to pencils\"",
+        "link": "https://anarchy.website/2015/12/02/pencils.html",
+        "tags": ["writing", "microsoft_word"]
+      },
+      "5": {
+        "title": "\"pipe\" tumblr theme",
+        "link": "https://github.com/una-ada/Pipe",
+        "tags": ["programming", "git", "notepad++", "html", "tumblr"]
+      },
+      "24": {
+        "title": "\"using pens for math is not bad\"",
+        "link": "https://anarchy.website/2015/12/24/pens.html",
+        "tags": ["writing", "microsoft_word", "wordpress"]
+      }
+    }
+  },
+  "2016": {
+    "1": {
+      "24": [
+        {
+          "title": "ghost with hat that jumps and stuff",
+          "link": "https://scratch.mit.edu/projects/95254858/",
+          "tags": ["programming", "microsoft_paint", "scratch"]
+        },
+        {
+          "title": "ghost with hat that jumps and stuff ii",
+          "link": "https://scratch.mit.edu/projects/95255016/",
+          "tags": ["programming", "microsoft_paint", "scratch"]
+        }
+      ]
+    },
+    "2": {
+      "5": [
+        {
+          "title": "\"the feasibility of spontaneously morphing into an octopus\"",
+          "link": "https://anarchy.website/2016/02/05/octopodes.html",
+          "tags": ["writing", "microsoft_word"]
+        }
+      ],
+      "25": {
+        "title": "repo for oop",
+        "link": "https://github.com/Trewbot/CS235",
+        "tags": ["programming", "eclipse", "git", "java", "github"]
+      }
+    },
+    "3": {
+      "4": [
+        {
+          "title": "translucent square image painter",
+          "link": "https://github.com/una-ada/TSIP",
+          "tags": ["programming", "eclipse", "git", "java", "github"]
+        }
+      ],
+      "12": {
+        "title": "\"calculating heat efficiency on campus using infrared imaging\"",
+        "link": [
+          "https://anarchy.website/2016/03/12/cheocuii.html",
+          "http://www.academia.edu/23586068/Calculating_Heat_Efficiency_on_Campus_Using_Infrared_Imaging"
+        ],
+        "tags": ["writing", "adobe_indesign", "microsoft_word", "origin_lab"]
+      },
+      "27": {
+        "title": "pop tarts (god)",
+        "link": "https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot",
+        "tags": ["writing", "music", "google_docs"],
+        "media": {
+          "type": "bandcamp",
+          "src": "706583445",
+          "track": "1379676702"
+        }
+      }
+    },
+    "4": {
+      "2": {
+        "title": "mpe ii assignment 6",
+        "link": "https://xn--z7x.dev/js/phys/poisson",
+        "tags": ["programming", "atom", "javascript"]
+      },
+      "9": {
+        "title": "uwrf high power rocket team (\"orca\") test launch",
+        "link": "https://www.youtube.com/watch?v=5KFDJpNjc_E",
+        "tags": ["video", "adobe_premiere_pro"],
+        "media": { "type": "youtube", "src": "5KFDJpNjc_E" }
+      }
+    },
+    "9": {
+      "21": {
+        "title": "bottle flipping video",
+        "link": "https://www.youtube.com/watch?v=Ok0x_oQQVXE",
+        "tags": ["video", "adobe_premiere_pro"],
+        "media": { "type": "youtube", "src": "Ok0x_oQQVXE" }
+      }
+    },
+    "10": {
+      "17": {
+        "title": "\"building an acousto-optical deflector\"",
+        "link": "https://anarchy.website/2016/10/17/acousto-optical.html",
+        "tags": ["writing", "adobe_illustrator", "microsoft_word"]
+      },
+      "26": {
+        "title": "uwrf acm promo [draft 2]",
+        "link": "https://www.youtube.com/watch?v=zW3a33f_MY8",
+        "tags": ["video", "adobe_premiere_pro"],
+        "media": { "type": "youtube", "src": "zW3a33f_MY8" }
+      }
+    },
+    "11": {
+      "6": {
+        "title": "the san fran vlog",
+        "link": "https://www.youtube.com/watch?v=S3-9qgIFDA0",
+        "tags": ["video", "adobe_illustrator", "adobe_premiere_pro"],
+        "media": { "type": "youtube", "src": "S3-9qgIFDA0" }
+      },
+      "19": {
+        "title": "\"playing an fps on a drawing tablet\"",
+        "link": "https://anarchy.website/2016/11/19/fps-drawing-tablet.html",
+        "tags": ["writing", "google_docs"]
+      }
+    }
+  },
+  "2017": {
+    "1": {
+      "3": {
+        "title": "et2 reading",
+        "link": "https://www.youtube.com/playlist?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C",
+        "tags": ["podcast", "audacity", "adobe_premiere_pro"],
+        "media": {
+          "type": "youtube",
+          "src": "qFMGggjO2QY?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C"
+        }
+      },
+      "13": {
+        "title": "amber",
+        "link": "https://github.com/pheneco/amber",
+        "tags": [
+          "programming",
+          "git",
+          "nodejs",
+          "meteor",
+          "angular",
+          "css",
+          "typescript",
+          "github"
+        ],
+        "note": "this was a test project using meteor and angular to test a new stack for graphene"
+      }
+    },
+    "2": {
+      "5": {
+        "title": "scene 7 of opposite jurassic park",
+        "link": "https://www.docdroid.net/tm2dnu4",
+        "tags": ["writing", "google_docs"]
+      },
+      "19": {
+        "title": "gravity playground",
+        "link": "https://xn--z7x.dev/js/phys/gravity",
+        "tags": ["programming", "atom", "javascript", "google_fonts"]
+      },
+      "23": [
+        {
+          "title": "a collection of .txt files from feb 22 and 23, 2017",
+          "link": "https://anarchy.website/2017/02/23/txt.html",
+          "tags": ["writing", "atom"]
+        },
+        {
+          "title": "y r u crying.txt",
+          "link": "https://anarchy.website/2017/02/23/y-r-u-crying.html",
+          "tags": ["writing", "atom"]
+        }
+      ]
+    },
+    "3": {
+      "5": {
+        "title": "scene 9 of muppets yakuza",
+        "link": "https://www.docdroid.net/tm2dnu4",
+        "tags": ["writing", "google_docs"]
+      },
+      "10": {
+        "title": "@tinyhatebot - cbdq twitter bot",
+        "link": [
+          { "title": "twitter", "url": "https://twitter.com/tinyhatebot" },
+          {
+            "title": "src",
+            "url": "https://cheapbotsdonequick.com/source/tinyhatebot"
+          }
+        ],
+        "tags": ["programming", "atom", "cbdq", "json", "twitter"]
+      },
+      "16": {
+        "title": "let it snow.js",
+        "link": "https://xn--z7x.dev/js/3/snow",
+        "tags": ["programming", "atom", "javascript", "threejs"]
+      },
+      "18": {
+        "title": "revolution.js",
+        "link": "https://xn--z7x.dev/js/3/waves",
+        "tags": ["programming", "atom", "javascript", "threejs"]
+      },
+      "19": {
+        "title": "moved personal site to <a href=\"https://github.io\">github pages</a>",
+        "link": "https://xn--z7x.dev/",
+        "tags": [
+          "programming",
+          "atom",
+          "git",
+          "css",
+          "html",
+          "markdown",
+          "github_pages",
+          "name.com"
+        ]
+      }
+    },
+    "4": {
+      "5": {
+        "title": "scene 10 of sonic's last adventure",
+        "link": "https://www.docdroid.net/Nphxbj2",
+        "tags": ["writing", "google_docs"]
+      }
+    },
+    "5": {
+      "7": [
+        {
+          "title": "scene 10 of thelma and louise 2: army of darkness",
+          "link": "https://www.docdroid.net/sVlHBLX",
+          "tags": ["writing", "google_docs"]
+        },
+        {
+          "title": "corn.html",
+          "link": "https://xn--z7x.dev/corn/",
+          "tags": ["writing", "adobe_photoshop", "atom", "css", "html"]
+        }
+      ],
+      "9": {
+        "title": "harp.js",
+        "link": "https://xn--z7x.dev/js/2/harp",
+        "tags": ["programming", "atom", "javascript", "traer.js"]
+      }
+    },
+    "7": {
+      "10": {
+        "title": "phene.co website",
+        "link": [
+          "https://pheneco.github.io/",
+          {
+            "title": "github",
+            "url": "https://github.com/pheneco/pheneco.github.io"
+          }
+        ],
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "atom",
+          "git",
+          "css",
+          "html",
+          "javascript",
+          "github_pages",
+          "name.com"
+        ],
+        "note": "this design was never finished, the animation lead into making my gravity toy tho! also the original url (phene.co) was changed bc i have no $!"
+      },
+      "22": {
+        "title": "the chi town vlog",
+        "link": "https://www.youtube.com/watch?v=l9d5AwhesoY",
+        "tags": ["video", "adobe_premiere_pro"],
+        "media": { "type": "youtube", "src": "l9d5AwhesoY" }
+      }
+    },
+    "8": {
+      "29": {
+        "title": "pvf design proposal",
+        "link": "https://anarchy.website/2017/08/29/pvf-proposal.html",
+        "tags": ["design", "adobe_illustrator", "html", "markdown"]
+      },
+      "31": {
+        "title": "\"praxis and the 'report from the real minority'\"",
+        "link": "https://anarchy.website/2017/08/31/praxis-and-the-report.html",
+        "tags": ["writing", "google_docs"]
+      }
+    },
+    "9": {
+      "6": {
+        "title": "all that is left website",
+        "link": [
+          "https://allthatisleft.github.io/",
+          {
+            "title": "github",
+            "url": "https://github.com/AllThatisLeft/allthatisleft.github.io"
+          }
+        ],
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "atom",
+          "git",
+          "html",
+          "jekyll",
+          "liquid",
+          "scss",
+          "yaml",
+          "google_fonts",
+          "github",
+          "github_pages"
+        ]
+      },
+      "24": {
+        "title": "sinusoid.js",
+        "link": "https://xn--z7x.dev/js/3/sinusoid",
+        "tags": ["programming", "javascript", "threejs"]
+      }
+    },
+    "10": {
+      "14": {
+        "title": "\"introduction to syndicalism\"",
+        "link": "https://anarchy.website/2017/10/14/syndicalism.html",
+        "tags": ["writing"]
+      }
+    },
+    "11": {
+      "13": {
+        "title": "box-muller time generator",
+        "link": "https://xn--z7x.dev/js/2/normal",
+        "tags": ["programming", "javascript"]
+      },
+      "23": {
+        "title": "sad - v0.1 \"alone\"",
+        "link": [
+          "https://xn--z7x.dev/sad/alone",
+          { "title": "github", "url": "https://github.com/una-ada/sad" }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "javascript",
+          "threejs",
+          "github",
+          "github_pages",
+          "name.com"
+        ]
+      },
+      "29": {
+        "title": "sad - v1.0 \"aimless\"",
+        "link": [
+          "https://xn--z7x.dev/sad/aimless",
+          { "title": "github", "url": "https://github.com/una-ada/sad" }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "javascript",
+          "threejs",
+          "github",
+          "github_pages",
+          "name.com"
+        ],
+        "note": "this was @ sad.moe, thus the original name was 'sad.moe' but i dont have the $ to keep that up so its just on my github pages site now"
+      }
+    }
+  },
+  "2018": {
+    "1": {
+      "9": {
+        "title": "all that is left iss 001",
+        "link": [
+          "https://allthatisleft.github.io/issue/001/",
+          {
+            "title": "pdf",
+            "url": "https://allthatisleft.github.io/issue/001.pdf"
+          }
+        ],
+        "tags": ["design", "adobe_indesign", "adobe_photoshop"]
+      },
+      "24": {
+        "title": "anarchy.website",
+        "link": [
+          "https://anarchy.website",
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/anarchy.website"
+          }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "jekyll",
+          "javascript",
+          "liquid",
+          "markdown",
+          "scss",
+          "yaml",
+          "google_fonts",
+          "mathjax",
+          "prism.js",
+          "twemoji",
+          "github",
+          "github_pages",
+          "name.com"
+        ]
+      }
+    },
+    "3": {
+      "15": {
+        "title": "\"fear and death\"",
+        "link": "https://anarchy.website/2018/03/15/fear.html",
+        "tags": ["writing", "atom", "markdown"]
+      },
+      "20": {
+        "title": "\"death isn't real and neither are you\"",
+        "link": "https://anarchy.website/2018/03/20/death-isnt-real.html",
+        "tags": ["writing", "atom", "markdown"]
+      }
+    },
+    "5": {
+      "20": {
+        "title": "poisson v.2",
+        "link": "https://xn--z7x.dev/js/phys/poisson2",
+        "tags": ["programming", "atom", "javascript"]
+      },
+      "21": {
+        "title": "\"graphing a poisson distribution using canvas\"",
+        "link": "https://anarchy.website/2018/05/21/poisson.html",
+        "tags": ["writing", "programming", "atom", "markdown"]
+      }
+    },
+    "7": {
+      "9": {
+        "title": "neighbor science 229: neighborhood bloc party",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/neighborhood-bloc-party/"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842720"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-29720030"
+          }
+        ],
+        "tags": ["podcast"],
+        "media": { "type": "podbean", "src": "h5pnj-999a74" }
+      },
+      "14": {
+        "title": "_g.graph - mathematical graphing library",
+        "link": [
+          "https://pheneco.github.io/graph/",
+          {
+            "title": "blog",
+            "url": "https://anarchy.website/2018/07/14/graphs.html"
+          }
+        ],
+        "tags": ["programming", "writing", "atom", "javascript", "markdown"]
+      },
+      "19": {
+        "title": "\"ai isn't going to kill us\"",
+        "link": "https://anarchy.website/2018/07/19/ai.html",
+        "tags": ["writing", "atom", "markdown"]
+      },
+      "26": {
+        "title": "\"the windbreak forest lattice in hokkaido\"",
+        "link": "https://anarchy.website/2018/07/26/windbreak-lattice.html",
+        "tags": ["writing", "atom", "markdown"]
+      }
+    },
+    "8": {
+      "3": [
+        {
+          "title": "pixel sort",
+          "link": "https://xn--z7x.dev/js/2/frag-sort-1",
+          "tags": ["programming", "atom", "javascript"]
+        },
+        {
+          "title": "pixel sort v.2",
+          "link": "https://xn--z7x.dev/js/2/frag-sort-2",
+          "tags": ["programming", "atom", "javascript"]
+        }
+      ],
+      "30": {
+        "title": "\"does shoplifting 'hurt' workers?\"",
+        "link": "https://anarchy.website/2018/08/30/shoplifting.html",
+        "tags": ["writing", "atom", "markdown"]
+      }
+    },
+    "9": {
+      "2": {
+        "title": "goth angel sinners pt. i: shoplifting",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Part-I-Shoplifting-e24qpj"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/Part-I%3A-Shoplifting-id1512849-id103782882"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82YTljZjgwL3BvZGNhc3QvcnNz/episode/OGEyMmNmODEtYTZkMS01YjlmLTQ1NTgtOGMxYWM0MTYyNDlm"
+          },
+          {
+            "title": "playerfm",
+            "url": "https://player.fm/series/goth-angel-sinners-3080562/part-i-shoplifting"
+          },
+          {
+            "title": "radio_public",
+            "url": "https://radiopublic.com/goth-angel-sinners-GmROra/s1!8d0c5"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/5xt3fqPB6GEqoTiQ86KYXt"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/goth-angel-sinners/episode/part-i-shoplifting-56093748"
+          },
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/1/notes"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "atom",
+          "audacity",
+          "google_docs",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "markdown",
+          "anchor"
+        ],
+        "media": { "type": "anchor", "src": "Part-I-Shoplifting-e24qpj" }
+      },
+      "20": {
+        "title": "goth angel sinners pt. ii: catalonia",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Part-II-Catalonia-e28v8l"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/Part-II%3A-Catalonia-id1512849-id103782903"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82YTljZjgwL3BvZGNhc3QvcnNz/episode/OWM3ZjU2OTktNmNkYi04MjNlLTk1MzgtZWVlNDBmN2VjYWYx"
+          },
+          {
+            "title": "playerfm",
+            "url": "https://player.fm/series/goth-angel-sinners-3080562/part-ii-catalonia"
+          },
+          {
+            "title": "radio_public",
+            "url": "https://radiopublic.com/goth-angel-sinners-GmROra/s1!a05be"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/1KKnUEC0CUjBGxDuoJ94if"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/goth-angel-sinners/episode/part-ii-catalonia-56357448"
+          },
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/2/notes"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
+        "media": { "type": "anchor", "src": "Part-II-Catalonia-e28v8l" }
+      }
+    },
+    "10": {
+      "6": {
+        "title": "\"overreliance on connotation\"",
+        "link": "https://anarchy.website/2018/10/06/connotation.html",
+        "tags": ["writing", "atom", "markdown"]
+      }
+    },
+    "12": {
+      "8": {
+        "title": "goth angel sinners pt. iii: spiderman 3",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Part-III-Spiderman-3-e2nmr0"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/Part-III%3A-Spiderman-3-id1512849-id103782929"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82YTljZjgwL3BvZGNhc3QvcnNz/episode/ZjcxZDEzYTktZTNiYy1iYjQ5LWEwMzAtZWY3OGY2ZDFmNGU4"
+          },
+          {
+            "title": "playerfm",
+            "url": "https://player.fm/series/goth-angel-sinners-3080562/part-iii-spiderman-3"
+          },
+          {
+            "title": "radio_public",
+            "url": "https://radiopublic.com/goth-angel-sinners-GmROra/s1!cbff8"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/4LbUq8jpE4zcXApxcWr3k5"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/goth-angel-sinners/episode/part-iii-spiderman-3-57621687"
+          },
+          {
+            "title": "vk",
+            "url": "https://vk.com/gthnglsnnrs?w=wall-197764756_3"
+          },
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/3/notes"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_photoshop",
+          "adobe_illustrator",
+          "atom",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
+        "media": { "type": "anchor", "src": "Part-III-Spiderman-3-e2nmr0" }
+      }
+    }
+  },
+  "2019": {
+    "1": {
+      "17": {
+        "title": "goth angel sinners pt. iv: the paris commune",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Part-IV-The-Paris-Commune-e2viul"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/Part-IV%3A-The-Paris-Commune-id1512849-id121259709"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82YTljZjgwL3BvZGNhc3QvcnNz/episode/YzliMzhlOTktOWIyZC1mNmVkLTg1OWUtMDQ2N2IxMmQxZDEy"
+          },
+          {
+            "title": "playerfm",
+            "url": "https://player.fm/series/goth-angel-sinners-3080562/part-iv-the-paris-commune"
+          },
+          {
+            "title": "radio_public",
+            "url": "https://radiopublic.com/goth-angel-sinners-GmROra/s1!4f7ad"
+          },
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/gthnglsnnrs/pt-iv-the-paris-commune"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/3tgNvS3DHwzBFJc01RXpk8"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/goth-angel-sinners/episode/part-iv-the-paris-commune-58251994"
+          },
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/4/notes"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "audacity",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
+        "media": { "type": "anchor", "src": "Part-IV-The-Paris-Commune-e2viul" }
+      }
+    },
+    "4": {
+      "25": {
+        "title": "neighbor science 410: the joker but he's a horny shark",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/410-the-joker-but-hes-a-horny-shark/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000436528682"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/1b3d799c-3fe3-4b0b-a7cf-c8c551db70a6/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7ZGYVP"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/f6e7b2cf13302c37"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842797"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzQxMC10aGUtam9rZXItYnV0LWhlcy1hLWhvcm55LXNoYXJrLTY2ZWJmOGI5MmRhYjY2NjlhNjkwMjI1OThlYzAxODFh"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1556231936"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-39111318"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168201"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/1xhQpgX5QYkS9ukaTLsgrg"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/410-the-joker-but-hes-a-horny-shark-60290153"
+          }
+        ],
+        "tags": ["podcast", "audacity"],
+        "media": { "type": "podbean", "src": "4kycv-af305a" },
+        "note": "i didnt show up in this one til about 31:20"
+      }
+    },
+    "5": {
+      "19": {
+        "title": "neighbor science 413: neighbor science pot luck (live in czechochechnyoslovenoslovakia)",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.podbean.com/ew/pb-e4xzn-b1b606"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000438787990"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/38e365a5-8b9b-44e1-aec6-487646757828/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7ZZGTW"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/9c06ccefa769d6fd"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842800"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tL25laWdoYm9yLXNjaWVuY2UtcG90LWx1Y2stbGl2ZS1pbi1jemVjaG9jaGVjaG55b3Nsb3Zlbm9zbG92YWtpYS1kZmFhZTc5MDk5ZjU5YjdkZDkwOTY1NTVmMjU3NDk2Mw"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1558273934"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-39780628"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168198"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/2MoBL4vLbBl1PkLcfTZV1o"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/413-neighbor-science-pot-luck-live-in-czechochechnyoslovenoslovakia-60807340"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=7KPZ1WRHU3A"
+          }
+        ],
+        "tags": ["podcast"],
+        "media": { "type": "podbean", "src": "e4xzn-b1b606" }
+      }
+    },
+    "6": {
+      "25": {
+        "title": "goth angel sinners pt. v: post-scarcity",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Part-V-Post-Scarcity-e4ef1p"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/Part-V%3A-Post-Scarcity-id1512849-id165814687"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82YTljZjgwL3BvZGNhc3QvcnNz/episode/ODllNDg1YjEtN2Q4NC02NmIxLTA4YjUtMWVkYTUxZTVhNTRk"
+          },
+          {
+            "title": "playerfm",
+            "url": "https://player.fm/series/goth-angel-sinners-3080562/part-v-post-scarcity"
+          },
+          {
+            "title": "radio_public",
+            "url": "https://radiopublic.com/goth-angel-sinners-GmROra/s1!03bfa"
+          },
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/gthnglsnnrs/pt-v-post-scarcity"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/2toOOYV6qnkmimmVD6UDCC"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/goth-angel-sinners/episode/part-v-post-scarcity-62149796"
+          },
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/5/notes"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "audacity",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
+        "media": { "type": "anchor", "src": "Part-V-Post-Scarcity-e4ef1p" }
+      }
+    },
+    "7": {
+      "8": {
+        "title": "neighbor science 418: colonialism is when you wear khakis",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/418-colonialism-is-when-you-wear-khakis/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000444004119"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/a872d7ab-8d34-4d0a-8cb4-7da6bb492ec9/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7V3ZK6"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/0ee711e33d6a3953"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzQxOC1jb2xvbmlhbGlzbS1pcy13aGVuLXlvdS13ZWFyLWtoYWtpcy1hZDY2NTEyOGViNzI0MjU2NTljNTE3MzlmMDZhZWQwMA"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1562641352"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-41787248"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168193"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/0mD5o63o6LHsZMXfWo1XYu"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/418-colonialism-is-when-you-wear-khakis-62441937"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=3k5lzC72wTQ"
+          }
+        ],
+        "tags": ["podcast"],
+        "media": { "type": "podbean", "src": "bdnxe-b73bce" }
+      }
+    },
+    "11": {
+      "1": {
+        "title": "neighbor science 510: ecocommunist utopia",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/510-ecocommunist-utopia/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000455709623"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/27528499-0977-48a3-94fc-7700ffa051d1/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7WWXLQ"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/36852a53a245c9f0"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842829"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzUxMC1lY29jb21tdW5pc3QtdXRvcGlhLTcyNmMwZWQzNTlmYzEyOGMyYTIwNjQ3NTUwMzU3NmRl"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1572640987"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-47326624"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168176"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/50FegQ5lE6YwELYS6DrCX3"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/510-ecocommunist-utopia-65001649"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=RhEYcIEPEsA"
+          }
+        ],
+        "tags": ["podcast"],
+        "media": { "type": "podbean", "src": "rtrfx-c5a4d6" },
+        "note": "im not even listed in the description of this one cuz i just showed up while on break around 1h35m in. also covid rly dunked on some of what i said :("
+      },
+      "6": {
+        "title": "neighbor science 511: turning into a witch is a voluntary choice",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/511-turning-into-a-witch-is-a-voluntary-choice/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000456116174"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/9ec1e0c7-7ca2-4d79-955e-d15788020b1b/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7Z7T59"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/be148f1f3cc4f908"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id214842830"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzUxMS10dXJuaW5nLWludG8tYS13aXRjaC1pcy1hLXZvbHVudGFyeS1jaG9pY2UtZDY2Njc5YWRlOWQyNTBmMTJmMThiNzNjYTgwYTVhZGQ"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1573092545"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-47577010"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168174"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/2tYfReoETLKJrTP30AY7rF"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/511-turning-into-a-witch-is-a-voluntary-choice-65110117"
+          }
+        ],
+        "tags": ["podcast", "adobe_illustrator", "adobe_photoshop"],
+        "media": { "type": "podbean", "src": "wu2nr-c66a85" }
+      }
+    },
+    "12": {
+      "11": {
+        "title": "\"anarchy.website ni furigana to chiikika\"",
+        "link": "https://anarchy.website/2019/12/11/furigana.html",
+        "tags": ["writing", "programming", "css", "html", "liquid", "markdown"]
+      }
+    }
+  },
+  "2020": {
+    "7": {
+      "1": {
+        "title": "neighbor science isekai july 1: the saga of tanya the definitely absolutely evil",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.podbean.com/ew/pb-cfvzi-e1d26f"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000481716629"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/ea00a98b-f94c-4cd5-8c52-919cd49584b2/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08K7WPD21"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/4ffabfa43081d3b4"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/-id2526128-id282143016"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzE5ZjE2ZWQ1LWM5NGMtNWQyMS04M2MwLWU4NjIwMTU1ZGYyYQ"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1593652099"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-66786777"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168156"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/2TuhtC7962jcwU3Rtg8xGL"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/-/episode/isekai-july-1-the-saga-of-tanya-the-definitely-absolutely-evil-w-una-74195275"
+          }
+        ],
+        "tags": ["podcast"],
+        "media": { "type": "podbean", "src": "cfvzi-e1d26f" }
+      },
+      "11": {
+        "title": "una script v2020.07.11",
+        "link": [
+          { "title": "github", "url": "https://github.com/una-ada/una-script" },
+          {
+            "title": "blog",
+            "url": "https://anarchy.website/2020/07/11/fonts.html"
+          }
+        ],
+        "tags": [
+          "font",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "fontforge",
+          "git",
+          "markdown",
+          "github"
+        ]
+      }
+    },
+    "8": {
+      "10": {
+        "title": "goth angel sinners pt. vi: a real podcast",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Part-VI-A-Real-Podcast-ehud7n"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/Part-VI%3A-A-Real-Podcast-id1512849-id296098315"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy82YTljZjgwL3BvZGNhc3QvcnNz/episode/NzBkYTZkNmQtNDQ4Ni00NTEwLWEyMjQtZWQ2YWU0ZDRjYTFm"
+          },
+          {
+            "title": "playerfm",
+            "url": "https://player.fm/series/goth-angel-sinners-3080562/part-vi-a-real-podcast"
+          },
+          {
+            "title": "radio_public",
+            "url": "https://radiopublic.com/goth-angel-sinners-GmROra/s1!8ba4d"
+          },
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/gthnglsnnrs/pt-vi-a-real-podcast"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/5t1vSXzCrEry5u8vlFRyAR?si=HP52bOEERp63S1PrklqlRg"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/goth-angel-sinners/episode/part-vi-a-real-podcast-76838523"
+          },
+          {
+            "title": "notes",
+            "url": "https://anarchy.website/gthnglsnnrs/6/notes"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_photoshop",
+          "atom",
+          "logic_pro",
+          "markdown",
+          "anchor"
+        ],
+        "media": { "type": "anchor", "src": "Part-VI-A-Real-Podcast-ehud7n" }
+      }
+    },
+    "9": {
+      "26": {
+        "title": "\"mumei no joshi\"",
+        "link": "https://anarchy.website/2020/09/26/nameless.html",
+        "tags": ["writing", "atom", "markdown"]
+      }
+    },
+    "10": {
+      "2": {
+        "title": "una script v2020.10.02 - fixes n added latin-1 supplement",
+        "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.02",
+        "tags": ["font", "adobe_illustrator", "fontforge"]
+      },
+      "4": {
+        "title": "una script v2020.10.04 - fix kern tables n thorn",
+        "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.04",
+        "tags": ["font", "fontforge"]
+      }
+    },
+    "12": {
+      "4": {
+        "title": "джіса2 - watashi mou zettai ni",
+        "link": [
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/jisa_tsu/watashimou"
+          }
+        ],
+        "tags": ["music", "ableton_live", "adobe_photoshop", "soundcloud"],
+        "media": { "type": "soundcloud", "src": "941665492" }
+      },
+      "6": {
+        "title": "джіса2 - shiranai tenjou da",
+        "link": [
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/jisa_tsu/tenjou"
+          }
+        ],
+        "tags": ["music", "ableton_live", "adobe_photoshop", "soundcloud"],
+        "media": { "type": "soundcloud", "src": "942827437" }
+      },
+      "18": {
+        "title": "джіса2 - densha line",
+        "link": [
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/jisa_tsu/train"
+          },
+          { "title": "bandcamp", "url": "https://jisa2.bandcamp.com/track/-" }
+        ],
+        "tags": [
+          "music",
+          "ableton_live",
+          "adobe_photoshop",
+          "bandcamp",
+          "soundcloud"
+        ],
+        "media": { "type": "bandcamp-single", "src": "1683078004" }
+      },
+      "19": {
+        "title": "art for amitypark - øøø",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/-"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/album/3KDdne9zpK5xQ3Tixi1Kp5"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1546242513"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_nKRODWrJbrkJ0eK32RO1MBZxPTbo4SPLk"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/195422822"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/album?id=120809918"
+          }
+        ],
+        "tags": ["design", "adobe_photoshop"],
+        "media": { "type": "bandcamp", "src": "1808311980" }
+      }
+    }
+  },
+  "2021": {
+    "1": {
+      "5": {
+        "title": "джіса2 - lullaby for eternity",
+        "link": [
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/jisa_tsu/lullaby-for-eternity"
+          },
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/track/lullaby-for-eternity"
+          }
+        ],
+        "tags": [
+          "music",
+          "ableton_live",
+          "adobe_photoshop",
+          "bandcamp",
+          "soundcloud"
+        ],
+        "media": { "type": "bandcamp-single", "src": "1616197059" }
+      }
+    },
+    "3": {
+      "5": {
+        "title": "amitypark x джіса2 - tsuki",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/--2"
+          },
+          {
+            "title": "yandex_music",
+            "url": "https://music.yandex.com/album/19208693/"
+          }
+        ],
+        "tags": ["music", "adobe_photoshop", "bandcamp"],
+        "note": "id embed a stream of this, but there isnt supposed 2 b a stream! buy 1 of the 5 limited release cassettes with j-cards designed by yrs truly <3"
+      },
+      "14": {
+        "title": "neighbor science 709: golden kamuy pt. 1",
+        "link": [
+          {
+            "title": "podbean",
+            "url": "https://www.neighborsciencepodcast.com/e/709-golden-kamuy-pt-1/"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1234104939?i=1000512931423"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/podcasts/f7868c23-7229-4e27-9e65-ab0109f4becb/episodes/e12def80-428b-4f6d-897a-2a6277d725d1/"
+          },
+          {
+            "title": "audible",
+            "url": "https://www.audible.com/pd/-/B08YWM191D"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/315fde2f96f92580"
+          },
+          {
+            "title": "castbox",
+            "url": "https://castbox.fm/episode/709%3A-Golden-Kamuy%2C-pt.-1-id2526128-id364179842"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzc2YzVmN2RiLTY1ZjEtMzI1Mi1hYWJhLWIxMzA1N2QyNTc3ZQ"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/neighbor-science/e/1615734268"
+          },
+          {
+            "title": "podchaser",
+            "url": "https://www.podchaser.com/podcasts/-522908/episodes/-86253156"
+          },
+          {
+            "title": "podyssey",
+            "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168137"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/65iPYj1EWXEI2c5JDo83zU"
+          },
+          {
+            "title": "stitcher",
+            "url": "https://www.stitcher.com/show/neighbor-science/episode/709-golden-kamuy-pt-1-82371356"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=BVyHBkNzdNE"
+          }
+        ],
+        "tags": ["podcast", "logic_pro"],
+        "media": { "type": "podbean", "src": "xxy3w-fd9300" }
+      }
+    },
+    "4": {
+      "18": [
+        {
+          "title": "neighbor science 712: the old bear hunter",
+          "link": [
+            {
+              "title": "podbean",
+              "url": "https://www.neighborsciencepodcast.com/e/712-the-old-bear-hunter/"
+            },
+            {
+              "title": "apple_podcasts",
+              "url": "https://podcasts.apple.com/us/podcast/712-the-old-bear-hunter/id1234104939?i=1000517653477"
+            },
+            {
+              "title": "audible",
+              "url": "https://www.audible.com/pd/-/B092PTD4BP"
+            },
+            {
+              "title": "backtracks",
+              "url": "https://backtracks.fm/discover/s/-/013c56f340359b66/e/-/79d0e13d32d7d152"
+            },
+            {
+              "title": "castbox",
+              "url": "https://castbox.fm/episode/712%3A-The-Old-Bear-Hunter-id2526128-id375048786"
+            },
+            {
+              "title": "google_podcasts",
+              "url": "https://podcasts.google.com/feed/aHR0cHM6Ly93d3cubmVpZ2hib3JzY2llbmNlcG9kY2FzdC5jb20vZmVlZC54bWw/episode/bmVpZ2hib3JzY2llbmNlLnBvZGJlYW4uY29tLzE1MzYxODNjLWI2MTQtM2NmNi04OGZmLWFhMTM2NmQ5MmY0ZA"
+            },
+            {
+              "title": "podbay",
+              "url": "https://podbay.fm/p/neighbor-science/e/1618777107"
+            },
+            {
+              "title": "podchaser",
+              "url": "https://www.podchaser.com/podcasts/-522908/episodes/-89458393"
+            },
+            {
+              "title": "podyssey",
+              "url": "https://podyssey.fm/podcast/itunes1234104939/episode46168134"
+            },
+            {
+              "title": "spotify",
+              "url": "https://open.spotify.com/episode/3D8l48WdnkMapPqvZlWvTj"
+            },
+            {
+              "title": "stitcher",
+              "url": "https://www.stitcher.com/show/neighbor-science/episode/712-the-old-bear-hunter-83265677"
+            }
+          ],
+          "tags": ["podcast"],
+          "media": { "type": "podbean", "src": "8vewr-101039e" }
+        },
+        {
+          "title": "una nota v2021.04.18",
+          "link": "https://github.com/una-ada/una-nota/tree/main/old/2021.04.18",
+          "tags": ["font", "adobe_photoshop", "adobe_illustrator", "fontforge"]
+        }
+      ],
+      "20": {
+        "title": "una nota blog",
+        "link": "https://anarchy.website/2021/04/20/una-nota.html",
+        "tags": ["writing", "atom", "markdown"]
+      },
+      "27": {
+        "title": "chloe &amp; una's tentacular experience vol. 1: alignment you! you!",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Volume-1-Alignment-You--You-evocvf"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/-/id1565295121"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/8e07e4b907e29333/e/-/2948ac4836505cdb"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81OGJhMjMyNC9wb2RjYXN0L3Jzcw/episode/MWNkM2M2YzUtMDQwMS00ZDkzLWIxNjUtN2RlMzUxMWVhZmY4"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/chloe-and-unas-tentacular-experience/e/1619513021"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/7Ex41pBYhJqr9IgSmacEwE"
+          },
+          { "title": "notes", "url": "https://anarchy.website/cute/1/notes" }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "atom",
+          "google_docs",
+          "markdown",
+          "anchor"
+        ],
+        "media": {
+          "type": "anchor",
+          "src": "Volume-1-Alignment-You--You-evocvf"
+        }
+      }
+    },
+    "5": {
+      "29": {
+        "title": "una script v2021.05.29 - fix metrics",
+        "link": "https://github.com/una-ada/una-script/tree/master/old/2021.05.29",
+        "tags": ["font", "fontforge"]
+      },
+      "30": {
+        "title": "una script v2021.05.30 - fix metadata",
+        "link": "https://github.com/una-ada/una-script/tree/master/old/2021.05.30",
+        "tags": ["font", "fontforge"]
+      },
+      "31": {
+        "title": "una mono v2021.05.31",
+        "link": [
+          { "title": "github", "url": "https://github.com/una-ada/una-mono" },
+          {
+            "title": "blog",
+            "url": "https://anarchy.website/2021/05/31/una-mono.html"
+          }
+        ],
+        "tags": [
+          "font",
+          "writing",
+          "adobe_photoshop",
+          "adobe_illustrator",
+          "atom",
+          "fontforge",
+          "markdown"
+        ]
+      }
+    },
+    "6": {
+      "1": [
+        {
+          "title": "una script v2021.06.01 - fix webfont accent spacing",
+          "link": "https://github.com/una-ada/una-script/tree/master/old/2021.06.01",
+          "tags": ["font", "adobe_illustrator", "fontforge"]
+        },
+        {
+          "title": "una nota v2021.06.01 - update ps names",
+          "link": "https://github.com/una-ada/una-nota/tree/master/old/2021.06.01",
+          "tags": ["font", "fontforge"]
+        }
+      ],
+      "6": {
+        "title": "ga sei-r proj 1 - gravity remake + blogs",
+        "link": [
+          "https://xn--z7x.dev/gravity/",
+          { "title": "github", "url": "https://github.com/una-ada/gravity" },
+          {
+            "title": "blog",
+            "url": "https://anarchy.website/2021/06/01/gravdev1.html"
+          },
+          {
+            "title": "2",
+            "url": "https://anarchy.website/2021/06/01/gravdev2.html"
+          },
+          {
+            "title": "3",
+            "url": "https://anarchy.website/2021/06/03/gravdev3.html"
+          },
+          {
+            "title": "4",
+            "url": "https://anarchy.website/2021/06/06/gravdev4.html"
+          }
+        ],
+        "tags": [
+          "programming",
+          "writing",
+          "git",
+          "trello",
+          "visual_studio_code",
+          "css",
+          "html",
+          "javascript",
+          "markdown",
+          "github",
+          "github_pages"
+        ]
+      },
+      "20": {
+        "title": "art for amitypark - better off rmx",
+        "link": "https://amitypark.bandcamp.com/track/better-off-rmx",
+        "tags": ["design", "adobe_photoshop"],
+        "media": { "type": "bandcamp-single", "src": "3394708964" }
+      },
+      "25": {
+        "title": "ga sei-r proj 2 - xylem",
+        "link": [
+          { "title": "heroku", "url": "https://proj-xylem.herokuapp.com/" },
+          { "title": "github", "url": "https://github.com/una-ada/Xylem" }
+        ],
+        "tags": [
+          "programming",
+          "adobe_xd",
+          "lucid_chart",
+          "trello",
+          "git",
+          "mongodb",
+          "nodejs",
+          "visual_studio_code",
+          "javascript",
+          "ejs",
+          "scss",
+          "expressjs",
+          "github",
+          "heroku"
+        ]
+      },
+      "27": {
+        "title": "chloe &amp; una's tentacular experience vol. 2: your neighborhood tentacle shop",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/volume-2-your-neighborhood-tentacle-shop/id1565295121"
+          },
+          {
+            "title": "backtracks",
+            "url": "https://backtracks.fm/discover/s/-/8e07e4b907e29333/e/-/eedfecfd77478b20"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81OGJhMjMyNC9wb2RjYXN0L3Jzcw/episode/MzI3YzJkNzctZTIwYS00MDk3LTgwZTEtMjBmMjU1YTc3MGQ0"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/chloe-and-unas-tentacular-experience/e/1624863475"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/7G2agEjUrCOxW0ZAZo0GxK"
+          },
+          { "title": "notes", "url": "https://anarchy.website/cute/2/notes" }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "visual_studio_code",
+          "markdown",
+          "anchor"
+        ],
+        "media": {
+          "type": "anchor",
+          "src": "Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
+        }
+      },
+      "29": {
+        "title": "una's theme [vs code] v1.0.0",
+        "link": [
+          "https://marketplace.visualstudio.com/items?itemName=una.theme",
+          { "title": "github", "url": "https://github.com/una-ada/una-theme" }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "visual_studio_code",
+          "json",
+          "github",
+          "vscode_marketplace"
+        ]
+      },
+      "30": {
+        "title": "una's theme [vs code] v1.1.0 - now with icons",
+        "link": [
+          "https://marketplace.visualstudio.com/items?itemName=una.theme",
+          { "title": "github", "url": "https://github.com/una-ada/una-theme" }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "visual_studio_code",
+          "json",
+          "github",
+          "vscode_marketplace"
+        ],
+        "note": "the icons r all 12px which is 2 small 4 vsc normally, but u can mod it. also! some of them r used in this page!"
+      }
+    },
+    "7": {
+      "5": {
+        "title": "rewrote love.html code",
+        "link": "https://xn--z7x.dev/love.html",
+        "tags": ["programming", "visual_studio_code", "javascript"]
+      },
+      "6": {
+        "title": "amitypark - song for a chunibyo anarchist (i do not like the united states government very much)",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/track/song-for-a-chunibyo-anarchist-i-do-not-like-the-united-states-government-very-much"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/track/5P9AGPfqHZDwAPLhNAY2jJ"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1592908957"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=2dXw3inH_E8"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/269436712"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/amitypark-33719101/albums/song-for-a-chunibyo-anarchist-i-149408097/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/songs/74360163?from=search"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/song?id=1891349571"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/xx526ysai30la"
+          }
+        ],
+        "tags": ["writing", "design", "adobe_photoshop"],
+        "media": { "type": "bandcamp-single", "src": "4035136281" },
+        "note": "i wrote a draft of the lyrics 4 this, chloe edited them n performed the song, i also did the cover art!"
+      },
+      "16": {
+        "title": "ga sei-r proj 3 - tabby",
+        "link": [
+          { "title": "heroku", "url": "https://tabi-tabby.herokuapp.com/" },
+          { "title": "github", "url": "https://github.com/una-ada/Tabby" }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "lucid_chart",
+          "trello",
+          "postgresql",
+          "visual_studio_code",
+          "python",
+          "sql",
+          "django",
+          "aws",
+          "github",
+          "heroku"
+        ],
+        "note": "this was the group project for the code camp i did, it had 2 b a django app :("
+      },
+      "22": {
+        "title": "census t-shirt - \"i am illiterate and i do not pay taxes\"",
+        "link": [
+          "https://shop.xn--z7x.dev/listing/pink-census?product=87",
+          {
+            "title": "tshirt",
+            "url": "https://shop.xn--z7x.dev/listing/pink-census?product=2"
+          },
+          {
+            "title": "mug",
+            "url": "https://shop.xn--z7x.dev/listing/pink-census?product=658"
+          }
+        ],
+        "tags": ["merchandise", "adobe_photoshop", "spring"]
+      }
+    },
+    "8": {
+      "16": {
+        "title": "ga sei-r proj 4 - bopomo",
+        "link": [
+          { "title": "heroku", "url": "https://bopomo.herokuapp.com/" },
+          { "title": "github", "url": "https://github.com/una-ada/Bopomo" }
+        ],
+        "tags": [
+          "programming",
+          "adobe_xd",
+          "git",
+          "lucid_chart",
+          "trello",
+          "mongodb",
+          "nodejs",
+          "visual_studio_code",
+          "javascript",
+          "scss",
+          "expressjs",
+          "react",
+          "aws",
+          "github",
+          "heroku"
+        ],
+        "note": "i didnt finish this project on time at all! i spent all my time on fixing back end stuff n rly want 2 come back 2 it eventually!!"
+      },
+      "20": {
+        "title": "ga sei-r portfolio",
+        "link": [
+          "https://xn--z7x.dev",
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-ada.github.io/compare/91b9e41...191d5f3"
+          }
+        ],
+        "tags": [
+          "programming",
+          "adobe_photoshop",
+          "git",
+          "jekyll",
+          "visual_studio_code",
+          "css",
+          "html",
+          "cloudflare",
+          "github",
+          "github_pages"
+        ],
+        "note": "this was j a quick portfolio 2 meet the reqs 4 the code camp, i wanted 2 replace it soon but... things take time lol"
+      }
+    },
+    "9": {
+      "2": [
+        {
+          "title": "kramdown sort footnotes (ksf)",
+          "link": [
+            {
+              "title": "npm",
+              "url": "https://www.npmjs.com/package/@una-ada/ksf"
+            },
+            { "title": "github", "url": "https://github.com/una-ada/ksf" }
+          ],
+          "tags": [
+            "programming",
+            "git",
+            "visual_studio_code",
+            "nodejs",
+            "javascript",
+            "github",
+            "npm"
+          ]
+        }
+      ]
+    },
+    "10": {
+      "6": {
+        "title": "джіса2 - i gave up on my dreams again today",
+        "link": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today",
+        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
+        "media": { "type": "bandcamp-single", "src": "3122118483" }
+      }
+    },
+    "11": {
+      "5": {
+        "title": "amitypark x джіса2 - this is a cry for help",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/album/this-is-a-cry-for-help-split-w-amitypark"
+          },
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/this-is-a-cry-for-help-split-w"
+          },
+          {
+            "title": "distrokid",
+            "url": "https://distrokid.com/hyperfollow/amityparkx/this-is-a-cry-for-help"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/album/6yAs9FsB9yX5U8MwvOErAm"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1593461597"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_kKe5AfRQcphgLbnLXJJFcP43ws4n6Z4s4"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/270308382"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/-37075084/albums/-149732353/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/albums/34318537"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/album/1023662329"
+          },
+          {
+            "title": "kkbox",
+            "url": "https://play.kkbox.com/album/XXLThA7qEjhjDaiIzG"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/album?id=135657954"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/j6u3zs4dq12ub"
+          },
+          {
+            "title": "yandex_music",
+            "url": "https://music.yandex.com/album/19158516"
+          }
+        ],
+        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
+        "media": { "type": "bandcamp", "src": "2838847327" },
+        "note": "this is a split ep w me n my gf. track 3 was written by her, then i remixed it, then she finished it... the cover art was done much the same way."
+      },
+      "17": {
+        "title": "live online hackathon - go go grandparents",
+        "link": [
+          { "title": "vercel", "url": "http://go-go-grandparents.vercel.app/" },
+          { "title": "github", "url": "https://github.com/Go-Go-Grandparents" }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "lucid_chart",
+          "trello",
+          "mongodb",
+          "nodejs",
+          "css",
+          "javascript",
+          "aws",
+          "expressjs",
+          "react",
+          "github",
+          "vercel"
+        ]
+      }
+    }
+  },
+  "2022": {
+    "3": {
+      "7": {
+        "title": "art for amitypark - suffocate",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://amitypark.bandcamp.com/album/suffocate-single"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/track/1WNXbJ02tbRj2LL46hiCOi"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1613134720"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=Ak66hjDsXGY"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/300960727"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/amitypark-33719101/songs/suffocate-161543889/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/albums/42063751"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/song?id=1926301473"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/kzyhg0up6qhwc"
+          }
+        ],
+        "tags": ["design", "adobe_photoshop"],
+        "media": { "type": "bandcamp", "src": "2725227738" }
+      }
+    },
+    "4": {
+      "16": {
+        "title": "\"how to be broken and never get better\"",
+        "link": "https://anarchy.website/2022/04/16/broken.html",
+        "tags": [
+          "writing",
+          "adobe_photoshop",
+          "google_docs",
+          "visual_studio_code",
+          "markdown"
+        ]
+      }
+    },
+    "6": {
+      "2": {
+        "title": "sad v2.0 - typescript rewrite w cannon phys",
+        "link": [
+          "https://xn--z7x.dev/sad/",
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/sad/releases/tag/v2.0.1"
+          }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "visual_studio_code",
+          "typescript",
+          "webpack",
+          "threejs",
+          "github",
+          "github_pages"
+        ]
+      },
+      "11": {
+        "title": "chloe &amp; una's tentacular experience vol. 3: the pollinic girls attack!",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Volume-3-The-Pollinic-Girls-Attack-e1jr5g0"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/volume-3-the-pollinic-girls-attack/id1565295121"
+          },
+          {
+            "title": "google_podcasts",
+            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81OGJhMjMyNC9wb2RjYXN0L3Jzcw/episode/NmVkMTVhOTQtYzhlOS00NjI2LWIwNDItNDk5NzEwMGM5NWM2"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/chloe-and-unas-tentacular-experience/e/1655000050"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/06fRY73asZ4tPrW6gh7Cj8"
+          },
+          { "title": "notes", "url": "https://anarchy.website/cute/3/notes" }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator",
+          "adobe_photoshop",
+          "google_docs",
+          "visual_studio_code",
+          "markdown"
+        ],
+        "media": {
+          "type": "anchor",
+          "src": "Volume-3-The-Pollinic-Girls-Attack-e1jr5g0"
+        }
+      }
+    },
+    "7": {
+      "31": [
+        {
+          "title": "una's theme: ocean breeze color theme",
+          "link": "https://color.adobe.com/Ocean-Breeze-color-theme-20394941/",
+          "tags": ["asset", "adobe_color"],
+          "note": "5 cool tones from my palette (adobe color only supports 5 color themes, i chose 10/12 colors to split btwn cool n warm)"
+        },
+        {
+          "title": "una's theme: night lights color theme",
+          "link": "https://color.adobe.com/Night-Lights-color-theme-20394921/",
+          "tags": ["asset", "adobe_color"],
+          "note": "5 warm tones from my palette (see note on the other theme)"
+        }
+      ]
+    },
+    "8": {
+      "9": {
+        "title": "the town of forgotten nightmares",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/track/the-town-of-forgotten-nightmares"
+          },
+          {
+            "title": "distrokid",
+            "url": "https://distrokid.com/hyperfollow/f31f9b0/the-town-of-forgotten-nightmares"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/album/72uRiRTx9hfPm8a2mKvuKb"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1638988058"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=si8Rtdw81bw"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/albums/B0B94RY3D4"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/344966207"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/-38585318/albums/-178986803/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/songs/98383638"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/song/1072703886"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/song?id=1970997599"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/s7gvnpzdiydra"
+          }
+        ],
+        "tags": [
+          "music",
+          "logic_pro",
+          "adobe_photoshop",
+          "bandcamp",
+          "distrokid"
+        ],
+        "media": { "type": "bandcamp-single", "src": "3723950676" },
+        "note": "this was supposed 2 b a 4 part ep but w/o touching it for several months i j released the finished part"
+      }
+    },
+    "10": {
+      "08": {
+        "title": "una theme icons",
+        "link": "https://github.com/una-ada/una-theme-icons",
+        "tags": ["asset", "aseprite", "git", "visual_studio_code", "github"],
+        "note": "these r the icons used on this page, made 4 this page n now as their own repo!"
+      }
+    },
+    "11": {
+      "08": {
+        "title": "\"library classification systems &amp; some critiques thereof\"",
+        "link": "https://anarchy.website/2022/11/08/classification-systems",
+        "tags": ["writing", "visual_studio_code", "markdown"]
+      }
+    }
+  }
+}
