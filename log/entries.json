@@ -591,6 +591,7 @@
       },
       "24": {
         "title": "anarchy.website",
+        "project": "anarchy.website",
         "link": [
           "https://anarchy.website",
           {
@@ -674,11 +675,13 @@
       },
       "19": {
         "title": "\"ai isn't going to kill us\"",
+        "project": "anarchy.website",
         "link": "https://anarchy.website/2018/07/19/ai.html",
         "tags": ["writing", "atom", "markdown"]
       },
       "26": {
         "title": "\"the windbreak forest lattice in hokkaido\"",
+        "project": "anarchy.website",
         "link": "https://anarchy.website/2018/07/26/windbreak-lattice.html",
         "tags": ["writing", "atom", "markdown"]
       }
@@ -698,6 +701,7 @@
       ],
       "30": {
         "title": "\"does shoplifting 'hurt' workers?\"",
+        "project": "anarchy.website",
         "link": "https://anarchy.website/2018/08/30/shoplifting.html",
         "tags": ["writing", "atom", "markdown"]
       }
@@ -705,6 +709,7 @@
     "9": {
       "2": {
         "title": "goth angel sinners pt. i: shoplifting",
+        "project": "gas",
         "link": [
           {
             "title": "anchor",
@@ -753,6 +758,7 @@
       },
       "20": {
         "title": "goth angel sinners pt. ii: catalonia",
+        "project": "gas",
         "link": [
           {
             "title": "anchor",
@@ -802,6 +808,7 @@
     "10": {
       "6": {
         "title": "\"overreliance on connotation\"",
+        "project": "anarchy.website",
         "link": "https://anarchy.website/2018/10/06/connotation.html",
         "tags": ["writing", "atom", "markdown"]
       }
@@ -809,6 +816,7 @@
     "12": {
       "8": {
         "title": "goth angel sinners pt. iii: spiderman 3",
+        "project": "gas",
         "link": [
           {
             "title": "anchor",
@@ -864,6 +872,7 @@
     "1": {
       "17": {
         "title": "goth angel sinners pt. iv: the paris commune",
+        "project": "gas",
         "link": [
           {
             "title": "anchor",
@@ -1037,6 +1046,7 @@
     "6": {
       "25": {
         "title": "goth angel sinners pt. v: post-scarcity",
+        "project": "gas",
         "link": [
           {
             "title": "anchor",
@@ -1265,6 +1275,7 @@
     "12": {
       "11": {
         "title": "\"anarchy.website ni furigana to chiikika\"",
+        "project": "anarchy.website",
         "link": "https://anarchy.website/2019/12/11/furigana.html",
         "tags": ["writing", "programming", "css", "html", "liquid", "markdown"]
       }
@@ -1351,6 +1362,7 @@
     "8": {
       "10": {
         "title": "goth angel sinners pt. vi: a real podcast",
+        "project": "gas",
         "link": [
           {
             "title": "anchor",
@@ -1659,6 +1671,7 @@
       },
       "27": {
         "title": "chloe &amp; una's tentacular experience vol. 1: alignment you! you!",
+        "project": "cute",
         "link": [
           {
             "title": "anchor",
@@ -1812,6 +1825,7 @@
       },
       "27": {
         "title": "chloe &amp; una's tentacular experience vol. 2: your neighborhood tentacle shop",
+        "project": "cute",
         "link": [
           {
             "title": "anchor",
@@ -2224,6 +2238,7 @@
       },
       "11": {
         "title": "chloe &amp; una's tentacular experience vol. 3: the pollinic girls attack!",
+        "project":"cute",
         "link": [
           {
             "title": "anchor",
@@ -2352,6 +2367,7 @@
     "11": {
       "08": {
         "title": "\"library classification systems &amp; some critiques thereof\"",
+        "project": "anarchy.website",
         "link": "https://anarchy.website/2022/11/08/classification-systems",
         "tags": ["writing", "visual_studio_code", "markdown"]
       }

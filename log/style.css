@@ -25,6 +25,8 @@
   --color-black: #111111;
   --color-berry: #2a2858;
   --color-lilac: #b2adcc; /* NEW! */
+
+  --color-black-alt: #161718;
 }
 
 /*----- elements -------------------------------------------------------------*/
@@ -59,8 +61,8 @@ td {
   padding: 0 6px 0 0;
   vertical-align: top;
 }
-tr:hover {
-  background: var(--color-royal);
+tr:nth-child(even) {
+  background: var(--color-black-alt);
 }
 
 /*----- classes --------------------------------------------------------------*/
@@ -77,7 +79,9 @@ a.link-asset:visited,
 a.link-design,
 a.link-design:visited,
 a.link-font,
-a.link-font:visited {
+a.link-font:visited,
+a.link-merchandise,
+a.link-merchandise:visited {
   color: var(--color-baked);
 }
 a.link-music,
@@ -96,11 +100,23 @@ a.link-video,
 a.link-video:visited {
   color: var(--color-candy);
 }
+a.project-link,
+a.project-link:visited {
+  color: var(--color-lotus);
+  text-decoration: underline;
+}
+div.project-blurb {
+  display: flex;
+}
 img.link-icon {
   vertical-align: middle;
 }
+img.project-icon {
+  float: left;
+  margin: 0.25em 0.5em 0.25em 0;
+}
 img.tag-icon {
-  padding-right: 6px;
+  padding-right: 0.5em;
   vertical-align: middle;
 }
 .embedee {
@@ -110,20 +126,15 @@ img.tag-icon {
   width: calc(100vw - 16em);
   height: calc(calc(9 / 16) * calc(100vw - 16em));
 }
-span.title {
-  display: inline-block;
-  vertical-align: text-top;
-  width: calc(100vw - 16em);
-}
 td.date {
   text-align: right;
 }
 td.links {
-  width: 20em;
+  width: 21em;
   padding: 0;
 }
 td.tags {
-  width: 9em;
+  width: 12em;
   padding: 0;
 }
 td.title {

@@ -33,6 +33,8 @@ var tagBlacklist = [
     var icons,
       iconsPath,
       projects,
+      projectIconsPath,
+      projectsParsed = new Set(),
       lastYear = '',
       lastMonth = '',
       lastDay = '';
@@ -41,6 +43,12 @@ var tagBlacklist = [
       .then(json => {
         icons = json.icons;
         iconsPath = json.iconsPath;
+      });
+    await fetch('projects.json')
+      .then(response => response.json())
+      .then(json => {
+        projects = json;
+        projectIconsPath = json.iconsPath;
       });
     var [out, notes] = Object.keys(links)
       .reverse()
@@ -58,7 +66,45 @@ var tagBlacklist = [
                     dayEntries = links[year][month][day];
                   Array.isArray(dayEntries) || (dayEntries = [dayEntries]);
                   dayEntries.forEach((v, k) => {
-                    let entryDiv = newElement('tr', '', {});
+                    /*--- PROJECTS -------------------------------------------*/
+                    if (
+                      v.project &&
+                      projects[v.project] &&
+                      !projectsParsed.has(v.project)
+                    ) {
+                      let project = projects[v.project],
+                        projectDiv = newElement('tr', '', {}, [
+                          newElement('td', '', {
+                            colspan: 2
+                          }),
+                          newElement('td', '', {
+                            class: 'title',
+                          }, [
+                            newElement('img', '', {
+                              class: "project-icon",
+                              src: projectIconsPath + project.icon,
+                              alt: v.project,
+                              title: v.project,
+                            }),
+                            newElement('div', '', {
+                              class: 'project-title'
+                            }, [
+                              newElement('a', project.title, {
+                                href: project.url,
+                                target: '_blank',
+                                class: 'project-link'
+                              })
+                            ]),
+                            newElement('div', project.blurb, {
+                              class: 'project-blurb'
+                            })
+                          ]),
+                          newElement('td')
+                        ]);
+                        projectsParsed.add(v.project);
+                        acc.appendChild(projectDiv);
+                    }
+                    let entryDiv = newElement('tr');
                     /*--- DATE -----------------------------------------------*/
                     entryDiv.appendChild(
                       newElement(
@@ -139,7 +185,7 @@ var tagBlacklist = [
                             ? `<a href="${l.title ? l.url : l}" ${
                                 l.title &&
                                 `title="${l.title.replace('_', ' ')}"`
-                              } target="_blank">${
+                              } target="_blank" class="tag-link">${
                                 l.title && icons[l.title]
                                   ? `<img src="${
                                       iconsPath + icons[l.title]

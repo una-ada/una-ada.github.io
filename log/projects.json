@@ -1,6 +1,21 @@
 {
-  "cute" : {
-    "title": "chloe & una's tentacular experience",
-    "blurb": "Lorem Ipsum"
-  }
+  "anarchy.website": {
+    "icon": "proj/anarchy_website.png",
+    "title": "anarchy.website",
+    "url": "https://anarchy.website/",
+    "blurb": "my personal blog n writing archive, w articles on topics ranging from linguistics 2 history, from gender issues 2 anime, n from programming 2 physics."
+  },
+  "cute": {
+    "icon": "proj/cute.png",
+    "title": "chloe &amp; una's tentacular experience",
+    "url": "https://anchor.fm/cutecast",
+    "blurb": "chloe n una take u on a journey 2 understand 1 of the most important forms of media 2 ever exist: hentai. every week we bring u a new hentai review so that u can become a perfect genius who knows everything (abt hentai)."
+  },
+  "gas": {
+    "icon": "proj/gas.png",
+    "title": "goth angel sinners",
+    "url": "https://anchor.fm/gthnglsnnrs",
+    "blurb": "a podcast abt anarchy, anarchists, n anarchism."
+  },
+  "iconsPath": "/una-theme-icons/30px/"
 }
