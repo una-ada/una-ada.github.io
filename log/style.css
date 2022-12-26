@@ -28,12 +28,10 @@
 }
 
 /*----- elements -------------------------------------------------------------*/
-a {
-  color: var(--color-foamy);
-  text-decoration: none;
-}
+a,
 a:visited {
   color: var(--color-foamy);
+  text-decoration: none;
 }
 body {
   background: var(--color-black);
@@ -73,6 +71,30 @@ tr:hover {
 }
 .close {
   display: none;
+}
+a.link-asset,
+a.link-asset:visited,
+a.link-design,
+a.link-design:visited,
+a.link-font,
+a.link-font:visited {
+  color: var(--color-baked);
+}
+a.link-music,
+a.link-music:visited {
+  color: var(--color-plush);
+}
+a.link-podcast,
+a.link-podcast:visited {
+  color: var(--color-lilac);
+}
+a.link-programming,
+a.link-programming:visited {
+  color: var(--color-reeds);
+}
+a.link-video,
+a.link-video:visited {
+  color: var(--color-candy);
 }
 img.link-icon {
   vertical-align: middle;

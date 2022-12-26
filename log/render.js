@@ -22,140 +22,154 @@ var tagBlacklist = [
     ),
   zeroPad = (num, length) =>
     `${'0'.repeat(Math.max(0, length - `${num}`.length))}${num}`,
-  newElement = (tag, contents = '', attributes = {}) => {
+  newElement = (tag, contents = '', attributes = {}, children = []) => {
     let el = document.createElement(tag);
     el.innerHTML = contents;
     Object.keys(attributes).forEach(v => el.setAttribute(v, attributes[v]));
+    children.forEach(child => el.appendChild(child));
     return el;
   },
-  render = (links, container) => {
-    fetch('icons.json')
+  render = async (links, container) => {
+    var icons,
+      iconsPath,
+      projects,
+      lastYear = '',
+      lastMonth = '',
+      lastDay = '';
+    await fetch('icons.json')
       .then(response => response.json())
       .then(json => {
-        var [icons, iconsPath] = [json.icons, json.iconsPath],
-          [out, notes] = Object.keys(links)
+        icons = json.icons;
+        iconsPath = json.iconsPath;
+      });
+    var [out, notes] = Object.keys(links)
+      .reverse()
+      .reduce(
+        ([acc, notes], year) => {
+          Object.keys(links[year])
             .reverse()
-            .reduce(
-              ([acc, notes], year) => {
-                Object.keys(links[year])
-                  .reverse()
-                  .forEach((month, i) => {
-                    let monthPadded = zeroPad(month, 2);
-                    Object.keys(links[year][month])
-                      .reverse()
-                      .forEach((day, j) => {
-                        let dayPadded = zeroPad(day, 2),
-                          dayEntries = links[year][month][day];
-                        Array.isArray(dayEntries) ||
-                          (dayEntries = [dayEntries]);
-                        dayEntries.forEach((v, k) => {
-                          let entryDiv = newElement('tr', '', {
-                              id: `${year}.${monthPadded}.${dayPadded}${
-                                k == 0 ? '' : ALPHA[k]
-                              }`,
-                            }),
-                            entryDate = newElement('td', '', { class: 'date' });
-                          i + j + k == 0 &&
-                            entryDate.appendChild(
-                              newElement('a', year, { href: `#${year}` })
-                            ) &&
-                            (entryDate.innerHTML += '.');
-                          j + k == 0 &&
-                            entryDate.appendChild(
-                              newElement('a', monthPadded, {
-                                href: `#${year}.${monthPadded}`,
-                              })
-                            ) &&
-                            (entryDate.innerHTML += '.');
-                          entryDate.appendChild(
-                            newElement('a', k == 0 ? dayPadded : '..', {
-                              href: Array.isArray(v.link)
-                                ? v.link[0].url || v.link[0]
-                                : v.link.url || v.link,
-                              target: '_blank',
-                            })
-                          );
-                          entryDate.innerHTML += ': ';
-                          entryDiv.appendChild(entryDate);
-                          let entryTags = newElement('td', '', {
-                            class: 'tags',
-                          });
-                          v.tags &&
-                            (Array.isArray(v.tags) ? v.tags : [v.tags]).forEach(
-                              tag =>
-                                icons[tag] &&
+            .forEach((month, i) => {
+              let monthPadded = zeroPad(month, 2);
+              lastDay = '';
+              Object.keys(links[year][month])
+                .reverse()
+                .forEach((day, j) => {
+                  let dayPadded = zeroPad(day, 2),
+                    dayEntries = links[year][month][day];
+                  Array.isArray(dayEntries) || (dayEntries = [dayEntries]);
+                  dayEntries.forEach((v, k) => {
+                    let entryDiv = newElement('tr', '', {});
+                    /*--- DATE -----------------------------------------------*/
+                    entryDiv.appendChild(
+                      newElement(
+                        'td',
+                        `${year == lastYear ? '' : year + '.'}${
+                          month == lastMonth ? '' : monthPadded + '.'
+                        }${day == lastDay ? '..' : dayPadded}: `,
+                        { class: 'date' }
+                      )
+                    );
+                    [lastYear, lastMonth, lastDay] = [year, month, day];
+                    /*--- TAGS -----------------------------------------------*/
+                    let entryTags = newElement(
+                      'td',
+                      '',
+                      {
+                        class: 'tags',
+                      },
+                      v.tags
+                        ? (Array.isArray(v.tags) ? v.tags : [v.tags]).reduce(
+                            (acc, tag) => {
+                              icons[tag] &&
                                 !tagBlacklist.includes(tag) &&
-                                entryTags.appendChild(
+                                acc.push(
                                   newElement('img', '', {
                                     class: 'tag-icon',
                                     src: iconsPath + icons[tag],
                                     alt: tag,
                                     title: tag.replace('_', ' '),
                                   })
-                                )
-                            );
-                          entryDiv.appendChild(entryTags);
-                          let entryText = newElement('td', v.title, {
-                            class: 'title',
-                          });
-                          v.note &&
-                            notes.push(v.note) &&
-                            (entryText.innerHTML += `<a href="#${
-                              notes.length
-                            }" title="${v.note}">${SUPERSCRIPT(
-                              notes.length
-                            )}</a>`);
-                          v.media &&
-                            (entryText.innerHTML += ` [<a href="#${year}.${monthPadded}.${dayPadded}${
-                              k == 0 ? '' : ALPHA[k]
-                            }" onclick=\'embed(this, ${JSON.stringify(
-                              v.media
-                            )} )'>embed</a>]`);
-                          acc.appendChild(entryDiv);
-                          entryDiv.appendChild(entryText);
-                          let entryLinks = newElement('td', '', {
-                            class: 'links',
-                          });
-                          Array.isArray(v.link) &&
-                            (entryLinks.innerHTML += v.link
-                              .map((l, m) =>
-                                m > 0 || l.title
-                                  ? `<a href="${l.title ? l.url : l}" ${
-                                      l.title &&
-                                      `title="${l.title.replace('_', ' ')}"`
-                                    } target="_blank">${
-                                      l.title && icons[l.title]
-                                        ? `<img src="${
-                                            iconsPath + icons[l.title]
-                                          }" alt="${
-                                            l.title
-                                          }" class="link-icon" />`
-                                        : l.title || m + 1
-                                    }</a>`
-                                  : ''
-                              )
-                              .join(' '));
-                          entryDiv.appendChild(entryLinks);
-                        });
-                      });
+                                );
+                              return acc;
+                            },
+                            []
+                          )
+                        : []
+                    );
+                    entryDiv.appendChild(entryTags);
+                    /*--- TITLE ----------------------------------------------*/
+                    let entryText = newElement(
+                      'td',
+                      '',
+                      {
+                        class: 'title',
+                      },
+                      [
+                        newElement('a', v.title, {
+                          href: Array.isArray(v.link)
+                            ? v.link[0].url || v.link[0]
+                            : v.link.url || v.link,
+                          target: '_blank',
+                          class: `link-${
+                            v.tags && Array.isArray(v.tags) ? v.tags[0] : 'none'
+                          }`,
+                        }),
+                      ]
+                    );
+                    v.note &&
+                      notes.push(v.note) &&
+                      (entryText.innerHTML += `<a href="#${
+                        notes.length
+                      }" title="${v.note}">${SUPERSCRIPT(notes.length)}</a>`);
+                    v.media &&
+                      (entryText.innerHTML += ` [<a href="#${year}.${monthPadded}.${dayPadded}${
+                        k == 0 ? '' : ALPHA[k]
+                      }" onclick=\'embed(this, ${JSON.stringify(
+                        v.media
+                      )} )'>embed</a>]`);
+                    entryDiv.appendChild(entryText);
+                    /*--- LINKS ----------------------------------------------*/
+                    let entryLinks = newElement('td', '', {
+                      class: 'links',
+                    });
+                    Array.isArray(v.link) &&
+                      (entryLinks.innerHTML += v.link
+                        .map((l, m) =>
+                          m > 0 || l.title
+                            ? `<a href="${l.title ? l.url : l}" ${
+                                l.title &&
+                                `title="${l.title.replace('_', ' ')}"`
+                              } target="_blank">${
+                                l.title && icons[l.title]
+                                  ? `<img src="${
+                                      iconsPath + icons[l.title]
+                                    }" alt="${l.title}" class="link-icon" />`
+                                  : l.title || m + 1
+                              }</a>`
+                            : ''
+                        )
+                        .join(' '));
+                    entryDiv.appendChild(entryLinks);
+                    acc.appendChild(entryDiv);
                   });
-                return [acc, notes];
-              },
-              [container, []]
-            );
-        let noteBlock = newElement('div');
-        noteBlock.innerHTML += '<br>notes:<br>';
-        for (var i = 0; i < notes.length; )
-          noteBlock.innerHTML +=
-            '<div id="' +
-            ++i +
-            '">' +
-            SUPERSCRIPT(i) +
-            ' ' +
-            notes[i - 1] +
-            '</div>';
-        document.body.appendChild(noteBlock);
-      });
+                });
+            });
+          return [acc, notes];
+        },
+        [container, []]
+      );
+    let noteBlock = newElement('div');
+    noteBlock.innerHTML += '<br>notes:<br>';
+    for (var i = 0; i < notes.length; )
+      noteBlock.innerHTML +=
+        '<div id="' +
+        ++i +
+        '">' +
+        SUPERSCRIPT(i) +
+        ' ' +
+        notes[i - 1] +
+        '</div>';
+    document.body.appendChild(noteBlock);
   };
 
 /*--- THIS IS STUFF THAT NEEDS TO BE REWRITTEN ---*/
