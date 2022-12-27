@@ -2127,6 +2127,7 @@
       },
       "29": {
         "title": "una's theme [vs code] v1.0.0",
+        "project": "una theme",
         "link": [
           {
             "title": "vscode_marketplace",
@@ -2145,6 +2146,7 @@
       },
       "30": {
         "title": "una's theme [vs code] v1.1.0 - now with icons",
+        "project": "una theme",
         "link": [
           {
             "title": "vscode_marketplace",
@@ -2560,6 +2562,7 @@
       "31": [
         {
           "title": "una's theme: ocean breeze color theme",
+          "project": "una theme",
           "link": {
             "title": "adobe_color",
             "url": "https://color.adobe.com/Ocean-Breeze-color-theme-20394941/"
@@ -2569,6 +2572,7 @@
         },
         {
           "title": "una's theme: night lights color theme",
+          "project": "una theme",
           "link": {
             "title": "adobe_color",
             "url": "https://color.adobe.com/Night-Lights-color-theme-20394921/"
@@ -2645,11 +2649,12 @@
     "10": {
       "08": {
         "title": "una theme icons",
+        "project": "una theme",
         "link": {
           "title": "github",
           "url": "https://github.com/una-ada/una-theme-icons"
         },
-        "tags": ["asset", "aseprite", "git", "visual_studio_code", "github"],
+        "tags": ["asset", "git", "aseprite", "visual_studio_code", "github"],
         "note": "these r the icons used on this page, made 4 this page n now as their own repo!"
       }
     },
