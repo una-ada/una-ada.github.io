@@ -3,14 +3,18 @@
     "5": {
       "5": {
         "title": "wip minecraft mod",
-        "link": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod",
+        "link":  {
+          "title": "minecraft_forum",
+          "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod"},
         "tags": ["programming", "eclipse", "java", "minecraft"]
       }
     },
     "8": {
       "30": {
         "title": "minecraft language packs",
-        "link": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs",
+        "link":  {
+          "title": "minecraft_forum",
+          "url": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs"},
         "tags": ["asset", "notepad++", "paint.net", "config", "minecraft"]
       }
     }
@@ -19,26 +23,38 @@
     "7": {
       "8": {
         "title": "_g.crop - image cropping tool",
-        "link": "https://github.com/pheneco/crop",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/crop"
+        },
         "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "9": {
       "20": {
         "title": "_g.color - color picker",
-        "link": "https://github.com/pheneco/color",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/color"
+        },
         "tags": ["programming", "notepad++", "javascript"]
       },
       "30": {
         "title": "_g.player - html5 video controls",
-        "link": "https://github.com/pheneco/player",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/player"
+        },
         "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "10": {
       "21": {
         "title": "_g.menu - context menu",
-        "link": "https://github.com/pheneco/menu",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/menu"
+        },
         "tags": ["programming", "notepad++", "javascript"]
       }
     }
@@ -47,25 +63,37 @@
     "3": {
       "23": {
         "title": "_g.popup - js modal library",
-        "link": "https://github.com/pheneco/modal",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/modal"
+        },
         "tags": ["programming", "notepad++", "javascript", "github"]
       }
     },
     "9": {
       "4": {
         "title": "\"sunny day\"",
-        "link": "https://anarchy.website/2015/09/04/sunny-day.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/09/04/sunny-day.html"
+        },
         "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
       },
       "14": [
         {
           "title": "\"nihilism on aisle 7\"",
-          "link": "https://anarchy.website/2015/09/14/aisle-7.html",
+          "link": {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2015/09/14/aisle-7.html"
+          },
           "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
         },
         {
           "title": "\"awkward smile day\"",
-          "link": "https://anarchy.website/2015/09/14/awkward-smile-day.html",
+          "link": {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2015/09/14/awkward-smile-day.html"
+          },
           "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
         }
       ],
@@ -107,17 +135,26 @@
     "10": {
       "6": {
         "title": "\"the road\"",
-        "link": "https://anarchy.website/2015/10/06/the-road.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/10/06/the-road.html"
+        },
         "tags": ["writing", "microsoft_word", "tumblr", "svbtle"]
       },
       "8": {
         "title": "\"uwrf society of physics students visits 3m\"",
-        "link": "https://anarchy.website/2015/10/08/sps-at-3m.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/10/08/sps-at-3m.html"
+        },
         "tags": ["writing", "microsoft_word"]
       },
       "13": {
         "title": "repo for graphene",
-        "link": "https://github.com/una-ada/Graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/Graphene"
+        },
         "tags": [
           "programming",
           "adobe_illustrator",
@@ -142,24 +179,33 @@
       "14": {
         "title": "\"about\" tumblr theme",
         "link": [
-          "https://www.tumblr.com/theme/40029",
+          { "title": "tumblr", "url": "https://www.tumblr.com/theme/40029" },
           { "title": "github", "url": "https://github.com/una-ada/About" }
         ],
         "tags": ["programming", "git", "notepad++", "html", "tumblr", "github"]
       },
       "15": {
         "title": "repo for programming ii",
-        "link": "https://github.com/una-ada/CS162",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/CS162"
+        },
         "tags": ["programming", "git", "java", "github"]
       },
       "16": {
         "title": "\"blocks\" tumblr theme",
-        "link": "https://github.com/una-ada/Blocks",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/Blocks"
+        },
         "tags": ["programming", "tumblr", "git", "html", "github"]
       },
       "25": {
         "title": "graphene w0.4.3-s0.4.0",
-        "link": "https://github.com/pheneco/Graphene/releases/tag/w0.4.3-s0.4.0",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/Graphene/releases/tag/w0.4.3-s0.4.0"
+        },
         "tags": [
           "programming",
           "adobe_illustrator",
@@ -182,34 +228,52 @@
       },
       "29": {
         "title": "\"office chair provides fun, convenience, comfort\"",
-        "link": "https://anarchy.website/2015/10/29/chair.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/10/29/chair.html"
+        },
         "tags": ["writing", "microsoft_word"]
       }
     },
     "11": {
       "1": {
         "title": "sps and chem demons host annual haunted lab",
-        "link": "https://anarchy.website/2015/11/01/haunted-lab.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/11/01/haunted-lab.html"
+        },
         "tags": ["writing", "microsoft_word"]
       },
       "14": {
         "title": "_g.popup v0.1.0",
-        "link": "https://github.com/pheneco/modal",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/modal"
+        },
         "tags": ["programming", "git", "notepad++", "javascript", "github"]
       },
       "15": {
         "title": "\"orca\" national high power rocketry competition project proposal",
-        "link": "https://anarchy.website/2015/11/15/orca-proposal.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/11/15/orca-proposal.html"
+        },
         "tags": ["writing", "microsoft_word"]
       },
       "16": {
         "title": "calculating heat efficiency on campus using infrared imaging project proposal",
-        "link": "https://anarchy.website/2015/11/16/cheocuii-proposal.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/11/16/cheocuii-proposal.html"
+        },
         "tags": ["writing", "microsoft_word"]
       },
       "18": {
         "title": "\"general relativity's astronomical effects\"",
-        "link": "https://anarchy.website/2015/11/18/einstein.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/11/18/einstein.html"
+        },
         "tags": ["writing", "microsoft_word"],
         "note": "except for the fact that the editor changed an independent clause to a sentence, the first letter of each sentence spells \"fuck the english department\""
       }
@@ -217,17 +281,23 @@
     "12": {
       "2": {
         "title": "\"a students guide to pencils\"",
-        "link": "https://anarchy.website/2015/12/02/pencils.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/12/02/pencils.html"
+        },
         "tags": ["writing", "microsoft_word"]
       },
       "5": {
         "title": "\"pipe\" tumblr theme",
-        "link": "https://github.com/una-ada/Pipe",
+        "link": { "title": "github", "url": "https://github.com/una-ada/Pipe" },
         "tags": ["programming", "git", "notepad++", "html", "tumblr"]
       },
       "24": {
         "title": "\"using pens for math is not bad\"",
-        "link": "https://anarchy.website/2015/12/24/pens.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2015/12/24/pens.html"
+        },
         "tags": ["writing", "microsoft_word", "wordpress"]
       }
     }
@@ -237,12 +307,18 @@
       "24": [
         {
           "title": "ghost with hat that jumps and stuff",
-          "link": "https://scratch.mit.edu/projects/95254858/",
+          "link": {
+            "title": "scratch",
+            "url": "https://scratch.mit.edu/projects/95254858/"
+          },
           "tags": ["programming", "microsoft_paint", "scratch"]
         },
         {
           "title": "ghost with hat that jumps and stuff ii",
-          "link": "https://scratch.mit.edu/projects/95255016/",
+          "link": {
+            "title": "scratch",
+            "url": "https://scratch.mit.edu/projects/95255016/"
+          },
           "tags": ["programming", "microsoft_paint", "scratch"]
         }
       ]
@@ -251,13 +327,19 @@
       "5": [
         {
           "title": "\"the feasibility of spontaneously morphing into an octopus\"",
-          "link": "https://anarchy.website/2016/02/05/octopodes.html",
+          "link": {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2016/02/05/octopodes.html"
+          },
           "tags": ["writing", "microsoft_word"]
         }
       ],
       "25": {
         "title": "repo for oop",
-        "link": "https://github.com/Trewbot/CS235",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/Trewbot/CS235"
+        },
         "tags": ["programming", "eclipse", "git", "java", "github"]
       }
     },
@@ -265,21 +347,30 @@
       "4": [
         {
           "title": "translucent square image painter",
-          "link": "https://github.com/una-ada/TSIP",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/una-ada/TSIP"
+          },
           "tags": ["programming", "eclipse", "git", "java", "github"]
         }
       ],
       "12": {
         "title": "\"calculating heat efficiency on campus using infrared imaging\"",
         "link": [
-          "https://anarchy.website/2016/03/12/cheocuii.html",
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2016/03/12/cheocuii.html"
+          },
           "http://www.academia.edu/23586068/Calculating_Heat_Efficiency_on_Campus_Using_Infrared_Imaging"
         ],
         "tags": ["writing", "adobe_indesign", "microsoft_word", "origin_lab"]
       },
       "27": {
         "title": "pop tarts (god)",
-        "link": "https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot",
+        "link": {
+          "title": "bandcamp",
+          "url": "https://ruinedpicnic.bandcamp.com/track/pop-tarts-god-written-by-trewbot"
+        },
         "tags": ["writing", "music", "google_docs"],
         "media": {
           "type": "bandcamp",
@@ -291,12 +382,18 @@
     "4": {
       "2": {
         "title": "mpe ii assignment 6",
-        "link": "https://xn--z7x.dev/js/phys/poisson",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/phys/poisson"
+        },
         "tags": ["programming", "atom", "javascript"]
       },
       "9": {
         "title": "uwrf high power rocket team (\"orca\") test launch",
-        "link": "https://www.youtube.com/watch?v=5KFDJpNjc_E",
+        "link": {
+          "title": "youtube",
+          "url": "https://www.youtube.com/watch?v=5KFDJpNjc_E"
+        },
         "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "5KFDJpNjc_E" }
       }
@@ -304,7 +401,10 @@
     "9": {
       "21": {
         "title": "bottle flipping video",
-        "link": "https://www.youtube.com/watch?v=Ok0x_oQQVXE",
+        "link": {
+          "title": "youtube",
+          "url": "https://www.youtube.com/watch?v=Ok0x_oQQVXE"
+        },
         "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "Ok0x_oQQVXE" }
       }
@@ -312,12 +412,18 @@
     "10": {
       "17": {
         "title": "\"building an acousto-optical deflector\"",
-        "link": "https://anarchy.website/2016/10/17/acousto-optical.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2016/10/17/acousto-optical.html"
+        },
         "tags": ["writing", "adobe_illustrator", "microsoft_word"]
       },
       "26": {
         "title": "uwrf acm promo [draft 2]",
-        "link": "https://www.youtube.com/watch?v=zW3a33f_MY8",
+        "link": {
+          "title": "youtube",
+          "url": "https://www.youtube.com/watch?v=zW3a33f_MY8"
+        },
         "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "zW3a33f_MY8" }
       }
@@ -325,13 +431,19 @@
     "11": {
       "6": {
         "title": "the san fran vlog",
-        "link": "https://www.youtube.com/watch?v=S3-9qgIFDA0",
+        "link": {
+          "title": "youtube",
+          "url": "https://www.youtube.com/watch?v=S3-9qgIFDA0"
+        },
         "tags": ["video", "adobe_illustrator", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "S3-9qgIFDA0" }
       },
       "19": {
         "title": "\"playing an fps on a drawing tablet\"",
-        "link": "https://anarchy.website/2016/11/19/fps-drawing-tablet.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2016/11/19/fps-drawing-tablet.html"
+        },
         "tags": ["writing", "google_docs"]
       }
     }
@@ -340,7 +452,10 @@
     "1": {
       "3": {
         "title": "et2 reading",
-        "link": "https://www.youtube.com/playlist?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C",
+        "link": {
+          "title": "youtube",
+          "url": "https://www.youtube.com/playlist?list=PLQsBywQKmCvREZuzYUMHN7N-sFD6bGh3C"
+        },
         "tags": ["podcast", "audacity", "adobe_premiere_pro"],
         "media": {
           "type": "youtube",
@@ -349,7 +464,10 @@
       },
       "13": {
         "title": "amber",
-        "link": "https://github.com/pheneco/amber",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/amber"
+        },
         "tags": [
           "programming",
           "git",
@@ -366,23 +484,35 @@
     "2": {
       "5": {
         "title": "scene 7 of opposite jurassic park",
-        "link": "https://www.docdroid.net/tm2dnu4",
+        "link": {
+          "title": "docdroid",
+          "url": "https://www.docdroid.net/tm2dnu4"
+        },
         "tags": ["writing", "google_docs"]
       },
       "19": {
         "title": "gravity playground",
-        "link": "https://xn--z7x.dev/js/phys/gravity",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/phys/gravity"
+        },
         "tags": ["programming", "atom", "javascript", "google_fonts"]
       },
       "23": [
         {
           "title": "a collection of .txt files from feb 22 and 23, 2017",
-          "link": "https://anarchy.website/2017/02/23/txt.html",
+          "link": {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2017/02/23/txt.html"
+          },
           "tags": ["writing", "atom"]
         },
         {
           "title": "y r u crying.txt",
-          "link": "https://anarchy.website/2017/02/23/y-r-u-crying.html",
+          "link": {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2017/02/23/y-r-u-crying.html"
+          },
           "tags": ["writing", "atom"]
         }
       ]
@@ -390,7 +520,10 @@
     "3": {
       "5": {
         "title": "scene 9 of muppets yakuza",
-        "link": "https://www.docdroid.net/tm2dnu4",
+        "link": {
+          "title": "docdroid",
+          "url": "https://www.docdroid.net/tm2dnu4"
+        },
         "tags": ["writing", "google_docs"]
       },
       "10": {
@@ -406,17 +539,26 @@
       },
       "16": {
         "title": "let it snow.js",
-        "link": "https://xn--z7x.dev/js/3/snow",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/3/snow"
+        },
         "tags": ["programming", "atom", "javascript", "threejs"]
       },
       "18": {
         "title": "revolution.js",
-        "link": "https://xn--z7x.dev/js/3/waves",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/3/waves"
+        },
         "tags": ["programming", "atom", "javascript", "threejs"]
       },
       "19": {
-        "title": "moved personal site to <a href=\"https://github.io\">github pages</a>",
-        "link": "https://xn--z7x.dev/",
+        "title": "moved personal site to github pages",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/"
+        },
         "tags": [
           "programming",
           "atom",
@@ -432,7 +574,10 @@
     "4": {
       "5": {
         "title": "scene 10 of sonic's last adventure",
-        "link": "https://www.docdroid.net/Nphxbj2",
+        "link": {
+          "title": "docdroid",
+          "url": "https://www.docdroid.net/Nphxbj2"
+        },
         "tags": ["writing", "google_docs"]
       }
     },
@@ -440,18 +585,27 @@
       "7": [
         {
           "title": "scene 10 of thelma and louise 2: army of darkness",
-          "link": "https://www.docdroid.net/sVlHBLX",
+          "link": {
+            "title": "docdroid",
+            "url": "https://www.docdroid.net/sVlHBLX"
+          },
           "tags": ["writing", "google_docs"]
         },
         {
           "title": "corn.html",
-          "link": "https://xn--z7x.dev/corn/",
+          "link": {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/corn/"
+          },
           "tags": ["writing", "adobe_photoshop", "atom", "css", "html"]
         }
       ],
       "9": {
         "title": "harp.js",
-        "link": "https://xn--z7x.dev/js/2/harp",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/2/harp"
+        },
         "tags": ["programming", "atom", "javascript", "traer.js"]
       }
     },
@@ -459,7 +613,10 @@
       "10": {
         "title": "phene.co website",
         "link": [
-          "https://pheneco.github.io/",
+          {
+            "title": "github_pages",
+            "url": "https://pheneco.github.io/"
+          },
           {
             "title": "github",
             "url": "https://github.com/pheneco/pheneco.github.io"
@@ -480,7 +637,10 @@
       },
       "22": {
         "title": "the chi town vlog",
-        "link": "https://www.youtube.com/watch?v=l9d5AwhesoY",
+        "link": {
+          "title": "youtube",
+          "url": "https://www.youtube.com/watch?v=l9d5AwhesoY"
+        },
         "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "l9d5AwhesoY" }
       }
@@ -488,12 +648,18 @@
     "8": {
       "29": {
         "title": "pvf design proposal",
-        "link": "https://anarchy.website/2017/08/29/pvf-proposal.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2017/08/29/pvf-proposal.html"
+        },
         "tags": ["design", "adobe_illustrator", "html", "markdown"]
       },
       "31": {
         "title": "\"praxis and the 'report from the real minority'\"",
-        "link": "https://anarchy.website/2017/08/31/praxis-and-the-report.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2017/08/31/praxis-and-the-report.html"
+        },
         "tags": ["writing", "google_docs"]
       }
     },
@@ -501,7 +667,10 @@
       "6": {
         "title": "all that is left website",
         "link": [
-          "https://allthatisleft.github.io/",
+          {
+            "title": "github_pages",
+            "url": "https://allthatisleft.github.io/"
+          },
           {
             "title": "github",
             "url": "https://github.com/AllThatisLeft/allthatisleft.github.io"
@@ -524,27 +693,39 @@
       },
       "24": {
         "title": "sinusoid.js",
-        "link": "https://xn--z7x.dev/js/3/sinusoid",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/3/sinusoid"
+        },
         "tags": ["programming", "javascript", "threejs"]
       }
     },
     "10": {
       "14": {
         "title": "\"introduction to syndicalism\"",
-        "link": "https://anarchy.website/2017/10/14/syndicalism.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2017/10/14/syndicalism.html"
+        },
         "tags": ["writing"]
       }
     },
     "11": {
       "13": {
         "title": "box-muller time generator",
-        "link": "https://xn--z7x.dev/js/2/normal",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/2/normal"
+        },
         "tags": ["programming", "javascript"]
       },
       "23": {
         "title": "sad - v0.1 \"alone\"",
         "link": [
-          "https://xn--z7x.dev/sad/alone",
+          {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/sad/alone"
+          },
           { "title": "github", "url": "https://github.com/una-ada/sad" }
         ],
         "tags": [
@@ -560,7 +741,10 @@
       "29": {
         "title": "sad - v1.0 \"aimless\"",
         "link": [
-          "https://xn--z7x.dev/sad/aimless",
+          {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/sad/aimless"
+          },
           { "title": "github", "url": "https://github.com/una-ada/sad" }
         ],
         "tags": [
@@ -581,7 +765,10 @@
       "9": {
         "title": "all that is left iss 001",
         "link": [
-          "https://allthatisleft.github.io/issue/001/",
+          {
+            "title": "github_pages",
+            "url": "https://allthatisleft.github.io/issue/001/"
+          },
           {
             "title": "pdf",
             "url": "https://allthatisleft.github.io/issue/001.pdf"
@@ -593,7 +780,10 @@
         "title": "anarchy.website",
         "project": "anarchy.website",
         "link": [
-          "https://anarchy.website",
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website"
+          },
           {
             "title": "github",
             "url": "https://github.com/una-ada/anarchy.website"
@@ -621,24 +811,36 @@
     "3": {
       "15": {
         "title": "\"fear and death\"",
-        "link": "https://anarchy.website/2018/03/15/fear.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2018/03/15/fear.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       },
       "20": {
         "title": "\"death isn't real and neither are you\"",
-        "link": "https://anarchy.website/2018/03/20/death-isnt-real.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2018/03/20/death-isnt-real.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       }
     },
     "5": {
       "20": {
         "title": "poisson v.2",
-        "link": "https://xn--z7x.dev/js/phys/poisson2",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/phys/poisson2"
+        },
         "tags": ["programming", "atom", "javascript"]
       },
       "21": {
         "title": "\"graphing a poisson distribution using canvas\"",
-        "link": "https://anarchy.website/2018/05/21/poisson.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2018/05/21/poisson.html"
+        },
         "tags": ["writing", "programming", "atom", "markdown"]
       }
     },
@@ -665,7 +867,10 @@
       "14": {
         "title": "_g.graph - mathematical graphing library",
         "link": [
-          "https://pheneco.github.io/graph/",
+          {
+            "title": "github_pages",
+            "url": "https://pheneco.github.io/graph/"
+          },
           {
             "title": "blog",
             "url": "https://anarchy.website/2018/07/14/graphs.html"
@@ -676,13 +881,19 @@
       "19": {
         "title": "\"ai isn't going to kill us\"",
         "project": "anarchy.website",
-        "link": "https://anarchy.website/2018/07/19/ai.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2018/07/19/ai.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       },
       "26": {
         "title": "\"the windbreak forest lattice in hokkaido\"",
         "project": "anarchy.website",
-        "link": "https://anarchy.website/2018/07/26/windbreak-lattice.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2018/07/26/windbreak-lattice.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       }
     },
@@ -690,19 +901,28 @@
       "3": [
         {
           "title": "pixel sort",
-          "link": "https://xn--z7x.dev/js/2/frag-sort-1",
+          "link": {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/js/2/frag-sort-1"
+          },
           "tags": ["programming", "atom", "javascript"]
         },
         {
           "title": "pixel sort v.2",
-          "link": "https://xn--z7x.dev/js/2/frag-sort-2",
+          "link": {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/js/2/frag-sort-2"
+          },
           "tags": ["programming", "atom", "javascript"]
         }
       ],
       "30": {
         "title": "\"does shoplifting 'hurt' workers?\"",
         "project": "anarchy.website",
-        "link": "https://anarchy.website/2018/08/30/shoplifting.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2018/08/30/shoplifting.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       }
     },
@@ -809,7 +1029,10 @@
       "6": {
         "title": "\"overreliance on connotation\"",
         "project": "anarchy.website",
-        "link": "https://anarchy.website/2018/10/06/connotation.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2018/10/06/connotation.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       }
     },
@@ -1276,7 +1499,10 @@
       "11": {
         "title": "\"anarchy.website ni furigana to chiikika\"",
         "project": "anarchy.website",
-        "link": "https://anarchy.website/2019/12/11/furigana.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2019/12/11/furigana.html"
+        },
         "tags": ["writing", "programming", "css", "html", "liquid", "markdown"]
       }
     }
@@ -1415,19 +1641,28 @@
     "9": {
       "26": {
         "title": "\"mumei no joshi\"",
-        "link": "https://anarchy.website/2020/09/26/nameless.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2020/09/26/nameless.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       }
     },
     "10": {
       "2": {
         "title": "una script v2020.10.02 - fixes n added latin-1 supplement",
-        "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.02",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/una-script/tree/master/old/2020.10.02"
+        },
         "tags": ["font", "adobe_illustrator", "fontforge"]
       },
       "4": {
         "title": "una script v2020.10.04 - fix kern tables n thorn",
-        "link": "https://github.com/una-ada/una-script/tree/master/old/2020.10.04",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/una-script/tree/master/old/2020.10.04"
+        },
         "tags": ["font", "fontforge"]
       }
     },
@@ -1660,13 +1895,19 @@
         },
         {
           "title": "una nota v2021.04.18",
-          "link": "https://github.com/una-ada/una-nota/tree/main/old/2021.04.18",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-nota/tree/main/old/2021.04.18"
+          },
           "tags": ["font", "adobe_photoshop", "adobe_illustrator", "fontforge"]
         }
       ],
       "20": {
         "title": "una nota blog",
-        "link": "https://anarchy.website/2021/04/20/una-nota.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2021/04/20/una-nota.html"
+        },
         "tags": ["writing", "atom", "markdown"]
       },
       "27": {
@@ -1717,12 +1958,18 @@
     "5": {
       "29": {
         "title": "una script v2021.05.29 - fix metrics",
-        "link": "https://github.com/una-ada/una-script/tree/master/old/2021.05.29",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/una-script/tree/master/old/2021.05.29"
+        },
         "tags": ["font", "fontforge"]
       },
       "30": {
         "title": "una script v2021.05.30 - fix metadata",
-        "link": "https://github.com/una-ada/una-script/tree/master/old/2021.05.30",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/una-script/tree/master/old/2021.05.30"
+        },
         "tags": ["font", "fontforge"]
       },
       "31": {
@@ -1749,19 +1996,28 @@
       "1": [
         {
           "title": "una script v2021.06.01 - fix webfont accent spacing",
-          "link": "https://github.com/una-ada/una-script/tree/master/old/2021.06.01",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-script/tree/master/old/2021.06.01"
+          },
           "tags": ["font", "adobe_illustrator", "fontforge"]
         },
         {
           "title": "una nota v2021.06.01 - update ps names",
-          "link": "https://github.com/una-ada/una-nota/tree/master/old/2021.06.01",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-nota/tree/master/old/2021.06.01"
+          },
           "tags": ["font", "fontforge"]
         }
       ],
       "6": {
         "title": "ga sei-r proj 1 - gravity remake + blogs",
         "link": [
-          "https://xn--z7x.dev/gravity/",
+          {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/gravity/"
+          },
           { "title": "github", "url": "https://github.com/una-ada/gravity" },
           {
             "title": "blog",
@@ -1796,7 +2052,10 @@
       },
       "20": {
         "title": "art for amitypark - better off rmx",
-        "link": "https://amitypark.bandcamp.com/track/better-off-rmx",
+        "link": {
+          "title": "bandcamp",
+          "url": "https://amitypark.bandcamp.com/track/better-off-rmx"
+        },
         "tags": ["design", "adobe_photoshop"],
         "media": { "type": "bandcamp-single", "src": "3394708964" }
       },
@@ -1869,7 +2128,10 @@
       "29": {
         "title": "una's theme [vs code] v1.0.0",
         "link": [
-          "https://marketplace.visualstudio.com/items?itemName=una.theme",
+          {
+            "title": "vscode_marketplace",
+            "url": "https://marketplace.visualstudio.com/items?itemName=una.theme"
+          },
           { "title": "github", "url": "https://github.com/una-ada/una-theme" }
         ],
         "tags": [
@@ -1884,7 +2146,10 @@
       "30": {
         "title": "una's theme [vs code] v1.1.0 - now with icons",
         "link": [
-          "https://marketplace.visualstudio.com/items?itemName=una.theme",
+          {
+            "title": "vscode_marketplace",
+            "url": "https://marketplace.visualstudio.com/items?itemName=una.theme"
+          },
           { "title": "github", "url": "https://github.com/una-ada/una-theme" }
         ],
         "tags": [
@@ -1901,7 +2166,10 @@
     "7": {
       "5": {
         "title": "rewrote love.html code",
-        "link": "https://xn--z7x.dev/love.html",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/love.html"
+        },
         "tags": ["programming", "visual_studio_code", "javascript"]
       },
       "6": {
@@ -2015,7 +2283,10 @@
       "20": {
         "title": "ga sei-r portfolio",
         "link": [
-          "https://xn--z7x.dev",
+          {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev"
+          },
           {
             "title": "github",
             "url": "https://github.com/una-ada/una-ada.github.io/compare/91b9e41...191d5f3"
@@ -2062,7 +2333,10 @@
     "10": {
       "6": {
         "title": "джіса2 - i gave up on my dreams again today",
-        "link": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today",
+        "link": {
+          "title": "bandcamp",
+          "url": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today"
+        },
         "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
         "media": { "type": "bandcamp-single", "src": "3122118483" }
       }
@@ -2205,7 +2479,10 @@
     "4": {
       "16": {
         "title": "\"how to be broken and never get better\"",
-        "link": "https://anarchy.website/2022/04/16/broken.html",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2022/04/16/broken.html"
+        },
         "tags": [
           "writing",
           "adobe_photoshop",
@@ -2219,7 +2496,10 @@
       "2": {
         "title": "sad v2.0 - typescript rewrite w cannon phys",
         "link": [
-          "https://xn--z7x.dev/sad/",
+          {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/sad/"
+          },
           {
             "title": "github",
             "url": "https://github.com/una-ada/sad/releases/tag/v2.0.1"
@@ -2238,7 +2518,7 @@
       },
       "11": {
         "title": "chloe &amp; una's tentacular experience vol. 3: the pollinic girls attack!",
-        "project":"cute",
+        "project": "cute",
         "link": [
           {
             "title": "anchor",
@@ -2280,13 +2560,19 @@
       "31": [
         {
           "title": "una's theme: ocean breeze color theme",
-          "link": "https://color.adobe.com/Ocean-Breeze-color-theme-20394941/",
+          "link": {
+            "title": "adobe_color",
+            "url": "https://color.adobe.com/Ocean-Breeze-color-theme-20394941/"
+          },
           "tags": ["asset", "adobe_color"],
           "note": "5 cool tones from my palette (adobe color only supports 5 color themes, i chose 10/12 colors to split btwn cool n warm)"
         },
         {
           "title": "una's theme: night lights color theme",
-          "link": "https://color.adobe.com/Night-Lights-color-theme-20394921/",
+          "link": {
+            "title": "adobe_color",
+            "url": "https://color.adobe.com/Night-Lights-color-theme-20394921/"
+          },
           "tags": ["asset", "adobe_color"],
           "note": "5 warm tones from my palette (see note on the other theme)"
         }
@@ -2359,7 +2645,10 @@
     "10": {
       "08": {
         "title": "una theme icons",
-        "link": "https://github.com/una-ada/una-theme-icons",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/una-theme-icons"
+        },
         "tags": ["asset", "aseprite", "git", "visual_studio_code", "github"],
         "note": "these r the icons used on this page, made 4 this page n now as their own repo!"
       }
@@ -2368,7 +2657,10 @@
       "08": {
         "title": "\"library classification systems &amp; some critiques thereof\"",
         "project": "anarchy.website",
-        "link": "https://anarchy.website/2022/11/08/classification-systems",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2022/11/08/classification-systems"
+        },
         "tags": ["writing", "visual_studio_code", "markdown"]
       }
     }

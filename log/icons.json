@@ -3,6 +3,7 @@
     "adobe_color": "dist/adobe_color.png",
     "adobe_fonts": "dist/adobe_fonts.png",
     "amazon_music": "dist/amazon_music.png",
+    "anarchy.website": "etc/globe.gif",
     "anchor": "dist/anchor.png",
     "anghami": "dist/anghami.png",
     "apple_music": "dist/apple_music.png",
@@ -22,6 +23,7 @@
     "heroku": "dist/heroku.png",
     "iheartradio": "dist/iheartradio.png",
     "kkbox": "dist/kkbox.png",
+    "minecraft_forum": "etc/minecraft.png",
     "myfonts": "dist/myfonts.png",
     "netease_cloud_music": "dist/netease_cloud_music.png",
     "npm": "dist/npm.png",
@@ -45,6 +47,7 @@
     "yandex_music": "dist/yandex_music.png",
     "youtube": "dist/youtube.png",
     "youtube_music": "dist/youtube_music.png",
+    "猫.dev": "etc/globe.gif",
 
     "c": "lang/c.png",
     "cpp": "lang/cpp.png",
@@ -99,7 +102,7 @@
     "paint.net": "soft/paint_net.png",
     "postgresql": "soft/postgresql.png",
     "visual_studio_code": "soft/visual_studio_code.png",
-    
+
     "account": "etc/person.png",
     "asset": "type/asset.png",
     "blog": "type/blog.png",

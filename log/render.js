@@ -1,17 +1,17 @@
 var tagBlacklist = [
-    'atom',
+    //'atom',
     'css',
     'html',
-    'json',
-    'git',
-    'github',
-    'google_docs',
-    'markdown',
-    'microsoft_word',
-    'notepad++',
-    'paint.net',
-    'visual_studio_code',
-    'yaml',
+    //'json',
+    //'git',
+    //'github',
+    //'google_docs',
+    //'markdown',
+    //'microsoft_word',
+    //'notepad++',
+    //'paint.net',
+    //'visual_studio_code',
+    //'yaml',
   ],
   ALPHA = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
   SUPERSCRIPT = n =>
@@ -75,34 +75,44 @@ var tagBlacklist = [
                       let project = projects[v.project],
                         projectDiv = newElement('tr', '', {}, [
                           newElement('td', '', {
-                            colspan: 2
+                            colspan: 2,
                           }),
-                          newElement('td', '', {
-                            class: 'title',
-                          }, [
-                            newElement('img', '', {
-                              class: "project-icon",
-                              src: projectIconsPath + project.icon,
-                              alt: v.project,
-                              title: v.project,
-                            }),
-                            newElement('div', '', {
-                              class: 'project-title'
-                            }, [
-                              newElement('a', project.title, {
-                                href: project.url,
-                                target: '_blank',
-                                class: 'project-link'
-                              })
-                            ]),
-                            newElement('div', project.blurb, {
-                              class: 'project-blurb'
-                            })
-                          ]),
-                          newElement('td')
+                          newElement(
+                            'td',
+                            '',
+                            {
+                              class: 'title',
+                            },
+                            [
+                              newElement('img', '', {
+                                class: 'project-icon',
+                                src: projectIconsPath + project.icon,
+                                alt: v.project,
+                                title: v.project,
+                              }),
+                              newElement(
+                                'div',
+                                '',
+                                {
+                                  class: 'project-title',
+                                },
+                                [
+                                  newElement('a', project.title, {
+                                    href: project.url,
+                                    target: '_blank',
+                                    class: 'project-link',
+                                  }),
+                                ]
+                              ),
+                              newElement('div', project.blurb, {
+                                class: 'project-blurb',
+                              }),
+                            ]
+                          ),
+                          newElement('td'),
                         ]);
-                        projectsParsed.add(v.project);
-                        acc.appendChild(projectDiv);
+                      projectsParsed.add(v.project);
+                      acc.appendChild(projectDiv);
                     }
                     let entryDiv = newElement('tr');
                     /*--- DATE -----------------------------------------------*/
@@ -178,23 +188,23 @@ var tagBlacklist = [
                     let entryLinks = newElement('td', '', {
                       class: 'links',
                     });
-                    Array.isArray(v.link) &&
-                      (entryLinks.innerHTML += v.link
-                        .map((l, m) =>
-                          m > 0 || l.title
-                            ? `<a href="${l.title ? l.url : l}" ${
-                                l.title &&
-                                `title="${l.title.replace('_', ' ')}"`
-                              } target="_blank" class="tag-link">${
-                                l.title && icons[l.title]
-                                  ? `<img src="${
-                                      iconsPath + icons[l.title]
-                                    }" alt="${l.title}" class="link-icon" />`
-                                  : l.title || m + 1
-                              }</a>`
-                            : ''
-                        )
-                        .join(' '));
+                    entryLinks.innerHTML += (
+                      Array.isArray(v.link) ? v.link : [v.link]
+                    )
+                      .map((l, m) =>
+                        m > 0 || l.title
+                          ? `<a href="${l.title ? l.url : l}" ${
+                              l.title && `title="${l.title.replace('_', ' ')}"`
+                            } target="_blank" class="tag-link">${
+                              l.title && icons[l.title]
+                                ? `<img src="${
+                                    iconsPath + icons[l.title]
+                                  }" alt="${l.title}" class="link-icon" />`
+                                : l.title || m + 1
+                            }</a>`
+                          : ''
+                      )
+                      .join(' ');
                     entryDiv.appendChild(entryLinks);
                     acc.appendChild(entryDiv);
                   });
