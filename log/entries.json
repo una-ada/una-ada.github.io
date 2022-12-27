@@ -3,18 +3,20 @@
     "5": {
       "5": {
         "title": "wip minecraft mod",
-        "link":  {
+        "link": {
           "title": "minecraft_forum",
-          "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod"},
+          "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod"
+        },
         "tags": ["programming", "eclipse", "java", "minecraft"]
       }
     },
     "8": {
       "30": {
         "title": "minecraft language packs",
-        "link":  {
+        "link": {
           "title": "minecraft_forum",
-          "url": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs"},
+          "url": "http://www.minecraftforum.net/forums/archive/language-packs/933001-lp-language-packs"
+        },
         "tags": ["asset", "notepad++", "paint.net", "config", "minecraft"]
       }
     }
@@ -1669,6 +1671,7 @@
     "12": {
       "4": {
         "title": "джіса2 - watashi mou zettai ni",
+        "project": "джіса2",
         "link": [
           {
             "title": "soundcloud",
@@ -1680,6 +1683,7 @@
       },
       "6": {
         "title": "джіса2 - shiranai tenjou da",
+        "project": "джіса2",
         "link": [
           {
             "title": "soundcloud",
@@ -1691,6 +1695,7 @@
       },
       "18": {
         "title": "джіса2 - densha line",
+        "project": "джіса2",
         "link": [
           {
             "title": "soundcloud",
@@ -1744,6 +1749,7 @@
     "1": {
       "5": {
         "title": "джіса2 - lullaby for eternity",
+        "project": "джіса2",
         "link": [
           {
             "title": "soundcloud",
@@ -1767,6 +1773,7 @@
     "3": {
       "5": {
         "title": "amitypark x джіса2 - tsuki",
+        "project": "джіса2",
         "link": [
           {
             "title": "bandcamp",
@@ -2335,6 +2342,7 @@
     "10": {
       "6": {
         "title": "джіса2 - i gave up on my dreams again today",
+        "project": "джіса2",
         "link": {
           "title": "bandcamp",
           "url": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today"
@@ -2346,6 +2354,7 @@
     "11": {
       "5": {
         "title": "amitypark x джіса2 - this is a cry for help",
+        "project": "джіса2",
         "link": [
           {
             "title": "bandcamp",
@@ -2584,7 +2593,8 @@
     },
     "8": {
       "9": {
-        "title": "the town of forgotten nightmares",
+        "title": "джіса2 - the town of forgotten nightmares",
+        "project": "джіса2",
         "link": [
           {
             "title": "bandcamp",
@@ -2667,6 +2677,20 @@
           "url": "https://anarchy.website/2022/11/08/classification-systems"
         },
         "tags": ["writing", "visual_studio_code", "markdown"]
+      }
+    },
+    "12": {
+      "27": {
+        "title": "джіса2 - the end of the world pt ii",
+        "project": "джіса2",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/track/the-end-of-the-world-part-ii"
+          }
+        ],
+        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
+        "media": { "type": "bandcamp-single", "src": "2564057479" }
       }
     }
   }
