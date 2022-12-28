@@ -486,10 +486,16 @@
     "2": {
       "5": {
         "title": "scene 7 of opposite jurassic park",
-        "link": {
-          "title": "docdroid",
-          "url": "https://www.docdroid.net/tm2dnu4"
-        },
+        "link": [
+          {
+            "title": "docdroid",
+            "url": "https://www.docdroid.net/tm2dnu4"
+          },
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2017/02/05/opj-scene-7.html"
+          }
+        ],
         "tags": ["writing", "google_docs"]
       },
       "19": {
@@ -522,10 +528,16 @@
     "3": {
       "5": {
         "title": "scene 9 of muppets yakuza",
-        "link": {
-          "title": "docdroid",
-          "url": "https://www.docdroid.net/tm2dnu4"
-        },
+        "link": [
+          {
+            "title": "docdroid",
+            "url": "https://www.docdroid.net/tm2dnu4"
+          },
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2017/03/05/my-scene-9.html"
+          }
+        ],
         "tags": ["writing", "google_docs"]
       },
       "10": {
@@ -576,10 +588,16 @@
     "4": {
       "5": {
         "title": "scene 10 of sonic's last adventure",
-        "link": {
-          "title": "docdroid",
-          "url": "https://www.docdroid.net/Nphxbj2"
-        },
+        "link": [
+          {
+            "title": "docdroid",
+            "url": "https://www.docdroid.net/Nphxbj2"
+          },
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2017/04/02/sla-scene-10.html"
+          }
+        ],
         "tags": ["writing", "google_docs"]
       }
     },
@@ -587,10 +605,16 @@
       "7": [
         {
           "title": "scene 10 of thelma and louise 2: army of darkness",
-          "link": {
-            "title": "docdroid",
-            "url": "https://www.docdroid.net/sVlHBLX"
-          },
+          "link": [
+            {
+              "title": "docdroid",
+              "url": "https://www.docdroid.net/sVlHBLX"
+            },
+            {
+              "title": "anarchy.website",
+              "url": "https://anarchy.website/2017/05/07/tlad-scene-10.html"
+            }
+          ],
           "tags": ["writing", "google_docs"]
         },
         {
@@ -637,6 +661,11 @@
         ],
         "note": "this design was never finished, the animation lead into making my gravity toy tho! also the original url (phene.co) was changed bc i have no $!"
       },
+      "15": {
+        "title": "logo for collective intelligence",
+        "link": "https://github.com/Collective-Intelligence",
+        "tags": ["design", "adobe_illustrator"]
+      },
       "22": {
         "title": "the chi town vlog",
         "link": {
@@ -645,6 +674,11 @@
         },
         "tags": ["video", "adobe_premiere_pro"],
         "media": { "type": "youtube", "src": "l9d5AwhesoY" }
+      },
+      "28": {
+        "title": "logo for revolutionary labor party",
+        "link": "https://revlabor.wixsite.com/revlaborparty/see-the-rlp",
+        "tags": ["design", "adobe_illustrator"]
       }
     },
     "8": {
@@ -829,6 +863,18 @@
       }
     },
     "5": {
+      "16": {
+        "title": "the city of angels vlog",
+        "link": {
+          "title": "youtube",
+          "url": "https://www.youtube.com/watch?v=R36i9hf-8HM"
+        },
+        "tags": ["video", "adobe_illustrator", "adobe_premiere_pro"],
+        "media": {
+          "type": "youtube",
+          "src": "R36i9hf-8HM"
+        }
+      },
       "20": {
         "title": "poisson v.2",
         "link": {
@@ -1638,6 +1684,12 @@
           "anchor"
         ],
         "media": { "type": "anchor", "src": "Part-VI-A-Real-Podcast-ehud7n" }
+      },
+      "17": {
+        "title": "art for hermesthemagi - revolt",
+        "link": "https://soundcloud.com/hermesthemagi/revolt",
+        "tags": ["design", "adobe_photoshop"],
+        "note": "this track has since been taken down"
       }
     },
     "9": {
@@ -2085,6 +2137,7 @@
           "ejs",
           "scss",
           "expressjs",
+          "passportjs",
           "github",
           "heroku"
         ]

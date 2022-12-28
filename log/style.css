@@ -123,8 +123,8 @@ img.tag-icon {
   border: 0;
   display: block;
   margin: 0.5rem 0;
-  width: calc(100vw - 16em);
-  height: calc(calc(9 / 16) * calc(100vw - 16em));
+  width: 48em;
+  height: 27em;
 }
 td.date {
   text-align: right;
