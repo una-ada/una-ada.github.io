@@ -48,11 +48,10 @@ html {
   color: var(--color-lotus);
   font-size: 12px;
 }
-t:before {
-  content: '\a0\a0';
-}
-t:after {
-  content: '\a0\a0';
+pre {
+  font-family: 'cozette', monospace;
+  line-height: 1;
+  margin: 0;
 }
 table {
   border-collapse: collapse;
