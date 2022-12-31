@@ -1,10 +1,17 @@
 /*----- fonts ----------------------------------------------------------------*/
 @font-face {
-  font-family: 'cozette';
+  font-family: 'Cozette';
   src: url('/assets/fonts/cozette.woff2') format('woff2'),
     url('/assets/fonts/cozette.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'PixelMplus12';
+  src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus12-Regular_web.woff2')
+    format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*----- variables ------------------------------------------------------------*/
@@ -39,7 +46,7 @@ body {
   background: var(--color-black);
   line-height: 1.5;
   min-width: 60em;
-  font-family: 'cozette', monospace;
+  font-family: 'Cozette', 'PixelMplus12', monospace;
 }
 div:target {
   background: var(--color-olive);
@@ -49,7 +56,7 @@ html {
   font-size: 12px;
 }
 pre {
-  font-family: 'cozette', monospace;
+  font-family: 'Cozette', monospace;
   line-height: 1;
   margin: 0;
 }

@@ -1545,7 +1545,7 @@
     },
     "12": {
       "11": {
-        "title": "\"anarchy.website ni furigana to chiikika\"",
+        "title": "\"anarchy.websiteに振り仮名と地域化\" (furigana and localization on anarchy.website)",
         "project": "anarchy.website",
         "link": {
           "title": "anarchy.website",
@@ -1694,7 +1694,7 @@
     },
     "9": {
       "26": {
-        "title": "\"mumei no joshi\"",
+        "title": "\"無名の女子\" (nameless girl)",
         "link": {
           "title": "anarchy.website",
           "url": "https://anarchy.website/2020/09/26/nameless.html"
@@ -1722,7 +1722,7 @@
     },
     "12": {
       "4": {
-        "title": "джіса2 - watashi mou zettai ni",
+        "title": "джісаッ- 私もう絶対に",
         "project": "джіса2",
         "link": [
           {
@@ -1734,7 +1734,7 @@
         "media": { "type": "soundcloud", "src": "941665492" }
       },
       "6": {
-        "title": "джіса2 - shiranai tenjou da",
+        "title": "джісаッ- 知らない天井だ",
         "project": "джіса2",
         "link": [
           {
@@ -1746,8 +1746,8 @@
         "media": { "type": "soundcloud", "src": "942827437" }
       },
       "18": {
-        "title": "джіса2 - densha line",
-        "project": "джіса2",
+        "title": "джісаッ- 電車ライン",
+        "project": "джіса２",
         "link": [
           {
             "title": "soundcloud",
@@ -1800,7 +1800,7 @@
   "2021": {
     "1": {
       "5": {
-        "title": "джіса2 - lullaby for eternity",
+        "title": "джісаッ- lullaby for eternity",
         "project": "джіса2",
         "link": [
           {
@@ -1824,7 +1824,7 @@
     },
     "3": {
       "5": {
-        "title": "amitypark x джіса2 - tsuki",
+        "title": "amitypark x джісаッ- 月(すき)",
         "project": "джіса2",
         "link": [
           {
@@ -2394,7 +2394,7 @@
     },
     "10": {
       "6": {
-        "title": "джіса2 - i gave up on my dreams again today",
+        "title": "джісаッ- i gave up on my dreams again today",
         "project": "джіса2",
         "link": {
           "title": "bandcamp",
@@ -2406,7 +2406,7 @@
     },
     "11": {
       "5": {
-        "title": "amitypark x джіса2 - this is a cry for help",
+        "title": "amitypark x джісаッ- this is a cry for help",
         "project": "джіса2",
         "link": [
           {
@@ -2646,7 +2646,7 @@
     },
     "8": {
       "9": {
-        "title": "джіса2 - the town of forgotten nightmares",
+        "title": "джісаッ- the town of forgotten nightmares",
         "project": "джіса2",
         "link": [
           {
@@ -2734,7 +2734,7 @@
     },
     "12": {
       "27": {
-        "title": "джіса2 - the end of the world pt ii",
+        "title": "джісаッ- the end of the world pt ii",
         "project": "джіса2",
         "link": [
           {
