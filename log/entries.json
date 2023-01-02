@@ -2109,6 +2109,25 @@
           "github_pages"
         ]
       },
+      "16": {
+        "title": "ga sei-r: mongoose-flights",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/mongoose-flights"
+        },
+        "tags": [
+          "programming",
+          "git",
+          "nodejs",
+          "css",
+          "ejs",
+          "html",
+          "javascript",
+          "leaflet",
+          "openstreetmap",
+          "github"
+        ]
+      },
       "20": {
         "title": "art for amitypark - better off rmx",
         "link": {
@@ -2127,7 +2146,7 @@
         "tags": [
           "programming",
           "adobe_xd",
-          "lucid_chart",
+          "lucidchart",
           "trello",
           "git",
           "mongodb",
@@ -2137,54 +2156,77 @@
           "ejs",
           "scss",
           "expressjs",
-          "passportjs",
+          "passport.js",
           "github",
           "heroku"
         ]
       },
-      "27": {
-        "title": "chloe &amp; una's tentacular experience vol. 2: your neighborhood tentacle shop",
-        "project": "cute",
-        "link": [
-          {
-            "title": "anchor",
-            "url": "https://anchor.fm/-/episodes/Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
-          },
-          {
-            "title": "apple_podcasts",
-            "url": "https://podcasts.apple.com/us/podcast/volume-2-your-neighborhood-tentacle-shop/id1565295121"
-          },
-          {
-            "title": "backtracks",
-            "url": "https://backtracks.fm/discover/s/-/8e07e4b907e29333/e/-/eedfecfd77478b20"
-          },
-          {
-            "title": "google_podcasts",
-            "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81OGJhMjMyNC9wb2RjYXN0L3Jzcw/episode/MzI3YzJkNzctZTIwYS00MDk3LTgwZTEtMjBmMjU1YTc3MGQ0"
-          },
-          {
-            "title": "podbay",
-            "url": "https://podbay.fm/p/chloe-and-unas-tentacular-experience/e/1624863475"
-          },
-          {
-            "title": "spotify",
-            "url": "https://open.spotify.com/episode/7G2agEjUrCOxW0ZAZo0GxK"
-          },
-          { "title": "notes", "url": "https://anarchy.website/cute/2/notes" }
-        ],
-        "tags": [
-          "podcast",
-          "adobe_illustrator",
-          "adobe_photoshop",
-          "visual_studio_code",
-          "markdown",
-          "anchor"
-        ],
-        "media": {
-          "type": "anchor",
-          "src": "Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
+      "27": [
+        {
+          "title": "chloe &amp; una's tentacular experience vol. 2: your neighborhood tentacle shop",
+          "project": "cute",
+          "link": [
+            {
+              "title": "anchor",
+              "url": "https://anchor.fm/-/episodes/Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
+            },
+            {
+              "title": "apple_podcasts",
+              "url": "https://podcasts.apple.com/us/podcast/volume-2-your-neighborhood-tentacle-shop/id1565295121"
+            },
+            {
+              "title": "backtracks",
+              "url": "https://backtracks.fm/discover/s/-/8e07e4b907e29333/e/-/eedfecfd77478b20"
+            },
+            {
+              "title": "google_podcasts",
+              "url": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81OGJhMjMyNC9wb2RjYXN0L3Jzcw/episode/MzI3YzJkNzctZTIwYS00MDk3LTgwZTEtMjBmMjU1YTc3MGQ0"
+            },
+            {
+              "title": "podbay",
+              "url": "https://podbay.fm/p/chloe-and-unas-tentacular-experience/e/1624863475"
+            },
+            {
+              "title": "spotify",
+              "url": "https://open.spotify.com/episode/7G2agEjUrCOxW0ZAZo0GxK"
+            },
+            { "title": "notes", "url": "https://anarchy.website/cute/2/notes" }
+          ],
+          "tags": [
+            "podcast",
+            "adobe_illustrator",
+            "adobe_photoshop",
+            "visual_studio_code",
+            "markdown",
+            "anchor"
+          ],
+          "media": {
+            "type": "anchor",
+            "src": "Volume-2-Your-Neighborhood-Tentacle-Shop-e13ihto"
+          }
+        },
+        {
+          "title": "gh profile repo w mal rss feed",
+          "link": [
+            {
+              "title": "github",
+              "url": "https://github.com/una-ada/una-ada/"
+            },
+            {
+              "title": "yaml",
+              "url": "https://github.com/una-ada/una-ada/blob/b9d323939c72664025c7136544a7fd9907ac24fd/.github/workflows/blog-post-workflow.yml"
+            }
+          ],
+          "tags": [
+            "programming",
+            "visual_studio_code",
+            "javascript",
+            "yaml",
+            "myanimelist",
+            "github"
+          ]
         }
-      },
+      ],
       "29": {
         "title": "una's theme [vs code] v1.0.0",
         "project": "una theme",
@@ -2287,7 +2329,7 @@
         "tags": [
           "programming",
           "git",
-          "lucid_chart",
+          "lucidchart",
           "trello",
           "postgresql",
           "visual_studio_code",
@@ -2327,7 +2369,7 @@
           "programming",
           "adobe_xd",
           "git",
-          "lucid_chart",
+          "lucidchart",
           "trello",
           "mongodb",
           "nodejs",
@@ -2335,6 +2377,7 @@
           "javascript",
           "scss",
           "expressjs",
+          "jsonwebtoken",
           "react",
           "aws",
           "github",
@@ -2479,15 +2522,16 @@
         "tags": [
           "programming",
           "git",
-          "lucid_chart",
+          "lucidchart",
           "trello",
           "mongodb",
           "nodejs",
           "css",
           "javascript",
-          "aws",
+          "jsonwebtoken",
           "expressjs",
           "react",
+          "aws",
           "github",
           "vercel"
         ]
@@ -2709,6 +2753,17 @@
         "note": "this was supposed 2 b a 4 part ep but w/o touching it for several months i j released the finished part"
       }
     },
+    "9": {
+      "12": {
+        "title": "filebot anidb naming format",
+        "link": {
+          "title": "github",
+          "url": "https://gist.github.com/una-ada/f06cfec1ee83b67fba0e492889b38adb"
+        },
+        "tags": ["programming", "anidb", "filebot", "groovy", "github"],
+        "note": "this is meant 2 rename files 4 the hamatv plex agent n also ensure filenames r short enough to not cause issues w scanning"
+      }
+    },
     "10": {
       "08": {
         "title": "una's theme icons",
@@ -2746,5 +2801,8 @@
         "media": { "type": "bandcamp-single", "src": "2564057479" }
       }
     }
+  },
+  "2023": {
+    "1": {}
   }
 }
