@@ -1426,6 +1426,16 @@
         "media": { "type": "podbean", "src": "bdnxe-b73bce" }
       }
     },
+    "9": {
+      "11": {
+        "title": "clamp.js",
+        "link": {
+          "title": "github_gist",
+          "url": "https://gist.github.com/una-ada/97564090e2dd0c82f9688daf15215eee"
+        },
+        "tags": ["programming", "atom", "javascript", "github_gist"]
+      }
+    },
     "11": {
       "1": {
         "title": "neighbor science 510: ecocommunist utopia",
@@ -1631,6 +1641,14 @@
           "markdown",
           "github"
         ]
+      },
+      "20": {
+        "title": "fizzbuzz.js",
+        "link": {
+          "title": "github_gist",
+          "url": "https://gist.github.com/una-ada/2cf7bd8cae4ec61def0d5bee436d596f"
+        },
+        "tags": ["programming", "atom", "javascript", "github_gist"]
       }
     },
     "8": {
@@ -1820,6 +1838,16 @@
           "soundcloud"
         ],
         "media": { "type": "bandcamp-single", "src": "1616197059" }
+      }
+    },
+    "2": {
+      "2": {
+        "title": "rezero director's cut .nfo files 4 kodi",
+        "link": {
+          "title": "github_gist",
+          "url": "https://gist.github.com/una-ada/206f74bd8d29ce23f617373469845f2c"
+        },
+        "tags": ["programming", "anidb", "atom", "kodi", "xml", "github_gist"]
       }
     },
     "3": {
@@ -2433,7 +2461,16 @@
             "npm"
           ]
         }
-      ]
+      ],
+      "7": {
+        "title": "skip.txt",
+        "link": {
+          "title": "github_gist",
+          "url": "https://gist.github.com/una-ada/da79d80b8ee1f4061bb7244b588d1510"
+        },
+        "tags": ["programming", "cities_skylines", "github_gist"],
+        "notes": "this is a skip.txt 4 the c:s mod lsm which skips all the vanilla assets i dont have replacements 4"
+      }
     },
     "10": {
       "6": {
@@ -2760,7 +2797,7 @@
           "title": "github_gist",
           "url": "https://gist.github.com/una-ada/f06cfec1ee83b67fba0e492889b38adb"
         },
-        "tags": ["programming", "anidb", "filebot", "groovy", "github"],
+        "tags": ["programming", "anidb", "filebot", "groovy", "github_gist"],
         "note": "filebot preset naming expression 4 hamatv plex agent w filename length checks, uses anidb src but can be modified"
       }
     },
@@ -2792,7 +2829,7 @@
           "title": "github_gist",
           "url": "https://gist.github.com/una-ada/f6374ad5d7bac8ac910de76fb728c06a"
         },
-        "tags": ["programming", "ffmpeg", "gnu_bash", "github", "twitter"],
+        "tags": ["programming", "ffmpeg", "gnu_bash", "github_gist", "twitter"],
         "note": "quick command 4 making a still img vid (output.mp4) out of an audio file (input.mp3) n img (input.png) 4 twitter posts"
       },
       "18": {
@@ -2801,7 +2838,7 @@
           "title": "github_gist",
           "url": "https://gist.github.com/una-ada/9f5b0ec93ccdb0e9bc6471de18b35edc"
         },
-        "tags": [],
+        "tags": ["programming", "javascript", "github_gist"],
         "note": "comparison of golfed js fns 4 generating char arrays from codepoints"
       }
     },
