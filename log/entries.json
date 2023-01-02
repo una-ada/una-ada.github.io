@@ -2206,7 +2206,7 @@
           }
         },
         {
-          "title": "gh profile repo w mal rss feed",
+          "title": "github profile repo w myanimelist rss feed",
           "link": [
             {
               "title": "github",
@@ -2755,13 +2755,13 @@
     },
     "9": {
       "12": {
-        "title": "filebot anidb naming format",
+        "title": "anidb-format.gvy",
         "link": {
-          "title": "github",
+          "title": "github_gist",
           "url": "https://gist.github.com/una-ada/f06cfec1ee83b67fba0e492889b38adb"
         },
         "tags": ["programming", "anidb", "filebot", "groovy", "github"],
-        "note": "this is meant 2 rename files 4 the hamatv plex agent n also ensure filenames r short enough to not cause issues w scanning"
+        "note": "filebot preset naming expression 4 hamatv plex agent w filename length checks, uses anidb src but can be modified"
       }
     },
     "10": {
@@ -2785,6 +2785,24 @@
           "url": "https://anarchy.website/2022/11/08/classification-systems"
         },
         "tags": ["writing", "visual_studio_code", "markdown"]
+      },
+      "10": {
+        "title": "quick-mv.bash",
+        "link": {
+          "title": "github_gist",
+          "url": "https://gist.github.com/una-ada/f6374ad5d7bac8ac910de76fb728c06a"
+        },
+        "tags": ["programming", "ffmpeg", "gnu_bash", "github", "twitter"],
+        "note": "quick command 4 making a still img vid (output.mp4) out of an audio file (input.mp3) n img (input.png) 4 twitter posts"
+      },
+      "18": {
+        "title": "alphabet.js",
+        "link": {
+          "title": "github_gist",
+          "url": "https://gist.github.com/una-ada/9f5b0ec93ccdb0e9bc6471de18b35edc"
+        },
+        "tags": [],
+        "note": "comparison of golfed js fns 4 generating char arrays from codepoints"
       }
     },
     "12": {
