@@ -142,7 +142,7 @@ var tagBlacklist = [
                               class: 'tag-icon',
                               src: iconsPath + icons[tag],
                               alt: tag,
-                              title: tag.replace('_', ' '),
+                              title: tag.replaceAll('_', ' '),
                             })
                           );
                         return acc;
