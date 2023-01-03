@@ -75,6 +75,8 @@
     "yaml": "lang/yml.png",
 
     "angular": "lib/angular.png",
+    "bullet_physics": "lib/bullet.png",
+    "cannon.js": "lib/bullet.png",
     "graphql": "lib/graphql.png",
     "jsonwebtoken": "lib/jwt.png",
     "leaflet": "lib/leaflet.png",

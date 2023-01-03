@@ -127,30 +127,26 @@ var tagBlacklist = [
                     );
                     [lastYear, lastMonth, lastDay] = [year, month, day];
                     /*--- TAGS -----------------------------------------------*/
-                    let entryTags = newElement(
+                    let tags = Array.from(v.tags);
+                    entryTags = newElement(
                       'td',
                       '',
                       {
                         class: 'tags',
                       },
-                      v.tags
-                        ? (Array.isArray(v.tags) ? v.tags : [v.tags]).reduce(
-                            (acc, tag) => {
-                              icons[tag] &&
-                                !tagBlacklist.includes(tag) &&
-                                acc.push(
-                                  newElement('img', '', {
-                                    class: 'tag-icon',
-                                    src: iconsPath + icons[tag],
-                                    alt: tag,
-                                    title: tag.replace('_', ' '),
-                                  })
-                                );
-                              return acc;
-                            },
-                            []
-                          )
-                        : []
+                      [].concat(tags.shift(), tags.sort()).reduce((acc, tag) => {
+                        icons[tag] &&
+                          !tagBlacklist.includes(tag) &&
+                          acc.push(
+                            newElement('img', '', {
+                              class: 'tag-icon',
+                              src: iconsPath + icons[tag],
+                              alt: tag,
+                              title: tag.replace('_', ' '),
+                            })
+                          );
+                        return acc;
+                      }, [])
                     );
                     entryDiv.appendChild(entryTags);
                     /*--- TITLE ----------------------------------------------*/

@@ -69,7 +69,7 @@
           "title": "github",
           "url": "https://github.com/pheneco/modal"
         },
-        "tags": ["programming", "notepad++", "javascript", "github"]
+        "tags": ["programming", "notepad++", "javascript"]
       }
     },
     "9": {
@@ -2652,10 +2652,13 @@
         ],
         "tags": [
           "programming",
+          "nodejs",
           "git",
           "visual_studio_code",
+          "javascript",
           "typescript",
           "webpack",
+          "cannon.js",
           "threejs",
           "github",
           "github_pages"
@@ -2693,7 +2696,8 @@
           "adobe_photoshop",
           "google_docs",
           "visual_studio_code",
-          "markdown"
+          "markdown",
+          "anchor"
         ],
         "media": {
           "type": "anchor",
