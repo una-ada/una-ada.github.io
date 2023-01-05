@@ -1748,7 +1748,13 @@
             "url": "https://soundcloud.com/jisa_tsu/watashimou"
           }
         ],
-        "tags": ["music", "ableton_live", "adobe_photoshop", "soundcloud"],
+        "tags": [
+          "music",
+          "ableton_live",
+          "adobe_photoshop",
+          "handbrake",
+          "soundcloud"
+        ],
         "media": { "type": "soundcloud", "src": "941665492" }
       },
       "6": {
@@ -2480,7 +2486,16 @@
           "title": "bandcamp",
           "url": "https://jisa2.bandcamp.com/track/i-gave-up-on-my-dreams-again-today"
         },
-        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
+        "tags": [
+          "music",
+          "adobe_photoshop",
+          "handbrake",
+          "logic_pro",
+          "spitfire_labs",
+          "cymatics",
+          "freesound",
+          "bandcamp"
+        ],
         "media": { "type": "bandcamp-single", "src": "3122118483" }
       }
     },
@@ -2546,7 +2561,15 @@
             "url": "https://music.yandex.com/album/19158516"
           }
         ],
-        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
+        "tags": [
+          "music",
+          "adobe_photoshop",
+          "logic_pro",
+          "spitfire_labs",
+          "cymatics",
+          "freesound",
+          "bandcamp"
+        ],
         "media": { "type": "bandcamp", "src": "2838847327" },
         "note": "this is a split ep w me n my gf. track 3 was written by her, then i remixed it, then she finished it... the cover art was done much the same way."
       },
@@ -2785,8 +2808,10 @@
         ],
         "tags": [
           "music",
-          "logic_pro",
           "adobe_photoshop",
+          "bbc_symphony_orchestra",
+          "logic_pro",
+          "spitfire_labs",
           "bandcamp",
           "distrokid"
         ],
@@ -2856,7 +2881,14 @@
             "url": "https://jisa2.bandcamp.com/track/the-end-of-the-world-part-ii"
           }
         ],
-        "tags": ["music", "logic_pro", "adobe_photoshop", "bandcamp"],
+        "tags": [
+          "music",
+          "adobe_photoshop",
+          "logic_pro",
+          "bbc_symphony_orchestra",
+          "spitfire_labs",
+          "bandcamp"
+        ],
         "media": { "type": "bandcamp-single", "src": "2564057479" }
       }
     }
