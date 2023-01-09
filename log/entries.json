@@ -2894,6 +2894,29 @@
     }
   },
   "2023": {
-    "1": {}
+    "1": {
+      "9": {
+        "title": "una's theme [vs code] v2.0.0 - new colors and ui config",
+        "link": [
+          {
+            "title": "vscode_marketplace",
+            "url": "https://marketplace.visualstudio.com/items?itemName=una.theme"
+          },
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-theme/releases/tag/2.0"
+          }
+        ],
+        "tags": [
+          "programming",
+          "git",
+          "github",
+          "json",
+          "visual_studio_code",
+          "vscode_marketplace",
+          "aseprite"
+        ]
+      }
+    }
   }
 }
