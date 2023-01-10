@@ -2175,7 +2175,16 @@
         "title": "ga sei-r proj 2 - xylem",
         "link": [
           { "title": "heroku", "url": "https://proj-xylem.herokuapp.com/" },
-          { "title": "github", "url": "https://github.com/una-ada/Xylem" }
+          { "title": "github", "url": "https://github.com/una-ada/Xylem" },
+          { "title": "trello", "url": "https://trello.com/b/pjzGxOWG" },
+          {
+            "title": "adobe_xd",
+            "url": "https://xd.adobe.com/view/ab09d4da-ca19-40d8-8613-9f7ef9647524-fe5a/"
+          },
+          {
+            "title": "lucidchart",
+            "url": "https://lucid.app/lucidchart/62a36a47-96ac-4762-8948-601caa338a2e/view?page=0_0#"
+          }
         ],
         "tags": [
           "programming",
@@ -2358,11 +2367,16 @@
         "title": "ga sei-r proj 3 - tabby",
         "link": [
           { "title": "heroku", "url": "https://tabi-tabby.herokuapp.com/" },
-          { "title": "github", "url": "https://github.com/una-ada/Tabby" }
+          { "title": "github", "url": "https://github.com/una-ada/Tabby" },
+          {
+            "title": "google_slides",
+            "url": "https://docs.google.com/presentation/d/1MJJXpWLbTsXxwYtYSoKnMMRc_keUyrW7VSRZ1g9c5fQ"
+          }
         ],
         "tags": [
           "programming",
           "git",
+          "google_slides",
           "lucidchart",
           "trello",
           "postgresql",
@@ -2397,7 +2411,12 @@
         "title": "ga sei-r proj 4 - bopomo",
         "link": [
           { "title": "heroku", "url": "https://bopomo.herokuapp.com/" },
-          { "title": "github", "url": "https://github.com/una-ada/Bopomo" }
+          { "title": "github", "url": "https://github.com/una-ada/Bopomo" },
+          { "title": "trello", "url": "https://trello.com/b/ifgO1H27/bopomo" },
+          {
+            "title": "lucidchart",
+            "url": "https://lucid.app/lucidchart/5e3370f4-9a25-4409-9e2c-28b8849a83c0/view"
+          }
         ],
         "tags": [
           "programming",
@@ -2897,7 +2916,7 @@
     "1": {
       "9": {
         "title": "una's theme [vs code] v2.0.0 - new colors and ui config",
-        "project":"una theme",
+        "project": "una theme",
         "link": [
           {
             "title": "vscode_marketplace",
