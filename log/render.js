@@ -38,13 +38,13 @@ var tagBlacklist = [
       lastYear = '',
       lastMonth = '',
       lastDay = '';
-    await fetch('icons.json')
+    await fetch('/log/icons.json')
       .then(response => response.json())
       .then(json => {
         icons = json.icons;
         iconsPath = json.iconsPath;
       });
-    await fetch('projects.json')
+    await fetch('/log/projects.json')
       .then(response => response.json())
       .then(json => {
         projects = json;
