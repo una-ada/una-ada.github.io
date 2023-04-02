@@ -2949,6 +2949,17 @@
           }
         ],
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
+      },
+      "2": {
+        "title": "ennui 0x001 prologue ii: kano shiori",
+        "project": "ennui",
+        "link": [
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/ennui/001"
+          }
+        ],
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
     }
   }
