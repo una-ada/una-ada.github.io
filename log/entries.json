@@ -2937,6 +2937,19 @@
           "aseprite"
         ]
       }
+    },
+    "4": {
+      "1": {
+        "title": "ennui 0x000 prologue i: yamada imari",
+        "project": "ennui",
+        "link": [
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/ennui/000"
+          }
+        ],
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
+      }
     }
   }
 }
