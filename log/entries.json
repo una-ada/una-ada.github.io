@@ -2962,12 +2962,23 @@
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       },
       "3": {
-        "title": "ennui 0x002 prologue iii: valentine",
+        "title": "ennui 0x002 prologue iii: valentines",
         "project": "ennui",
         "link": [
           {
             "title": "anarchy.website",
             "url": "https://anarchy.website/ennui/002"
+          }
+        ],
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
+      },
+      "9": {
+        "title": "ennui 0x003 prologue iv: graduations",
+        "project": "ennui",
+        "link": [
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/ennui/003"
           }
         ],
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
