@@ -2982,6 +2982,17 @@
           }
         ],
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
+      },
+      "11": {
+        "title": "ennui 0x004 prologue v: endless haze",
+        "project": "ennui",
+        "link": [
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/ennui/004"
+          }
+        ],
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
     }
   }
