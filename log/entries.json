@@ -7,7 +7,7 @@
           "title": "minecraft_forum",
           "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/wip-mods/1440771-wip-shadadorians-mod"
         },
-        "tags": ["programming", "eclipse", "java", "minecraft"]
+        "tags": ["programming", "eclipse", "paint.net", "java", "minecraft"]
       }
     },
     "8": {
@@ -21,10 +21,32 @@
       }
     }
   },
+  "2013": {
+    "9": {
+      "11": {
+        "title": "graphene",
+        "project": "graphene",
+        "link": "https://github.com/pheneco/Graphene",
+        "tags": [
+          "programming",
+          "apache",
+          "mysql",
+          "notepad++",
+          "css",
+          "html",
+          "javascript",
+          "php",
+          "sql",
+          "name.com"
+        ]
+      }
+    }
+  },
   "2014": {
     "7": {
       "8": {
-        "title": "_g.crop - image cropping tool",
+        "title": "_g.crop",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/crop"
@@ -34,7 +56,8 @@
     },
     "9": {
       "20": {
-        "title": "_g.color - color picker",
+        "title": "_g.color",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/color"
@@ -42,7 +65,8 @@
         "tags": ["programming", "notepad++", "javascript"]
       },
       "30": {
-        "title": "_g.player - html5 video controls",
+        "title": "_g.player",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/player"
@@ -51,25 +75,157 @@
       }
     },
     "10": {
+      "3": {
+        "title": "graphene v0.3.0",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/Graphene"
+        },
+        "tags": [
+          "programming",
+          "notepad++",
+          "paint.net",
+          "apache",
+          "mysql",
+          "css",
+          "html",
+          "javascript",
+          "php",
+          "sql",
+          "name.com"
+        ]
+      },
       "21": {
-        "title": "_g.menu - context menu",
+        "title": "_g.menu",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/menu"
         },
         "tags": ["programming", "notepad++", "javascript"]
       }
+    },
+    "12": {
+      "26": [
+        {
+          "title": "_g.menu v0.1.0 - add link ops n oop refactor",
+          "project": "graphene",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/pheneco/menu"
+          },
+          "tags": ["programming", "notepad++", "javascript", "github"]
+        },
+        {
+          "title": "_g.menu v0.2.0 - dynamically load styling",
+          "project": "graphene",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/pheneco/menu"
+          },
+          "tags": ["programming", "notepad++", "javascript", "github"]
+        }
+      ],
+      "29": {
+        "title": "_g.menu v0.3.0 - fix positioning, scroll, n errors",
+        "project": "graphene",
+        "link": { "title": "github", "url": "https://github.com/pheneco/menu" },
+        "tags": ["programming", "notepad++", "javascript", "github"]
+      }
     }
   },
   "2015": {
+    "1": {
+      "7": {
+        "title": "graphene v0.3.3-s0.1.0 - started converting to node!",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/Graphene"
+        },
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "apache",
+          "mongodb",
+          "nodejs",
+          "notepad++",
+          "mysql",
+          "css",
+          "html",
+          "javascript",
+          "json",
+          "php",
+          "sql",
+          "expressjs",
+          "github",
+          "name.com"
+        ]
+      },
+      "15": {
+        "title": "_g.menu v0.4.2 - add text ops n more link ops",
+        "project": "graphene",
+        "link": { "title": "github", "url": "https://github.com/pheneco/menu" },
+        "tags": ["programming", "notepad++", "javascript", "github"]
+      }
+    },
     "3": {
       "23": {
-        "title": "_g.popup - js modal library",
+        "title": "_g.popup",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/modal"
         },
         "tags": ["programming", "notepad++", "javascript"]
+      }
+    },
+    "6": {
+      "20": [
+        {
+          "title": "_g.color v0.1.0 - reformatted",
+          "project": "graphene",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/pheneco/color"
+          },
+          "tags": ["programming", "notepad++", "javascript", "github"]
+        },
+        {
+          "title": "_g.player v0.1.0 - update styling",
+          "project": "graphene",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/pheneco/player"
+          },
+          "tags": ["programming", "notepad++", "javascript", "github"]
+        }
+      ]
+    },
+    "8": {
+      "30": {
+        "title": "graphene v0.3.3-s0.2.0",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/Graphene"
+        },
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "mongodb",
+          "nodejs",
+          "notepad++",
+          "css",
+          "html",
+          "javascript",
+          "json",
+          "expressjs",
+          "sharp",
+          "github",
+          "name.com"
+        ]
       }
     },
     "9": {
@@ -135,6 +291,30 @@
       }
     },
     "10": {
+      "5": {
+        "title": "graphene w0.4.0-s0.2.0",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/Graphene"
+        },
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "mongodb",
+          "nodejs",
+          "notepad++",
+          "css",
+          "handlebars",
+          "html",
+          "javascript",
+          "json",
+          "expressjs",
+          "sharp",
+          "github",
+          "name.com"
+        ]
+      },
       "6": {
         "title": "\"the road\"",
         "link": {
@@ -152,10 +332,11 @@
         "tags": ["writing", "microsoft_word"]
       },
       "13": {
-        "title": "repo for graphene",
+        "title": "graphene w0.4.1-s0.3.0 (now w git repo!)",
+        "project": "graphene",
         "link": {
           "title": "github",
-          "url": "https://github.com/una-ada/Graphene"
+          "url": "https://github.com/pheneco/Graphene"
         },
         "tags": [
           "programming",
@@ -202,8 +383,36 @@
         },
         "tags": ["programming", "tumblr", "git", "html", "github"]
       },
+
+      "22": {
+        "title": "graphene w0.4.2-s0.3.1 - settings, hovercards, n feeds",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/Graphene"
+        },
+        "tags": [
+          "programming",
+          "adobe_illustrator",
+          "git",
+          "mongodb",
+          "nodejs",
+          "notepad++",
+          "batch",
+          "css",
+          "handlebars",
+          "html",
+          "javascript",
+          "json",
+          "expressjs",
+          "sharp",
+          "github",
+          "name.com"
+        ]
+      },
       "25": {
-        "title": "graphene w0.4.3-s0.4.0",
+        "title": "graphene w0.4.3-s0.4.0 - more user interactivity",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/Graphene/releases/tag/w0.4.3-s0.4.0"
@@ -248,6 +457,7 @@
       },
       "14": {
         "title": "_g.popup v0.1.0",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/modal"
@@ -367,6 +577,12 @@
         ],
         "tags": ["writing", "adobe_indesign", "microsoft_word", "origin_lab"]
       },
+      "17": {
+        "title": "_g.crop v0.1.0 - refactoring n debug",
+        "project": "graphene",
+        "link": { "title": "github", "url": "https://github.com/pheneco/crop" },
+        "tags": ["programming", "notepad++", "git", "javascript", "github"]
+      },
       "27": {
         "title": "pop tarts (god)",
         "link": {
@@ -466,6 +682,7 @@
       },
       "13": {
         "title": "amber",
+        "project": "graphene",
         "link": {
           "title": "github",
           "url": "https://github.com/pheneco/amber"
@@ -481,6 +698,30 @@
           "github"
         ],
         "note": "this was a test project using meteor and angular to test a new stack for graphene"
+      },
+      "21": {
+        "title": "_g.menu v0.4.3 - add video ops, fixes, n styles",
+        "project": "graphene",
+        "link": { "title": "github", "url": "https://github.com/pheneco/menu" },
+        "tags": ["programming", "atom", "git", "javascript", "github"]
+      },
+      "22": {
+        "title": "_g.popup v0.2.0 - add \"tutorial\" framework",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/modal"
+        },
+        "tags": ["programming", "atom", "git", "javascript", "github"]
+      },
+      "27": {
+        "title": "_g.popup renamed 2 _g.modal",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/modal"
+        },
+        "tags": ["programming", "atom", "git", "javascript", "github"]
       }
     },
     "2": {
@@ -583,6 +824,11 @@
           "github_pages",
           "name.com"
         ]
+      },
+      "25": {
+        "title": "added js to log.html",
+        "link": "#",
+        "tags": ["programming", "atom", "javascript"]
       }
     },
     "4": {
@@ -635,9 +881,21 @@
         "tags": ["programming", "atom", "javascript", "traer.js"]
       }
     },
+    "6": {
+      "29": {
+        "title": "_g.modal v0.3.0 - add events n promises",
+        "project": "graphene",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/pheneco/modal}"
+        },
+        "tags": ["programming", "atom", "git", "javascript", "github"]
+      }
+    },
     "7": {
       "10": {
         "title": "phene.co website",
+        "project": "phene.co",
         "link": [
           {
             "title": "github_pages",
@@ -2468,6 +2726,24 @@
     "9": {
       "2": [
         {
+          "title": "moved personal site to 猫.dev",
+          "link": [
+            "https://xn--z7x.dev",
+            {
+              "title": "github",
+              "url": "https://github.com/una-ada/una-ada.github.io/commit/dc857c0"
+            }
+          ],
+          "tags": [
+            "programming",
+            "git",
+            "cloudflare",
+            "github",
+            "github_pages",
+            "google_domains"
+          ]
+        },
+        {
           "title": "kramdown sort footnotes (ksf)",
           "link": [
             {
@@ -2676,6 +2952,20 @@
           "google_docs",
           "visual_studio_code",
           "markdown"
+        ]
+      }
+    },
+    "5": {
+      "24": {
+        "title": "refactored n restyled log.html - it's back!",
+        "link": "#",
+        "tags": [
+          "programming",
+          "visual_studio_code",
+          "css",
+          "html",
+          "javascript",
+          "json"
         ]
       }
     },
