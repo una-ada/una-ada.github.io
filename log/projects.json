@@ -11,16 +11,34 @@
     "url": "https://anchor.fm/cutecast",
     "blurb": "chloe n una take u on a journey 2 understand 1 of the most important forms of media 2 ever exist: hentai. every week we bring u a new hentai review so that u can become a perfect genius who knows everything (abt hentai)."
   },
+  "ennui": {
+    "icon": "proj/ennui.png",
+    "title": "ennui",
+    "url": "https://anarchy.website/",
+    "blurb": "a fantasy web novel abt a world of 'swords n sorcery', going thru an industrial rev."
+  },
   "gas": {
     "icon": "proj/gas.png",
     "title": "goth angel sinners",
     "url": "https://anchor.fm/gthnglsnnrs",
     "blurb": "a podcast abt anarchy, anarchists, n anarchism."
   },
+  "graphene": {
+    "icon": "proj/graphene.png",
+    "title": "graphene",
+    "url": " https://github.com/pheneco/graphene",
+    "blurb": "a social networking site i began working on in high school. originally written on a wamp stack, i eventually rewrote the entire thing to run on node n mongodb w a custom frontend framework. also incl some js libs 4 the ui as their own repos."
+  },
+  "phene.co": {
+    "icon": "proj/pheneco.png",
+    "title": "phene.co",
+    "url": "https://github.com/pheneco",
+    "blurb": "a mostly hypothetical developer group 4 graphene n other web design projects. "
+  },
   "una theme": {
     "icon": "proj/una_theme.png",
     "title": "una's theme",
-    "url":"https://github.com/una-ada/",
+    "url": "https://github.com/una-ada/",
     "blurb": "an ongoing collection of software themes n assets built atop a small palette picked by yrs truly for cuteness n consistency ^ ^"
   },
   "iconsPath": "/una-theme-icons/30px/"
