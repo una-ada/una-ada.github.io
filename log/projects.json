@@ -35,6 +35,12 @@
     "url": "https://github.com/pheneco",
     "blurb": "a mostly hypothetical developer group 4 graphene n other web design projects. "
   },
+  "una fonts": {
+    "icon": "proj/una_font.png",
+    "title": "una fonts",
+    "url": "https://github.com/una-ada",
+    "blurb": "cute fonts 4 cute websites <3 based on my handwriting"
+  },
   "una theme": {
     "icon": "proj/una_theme.png",
     "title": "una's theme",

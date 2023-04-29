@@ -1882,6 +1882,7 @@
       },
       "11": {
         "title": "una script v2020.07.11",
+        "project": "una fonts",
         "link": [
           { "title": "github", "url": "https://github.com/una-ada/una-script" },
           {
@@ -1981,6 +1982,7 @@
     "10": {
       "2": {
         "title": "una script v2020.10.02 - fixes n added latin-1 supplement",
+        "project": "una fonts",
         "link": {
           "title": "github",
           "url": "https://github.com/una-ada/una-script/tree/master/old/2020.10.02"
@@ -1989,6 +1991,7 @@
       },
       "4": {
         "title": "una script v2020.10.04 - fix kern tables n thorn",
+        "project": "una fonts",
         "link": {
           "title": "github",
           "url": "https://github.com/una-ada/una-script/tree/master/old/2020.10.04"
@@ -2246,6 +2249,7 @@
         },
         {
           "title": "una nota v2021.04.18",
+          "project": "una fonts",
           "link": {
             "title": "github",
             "url": "https://github.com/una-ada/una-nota/tree/main/old/2021.04.18"
@@ -2255,6 +2259,7 @@
       ],
       "20": {
         "title": "una nota blog",
+        "project": "una fonts",
         "link": {
           "title": "anarchy.website",
           "url": "https://anarchy.website/2021/04/20/una-nota.html"
@@ -2309,6 +2314,7 @@
     "5": {
       "29": {
         "title": "una script v2021.05.29 - fix metrics",
+        "project": "una fonts",
         "link": {
           "title": "github",
           "url": "https://github.com/una-ada/una-script/tree/master/old/2021.05.29"
@@ -2317,6 +2323,7 @@
       },
       "30": {
         "title": "una script v2021.05.30 - fix metadata",
+        "project": "una fonts",
         "link": {
           "title": "github",
           "url": "https://github.com/una-ada/una-script/tree/master/old/2021.05.30"
@@ -2325,6 +2332,7 @@
       },
       "31": {
         "title": "una mono v2021.05.31",
+        "project": "una fonts",
         "link": [
           { "title": "github", "url": "https://github.com/una-ada/una-mono" },
           {
@@ -2347,6 +2355,7 @@
       "1": [
         {
           "title": "una script v2021.06.01 - fix webfont accent spacing",
+          "project": "una fonts",
           "link": {
             "title": "github",
             "url": "https://github.com/una-ada/una-script/tree/master/old/2021.06.01"
@@ -2355,6 +2364,7 @@
         },
         {
           "title": "una nota v2021.06.01 - update ps names",
+          "project": "una fonts",
           "link": {
             "title": "github",
             "url": "https://github.com/una-ada/una-nota/tree/master/old/2021.06.01"
