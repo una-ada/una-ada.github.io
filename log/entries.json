@@ -3294,6 +3294,25 @@
         ],
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
+    },
+    "5": {
+      "1": {
+        "title": "ennui 0x005 prologue vi: incarnation",
+        "project": "ennui",
+        "link": [
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/ennui/005"
+          }
+        ],
+        "tags": [
+          "writing",
+          "scrivener",
+          "photoshop",
+          "visual_studio_code",
+          "markdown"
+        ]
+      }
     }
   }
 }
