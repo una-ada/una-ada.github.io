@@ -3197,6 +3197,21 @@
           "aseprite"
         ]
       }
+    },
+    "7": {
+      "25": {
+        "title": "\"kinokuni\"",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/kinokuni"
+        },
+        "tags": [
+          "writing",
+          "scrivener",
+          "visual_studio_code",
+          "markdown"
+        ]
+      }
     }
   }
 }
