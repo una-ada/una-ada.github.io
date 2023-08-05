@@ -3200,11 +3200,27 @@
     },
     "7": {
       "25": {
-        "title": "\"kinokuni\"",
+        "title": "etymology n onomastics: \"kinokuni\"",
         "project": "anarchy.website",
         "link": {
           "title": "anarchy.website",
           "url": "https://anarchy.website/kinokuni"
+        },
+        "tags": [
+          "writing",
+          "scrivener",
+          "visual_studio_code",
+          "markdown"
+        ]
+      }
+    },
+    "8": {
+      "4": {
+        "title": "etymology n onomastics: \"oxia\"",
+        "project": "anarchy.website",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/oxia"
         },
         "tags": [
           "writing",
