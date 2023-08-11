@@ -73,44 +73,51 @@ var tagBlacklist = [
                       !projectsParsed.has(v.project)
                     ) {
                       let project = projects[v.project],
-                        projectDiv = newElement('tr', '', {}, [
-                          newElement('td', '', {
-                            colspan: 2,
-                          }),
-                          newElement(
-                            'td',
-                            '',
-                            {
-                              class: 'title',
-                            },
-                            [
-                              newElement('img', '', {
-                                class: 'project-icon',
-                                src: projectIconsPath + project.icon,
-                                alt: v.project,
-                                title: v.project,
-                              }),
-                              newElement(
-                                'div',
-                                '',
-                                {
-                                  class: 'project-title',
-                                },
-                                [
-                                  newElement('a', project.title, {
-                                    href: project.url,
-                                    target: '_blank',
-                                    class: 'project-link',
-                                  }),
-                                ]
-                              ),
-                              newElement('div', project.blurb, {
-                                class: 'project-blurb',
-                              }),
-                            ]
-                          ),
-                          newElement('td'),
-                        ]);
+                        projectDiv = newElement(
+                          'tr',
+                          '',
+                          {
+                            class: 'project',
+                          },
+                          [
+                            newElement('td', '', {
+                              colspan: 2,
+                            }),
+                            newElement(
+                              'td',
+                              '',
+                              {
+                                class: 'title',
+                              },
+                              [
+                                newElement('img', '', {
+                                  class: 'project-icon',
+                                  src: projectIconsPath + project.icon,
+                                  alt: v.project,
+                                  title: v.project,
+                                }),
+                                newElement(
+                                  'div',
+                                  '',
+                                  {
+                                    class: 'project-title',
+                                  },
+                                  [
+                                    newElement('a', project.title, {
+                                      href: project.url,
+                                      target: '_blank',
+                                      class: 'project-link',
+                                    }),
+                                  ]
+                                ),
+                                newElement('div', project.blurb, {
+                                  class: 'project-blurb',
+                                }),
+                              ]
+                            ),
+                            newElement('td'),
+                          ]
+                        );
                       projectsParsed.add(v.project);
                       acc.appendChild(projectDiv);
                     }
@@ -134,19 +141,21 @@ var tagBlacklist = [
                       {
                         class: 'tags',
                       },
-                      [].concat(tags.shift(), tags.sort()).reduce((acc, tag) => {
-                        icons[tag] &&
-                          !tagBlacklist.includes(tag) &&
-                          acc.push(
-                            newElement('img', '', {
-                              class: 'tag-icon',
-                              src: iconsPath + icons[tag],
-                              alt: tag,
-                              title: tag.replaceAll('_', ' '),
-                            })
-                          );
-                        return acc;
-                      }, [])
+                      []
+                        .concat(tags.shift(), tags.sort())
+                        .reduce((acc, tag) => {
+                          icons[tag] &&
+                            !tagBlacklist.includes(tag) &&
+                            acc.push(
+                              newElement('img', '', {
+                                class: 'tag-icon',
+                                src: iconsPath + icons[tag],
+                                alt: tag,
+                                title: tag.replaceAll('_', ' '),
+                              })
+                            );
+                          return acc;
+                        }, [])
                     );
                     entryDiv.appendChild(entryTags);
                     /*--- TITLE ----------------------------------------------*/
@@ -170,15 +179,16 @@ var tagBlacklist = [
                     );
                     v.note &&
                       notes.push(v.note) &&
-                      (entryText.innerHTML += `<a href="#${
+                      (entryText.innerHTML += `<a class="note" href="#${
                         notes.length
                       }" title="${v.note}">${SUPERSCRIPT(notes.length)}</a>`);
                     v.media &&
-                      (entryText.innerHTML += ` [<a href="#${year}.${monthPadded}.${dayPadded}${
+                      (entryText.innerHTML += `<span class="embed-button"> 
+                      [<a href="#${year}.${monthPadded}.${dayPadded}${
                         k == 0 ? '' : ALPHA[k]
                       }" onclick=\'embed(this, ${JSON.stringify(
                         v.media
-                      )} )'>embed</a>]`);
+                      )} )'>embed</a>]</span>`);
                     entryDiv.appendChild(entryText);
                     /*--- LINKS ----------------------------------------------*/
                     let entryLinks = newElement('td', '', {
@@ -210,7 +220,7 @@ var tagBlacklist = [
         },
         [container, []]
       );
-    let noteBlock = newElement('div');
+    let noteBlock = newElement('div', '', { class: 'notes' });
     noteBlock.innerHTML += '<br>notes:<br>';
     for (var i = 0; i < notes.length; )
       noteBlock.innerHTML +=
