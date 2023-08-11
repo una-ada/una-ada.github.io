@@ -10,8 +10,8 @@
   font-family: 'PixelMplus12';
   src: url('https://cdn.leafscape.be/PixelMplus/PixelMplus12-Regular_web.woff2')
     format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*----- variables ------------------------------------------------------------*/
@@ -146,4 +146,41 @@ td.tags {
 td.title {
   max-width: 48em;
   min-width: 27em;
+}
+
+@media screen and (max-width: 756px) {
+  body {
+    min-width: 0;
+  }
+  td.links {
+    width: auto;
+  }
+  td.tags,
+  tr.project {
+    display: none;
+  }
+  td.title {
+    width: 27em;
+  }
+}
+
+@media screen and (max-width: 666px) {
+  td.links {
+    display: none;
+  }
+  td.title {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  a.note,
+  div.notes,
+  span.embed-button,
+  thead.header {
+    display: none;
+  }
+  body {
+    line-height: 2;
+  }
 }
