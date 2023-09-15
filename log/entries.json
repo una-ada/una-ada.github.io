@@ -2294,26 +2294,27 @@
         },
         "tags": ["font", "fontforge"]
       },
-      "31": {
-        "title": "una mono v2021.05.31",
-        "project": "una fonts",
-        "link": [
-          { "title": "github", "url": "https://github.com/una-ada/una-mono" },
-          {
-            "title": "blog",
+      "31": [
+        {
+          "title": "una mono v2021.05.31",
+          "project": "una fonts",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-mono"
+          },
+
+          "tags": ["font", "adobe_photoshop", "adobe_illustrator", "fontforge"]
+        },
+        {
+          "title": "una mono blog",
+          "projects": "una fonts",
+          "link": {
+            "title": "anarchy.website",
             "url": "https://anarchy.website/2021/05/31/una-mono.html"
-          }
-        ],
-        "tags": [
-          "font",
-          "writing",
-          "adobe_photoshop",
-          "adobe_illustrator",
-          "atom",
-          "fontforge",
-          "markdown"
-        ]
-      }
+          },
+          "tags": ["blog", "markdown", "atom"]
+        }
+      ]
     },
     "6": {
       "1": [
