@@ -65,7 +65,7 @@ var tagBlacklist = [
                   let dayPadded = zeroPad(day, 2),
                     dayEntries = links[year][month][day];
                   Array.isArray(dayEntries) || (dayEntries = [dayEntries]);
-                  dayEntries.forEach((v, k) => {
+                  dayEntries.reverse().forEach((v, k) => {
                     /*--- PROJECTS -------------------------------------------*/
                     if (
                       v.project &&

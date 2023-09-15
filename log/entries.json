@@ -2232,7 +2232,7 @@
           "title": "anarchy.website",
           "url": "https://anarchy.website/2021/04/20/una-nota.html"
         },
-        "tags": ["writing", "atom", "markdown"]
+        "tags": ["blog", "atom", "markdown"]
       },
       "27": {
         "title": "chloe &amp; una's tentacular experience vol. 1: alignment you! you!",
@@ -2334,47 +2334,63 @@
             "url": "https://github.com/una-ada/una-nota/tree/master/old/2021.06.01"
           },
           "tags": ["font", "fontforge"]
-        }
-      ],
-      "6": {
-        "title": "ga sei-r proj 1 - gravity remake + blogs",
-        "link": [
-          {
-            "title": "猫.dev",
-            "url": "https://xn--z7x.dev/gravity/"
-          },
-          { "title": "github", "url": "https://github.com/una-ada/gravity" },
-          {
-            "title": "blog",
+        },
+        {
+          "title": "gravity dev log pt 1: concept n planning",
+          "link": {
+            "title": "anarchy.website",
             "url": "https://anarchy.website/2021/06/01/gravdev1.html"
           },
-          {
-            "title": "2",
+          "tags": ["blog", "markdown", "visual_studio_code"]
+        },
+        {
+          "title": "gravity dev log pt 2: framework n basic functionality",
+          "link": {
+            "title": "anarchy.website",
             "url": "https://anarchy.website/2021/06/01/gravdev2.html"
           },
-          {
-            "title": "3",
-            "url": "https://anarchy.website/2021/06/03/gravdev3.html"
-          },
-          {
-            "title": "4",
-            "url": "https://anarchy.website/2021/06/06/gravdev4.html"
-          }
-        ],
-        "tags": [
-          "programming",
-          "writing",
-          "git",
-          "trello",
-          "visual_studio_code",
-          "css",
-          "html",
-          "javascript",
-          "markdown",
-          "github",
-          "github_pages"
-        ]
+          "tags": ["blog", "markdown", "visual_studio_code"]
+        }
+      ],
+      "3": {
+        "title": "gravity dev log pt 3: rendering n animation",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2021/06/03/gravdev3.html"
+        },
+        "tags": ["blog", "markdown", "visual_studio_code"]
       },
+      "6": [
+        {
+          "title": "gravity dev log pt 4: game mechanics",
+          "link": {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/2021/06/06/gravdev4.html"
+          },
+          "tags": ["blog", "markdown", "visual_studio_code"]
+        },
+        {
+          "title": "ga sei-r proj 1 - gravity remake",
+          "link": [
+            {
+              "title": "猫.dev",
+              "url": "https://xn--z7x.dev/gravity/"
+            },
+            { "title": "github", "url": "https://github.com/una-ada/gravity" }
+          ],
+          "tags": [
+            "programming",
+            "git",
+            "trello",
+            "visual_studio_code",
+            "css",
+            "html",
+            "javascript",
+            "github",
+            "github_pages"
+          ]
+        }
+      ],
       "16": {
         "title": "ga sei-r: mongoose-flights",
         "link": {
@@ -3206,12 +3222,7 @@
           "title": "anarchy.website",
           "url": "https://anarchy.website/kinokuni"
         },
-        "tags": [
-          "writing",
-          "scrivener",
-          "visual_studio_code",
-          "markdown"
-        ]
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
     },
     "8": {
@@ -3222,12 +3233,7 @@
           "title": "anarchy.website",
           "url": "https://anarchy.website/oxia"
         },
-        "tags": [
-          "writing",
-          "scrivener",
-          "visual_studio_code",
-          "markdown"
-        ]
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
     }
   }
