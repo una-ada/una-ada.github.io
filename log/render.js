@@ -13,7 +13,7 @@ var tagBlacklist = [
     //'visual_studio_code',
     //'yaml',
   ],
-  ALPHA = Array.from({ length: 26 }, (_, i) => String.fromCharCode(97 + i)),
+  ALPHA = [...'abcdefghijklmnopqrstuvwxyz'],
   SUPERSCRIPT = n =>
     String.fromCodePoint(
       ...[...('' + n)].map(i =>
