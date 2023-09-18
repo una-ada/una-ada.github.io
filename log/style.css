@@ -45,6 +45,7 @@ a:visited {
 body {
   background: var(--color-black);
   line-height: 1.5;
+  margin: 1em;
   min-width: 60em;
   font-family: 'Cozette', 'PixelMplus12', monospace;
 }
@@ -115,7 +116,9 @@ div.project-blurb {
   display: flex;
 }
 div#tag-lists {
+  column-gap: 0;
   column-width: 32em;
+  max-width: 128em;
 }
 img.link-icon {
   vertical-align: middle;
@@ -148,7 +151,7 @@ td.links {
 td.tag-icons {
   padding: 0;
   text-align: center;
-  width: 2em;
+  width: 3em;
 }
 td.tag-name,
 td.tags {
@@ -162,6 +165,24 @@ td.tag-path {
 td.title {
   max-width: 48em;
   min-width: 27em;
+}
+
+@media screen and (max-width: 1574px) {
+  div#tag-lists {
+    max-width: 96em;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  div#tag-lists {
+    max-width: 64em;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  div#tag-lists {
+    max-width: 32em;
+  }
 }
 
 @media screen and (max-width: 756px) {
