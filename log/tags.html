@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>things by me on the internet</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/una-theme-icons/16px/etc/heart_kitty.png"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/log/style.css" />
+    <script src="/log/render-tags.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <table id="list">
+      <thead class="header">
+        <td>tag</td>
+        <td>icon</td>
+        <td>path</td>
+      </thead>
+    </table>
+    <script>
+      fetch('icons.json')
+        .then(response => response.json())
+        .then(json => render(json, document.getElementById('list')));
+    </script>
+  </body>
+</html>
