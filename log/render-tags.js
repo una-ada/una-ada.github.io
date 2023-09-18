@@ -10,27 +10,36 @@ var newElement = (tag, contents = '', attributes = {}, children = []) => {
     console.log(icons);
     Object.keys(icons).forEach(category => {
       container.appendChild(
-        newElement('table', '', {}, [
-          newElement('thead', '', {}, [
-            newElement('td', category),
-            newElement('td', 'icon'),
-            newElement('td', 'path'),
-          ]),
-          ...Object.keys(icons[category]).map(icon =>
-            newElement('tr', '', {}, [
-              newElement('td', icon.replaceAll('_', ' ')),
-              newElement('td', '', {}, [
-                newElement('img', '', {
-                  class: 'tag-icon',
-                  src: iconsPath + icons[category][icon],
-                  alt: icon,
-                  title: icon.replaceAll('_', ' '),
+        newElement(
+          'table',
+          '',
+          {
+            class: 'tag-list',
+          },
+          [
+            newElement('thead', '', {}, [
+              newElement('td', category),
+              newElement('td', 'icon'),
+              newElement('td', 'path'),
+            ]),
+            ...Object.keys(icons[category]).map(icon =>
+              newElement('tr', '', {}, [
+                newElement('td', icon.replaceAll('_', ' '), {
+                  class: 'tag-name',
                 }),
-              ]),
-              newElement('td', icons[category][icon]),
-            ])
-          ),
-        ])
+                newElement('td', '', { class: 'tag-icons' }, [
+                  newElement('img', '', {
+                    class: 'tag-icon',
+                    src: iconsPath + icons[category][icon],
+                    alt: icon,
+                    title: icon.replaceAll('_', ' '),
+                  }),
+                ]),
+                newElement('td', icons[category][icon], { class: 'tag-path' }),
+              ])
+            ),
+          ]
+        )
       );
     });
   };

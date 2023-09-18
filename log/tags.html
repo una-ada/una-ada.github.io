@@ -14,11 +14,11 @@
     <script src="/log/render-tags.js" type="text/javascript"></script>
   </head>
   <body>
-    <div id="list"></div>
+    <div id="tag-lists"></div>
     <script>
       fetch('icons.json')
         .then(response => response.json())
-        .then(json => render(json, document.getElementById('list')));
+        .then(json => render(json, document.getElementById('tag-lists')));
     </script>
   </body>
 </html>

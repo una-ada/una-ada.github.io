@@ -114,6 +114,9 @@ a.project-link:visited {
 div.project-blurb {
   display: flex;
 }
+div#tag-lists {
+  column-width: 32em;
+}
 img.link-icon {
   vertical-align: middle;
 }
@@ -132,6 +135,9 @@ img.tag-icon {
   width: 48em;
   height: 27em;
 }
+table.tag-list {
+  margin-bottom: 3em;
+}
 td.date {
   text-align: right;
 }
@@ -139,8 +145,18 @@ td.links {
   width: 21em;
   padding: 0;
 }
+td.tag-icons {
+  padding: 0;
+  text-align: center;
+  width: 2em;
+}
+td.tag-name,
 td.tags {
   width: 12em;
+  padding: 0;
+}
+td.tag-path {
+  width: 16em;
   padding: 0;
 }
 td.title {
