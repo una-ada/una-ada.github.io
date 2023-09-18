@@ -7,19 +7,29 @@ var newElement = (tag, contents = '', attributes = {}, children = []) => {
   },
   render = async (json, container) => {
     var { icons, iconsPath } = json;
-    Object.keys(icons).sort().forEach(icon => {
+    console.log(icons);
+    Object.keys(icons).forEach(category => {
       container.appendChild(
-        newElement('tr', '', {}, [
-          newElement('td', icon.replaceAll('_', ' ')),
-          newElement('td', '', {}, [
-            newElement('img', '', {
-              class: 'tag-icon',
-              src: iconsPath + icons[icon],
-              alt: icon,
-              title: icon.replaceAll('_', ' '),
-            }),
+        newElement('table', '', {}, [
+          newElement('thead', '', {}, [
+            newElement('td', category),
+            newElement('td', 'icon'),
+            newElement('td', 'path'),
           ]),
-          newElement('td', icons[icon]),
+          ...Object.keys(icons[category]).map(icon =>
+            newElement('tr', '', {}, [
+              newElement('td', icon.replaceAll('_', ' ')),
+              newElement('td', '', {}, [
+                newElement('img', '', {
+                  class: 'tag-icon',
+                  src: iconsPath + icons[category][icon],
+                  alt: icon,
+                  title: icon.replaceAll('_', ' '),
+                }),
+              ]),
+              newElement('td', icons[category][icon]),
+            ])
+          ),
         ])
       );
     });

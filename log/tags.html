@@ -14,13 +14,7 @@
     <script src="/log/render-tags.js" type="text/javascript"></script>
   </head>
   <body>
-    <table id="list">
-      <thead class="header">
-        <td>tag</td>
-        <td>icon</td>
-        <td>path</td>
-      </thead>
-    </table>
+    <div id="list"></div>
     <script>
       fetch('icons.json')
         .then(response => response.json())

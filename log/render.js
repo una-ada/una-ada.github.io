@@ -30,7 +30,7 @@ var tagBlacklist = [
     return el;
   },
   render = async (links, container) => {
-    var icons,
+    var icons = {},
       iconsPath,
       projects,
       projectIconsPath,
@@ -41,8 +41,9 @@ var tagBlacklist = [
     await fetch('/log/icons.json')
       .then(response => response.json())
       .then(json => {
-        icons = json.icons;
+        for (let i in json.icons) icons = { ...icons, ...json.icons[i] };
         iconsPath = json.iconsPath;
+        console.log(icons);
       });
     await fetch('/log/projects.json')
       .then(response => response.json())
