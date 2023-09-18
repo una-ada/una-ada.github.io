@@ -3236,6 +3236,31 @@
         },
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
+    },
+    "9": {
+      "18": {
+        "title": "una's theme icons index",
+        "project": "una theme",
+        "link": [
+          {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/log/tags"
+          },
+          {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-ada.github.io/tree/master/log"
+          }
+        ],
+        "tags": [
+          "programming",
+          "javascript",
+          "html",
+          "json",
+          "github",
+          "git",
+          "visual_studio_code"
+        ]
+      }
     }
   }
 }
