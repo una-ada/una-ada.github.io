@@ -77,6 +77,7 @@
       "猫.dev": "etc/heart_kitty.png"
     },
     "language": {
+      "actionscript": "lang/actionscript.png",
       "c": "lang/c.png",
       "cpp": "lang/cpp.png",
       "csharp": "lang/cs.png",
@@ -127,6 +128,7 @@
       ".net": "lib/dotnet.png",
       "oauth": "lib/oauth.png",
       "openfl": "lib/openfl.png",
+      "opengl": "lib/opengl.png",
       "passport.js": "lib/passport.png",
       "pixijs": "lib/pixijs.png",
       "plasmo": "lib/plasmo.png",
@@ -134,10 +136,14 @@
       "runkit": "lib/runkit.png",
       "threejs": "lib/threejs.png",
       "vue": "lib/vue.png",
+      "webgl": "lib/webgl.png",
       "webpack": "lib/webpack.png"
     },
     "software": {
       "ableton_live": "soft/ableton_live.png",
+      "adobe_air": "soft/adobe_air.png",
+      "adobe_animate": "soft/adobe_animate.png",
+      "adobe_flash": "soft/adobe_flash.png",
       "adobe_flash_player": "soft/adobe_flash_player.png",
       "adobe_illustrator": "soft/adobe_illustrator.png",
       "adobe_indesign": "soft/adobe_indesign.png",
@@ -207,6 +213,7 @@
       "plex": "soft/plex.png",
       "postgresql": "soft/postgresql.png",
       "reason": "soft/reason.png",
+      "ruffle": "soft/ruffle.png",
       "scratch": "soft/scratch.png",
       "scrivener": "soft/scrivener.png",
       "spitfire_labs": "soft/spitfire_audio.png",
