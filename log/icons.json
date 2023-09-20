@@ -38,6 +38,7 @@
       "kkbox": "dist/kkbox.png",
       "kubernetes": "dist/kubernetes.png",
       "lospec": "dist/lospec.png",
+      "microsoft_azure": "dist/microsoft_azure.png",
       "minecraft_forum": "etc/minecraft.png",
       "myfonts": "dist/myfonts.png",
       "netease_cloud_music": "dist/netease_cloud_music.png",
@@ -123,6 +124,7 @@
       "love2d": "lib/love2d.png",
       "meteor": "lib/meteor.png",
       "motion_canvas": "lib/motioncanvas.png",
+      ".net": "lib/dotnet.png",
       "oauth": "lib/oauth.png",
       "openfl": "lib/openfl.png",
       "passport.js": "lib/passport.png",
@@ -136,6 +138,7 @@
     },
     "software": {
       "ableton_live": "soft/ableton_live.png",
+      "adobe_flash_player": "soft/adobe_flash_player.png",
       "adobe_illustrator": "soft/adobe_illustrator.png",
       "adobe_indesign": "soft/adobe_indesign.png",
       "adobe_photoshop": "soft/adobe_photoshop.png",
