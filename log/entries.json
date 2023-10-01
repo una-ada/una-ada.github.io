@@ -3261,6 +3261,23 @@
           "visual_studio_code"
         ]
       }
+    },
+    "10": {
+      "1": {
+        "title": "image dithering",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/js/2/dither"
+        },
+        "tags": [
+          "programming",
+          "git",
+          "github",
+          "javascript",
+          "visual_studio_code",
+          "webgl"
+        ]
+      }
     }
   }
 }
