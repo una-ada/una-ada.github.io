@@ -1,283 +1,204 @@
 <!DOCTYPE html>
 <!--
-    Image Dithering
-    by Una Ada <una@anarchy.website>
-    2019.09.11
+  Image Dithering
+  by Una Ada <una@anarchy.website>
+  2019.09.11 => 2023.09.30-10.01
+  I came back to it eventually, lol.
 
-    Inspired by:
-    -   https://app.dithermark.com/
+  Inspired by:
+  - https://app.dithermark.com/
 
-    Sources based on:
-    -   https://github.com/allen-garvey/dithermark
-    -   https://github.com/sole/webcam-dithering
+  Sources based on:
+  - http://alex-charlton.com/posts/Dithering_on_the_GPU/
+  - https://github.com/allen-garvey/dithermark
+  - https://github.com/sole/webcam-dithering
+  - https://threejs.org/docs/#api/en/textures/DataTexture
 
-    See also:
-    -   http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/
-    -   https://bisqwit.iki.fi/story/howto/dither/jy/
-    -   https://en.wikipedia.org/wiki/Ordered_dithering
-    -   http://devlog-martinsh.blogspot.com/2011/03/glsl-dithering.html
-    -   http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/
-    -   https://www.john-smith.me/hassles-with-array-access-in-webgl-and-a-couple-of-workarounds.html
-
+  See also:
+  - https://bisqwit.iki.fi/story/howto/dither/jy/
+  - http://devlog-martinsh.blogspot.com/2011/03/glsl-dithering.html
+  - https://devlog-martinsh.blogspot.com/2011/03/glsl-8x8-bayer-matrix-dithering.html
+  - https://medium.com/the-bkpt/dithered-shading-tutorial-29f57d06ac39
+  - http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/
+  - https://en.wikipedia.org/wiki/Ordered_dithering
+  - http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/
+  - https://www.john-smith.me/hassles-with-array-access-in-webgl-and-a-couple-of-workarounds.html
+  - https://webgl2fundamentals.org/webgl/lessons/webgl2-whats-new.html
 -->
-
 <html>
-    <head>
-        <title>Image Dithering</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="user-scalable=no, initial-scale=1"/>
-        <style>
-            canvas {
-                display: block;
-                height: auto !important;
-                max-width: 100%;
-                image-rendering: pixelated;
-            }
-            .container {
-                /**max-width: 36em;**/
-                margin: auto;
-            }
-        </style>
-        <script src="../3/assets/three.min.js"></script>
 
+<head>
+  <title>Image Dithering</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1" />
+  <style>
+    canvas {
+      display: block;
+      height: auto !important;
+      /*max-width: 100%;*/
+      image-rendering: pixelated;
+    }
 
+    .container {
+      max-width: 36em;
+      margin: auto;
+    }
+  </style>
+  <script src="../3/assets/three.min.js"></script>
+  <script>
+    // Shaders and other constants
+    const
+      VERTEX_SHADER = `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          vec4 pos = vec4( position.xy, 0.0, 1.0 );
+          gl_Position = projectionMatrix * modelViewMatrix * pos;
+        }`,
+      FRAGMENT_SHADER = `
+        uniform sampler2D uTexture;
+        uniform sampler2D uBayer;
+        uniform float uBayerDimension;
+        uniform float uDitherRCoefficient;
+        uniform vec3 uPalette[18];
+        uniform int uPaletteLength;
+        varying vec2 vUv;
+        float quick_distance(vec3 pixel1, vec3 pixel2) {
+          vec3 distances = pixel1 - pixel2;
+          return dot(vec3(1.0), distances * distances);
+        }
+        void main() {
+          vec4 sample = texture2D(uTexture, vUv);
+          if(sample.a < 0.004) {
+            gl_FragColor = vec4(0.0);
+            return;
+          }
+          vec3 pixel = sample.rgb;
+          float value = texture2D(uBayer, vec2(gl_FragCoord.xy / uBayerDimension)).r - 0.5;
+          pixel = clamp(pixel + vec3(uDitherRCoefficient * value), 0.0, 1.0);
+          float distance = 9999.9;
+          vec3 closest = vec3(-2, 0, 0);
+          for(int i = 0; i < 18; i++) {
+            if(i >= uPaletteLength)
+              break;
+            vec3 check = uPalette[i];
+            float tempDistance = quick_distance(pixel, check);
+            if(tempDistance < distance) {
+              distance = tempDistance;
+              closest = check;
+            }
+          }
+          vec3 outputPixel = closest;
+          gl_FragColor = vec4(outputPixel, sample.a);
+        }`,
+      DITHER_MATRIX = [
+        0, 8, 2, 10,
+        12, 4, 14, 6,
+        3, 11, 1, 9,
+        15, 7, 13, 5
+      ],
+      PALETTE = [
+        [0x70, 0x3d, 0x41],
+        [0xbf, 0x30, 0x41],
+        [0xe0, 0xc1, 0xbf],
+        [0x46, 0x30, 0x2a],
+        [0xd6, 0x80, 0x67],
+        [0x2e, 0x2d, 0x1c],
+        [0x55, 0x5f, 0x47],
+        [0xdc, 0xcc, 0xa1],
+        [0x26, 0x4d, 0x39],
+        [0x72, 0x9a, 0x89],
+        [0x0e, 0x2d, 0x31],
+        [0x14, 0x5c, 0x62],
+        [0xa2, 0xc9, 0xcb],
+        [0x11, 0x11, 0x11],
+        [0x2a, 0x28, 0x58],
+        [0xb2, 0xad, 0xcc],
+      ];
+    // Some processing functions to get data to WebGL
+    Array.prototype.toVectorArray = function () {
+      let r = new Float32Array(this.length * 3), i = 0;
+      this.forEach(u =>
+        u.forEach(v => r[i++] = v / 255)
+      );
+      return r;
+    }
+    Array.prototype.toDataTexture = function () {
+      let entrySize = 4, // RGBA
+        dimension = (this.length ** 0.5) | 0,
+        data = new Uint8Array(entrySize * this.length);
+      this.forEach((v, i) => {
+        data[i * entrySize] = ((v / 16) * 255) | 0;
+      });
+      let texture = new THREE.DataTexture(
+        data,
+        dimension,
+        dimension,
+        THREE.RGBAFormat);
+      texture.flipY = true;
+      texture.wrapS = THREE.RepeatWrapping;
+      texture.wrapT = THREE.RepeatWrapping;
+      texture.needsUpdate = true;
+      return texture;
+    }
+    window.addEventListener('load', function () {
+      var image = new Image();
+      image.src = 'assets/test.png';
+      image.addEventListener('load', function (event) {
+        let width = image.naturalWidth,
+          height = image.naturalHeight;
+        image.style.width = width + 'px';
+        image.style.height = height + 'px';
+        init(width, height);
+      });
+      var camera,
+        scene,
+        renderer,
+        init = (width, height) => {
+          camera = new THREE.PerspectiveCamera(50, width / height, 1, 1000);
+          camera.position.z = 500;
+          scene = new THREE.Scene();
+          texture = new THREE.Texture(image);
+          texture.minFilter = THREE.NearestFilter;
+          texture.magFilter = THREE.NearestFilter;
+          texture.format = THREE.RGBFormat;
+          texture.generateMipmaps = false;
+          texture.needsUpdate = true;
+          var
+            geometry = new THREE.PlaneGeometry(width, height),
+            material = new THREE.ShaderMaterial({
+              uniforms: {
+                uTexture: { value: texture },
+                uBayer: { value: DITHER_MATRIX.toDataTexture() },
+                uBayerDimension: { value: (DITHER_MATRIX.length ** 0.5) | 0 },
+                uDitherRCoefficient: { value: 0.4 },
+                uPalette: { value: PALETTE.toVectorArray() },
+                uPaletteLength: { value: PALETTE.length },
+              },
+              vertexShader: VERTEX_SHADER,
+              fragmentShader: FRAGMENT_SHADER,
+            }),
+            mesh = new THREE.Mesh(geometry, material);
+          scene.add(mesh);
+          renderer = new THREE.WebGLRenderer();
+          renderer.setSize(width, height);
+          document.body.appendChild(renderer.domElement);
+          renderer.domElement.style.width = width + 'px';
+          renderer.domElement.style.height = height + 'px';
+          render();
+        },
+        render = () => {
+          //requestAnimationFrame(render);
+          renderer.render(scene, camera);
+        };
+    });
+  </script>
+</head>
 
-        <!-- https://github.com/allen-garvey/dithermark/blob/22fee5a383e0ce69640c8b6399ddd4d845b908f6/templates/index/webgl_shaders/fragment/shared/hsl-functions.php -->
-        <script type="webgl/fragment-shader-function" id="webgl-hsl-functions">
-            vec3 RGBtoHCV(vec3 rgb){
-                float epsilon = 1.0e-10;
-                // Based on work by Sam Hocevar and Emil Persson
-                vec4 P = (rgb.g < rgb.b) ? vec4(rgb.bg, -1.0, 2.0/3.0) : vec4(rgb.gb, 0.0, -1.0/3.0);
-                vec4 Q = (rgb.r < P.x) ? vec4(P.xyw, rgb.r) : vec4(rgb.r, P.yzx);
-                float C = Q.x - min(Q.w, Q.y);
-                float H = abs((Q.w - Q.y) / (6.0 * C + epsilon) + Q.z);
-                return vec3(H, C, Q.x);
-            }
-            vec3 HUEtoRGB(float hue){
-                float r = abs(hue * 6.0 - 3.0) - 1.0;
-                float g = 2.0 - abs(hue * 6.0 - 2.0);
-                float b = 2.0 - abs(hue * 6.0 - 4.0);
-                return clamp(vec3(r, g, b), 0.0, 1.0);
-            }
-            float pixelSaturation(vec3 pixel){
-                float maxValue = max(max(pixel.r, pixel.g), pixel.b);
-                float minValue = min(min(pixel.r, pixel.g), pixel.b);
-                if(maxValue == minValue){
-                    return 0.0;
-                }
-                float c = (maxValue + minValue) / 2.0;
-                float diff = maxValue - minValue;
-                return c > 0.5 ? diff / (2.0 - diff) : diff / (maxValue + minValue);
-            }
-            vec3 rgb2hsl(vec3 pixel){
-                vec3 hcv = RGBtoHCV(pixel);
-                float l = hcv.z - hcv.y * 0.5;
-                return vec3(hcv.x, pixelSaturation(pixel), l);
-            }
-            vec3 hsl2rgb(vec3 pixel){
-                vec3 rgb = HUEtoRGB(pixel.x);
-                float c = (1.0 - abs(2.0 * pixel.z - 1.0)) * pixel.y;
-                return (rgb - 0.5) * c + pixel.z;
-            }
+<body>
+  <div class="container">
+    <div class="js-output-container" role="presentation"></div>
+  </div>
+</body>
 
-            float hue_distance(float hue1, float hue2){
-                float distance = abs(hue1 - hue2);
-                return min(distance, 1.0 - distance);
-            }
-
-            float hue(vec3 pixel){
-                return rgb2hsl(pixel).r;
-            }
-            float pixel_luma(vec3 pixel){
-                return dot(vec3(0.299, 0.587, 0.114), pixel);
-            }
-        </script>
-        <!-- https://github.com/allen-garvey/dithermark/blob/master/templates/index/webgl_shaders/fragment/shared/pixel-distance-functions.php#L7-L13 -->
-        <script type="webgl/fragment-shader-function" id="webgl-luma-distance">
-            float quick_distance(vec3 pixel1, vec3 pixel2){
-                vec3 distances = pixel1 - pixel2;
-                return pixel_luma(distances * distances);
-            }
-        </script>
-        <!-- https://github.com/allen-garvey/dithermark/blob/master/templates/index/webgl_shaders/fragment/dithers/shared-dither.php -->
-        <script type="webgl/fragment-shader" id="webgl-random-dither-declaration-fshader">
-            uniform vec2 u_random_seed;
-
-            highp float rand(vec2 co){
-                highp float a = 12.9898;
-                highp float b = 78.233;
-                highp float c = 43758.5453;
-                highp float dt = dot(co.xy, vec2(a,b));
-                highp float sn = mod(dt, 3.14);
-                return fract(sin(sn) * c);
-            }
-        </script>
-        <script type="webgl/fragment-shader" id="webgl-random-ordered-dither-adjustment-fshader">
-            bayerValue = bayerValue * rand(v_texcoord.xy*u_random_seed.xy);
-        </script>
-
-
-
-        <script>
-            const
-            /*
-             *  RGB weights for Luma distance
-             *  Currently using ITU-R BT.601
-             *  http://www.tannerhelland.com/3643/grayscale-image-algorithm-vb6/
-             */
-            LUMA = [0.299,0.587,0.114],
-            DITHER_MATRIX = [
-                 1, 33,  9, 41,
-                49, 17, 57, 25,
-                13, 45,  5, 37,
-                61, 29, 53, 21
-            ],
-            /*
-             *  All the shaders used.
-             */
-            SHADERS = {
-                fragment:`
-                    uniform sampler2D map;
-                    uniform vec3 luma;
-                    varying vec2 vUv;
-        			float scale = 1.0;
-        			float find_closest(int xy, float c0) {
-                        float limit = 0.5;
-        				if(c0 < limit){return 0.0;}
-                        else{return 1.0;}
-        			}
-        			void main() {
-        				float grayscale = dot(texture2D(map, vUv).rgb, luma);
-        				vec3 rgb = texture2D(map, vUv).rgb;
-        				vec2 xy = gl_FragCoord.xy * scale;
-        				int x = int(mod(xy.x, 4.0));
-        				int y = int(mod(xy.y, 4.0));
-        				vec3 finalRGB;
-        				finalRGB.r = find_closest(x + y, rgb.r);
-        				finalRGB.g = find_closest(x + y, rgb.g);
-        				finalRGB.b = find_closest(x + y, rgb.b);
-        				gl_FragColor = vec4(finalRGB, 1.0);
-        			}`,
-                vertex:`
-                    uniform sampler2D map;
-                    varying vec2 vUv;
-                    void main() {
-                        vUv = uv;
-                        vec4 color = texture2D( map, vUv );
-                        vec4 pos = vec4( position.xy, 0.0, 1.0 );
-                        gl_Position = projectionMatrix * modelViewMatrix * pos;
-                    }`,
-            };
-            window.addEventListener('load', function() {
-            	var image = new Image();
-            	image.src = "assets/test.png";
-            	image.addEventListener( 'load', function ( event ) {
-                    let width = image.naturalWidth,
-                        height = image.naturalHeight;
-                    image.style.width = width+'px';
-                    image.style.height = height+'px';
-                    init(width,height);
-            	});
-            	var camera, scene, renderer,
-                    init = (width,height)=>{
-                        camera = new THREE.PerspectiveCamera(50,width/height,1,1000);
-            		    camera.position.z = 500;
-            		    scene = new THREE.Scene();
-                        texture = new THREE.Texture(image);
-                		texture.minFilter = THREE.NearestFilter;
-                		texture.magFilter = THREE.NearestFilter;
-                		texture.format = THREE.RGBFormat;
-                		texture.generateMipmaps = false;
-                		texture.needsUpdate = true;
-            		    var geometry = new THREE.PlaneGeometry(width,height),
-                            material = new THREE.ShaderMaterial({
-                                uniforms:{
-                                    map:{value:texture},
-                                    luma:{value:LUMA},
-                                    ditherMatrix:{value:DITHER_MATRIX}
-                                },
-            			        vertexShader: SHADERS.vertex,
-            			        fragmentShader: SHADERS.fragment
-                            }),
-                            mesh = new THREE.Mesh(geometry,material);
-    		            scene.add(mesh);
-                        renderer = new THREE.WebGLRenderer();
-            		    renderer.setSize(width,height);
-            		    document.body.appendChild(renderer.domElement);
-                		renderer.domElement.style.width = width+'px';
-                		renderer.domElement.style.height = height+'px';
-                        render();
-            	    },
-                    render = ()=>{
-                        //requestAnimationFrame(render);
-                        renderer.render(scene,camera);
-            	};
-            });
-        </script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="js-output-container" role="presentation"></div>
-        </div>
-        <script>
-            const palette = [
-                [112, 61, 65],
-                [222, 33, 54],
-                [ 14, 45, 49],
-                [ 20, 92, 98],
-                [114,154,137],
-                [ 10, 38, 25],
-                [219,204,161],
-                [214,128,103],
-                [ 42, 40, 87],
-                [ 85, 91, 71],
-                [ 46, 45, 28],
-                [224,193,191]
-            ];
-
-            //  Clamp pixels to real values, this comment is longer than the function
-            const pixelClamp=v=>v>255?255:v<0?0:v;
-
-            /*  Bayer Matrix Thing?
-             *  https://github.com/allen-garvey/dithermark/blob/63a9c6634cab0820ba832d9a96b36b1663126f25/js_src/shared/bayer-matrix.js#L114-L128
-             */
-            function hatch(dimensions){
-                return new Uint8Array([
-                     7, 7, 7, 7,
-                     0, 0, 0, 0,
-                     7, 7, 7, 7,
-                    15,15,15,15
-                ]);
-            }
-
-            /*  Color distance calculation using Luma
-             *  https://github.com/allen-garvey/dithermark/blob/master/js_src/worker/color-dither-mode-functions.js#L64-L70
-             */
-            function distance(c1, c2){
-                return ((c1[0]-c2[0])**2)*lumaArray[0]
-                     + ((c1[1]-c2[1])**2)*lumaArray[1]
-                     + ((c1[2]-c2[2])**2)*lumaArray[2];
-            }
-
-            /*  Incrementation
-             *  https://github.com/allen-garvey/dithermark/blob/master/js_src/worker/color-dither-mode-functions.js#L101-L107
-             */
-            function increment(c, inc){
-                return [
-                    pixelClamp(c[0] + inc[0]),
-                    pixelClamp(c[1] + inc[1]),
-                    pixelClamp(c[2] + inc[2]),
-                ];
-            }
-
-            /*  Error calculation (3D)
-             *  https://github.com/allen-garvey/dithermark/blob/master/js_src/worker/color-dither-mode-functions.js#L139-L144
-             */
-            function errorAmount(expect, actual, buffer){
-                // Thanks to Ryan for telling me to use map,,, again.
-                buffer = expect.map((e, i)=>e-actual[i]);
-                return buffer;
-            }
-        </script>
-    </body>
 </html>
