@@ -3256,8 +3256,6 @@
           "javascript",
           "html",
           "json",
-          "github",
-          "git",
           "visual_studio_code"
         ]
       }
@@ -3271,8 +3269,6 @@
         },
         "tags": [
           "programming",
-          "git",
-          "github",
           "javascript",
           "visual_studio_code",
           "webgl"
