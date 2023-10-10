@@ -29,11 +29,7 @@
 
 <head>
   <title>image dithering</title>
-  <link
-    rel="shortcut icon"
-    type="image/png"
-    href="/una-theme-icons/16px/etc/heart_kitty.png"
-  />
+  <link rel="shortcut icon" type="image/png" href="/una-theme-icons/16px/etc/heart_kitty.png" />
   <meta charset="utf-8" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1" />
   <style>
@@ -43,6 +39,7 @@
       margin: auto;
       image-rendering: pixelated;
     }
+
     .container {
       max-width: 36em;
       margin: auto;
@@ -50,7 +47,6 @@
   </style>
   <script src="../3/assets/three.min.js"></script>
   <script>
-    // Shaders and other constants
     const
       VERTEX_SHADER = `
         varying vec2 vUv;
@@ -119,7 +115,6 @@
         [0x2a, 0x28, 0x58],
         [0xb2, 0xad, 0xcc],
       ];
-    // Some processing functions to get data to WebGL
     Array.prototype.toVectorArray = function () {
       let r = new Float32Array(this.length * 3), i = 0;
       this.forEach(u =>
@@ -128,17 +123,13 @@
       return r;
     }
     Array.prototype.toDataTexture = function () {
-      let entrySize = 4, // RGBA
+      let entrySize = 4,
         dimension = (this.length ** 0.5) | 0,
         data = new Uint8Array(entrySize * this.length);
       this.forEach((v, i) => {
         data[i * entrySize] = ((v / 16) * 255) | 0;
       });
-      let texture = new THREE.DataTexture(
-        data,
-        dimension,
-        dimension,
-        THREE.RGBAFormat);
+      let texture = new THREE.DataTexture(data, dimension, dimension);
       texture.flipY = true;
       texture.wrapS = THREE.RepeatWrapping;
       texture.wrapT = THREE.RepeatWrapping;
@@ -158,7 +149,7 @@
       This is just a little test of using WebGL fragment shaders to dither a
       THREE.js scene using the same simple THREE.PlaneGeometry rendering of a
       selected image as my <a href="frag-sort-1.html">pixel sort</a> demo.
-      I gave up on this in 2019 when I got it to, at best, posterize the test 
+      I gave up on this in 2019 when I got it to, at best, posterize the test
       image; however, I decided to see it through to completion in 2023!
     </p>
     <p>
@@ -170,8 +161,7 @@
     </p>
   </div>
   <script>
-        var
-      input = document.querySelector('.js-input-image'),
+    var input = document.querySelector('.js-input-image'),
       output = document.querySelector('.js-output-container'),
       renderer = new THREE.WebGLRenderer({ antialias: false }),
       camera = new THREE.Camera(),
@@ -193,7 +183,12 @@
     camera.position.z = 1;
     scene.add(mesh);
     output.appendChild(renderer.domElement);
-    var init = (image, width, height) => {
+    var init = image => {
+      let
+        width = image.naturalWidth,
+        height = image.naturalHeight;
+      image.style.width = width + 'px';
+      image.style.height = height + 'px';
       texture = new THREE.Texture(image);
       texture.minFilter = THREE.NearestFilter;
       texture.magFilter = THREE.NearestFilter;
@@ -204,34 +199,22 @@
       renderer.setSize(width, height);
       renderer.domElement.style.width = width + 'px';
       renderer.domElement.style.height = height + 'px';
-      render();
+      renderer.render(scene, camera);
     },
-      render = () => {
-        //requestAnimationFrame(render);
-        renderer.render(scene, camera);
-      };
-
-    window.addEventListener('load', function () {
-      var image = new Image();
+      readFile = file => {
+        let reader = new FileReader();
+        return new Promise((resolve, reject) => {
+          reader.addEventListener('load', _ => resolve(reader.result));
+          reader.readAsDataURL(file);
+        })
+      }
+    window.addEventListener('load', _ => {
+      let image = new Image();
       image.src = 'assets/test.png';
-      image.addEventListener('load', function (event) {
-        let width = image.naturalWidth,
-          height = image.naturalHeight;
-        image.style.width = width + 'px';
-        image.style.height = height + 'px';
-        init(image, width, height);
-      });
+      image.addEventListener('load', _ => init(image))
     });
-    function readFile(file) {
-      var reader = new FileReader();
-      return new Promise((resolve, reject) => {
-        reader.addEventListener('load', _ => resolve(reader.result));
-        reader.readAsDataURL(file);
-      })
-    }
     input.addEventListener('change', _ => {
-      var
-        file = input.files[0],
+      let file = input.files[0],
         image = new Image();
       if (!file) return;
       readFile(file)
@@ -239,13 +222,7 @@
           image.addEventListener('load', _ => resolve());
           image.src = dataUrl;
         }))
-        .then(_ => {
-          let width = image.naturalWidth,
-            height = image.naturalHeight;
-          image.style.width = width + 'px';
-          image.style.height = height + 'px';
-          init(image, width, height);
-        });
+        .then(_ => init(image));
     });
   </script>
 </body>
