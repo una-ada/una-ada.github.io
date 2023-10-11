@@ -1856,27 +1856,33 @@
         "tags": ["podcast"],
         "media": { "type": "podbean", "src": "cfvzi-e1d26f" }
       },
-      "11": {
-        "title": "una script v2020.07.11",
-        "project": "una fonts",
-        "link": [
-          { "title": "github", "url": "https://github.com/una-ada/una-script" },
-          {
+      "11": [
+        {
+          "title": "una script v2020.07.11",
+          "project": "una fonts",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/una-ada/una-script"
+          },
+          "tags": [
+            "font",
+            "adobe_illustrator",
+            "adobe_photoshop",
+            "fontforge",
+            "git",
+            "github"
+          ]
+        },
+        {
+          "title": "una script blog - \"fonts, eh?\"",
+          "project": "una fonts",
+          "link": {
             "title": "blog",
             "url": "https://anarchy.website/2020/07/11/fonts.html"
-          }
-        ],
-        "tags": [
-          "font",
-          "adobe_illustrator",
-          "adobe_photoshop",
-          "atom",
-          "fontforge",
-          "git",
-          "markdown",
-          "github"
-        ]
-      },
+          },
+          "tags": ["blog", "markdown", "atom"]
+        }
+      ],
       "20": {
         "title": "fizzbuzz.js",
         "link": {
