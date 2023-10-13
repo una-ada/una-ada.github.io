@@ -3028,6 +3028,15 @@
           "type": "anchor",
           "src": "Volume-3-The-Pollinic-Girls-Attack-e1jr5g0"
         }
+      },
+      "14": {
+        "title": "aokan dev log pt. 1: anime character search",
+        "project": "aokan",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/2022/06/14/character-search.html"
+        },
+        "tags": ["blog", "markdown", "visual_studio_code"]
       }
     },
     "7": {
