@@ -1946,9 +1946,12 @@
       },
       "17": {
         "title": "art for hermesthemagi - revolt",
-        "link": "https://soundcloud.com/hermesthemagi/revolt",
+        "link": {
+          "title": "souncloud",
+          "url": "https://soundcloud.com/hermesthemagi/revolt"
+        },
         "tags": ["design", "adobe_photoshop"],
-        "note": "this track has since been taken down"
+        "media": { "type": "soundcloud", "src": "887614264" }
       }
     },
     "9": {
