@@ -3407,6 +3407,42 @@
           {
             "title": "distrokid",
             "url": "https://distrokid.com/hyperfollow/e4e45be/tearing-apart-the-memory"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/album/0w5CPh7YC7Ts3ZCcv4z8Fc"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/0/1752528479"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=6deJLaJJC64"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/albums/B0D77XNLZD"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/602606662"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/songs/171314646"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/song/1164076534"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/song?id=2167088859"
+          },
+          {
+            "title": "qobuz",
+            "url": "https://www.qobuz.com/us-en/album/-/twbq4ni3autvb"
           }
         ],
         "tags": [
