@@ -464,22 +464,6 @@
         },
         "tags": ["programming", "git", "notepad++", "javascript", "github"]
       },
-      "15": {
-        "title": "\"orca\" national high power rocketry competition project proposal",
-        "link": {
-          "title": "anarchy.website",
-          "url": "https://anarchy.website/2015/11/15/orca-proposal.html"
-        },
-        "tags": ["writing", "microsoft_word"]
-      },
-      "16": {
-        "title": "calculating heat efficiency on campus using infrared imaging project proposal",
-        "link": {
-          "title": "anarchy.website",
-          "url": "https://anarchy.website/2015/11/16/cheocuii-proposal.html"
-        },
-        "tags": ["writing", "microsoft_word"]
-      },
       "18": {
         "title": "\"general relativity's astronomical effects\"",
         "link": {
@@ -628,14 +612,6 @@
       }
     },
     "10": {
-      "17": {
-        "title": "\"building an acousto-optical deflector\"",
-        "link": {
-          "title": "anarchy.website",
-          "url": "https://anarchy.website/2016/10/17/acousto-optical.html"
-        },
-        "tags": ["writing", "adobe_illustrator", "microsoft_word"]
-      },
       "26": {
         "title": "uwrf acm promo [draft 2]",
         "link": {
@@ -3161,15 +3137,6 @@
       }
     },
     "11": {
-      "08": {
-        "title": "\"library classification systems &amp; some critiques thereof\"",
-        "project": "anarchy.website",
-        "link": {
-          "title": "anarchy.website",
-          "url": "https://anarchy.website/2022/11/08/classification-systems"
-        },
-        "tags": ["writing", "visual_studio_code", "markdown"]
-      },
       "10": {
         "title": "quick-mv.bash",
         "link": {
