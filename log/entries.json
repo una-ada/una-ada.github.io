@@ -3456,6 +3456,17 @@
         ],
         "media": { "type": "bandcamp-single", "src": "1549080939" }
       }
+    },
+    "7": {
+      "25": {
+        "title": "etymology n onomastics: \"naruto\"",
+        "project": "anarchy.website",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/naruto"
+        },
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
+      }
     }
   }
 }
