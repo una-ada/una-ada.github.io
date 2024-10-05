@@ -127,6 +127,9 @@ img.project-icon {
   float: left;
   margin: 0.25em 0.5em 0.25em 0;
 }
+img.rec-icon {
+  margin: 0.25em 0;
+}
 img.tag-icon {
   padding-right: 0.5em;
   vertical-align: middle;
@@ -165,6 +168,16 @@ td.tag-path {
 td.title {
   max-width: 48em;
   min-width: 27em;
+}
+
+.anime {
+  color: var(--color-plush)
+}
+.manga {
+  color: var(--color-baked);
+}
+.novel {
+  color: var(--color-lilac)
 }
 
 @media screen and (max-width: 1574px) {

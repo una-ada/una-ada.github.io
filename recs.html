@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>my reading or watching recs</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/una-theme-icons/16px/etc/heart_kitty.png"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/log/style.css" />
+    <script src="/log/render-recs.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <table id="recs-list"></table>
+    <script>
+      fetch('/log/recs.json')
+        .then(response => response.json())
+        .then(json => render(json, document.getElementById('recs-list')));
+    </script>
+  </body>
+</html>
