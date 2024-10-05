@@ -3284,11 +3284,7 @@
             "url": "https://xn--z7x.dev/assets/img/mc/unaden.png"
           }
         ],
-        "tags": [
-          "design",
-          "adobe_illustrator",
-          "minecraft"
-        ]
+        "tags": ["design", "adobe_illustrator", "minecraft"]
       }
     },
     "6": {
@@ -3337,7 +3333,7 @@
           },
           {
             "title": "anghami",
-            "url" :"https://play.anghami.com/song/1162715230"
+            "url": "https://play.anghami.com/song/1162715230"
           },
           {
             "title": "netease_cloud_music",
@@ -3433,6 +3429,23 @@
           "url": "https://anarchy.website/naruto"
         },
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
+      }
+    },
+    "10": {
+      "4": {
+        "title": "my reading or watching recs",
+        "link": {
+          "title": "猫.dev",
+          "url": "https://xn--z7x.dev/recs"
+        },
+        "tags": [
+          "programming",
+          "adobe_photoshop",
+          "aseprite",
+          "javascript",
+          "json",
+          "visual_studio_code"
+        ]
       }
     }
   }
