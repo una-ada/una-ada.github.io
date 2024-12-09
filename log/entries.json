@@ -3451,6 +3451,43 @@
           "visual_studio_code"
         ]
       }
+    },
+    "11": {
+      "16": {
+        "title": "chloe &amp; una's tentacular experience vol. 4: kaede to suzu",
+        "project": "cute",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://anchor.fm/-/episodes/Volume-4-Kaede-to-Suzu-e2r1e6n"
+          },
+          {
+            "title": "apple_podcasts",
+            "url": "https://podcasts.apple.com/us/podcast/volume-4-kaede-to-suzu/id1565295121"
+          },
+          {
+            "title": "podbay",
+            "url": "https://podbay.fm/p/chloe-and-unas-tentacular-experience/e/1655000050"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/16LUTI86Sip5K5U6ktbiPE"
+          },
+          { "title": "notes", "url": "https://anarchy.website/cute/4/notes" }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_photoshop",
+          "google_docs",
+          "visual_studio_code",
+          "markdown",
+          "anchor"
+        ],
+        "media": {
+          "type": "anchor",
+          "src": "Volume-4-Kaede-to-Suzu-e2r1e6n"
+        }
+      }
     }
   }
 }
