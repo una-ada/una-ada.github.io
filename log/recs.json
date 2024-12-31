@@ -4,6 +4,19 @@
   "recs": [
     {
       "cover": "placeholder.png",
+      "type": "novel",
+      "title": "ascendance of a bookworm",
+      "origin": "jp",
+      "title_original": "本好きの下剋上 ～司書になるためには手段を選んでいられません～",
+      "tags": [
+        "fantasy",
+        "isekai"
+      ],
+      "rating": "8",
+      "review": "bookworm, ironically, does isekai v well: there's a lot abt cultural n linguistic barriers. the world it presents 4 this is in itself intriguing n learning yr way thru it along w the mc is v fun. theres also a good amnt abt familial love which is nice. the novels r obv the best choice for such a story, the manga is alright ig, n the anime looks like a pbs cartoon which im not in2."
+    },
+    {
+      "cover": "placeholder.png",
       "type": "manga",
       "title": "asumi-chan is interested in lesbian brothels!",
       "origin": "jp",
@@ -114,6 +127,25 @@
       ],
       "rating": "6",
       "review": "boy meets boy(?) type romcom. i dont think its rly that fair 2 just call kogure a boy, but u can decide for yrself after reading the manga ig. its a story abt like overcoming prejudice, or abt following thru on the things (ppl?) u set 2 do."
+    },
+    {
+      "cover": "placeholder.png",
+      "type": "novel",
+      "title": "i don't want to be turned into the female protagonist by the system",
+      "origin": "cn",
+      "title_original": "我才不要被系统变成女主角啊",
+      "tags": [
+        "comedy",
+        "drama",
+        "ecchi",
+        "gender_bender",
+        "harem",
+        "romance",
+        "school",
+        "yuri"
+      ],
+      "rating": "7",
+      "review": "the most prey coded yuri mc o all time. hentai artist slowly gets transformed in2 their 'ideal' female protag by a system that seems 2 have ulterior motives (n not just selling overpriced clothes 2 the mc). "
     },
     {
       "cover": "placeholder.png",
