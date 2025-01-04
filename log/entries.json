@@ -3512,6 +3512,34 @@
           {
             "title": "apple_music",
             "url": "https://music.apple.com/us/album/a-whole-panoply-of-penalties-single/1788295773?uo=4&app=music&at=1001lry3&ct=dashboard"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=bGCpEUVXluU"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/albums/B0DRWSRGBK"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/691199891"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/-38585318/songs/a-whole-panoply-of-penalties-306486934/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/songs/194974177"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/song/1193331454"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/song?id=2661592944"
           }
         ],
         "tags": [
@@ -3543,6 +3571,34 @@
           {
             "title": "distrokid",
             "url": "https://distrokid.com/hyperfollow/fe61c21/a-sign-of-psychosis"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=BJgFBYkyQJ4"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/albums/B0DS3VK83M"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/692145981"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/-38585318/albums/a-sign-of-psychosis-306928169/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/songs/195187729"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/song/1193683554"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/song?id=2662519852"
           }
         ],
         "tags": [
