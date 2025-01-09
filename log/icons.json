@@ -258,7 +258,8 @@
       "visual_studio": "soft/visual_studio.png", 
       "visual_studio_code": "soft/visual_studio_code.png",
       "voxatron": "soft/voxatron.png",
-      "xkity": "soft/xkit.png"
+      "wonderdraft": "soft/wonderdraft.png",
+      "xkit": "soft/xkit.png"
     },
     "other": {
       "account": "etc/person.png",
