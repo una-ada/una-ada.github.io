@@ -3628,6 +3628,16 @@
           "distrokid"
         ],
         "media": { "type": "bandcamp-single", "src": "591248988" }
+      },
+      "12": {
+        "title": "etymology n onomastics: \"nitrogen\"",
+        "link": [
+          {
+            "title": "anarchy.website",
+            "url": "https://anarchy.website/nitrogen"
+          }
+        ],
+        "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
     }
   }
