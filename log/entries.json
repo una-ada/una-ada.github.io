@@ -3164,6 +3164,10 @@
           {
             "title": "bandcamp",
             "url": "https://jisa2.bandcamp.com/track/the-end-of-the-world-part-ii"
+          },
+          {
+            "title": "soundcloud",
+            "url": "https://soundcloud.com/jisa_tsu/the-end-of-the-world-part-ii"
           }
         ],
         "tags": [
@@ -3172,7 +3176,8 @@
           "logic_pro",
           "bbc_symphony_orchestra",
           "spitfire_labs",
-          "bandcamp"
+          "bandcamp",
+          "soundcloud"
         ],
         "media": { "type": "bandcamp-single", "src": "2564057479" }
       }
