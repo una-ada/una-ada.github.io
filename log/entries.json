@@ -3644,6 +3644,27 @@
         ],
         "tags": ["writing", "scrivener", "visual_studio_code", "markdown"]
       }
+    },
+    "2": {
+      "12": {
+        "title": "cc-video-player [fork]",
+        "link": {
+          "title": "github",
+          "url" :"https://github.com/una-ada/cc-video-player"
+        },
+        "tags": [
+          "programming",
+          "minecraft",
+          "cc:tweaked",
+          "python",
+          "lua",
+          "ffmpeg",
+          "visual_studio_code",
+          "git",
+          "github"
+        ],
+        "note": "a fork of a repo by edde746 bc i didnt want 2 do all the video encoding stuff myself."
+      }
     }
   }
 }
