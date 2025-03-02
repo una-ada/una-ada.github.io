@@ -42,6 +42,9 @@ a:visited {
   color: var(--color-foamy);
   text-decoration: none;
 }
+blockquote {
+  margin: 0 0 0 2rem;
+}
 body {
   background: var(--color-black);
   line-height: 1.5;
@@ -49,8 +52,22 @@ body {
   min-width: 60em;
   font-family: 'Cozette', 'PixelMplus12', monospace;
 }
+code {
+  font-family: 'Cozette', 'PixelMplus12', monospace;
+}
 div:target {
   background: var(--color-olive);
+}
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 4em 0 0 0;
+}
+h2::after {
+  content: '================================================================================';
+  display: block;
+  position: relative;
 }
 html {
   color: var(--color-lotus);
@@ -111,6 +128,10 @@ a.project-link,
 a.project-link:visited {
   color: var(--color-lotus);
   text-decoration: underline;
+}
+div.article {
+  margin: 0 auto;
+  max-width: 40rem;
 }
 div.project-blurb {
   display: flex;
@@ -233,4 +254,105 @@ td.title {
   body {
     line-height: 2;
   }
+}
+
+
+/*----- PPRISM ---------------------------------------------------------------*/
+pre[class*='language-'],
+code[class*='language-'] {
+  color: var(--color-lotus);
+  text-shadow: none;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+@media print {
+  pre[class*='language-'],
+  code[class*='language-'] {
+    text-shadow: none;
+  }
+}
+pre[class*='language-'] {
+  line-height: 1.5;
+  margin: 0.5em 0;
+  overflow: auto;
+  padding: 1em;
+  background: var(--color-black-alt);
+}
+:not(pre) > code {
+  padding: 0.1em 0.5em;
+  border-radius: 0.5em;
+  color: var(--color-lotus);
+  background: var(--color-black-alt);
+}
+
+/*----- TOKENS ---------------------------------------------------------------*/
+.namespace {
+  opacity: 0.7;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--color-chive);
+}
+.token.punctuation {
+  color: var(--color-chive);
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--color-wines);
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--color-wines);
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: var(--color-coral);
+  background: var(--color-black-alt);
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--color-coral);
+}
+.token.function {
+  color: var(--color-reeds);
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: var(--color-backed);
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
 }
