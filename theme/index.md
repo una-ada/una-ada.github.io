@@ -67,7 +67,14 @@ title: una's themes
       <td>2025.03.02 15:51</td>
     </tr>
     <tr>
-      <td>apple color list</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/etc/macos.png" 
+          alt="macos" title="macos"
+        />
+        apple color list
+        </td>
       <td><a
         href="/theme/dist/una.clr"
         target="_blank"
@@ -138,7 +145,14 @@ title: una's themes
 </table>
 <table id="tape" class="theme">
   <thead><tr>
-    <th style="text-align:left;">ΛERIF°RM Tape</th>
+    <th style="text-align:left;">
+      <img
+        class="tag-icon"
+        src="/una-theme-icons/12px/soft/tape.png" 
+        alt="tape" title="tape"
+      />
+      ΛERIF°RM Tape
+    </th>
     <th></th>
   </tr></thead>
   <tbody><tr>
