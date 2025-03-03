@@ -16,13 +16,20 @@ title: una's themes
 </pre>
 <table id="palettes" class="theme">
   <thead><tr>
-    <th style="width:12.75em;text-align:left;">PALETTES</th>
+    <th style="width:15.75em;text-align:left;">Palettes</th>
     <th style="width:7.5em;text-align:left;"></th>
-    <th style="width:18em;text-align:left;"></th>
+    <th style="width:15em;text-align:left;"></th>
   </tr></thead>
   <tbody>
     <tr>
-      <td>adobe photoshop swatch</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/soft/adobe_photoshop.png" 
+          alt="adobe_photoshop" title="adobe photoshop"
+        />
+        adobe photoshop swatch
+      </td>
       <td><a
         href="/theme/dist/una.aco"
         target="_blank"
@@ -30,7 +37,14 @@ title: una's themes
       <td>2025.03.02 15:51</td>
     </tr>
     <tr>
-      <td>adobe save for web clut</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/soft/adobe_photoshop.png" 
+          alt="adobe_photoshop" title="adobe photoshop"
+        />
+        adobe save for web clut
+      </td>
       <td><a
         href="/theme/dist/una.act"
         target="_blank"
@@ -38,7 +52,14 @@ title: una's themes
       <td>2025.03.02 15:57</td>
     </tr>
     <tr>
-      <td>adobe swatch exchange</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/soft/adobe_photoshop.png" 
+          alt="adobe_photoshop" title="adobe photoshop"
+        />
+        adobe swatch exchange
+      </td>
       <td><a
         href="/theme/dist/una-adobe.ase"
         target="_blank"
@@ -54,7 +75,14 @@ title: una's themes
       <td>2025.03.02 15:40</td>
     </tr>
     <tr>
-      <td>aseprite sprite</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/soft/aseprite.png" 
+          alt="aseprite" title="aseprite"
+        />
+        aseprite sprite
+      </td>
       <td><a
         href="/theme/dist/una-aseprite.ase"
         target="_blank"
@@ -62,7 +90,14 @@ title: una's themes
       <td>2022.11.20 08:57</td>
     </tr>
     <tr>
-      <td>cascading stylesheets</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/lang/json.png" 
+          alt="css" title="css"
+        />
+        cascading stylesheets
+      </td>
       <td><a
         href="/theme/dist/una.css"
         target="_blank"
@@ -70,7 +105,14 @@ title: una's themes
       <td>2025.03.02 16:03</td>
     </tr>
     <tr>
-      <td>sass</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/lang/sass.png" 
+          alt="sass" title="sass"
+        />
+        sass
+      </td>
       <td><a
         href="/theme/dist/una.sass"
         target="_blank"
@@ -78,7 +120,14 @@ title: una's themes
       <td>2025.03.02 16:09</td>
     </tr>
     <tr>
-      <td>sassy css</td>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/lang/sass.png" 
+          alt="scss" title="scss"
+        />
+        sassy css
+      </td>
       <td><a
         href="/theme/dist/una.scss"
         target="_blank"
@@ -89,7 +138,7 @@ title: una's themes
 </table>
 <table id="tape" class="theme">
   <thead><tr>
-    <th style="text-align:left;">ΛERIF°RM TAPE</th>
+    <th style="text-align:left;">ΛERIF°RM Tape</th>
     <th></th>
   </tr></thead>
   <tbody><tr>
@@ -123,7 +172,14 @@ title: una's themes
 </table>
 <table id="scrivener" class="theme">
   <thead><tr>
-    <th style="text-align:left;">SCRIVENER</th>
+    <th style="text-align:left;">
+      <img
+        class="tag-icon"
+        src="/una-theme-icons/12px/soft/scrivener.png"
+        alt="scrivener" title="scrivener"
+      />
+      Scrivener
+    </th>
     <th></th>
   </tr></thead>
   <tbody><tr>
@@ -157,7 +213,14 @@ title: una's themes
 </table>
 <table id="vscode" class="theme">
   <thead><tr>
-    <th style="text-align:left;">VISUAL STUDIO CODE</th>
+    <th style="text-align:left;">
+      <img
+        class="tag-icon"
+        src="/una-theme-icons/12px/soft/visual_studio_code.png" 
+        alt="visual_studio_code" title="visual studio code"
+      />
+      Visual Studio Code
+    </th>
     <th></th>
   </tr></thead>
   <tbody><tr>
