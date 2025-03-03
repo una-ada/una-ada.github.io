@@ -184,6 +184,18 @@ title: una's themes
     </td>
   </tr></tbody>
 </table>
+<table class="changelog">
+  <thead><tr>
+    <th colspan="2" style="text-align:left;">changelog</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>1.0.0</td>
+      <td>initial release</td>
+    </tr>
+  </tbody>
+</table>
+
 <table id="scrivener" class="theme">
   <thead><tr>
     <th style="text-align:left;">
@@ -225,6 +237,19 @@ title: una's themes
     </td>
   </tr></tbody>
 </table>
+<table class="changelog">
+  <thead><tr>
+    <th colspan="2" style="text-align:left;">changelog</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>1.0.0</td>
+      <td>initial release</td>
+    </tr>
+  </tbody>
+</table>
+
+
 <table id="vscode" class="theme">
   <thead><tr>
     <th style="text-align:left;">
