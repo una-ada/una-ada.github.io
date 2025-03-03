@@ -44,7 +44,7 @@
   "una theme": {
     "icon": "proj/una_theme.png",
     "title": "una's theme",
-    "url": "https://github.com/una-ada/",
+    "url": "/theme/",
     "blurb": "an ongoing collection of software themes n assets built atop a small palette"
   },
   "iconsPath": "/una-theme-icons/30px/"
