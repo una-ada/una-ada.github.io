@@ -69,6 +69,12 @@ h2::after {
   display: block;
   position: relative;
 }
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 4em 0 0 0;
+}
 html {
   color: var(--color-lotus);
   font-size: 12px;
@@ -84,6 +90,9 @@ table {
 td {
   padding: 0 6px 0 0;
   vertical-align: top;
+}
+thead, thead tr, thead tr th {
+  font-weight: normal;
 }
 tr:nth-child(even) {
   background: var(--color-black-alt);
@@ -161,6 +170,16 @@ img.tag-icon {
   margin: 0.5rem 0;
   width: 48em;
   height: 27em;
+}
+table.changelog tr:nth-child(even) {
+  background: none;
+}
+table.theme {
+  margin: 6rem 0 0 0;
+  width: 100%;
+}
+table.theme img {
+  padding: 0.25em 0;
 }
 table.tag-list {
   margin-bottom: 3em;
