@@ -266,7 +266,7 @@ title: una's themes
       <td><a
         href="/theme/dist/una.png"
         target="_blank"
-      >una.gpl</a></td>
+      >una.png</a></td>
       <td>2025.03.03 14:20</td>
     </tr>
     <tr>
