@@ -157,7 +157,7 @@ title: una's themes
   </tr></thead>
   <tbody><tr>
     <td style="width:12.5em;">
-      <img src="/theme/thumbnail/placeholder.png" alt="Tape Theme Preview" />
+      <img src="/theme/thumbnail/tape.png" alt="Tape Theme Preview" />
     </td>
     <td>
       <table>
