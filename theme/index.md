@@ -14,11 +14,139 @@ title: una's themes
              │ └┘ │ ││ │ └┤ │ ├─  │ │ ││ ││ │  ──┤ ││ ││ │  ──┼─  │
              └────┴─┘└─┴──┴─┘ └───┘ └─┘└─┘└─┴────┴─┘└─┘└─┴────┴───┘
 </pre>
-<table id="palettes" class="theme">
+
+<table class="theme">
+  <tbody>
+    <tr style="background:var(--color-wines);color:var(--color-lotus);">
+      <td style="width:1em"></td>
+      <td style="width:5em">wines</td>
+      <td style="width:5em">#703d41</td>
+      <td style="width:11em"><pre>rgb(112,  61,  65)</pre></td>
+      <td><pre>hsl(355.3, 29.5%, 33.9%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-candy);color:var(--color-lotus);">
+      <td></td>
+      <td>candy</td>
+      <td>#de2136</td>
+      <td><pre>rgb(222,  33,  54)</pre></td>
+      <td><pre>hsl(353.3, 74.1%, 50.0%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-lotus);color:var(--color-black);">
+      <td></td>
+      <td>lotus</td>
+      <td>#e0c1bf</td>
+      <td><pre>rgb(224, 193, 191)</pre></td>
+      <td><pre>hsl(  3.6, 34.7%, 81.4%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-shoyu);color:var(--color-lotus);">
+      <td></td>
+      <td>shoyu</td>
+      <td>#46302a</td>
+      <td><pre>rgb( 70,  48,  42)</pre></td>
+      <td><pre>hsl( 12.9, 25.0%, 22.0%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-baked);color:var(--color-black);">
+      <td></td>
+      <td>baked</td>
+      <td>#d68067</td>
+      <td><pre>rgb( 214, 128, 103)</pre></td>
+      <td><pre>hsl( 13.5, 57.5%, 62.2%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-olive);color:var(--color-lotus);">
+      <td></td>
+      <td>olive</td>
+      <td>#2e2d1c</td>
+      <td><pre>rgb( 46,  45,  28)</pre></td>
+      <td><pre>hsl( 56.7, 24.3%, 14.5%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-chive);color:var(--color-lotus);">
+      <td></td>
+      <td>chive</td>
+      <td>#555f47</td>
+      <td><pre>rgb( 85,  95,  71)</pre></td>
+      <td><pre>hsl( 85.0, 14.5%, 32.5%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-reeds);color:var(--color-black);">
+      <td></td>
+      <td>reeds¹</td>
+      <td>#dccca1</td>
+      <td><pre>rgb(220, 204, 161)</pre></td>
+      <td><pre>hsl( 43.7, 45.7%, 74.7%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-grass);color:var(--color-lotus);">
+      <td></td>
+      <td>grass</td>
+      <td>#264d39</td>
+      <td><pre>rgb( 38,  77,  57)</pre></td>
+      <td><pre>hsl(149.2, 33.9%, 22.5%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-foamy);color:var(--color-black);">
+      <td></td>
+      <td>foamy</td>
+      <td>#729a89</td>
+      <td><pre>rgb(114, 154, 137)</pre></td>
+      <td><pre>hsl(154.5, 16.5%, 52.5%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-royal);color:var(--color-lotus);">
+      <td></td>
+      <td>royal</td>
+      <td>#0e2d31</td>
+      <td><pre>rgb( 14,  45,  49)</pre></td>
+      <td><pre>hsl(186.9, 55.6%, 12.4%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-coral);color:var(--color-lotus);">
+      <td></td>
+      <td>coral</td>
+      <td>#145c62</td>
+      <td><pre>rgb( 20,  92,  98)</pre></td>
+      <td><pre>hsl(184.6, 66.1%, 23.1%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-plush);color:var(--color-black);">
+      <td></td>
+      <td>plush</td>
+      <td>#a2c9cb</td>
+      <td><pre>rgb(162, 201, 203)</pre></td>
+      <td><pre>hsl(182.9, 28.3%, 71.6%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-berry);color:var(--color-lotus);">
+      <td></td>
+      <td>berry</td>
+      <td>#2a2858</td>
+      <td><pre>rgb( 42,  40,  88)</pre></td>
+      <td><pre>hsl(242.5, 37.5%, 25.1%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-lilac);color:var(--color-black);">
+      <td></td>
+      <td>lilac</td>
+      <td>#b2adcc</td>
+      <td><pre>rgb(178, 173, 204)</pre></td>
+      <td><pre>hsl(249.7, 23.3%, 73.9%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-black);color:var(--color-lotus);">
+      <td></td>
+      <td>black</td>
+      <td>#111111</td>
+      <td><pre>rgb( 17,  17,  17)</pre></td>
+      <td><pre>hsl(  0.0,  0.0%,  6.7%)</pre></td>
+    </tr>
+    <tr style="background:var(--color-black-alt);color:var(--color-lotus);">
+      <td></td>
+      <td>black²</td>
+      <td>#161718</td>
+      <td><pre>rgb( 22,  23,  24)</pre></td>
+      <td><pre>hsl(210.0,  4.3%,  9.0%)</pre></td>
+    </tr>
+  </tbody>
+</table>
+
+¹reeds is #dbcca1 in adobe swatches, but #dccca1 in everything else. this is bc it's easier to remember / type out, which is to say i messed it up<br/>
+²alt black is not available in some palettes
+
+<table style="width:100%">
   <thead><tr>
-    <th style="width:15.75em;text-align:left;">Palettes</th>
-    <th style="width:7.5em;text-align:left;"></th>
-    <th style="width:15em;text-align:left;"></th>
+    <th style="width:15.75em;text-align:left;">download</th>
+    <th style="width:7.5em;"></th>
+    <th></th>
   </tr></thead>
   <tbody>
     <tr>
@@ -115,6 +243,21 @@ title: una's themes
       <td>
         <img
           class="tag-icon"
+          src="/una-theme-icons/12px/soft/gimp.png" 
+          alt="gimp" title="gimp"
+        />
+        gimp palette
+      </td>
+      <td><a
+        href="/theme/dist/una.gpl"
+        target="_blank"
+      >una.gpl</a></td>
+      <td>2025.03.03 13:34</td>
+    </tr>
+    <tr>
+      <td>
+        <img
+          class="tag-icon"
           src="/una-theme-icons/12px/lang/sass.png" 
           alt="sass" title="sass"
         />
@@ -163,7 +306,7 @@ title: una's themes
       <table>
         <tr>
           <td style="width:7.5em;">download</td>
-          <td style="width:18em;"><a
+          <td><a
             href="/theme/dist/una-theme-v1.0.svg"
             target="_blank"
           >una-theme-v1.0.svg</a></td>
