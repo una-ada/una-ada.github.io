@@ -139,7 +139,7 @@ title: una's themes
   </tbody>
 </table>
 
-¹reeds is #dbcca1 in adobe swatches, but #dccca1 in everything else. this is bc it's easier to remember / type out, which is 2 say i messed it up<br/>
+¹reeds is #dbcca1 in adobe swatches<br/>
 ²alt black is not available in some palettes
 
 <table style="width:100%">
@@ -253,6 +253,21 @@ title: una's themes
         target="_blank"
       >una.gpl</a></td>
       <td>2025.03.03 13:34</td>
+    </tr>
+    <tr>
+      <td>
+        <img
+          class="tag-icon"
+          src="/una-theme-icons/12px/type/image.png" 
+          alt="png" title="png"
+        />
+        portable network graphic
+      </td>
+      <td><a
+        href="/theme/dist/una.png"
+        target="_blank"
+      >una.gpl</a></td>
+      <td>2025.03.03 14:20</td>
     </tr>
     <tr>
       <td>
@@ -424,11 +439,11 @@ title: una's themes
         </tr>
         <tr>
           <td>release</td>
-          <td>2021.06.28 22:19:08</td>
+          <td>2021.06.28 22:19</td>
         </tr>
         <tr>
           <td>updated</td>
-          <td>2023.01.09 12:22:19</td>
+          <td>2023.01.09 12:22</td>
         </tr>
         <tr>
           <td>repo</td>
