@@ -7,12 +7,12 @@ title: una's themes
 
 [← 猫.dev](/)
 
-<pre>
-                            ┌─┐     ┌─┐┌─┐  
-             ┌─┐┌─┬────┬────┤ ├───┐┌┘ └┤ └──┬────┬───────┬────┬───┐
-             │ ││ │ ┌┐ │ ┌┐ ├─┤  ─┤└┐ ┌┤ ┌┐ │ ── │ ┌┐ ┌┐ │ ── │  ─┤
-             │ └┘ │ ││ │ └┤ │ ├─  │ │ ││ ││ │  ──┤ ││ ││ │  ──┼─  │
-             └────┴─┘└─┴──┴─┘ └───┘ └─┘└─┘└─┴────┴─┘└─┘└─┴────┴───┘
+<pre style="width:27em;margin:0 auto;">
+               ┌─┐     ┌─┐┌─┐  
+┌─┐┌─┬────┬────┤ ├───┐┌┘ └┤ └──┬────┬───────┬────┬───┐
+│ ││ │ ┌┐ │ ┌┐ ├─┤  ─┤└┐ ┌┤ ┌┐ │ ── │ ┌┐ ┌┐ │ ── │  ─┤
+│ └┘ │ ││ │ └┤ │ ├─  │ │ ││ ││ │  ──┤ ││ ││ │  ──┼─  │
+└────┴─┘└─┴──┴─┘ └───┘ └─┘└─┘└─┴────┴─┘└─┘└─┴────┴───┘
 </pre>
 
 <table class="theme">
@@ -139,7 +139,7 @@ title: una's themes
   </tbody>
 </table>
 
-¹reeds is #dbcca1 in adobe swatches, but #dccca1 in everything else. this is bc it's easier to remember / type out, which is to say i messed it up<br/>
+¹reeds is #dbcca1 in adobe swatches, but #dccca1 in everything else. this is bc it's easier to remember / type out, which is 2 say i messed it up<br/>
 ²alt black is not available in some palettes
 
 <table style="width:100%">
