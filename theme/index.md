@@ -153,10 +153,25 @@ title: una's themes
       <td>
         <img
           class="tag-icon"
+          src="/una-theme-icons/12px/soft/adobe_illustrator.png" 
+          alt="adobe_illustrator" title="adobe illustrator"
+        />
+        adobe illustrator swatches
+      </td>
+      <td><a
+        href="/theme/dist/una.ai"
+        target="_blank"
+      >una.aco</a></td>
+      <td>2025.03.10 20:51</td>
+    </tr>
+    <tr>
+      <td>
+        <img
+          class="tag-icon"
           src="/una-theme-icons/12px/soft/adobe_photoshop.png" 
           alt="adobe_photoshop" title="adobe photoshop"
         />
-        adobe photoshop swatch
+        adobe photoshop swatches
       </td>
       <td><a
         href="/theme/dist/una.aco"
