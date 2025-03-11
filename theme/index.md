@@ -161,7 +161,7 @@ title: una's themes
       <td><a
         href="/theme/dist/una.ai"
         target="_blank"
-      >una.aco</a></td>
+      >una.ai</a></td>
       <td>2025.03.10 20:51</td>
     </tr>
     <tr>
