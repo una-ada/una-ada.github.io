@@ -2,6 +2,7 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
   smart_quotes: ["apos", "apos", "quot", "quot"]
+permalink: /blog/:title:output_ext
 repository: una-ada/una-ada.github.io
 sass:
   sass_dir: _sass
