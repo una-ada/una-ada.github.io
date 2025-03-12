@@ -449,8 +449,15 @@ title: una's themes
           >una.theme</a></td>
         </tr>
         <tr>
+          <td>download</td>
+          <td><a
+            href="/theme/dist/una-theme-2.1.0.vsix"
+            target="_blank"
+          >una-theme-2.1.0.vsix</a></td>
+        </tr>
+        <tr>
           <td>version</td>
-          <td>2.0.0</td>
+          <td>2.1.0</td>
         </tr>
         <tr>
           <td>release</td>
@@ -458,7 +465,7 @@ title: una's themes
         </tr>
         <tr>
           <td>updated</td>
-          <td>2023.01.09 12:22</td>
+          <td>2025.03.11 17:01</td>
         </tr>
         <tr>
           <td>repo</td>
@@ -476,6 +483,18 @@ title: una's themes
     <th colspan="2" style="text-align:left;">changelog</th>
   </tr></thead>
   <tbody>
+    <tr>
+      <td>2.1.0</td>
+      <td>replace icons/icons with icons/una-theme-icons submodule</td>
+    </tr>
+    <tr><td></td>
+      <td>
+        add more file icons: actionscript, bash, clojure, crystal, cuneiform, 
+        dart, ejs, elixir, erlang, fish, fsharp, golfscript, groovy, hamler, 
+        haxe, inform, inform7, j, joxa, julia, k, kotlin, liquid, lua, mjml, 
+        ocaml, perl, powershell, r, raku, rust, scala, smalltalk, n swift
+      </td>
+    </tr>
     <tr>
       <td>2.0.0</td>
       <td>add colors 4 text elements (general, links, block quotes, &c.)</td>
