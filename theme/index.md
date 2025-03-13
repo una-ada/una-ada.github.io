@@ -451,13 +451,13 @@ title: una's themes
         <tr>
           <td>download</td>
           <td><a
-            href="/theme/dist/una-theme-2.1.0.vsix"
+            href="/theme/dist/una-theme-2.1.1.vsix"
             target="_blank"
-          >una-theme-2.1.0.vsix</a></td>
+          >una-theme-2.1.1.vsix</a></td>
         </tr>
         <tr>
           <td>version</td>
-          <td>2.1.0</td>
+          <td>2.1.1</td>
         </tr>
         <tr>
           <td>release</td>
@@ -465,7 +465,7 @@ title: una's themes
         </tr>
         <tr>
           <td>updated</td>
-          <td>2025.03.11 17:01</td>
+          <td>2025.03.12 17:01</td>
         </tr>
         <tr>
           <td>repo</td>
@@ -483,6 +483,10 @@ title: una's themes
     <th colspan="2" style="text-align:left;">changelog</th>
   </tr></thead>
   <tbody>
+    <tr>
+      <td>2.1.1</td>
+      <td>add 2px padding around icons 4 pixel perfect rendering ^ ^</td>
+    </tr>
     <tr>
       <td>2.1.0</td>
       <td>replace icons/icons with icons/una-theme-icons submodule</td>

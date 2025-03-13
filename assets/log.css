@@ -142,6 +142,9 @@ div.article {
   margin: 0 auto;
   max-width: 40rem;
 }
+div.article img {
+  max-width: 100%;
+}
 div.project-blurb {
   display: flex;
 }
