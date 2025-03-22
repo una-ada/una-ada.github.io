@@ -2837,7 +2837,7 @@
           "freesound",
           "bandcamp"
         ],
-        "media": { "type": "bandcamp", "src": "2838847327" },
+        "media": { "type": "bandcamp-album", "src": "2838847327" },
         "note": "this is a split ep w me n my gf. track 3 was written by her, then i remixed it, then she finished it... the cover art was done much the same way."
       },
       "17": {
@@ -3788,6 +3788,24 @@
           "visual_studio_code",
           "vscode_marketplace"
         ]
+      },
+      "22": {
+        "title": "джісаッ- 猫耳【некомімі】",
+        "link": [
+          {
+            "title": "bandcamp",
+            "url": "https://jisa2.bandcamp.com/album/-"
+          }
+        ],
+        "tags": [
+          "music",
+          "logic_pro",
+          "spitfire_labs",
+          "bbc_symphony_orchestra",
+          "adobe_photoshop",
+          "bandcamp"
+        ],
+        "media": { "type": "bandcamp-album", "src": "4181579591" }
       }
     }
   }
