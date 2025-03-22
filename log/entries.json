@@ -3795,6 +3795,10 @@
           {
             "title": "bandcamp",
             "url": "https://jisa2.bandcamp.com/album/-"
+          },
+          {
+            "title": "distrokid",
+            "url": "https://distrokid.com/hyperfollow/88fc497/EJCjJn5uJKB"
           }
         ],
         "tags": [
@@ -3803,7 +3807,8 @@
           "spitfire_labs",
           "bbc_symphony_orchestra",
           "adobe_photoshop",
-          "bandcamp"
+          "bandcamp",
+          "distrokid"
         ],
         "media": { "type": "bandcamp-album", "src": "4181579591" }
       }
