@@ -247,15 +247,15 @@ function embed(e, o) {
       o.src +
       '" frameborder="0" allowfullscreen></iframe>';
   if (o.type == 'bandcamp')
-    out = `<iframe class="embedee" style="border:0;width:100%;height:120px;" src="https://bandcamp.com/EmbeddedPlayer/album=${
+    out = `<iframe class="embedee" style="border:0;width:100%;height:10rem;" src="https://bandcamp.com/EmbeddedPlayer/album=${
       o.src
     }/size=large/bgcol=111111/linkcol=a2c9cb/tracklist=false/artwork=small${
       o.track ? '/track=' + o.track : ''
     }/transparent=true/" seamless></iframe>`;
   if (o.type == 'bandcamp-single')
-    out = `<iframe class="embedee" style="border:0;width:100%;height:120px;" src="https://bandcamp.com/EmbeddedPlayer/track=${o.src}/size=large/bgcol=111111/linkcol=a2c9cb/tracklist=false/artwork=small/transparent=true/" seamless></iframe>`;
+    out = `<iframe class="embedee" style="border:0;width:100%;height:10rem;" src="https://bandcamp.com/EmbeddedPlayer/track=${o.src}/size=large/bgcol=111111/linkcol=a2c9cb/tracklist=false/artwork=small/transparent=true/" seamless></iframe>`;
   if (o.type == 'bandcamp-album')
-    out = `<iframe class="embedee" style="border:0;width:100%;height:373px;" src="https://bandcamp.com/EmbeddedPlayer/album=${o.src}/size=large/bgcol=111111/linkcol=a2c9cb/artwork=small/transparent=true/" seamless></iframe>`;
+    out = `<iframe class="embedee" style="border:0;width:100%;height:20rem;" src="https://bandcamp.com/EmbeddedPlayer/album=${o.src}/size=large/bgcol=111111/linkcol=a2c9cb/artwork=small/transparent=true/" seamless></iframe>`;
   if (o.type == 'podbean')
     out = `<iframe class="embedee" allowtransparency="true" style="border:0;height:150px;min-width:430px;width:100%;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?from=embed&i=${o.src}-pb&share=1&download=1&fonts=Arial&skin=1&font-color=&rtl=0&logo_link=&btn-skin=7&size=150"></iframe>`;
   if (o.type == 'anchor')
