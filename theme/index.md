@@ -337,9 +337,9 @@ title: una's themes
         <tr>
           <td style="width:7.5em;">download</td>
           <td><a
-            href="/theme/dist/una-theme-v1.0.svg"
+            href="/theme/dist/una-theme-1.0.0.svg"
             target="_blank"
-          >una-theme-v1.0.svg</a></td>
+          >una-theme-1.0.0.svg</a></td>
         </tr>
         <tr>
           <td>version</td>
@@ -390,9 +390,9 @@ title: una's themes
         <tr>
           <td style="width:7.5em;">download</td>
           <td style="width:18em;"><a
-            href="/theme/dist/una-theme-v1.0.stheme"
+            href="/theme/dist/una-theme-1.0.0.stheme"
             target="_blank"
-          >una-theme-v1.0.stheme</a></td>
+          >una-theme-1.0.0.stheme</a></td>
         </tr>
         <tr>
           <td>version</td>
