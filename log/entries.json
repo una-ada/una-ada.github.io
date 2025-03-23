@@ -1964,7 +1964,6 @@
       "4": {
         "title": "джісаッ- 私もう絶対に",
         "project": "джісаッ",
-        "project": "джіса2",
         "link": [
           {
             "title": "soundcloud",
@@ -3809,6 +3808,38 @@
           {
             "title": "distrokid",
             "url": "https://distrokid.com/hyperfollow/88fc497/EJCjJn5uJKB"
+          },
+          {
+            "title": "apple_music",
+            "url": "https://music.apple.com/us/album/-/1803829763"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/playlist?list=OLAK5uy_lw1-P96hdStOPZGETUtbdpeIsyf_MHcos"
+          },
+          {
+            "title": "amazon_music",
+            "url": "https://music.amazon.com/albums/B0F271H2XM"
+          },
+          {
+            "title": "deezer",
+            "url": "https://www.deezer.com/us/album/731408851"
+          },
+          {
+            "title": "iheartradio",
+            "url": "https://www.iheart.com/artist/-38585318/albums/-320267733/"
+          },
+          {
+            "title": "boomplay",
+            "url": "https://www.boomplay.com/albums/108214301"
+          },
+          {
+            "title": "anghami",
+            "url": "https://play.anghami.com/album/1066371913"
+          },
+          {
+            "title": "netease_cloud_music",
+            "url": "https://music.163.com/#/album?id=266732857"
           }
         ],
         "tags": [
