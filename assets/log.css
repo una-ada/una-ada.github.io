@@ -139,7 +139,7 @@ a.project-link:visited {
   text-decoration: underline;
 }
 div.article {
-  margin: 0 auto;
+  margin-left: calc(50vw - 20rem);
   max-width: 40rem;
 }
 div.article img {
