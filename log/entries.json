@@ -3768,31 +3768,44 @@
           }
         }
       ],
-      "12": {
-        "title": "una's theme [vs code] v2.1.1 - icon resize",
-        "project":"una theme",
-        "link": [
-          {  
-            "title": "vscode_marketplace",
-            "url": "https://marketplace.visualstudio.com/items?itemName=una.theme"
+      "12": [
+        {
+          "title": "una's theme: terminal profile",
+          "project": "una theme",
+          "link": {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/theme/#terminal"
           },
-          {
-            "title": "github",
-            "url": "https://github.com/una-ada/una-theme/releases/tag/2.1.1"
-          }
-        ],
-        "tags": [
-          "programming",
-          "javascript",
-          "git",
-          "github",
-          "json",
-          "nodejs",
-          "sharp",
-          "visual_studio_code",
-          "vscode_marketplace"
-        ]
-      },
+          "tags": [
+            "asset"
+          ]
+        },
+        {
+          "title": "una's theme [vs code] v2.1.1 - icon resize",
+          "project":"una theme",
+          "link": [
+            {  
+              "title": "vscode_marketplace",
+              "url": "https://marketplace.visualstudio.com/items?itemName=una.theme"
+            },
+            {
+              "title": "github",
+              "url": "https://github.com/una-ada/una-theme/releases/tag/2.1.1"
+            }
+          ],
+          "tags": [
+            "programming",
+            "javascript",
+            "git",
+            "github",
+            "json",
+            "nodejs",
+            "sharp",
+            "visual_studio_code",
+            "vscode_marketplace"
+          ]
+        }
+      ],
       "22": {
         "title": "джісаッ- 猫耳【некомімі】",
         "project": "джісаッ",

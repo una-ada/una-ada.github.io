@@ -422,6 +422,63 @@ title: una's themes
   </tbody>
 </table>
 
+<table id="termainl" class="theme">
+  <thead><tr>
+    <th style="text-align:left;">
+      <img
+        class="tag-icon"
+        src="/una-theme-icons/12px/lang/bash.png"
+        alt="terminal" title="terminal"
+      />
+      Terminal Profile
+    </th>
+    <th></th>
+  </tr></thead>
+  <tbody><tr>
+    <td style="width:12.5em;">
+      <img src="/theme/thumbnail/terminal.png" alt="Terminal Profile Preview" />
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td style="width:7.5em;">download</td>
+          <td style="width:18em;"><a
+            href="/theme/dist/una-theme-1.0.0.terminal"
+            target="_blank"
+          >una-theme-1.0.0.terminal</a><br/>
+          high contrast:<br/>
+          <a
+            href="/theme/dist/una-theme-1.0.0-hc.terminal"
+            target="_blank"
+          >una-theme-1.0.0-hc.terminal</a></td>
+        </tr>
+        <tr>
+          <td>version</td>
+          <td>1.0.0</td>
+        </tr>
+        <tr>
+          <td>release</td>
+          <td>2025.03.12 14:55</td>
+        </tr>
+        <tr>
+          <td>updated</td>
+          <td>2025.03.12 14:55</td>
+        </tr>
+      </table>
+    </td>
+  </tr></tbody>
+</table>
+<table class="changelog">
+  <thead><tr>
+    <th colspan="2" style="text-align:left;">changelog</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>1.0.0</td>
+      <td>initial release</td>
+    </tr>
+  </tbody>
+</table>
 
 <table id="vscode" class="theme">
   <thead><tr>
