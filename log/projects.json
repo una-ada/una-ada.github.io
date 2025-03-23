@@ -9,7 +9,7 @@
     "icon": "proj/book_bag.png",
     "title": "the black flag book bag",
     "url": "https://open.spotify.com/show/3lbjGMLRWQL6DpCGvflsN7",
-    "blurb": "chloe, una, n hermes read important books, give our thoughts, n see what we can learn."
+    "blurb": "chloe, una, n hermea read important books, give our thoughts, n see what we can learn."
   },
   "cute": {
     "icon": "proj/cute.png",
@@ -52,6 +52,12 @@
     "title": "una's theme",
     "url": "/theme/",
     "blurb": "an ongoing collection of software themes n assets built atop a small palette"
+  },
+  "джісаッ": {
+    "icon": "proj/jisa2.png",
+    "title": "джісаッ",
+    "url": "https://jisa2.bandcamp.com/",
+    "blurb": "w/e music ive been writing, mostly ambient n orchestral type beats"
   },
   "iconsPath": "/una-theme-icons/30px/"
 }
