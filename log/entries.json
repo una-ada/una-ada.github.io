@@ -3689,8 +3689,7 @@
           "tags": [
             "asset",
             "aeriform_tape",
-            "visual_studio_code",
-            "github_gist"
+            "visual_studio_code"
           ]
         },
         {
@@ -3777,7 +3776,8 @@
             "url": "https://xn--z7x.dev/theme/#terminal"
           },
           "tags": [
-            "asset"
+            "asset",
+            "terminal"
           ]
         },
         {
