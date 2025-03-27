@@ -52,6 +52,13 @@ title: una's themes
       <td><pre>rgb( 214, 128, 103)</pre></td>
       <td><pre>hsl( 13.5, 57.5%, 62.2%)</pre></td>
     </tr>
+    <tr style="background:var(--color-reeds);color:var(--color-black);">
+      <td></td>
+      <td>reeds¹</td>
+      <td>#dccca1</td>
+      <td><pre>rgb(220, 204, 161)</pre></td>
+      <td><pre>hsl( 43.7, 45.7%, 74.7%)</pre></td>
+    </tr>
     <tr style="background:var(--color-olive);color:var(--color-lotus);">
       <td></td>
       <td>olive</td>
@@ -65,13 +72,6 @@ title: una's themes
       <td>#555f47</td>
       <td><pre>rgb( 85,  95,  71)</pre></td>
       <td><pre>hsl( 85.0, 14.5%, 32.5%)</pre></td>
-    </tr>
-    <tr style="background:var(--color-reeds);color:var(--color-black);">
-      <td></td>
-      <td>reeds¹</td>
-      <td>#dccca1</td>
-      <td><pre>rgb(220, 204, 161)</pre></td>
-      <td><pre>hsl( 43.7, 45.7%, 74.7%)</pre></td>
     </tr>
     <tr style="background:var(--color-grass);color:var(--color-lotus);">
       <td></td>
@@ -87,12 +87,12 @@ title: una's themes
       <td><pre>rgb(114, 154, 137)</pre></td>
       <td><pre>hsl(154.5, 16.5%, 52.5%)</pre></td>
     </tr>
-    <tr style="background:var(--color-royal);color:var(--color-lotus);">
+    <tr style="background:var(--color-plush);color:var(--color-black);">
       <td></td>
-      <td>royal</td>
-      <td>#0e2d31</td>
-      <td><pre>rgb( 14,  45,  49)</pre></td>
-      <td><pre>hsl(186.9, 55.6%, 12.4%)</pre></td>
+      <td>plush</td>
+      <td>#a2c9cb</td>
+      <td><pre>rgb(162, 201, 203)</pre></td>
+      <td><pre>hsl(182.9, 28.3%, 71.6%)</pre></td>
     </tr>
     <tr style="background:var(--color-coral);color:var(--color-lotus);">
       <td></td>
@@ -101,12 +101,12 @@ title: una's themes
       <td><pre>rgb( 20,  92,  98)</pre></td>
       <td><pre>hsl(184.6, 66.1%, 23.1%)</pre></td>
     </tr>
-    <tr style="background:var(--color-plush);color:var(--color-black);">
+    <tr style="background:var(--color-royal);color:var(--color-lotus);">
       <td></td>
-      <td>plush</td>
-      <td>#a2c9cb</td>
-      <td><pre>rgb(162, 201, 203)</pre></td>
-      <td><pre>hsl(182.9, 28.3%, 71.6%)</pre></td>
+      <td>royal</td>
+      <td>#0e2d31</td>
+      <td><pre>rgb( 14,  45,  49)</pre></td>
+      <td><pre>hsl(186.9, 55.6%, 12.4%)</pre></td>
     </tr>
     <tr style="background:var(--color-berry);color:var(--color-lotus);">
       <td></td>
