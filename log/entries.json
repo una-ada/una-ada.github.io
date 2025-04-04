@@ -3871,6 +3871,30 @@
         ],
         "media": { "type": "bandcamp-album", "src": "4181579591" }
       }
+    },
+    "4": {
+      "4": {
+        "title": "black flag book bag - david graeber's \"debt: the first 5,000 years\" wk.2",
+        "project": "black flag book bag",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://creators.spotify.com/pod/profile/chloe-colella/episodes/--e314e07"
+          },
+          {
+            "title": "spotify", 
+            "url": "https://open.spotify.com/episode/5NO1YjM86kCAkOYmFiqNpr"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator"
+        ],
+        "media": {
+          "type": "anchor",
+          "src": "--e314e07"
+        }
+      }
     }
   }
 }
