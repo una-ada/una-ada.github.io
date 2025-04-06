@@ -3750,11 +3750,19 @@
           "link": [
             {
               "title": "anchor",
-              "url": "https://creators.spotify.com/pod/show/chloe-colella/episodes/--e301rdm"
+              "url": "https://creators.spotify.com/pod/show/-/episodes/--e301rdm"
             },
             {
               "title": "spotify",
               "url": "https://open.spotify.com/episode/76OlCcw12kSfgjCYYc1Pyc"
+            },
+            {
+              "title": "youtube_music",
+              "url": "https://music.youtube.com/watch?v=wzv9iR_Ucbo"
+            },
+            {
+              "title": "youtube",
+              "url": "https://www.youtube.com/watch?v=wzv9iR_Ucbo"
             }
           ],
           "tags": [
@@ -3879,7 +3887,7 @@
         "link": [
           {
             "title": "anchor",
-            "url": "https://creators.spotify.com/pod/profile/chloe-colella/episodes/--e314e07"
+            "url": "https://creators.spotify.com/pod/profile/-/episodes/--e314e07"
           },
           {
             "title": "spotify", 
