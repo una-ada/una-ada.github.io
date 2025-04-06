@@ -3892,6 +3892,14 @@
           {
             "title": "spotify", 
             "url": "https://open.spotify.com/episode/5NO1YjM86kCAkOYmFiqNpr"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=LUiGXiGJyeY"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=LUiGXiGJyeY"
           }
         ],
         "tags": [
