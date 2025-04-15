@@ -3910,6 +3910,36 @@
           "type": "anchor",
           "src": "--e314e07"
         }
+      },
+      "15": {
+        "title": "black flag book bag - david graeber's \"debt: the first 5,000 years\" wk.3",
+        "project":"black flag book bag",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://creators.spotify.com/pod/profile/-/episodes/--e31idpd"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/6S6HSfxy7pDM25vZ3xIqn3"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=zBqJn7WPC-Y"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=zBqJn7WPC-Y"
+          }
+        ],
+        "tags": [
+          "podcast",
+          "adobe_illustrator"
+        ],
+        "media": {
+          "type": "anchor",
+          "src": "--e31idpd"
+        }
       }
     }
   }
