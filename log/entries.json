@@ -1479,7 +1479,10 @@
           }
         ],
         "tags": ["podcast", "audacity"],
-        "media": { "type": "podbean", "src": "4kycv-af305a" },
+        "media": {
+          "type": "apple_podcasts",
+          "src": "id1234104939?i=1000436528682"
+        },
         "note": "i didnt show up in this one til about 31:20"
       }
     },
@@ -1537,7 +1540,10 @@
           }
         ],
         "tags": ["podcast"],
-        "media": { "type": "podbean", "src": "e4xzn-b1b606" }
+        "media": {
+          "type": "apple_podcasts",
+          "src": "id1234104939?i=1000438787990"
+        }
       }
     },
     "6": {
@@ -1645,7 +1651,10 @@
           }
         ],
         "tags": ["podcast"],
-        "media": { "type": "podbean", "src": "bdnxe-b73bce" }
+        "media": {
+          "type": "apple_podcasts",
+          "src": "id1234104939?i=1000444004119"
+        }
       }
     },
     "9": {
@@ -1712,7 +1721,10 @@
           }
         ],
         "tags": ["podcast"],
-        "media": { "type": "podbean", "src": "rtrfx-c5a4d6" },
+        "media": {
+          "type": "apple_podcasts",
+          "src": "id1234104939?i=1000455709623"
+        },
         "note": "im not even listed in the description of this one cuz i just showed up while on break around 1h35m in. also covid rly dunked on some of what i said :("
       },
       "6": {
@@ -1764,7 +1776,10 @@
           }
         ],
         "tags": ["podcast", "adobe_illustrator", "adobe_photoshop"],
-        "media": { "type": "podbean", "src": "wu2nr-c66a85" }
+        "media": {
+          "type": "apple_podcasts",
+          "src": "id1234104939?i=1000456116174"
+        }
       }
     },
     "12": {
@@ -1830,7 +1845,10 @@
           }
         ],
         "tags": ["podcast"],
-        "media": { "type": "podbean", "src": "cfvzi-e1d26f" }
+        "media": {
+          "type": "apple_podcasts",
+          "src": "id1234104939?i=1000481716629"
+        }
       },
       "11": [
         {
@@ -2148,7 +2166,10 @@
           }
         ],
         "tags": ["podcast", "logic_pro"],
-        "media": { "type": "podbean", "src": "xxy3w-fd9300" }
+        "media": {
+          "type": "apple_podcasts",
+          "src": "id1234104939?i=1000512931423"
+        }
       }
     },
     "4": {
@@ -2198,7 +2219,10 @@
             }
           ],
           "tags": ["podcast"],
-          "media": { "type": "podbean", "src": "8vewr-101039e" }
+          "media": {
+            "type": "apple_podcasts",
+            "src": "id1234104939?i=1000517653477"
+          }
         },
         {
           "title": "una nota v2021.04.18",
@@ -3655,7 +3679,7 @@
         "title": "cc-video-player [fork]",
         "link": {
           "title": "github",
-          "url" :"https://github.com/una-ada/cc-video-player"
+          "url": "https://github.com/una-ada/cc-video-player"
         },
         "tags": [
           "programming",
@@ -3675,7 +3699,7 @@
       "2": [
         {
           "title": "una's theme: aeriform tape",
-          "project":"una theme",
+          "project": "una theme",
           "link": [
             {
               "title": "猫.dev",
@@ -3686,11 +3710,7 @@
               "url": "https://gist.github.com/una-ada/2c0f40c1d6c7ca2b0e1bf74a0667464a"
             }
           ],
-          "tags": [
-            "asset",
-            "aeriform_tape",
-            "visual_studio_code"
-          ]
+          "tags": ["asset", "aeriform_tape", "visual_studio_code"]
         },
         {
           "title": "una's theme: scrivener",
@@ -3699,10 +3719,7 @@
             "title": "猫.dev",
             "url": "https://xn--z7x.dev/theme/#scrivener"
           },
-          "tags": [
-            "asset",
-            "scrivener"
-          ]
+          "tags": ["asset", "scrivener"]
         }
       ],
       "3": {
@@ -3723,9 +3740,9 @@
       "11": [
         {
           "title": "una's theme [vs code] v2.1.0 - reformatting icon directory",
-          "project":"una theme",
+          "project": "una theme",
           "link": [
-            {  
+            {
               "title": "vscode_marketplace",
               "url": "https://marketplace.visualstudio.com/items?itemName=una.theme"
             },
@@ -3765,10 +3782,7 @@
               "url": "https://www.youtube.com/watch?v=wzv9iR_Ucbo"
             }
           ],
-          "tags": [
-            "podcast",
-            "adobe_illustrator"
-          ],
+          "tags": ["podcast", "adobe_illustrator"],
           "media": {
             "type": "anchor",
             "src": "--e301rdm"
@@ -3783,16 +3797,13 @@
             "title": "猫.dev",
             "url": "https://xn--z7x.dev/theme/#terminal"
           },
-          "tags": [
-            "asset",
-            "terminal"
-          ]
+          "tags": ["asset", "terminal"]
         },
         {
           "title": "una's theme [vs code] v2.1.1 - icon resize",
-          "project":"una theme",
+          "project": "una theme",
           "link": [
-            {  
+            {
               "title": "vscode_marketplace",
               "url": "https://marketplace.visualstudio.com/items?itemName=una.theme"
             },
@@ -3890,7 +3901,7 @@
             "url": "https://creators.spotify.com/pod/profile/-/episodes/--e314e07"
           },
           {
-            "title": "spotify", 
+            "title": "spotify",
             "url": "https://open.spotify.com/episode/5NO1YjM86kCAkOYmFiqNpr"
           },
           {
@@ -3902,10 +3913,7 @@
             "url": "https://www.youtube.com/watch?v=LUiGXiGJyeY"
           }
         ],
-        "tags": [
-          "podcast",
-          "adobe_illustrator"
-        ],
+        "tags": ["podcast", "adobe_illustrator"],
         "media": {
           "type": "anchor",
           "src": "--e314e07"
@@ -3913,7 +3921,7 @@
       },
       "15": {
         "title": "black flag book bag - david graeber's \"debt: the first 5,000 years\" wk.3",
-        "project":"black flag book bag",
+        "project": "black flag book bag",
         "link": [
           {
             "title": "anchor",
@@ -3932,10 +3940,7 @@
             "url": "https://www.youtube.com/watch?v=zBqJn7WPC-Y"
           }
         ],
-        "tags": [
-          "podcast",
-          "adobe_illustrator"
-        ],
+        "tags": ["podcast", "adobe_illustrator"],
         "media": {
           "type": "anchor",
           "src": "--e31idpd"

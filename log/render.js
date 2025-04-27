@@ -262,6 +262,8 @@ function embed(e, o) {
     out = `<iframe class="embedee" style="border:0;height:98px;max-width:700px;width:100%;" src="https://anchor.fm/-/embed/episodes/${o.src}" frameborder="0" scrolling="no"></iframe>`;
   if (o.type == 'soundcloud')
     out = `<iframe class="embedee" style="height:166px;" scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${o.src}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>`;
+  if (o.type == 'apple_podcasts')
+    out = `<iframe class="embedee" style="height:175px;" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/-/${o.src}"></iframe>`
   p.insertAdjacentHTML('beforeend', out);
 }
 function debed(e, o) {
