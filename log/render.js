@@ -241,6 +241,8 @@ function embed(e, o) {
   e.setAttribute('onclick', 'debed(this,' + JSON.stringify(o) + ')');
   var p = e.parentElement,
     out = '';
+  if (o.type == 'img')
+    out = `<img class="embedee" style="height:auto;" src="${o.src}"/>`;
   if (o.type == 'youtube')
     out =
       '<iframe class="embedee" src="https://www.youtube.com/embed/' +
