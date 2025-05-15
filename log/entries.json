@@ -4102,6 +4102,33 @@
           "type": "img",
           "src": "/assets/img/tbfbb/patreon.png"
         }
+      },
+      "13": {
+        "title": "black flag book bag - \"woke materialist gets owned by facts n logic\"<br/>david graeber's \"debt: the first 5,000 years\" wk.6",
+        "project": "black flag book bag",
+        "link": [
+          {
+            "title": "anchor",
+            "url": "https://creators.spotify.com/pod/profile/-/episodes/--e32qj7f"
+          },
+          {
+            "title": "spotify",
+            "url": "https://open.spotify.com/episode/1FxEOMutVSVMmL3XU4stX5"
+          },
+          {
+            "title": "youtube_music",
+            "url": "https://music.youtube.com/watch?v=1lal4ZXWPdk"
+          },
+          {
+            "title": "youtube",
+            "url": "https://www.youtube.com/watch?v=1lal4ZXWPdk"
+          }
+        ],
+        "tags": ["podcast", "adobe_illustrator", "design"],
+        "media": {
+          "type": "anchor",
+          "src": "--e32qj7f"
+        }
       }
     }
   }
