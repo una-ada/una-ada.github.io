@@ -4129,6 +4129,15 @@
           "type": "anchor",
           "src": "--e32qj7f"
         }
+      },
+      "15": {
+        "title": "etymology n onomastics: \"viking\"",
+        "project": "anarchy.website",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/viking"
+        },
+        "tags": ["writing", "scrivener", "markdown", "visual_studio_code"]
       }
     }
   }
