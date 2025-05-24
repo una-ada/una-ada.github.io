@@ -4138,6 +4138,15 @@
           "url": "https://anarchy.website/viking"
         },
         "tags": ["writing", "scrivener", "markdown", "visual_studio_code"]
+      },
+      "24": {
+        "title": "etymology n onomastics: \"algorithm\"",
+        "project": "anarchy.website",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/algorithm"
+        },
+        "tags": ["writing", "scrivener", "markdown", "visual_studio_code"]
       }
     }
   }
