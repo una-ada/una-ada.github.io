@@ -49,7 +49,7 @@
       "review": "blood princess has this weird thing where its set in a modern era but is so classically fantasy u kinda forget that. its got this cute mc whose identity at first seems like a point of pride (a human merely forced into becoming a vampire) yet slowly erodes in2 whatever is convenient at the time. it has the typical reverence for ancient civilization u see in fantasy, but it plays it p well imo. the web novel is aight, but i prefer the manhua."
     },
     {
-      "cover": "placeholder.png",
+      "cover": "bocchi.png",
       "type": "anime",
       "title": "bocchi the rock! (btr)",
       "origin": "jp",
@@ -61,20 +61,6 @@
       ],
       "rating": "10",
       "review": "that pink creature sure is scared of everything, just like me! btr is abt a bunch of locals starting a band n being friends. the manga is a 4-koma n the anime is full length eps which rly add to the experience as all adaptations should."
-    },
-    {
-      "cover": "placeholder.png",
-      "type": "manga",
-      "title": "convenient semi-friend",
-      "origin": "jp",
-      "title_original": "好都合セミフレンド",
-      "tags": [
-        "comedy",
-        "school",
-        "yuri"
-      ],
-      "rating": "6",
-      "review": "awkward girl who seems to b misunderstanding the situation x flirty girl who didnt think things would get this serious type yuri. the art is rly good, as u would expect from chigusa minori after all."
     },
     {
       "cover": "placeholder.png",
@@ -144,7 +130,7 @@
         "school",
         "yuri"
       ],
-      "rating": "7",
+      "rating": "6",
       "review": "the most prey coded yuri mc o all time. hentai artist slowly gets transformed in2 their 'ideal' female protag by a system that seems 2 have ulterior motives (n not just selling overpriced clothes 2 the mc). "
     },
     {
@@ -182,6 +168,24 @@
       ],
       "rating": "6",
       "review": "this is a lot like a comedy version of 'the blood princess and the knight.' theres a lesser ammt of political intrigue but way more of the mc being an adorable tsundere. its the post-apocalypse fantasy type setting."
+    },
+    {
+      "cover": "witch.png",
+      "type": "novel",
+      "title": "is it weird for a guy to apply to a witch school?",
+      "origin": "cn",
+      "title_original": "身为男生志愿填魔女学院很奇怪吗",
+      "tags": [
+        "action",
+        "adventure",
+        "drama",
+        "fantasy",
+        "gender_bender",
+        "slice of life",
+        "yuri"
+      ],
+      "rating": "10",
+      "review": "ive taken to describing this series as lore with plot; its tsf yuri n it rly shows in the early parts, but later it becomes entirely focused on the mc researching magic. theres a lot of trees involved, the mc cant stop growin em!"
     },
     {
       "cover": "kampfer.png",
