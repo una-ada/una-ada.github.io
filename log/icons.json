@@ -151,6 +151,7 @@
       "leaflet": "lib/leaflet.png",
       "love2d": "lib/love2d.png",
       "meteor": "lib/meteor.png",
+      "minecraft_forge": "lib/minecraft_forge.png",
       "motion_canvas": "lib/motioncanvas.png",
       ".net": "lib/dotnet.png",
       "oauth": "lib/oauth.png",
