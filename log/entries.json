@@ -4253,6 +4253,20 @@
           "visual_studio_code",
           "markdown"
         ]
+      },
+      "23": {
+        "title": "procrastination report no.7",
+        "project":"anarchy.website",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/pr/7"
+        },
+        "tags": [
+          "writing",
+          "scrivener",
+          "visual_studio_code",
+          "markdown"
+        ]
       }
     }
   }
