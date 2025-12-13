@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+  Østendunska Numeral Converter
+  by Una Ada <una@xn--z7x.dev>
+  2025.10.31
+  -->
+<html>
+<head>
+  <title>image dithering</title>
+  <link rel="stylesheet" href="/assets/log.css">
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="/una-theme-icons/16px/etc/heart_kitty.png"
+  />
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+	<meta name="viewport" content="width=device-width"/>
+  <script>
+const convert = n => [[93312,"cccııᴐᴐᴐ"],[46656,"cccıᴐᴐᴐ"],[38880,"uᴐᴐᴐ"],
+  [31104,"ııᴐᴐᴐ"],[23328,"ıᴐᴐᴐ"],[15552,"ccııᴐᴐ"],[7776, "ccıᴐᴐ"],[6480,"uᴐᴐ"],
+  [5184,"ııᴐᴐ"],[3888,"ıᴐᴐ"],[2592,"cııᴐ"],[1296,"cıᴐ"],[648,"ıᴐ"],[216,"c"],
+  [108,"ᴐ"],[36,"ж"],[18,"n"],[6,"κ"],[3,"u"],[1,"ı"]].reduce((r,v)=>{
+    let q=~~(n/v[0]);n%=v[0];return r+v[1].repeat(q);},'');
+  </script>
+</head>
+<body>
+
+</body>
+</html>
