@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+  Østendunska Numeral Converter
+  by Una Ada <una@xn--z7x.dev>
+  2025.10.31
+  -->
+<html>
+
+<head>
+  <title>østendunska numerals</title>
+  <link rel="stylesheet" href="/assets/log.css">
+  <link rel="shortcut icon" type="image/png" href="/una-theme-icons/16px/etc/heart_kitty.png" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    .container {
+      max-width: 36em;
+      margin: auto;
+    }
+    input {
+      background: none;
+      border: 1px solid var(--color-lotus);
+      color: inherit;
+      font: inherit;
+      width: calc(100% - 1em);
+    }
+    input:focus {
+      border-color: var(--color-candy);
+      outline: none;
+    }
+    table { 
+      width: 100%;
+    }
+  </style>
+  <script>
+    const convert = n =>
+      [
+        [93312, 'cccııɔɔɔ'],
+        [46656, 'cccıɔɔɔ' ],
+        [38880, 'uɔɔɔ'    ],
+        [31104, 'ııɔɔ'    ],
+        [23328, 'ıɔɔ'     ],
+        [15552, 'ccııɔɔ'  ],
+        [7776,  'ccıɔɔ'   ],
+        [6480,  'uɔɔ'     ],
+        [5184,  'ııɔɔ'    ],
+        [3888,  'ıɔɔ'     ],
+        [2592,  'cııɔ'    ],
+        [1296,  'cıɔ'     ],
+        [648,   'ıɔ'      ],
+        [216,   'c'       ],
+        [108,   'ɔ'       ],
+        [36,    'ж'       ],
+        [18,    'n'       ],
+        [6,     'κ'       ],
+        [3,     'u'       ],
+        [1,     'ı'       ],
+      ].reduce((r, v) => {
+        let q = ~~(n / v[0]);
+        n %= v[0];
+        return r + v[1].repeat(q);
+      }, '')
+        .replace(/(ı$)/, 'ȷ')
+        .replace(/(u$)/, 'ɥ')
+        .replace(/(n$)/, 'η')
+        .replace(/(c$)/, 'ς');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <table>
+      <tr>
+        <td>
+          input
+        </td>
+        <td>
+          østendunska numeral
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="form-control">
+            <input type="text" class="js-input-number"/>
+          </div>
+        </td>
+        <td>
+          <input type="text" class="js-output"></input>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    var input = document.querySelector('.js-input-number'),
+      output = document.querySelector('.js-output');
+      input.addEventListener('input', _ => {
+        let n = +input.value;
+        output.value = Number.isNaN(n) ? "NaN" : convert(n);
+      })
+  </script>
+</body>
+
+</html>
