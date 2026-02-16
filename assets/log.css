@@ -5,6 +5,9 @@
     url('/assets/fonts/cozette.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  /* Cozette used to render just fine at 12px, but newer versions seem to 
+     render better at 13px. Thus, it needs to be tricked into interpreting 12px 
+     as 13px, thus the 108.33% scaling. */
   size-adjust: 108.33%;
 }
 @font-face {
