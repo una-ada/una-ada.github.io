@@ -5,6 +5,7 @@
     url('/assets/fonts/cozette.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  size-adjust: 108.33%;
 }
 @font-face {
   font-family: 'PixelMplus12';
