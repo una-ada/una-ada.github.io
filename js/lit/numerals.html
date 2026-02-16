@@ -2,7 +2,7 @@
 <!--
   Østendunska Numeral Converter
   by Una Ada <una@xn--z7x.dev>
-  2025.10.31-2026.02.15
+  2025.10.31-2026.02.16
   -->
 <html>
 
@@ -14,10 +14,6 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
   <meta name="viewport" content="width=device-width" />
   <style>
-    .container {
-      max-width: 36em;
-      margin: auto;
-    }
     input {
       background: none;
       border: 1px solid var(--color-lotus);
@@ -31,6 +27,12 @@
     }
     table { 
       width: 100%;
+    }
+    #numbers td {
+      width: 25%;
+    }
+    #numbers td:nth-child(odd) {
+      text-align: right;
     }
   </style>
   <script>
@@ -69,14 +71,100 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="article">
+    <h2>østendunska numerals</h2>
+    <p>
+      in the realm of wydheth, the østendūn imperium reigns over the heart of a 
+      vast and mountainous continent. while the imperium is home to many 
+      tongues, they all share a common script and, by extension, numeral system.
+    </p>
+    <p>
+      this system is, in some ways, similar to our world's
+      <a href="https://en.wikipedia.org/wiki/Roman_numerals"
+        taget="_blank">roman numerals</a>.
+      particularly in the repetition of characters to represent multiples of 
+      their values, e.g. "ii" for two; as well as using the apostrophus method 
+      for large numbers, e.g. "cıɔ" for a thousand. they diverge in that 
+      østendūna traditionally uses base-6 counting rather than base-10, thus 
+      there is little need for subtractive notation, e.g. "iv" for four.
+    </p>
+    <p>
+      the symbols for numbers are mostly taken from the østendun alphabet, 
+      though 36 and 108 are modified to reflect their values:
+    </p>
+    <table id="numbers">
+      <tr>
+        <td>1</td>
+        <td>ı</td>
+        <td>3888</td>
+        <td>ıɔɔ</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>u</td>
+        <td>5184</td>
+        <td>ııɔɔ</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>κ</td>
+        <td>6480</td>
+        <td>uɔɔ</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>n</td>
+        <td>7776</td>
+        <td>ccıɔɔ</td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>ж</td>
+        <td>15552</td>
+        <td>ccııɔɔ</td>
+      </tr>
+      <tr>
+        <td>108</td>
+        <td>ɔ</td>
+        <td>23328</td>
+        <td>ıɔɔ</td>
+      </tr>
+      <tr>
+        <td>216</td>
+        <td>c</td>
+        <td>31104</td>
+        <td>ııɔɔ</td>
+      </tr>
+      <tr>
+        <td>648</td>
+        <td>ıɔ</td>
+        <td>38880</td>
+        <td>uɔɔɔ</td>
+      </tr>
+      <tr>
+        <td>1296</td>
+        <td>cıɔ</td>
+        <td>46656</td>
+        <td>cccıɔɔɔ</td>
+      </tr>
+      <tr>
+        <td>2592</td>
+        <td>cııɔ</td>
+        <td>93312</td>
+        <td>cccııɔɔɔ</td>
+      </tr>
+    </table>
+    <p>
+      for convenience, i have created a converter here that will allow you to 
+      input positional notation numerals to acquire the østendunska numerals:
+    </p>
     <table>
       <tr>
         <td>
           input
         </td>
         <td>
-          østendunska numeral
+          østendunska numerals
         </td>
       </tr>
       <tr>
@@ -90,6 +178,12 @@
         </td>
       </tr>
     </table>
+    <p>
+      the implementation of this converter was based on an
+      <a href="https://stackoverflow.com/a/32851198" target="_blank">answer</a> 
+      by jaggedsoft on stackoverflow regarding conversion to roman 
+      numerals in javascript.
+    </p>
   </div>
   <script>
     var input = document.querySelector('.js-input-number'),

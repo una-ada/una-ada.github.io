@@ -4345,5 +4345,24 @@
         ]
       }
     }
+  },
+  "2026": {
+    "2": {
+      "16": {
+        "title": "østendunska numeral converter",
+        "link": [
+          {
+            "title": "猫.dev",
+            "url": "https://xn--z7x.dev/js/lit/numerals"
+          }
+        ],
+        "tags": [
+          "programming",
+          "javascript",
+          "html",
+          "visual_studio_code"
+        ]
+      }
+    }
   }
 }
