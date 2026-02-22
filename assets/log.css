@@ -83,6 +83,17 @@ html {
   color: var(--color-lotus);
   font-size: 12px;
 }
+input {
+  background: none;
+  border: 1px solid var(--color-lotus);
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+input:focus {
+  border-color: var(--color-candy);
+  outline: none;
+}
 pre {
   font-family: 'Cozette', monospace;
   line-height: 1;
@@ -183,13 +194,9 @@ table.changelog tr:nth-child(even) {
 }
 table.theme {
   margin: 6rem 0 0 0;
-  width: 100%;
 }
 table.theme pre {
   line-height: 1.5;
-}
-table.theme table {
-  width: 100%;
 }
 table.theme img {
   padding: 0.25em 0;
