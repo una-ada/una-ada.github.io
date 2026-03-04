@@ -4393,6 +4393,26 @@
           "fontforge"
         ]
       }
+    },
+    "3": {
+      "4": {
+        "title": "magic script ii",
+        "project": "anarchy.website",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/ewb/scripts/2"
+        },
+        "tags": [
+          "writing",
+          "design",
+          "visual_studio_code",
+          "markdown",
+          "adobe_illustrator",
+          "fontforge",
+          "aseprite",
+          "javascript"
+        ]
+      }
     }
   }
 }
