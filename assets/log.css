@@ -97,7 +97,7 @@ input:focus, textarea:focus {
 }
 pre {
   font-family: 'Cozette', monospace;
-  line-height: 1;
+  line-height: 13px;
   margin: 0;
 }
 table {
