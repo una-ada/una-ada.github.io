@@ -1,8 +1,8 @@
 /*----- fonts ----------------------------------------------------------------*/
 @font-face {
   font-family: 'Cozette';
-  src: url('/assets/fonts/cozette.woff2') format('woff2'),
-    url('/assets/fonts/cozette.woff') format('woff');
+  src: url('/assets/fonts/CozetteVector.woff2') format('woff2'),
+    url('/assets/fonts/CozetteVector.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   /* Cozette used to render just fine at 12px, but newer versions seem to 
@@ -83,14 +83,15 @@ html {
   color: var(--color-lotus);
   font-size: 12px;
 }
-input {
+input,
+textarea {
   background: none;
   border: 1px solid var(--color-lotus);
   color: inherit;
   font: inherit;
-  outline: none;
+  width: calc(100% - 0.5em);
 }
-input:focus {
+input:focus, textarea:focus {
   border-color: var(--color-candy);
   outline: none;
 }
@@ -105,6 +106,9 @@ table {
 td {
   padding: 0 6px 0 0;
   vertical-align: top;
+}
+textarea {
+  resize: vertical;
 }
 thead, thead tr, thead tr th {
   font-weight: normal;
@@ -154,11 +158,15 @@ a.project-link:visited {
   text-decoration: underline;
 }
 div.article {
+  margin-bottom: 50vh;
   margin-left: calc(50vw - 20rem);
-  max-width: 40rem;
+  width: 40rem;
 }
 div.article img {
   max-width: 100%;
+}
+div.article table {
+  width: 100%;
 }
 div.project-blurb {
   display: flex;
@@ -292,6 +300,10 @@ td.title {
   }
   body {
     line-height: 2;
+  }
+  div.article {
+    margin-left: 0;
+    line-height: 1.5;
   }
 }
 
