@@ -4412,6 +4412,24 @@
           "aseprite",
           "javascript"
         ]
+      },
+      "7": {
+        "title": "magic script iii",
+        "project": "anarchy.website",
+        "link": {
+          "title": "anarchy.website",
+          "url": "https://anarchy.website/ewb/scripts/3"
+        },
+        "tags": [
+          "writing",
+          "design",
+          "visual_studio_code",
+          "markdown",
+          "adobe_illustrator",
+          "fontforge",
+          "aseprite",
+          "javascript"
+        ]
       }
     }
   }
