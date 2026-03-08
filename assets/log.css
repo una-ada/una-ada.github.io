@@ -158,9 +158,11 @@ a.project-link:visited {
   text-decoration: underline;
 }
 div.article {
-  margin-bottom: 50vh;
   margin-left: calc(50vw - 20rem);
   width: 40rem;
+}
+div.article:last-of-type {
+  margin-bottom: 50vh;
 }
 div.article img {
   max-width: 100%;
