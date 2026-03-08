@@ -5,7 +5,7 @@
   
   Higasi..................
   Lilhian.................
-  Liturgical Lilhian......
+  Liturgical Lilhian......2026.03.08
   Magic Script............2026.03.04-2026.03.07
   Østendūnska.............2026.03.07
   Østendūnska Numeral.....2025.10.31-2026.02.16
@@ -43,6 +43,73 @@
           .replace(/ı$/,'ȷ').replace(/u$/,'ɥ')
           .replace(/n$/,'η').replace(/c$/,'ς')
         )(+e.target.value)),
+    REIFY = s =>
+      new RegExp(`\\b${
+        [
+          [/([\[\]])/g,'\\$1'], [/ž/g, '(ž|ž|zh)'],
+          [/š/g,   '(š|š|sh)'], [/y/g,     '[jy]'],
+        ].reduce((t, [i,j]) => t = t.replace(i, j), s)
+      }\\b`, 'gi'),
+    LILIL = [
+      ['yi',  'wan',     '𛅰'],['ži',  'tenpo',  '𛆸'],['nyo', 'kiwen',   '𛈕'],
+      ['na',  'suno',    '𛅱'],['zi',  'lon',    '𛆹'],['sa',  'neja',    '𛈗'],
+      ['ya',  'jan',     '𛅳'],['tsi', 'se',     '𛆺'],['gu',  '[wyrm]',  '𛈙'],
+      ['za',  'e',       '𛅵'],['ši',  'olin',   '𛆻'],['šen', 'sijelo',  '𛈛'],
+      ['u',   'tomo',    '𛅷'],['i',   'pona',   '𛆼'],['tsa', 'pakala',  '𛈟'],
+      ['šu',  'telo',    '𛅸'],['lyu', 'laso',   '𛆽'],['do',  'len',     '𛈡'],
+      ['ai',  'kute',    '𛅺'],['mu',  'lukin',  '𛇀'],['fa',  'sitelen', '𛈣'],
+      ['da',  'suli',    '𛅻'],['žen', 'sin',    '𛇁'],['ba',  'pa',      '𛈦'],
+      ['tša', 'taso',    '𛅼'],['tsei','lanpan', '𛇂'],['an',  'sina',    '𛈪'],
+      ['fei', 'anpa',    '𛅽'],['nu',  'mun',    '𛇃'],['yo',  'sama',    '𛈶'],
+      ['li',  'alasa',   '𛅾'],['yu',  'wile',   '𛇄'],['nai', 'ken',     '𛈷'],
+      ['sau', 'lili',    '𛅿'],['pai', 'tan',    '𛇅'],['kan', 'kan',     '𛈸'],
+      ['tu',  'ma',      '𛆀'],['wau', 'ali',    '𛇆'],['a',   'a',       '𛈹'],
+      ['nyu', 'meli',    '𛆁'],['to',  'lawa',   '𛇊'],['ban', 'meso',    '𛈺'],
+      ['wen', 'toki',    '𛆂'],['lan', 'awen',   '𛇋'],['wo',  'mi',      '𛈻'],
+      ['kai', 'pali',    '𛆃'],['tso', 'li',     '𛇎'],['tsan','sinpin',  '𛈽'],
+      ['go',  'pela',    '𛆄'],['sen', 'nena',   '𛇏'],['su',  'nanpa',   '𛉅'],
+      ['šer', 'poka',    '𛆆'],['han', 'tawa',   '𛇐'],['po',  'kepa',    '𛉆'],
+      ['er',  'tu',      '𛆇'],['wai', 'weka',   '𛇒'],['ka',  'la',      '𛉊'],
+      ['sam', 'tuli',    '𛆊'],['gan', 'nalanja','𛇕'],['gam', 'nasa',    '𛉌'],
+      ['ma',  'moli',    '𛆋'],['nya', 'mama',   '𛇘'],['bau', 'mu',      '𛉏'],
+      ['fo',  'jaki',    '𛆌'],['pen', 'poki',   '𛇛'],['ti',  'ko',      '𛉐'],
+      ['la',  'sona',    '𛆍'],['džan','oko',    '𛇝'],['tsai','pipi',    '𛉑'],
+      ['žan', 'sewi',    '𛆎'],['pa',  'lipu',   '𛇞'],['žau', 'suwi',    '𛉒'],
+      ['zai', 'mani',    '𛆏'],['lei', 'peto',   '𛇟'],['tšer','ilo',     '𛉙'],
+      ['fu',  'ona',     '𛆔'],['dzei','ni',     '𛇠'],['hai', 'loje',    '𛉢'],
+      ['hu',  'seli',    '𛆕'],['pi',  'selo',   '𛇣'],['tsau','kasi',    '𛉤'],
+      ['žu',  '[god]',   '𛆗'],['lo',  'kama',   '𛇤'],['o',   'ike',     '𛉦'],
+      ['fai', 'kipisi',  '𛆙'],['so',  'pini',   '𛇦'],['šan', 'esun',    '𛉶'],
+      ['kau', 'uta',     '𛆚'],['gai', 'o',      '𛇧'],['nan', 'mije',    '𛉺'],
+      ['lyo', 'kulu',    '𛆜'],['bai', 'walo',   '𛇪'],['len', 'saja',    '𛉼'],
+      ['tšo', 'majuna',  '𛆝'],['bei', '[north]','𛇫'],['pan', 'unpa',    '𛉾'],
+      ['šo',  'luka',    '𛆞'],['ser', 'kule',   '𛇬'],['n',   'n',       '𛊃'],
+      ['fan', 'leko',    '𛆠'],['tsu', 'noka',   '𛇭'],['sei', 'akesi',   '𛊈'],
+      ['tan', '[holy]',  '𛆤'],['ha',  'seme',   '𛇮'],['šei', 'ewe',     '𛊍'],
+      ['nen', '[year]',  '𛆥'],['gen', 'pan',    '𛇯'],['tšei','linluwi', '𛊐'],
+      ['pyo', 'en',      '𛆦'],['ku',  'kili',   '𛇰'],['kyu', 'soko',    '𛊖'],
+      ['ei',  'sike',    '𛆧'],['bu',  'monsuta','𛇲'],['nau', 'kala',    '𛊢'],
+      ['mo',  'kulupu',  '𛆨'],['si',  'open',   '𛇴'],['kei', 'tonsi',   '𛊶'],
+      ['ki',  'ante',    '𛆩'],['wu',  'ijo',    '𛇵'],['šai', 'linja',   '𛊸'],
+      ['tšai','kon',     '𛆪'],['mai', 'lupa',   '𛇷'],['myu', 'anta',    '𛊺'],
+      ['džen','jelp',    '𛆭'],['sai', 'pilin',  '𛇺'],['tšan','wawa',    '𛊻'],
+      ['nam', 'nimi',    '𛆮'],['tau', 'nasin',  '𛇼'],['du',  'musi',    '𛊽'],
+      ['ye',  'kin',     '𛆯'],['ša',  'lape',   '𛈀'],['ben', 'lete',    '𛋆'],
+      ['nye', '[chant]', '𛆰'],['lau', 'mute',   '𛈁'],['mei', 'pata',    '𛋉'],
+      ['am',  'misikeke','𛆱'],['tsen','utala',  '𛈂'],['au',  'anu',     '𛋍'],
+      ['tši', 'moku',    '𛆲'],['kya', 'pana',   '𛈆'],['tsam','supa',    '𛋒'],
+      ['mam', 'ala',     '𛆳'],['dzi', 'namako', '𛈉'],['mau', 'kisa',    '𛋓'],
+      ['pau', 'pi',      '𛆴'],['san', 'jasima', '𛈊'],['dži', 'palisa',  '𛋔'],
+      ['kyo', 'waso',    '𛆵'],['tšu', 'insa',   '𛈌'],['hei', 'pimeja',  '𛋚'],
+      ['zau', 'kalama',  '𛆶'],['en', 'kepeken', '𛈍'],['man', 'jume',    '𛋪'],
+      ['tser','jo',      '𛆷'],['myo', 'ka',     '𛈑'],['šau', 'soweli',  '𛋱'],
+    ],
+    IN_LL = LILIL.map(([i, j, k]) => [REIFY(i), k])
+      .concat([[/\s/g, ''], [/\n/g, '<br/>']]),
+    IN_TK = LILIL.map(([i, j, k]) => [REIFY(i), j]),
+    TK_LL = LILIL.map(([i, j, k]) => [REIFY(j), k])
+      .concat([[/\s/g, ''], [/\n/g, '<br/>']]),
+    TK_IN = LILIL.map(([i, j, k]) => [REIFY(j), i]),
     MAGIC = [
       // Historic forms
       [/\*H[Mm]/g,    ''],[/\*hm/g,  ''], [/\*K[Hh]/g, ''],[/\*kh/g, ''],
@@ -234,14 +301,14 @@
 │ 𛆏     zai     mani      │ 𛇟     lei     peto      │ 𛉙     tšer    ilo        │
 │ 𛆔     fu      ona       │ 𛇠     dzei    ni        │ 𛉢     hai     loje       │
 │ 𛆕     hu      seli      │ 𛇣     pi      selo      │ 𛉤     tsau    kasi       │
-│ 𛆗     žu      [master]  │ 𛇤     lo      kama      │ 𛉦     o       ike        │
+│ 𛆗     žu      [god]     │ 𛇤     lo      kama      │ 𛉦     o       ike        │
 │ 𛆙     fai     kipisi    │ 𛇦     so      pini      │ 𛉶     šan     esun       │
 │ 𛆚     kau     uta       │ 𛇧     gai     o         │ 𛉺     nan     mije       │
 │ 𛆜     lyo     kulu      │ 𛇪     bai     walo      │ 𛉼     len     saja       │
 │ 𛆝     tšo     majuna    │ 𛇫     bei     [north]   │ 𛉾     pan     unpa       │
 │ 𛆞     šo      luka      │ 𛇬     ser     kule      │ 𛊃     n       n          │
 │ 𛆠     fan     leko      │ 𛇭     tsu     noka      │ 𛊈     sei     akesi      │
-│ 𛆤     tan     [divine]  │ 𛇮     ha      seme      │ 𛊍     šei     ewe        │
+│ 𛆤     tan     [holy]    │ 𛇮     ha      seme      │ 𛊍     šei     ewe        │
 │ 𛆥     nen     [year]    │ 𛇯     gen     pan       │ 𛊐     tšei    linluwi    │
 │ 𛆦     pyo     en        │ 𛇰     ku      kili      │ 𛊖     kyu     soko       │
 │ 𛆧     ei      sike      │ 𛇲     bu      monsuta   │ 𛊢     nau     kala       │
@@ -261,6 +328,20 @@
 │ 𛆷     tser    jo        │ 𛈑     myo     ka        │ 𛋱     šau     soweli     │
 └─────────────────────────┴─────────────────────────┴──────────────────────────┘
     </pre>
+    <table>
+      <tr>
+        <td style="width:50%">
+          input<br/>
+          <textarea type="text" class="lilil-input"></textarea><br/>
+          toki pona<br/>
+          <textarea type="text" class="litok-input"></textarea>
+        </td>
+        <td>
+          liturgical lilhi<br/>
+          <div class="lilil-output">&nbsp;</div>
+        </td>
+      </tr>
+    </table>
   </div>
   <div class="article" id="magic">
     <h2>magic script</h2>
@@ -474,6 +555,10 @@
     </table>
   </div>
   <script>
+    TRANS('.lilil-input', '.lilil-output', IN_LL);
+    TRANS('.lilil-input', '.litok-input',  IN_TK, 'value');
+    TRANS('.litok-input', '.lilil-output', TK_LL);
+    TRANS('.litok-input', '.lilil-input',  TK_IN, 'value');
     TRANS('.magic-input', '.magic-output', MAGIC);
     TRANS('.osten-input', '.osten-output', OSTEN);
     NUMER('.numer-input', '.numer-output');
