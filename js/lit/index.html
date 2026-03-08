@@ -17,6 +17,13 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="chrome=1" />
   <meta name="viewport" content="width=device-width" />
+  <script>
+    const TRANS = (i, o, l, p = 'innerHTML') =>
+      document.querySelector(i).addEventListener('input', e => {
+        document.querySelector(o)[p] = l.reduce(
+          (a, [j, k]) => console.log(j, k, a) || (a = a.replaceAll(j, k)), e.target.value);
+      });
+  </script>
 </head>
 <body>
   <div class="article">
@@ -252,7 +259,7 @@
     <p>
       WIP
     </p>
-<pre>
+    <pre>
 ┌────────────────────────┬──────────────────────────┬──────────────────────────┐
 │      ipa      input    │      ipa      input      │      ipa      input      │
 ├────────────────────────┼──────────────────────────┼──────────────────────────┤
@@ -273,7 +280,7 @@
 │ &⁊   "and", "et"       │ Ꝯꝯ   "of"                │ Ꝭꝭ   "is"                │
 │ -φ   "-er", "-ir"      │ Ꝛꝛ   "r" after oωbβδþջƿ  │ Ññ   "nn"                │
 └────────────────────────┴──────────────────────────┴──────────────────────────┘
-</pre>
+    </pre>
 
     <h2 id="numer">østendunska numerals</h2>
     <p>
@@ -295,7 +302,7 @@
       the symbols for numbers are mostly taken from the østendun alphabet, 
       though 36 and 108 are modified to reflect their values:
     </p>
-<pre>
+    <pre>
 ┌─────────────────────────┬─────────────────────────┬──────────────────────────┐
 │ numeral       value     │ numeral       value     │ numeral       value      │
 ├─────────────────────────┼─────────────────────────┼──────────────────────────┤
@@ -307,7 +314,7 @@
 │ ɔ             108       │ uɔɔ           6480      │ cccııɔɔɔ      93312      │
 │ c             216       │ ccıɔɔ         7776      │                          │
 └─────────────────────────┴─────────────────────────┴──────────────────────────┘
-</pre>
+    </pre>
     <p>
       for convenience, i have created a converter here that will allow you to 
       input positional notation numerals to acquire the østendunska numerals:
@@ -359,7 +366,7 @@
     <p>
       WIP
     </p>
-<pre>
+    <pre>
 ┌─────────────────────────┬─────────────────────────┬──────────────────────────┐
 │       ipa         input │       ipa         input │        ipa        input  │
 ├─────────────────────────┼─────────────────────────┼──────────────────────────┤
@@ -371,18 +378,69 @@
 │ Ꞟꞟ    /p Vb/      p     │ Ⱶ́Iⱶ́ı  /jɛ/        yae   │ TꟵIтꟶı /we/       we     │
 │ Λᴧ    /s ɕG t+/   s     │ Ꟶꟶ    /ʌ~ə/       eo    │ TIтı   /y~ɥi/     wi     │
 │ Oo    /ŋ/         ng    │ ꟵIꟶı  /e/         e     │ T́т́     /ju/       yu     │
-│ Лл    /t͡ɕ Vd͡ʑ t+/ j     │ Ꟶ̀ꟶ̀    /jʌ/        yeo   │ Uu     /ɯ/        eo     │
+│ Лл    /t͡ɕ Vd͡ʑ t+/ j     │ Ꟶ̀ꟶ̀    /jʌ/        yeo   │ Uu     /ɯ/        uu     │
 │ Л̇л̇    /tʃʰ t+/    ch    │ Ꟶ̀Iꟶ̀ı  /je/        ye    │ UIuı   /ɰi/       ui     │
 │ Ээ    /kʰ k+/     kh    │ ɺɹ    /o/         o     │ Iı     /i/        i      │
 │ Eᴇ    /tʰ t+/     th    │ ɺⱵɹⱶ  /wa/        wa    │ Íı́     /ji/       yi     │
 └─────────────────────────┴─────────────────────────┴──────────────────────────┘
-</pre>
+    </pre>
+    <table>
+      <thead>
+        <td style="width:50%">input</td>
+        <td>sadunayitu</td>
+      </thead>
+      <tr>
+        <td><textarea type="text" class="sadun-input"></textarea></td>
+        <td><div class="sadun-output"></div></td>
+      </tr>
+    </table>
+    <script>
+      const SADUN = [
+        // Consonants
+        [/K/g,      'Ͻ'  ], [/k/g,    'ͻ'  ],
+        [/[RL]/g,   'Ƨ'  ], [/[rl]/g, 'ƨ'  ], // moved to not match /N/g -> L
+        [/N/g,      'L'  ], [/n/g,    'ʟ'  ],
+        [/C[Hh]?/g, 'Л̇'  ], [/ch?/g,  'л̇'  ], // moved to not match /t/g -> c
+        [/[TD]/g,   'C'  ], [/[td]/g, 'c'  ],
+        [/M/g,      'D'  ], [/m/g,    'ᴅ'  ],
+        [/P[Hh]/g,  'Ƶ'  ], [/ph/g,   'ƶ  '], // /ꞟh/g would match 'bh'
+        [/[PB]/g,   'Ꞟ'  ], [/[pb]/g, 'ꞟ'  ],
+        [/S/g,      'Λ'  ], [/s/g,    'ᴧ'  ],
+        [/J/g,      'Л'  ], [/j/g,    'л'  ],
+        [/Ͻ[Hh]/g,  'Э'  ], [/ͻh/g,   'э'  ],
+        // Vowels
+        [/A/g,      'Ⱶ'  ], [/a/g,    'ⱶ'  ],
+        [/Ⱶ[Ee]/g,  'ⱵI' ], [/ⱶe/g,   'ⱶı' ],
+        [/Y[Ⱶⱶ]/g,  'Ⱶ́'  ], [/yⱶ/g,   'ⱶ́'  ],
+        [/E[Oo]/g,  'Ꟶ'  ], [/eo/g,   'ꟶ'  ],
+        [/E/g,      'ꟵI' ], [/e/g,    'ꟶı' ],
+        [/T[Hh]/g,  'E'  ], [/th/g,   'ᴇ'  ], // moved to not match /E/g -> ꟵI
+        [/Y[Ꟶꟶ]/g,  'Ꟶ́'  ], [/yꟶ/g,   'ꟶ́'  ],
+        [/O/g,      'ɺ'  ], [/o/g,    'ɹ'  ],
+        [/L[Gg]/g,  'O'  ], [/ʟg/g,   'o'  ], // moved to not match /O/g -> ɺ
+        [/G/g,      'Ͻ'  ], [/g/g,    'ͻ'  ],
+        [/H/g,      'Ō̇'  ], [/h/g,    'ō̇'  ], // moved to not match /O/g -> ɺ
+        [/W[Ⱶⱶ]/g,  'ɺⱵ' ], [/wⱶ/g,   'ɹⱶ' ],
+        [/ɺⱵı/g,    'ɺⱵI'],
+        [/ɺꟵI|ɺꟶı/g,'ɺI' ], [/ɹꟶı/g,  'ɹı' ],
+        [/Y[ɺɹ]/g,  'ɺ̀'  ], [/yɹ/g,   'ɹ́'  ],
+        [/U/g,      'T'  ], [/u/g,    'т'  ],
+        [/W[ɺɹ]/g,  'TꟵ' ], [/wɹ/g,   'тꟶ' ],
+        [/WꟵI|Wꟶı/g,'TꟵI'], [/wꟶı/g,  'тꟶı'],
+        [/W[Iı]/g,  'TI' ], [/wi/g,   'тı' ],
+        [/Y[Tт]/g,  'T́'  ], [/yт/g,   'т́'  ],
+        [/T[Tт]/g,  'U'  ], [/тт/g,   'u'  ],
+                            [/i/g,    'ı'  ],
+        [/Y[Iı]/g,  'Í'  ], [/yı/g,   'í'  ],
+      ];
+      TRANS('.sadun-input', '.sadun-output', SADUN);
+    </script>
 
     <h2 id="siget">sigetvilági</h2>
     <p>
       WIP
     </p>
-<pre>
+    <pre>
 ┌─────────────────────────┬─────────────────────────┬──────────────────────────┐
 │       ipa       input   │       ipa       input   │       ipa       input    │
 ├─────────────────────────┼─────────────────────────┼──────────────────────────┤
@@ -395,12 +453,50 @@
 │ ކ     /k/       k       │ ޒ     /z/       z       │ އެ     /ɛ~ɛː/    e        │
 │ އ     /ʔ/       '       │ ޓ     /tʃ/      cs      │ އޭ     /eː/      é, ee    │
 │ ވ     /v/       v       │ ޔ     /j/       j       │ އޮ     /o~ø/     o, ö     │
-│ މ     /m/       m       │ ޕ     /p/       p       │ އޯ     /oː~øː/   ó, ő, ou │
+│ މ     /m/       m       │ ޕ     /p/       p       │ އޯ     /oː~øː/   ó, ő, oo │
 │ ފ     /f/       f       │ ޖ     /ɟ/       gy      │ އް     -         -        │
 │ ދ     /d/       d       │ ޗ     /c/       ty      │                          │
 │ ތ     /t/       t       │ ޏ     /ɲ/       ny      │                          │
 └─────────────────────────┴─────────────────────────┴──────────────────────────┘
-</pre>
+    </pre>
+    <table>
+      <thead>
+        <td style="width:50%">input</td>
+        <td>sigetvilági</td>
+      </thead>
+      <tr>
+        <td><textarea type="text" class="siget-input"></textarea></td>
+        <td><div class="siget-output" dir="rtl"></div></td>
+      </tr>
+    </table>
+    <script>
+      const SIGET = [
+        // Consonants
+        [/[Hh]/g,     'ހް'], [/[Cc]/g,     'ށް'], [/[Nn]/g,     'ން'],
+        [/[Rr]/g,     'ރް'], [/[Zz][Ss]/g, 'ޜް'], [/[Bb]/g,     'ބް'],
+        [/[Kk]/g,     'ކް'], [/'/g,        'އް'], [/[Vv]/g,     'ވް'],
+        [/[Mm]/g,     'މް'], [/[Ff]/g,     'ފް'], [/[Dd]/g,     'ދް'],
+        [/[Tt]/g,     'ތް'], [/[Ll]/g,     'ލް'], [/[Gg]/g,     'ގް'],
+        [/[Ss][Zz]/g, 'ސް'], [/ދ[Zz]/g,    'ޟް'], [/[Ss]/g,     'ޝް'],
+        [/ދޜ/g,       'ޑް'], [/[Zz]/g,     'ޒް'], [/ށްޝް/g,       'ޓް'],
+        [/[Jj]/g,     'ޔް'], [/[Pp]/g,     'ޕް'], [/ގް[Yy]/g,    'ޖް'],
+        [/ތް[Yy]/g,    'ޗް'], [/ން[Yy]/g,    'ޏް'],
+        // Vowels
+        [/ް?[Aa]/g,      'އަ'], [/ައަ/g, 'އާ'], [/ް?[Áá]|Á|á/g,  'އާ'],
+        [/ް?[Ii]/g,      'އި'], [/ިއި/g, 'އީ'], [/ް?[ÍíÍí]/g,    'އީ'],
+        [/ް?[UuÜü]|Ü|ü/g,'އު'], [/ުއު/g, 'އޫ'], [/ް?[ÚúŰű]|Ú|ú/g,'އޫ'],
+        [/ް?[Ee]/g,      'އެ'], [/ައަ/g, 'އޭ'], [/ް?[Éé]|É|é/g,  'އޭ'],
+        [/ް?[OoÖö]|Ö|ö/g,'އޮ'], [/ޮއޮ/g, 'އޯ'], [/ް?[ÓóŐő]|Ó|ó/g,'އޯ'],
+        // Cleanup
+        [/ހއ/g, 'ހ'], [/ށއ/g, 'ށ'], [/ނއ/g, 'ނ'], [/ރއ/g, 'ރ'], [/ޜއ/g, 'ޜ'],
+        [/ބއ/g, 'ބ'], [/ކއ/g, 'ކ'], [/އއ/g, 'އ'], [/ވއ/g, 'ވ'], [/މއ/g, 'މ'],
+        [/ފއ/g, 'ފ'], [/ދއ/g, 'ދ'], [/ތއ/g, 'ތ'], [/ލއ/g, 'ލ'], [/ގއ/g, 'ގ'],
+        [/ސއ/g, 'ސ'], [/ޟއ/g, 'ޟ'], [/ޝއ/g, 'ޝ'], [/ޑއ/g, 'ޑ'], [/ޒއ/g, 'ޒ'],
+        [/ޓއ/g, 'ޓ'], [/ޔއ/g, 'ޔ'], [/ޕއ/g, 'ޕ'], [/ޖއ/g, 'ޖ'], [/ޗއ/g, 'ޗ'],  
+        [/ޏއ/g, 'ޏ'], [/\n/g, '<br/>']
+      ];
+      TRANS('.siget-input', '.siget-output', SIGET)
+    </script>
   </div>
 </body>
 </html>
