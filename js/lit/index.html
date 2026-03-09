@@ -50,6 +50,7 @@
           [/š/g,   '(š|š|sh)'], [/y/g,     '[jy]'],
         ].reduce((t, [i,j]) => t = t.replace(i, j), s)
       }\\b`, 'gi'),
+    HIGAS = [],
     LILIL = [
       ['yi',  'wan',     '𛅰'],['ži',  'tenpo',  '𛆸'],['nyo', 'kiwen',   '𛈕'],
       ['na',  'suno',    '𛅱'],['zi',  'lon',    '𛆹'],['sa',  'neja',    '𛈗'],
@@ -104,11 +105,11 @@
       ['zau', 'kalama',  '𛆶'],['en', 'kepeken', '𛈍'],['man', 'jume',    '𛋪'],
       ['tser','jo',      '𛆷'],['myo', 'ka',     '𛈑'],['šau', 'soweli',  '𛋱'],
     ],
-    IN_LL = LILIL.map(([i, j, k]) => [REIFY(i), k])
-      .concat([[/\s/g, ''], [/\n/g, '<br/>']]),
+    IN_LL = LILIL.map(([i, j, k]) =>
+      [REIFY(i), k]).concat([[/\n/g, '<br/>'], [/\s/g, '']]),
     IN_TK = LILIL.map(([i, j, k]) => [REIFY(i), j]),
-    TK_LL = LILIL.map(([i, j, k]) => [REIFY(j), k])
-      .concat([[/\s/g, ''], [/\n/g, '<br/>']]),
+    TK_LL = LILIL.map(([i, j, k]) =>
+      [REIFY(j), k]).concat([[/\n/g, '<br/>'], [/\s/g, '']]),
     TK_IN = LILIL.map(([i, j, k]) => [REIFY(j), i]),
     MAGIC = [
       // Historic forms
@@ -224,6 +225,20 @@
       [/([ހށނރޜބކއވމފދތލގސޟޝޑޒޓޔޕޖޗޏ])އ/g, '$1'], [/\n/g, '<br/>'], 
     ];
   </script>
+  <style>
+    div.article table.higas-chart { border: 1px solid var(--color-lotus); }
+    .higas-chart thead { border-bottom: 1px solid var(--color-lotus); }
+    .higas-chart thead td { padding-top: 6px; width: 43px; }
+    .higas-chart thead td:first-child { width: 31px; }
+    .higas-chart thead td:last-child { width: 47px; }
+    .higas-chart tr { background: none; }
+    .higas-chart td { padding: 0; }
+    .higas-chart td:first-child {
+      padding-left: 6px;
+      border-right: 1px solid var(--color-lotus);
+    }
+    .higas-chart td:nth-child(2) { padding-left: 6px; }
+  </style>
 </head>
 <body>
   <div class="article">
@@ -258,6 +273,148 @@
     <p>
       WIP
     </p>
+    <table class="kannada higas-chart">
+      <thead>
+        <td></td>
+        <td>あ</td><td>あー</td><td>い</td><td>いー</td><td>う</td>
+        <td>うー</td><td>え</td><td>えー</td><td>お¹</td><td>おー</td>
+      </thead>
+      <tr>
+        <td>―</td>
+        <td>ಅ</td><td>ಆ</td><td>ಇ</td><td>ಈ</td><td>ಉ</td>
+        <td>ಊ</td><td>ಎ</td><td>ಏ</td><td>ಒ</td><td>ಓ</td>
+      </tr>
+      <tr>
+        <td>か</td>
+        <td>ಕ</td><td>ಕಾ</td><td>ಕಿ</td><td>ಕೀ</td><td>ಕು</td>
+        <td>ಕೂ</td><td>ಕೆ</td><td>ಕೇ</td><td>ಕೌ</td><td>ಕೊ</td>
+      </tr>
+      <tr>
+        <td>きゃ</td>
+        <td>ಕ್ಯ</td><td>ಕ್ಯಾ</td><td></td><td></td><td>ಕ್ಯು</td>
+        <td>ಕ್ಯೂ</td><td></td><td></td><td>ಕ್ಯೌ</td><td>ಕ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>が</td>
+        <td>ಗ</td><td>ಗಾ</td><td>ಗಿ</td><td>ಗೀ</td><td>ಗು</td>
+        <td>ಗೂ</td><td>ಗೆ</td><td>ಗೇ</td><td>ಗೌ</td><td>ಗೊ</td>
+      </tr>
+      <tr>
+        <td>ぎゃ</td>
+        <td>ಗ್ಯ</td><td>ಗ್ಯಾ</td><td></td><td></td><td>ಗ್ಯು</td>
+        <td>ಗ್ಯೂ</td><td></td><td></td><td>ಗ್ಯೌ</td><td>ಗ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>さ</td>
+        <td>ಸ</td><td>ಸಾ</td><td>ಸಿ</td><td>ಸೀ</td><td>ಸು</td>
+        <td>ಸೂ</td><td>ಸೆ</td><td>ಸೇ</td><td>ಸೌ</td><td>ಸೊ</td>
+      </tr>
+      <tr>
+        <td>しゃ</td>
+        <td>ಸ್ಯ</td><td>ಸ್ಯಾ</td><td></td><td></td><td>ಸ್ಯು</td>
+        <td>ಸ್ಯೂ</td><td></td><td></td><td>ಸ್ಯೌ</td><td>ಸ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>ざ</td>
+        <td>ಶ²</td><td>ಶಾ</td><td>ಶಿ</td><td>ಶೀ</td><td>ಶು</td>
+        <td>ಶೂ</td><td>ಶೆ</td><td>ಶೇ</td><td>ಶೌ</td><td>ಶೊ</td>
+      </tr>
+      <tr>
+        <td>じゃ</td>
+        <td>ಶ್ಯ</td><td>ಶ್ಯಾ</td><td></td><td></td><td>ಶ್ಯು</td>
+        <td>ಶ್ಯೂ</td><td></td><td></td><td>ಶ್ಯೌ</td><td>ಶ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>た</td>
+        <td>ತ</td><td>ತಾ</td><td>ತಿ</td><td>ತೀ</td><td>ತು</td>
+        <td>ತೂ</td><td>ತೆ</td><td>ತೇ</td><td>ತೌ</td><td>ತೊ</td>
+      </tr>
+      <tr>
+        <td>ちゃ</td>
+        <td>ತ್ಯ</td><td>ತ್ಯಾ</td><td></td><td></td><td>ತ್ಯು</td>
+        <td>ತ್ಯೂ</td><td></td><td></td><td>ತ್ಯೌ</td><td>ತ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>だ</td>
+        <td>ದ</td><td>ದಾ</td><td>ದಿ</td><td>ದೀ</td><td>ದು</td>
+        <td>ದೂ</td><td>ದೆ</td><td>ದೇ</td><td>ದೌ</td><td>ದೊ</td>
+      </tr>
+      <tr>
+        <td>な</td>
+        <td>ನ</td><td>ನಾ</td><td>ನಿ</td><td>ನೀ</td><td>ನು</td>
+        <td>ನೂ</td><td>ನೆ</td><td>ನೇ</td><td>ನೌ</td><td>ನೊ</td>
+      </tr>
+      <tr>
+        <td>にゃ</td>
+        <td>ನ್ಯ</td><td>ನ್ಯಾ</td><td></td><td></td><td>ನ್ಯು</td>
+        <td>ನ್ಯೂ</td><td></td><td></td><td>ನ್ಯೌ</td><td>ನ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>は</td>
+        <td>ಬ³</td><td>ಬಾ</td><td>ಬಿ</td><td>ಬೀ</td><td>ಬು</td>
+        <td>ಬೂ</td><td>ಬೆ</td><td>ಬೇ</td><td>ಬೌ</td><td>ಬೊ</td>
+      </tr>
+      <tr>
+        <td>ひゃ</td>
+        <td>ಬ್ಯ</td><td>ಬ್ಯಾ</td><td></td><td></td><td>ಬ್ಯು</td>
+        <td>ಬ್ಯೂ</td><td></td><td></td><td>ಬ್ಯೌ</td><td>ಬ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>ば</td>
+        <td>ಭ</td><td>ಭಾ</td><td>ಭಿ</td><td>ಭೀ</td><td>ಭು</td>
+        <td>ಭೂ</td><td>ಭೆ</td><td>ಭೇ</td><td>ಭೌ</td><td>ಭೊ</td>
+      </tr>
+      <tr>
+        <td>びゃ</td>
+        <td>ಭ್ಯ</td><td>ಭ್ಯಾ</td><td></td><td></td><td>ಭ್ಯು</td>
+        <td>ಭ್ಯೂ</td><td></td><td></td><td>ಭ್ಯೌ</td><td>ಭ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>ぱ</td>
+        <td>ಪ</td><td>ಪಾ</td><td>ಪಿ</td><td>ಪೀ</td><td>ಪು</td>
+        <td>ಪೂ</td><td>ಪೆ</td><td>ಪೇ</td><td>ಪೌ</td><td>ಪೊ</td>
+      </tr>
+      <tr>
+        <td>ぴゃ</td>
+        <td>ಪ್ಯ</td><td>ಪ್ಯಾ</td><td></td><td></td><td>ಪ್ಯು</td>
+        <td>ಪ್ಯೂ</td><td></td><td></td><td>ಪ್ಯೌ</td><td>ಪ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>ま</td>
+        <td>ಮ</td><td>ಮಾ</td><td>ಮಿ</td><td>ಮೀ</td><td>ಮು</td>
+        <td>ಮೂ</td><td>ಮೆ</td><td>ಮೇ</td><td>ಮೌ</td><td>ಮೊ</td>
+      </tr>
+      <tr>
+        <td>みゃ</td>
+        <td>ಮ್ಯ</td><td>ಮ್ಯಾ</td><td></td><td></td><td>ಮ್ಯು</td>
+        <td>ಮ್ಯೂ</td><td></td><td></td><td>ಮ್ಯೌ</td><td>ಮ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>や</td>
+        <td>ಯ</td><td>ಯಾ</td><td></td><td></td><td>ಯು</td>
+        <td>ಯೂ</td><td></td><td></td><td>ಯೌ</td><td>ಯೊ</td>
+      </tr>
+      <tr>
+        <td>ら</td>
+        <td>ರ</td><td>ರಾ</td><td>ರಿ</td><td>ರೀ</td><td>ರು</td>
+        <td>ರೂ</td><td>ರೆ</td><td>ರೇ</td><td>ರೌ</td><td>ರೊ</td>
+      </tr>
+      <tr>
+        <td>りゃ</td>
+        <td>ಠ್ಯ⁴</td><td>ಠ್ಯಾ</td><td></td><td></td><td>ಠ್ಯು</td>
+        <td>ಠ್ಯೂ</td><td></td><td></td><td>ಠ್ಯೌ</td><td>ಠ್ಯೊ</td>
+      </tr>
+      <tr>
+        <td>わ</td>
+        <td>ವ</td><td>ವಾ</td><td>ವಿ</td><td>ವೀ</td><td></td>
+        <td></td><td>ವೆ</td><td>ವೇ</td><td>ವೌ</td><td>ವೊ</td>
+      </tr>
+      <tr>
+        <td>ん</td>
+        <td>ಙ⁵</td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td>
+      </tr>
+    </table>
   </div>
   <div class="article" id="lilhi">
     <h2>lilhian</h2>

@@ -17,6 +17,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Bengaluru';
+  src: url('/assets/fonts/ATSBengaluru-SquareRegular.woff2') format('woff2'),
+    url('/assets/fonts/ATSBengaluru-SquareRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  size-adjust: 133.33%;
+}
 
 /*----- variables ------------------------------------------------------------*/
 :root {
@@ -198,6 +206,9 @@ img.tag-icon {
   margin: 0.5rem 0;
   width: 48em;
   height: 27em;
+}
+.kannada {
+  font-family: 'Bengaluru', 'Cozette', 'PixelMplus12', monospace;;
 }
 table.changelog tr:nth-child(even) {
   background: none;
