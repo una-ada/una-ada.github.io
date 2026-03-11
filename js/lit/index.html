@@ -22,6 +22,17 @@
   <meta name="viewport" content="width=device-width" />
   <script>
     const
+    UNICO = (l, d, s) =>
+      [...new Set(l.split(d))]
+      .flatMap(c => c ? [...c] : "")
+      .map(c => c ? (p => [p, `U+${p.toString(16)}`, c])(c.codePointAt(0)) : "")
+      .sort((a,b) => s ? a[0] - b[0] : -1)
+      .map(c => c.slice(1)),
+    UNIC2 = (l, d) =>
+      [... new Set(l.split(d))]
+      .map(c => c ? [c, [...c].reduce((a, i) => a + `\\u${
+        (n => '0'.repeat(4 - n.length) + n)(''+i.codePointAt(0).toString(16))
+      }`, '')]: ""),
     TRANS = (i, o, l, p = 'innerHTML') =>
       document.querySelector(i).addEventListener('input', e =>
         document.querySelector(o)[p] = l.reduce(
@@ -50,7 +61,225 @@
           [/š/g,   '(š|š|sh)'], [/y/g,     '[jy]'],
         ].reduce((t, [i,j]) => t = t.replace(i, j), s)
       }\\b`, 'gi'),
-    HIGAS = [],
+    HIGAS = [
+      // N
+      [/n/gi,       /[んン]/g,                  '\u0c99'                  ],
+      // A
+      [/a/gi,       /[あア]/g,                  '\u0c85'                  ],
+      [/aa/gi,      /[あア][あアー]/g,          '\u0c86'                  ],
+      [/i/gi,       /[いイ]/g,                  '\u0c87'                  ],
+      [/ii/gi,      /[いイ][いイー]/g,          '\u0c88'                  ],
+      [/u/gi,       /[うウ]/g,                  '\u0c89'                  ],
+      [/uu/gi,      /[うウ][うウー]/g,          '\u0c8a'                  ],
+      [/e/gi,       /[えエ]/g,                  '\u0c8e'                  ],
+      [/ee/gi,      /[えエ][えエー]/g,          '\u0c8f'                  ],
+      [/o/gi,       /[おオ]/g,                  '\u0c92'                  ],
+      [/o[ou]/gi,   /[おオ][おオうウー]/g,      '\u0c93'                  ],
+      // Ka
+      [/ka/gi,      /[かカ]/g,                  '\u0c95'                  ],
+      [/kaa/gi,     /[かカ][あアー]/g,          '\u0c95\u0cbe'            ],
+      [/ki/gi,      /[きキ]/g,                  '\u0c95\u0cbf'            ],
+      [/kii/gi,     /[きキ][いイー]/g,          '\u0c95\u0cc0'            ],
+      [/ku/gi,      /[くク]/g,                  '\u0c95\u0cc1'            ],
+      [/kuu/gi,     /[くク][うウー]/g,          '\u0c95\u0cc2'            ],
+      [/ke/gi,      /[けケ]/g,                  '\u0c95\u0cc6'            ],
+      [/kee/gi,     /[けケ][えエー]/g,          '\u0c95\u0cc7'            ],
+      [/ko/gi,      /[こコ]/g,                  '\u0c95\u0ccc'            ],
+      [/ko[ou]/gi,  /[こコ][おオうウー]/g,      '\u0c95\u0cca'            ],
+      // Kya
+      [/kya/gi,     /きゃ|キャ/g,               '\u0c95\u0ccd\u0caf'      ],
+      [/kyaa/gi,    /(きゃ|キャ)[あアー]/g,     '\u0c95\u0ccd\u0caf\u0cbe'],
+      [/kyu/gi,     /きゅ|キュ/g,               '\u0c95\u0ccd\u0caf\u0cc1'],
+      [/kyuu/gi,    /(きゅ|キュ)[うウー]/g,     '\u0c95\u0ccd\u0caf\u0cc2'],
+      [/kyo/gi,     /きょ|キョ/g,               '\u0c95\u0ccd\u0caf\u0ccc'],
+      [/kyo[ou]/gi, /(きょ|キョ)[おオうウー]/g, '\u0c95\u0ccd\u0caf\u0cca'],
+      // Ga
+      ['ಗ', '\u0c97'],
+      ['ಗಾ', '\u0c97\u0cbe'],
+      ['ಗಿ', '\u0c97\u0cbf'],
+      ['ಗೀ', '\u0c97\u0cc0'],
+      ['ಗು', '\u0c97\u0cc1'],
+      ['ಗೂ', '\u0c97\u0cc2'],
+      ['ಗೆ', '\u0c97\u0cc6'],
+      ['ಗೇ', '\u0c97\u0cc7'],
+      ['ಗೌ', '\u0c97\u0ccc'],
+      ['ಗೊ', '\u0c97\u0cca'],
+      // Gya
+      ['ಗ್ಯ', '\u0c97\u0ccd\u0caf'],
+      ['ಗ್ಯಾ', '\u0c97\u0ccd\u0caf\u0cbe'],
+      ['ಗ್ಯು', '\u0c97\u0ccd\u0caf\u0cc1'],
+      ['ಗ್ಯೂ', '\u0c97\u0ccd\u0caf\u0cc2'],
+      ['ಗ್ಯೌ', '\u0c97\u0ccd\u0caf\u0ccc'],
+      ['ಗ್ಯೊ', '\u0c97\u0ccd\u0caf\u0cca'],
+      ['ಸ', '\u0cb8'],
+      ['ಸಾ', '\u0cb8\u0cbe'],
+      ['ಸಿ', '\u0cb8\u0cbf'],
+      ['ಸೀ', '\u0cb8\u0cc0'],
+      ['ಸು', '\u0cb8\u0cc1'],
+      ['ಸೂ', '\u0cb8\u0cc2'],
+      ['ಸೆ', '\u0cb8\u0cc6'],
+      ['ಸೇ', '\u0cb8\u0cc7'],
+      ['ಸೌ', '\u0cb8\u0ccc'],
+      ['ಸೊ', '\u0cb8\u0cca'],
+      ['ಸ್ಯ', '\u0cb8\u0ccd\u0caf'],
+      ['ಸ್ಯಾ', '\u0cb8\u0ccd\u0caf\u0cbe'],
+      ['ಸ್ಯು', '\u0cb8\u0ccd\u0caf\u0cc1'],
+      ['ಸ್ಯೂ', '\u0cb8\u0ccd\u0caf\u0cc2'],
+      ['ಸ್ಯೌ', '\u0cb8\u0ccd\u0caf\u0ccc'],
+      ['ಸ್ಯೊ', '\u0cb8\u0ccd\u0caf\u0cca'],
+      ['ಶ²', '\u0cb6\u00b2'],
+      ['ಶಾ', '\u0cb6\u0cbe'],
+      ['ಶಿ', '\u0cb6\u0cbf'],
+      ['ಶೀ', '\u0cb6\u0cc0'],
+      ['ಶು', '\u0cb6\u0cc1'],
+      ['ಶೂ', '\u0cb6\u0cc2'],
+      ['ಶೆ', '\u0cb6\u0cc6'],
+      ['ಶೇ', '\u0cb6\u0cc7'],
+      ['ಶೌ', '\u0cb6\u0ccc'],
+      ['ಶೊ', '\u0cb6\u0cca'],
+      ['ಶ್ಯ', '\u0cb6\u0ccd\u0caf'],
+      ['ಶ್ಯಾ', '\u0cb6\u0ccd\u0caf\u0cbe'],
+      ['ಶ್ಯು', '\u0cb6\u0ccd\u0caf\u0cc1'],
+      ['ಶ್ಯೂ', '\u0cb6\u0ccd\u0caf\u0cc2'],
+      ['ಶ್ಯೌ', '\u0cb6\u0ccd\u0caf\u0ccc'],
+      ['ಶ್ಯೊ', '\u0cb6\u0ccd\u0caf\u0cca'],
+      ['ತ', '\u0ca4'],
+      ['ತಾ', '\u0ca4\u0cbe'],
+      ['ತಿ', '\u0ca4\u0cbf'],
+      ['ತೀ', '\u0ca4\u0cc0'],
+      ['ತು', '\u0ca4\u0cc1'],
+      ['ತೂ', '\u0ca4\u0cc2'],
+      ['ತೆ', '\u0ca4\u0cc6'],
+      ['ತೇ', '\u0ca4\u0cc7'],
+      ['ತೌ', '\u0ca4\u0ccc'],
+      ['ತೊ', '\u0ca4\u0cca'],
+      ['ತ್ಯ', '\u0ca4\u0ccd\u0caf'],
+      ['ತ್ಯಾ', '\u0ca4\u0ccd\u0caf\u0cbe'],
+      ['ತ್ಯು', '\u0ca4\u0ccd\u0caf\u0cc1'],
+      ['ತ್ಯೂ', '\u0ca4\u0ccd\u0caf\u0cc2'],
+      ['ತ್ಯೌ', '\u0ca4\u0ccd\u0caf\u0ccc'],
+      ['ತ್ಯೊ', '\u0ca4\u0ccd\u0caf\u0cca'],
+      ['ದ', '\u0ca6'],
+      ['ದಾ', '\u0ca6\u0cbe'],
+      ['ದಿ', '\u0ca6\u0cbf'],
+      ['ದೀ', '\u0ca6\u0cc0'],
+      ['ದು', '\u0ca6\u0cc1'],
+      ['ದೂ', '\u0ca6\u0cc2'],
+      ['ದೆ', '\u0ca6\u0cc6'],
+      ['ದೇ', '\u0ca6\u0cc7'],
+      ['ದೌ', '\u0ca6\u0ccc'],
+      ['ದೊ', '\u0ca6\u0cca'],
+      ['ನ', '\u0ca8'],
+      ['ನಾ', '\u0ca8\u0cbe'],
+      ['ನಿ', '\u0ca8\u0cbf'],
+      ['ನೀ', '\u0ca8\u0cc0'],
+      ['ನು', '\u0ca8\u0cc1'],
+      ['ನೂ', '\u0ca8\u0cc2'],
+      ['ನೆ', '\u0ca8\u0cc6'],
+      ['ನೇ', '\u0ca8\u0cc7'],
+      ['ನೌ', '\u0ca8\u0ccc'],
+      ['ನೊ', '\u0ca8\u0cca'],
+      ['ನ್ಯ', '\u0ca8\u0ccd\u0caf'],
+      ['ನ್ಯಾ', '\u0ca8\u0ccd\u0caf\u0cbe'],
+      ['ನ್ಯು', '\u0ca8\u0ccd\u0caf\u0cc1'],
+      ['ನ್ಯೂ', '\u0ca8\u0ccd\u0caf\u0cc2'],
+      ['ನ್ಯೌ', '\u0ca8\u0ccd\u0caf\u0ccc'],
+      ['ನ್ಯೊ', '\u0ca8\u0ccd\u0caf\u0cca'],
+      ['ಬ³', '\u0cac\u00b3'],
+      ['ಬಾ', '\u0cac\u0cbe'],
+      ['ಬಿ', '\u0cac\u0cbf'],
+      ['ಬೀ', '\u0cac\u0cc0'],
+      ['ಬು', '\u0cac\u0cc1'],
+      ['ಬೂ', '\u0cac\u0cc2'],
+      ['ಬೆ', '\u0cac\u0cc6'],
+      ['ಬೇ', '\u0cac\u0cc7'],
+      ['ಬೌ', '\u0cac\u0ccc'],
+      ['ಬೊ', '\u0cac\u0cca'],
+      ['ಬ್ಯ', '\u0cac\u0ccd\u0caf'],
+      ['ಬ್ಯಾ', '\u0cac\u0ccd\u0caf\u0cbe'],
+      ['ಬ್ಯು', '\u0cac\u0ccd\u0caf\u0cc1'],
+      ['ಬ್ಯೂ', '\u0cac\u0ccd\u0caf\u0cc2'],
+      ['ಬ್ಯೌ', '\u0cac\u0ccd\u0caf\u0ccc'],
+      ['ಬ್ಯೊ', '\u0cac\u0ccd\u0caf\u0cca'],
+      ['ಭ', '\u0cad'],
+      ['ಭಾ', '\u0cad\u0cbe'],
+      ['ಭಿ', '\u0cad\u0cbf'],
+      ['ಭೀ', '\u0cad\u0cc0'],
+      ['ಭು', '\u0cad\u0cc1'],
+      ['ಭೂ', '\u0cad\u0cc2'],
+      ['ಭೆ', '\u0cad\u0cc6'],
+      ['ಭೇ', '\u0cad\u0cc7'],
+      ['ಭೌ', '\u0cad\u0ccc'],
+      ['ಭೊ', '\u0cad\u0cca'],
+      ['ಭ್ಯ', '\u0cad\u0ccd\u0caf'],
+      ['ಭ್ಯಾ', '\u0cad\u0ccd\u0caf\u0cbe'],
+      ['ಭ್ಯು', '\u0cad\u0ccd\u0caf\u0cc1'],
+      ['ಭ್ಯೂ', '\u0cad\u0ccd\u0caf\u0cc2'],
+      ['ಭ್ಯೌ', '\u0cad\u0ccd\u0caf\u0ccc'],
+      ['ಭ್ಯೊ', '\u0cad\u0ccd\u0caf\u0cca'],
+      ['ಪ', '\u0caa'],
+      ['ಪಾ', '\u0caa\u0cbe'],
+      ['ಪಿ', '\u0caa\u0cbf'],
+      ['ಪೀ', '\u0caa\u0cc0'],
+      ['ಪು', '\u0caa\u0cc1'],
+      ['ಪೂ', '\u0caa\u0cc2'],
+      ['ಪೆ', '\u0caa\u0cc6'],
+      ['ಪೇ', '\u0caa\u0cc7'],
+      ['ಪೌ', '\u0caa\u0ccc'],
+      ['ಪೊ', '\u0caa\u0cca'],
+      ['ಪ್ಯ', '\u0caa\u0ccd\u0caf'],
+      ['ಪ್ಯಾ', '\u0caa\u0ccd\u0caf\u0cbe'],
+      ['ಪ್ಯು', '\u0caa\u0ccd\u0caf\u0cc1'],
+      ['ಪ್ಯೂ', '\u0caa\u0ccd\u0caf\u0cc2'],
+      ['ಪ್ಯೌ', '\u0caa\u0ccd\u0caf\u0ccc'],
+      ['ಪ್ಯೊ', '\u0caa\u0ccd\u0caf\u0cca'],
+      ['ಮ', '\u0cae'],
+      ['ಮಾ', '\u0cae\u0cbe'],
+      ['ಮಿ', '\u0cae\u0cbf'],
+      ['ಮೀ', '\u0cae\u0cc0'],
+      ['ಮು', '\u0cae\u0cc1'],
+      ['ಮೂ', '\u0cae\u0cc2'],
+      ['ಮೆ', '\u0cae\u0cc6'],
+      ['ಮೇ', '\u0cae\u0cc7'],
+      ['ಮೌ', '\u0cae\u0ccc'],
+      ['ಮೊ', '\u0cae\u0cca'],
+      ['ಮ್ಯ', '\u0cae\u0ccd\u0caf'],
+      ['ಮ್ಯಾ', '\u0cae\u0ccd\u0caf\u0cbe'],
+      ['ಮ್ಯು', '\u0cae\u0ccd\u0caf\u0cc1'],
+      ['ಮ್ಯೂ', '\u0cae\u0ccd\u0caf\u0cc2'],
+      ['ಮ್ಯೌ', '\u0cae\u0ccd\u0caf\u0ccc'],
+      ['ಮ್ಯೊ', '\u0cae\u0ccd\u0caf\u0cca'],
+      ['ಯ', '\u0caf'],
+      ['ಯಾ', '\u0caf\u0cbe'],
+      ['ಯು', '\u0caf\u0cc1'],
+      ['ಯೂ', '\u0caf\u0cc2'],
+      ['ಯೌ', '\u0caf\u0ccc'],
+      ['ಯೊ', '\u0caf\u0cca'],
+      ['ರ', '\u0cb0'],
+      ['ರಾ', '\u0cb0\u0cbe'],
+      ['ರಿ', '\u0cb0\u0cbf'],
+      ['ರೀ', '\u0cb0\u0cc0'],
+      ['ರು', '\u0cb0\u0cc1'],
+      ['ರೂ', '\u0cb0\u0cc2'],
+      ['ರೆ', '\u0cb0\u0cc6'],
+      ['ರೇ', '\u0cb0\u0cc7'],
+      ['ರೌ', '\u0cb0\u0ccc'],
+      ['ರೊ', '\u0cb0\u0cca'],
+      ['ಠ್ಯ⁴', '\u0ca0\u0ccd\u0caf\u2074'],
+      ['ಠ್ಯಾ', '\u0ca0\u0ccd\u0caf\u0cbe'],
+      ['ಠ್ಯು', '\u0ca0\u0ccd\u0caf\u0cc1'],
+      ['ಠ್ಯೂ', '\u0ca0\u0ccd\u0caf\u0cc2'],
+      ['ಠ್ಯೌ', '\u0ca0\u0ccd\u0caf\u0ccc'],
+      ['ಠ್ಯೊ', '\u0ca0\u0ccd\u0caf\u0cca'],
+      ['ವ', '\u0cb5'],
+      ['ವಾ', '\u0cb5\u0cbe'],
+      ['ವಿ', '\u0cb5\u0cbf'],
+      ['ವೀ', '\u0cb5\u0cc0'],
+      ['ವೆ', '\u0cb5\u0cc6'],
+      ['ವೇ', '\u0cb5\u0cc7'],
+      ['ವೌ', '\u0cb5\u0ccc'],
+      ['ವೊ', '\u0cb5\u0cca'],
+    ].reverse(),
     LILIL = [
       ['yi',  'wan',     '𛅰'],['ži',  'tenpo',  '𛆸'],['nyo', 'kiwen',   '𛈕'],
       ['na',  'suno',    '𛅱'],['zi',  'lon',    '𛆹'],['sa',  'neja',    '𛈗'],
@@ -226,6 +455,37 @@
     ];
   </script>
   <style>
+    a { text-decoration: underline; }
+    h2 a { text-decoration: none;}
+    a.higas, a.higas:visited, #higas a, #higas a:visited, .higas-output 
+      { color:var(--color-cutie); }
+    #higas input:focus, #higas textarea:focus
+      { border-color: var(--color-cutie); }
+    a.lilhi, a.lilhi:visited, #lilhi a, #lilhi a:visited, .lilhi-output,
+    a.lilil, a.lilil:visited, #lilil a, #lilil a:visited, .lilil-output
+      { color:var(--color-reeds); }
+    #lilhi input:focus, #lilhi textarea:focus,
+    #lilil input:focus, #lilil textarea:focus
+      { border-color: var(--color-reeds); }
+    a.magic, a.magic:visited, #magic a, #magic a:visited, .magic-output
+      { color:var(--color-lilac); }
+    #magic input:focus, #magic textarea:focus
+      { border-color: var(--color-lilac); }
+    a.osten, a.osten:visited, #osten a, #osten a:visited, .osten-output,
+    a.numer, a.numer:visited, #numer a, #numer a:visited, .numer-output
+      { color:var(--color-foamy); }
+    #osten input:focus, #osten textarea:focus,
+    #numer input:focus, #numer textarea:focus
+      { border-color: var(--color-foamy); }
+    a.sadun, a.sadun:visited, #sadun a, #sadun a:visited, .sadun-output 
+      { color:var(--color-wines); }
+    #sadun input:focus, #sadun textarea:focus
+      { border-color: var(--color-wines); }
+    a.siget, a.siget:visited, #siget a, #siget a:visited, .siget-output
+      { color:var(--color-plush); }
+    #siget input:focus, #siget textarea:focus
+      { border-color: var(--color-plush); }
+    div.article {font-variant-emoji: unicode;}
     div.article table.higas-chart { border: 1px solid var(--color-lotus); }
     .higas-chart thead { border-bottom: 1px solid var(--color-lotus); }
     .higas-chart thead td { padding-top: 6px; width: 43px; }
@@ -238,6 +498,10 @@
       border-right: 1px solid var(--color-lotus);
     }
     .higas-chart td:nth-child(2) { padding-left: 6px; }
+    div:target { background: initial; }
+    img.left { float: left; margin: 9px 12px 9px 0; }
+    img.right { float: right; margin: 9px 0 9px 12px; }
+    ol { padding-left: 2rem; }
   </style>
 </head>
 <body>
@@ -258,20 +522,61 @@
     ▄██▄█▀  ▄▀█▄██▄██ ▀██▄▄██▀▄██▄██▄██▄▀█▄▄▄▄█▀  ▄▀█▄██▄██▄▀███▀▄█▀  █▄▄██▀    
     </pre>
     <p>
-      - <a href="#higas">higasi</a><br/>
-      - <a href="#lilhi">lilhian</a><br/>
-      - <a href="#lilil">liturgical lilhian</a><br/>
-      - <a href="#magic">magic script</a><br/>
-      - <a href="#osten">østendūnska</a><br/>
-      - <a href="#numer">østendūnska numerals</a><br/>
-      - <a href="#sadun">sadunayitu</a><br/>
-      - <a href="#siget">sigetvilági</a><br/>
+      table of contents:
+      <ul>
+        <li><a href="#higas" class="higas">🌸&#xFE0E; higasi</a></li>
+        <li><a href="#lilhi" class="lilhi">🐪&#xFE0E; lilhian</a></li>
+        <li><a href="#lilil" class="lilil">
+          📖&#xFE0E; liturgical lilhian</a></li>
+        <li><a href="#magic" class="magic">🌟&#xFE0E; magic script</a></li>
+        <li><a href="#osten" class="osten">🏯&#xFE0E; østendūnska</a></li>
+        <li><a href="#numer" class="numer">
+          💯&#xFE0E; østendūnska numerals</a></li>
+        <li><a href="#sadun" class="sadun">💢&#xFE0E; sadunayitu</a></li>
+        <li><a href="#siget" class="siget">🌴&#xFE0E; sigetvilági</a></li>
+      </ul>
     </p>
   </div>
   <div class="article" id="higas">
-    <h2>higasi</h2>
+    <h2><a href="#higas">🌸&#xFE0E;</a> higasi [WIP]</h2>
     <p>
-      WIP
+      higasi (<span class="kannada">ಬಿಗಸಿ</span>)
+      is the primary language of the peninsular country of
+      higasi oka (<span class="kannada">ಬಿಗಸಿ ಒಕ</span>),
+      whose territory extends to a number of islands to the northeast of the 
+      østendūnska imperium. the language, culture, and much of the geography of
+      <img class="left" src="/assets/img/ewb/higas.png"/>
+      higasi oka is based on our world's
+      <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">japan</a>;
+      however, the writing system is instead that of <a target="_blank"
+      href="https://en.wikipedia.org/wiki/Kannada">kannada</a>, from the 
+      indian state of <a href="https://en.wikipedia.org/wiki/Karnataka" 
+      target="_blank">karnataka</a>.
+    </p>
+    <p>
+      while this is an instance of using a real-world language to save effort on
+      constructing languages, some alterations are still made to give higasi its
+      own identity apart from <a href="https://en.wikipedia.org/wiki/Japanese" 
+      target="_blank">japanese</a>. first, the pronunciation is based on the
+      underlying phonemes, rather than dialectical phonetics; e.g. ‹ちゃ›
+      is pronounced as /tja/ rather than the [tɕa] realized via yod-coalescence 
+      in the "standard" tokyo dialect. secondly, <a target="_blank"
+      href="https://en.wikipedia.org/wiki/Kanji">kanji</a> are, whenever 
+      possible, read as their <a href="https://en.wikipedia.org/wiki/Kun'yomi" 
+      target="_blank">kun'yomi</a>; e.g. the compound ｢絶対｣ would normally be 
+      read as ｢ぜったい｣ (zettai) based on its <a target="_blank"
+      href="https://en.wikipedia.org/wiki/On'yomi">on'yomi</a>, but here it's 
+      read as ｢たあいて｣ (taaite). finally, as the stories in this world are set
+      in eras approximately equivalent to the 17th to early 20th centuries,
+      historic vocabulary is preferable... though that could just be my late 
+      onset 中二病 (here read as ｢なかふたや｣, where the ｢ふ｣ is obviously 
+      pronounced as /hu/ rather than [ɸɯ]).
+    </p>
+    <p>
+      as for the mapping to the <a target="_blank"
+      href="https://en.wikipedia.org/wiki/Kannada_script">kannada script</a>, 
+      this is relatively straightforward. there were a few missing phonemes, of course, but most deviations from the phonetics of kannada were done for 
+      the sake of aesthetics:
     </p>
     <table class="kannada higas-chart">
       <thead>
@@ -415,15 +720,247 @@
         <td></td><td></td><td></td><td></td><td></td>
       </tr>
     </table>
+    <ol>
+      <li>
+        the diacritic form of ‹<span class="kannada">ಒ</span>› (o) is a bit 
+        overbearing, e.g.  '<span class="kannada">ಕೊ</span>' (ko), so 
+        it is substituted with ‹<span class="kannada">ಔ</span>› (au), e.g. 
+        '<span class="kannada">ಕೌ</span>' (kau), and is instead used 
+        as the diacritic form of ‹<span class="kannada">ಓ</span>› (ō), e.g. 
+        '<span class="kannada">ಕೊ</span>' (kō).
+      </li>
+      <li>
+        kannada lacks the /z/ consonant, so ‹<span class="kannada">ಶ</span>› 
+        (śa) is used.
+      </li>
+      <li>
+        for consistent styling, the character ‹<span class="kannada">ಹ</span>› 
+        (ha) is substituted with ‹<span class="kannada">ಬ</span>› (ba) and 
+        ‹<span class="kannada">ಭ</span>› (bha) is then used for /ba/.
+      </li>
+      <li>
+        compound forms of ‹<span class="kannada">ರ</span>› (ra) with
+        ‹<span class="kannada">ಯ</span>› (ya) render incorrectly (in noto 
+        fonts), so it is substituted with ‹<span class="kannada">ಠ</span>› 
+        (ṭha), e.g. '<span class="kannada">ಠ್ಯ</span>.' this also gives and eye to '<span class="kannada">ಠ್ಯೂ</span>' (ryuu), so it's cool.
+      </li>
+      <li>
+        to clarify ‹ん› (n) as being without a vowel,
+        ‹<span class="kannada">ಙ</span>› (ṅa) is used. alternatively, a
+        <a href="https://en.wikipedia.org/wiki/Virama" target="_blank">
+        virama</a> could have been used, i.e. ‹<span class="kannada">ನ್</span>›,
+        but using a unique base grapheme better reflects its unique nature as a
+        kana.
+      </li>
+    </ol>
+    <table>
+      <tr>
+        <td style="width:50%">
+          input<br/>
+          <textarea type="text" class="higas-input"></textarea><br/>
+          japanese<br/>
+          <textarea type="text" class="higjp-input"></textarea>
+        </td>
+        <td>
+          higasi<br/>
+          <div class="higas-output">&nbsp;</div>
+        </td>
+      </tr>
+    </table>
+    <p>
+      given the nature of kannada as an abugida, extending cozette to render it
+      would be non-trivial. therefore, and additional font has been added here:
+      <a href="https://aksharatypestudio.in/fonts/bengaluru/" target="_blank">
+      bengaluru</a> from <a href="https://aksharatypestudio.in/" 
+      target="_blank">akshara type studio</a>. for a font with similar 
+      proportions but without the bitmap-like style, check out ek type's
+      <a href="https://fonts.google.com/specimen/Anek+Kannada" target="_blank">
+      anek kannada</a>.
+    </p>
+    <p>
+      fonts (alphabetical):
+      <ul>
+        <li>
+          <a href="https://fonts.adobe.com/fonts/adobe-kannada" target="_blank">
+          adobe kannada</a> (adobe, erin mclaughlin, robert slimbach)
+        </li>
+        <li>
+          <a href="https://fonts.google.com/specimen/Akaya+Kanadaka" 
+          target="_blank">akaya kanadaka</a> (vaishnavi murthy, juan luis 
+          blanco) [<a href="https://github.com/vaishnavimurthy/Akaya-Kanadaka"
+          target="_blank">source</a>]
+        </li>
+        <li>
+          <a href="https://type.arunck.com/fonts/anchu" target="_blank">
+          anchu</a> (arun ck) [<a href="https://github.com/imarunck/Anchu" 
+          target="_blank">source</a>]
+        </li>
+        <li>
+          <a href="https://ektype.in/anek-kannada.html" target="_blank">anek 
+          kannada</a> (ektype)
+        </li>
+        <li>
+          <a href="https://ektype.in/baloo-tamma.html" target="_blank">baloo 
+          tamma 2</a> (ektype) [<a href="https://github.com/EkType/Baloo" 
+          target="_blank">source</a>]
+        </li>
+        <li>
+          <a href="https://aksharatypestudio.in/fonts/bandipura/" 
+          target="_blank">bandipura</a> (akshara type studio, manjunatha r)
+        </li>
+        <li>
+          <a href="https://aksharatypestudio.in/fonts/bengaluru/" 
+          target="_blank">bengaluru</a> and
+          <a href="https://aksharatypestudio.in/fonts/bengaluru/led" 
+          target="_blank">bengaluru led</a> (akshara type studio, manjunatha r)
+        </li>
+        <li>
+          <a href="https://fonts.google.com/specimen/Benne" 
+          target="_blank">benne</a> (john harrington) [<a target="_blank"
+          href="https://github.com/ShandonType/Benne">source</a>]
+        </li>
+        <li>
+          <a href="https://aksharatypestudio.in/fonts/chikkamagaluru/" 
+          target="_blank">chikkamagaluru</a> (akshara type studio, manjunatha r)
+        </li>
+        <li>
+          <a href="https://ektype.in/ek-kannada.html" target="_blank">ek 
+          kannada</a> (ektype)
+        </li>
+        <li>
+          <a href="https://github.com/arivandavk/Gubbi" target="_blank">
+          gubbi</a> [kedage fork] (arivanda)
+        </li>
+        <li>
+          <a href="https://fonts.google.com/specimen/Hubballi" 
+          target="_blank">hubbali</a> (erin mclaughlin) [<a target="_blank"
+          href="https://github.com/erinmclaughlin/Hubballi">source</a>]
+        </li>
+        <li>
+          <a href="https://github.com/arivandavk/Navilu" target="_blank">
+          navilu</a> [mallige fork] (arivanda)
+        </li>
+        <li>
+          nirmala <a href="https://fonts.adobe.com/fonts/nirmala-text" 
+          target="_blank">text</a> and <a target="_blank"
+          href="https://fonts.adobe.com/fonts/nirmala-ui">ui</a> (microsoft)
+        </li>
+        <li>
+          <a href="https://github.com/kishorechan/nishchaya" target="_blank">
+          nishchaya</a> (kishorechan)
+        </li>
+        <li>
+          noto <a href="https://fonts.google.com/specimen/Noto+Sans+Kannada"
+          target="_blank">sans</a> and
+          <a href="https://fonts.google.com/specimen/Noto+Serif+Kannada"
+          target="_blank">serif</a> kannada (google)
+        </li>
+        <li>
+          <a href="https://nudityping.com/kannada-fonts" target="_blank">
+          nudi fonts</a> (kannada ganaka parishat); see:
+          <a href="https://hindityping.info/download/kannada-fonts-nudi" 
+          target="_blank">hindityping.info</a> or
+          <a href="https://kannada.indiatyping.com/index.php/download-kannada-font/kannada-nudi-fonts">
+          indiatyping.com</a>
+        </li>
+        <li>
+          <a href="https://fonts.google.com/specimen/Padyakke+Expanded+One" 
+          target="_blank">padyakke expanded one</a> (james puckett)
+        </li>
+        <li>
+          <a href="https://ektype.in/sama-kannada.html" target="_blank">sama 
+          kannada</a> (ektype)
+        </li>
+        <li>
+          <a href="https://type.arunck.com/fonts/sriraju" 
+          target="_blank">sriraju</a> (nagalingappa badiger, sugata 
+          srinivasaraju) [<a
+          href="https://sugataraju.blogspot.com/2019/01/free-download-sriraju-type-family-with.html" 
+          target="_blank">original</a>]
+        </li>
+        <li>
+          <a href="https://fonts.google.com/specimen/Tiro+Kannada" 
+          target="_blank">tiro kannada</a> (tiro typeworks, john hudson, fiona 
+          ross, kaya słojewska)
+        </li>
+        <li>
+          <a href="https://fonts.adobe.com/fonts/tunga" target="_blank">
+          tunga</a> (microsoft, r k joshi, vinay saynekar)
+        </li>
+      </ul>
+    </p>
+    <p>
+      tools:
+      <ul>
+        <li>
+          <a href="//aksharatypestudio.in/tools/english-to-kannada-typing/" 
+          target="_blank">parivartaka</a> - english to kannada typing (alshara 
+          type studio)
+        </li>
+        <li>
+          <a href="https://arivandavk.in/sanka" target="_blank">sanka</a> and
+          <a href="https://arivandavk.in/ascii2unicode" 
+          target="_blank">ascii2unicode</a> - ascii format (nudi, baraha) to 
+          unicode (arivanda)
+        </li>
+      </ul>
+    </p>
   </div>
   <div class="article" id="lilhi">
-    <h2>lilhian</h2>
+    <h2><a href="#lilhi">🐪&#xFE0E;</a> lilhian</h2>
     <p>
       WIP
     </p>
+    <p>
+      fonts (alphabetical):
+      <ul>
+        <li>m202 and m203 (mojikyo); see: 
+          <a href="//tinyapps.org/blog/201002130700_mojikyo_character_map.html" 
+          target="_blank">tinyapps.org</a> and
+          <a href="https://www.babelstone.co.uk/Unicode/mojikyo_doc.html"
+          target="_blank">babelstone</a>
+        </li>
+        <li>
+          <a href="http://www.ccamc.co/fonts_tangut.php" target="_blank">
+          mojikyo  tangut</a> (mojikyo, ccamc.co)
+        </li>
+        <li>
+          <a href="http://www.ccamc.co/fonts_tangut.php" target="_blank">new 
+          tangut std</a> (ccamc.co)
+        </li>
+        <li>
+          <a href="https://fonts.google.com/noto/specimen/Noto+Serif+Tangut" 
+          target="_blank">noto serif tangut</a> (google)
+        </li>
+        <li>
+          <a href="http://www.ccamc.co/fonts_tangut.php" target="_blank">tangut 
+          n4694</a> (jing yongshi & jia changye, ccamc.co)
+        </li>
+        <li>
+          <a href="http://www.ccamc.co/fonts_tangut.php" target="_blank">tangut 
+          twu</a> (academia sinica, ccamc.co)
+        </li>
+        <li>
+          <a href="https://www.babelstone.co.uk/Fonts/Wenhai.html"
+          target="_blank">tangut wenhai</a> and
+          <a href="https://www.babelstone.co.uk/Fonts/TangutScan.html"
+          target="_blank">scan fonts</a> (babelstone)
+        </li>
+        <li>
+          <a href="https://www.babelstone.co.uk/Fonts/Yinchuan.html" 
+          target="_blank">tangut yinchuan</a> (prof. jing yongshi; andrew west, 
+          et. al)
+        </li>
+        <li>
+          <a href="http://yedict.com/download/" target="_blank">th-feon-b</a> 
+          and <a href="http://yedict.com/download/" target="_blank">th-tshyn-p1
+          </a> (yedict)
+        </li>
+      </ul>
+    </p>
   </div>
   <div class="article" id="lilil">
-    <h2>liturgical lilhian</h2>
+    <h2><a href="#lilil">📖&#xFE0E;</a> liturgical lilhian</h2>
     <p>
       WIP
     </p>
@@ -501,7 +1038,7 @@
     </table>
   </div>
   <div class="article" id="magic">
-    <h2>magic script</h2>
+    <h2><a href="#magic">🌟&#xFE0E;</a> magic script</h2>
     <p>
       WIP
     </p>
@@ -550,7 +1087,7 @@
     </table>
   </div>
   <div class="article" id="osten">
-    <h2>østendūnska</h2>
+    <h2><a href="#osten">🏯&#xFE0E;</a> østendūnska</h2>
     <p>
       WIP
     </p>
@@ -588,7 +1125,7 @@
     </table>
   </div>
   <div class="article" id="numer">
-    <h2>østendunska numerals</h2>
+    <h2><a href="#numer">💯&#xFE0E;</a> østendunska numerals</h2>
     <p>
       in the realm of wydheth, the østendūna imperium reigns over the heart of a
       vast and mountainous continent. while the imperium is home to many 
@@ -643,7 +1180,7 @@
     </p>
   </div>
   <div class="article" id="sadun">
-    <h2>sadunayitu</h2>
+    <h2><a href="#sadun">💢&#xFE0E;</a> sadunayitu</h2>
     <p>
       WIP
     </p>
@@ -677,7 +1214,7 @@
     </table>
   </div>
   <div class="article" id="siget">
-    <h2>sigetvilági</h2>
+    <h2><a href="#siget">🌴&#xFE0E;</a> sigetvilági</h2>
     <p>
       WIP
     </p>

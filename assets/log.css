@@ -46,6 +46,8 @@
   --color-lilac: #b2adcc; /* NEW! */
 
   --color-black-alt: #161718;
+
+  --color-cutie: #ffb0b0; /* NONSTANDARD! */
 }
 
 /*----- elements -------------------------------------------------------------*/
@@ -103,6 +105,12 @@ input:focus, textarea:focus {
   border-color: var(--color-candy);
   outline: none;
 }
+p {
+  margin: 1.5rem 0;
+}
+p + ul {
+  margin-top: -1.5rem;
+}
 pre {
   font-family: 'Cozette', monospace;
   line-height: 13px;
@@ -123,6 +131,10 @@ thead, thead tr, thead tr th {
 }
 tr:nth-child(even) {
   background: var(--color-black-alt);
+}
+ul {
+  list-style: '- ';
+  padding-left: 12px;
 }
 
 /*----- classes --------------------------------------------------------------*/
