@@ -126,7 +126,7 @@ p + ul {
   margin-top: -1.5rem;
 }
 pre {
-  font-family: 'Cozette', monospace;
+  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'Bengaluru', monospace;
   line-height: 13px;
   margin: 0;
 }
@@ -415,12 +415,11 @@ pre[class*='language-'] {
   line-height: 1.5;
   margin: 0.5em 0;
   overflow: auto;
-  padding: 1em;
+  padding: 0.5em;
   background: var(--color-black-alt);
 }
 :not(pre) > code {
   padding: 0.1em 0.5em;
-  border-radius: 0.5em;
   color: var(--color-lotus);
   background: var(--color-black-alt);
 }
@@ -461,7 +460,6 @@ pre[class*='language-'] {
 .language-css .token.string,
 .style .token.string {
   color: var(--color-coral);
-  background: var(--color-black-alt);
 }
 .token.atrule,
 .token.attr-value,
@@ -485,4 +483,9 @@ pre[class*='language-'] {
 }
 .token.entity {
   cursor: help;
+}
+
+div.article pre[class*='language-'] {
+  background: initial;
+  border: 1px solid var(--color-lotus);
 }
