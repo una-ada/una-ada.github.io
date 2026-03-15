@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>cozette-(u)csur</title>
+  <title>cozette-(u)csur glyph map</title>
   <link rel="stylesheet" href="/assets/log.css">
   <link rel="shortcut icon" type="image/png" href="/una-theme-icons/16px/etc/heart_kitty.png" />
   <meta charset="utf-8" />
@@ -401,7 +401,27 @@
 
 <body>
   <div class="article">
-    <h2>cozette-(u)csur</h2>
+    <pre>
+                       █▄ █▄             ▄█       █▄                         
+                      ▄██▄██▄           ██         ██                   ▄    
+  ▄███▀▄███▄▀▀▀██▄█▀█▄ ██ ██ ▄█▀█▄      ██  ██ ██  ██ ▄███▀ ▄██▀█ ██ ██ ████▄
+  ██   ██ ██  ▄█▀██▄█▀ ██ ██ ██▄█▀ ▀▀▀▀ ██  ██ ██  ██ ██    ▀███▄ ██ ██ ██   
+  ▀███▄▀███▀▄██▄▄▀█▄▄▄▄██▄██▄▀█▄▄▄   █▄ ██  ▀██▀█  ██ ▀███▄█▄▄██▀ ▀██▀█ █▀   
+                   ▄▄ ██             ██  ▀█ ▄     ▀▀           
+                ▄████ ██ ██ ██ ████▄ ████▄  ███▄███▄ ▄▀▀█▄ ████▄
+                ██ ██ ██ ██▄██ ██ ██ ██ ██  ██ ██ ██ ▄█▀██ ██ ██
+                ▀████ ██  ▀▀██ ████▀ ██ ██  ██ ██ ▀█ ▀█▄██ ████▀
+                   ██       ██ ██                          ██   
+                 ▀▀▀      ▀▀▀  ▀                           ▀    
+    </pre>
+    <p>
+      this page uses <a href="https://github.com/opentypejs/opentype.js" 
+      target="_blank">opentype.js</a> to scan 猫.dev's version of
+      <a href="/assets/fonts/CozetteVector.woff"
+      target="_blank">cozettevector.woff</a> (<a target="_blank"
+      href="https://github.com/una-ada/cozette-ucsur">cozette-(u)csur</a>) and
+      generates a table of all available glyphs.
+    </p>
     <table class="char-chart"></table>
   </div>
   <script>
@@ -416,7 +436,6 @@
             .reduce((s, i) => {
               let j = Number.parseInt(i, 16) * 16,
                 b = (UNIC2.find(k => k[1] <= j && j <= k[2]) || ['PUA'])[0];
-              // b == 'PUA' && console.log(i, j);
               if(!s.has(b)){
                 s.add(b);
                 output.appendChild(newElement('tr', '', {'class': 'section'}, [
