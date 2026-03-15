@@ -29,6 +29,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'GalmuriMono';
+  src: url('/assets/fonts/GalmuriMono11.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  /* Doesn't need size-adjust Galmuri 11 is 12px tall lol*/
+}
+@font-face {
   font-family: 'Bengaluru';
   src: url('/assets/fonts/ATSBengaluru-SquareRegular.woff2') format('woff2'),
     url('/assets/fonts/ATSBengaluru-SquareRegular.woff') format('woff');
@@ -75,10 +82,12 @@ body {
   line-height: 1.5;
   margin: 1em;
   min-width: 60em;
-  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'Bengaluru', monospace;
+  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono', 
+    'Bengaluru', monospace;
 }
 code {
-  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'Bengaluru', monospace;
+  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono',
+    'Bengaluru', monospace;
 }
 div:target {
   background: var(--color-olive);
@@ -126,12 +135,15 @@ p + ul {
   margin-top: -1.5rem;
 }
 pre {
-  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'Bengaluru', monospace;
+  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono',
+    'Bengaluru', monospace;
+  font-variant-emoji: unicode;
   line-height: 13px;
   margin: 0;
 }
 table {
   border-collapse: collapse;
+  font-size: 1em;
 }
 td {
   padding: 0 6px 0 0;
@@ -222,28 +234,6 @@ div.article img.right {
 div.article table {
   width: 100%;
 }
-div.article table[class*="-chart"] {
-  border: 1px solid var(--color-lotus);
-}
-div.article table[class*="-chart"] thead {
-  border-bottom: 1px solid var(--color-lotus);
-}
-div.article table[class*="-chart"] thead td {
-  padding-top: 0.5em;
-}
-div.article table[class*="-chart"] tr {
-  background: none;
-}
-div.article table[class*="-chart"] td {
-  padding: 0;
-}
-div.article table[class*="-chart"] td:first-child {
-  padding-left: 0.5em;
-  border-right: 1px solid var(--color-lotus);
-}
-div.article table[class*="-chart"] td:nth-child(2) {
-  padding-left: 0.5em;
-}
 div.project-blurb {
   display: flex;
 }
@@ -290,6 +280,32 @@ table.theme img {
 }
 table.tag-list {
   margin-bottom: 3em;
+}
+table[class*="-chart"] {
+  border: 1px solid var(--color-lotus);
+}
+table[class*="-chart"] thead,
+table[class*="-chart"] tr.section {
+  border: 1px solid var(--color-lotus);
+}
+table[class*="-chart"] thead td,
+table[class*="-chart"] thead th,
+table[class*="-chart"] tr.section td {
+  padding-top: 0.5em;
+  border: none !important;
+}
+table[class*="-chart"] tr {
+  background: none;
+}
+table[class*="-chart"] td {
+  padding: 0;
+}
+table[class*="-chart"] td:first-child {
+  padding-left: 0.5em;
+  border-right: 2px solid var(--color-lotus);
+}
+table[class*="-chart"] td:nth-child(2) {
+  padding-left: 0.5em;
 }
 td.date {
   text-align: right;
