@@ -4430,7 +4430,39 @@
           "aseprite",
           "javascript"
         ]
-      }
+      },
+      "15": [
+        {
+          "title": "cozette-(u)csur glyph map",
+          "project": "una fonts",
+          "link": {
+            "title":"猫.dev",
+            "url": "https://xn--z7x.dev/js/2/glyphs"
+          },
+          "tags": [
+            "programming",
+            "javascript",
+            "opentype_js",
+            "visual_studio_code"
+          ]
+        },
+        {
+          "title": "cozette-(u)csur v1.0.0",
+          "project": "una fonts",
+          "link": {
+            "title": "github",
+            "url": "https://github.com/una-ada/Cozette-UCSUR/releases/tag/v1.0.0"
+          },
+          "tags": [
+            "font",
+            "aseprite",
+            "fontforge",
+            "github",
+            "git",
+            "python"
+          ]
+        }
+      ]
     }
   }
 }
