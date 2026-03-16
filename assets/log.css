@@ -1,13 +1,21 @@
 /*----- fonts ----------------------------------------------------------------*/
 @font-face {
-  font-family: 'Cozette';
-  src: url('/assets/fonts/CozetteVector.woff2') format('woff2'),
-    url('/assets/fonts/CozetteVector.woff') format('woff');
+  font-family: 'CozetteUCSUR';
+  src: url('/assets/fonts/CozetteUCSURVector.woff2') format('woff2'),
+    url('/assets/fonts/CozetteUCSURVector.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   /* Cozette used to render just fine at 12px, but newer versions seem to 
      render better at 13px. Thus, it needs to be tricked into interpreting 12px 
      as 13px, thus the 108.33% scaling. */
+  size-adjust: 108.33%;
+}
+@font-face {
+  font-family: 'CozetteUCSUR';
+  src: url('/assets/fonts/CozetteUCSURVectorBold.woff2') format('woff2'),
+    url('/assets/fonts/CozetteUCSURVectorBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
   size-adjust: 108.33%;
 }
 @font-face {
@@ -82,11 +90,11 @@ body {
   line-height: 1.5;
   margin: 1em;
   min-width: 60em;
-  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono', 
+  font-family: 'CozetteUCSUR', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono', 
     'Bengaluru', monospace;
 }
 code {
-  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono',
+  font-family: 'CozetteUCSUR', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono',
     'Bengaluru', monospace;
 }
 div:target {
@@ -135,7 +143,7 @@ p + ul {
   margin-top: -1.5rem;
 }
 pre {
-  font-family: 'Cozette', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono',
+  font-family: 'CozetteUCSUR', 'ArkPixelJA', 'ArkPixelCN', 'GalmuriMono',
     'Bengaluru', monospace;
   font-variant-emoji: unicode;
   line-height: 13px;
@@ -264,7 +272,8 @@ img.tag-icon {
   height: 27em;
 }
 .kannada {
-  font-family: 'Bengaluru', 'Cozette', 'ArkPixelJA', 'ArkPixelCN', monospace;
+  font-family: 'Bengaluru', 'CozetteUCSUR', 'ArkPixelJA', 'ArkPixelCN', 
+    monospace;
 }
 table.changelog tr:nth-child(even) {
   background: none;

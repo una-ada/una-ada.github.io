@@ -417,8 +417,8 @@
     <p>
       this page uses <a href="https://github.com/opentypejs/opentype.js" 
       target="_blank">opentype.js</a> to scan 猫.dev's version of
-      <a href="/assets/fonts/CozetteVector.woff"
-      target="_blank">cozettevector.woff</a> (<a target="_blank"
+      <a href="/assets/fonts/CozetteUCSURVector.woff"
+      target="_blank">cozetteucsurvector.woff</a> (<a target="_blank"
       href="https://github.com/una-ada/cozette-ucsur">cozette-(u)csur</a>) and
       generates a table of all available glyphs.
     </p>
@@ -426,7 +426,7 @@
   </div>
   <script>
     let output = document.querySelector('.char-chart');
-    fetch('/assets/fonts/CozetteVector.woff')
+    fetch('/assets/fonts/CozetteUCSURVector.woff')
       .then(r => r.arrayBuffer())
       .then(d => 
         (g =>
