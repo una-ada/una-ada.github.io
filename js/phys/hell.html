@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>hell system</title>
+  <link rel="stylesheet" href="/assets/log.css">
+  <link rel="shortcut icon" type="image/png" href="/una-theme-icons/16px/etc/heart_kitty.png" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    * {
+      border: 0;
+      margin: 0px;
+      outline: 0;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      zoom: 1;
+    }
+    hitbox {
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    #nav {
+      position: fixed;
+      z-index: 100;
+    }
+    .moon {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+    }
+    .moon .shell {
+      border: 6px solid var(--color-lotus);
+      border-radius: 50%;
+      height: 0px;
+      position: absolute;
+      width: 0px;
+    }
+    .moon img {
+      height: 12px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 12px;
+    }
+    .moon#hell img {
+      height: 24px;
+      left: 0;
+      top: 0;
+      width: 24px;
+    }
+    .clutter {
+      border: 1px solid var(--color-candy);
+      position: fixed;
+    }
+  </style>
+  <script>
+    window.defHBox = `<svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 2 2"><circle cx="1" cy="1" r="1"/></svg>`;
+    const E_ = {
+      //	Startup
+      debug: !0,
+      running: !0,
+      loop() {
+        if (E_.running)
+          requestAnimationFrame(E_.loop);
+        E_.step = (function* (s) {
+          for (let i of s)
+            yield i;
+        })(E_.steps);
+        E_.step.next().value();
+      },
+      render() {
+        var focal = E_.phys.objects[0].position;
+        E_.display.position.x = focal.x
+          - (scale.space * window.innerWidth * 0.5);
+        E_.display.position.y = focal.y
+          - (scale.space * window.innerHeight * 0.5);
+        for (let o of E_.phys.objects) {
+          var r = o.element.getBoundingClientRect();
+          o.bounds = r;
+          o.element.style.left =
+            ~~(((o.position.x - E_.display.position.x) / scale.space)
+            - (r.width / 2)) + "px";
+          o.element.style.top =
+            ~~(((o.position.y - E_.display.position.y) / scale.space)
+            - (r.height / 2)) + "px";
+          E_.display.calculateClutter()
+        }
+      },
+      start(startup = () => { }, callback = () => { }) {
+        startup();
+        E_.steps = [
+          E_.render,
+          E_.display.calculateClutter
+        ];
+        E_.phys.steps = [
+          E_.phys.gravity,
+          E_.phys.move
+        ];
+        E_.phys.loop();
+        E_.loop();
+        callback();
+      },
+
+      //	Function Groups
+      display: {
+        clutter: [], // Clutter zones (no space for labels)
+        calculateClutter(a = E_.phys.objects.map(e => e.bounds)) {
+          E_.display.clutter = a
+            .map(e => ({x: e.x, y: e.y, w: e.width, h: e.height}))
+            // .sort((a, b) => a.x + a.y - b.x - b.y)
+            .reduce((p, i) => {
+              let t = 0;
+              for(let j of p) {
+                if(
+                  Math.min(j.x + j.w, i.x + i.w) + E_.display.labelSize.w
+                    >= Math.max(j.x, i.x) &&
+                  Math.min(j.y + j.h, i.y + i.h) + E_.display.labelSize.h
+                    >= Math.max(j.y, i.y)
+                ){
+                  j.w = Math.max(j.x + j.w, i.x + i.w) - Math.min(j.x, i.x);
+                  j.h = Math.max(j.y + j.h, i.y + i.h) - Math.min(j.y, i.y);
+                  j.x = Math.min(j.x, i.x);
+                  j.y = Math.min(j.y, i.y);
+                  t = 1;
+                  break;
+                }
+              }
+              t || p.push(i);
+              return p;
+            }, []);
+          let c = [...document.getElementsByClassName('clutter')];
+          c.forEach((e, i) => {
+            [e.style.height, e.style.width, e.style.top, e.style.left] =
+              E_.debug && E_.display.clutter[i]
+              ? [ E_.display.clutter[i].h + 'px',
+                  E_.display.clutter[i].w + 'px',
+                  E_.display.clutter[i].y + 'px',
+                  E_.display.clutter[i].x + 'px']
+              : [0, 0, 0, 0]
+          })
+        },
+        clearClutter(){
+          E_.display.clutter = [];
+        },
+        labelSize: {
+          w: 96,
+          h: 20,
+        },
+        position: {
+          //	Look ma, a universal reference frame!
+          x: 0,
+          y: 0
+        },
+      },
+      phys: {
+        centerOfMass() {
+          var sum = 0,
+            com = new E_.phys.vector(0, 0);
+          for (let o of E_.phys.objects) {
+            com.x += o.position.x * o.mass;
+            com.y += o.position.y * o.mass;
+            sum += o.mass;
+          }
+          com.x /= sum;
+          com.y /= sum;
+          E_.phys.totalMass = sum;
+          return com;
+        },
+        G: 6.67e-11,
+        gravity() {
+          for (let o of E_.phys.objects) {
+            var g = new E_.phys.vector(0, 0);
+            if (E_.phys.objects.length > 1)
+              for (let i of E_.phys.objects) {
+                if (o == i) continue;
+                let s = new E_.phys.vector(
+                  o.position.x - i.position.x,
+                  o.position.y - i.position.y
+                ),
+                  a = i.mass / (s.magnitude() ** 2);
+                g.x += s.cos() * a;
+                g.y += s.sin() * a;
+              }
+            o.velocity.x += g.x * (-E_.phys.G) * scale.time;
+            o.velocity.y += g.y * (-E_.phys.G) * scale.time;
+          };
+          E_.phys.step.next().value();
+        },
+        loop() {
+          window.setInterval(() => {
+            if (!E_.running) return !1;
+            E_.phys.step = (function* (s) {
+              for (let i of s)
+                yield i;
+            })(E_.phys.steps);
+            E_.phys.step.next().value();
+          }, 1e3 / 120);
+        },
+        move() {
+          for (let o of E_.phys.objects) {
+            o.position.x += o.velocity.x * scale.time;
+            o.position.y += o.velocity.y * scale.time;
+          };
+          //E_.step.next().value();
+        },
+        objects: [],
+        register(e) {
+          var r = e.getBoundingClientRect();
+          if (!e.getElementsByTagName('hitbox')[0]) {
+            var hbox = document.createElement('hitbox');
+            hbox.innerHTML = window.defHBox;
+            e.appendChild(hbox);
+          }
+          e.style.zIndex = 200 - (E_.phys.objects.length);
+          return (E_.phys.objects[E_.phys.objects.length] = {
+            birth: +new Date,
+            bounds: r,
+            element: e,
+            hitbox: e.getElementsByTagName('hitbox')[0]
+              .children[0],
+            mass: +e.attributes.mass.value,
+            name: e.attributes.name
+              ? e.attributes.name.value
+              : null,
+            position: new E_.phys.vector(
+              ((r.left + (r.width / 2)) * scale.space)
+              + E_.display.position.x,
+              ((r.top + (r.height / 2)) * scale.space)
+              + E_.display.position.y
+            ),
+            velocity: E_.phys.vectorMag(
+              e.attributes.velocity
+                ? +e.attributes.velocity.value
+                : 0,
+              e.attributes.direction
+                ? +e.attributes.direction.value
+                : 0
+            )
+          });
+        },
+        scale: {
+          space: 0.30e9,  // meters per pixel
+          time: 0.10e5,   // seconds per animation frame
+        },
+        totalMass: 0,
+        vector: function (x, y) {
+          this.x = x;
+          this.y = y;
+          this.direction = () => {
+            return this.x == 0 && this.y == 0
+              ? 0
+              : this.x == 0 && this.y < 0
+                ? -Math.PI / 2
+                : ((this.x > 0 ? 1 : -1)
+                  * Math.atan((this.x > 0 ? 1 : -1)
+                    * (this.y / this.x))
+                  + (this.x > 0 ? 0 : Math.PI));
+          },
+            this.magnitude = () => {
+              return Math.sqrt((this.x ** 2) + (this.y ** 2));
+            }
+          this.cos = () => {
+            return Math.cos(this.direction());
+          };
+          this.sin = () => {
+            return Math.sin(this.direction());
+          };
+        },
+        vectorMag(mag, dir) {
+          return new E_.phys.vector(
+            mag * Math.cos(dir),
+            mag * Math.sin(dir)
+          );
+        }
+      }
+    };
+  </script>
+</head>
+<body>
+  <div id="nav">
+    <div id="hell" name="hell" style="left:calc(50vw - 12px);top:calc(50vh - 12px);width:24px;height:24px;" class="moon" mass="1.975e30">
+      <img src="/assets/img/ewb/hell.png" />
+    </div>
+
+    <div name="hellb" style="left:calc(50vw);top:calc(50vh - 151.62px);" class="moon" direction="0" mass="4.001e23"
+      velocity="55.59e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="hellc" style="left:calc(50vw);top:calc(50vh - 316.01px);" class="moon" direction="0" mass="1.725e24"
+      velocity="38.51e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="fire" style="left:calc(50vw);top:calc(50vh - 408.58px);" class="moon" direction="0" mass="4.867e24"
+      velocity="33.85e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="wydheth" style="left:calc(50vw);top:calc(50vh - 522.96px);" class="moon" direction="0" mass="1.108e25"
+      velocity="29.93e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="void" style="left:calc(50vw - 452.89px);top:calc(50vh - 261.48px);" class="moon" direction="5.23599"
+      mass="1.108e25" velocity="29.93e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="air" style="left:calc(50vw + 452.89px);top:calc(50vh - 261.48px);" class="moon" direction="1.0472"
+      mass="1.108e25" velocity="29.93e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="water" style="left:calc(50vw);top:calc(50vh - 890.04px);" class="moon" direction="0" mass="5.214e24"
+      velocity="22.94e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="hellj" style="left:calc(50vw);top:calc(50vh - 3135.61px);" class="moon" direction="0" mass="1.858e27"
+      velocity="12.23e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="hellk" style="left:calc(50vw);top:calc(50vh - 8433.26px);" class="moon" direction="0" mass="5.874e26"
+      velocity="7.46e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+
+    <div name="helll" style="left:calc(50vw);top:calc(50vh - 18015.65px);" class="moon" direction="0" mass="2.637e26"
+      velocity="5.10e3">
+      <div class="shell" style="width:0px;height:0px;"></div>
+    </div>
+  </div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <div class="clutter"></div>
+  <script>
+    window.addEventListener('load', E_.start(() => {
+      window.scale = E_.phys.scale;
+      for (let e of nav.children) E_.phys.register(e);
+    }));
+    window.addEventListener('wheel', e =>
+      e.deltaY && (e.deltaY > 0
+        ? (scale.space /= 1.05)
+        : (scale.space *= 1.05))
+    );
+  </script>
+</body>
+
+</html>
