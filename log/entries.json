@@ -4462,7 +4462,20 @@
             "python"
           ]
         }
-      ]
+      ],
+      "26": {
+        "title": "cozette-(u)csur sample text",
+        "project": "una fonts",
+        "link": {
+          "title":"猫.dev",
+          "url": "https://xn--z7x.dev/theme/font/sample"
+        },
+        "tags": [
+          "programming",
+          "html",
+          "visual_studio_code"
+        ]
+      }
     }
   }
 }
