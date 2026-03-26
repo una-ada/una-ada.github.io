@@ -144,7 +144,7 @@
                   E_.display.clutter[i].w + 'px',
                   E_.display.clutter[i].y + 'px',
                   E_.display.clutter[i].x + 'px']
-              : [0, 0, 0, 0]
+              : [0, 0, "-10px", 0]
           })
         },
         clearClutter(){
@@ -231,10 +231,12 @@
               ? e.attributes.name.value
               : null,
             position: new E_.phys.vector(
-              ((r.left + (r.width / 2)) * scale.space)
-              + E_.display.position.x,
-              ((r.top + (r.height / 2)) * scale.space)
-              + E_.display.position.y
+              // ((r.left + (r.width / 2)) * scale.space)
+              // + E_.display.position.x,
+              // ((r.top + (r.height / 2)) * scale.space)
+              // + E_.display.position.y
+              e.attributes.x ? 1e3 * +e.attributes.x.value : 0,
+              e.attributes.y ? 1e3 * +e.attributes.y.value : 0
             ),
             velocity: E_.phys.vectorMag(
               e.attributes.velocity
@@ -286,57 +288,57 @@
 </head>
 <body>
   <div id="nav">
-    <div id="hell" name="hell" style="left:calc(50vw - 12px);top:calc(50vh - 12px);width:24px;height:24px;" class="moon" mass="1.975e30">
+    <div id="hell" name="hell" class="moon" mass="1.975e30" style="width:24px;height:24px;">
       <img src="/assets/img/ewb/hell.png" />
     </div>
 
-    <div name="hellb" style="left:calc(50vw);top:calc(50vh - 151.62px);" class="moon" direction="0" mass="4.001e23"
-      velocity="55.59e3">
+    <div name="hellb" class="moon" direction="0" mass="4.001e23"
+      velocity="55.59e3" y="-45486000">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="hellc" style="left:calc(50vw);top:calc(50vh - 316.01px);" class="moon" direction="0" mass="1.725e24"
-      velocity="38.51e3">
+    <div name="hellc" class="moon" direction="0" mass="1.725e24"
+      velocity="38.51e3" y="-94802400">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="fire" style="left:calc(50vw);top:calc(50vh - 408.58px);" class="moon" direction="0" mass="4.867e24"
-      velocity="33.85e3">
+    <div name="fire" class="moon" direction="0" mass="4.867e24"
+      velocity="33.85e3" y="-122572800">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="wydheth" style="left:calc(50vw);top:calc(50vh - 522.96px);" class="moon" direction="0" mass="1.108e25"
-      velocity="29.93e3">
+    <div name="wydheth" class="moon" direction="0" mass="1.108e25"
+      velocity="29.93e3" y="-156886800">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="void" style="left:calc(50vw - 452.89px);top:calc(50vh - 261.48px);" class="moon" direction="5.23599"
-      mass="1.108e25" velocity="29.93e3">
+    <div name="void" class="moon" direction="5.23599"
+      mass="1.108e25" velocity="29.93e3" x="-135867954.318448" y="-78443400">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="air" style="left:calc(50vw + 452.89px);top:calc(50vh - 261.48px);" class="moon" direction="1.0472"
-      mass="1.108e25" velocity="29.93e3">
+    <div name="air" class="moon" direction="1.0472"
+      mass="1.108e25" velocity="29.93e3"  x="135867954.318448" y="-78443400">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
     <div name="water" style="left:calc(50vw);top:calc(50vh - 890.04px);" class="moon" direction="0" mass="5.214e24"
-      velocity="22.94e3">
+      velocity="22.94e3" y="-267010800">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="hellj" style="left:calc(50vw);top:calc(50vh - 3135.61px);" class="moon" direction="0" mass="1.858e27"
-      velocity="12.23e3">
+    <div name="hellj" class="moon" direction="0" mass="1.858e27"
+      velocity="12.23e3" y="-940682400">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="hellk" style="left:calc(50vw);top:calc(50vh - 8433.26px);" class="moon" direction="0" mass="5.874e26"
-      velocity="7.46e3">
+    <div name="hellk" class="moon" direction="0" mass="5.874e26"
+      velocity="7.46e3" y="-2529979200">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
 
-    <div name="helll" style="left:calc(50vw);top:calc(50vh - 18015.65px);" class="moon" direction="0" mass="2.637e26"
-      velocity="5.10e3">
+    <div name="helll" class="moon" direction="0" mass="2.637e26"
+      velocity="5.10e3" y="-5404694400">
       <div class="shell" style="width:0px;height:0px;"></div>
     </div>
   </div>
@@ -360,6 +362,9 @@
         ? (scale.space /= 1.05)
         : (scale.space *= 1.05))
     );
+    window.addEventListener('keypress', e=>{
+      if(e.keyCode == 68 && e.shiftKey) E_.debug = !E_.debug;
+    });
   </script>
 </body>
 

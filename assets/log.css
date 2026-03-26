@@ -139,6 +139,7 @@ ol {
 p {
   margin: 1.5rem 0;
 }
+p + blockquote,
 p + ul {
   margin-top: -1.5rem;
 }
