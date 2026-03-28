@@ -385,6 +385,9 @@ title: una's themes
   <tbody><tr>
     <td style="width:12.5em;">
       <img src="/theme/thumbnail/cozette.png" alt="Cozette-(U)CSUR Preview" />
+      <br/>
+      <a href="font/glyphs.html">glyph map</a><br/>
+      <a href="font/sample.html">text samples</a>
     </td>
     <td>
       <table>
