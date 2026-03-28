@@ -15,7 +15,14 @@ title: una's themes
 └────┴─┘└─┴──┴─┘ └───┘ └─┘└─┘└─┴────┴─┘└─┘└─┴────┴───┘
 </pre>
 
-<table class="theme">
+- [Palette](#palette)
+- ![tape](/una-theme-icons/12px/soft/tape.png){:.tag-icon}[ΛERIF°RM Tape](#tape)
+- ![font](/una-theme-icons/12px/type/font.png){:.tag-icon}[Cozette-(U)CSUR](#cozette-ucsur)
+- ![scrivener](/una-theme-icons/12px/soft/scrivener.png){:.tag-icon}[Scrivener](#scrivener)
+- ![terminal](/una-theme-icons/12px/lang/bash.png){:.tag-icon}[Terminal Profile](#terminal)
+- ![vs code](/una-theme-icons/12px/soft/visual_studio_code.png){:.tag-icon}[Visual Studio Code](#vscode)
+
+<table id="palette" class="theme">
   <tbody>
     <tr style="background:var(--color-wines);color:var(--color-lotus);">
       <td style="width:1em"></td>
@@ -550,7 +557,7 @@ title: una's themes
   </tbody>
 </table>
 
-<table id="termainl" class="theme">
+<table id="terminal" class="theme">
   <thead><tr>
     <th style="text-align:left;">
       <img
