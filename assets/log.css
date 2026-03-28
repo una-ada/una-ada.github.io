@@ -1,8 +1,8 @@
 /*----- fonts ----------------------------------------------------------------*/
 @font-face {
   font-family: 'CozetteUCSUR';
-  src: url('/assets/fonts/CozetteUCSURVector.woff2') format('woff2'),
-    url('/assets/fonts/CozetteUCSURVector.woff') format('woff');
+  src: url('/theme/dist/cozette-ucsur-vector-1.1.0.woff2') format('woff2'),
+    url('/theme/dist/cozette-ucsur-vector-1.1.0.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   /* Cozette used to render just fine at 12px, but newer versions seem to 
@@ -12,8 +12,8 @@
 }
 @font-face {
   font-family: 'CozetteUCSUR';
-  src: url('/assets/fonts/CozetteUCSURVectorBold.woff2') format('woff2'),
-    url('/assets/fonts/CozetteUCSURVectorBold.woff') format('woff');
+  src: url('/theme/dist/cozette-ucsur-vector-bold-1.1.0.woff2') format('woff2'),
+    url('/theme/dist/cozette-ucsur-vector-bold-1.1.0.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   size-adjust: 108.33%;

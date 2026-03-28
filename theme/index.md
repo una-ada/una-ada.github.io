@@ -316,6 +316,7 @@ title: una's themes
     </tr>
   </tbody>
 </table>
+
 <table id="tape" class="theme">
   <thead><tr>
     <th style="text-align:left;">
@@ -369,6 +370,130 @@ title: una's themes
   </tbody>
 </table>
 
+<table id="cozette-ucsur" class="theme">
+  <thead><tr>
+    <th style="text-align:left;">
+      <img
+        class="tag-icon"
+        src="/una-theme-icons/12px/type/font.png" 
+        alt="font" title="font"
+      />
+      Cozette-(U)CSUR
+    </th>
+    <th></th>
+  </tr></thead>
+  <tbody><tr>
+    <td style="width:12.5em;">
+      <img src="/theme/thumbnail/cozette.png" alt="Cozette-(U)CSUR Preview" />
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td style="width:7.5em;">download</td>
+          <td>
+            <a href="/theme/dist/cozette-ucsur-1.1.0.bdf">
+              cozette-ucsur-1.1.0.bdf</a><br/>
+            <a href="/theme/dist/cozette-ucsur-vector-1.1.0.otf">
+              cozette-ucsur-vector-1.1.0.otf</a><br/>
+            <a href="/theme/dist/cozette-ucsur-vector-bold-1.1.0.otf">
+              cozette-ucsur-vector-bold-1.1.0.otf</a><br/>
+            <a href="/theme/dist/cozette-ucsur-vector-1.1.0.ttf">
+              cozette-ucsur-vector-1.1.0.ttf</a><br/>
+            <a href="/theme/dist/cozette-ucsur-vector-bold-1.1.0.ttf">
+              cozette-ucsur-vector-bold-1.1.0.ttf</a><br/>
+          </td>
+        </tr>
+        <tr>
+          <td>version</td>
+          <td>1.1.0</td>
+        </tr>
+        <tr>
+          <td>release</td>
+          <td>2026.03.28 05:01</td>
+        </tr>
+        <tr>
+          <td>updated</td>
+          <td>2026.03.28 05:01</td>
+        </tr>
+      </table>
+    </td>
+  </tr></tbody>
+</table>
+<table class="changelog">
+<thead><tr>
+  <th colspan="2" style="text-align:left;">changelog</th>
+</tr></thead>
+<tbody>
+  <tr>
+    <td style="width:2.5em;" rowspan="42">1.1.0</td>
+    <td>update metadata</td>
+  </tr>
+  <tr><td>fill 0100-017f latin extended-b</td></tr>
+  <tr><td>fill 0250-02af ipa extensions</td></tr>
+  <tr><td>fill 02b0-02ff spacing modifier letters</td></tr>
+  <tr><td>fill 0300-036f combining diacritical marks</td></tr>
+  <tr><td>fill 0400-04ff cyrillic</td></tr>
+  <tr><td>add 0590-05ff hebrew</td></tr>
+  <tr><td>add 10a0-10ff georgian</td></tr>
+  <tr><td>add 1c90-1cbf georgian extended</td></tr>
+  <tr><td>add 13a0-12ff cherokee</td></tr>
+  <tr><td>
+    add 1400-167f unified canadian aboriginal syllabics (proportional)
+  </td></tr>
+  <tr><td>add 1680-169f ogham (proportional)</td></tr>
+  <tr><td>add 16a0-16ff runic</td></tr>
+  <tr><td>add 1c50-1c7f ol chiki</td></tr>
+  <tr><td>add 2c00-2c5f glagolitic (proportional)</td></tr>
+  <tr><td>add 2c60-2c7f latin extended-c</td></tr>
+  <tr><td>add 2d00-2d2f georgian supplement</td></tr>
+  <tr><td>add 3100-312f bopomofo</td></tr>
+  <tr><td>add 31a0-31bf bopomofo extended</td></tr>
+  <tr><td>add a4d0-a4ff lisu</td></tr>
+  <tr><td>add e000-e07f tengwar</td></tr>
+  <tr><td>add e080-e0ff cirth</td></tr>
+  <tr><td>add 10000-1007f linear b syllabary (proportional)</td></tr>
+  <tr><td>add 10100-1013f aegean numbers (proportional)</td></tr>
+  <tr><td>add 10350-1037f old permic</td></tr>
+  <tr><td>add 10400-1044f deseret</td></tr>
+  <tr><td>add 10450-1047f shavian</td></tr>
+  <tr><td>add 10480-104af osmanya</td></tr>
+  <tr><td>add 104b0-104ff osage</td></tr>
+  <tr><td>add 10500-1052f elbasan</td></tr>
+  <tr><td>add 10530-1056f caucasian albanian</td></tr>
+  <tr><td>add 10570-105bf vithkuqi (proportional)</td></tr>
+  <tr><td>add 105c0-105ff todhri</td></tr>
+  <tr><td>add 10840-1085f imperial aramaic</td></tr>
+  <tr><td>add 108e0-108ff hatran</td></tr>
+  <tr><td>add 10a60-10a7f old south arabian</td></tr>
+  <tr><td>add 10a80-10a9f old north arabian</td></tr>
+  <tr><td>add 10b40-10b5f inscriptional parthian</td></tr>
+  <tr><td>add 10b60-10b7f inscriptional pahlavi</td></tr>
+  <tr><td>add 10b80-10baf psalter pahlavi</td></tr>
+  <tr><td>add 10c00-10c4f old turkic</td></tr>
+  <tr><td>add 10c80-10cff old hungarian</td></tr>
+  <tr>
+    <td rowspan="17">1.0.0</td>
+    <td>initial release</td>
+  </tr>
+  <tr><td>fill 0370-03ff greek and coptic</td></tr>
+  <tr><td>add 0530-058f armenian</td></tr>
+  <tr><td>add 0780-07bf thaana</td></tr>
+  <tr><td>add 2c80-2cff coptic</td></tr>
+  <tr><td>add 2d30-2d7f tifinagh</td></tr>
+  <tr><td>add f700-f79f una magic script</td></tr>
+  <tr><td>add 10140-1016f ancient greek numbers</td></tr>
+  <tr><td>add 10280-1029f lycian</td></tr>
+  <tr><td>add 102a0-102df carian</td></tr>
+  <tr><td>add 10300-1032f old italic</td></tr>
+  <tr><td>add 10330-1034f gothic</td></tr>
+  <tr><td>add 10900-1091f phoenician</td></tr>
+  <tr><td>add 10920-1093f lydian</td></tr>
+  <tr><td>add 10940-1095f sidetic</td></tr>
+  <tr><td>add 10980-1099f meroitic hieroglyphs (duospace)</td></tr>
+  <tr><td>add 109a0-109ff meroitic cursive (duospace)</td></tr>
+</tbody>
+</table>
+
 <table id="scrivener" class="theme">
   <thead><tr>
     <th style="text-align:left;">
@@ -416,7 +541,7 @@ title: una's themes
   </tr></thead>
   <tbody>
     <tr>
-      <td>1.0.0</td>
+      <td style="width:10%">1.0.0</td>
       <td>initial release</td>
     </tr>
   </tbody>

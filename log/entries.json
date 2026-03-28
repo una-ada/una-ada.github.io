@@ -4475,6 +4475,21 @@
           "html",
           "visual_studio_code"
         ]
+      },
+      "28": {
+        "title": "cozette-(u)csur v1.1.0",
+        "project": "una fonts",
+        "link": {
+          "title": "github",
+          "url": "https://github.com/una-ada/Cozette-UCSUR/releases/tag/v1.1.0"
+        },
+        "tags": [
+          "font",
+          "aseprite",
+          "fontforge",
+          "github",
+          "git"
+        ]
       }
     }
   }

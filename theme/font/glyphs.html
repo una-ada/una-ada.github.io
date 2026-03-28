@@ -243,7 +243,7 @@
         "Ath": [0xF4C0, 0xF4EF],
         "Aiha": [0xF8A0, 0xF8CF],
         "Klingon": [0xF8D0, 0xF8FF],
-        "Una Magic Script": [0xF700, 0xF8FF],
+        "Una Magic Script": [0xF700, 0xF79F],
         "CJK Compatibility Ideographs": [0xF900, 0xFAFF],
         "Alphabetic Presentation Forms": [0xFB00, 0xFB4F],
         "Arabic Presentation Forms-A": [0xFB50, 0xFDFF],
@@ -257,7 +257,7 @@
         "Specials": [0xFFF0, 0xFFFF],
         "Linear B Syllabary (proportional)": [0x10000, 0x1007F],
         "Linear B Ideograms": [0x10080, 0x100FF],
-        "Aegean Numbers": [0x10100, 0x1013F],
+        "Aegean Numbers (proportional)": [0x10100, 0x1013F],
         "Ancient Greek Numbers": [0x10140, 0x1018F],
         "Ancient Symbols": [0x10190, 0x101CF],
         "Phaistos Disc": [0x101D0, 0x101FF],
@@ -420,7 +420,7 @@
     <p>
       this page uses <a href="https://github.com/opentypejs/opentype.js" target="_blank">opentype.js</a> to scan 猫.dev's
       version of
-      <a href="/assets/fonts/CozetteUCSURVector.woff" target="_blank">cozetteucsurvector.woff</a> (<a target="_blank"
+      <a href="/theme/dist/cozette-ucsur-vector-1.1.0.woff" target="_blank">cozette-ucsur-vector-x.woff</a> (<a target="_blank"
         href="https://github.com/una-ada/cozette-ucsur">cozette-(u)csur</a>) and
       generates a table of all available glyphs.
     </p>
@@ -428,7 +428,7 @@
   </div>
   <script>
     let output = document.querySelector('.char-chart');
-    fetch('/assets/fonts/CozetteUCSURVector.woff')
+    fetch('/theme/dist/cozette-ucsur-vector-1.1.0.woff')
       .then(r => r.arrayBuffer())
       .then(d =>
         (g =>
