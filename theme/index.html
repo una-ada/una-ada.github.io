@@ -1,11 +1,30 @@
----
-author: una
-lang: en 
-layout: pixel
-title: una's themes
----
+<html>
+<head>
+  <title>una's themes</title>
+  <link rel="stylesheet" href="/assets/log.css">
+  <link rel="shortcut icon" type="image/png" href="/una-theme-icons/16px/etc/heart_kitty.png" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    #palette td,
+    .ext-palette td {
+      vertical-align: middle;
+    }
+    .ext-palette tr {
+      height:1.5em;
+    }
+    .ext-palette td {
+      width: 25%;
+      text-align: center;
+      min-height: 1em;
+    }
+  </style>
+</head>
+<body>
+<div class="article">
 
-[← 猫.dev](/)
+<a href="/">← 猫.dev</a>
 
 <pre style="width:27em;margin:0 auto;">
                ┌─┐     ┌─┐┌─┐  
@@ -15,14 +34,22 @@ title: una's themes
 └────┴─┘└─┴──┴─┘ └───┘ └─┘└─┘└─┴────┴─┘└─┘└─┴────┴───┘
 </pre>
 
-- [Palette](#palette)
-- ![tape](/una-theme-icons/12px/soft/tape.png){:.tag-icon}[ΛERIF°RM Tape](#tape)
-- ![font](/una-theme-icons/12px/type/font.png){:.tag-icon}[Cozette-(U)CSUR](#cozette-ucsur)
-- ![scrivener](/una-theme-icons/12px/soft/scrivener.png){:.tag-icon}[Scrivener](#scrivener)
-- ![terminal](/una-theme-icons/12px/lang/bash.png){:.tag-icon}[Terminal Profile](#terminal)
-- ![vs code](/una-theme-icons/12px/soft/visual_studio_code.png){:.tag-icon}[Visual Studio Code](#vscode)
+<ul>
+  <li><a href="#palette">Palette</a></li>
+  <li><a href="#palette-ext-a">Palette Extended-A</a></li>
+  <li><img class="tag-icon" src="/una-theme-icons/12px/soft/tape.png"/><a href="#tape">ΛERIF°RM Tape</a></li>
+  <li><img class="tag-icon" src="/una-theme-icons/12px/type/font.png"/><a href="#cozette-ucsur">Cozette-(U)CSUR</a></li>
+  <li><img class="tag-icon" src="/una-theme-icons/12px/soft/scrivener.png"/><a href="#scrivener">Scrivener</a></li>
+  <li><img class="tag-icon" src="/una-theme-icons/12px/lang/bash.png"/><a href="#terminal">Terminal Profile</a></li>
+  <li><img class="tag-icon" src="/una-theme-icons/12px/soft/visual_studio_code.png"/><a href="#vscode">Visual Studio Code</a></li>
+</ul>
 
 <table id="palette" class="theme">
+  <thead><tr>
+    <th style="text-align:left;" colspan="5">
+      Palette
+    </th>
+  </tr></thead>
   <tbody>
     <tr style="background:var(--color-wines);color:var(--color-lotus);">
       <td style="width:1em"></td>
@@ -56,7 +83,7 @@ title: una's themes
       <td></td>
       <td>baked</td>
       <td>#d68067</td>
-      <td><pre>rgb( 214, 128, 103)</pre></td>
+      <td><pre>rgb(214, 128, 103)</pre></td>
       <td><pre>hsl( 13.5, 57.5%, 62.2%)</pre></td>
     </tr>
     <tr style="background:var(--color-reeds);color:var(--color-black);">
@@ -145,10 +172,10 @@ title: una's themes
     </tr>
   </tbody>
 </table>
-
-¹reeds is #dbcca1 in adobe swatches<br/>
-²alt black is not available in some palettes
-
+<p>
+  ¹reeds is #dbcca1 in adobe swatches<br/>
+  ²alt black is not available in some palettes
+</p>
 <table style="width:100%">
   <thead><tr>
     <th style="width:15.75em;text-align:left;">download</th>
@@ -320,6 +347,166 @@ title: una's themes
         target="_blank"
       >una.scss</a></td>
       <td>2025.03.02 16:07</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="palette-ext-a" class="ext-palette theme">
+  <thead><tr>
+    <th style="text-align:left;" colspan="4">
+      Palette Extended-A (experimental)
+    </th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td style="background:var(--color-lotus);color:var(--color-black);"
+        rowspan="3">
+        lotus #e0c1bf
+      </td>
+      <td style="background:var(--color-cutie);color:var(--color-black);">
+        cutie #ffb0b0
+      </td>
+      <td style="background:var(--color-candy);color:var(--color-lotus);">
+        candy #de2136
+      </td>
+      <td style="background:#2f141b;color:var(--color-lotus);"
+        rowspan="2">
+        krmis #2f141b
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#b57f7f;color:var(--color-black);">
+        xxxxx #b57f7f
+      </td>
+      <td style="background:var(--color-wines);color:var(--color-lotus);">
+        wines #703d41
+      </td>
+    </tr>
+    <tr>
+      <td style="background:var(--color-baked);color:var(--color-black);">
+        baked #d68067
+      </td>
+      <td style="background:var(--color-shoyu);color:var(--color-lotus);">
+        shoyu #46302a
+      </td>
+      <td style="background:#241714;color:var(--color-lotus);">
+        cocoa #241714
+      </td>
+    </tr>
+    <!--
+      <tr>
+        <td style="background:#211d17;color:var(--color-lotus);">
+          xxxxx #211d17
+        </td>
+      </tr>
+    -->
+    <tr>
+      <td style="background:#e7e1cf;color:var(--color-black);">
+        cream #e7e1cf
+      </td>
+      <td style="background:var(--color-reeds);color:var(--color-black);">
+        reeds #dccca1
+      </td>
+      <td style="background:#59523b;color:var(--color-lotus);">
+        xxxxx #59523b
+      </td>
+      <td style="background:var(--color-olive);color:var(--color-lotus);">
+        olive #2e2d1c
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#c1dabe;color:var(--color-black);"
+        rowspan="2">
+        ozone #c1dabe
+      </td>
+      <td style="background:#9cb886;color:var(--color-black);">
+        xxxxx #9cb886
+      </td>
+      <td style="background:var(--color-chive);color:var(--color-lotus);">
+        chive #555f47
+      </td>
+      <td style="background:#122114;color:var(--color-lotus);"
+        rowspan="2">
+        trees #122114
+      </td>
+    </tr>
+    <!--
+      <tr>
+        <td style="background:#7ea380;color:var(--color-black);">
+          xxxxx #7ea380
+        </td>
+        <td style="background:#364f36;color:var(--color-lotus);">
+          xxxxx #364f36
+        </td>
+      </tr>
+    -->
+    <tr>
+      <td style="background:var(--color-foamy);color:var(--color-black);">
+        foamy #729a89
+      </td>
+      <td style="background:var(--color-grass);color:var(--color-lotus);">
+        grass #264d39
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#d6f2f5;color:var(--color-black);"
+        rowspan="2">
+        frost #d6f2f5
+      </td>
+      <td style="background:var(--color-plush);color:var(--color-black);">
+        plush #a2c9cb
+      </td>
+      <!--
+        <td style="background:#21544e;color:var(--color-lotus);">
+          xxxxx #21544e
+        </td>
+      -->
+      <td style="background:var(--color-coral);color:var(--color-lotus);">
+        coral #145c62
+      </td>
+      <td style="background:var(--color-royal);color:var(--color-lotus);"
+        rowspan="2">
+        royal #0e2d31
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#8ba2bb;color:var(--color-black);">
+        xxxxx #8ba2bb
+      </td>
+      <td style="background:#345374;color:var(--color-lotus);">
+        acais #345374
+      </td>
+      <!--
+        <td style="background:#14283d;color:var(--color-lotus);">
+          xxxxx #14283d
+        </td>
+      -->
+    </tr>
+    <tr>
+      <td style="background:#e9dcf9;color:var(--color-black);"
+        rowspan="2">
+        fairy #e9dcf9
+      </td>
+      <td style="background:var(--color-lilac);color:var(--color-black);">
+        lilac #b2adcc
+      </td>
+      <td style="background:var(--color-berry);color:var(--color-lotus);">
+        berry #2a2858
+      </td>
+      <td style="background:#181632;color:var(--color-lotus);">
+        xxxxx #181632
+      </td>
+    </tr>
+    <tr>
+      <td style="background:#b899b6;color:var(--color-black);">
+        xxxxx #b899b6
+      </td>
+      <td style="background:#634563;color:var(--color-lotus);">
+        xxxxx #634563
+      </td>
+      <td style="background:#200e20;color:var(--color-lotus);">
+        xxxxx #200e20
+      </td>
     </tr>
   </tbody>
 </table>
@@ -750,3 +937,7 @@ title: una's themes
     </tr>
   </tbody>
 </table>
+
+</div>
+</body>
+</html>
