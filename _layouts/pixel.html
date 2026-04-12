@@ -25,7 +25,7 @@
         .forEach(e => e.innerHTML = SUPERSCRIPT(e.innerHTML));
       [...document.getElementsByClassName('dropcap')]
         .forEach(e => e.innerHTML = e.innerHTML.replace(
-          /^\w/g, (_, l) => `<img class="ill" alt="${l}"
+          /^(\w)/g, (_, l) => `<img class="ill" alt="${l}"
             src="/una-theme-icons/30px/ill/${l.toLowerCase()}.png"/>`
         ));
       twemoji.parse(document.body, {base: "/una-theme-icons/"});
