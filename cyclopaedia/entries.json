@@ -1,0 +1,115 @@
+{
+  "abeyance": {
+    "terms": {
+      "abeyance": {
+        "osten": "ɑbηɑnꞅ"
+      }
+    },
+    "pos": "n.",
+    "definition": "State of expectancy in respect of property, titles, or office, when the right to them is not vested in any one person, but awaits the appearance or determination of the true owner."
+  },
+  "ailuranthrope": {
+    "terms": {
+      "ailuranthrope": {
+        "osten": "ɑılɥꞃɑnþηωփ"
+      },
+      "ailuranthropes": {
+        "osten": "ɑılɥꞃɑnþηωփꞅ"
+      }
+    },
+    "pos": "n.",
+    "cat": "Race",
+    "synonyms": {
+      "ailuran": {
+        "osten": "ɑılɥꞃɑn"
+      },
+      "ṣiṣa": {
+        "osten": "ꞅ̨ȷꞅ̨ɑ",
+        "siget": "ށިށަ"
+      },
+      "were-cat": {
+        "osten": "ƿηꞃ'κɑꞇ"
+      }
+    }
+  },
+  "Dux of Ákilde": {
+    "terms": {
+      "Ákilde, Dux of": {
+        "osten": "Ꝺuξ ꝯ Ոκılδε"
+      }
+    },
+    "pos": "n.",
+    "cat": "Country",
+    "etymology": "From NOB á (\"river\") + kilde (\"spring\")."
+  },
+  "Akly": {
+    "terms": {
+      "Akly": {
+        "osten": "Ɑκlȷ"
+      }
+    },
+    "pos": "n.",
+    "cat": "Town",
+    "definition": "Forestry town in [Princep of Wadsaga].",
+    "etymology": "From ENM ak (\"oak\") + ley (\"clearing; meadow\")."
+  },
+  "alchemy": {
+    "terms": {
+      "alchemy": {
+        "osten": "ɑlκɑmȷ"
+      }
+    },
+      "pos": "n."
+  },
+  "alienability": {
+    "terms": {
+      "alienability": {
+        "osten": "ηlȷεnɑbılıꞇȷ"
+      }
+    },
+    "pos": "n.",
+    "definition": "Capacity for [alienation] of a piece of property or property rights."
+  },
+  "alienation": {
+    "terms": {
+      "alienation": {
+        "osten": "ηlȷεnηſun"
+      }
+    },
+    "pos": "n.",
+    "definition": "Voluntary act of an owner of some property to dispose of the property by sale or being otherwise transferred to another party."
+  },
+  "allodial": {
+    "terms": {
+      "allodial": {
+        "osten": "ɑlωδȷɑl"
+      }
+    },
+    "pos": "adj.",
+    "definition": "Owning real property—land, building, fixtures—independent from any superior [landlord] ([overlord]), thus exempt from feudal duties; [allodial land], [allodium], or [allod] may all refer to the land that is owned."
+  },
+  "allodial land": {
+    "terms": {
+      "allodial land": {
+        "osten": "ɑlωδȷɑl lɑnꝺ"
+      }
+    },
+    "pos": "n.",
+    "definition": "Land held [allodially](allodial).",
+    "synonyms": {
+      "allod": {
+        "osten": "ɑlωꝺ"
+      },
+      "allodium": {
+        "osten": "ɑlωδȷum"
+      }
+    }
+  },
+  "patrilineal succession": {
+    "synonyms": {
+      "agnatic succession": {
+        "osten": "ɑᵹnɑꞇıκ ꞅuκꞅεſun"
+      }
+    }
+  }
+}

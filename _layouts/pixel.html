@@ -25,7 +25,7 @@
       [...document.getElementsByClassName('dropcap')]
         .forEach(e => e.innerHTML = e.innerHTML.replace(
           /^(['‘’"“”]?\w['’]?)/g, (_, l) =>
-          `<img alt="${l}" src="/assets/img/30px/ill/${encodeURIComponent(l
+          `<img alt="${l}" src="/una-theme-icons/30px/ill/${encodeURIComponent(l
             .replace(/[‘’]/g, '\'').replace(/["“”]/g, '"').toLowerCase()
           )}.png" class="ill"/>`)
         );

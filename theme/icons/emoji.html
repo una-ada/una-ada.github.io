@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>emoji preview</title>
+  <link rel="stylesheet" href="/assets/log.css" />
+  <link rel="shortcut icon" href="/una-theme-icons/16px/etc/heart_kitty.png" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-compatible" content="chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <style>
+    img.emoji {
+      height: 1em;
+      padding: 0 0.25em;
+      vertical-align: middle;
+      width: 1em;
+    }
+    td.glyph {
+      display: contents;
+    }
+    td.row {
+      line-height: 1;
+      padding-right: 0.5em !important;
+      text-align: right;
+      vertical-align: middle;
+      width: 11.5em;
+    }
+  </style>
+  <script src="/una-theme-icons/lib/twemoji.js"></script>
+  <script>
+    const 
+    newElement = (tag, contents = '', attributes = {}, children = []) => {
+      let el = document.createElement(tag);
+      el.innerHTML = contents;
+      Object.keys(attributes).forEach(v => el.setAttribute(v, attributes[v]));
+      children.forEach(child => el.appendChild(child));
+      return el;
+    };
+  </script>
+</head>
+
+<body>
+  <div class="article">
+    <a href="/">← 猫.dev</a>
+<pre>
+                      ▄             █▄ █▄         ▄               
+                ██ ██ ████▄ ▄▀▀█▄  ▄██▄████▄ ▄█▀█▄███▄███▄ ▄█▀█▄  
+                ██ ██ ██ ██ ▄█▀██   ██ ██ ██ ██▄█▀██ ██ ██ ██▄█▀  
+               ▄▀██▀█▄██ ▀█▄▀█▄██  ▄██▄██ ██▄▀█▄▄▄██ ██ ▀█▄▀█▄▄▄▄ 
+              ▀▀            ▄                 ▄              ▀▀ ▀▀
+              ██ ▄███▀▄███▄ ████▄▄██▀█   ▄█▀█▄███▄███▄ ▄███▄ ██ ██
+              ██ ██   ██ ██ ██ ██▀███▄   ██▄█▀██ ██ ██ ██ ██ ██ ██
+             ▄██▄▀███▄▀███▀▄██ ▀█▄▄██▀  ▄▀█▄▄▄██ ██ ▀█▄▀███▀▄██▄██
+                                                             ██   
+                                                           ▀▀▀    
+</pre>
+    <p>
+      when i was a wee kitten, i spent weeks drawing little guys in 
+      microsoft paint using the ball sprite from 3d pinball: space cadet as a 
+      template, but then i saved the file as a jpeg. this was the beginning 
+      of my villain arc.
+    </p>
+    <p>
+      the emoji in <a href="https://github.com/una-ada/una-theme-icons"
+        target="_blank">una-theme-icons</a> are, of course, completely unrelated
+      to this tragedy of days long past. most of the una-theme-icons use my
+      <a href="https://xn--z7x.dev/theme/#palette" target="_blank">palette</a>; 
+      however, some of the emoji use the newer
+      <a href="https://xn--z7x.dev/theme/#palette-ext-a" target="_blank">
+        palette extended-a</a> when necessary,
+      e.g. for skin tones:&#x1f3fb;&#x1f3fc;&#x1f3fd;&#x1f3fe;&#x1f3ff;.
+    </p>
+    <p>
+      this page dynamically loads all unicode 17.0 emoji from a json file
+      (parsed from <a target="_blank"
+        href="https://www.unicode.org/Public/17.0.0/emoji/emoji-test.txt">
+        emoji-test.txt</a>)
+      before running twemoji; it could take a few seconds to load. for a preview
+      of non-emoji icons, see: <a target="_blank"
+        href="https://xn--z7x.dev/log/tags.html">猫.dev/log/tags</a>
+    </p>
+    <table class="char-chart"></table>
+  </div>
+  <script>
+    let output = document.querySelector('.char-chart'),
+      base = window.location.origin + "/una-theme-icons/";
+    twemoji.parse(document.getElementsByClassName('article')[0], {base: base});
+    fetch('/una-theme-icons/lib/emoji.json')
+      .then(r => r.json())
+      .then(r => Object.keys(r).forEach(i => {
+        output.appendChild(newElement('tr', '', {class: 'section'}, [
+          newElement('td'),
+          newElement('td', i.toLowerCase(), {colspan: 18})
+        ]));
+        Object.keys(r[i]).forEach(j => {
+          let row = newElement('tr', '', {}, [
+            newElement('td', j,  {class: 'row'})
+          ]);
+          for(let k = 0; k < r[i][j].length; k++){
+            if(row.children.length == 19) {
+              output.appendChild(row);
+              twemoji.parse(row, {base: base});
+              row = newElement('tr', '', {}, [
+                newElement('td', '', {class: 'row'})
+              ]);
+            }
+            if(r[i][j][k].qual == 'fully-qualified')
+              row.appendChild(newElement('td',
+                r[i][j][k].code.split('-').map(m => `&#x${m};`).join(''),
+                { class: 'glyph', title: r[i][j][k].cldr}
+              ));
+          }
+          output.append(row);
+          twemoji.parse(row, {base: base});
+        });
+      }));
+  </script>
+</body>
+</html>
