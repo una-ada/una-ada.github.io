@@ -12,6 +12,7 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width">
 	<script type="text/javascript" src="/assets/prism.js"></script>
+	<script type="text/javascript" src="/una-theme-icons/lib/twemoji.js"></script>
   <script>
     const SUPERSCRIPT = n =>
       String.fromCodePoint(
@@ -29,6 +30,7 @@
             .replace(/[‘’]/g, '\'').replace(/["“”]/g, '"').toLowerCase()
           )}.png" class="ill"/>`)
         );
+      twemoji.parse(document.body, {base: "/una-theme-icons/"});
     })
   </script>
 </head>
