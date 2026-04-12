@@ -100,6 +100,9 @@ code {
 div:target {
   background: var(--color-olive);
 }
+em {
+  font-style: normal;
+}
 h2 {
   font-size: 1em;
   font-weight: normal;
@@ -149,6 +152,9 @@ pre {
   font-variant-emoji: unicode;
   line-height: 13px;
   margin: 0;
+}
+sup a {
+  text-decoration: none !important;
 }
 table {
   border-collapse: collapse;
@@ -251,6 +257,10 @@ div#tag-lists {
   column-width: 32em;
   max-width: 128em;
 }
+img.ill {
+  float: left;
+  margin: 0.25em;
+}
 img.link-icon {
   vertical-align: middle;
 }
@@ -275,6 +285,23 @@ img.tag-icon {
 .kannada {
   font-family: 'Bengaluru', 'CozetteUCSUR', 'ArkPixelJA', 'ArkPixelCN', 
     monospace;
+}
+p.center {
+  text-align: center;
+}
+p.entry {
+  margin: 0.5em 0 0 0;
+  text-indent: 2em hanging;
+}
+p.entry-cont {
+  margin: 0.25em 0 0 0;
+  margin-left: 2em;
+}
+sup[id*="fnref"] {
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  vertical-align: baseline;
 }
 table.changelog tr:nth-child(even) {
   background: none;

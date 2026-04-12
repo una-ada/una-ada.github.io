@@ -12,9 +12,29 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width">
 	<script type="text/javascript" src="/assets/prism.js"></script>
+  <script>
+    const SUPERSCRIPT = n =>
+      String.fromCodePoint(
+        ...[...('' + n)].map(i =>
+          i > 0 && i < 4 ? [185, 178, 179][+i - 1] : +i + 8304
+        )
+      );
+    window.addEventListener('load', _ => {
+      [...document.getElementsByClassName('footnote')]
+        .forEach(e => e.innerHTML = SUPERSCRIPT(e.innerHTML));
+      [...document.getElementsByClassName('dropcap')]
+        .forEach(e => e.innerHTML = e.innerHTML.replace(
+          /^(['‘’"“”]?\w['’]?)/g, (_, l) =>
+          `<img alt="${l}" src="/assets/img/30px/ill/${encodeURIComponent(l
+            .replace(/[‘’]/g, '\'').replace(/["“”]/g, '"').toLowerCase()
+          )}.png" class="ill"/>`)
+        );
+    })
+  </script>
 </head>
 <body>
   <div class="article">
+    <a href="/">← 猫.dev</a>
     {{ content }}
   </div>
 </body>
