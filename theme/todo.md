@@ -378,24 +378,144 @@ title: >
     - [ ] `U+01FA00..U+01FA6F` Chess Symbols
     - [ ] `U+01FA70..U+01FAFF` Symbols and Pictographs Extended-A
   - [ ] Under-ConScript Unicode Registry
-    - [ ] `U+F0000..U+F0E6F` Kinya Syllables
-    - [ ] `U+F0E70..U+F11E7` Pikto
-    - [ ] `U+F16B0..U+F16DF` Derani
-    - [ ] `U+F1900..U+F19FF` Sitelen Pona
-    - [ ] `U+F1B00..U+F1C3F` Shidinn
-    - [ ] `U+F1C40..U+F1C7F` Titi Pula
-    - [ ] `U+F1C80..U+F1C9F` Sitelen Pona Radicals
-    - [ ] `U+F2000..U+F267F` Sadalian
-    - [ ] `U+F28A0..U+F28DF` Zbalermorna
+    - [ ] `U+0F0000..U+0F0E6F` Kinya Syllables
+    - [ ] `U+0F0E70..U+0F11E7` Pikto
+    - [ ] `U+0F16B0..U+0F16DF` Derani
+    - [ ] `U+0F1900..U+0F19FF` Sitelen Pona
+    - [ ] `U+0F1B00..U+0F1C3F` Shidinn
+    - [ ] `U+0F1C40..U+0F1C7F` Titi Pula
+    - [ ] `U+0F1C80..U+0F1C9F` Sitelen Pona Radicals
+    - [ ] `U+0F2000..U+0F267F` Sadalian
+    - [ ] `U+0F28A0..U+0F28DF` Zbalermorna
 - [ ] Firefox
 - [ ] FontForge
 - [ ] Google Chrome
 - ![](/una-theme-icons/12px/soft/intellij_idea.png){:.tag-icon}IntelliJ Idea Community Edition
+- [ ] QBitTorrent
 - ![](/una-theme-icons/12px/soft/scrivener.png){:.tag-icon}Scrivener
 - ![](/una-theme-icons/12px/lang/bash.png){:.tag-icon}Terminal Profile
+- ![](/una-theme-icons/12px/etc/heart_kitty.png){:.tag-icon}Una Theme Icons
+  - [ ] emoji
+    - [x] Smileys & Emotion
+      - [x] face-smiling
+      - [x] face-affection
+      - [x] face-tongue
+      - [x] face-hand
+      - [x] face-neutral-skeptical
+      - [x] face-sleepy
+      - [x] face-unwell
+      - [x] face-hat
+      - [x] face-glasses
+      - [x] face-concerned
+      - [x] face-negative
+      - [x] face-costume
+      - [x] cat-face
+      - [x] monkey-face
+      - [x] heart
+      - [x] emotion
+    - [ ] People & Body
+      - [x] hand-fingers-open
+      - [x] hand-fingers-partial
+      - [x] hand-single-finger
+      - [x] hand-fingers-closed
+      - [ ] hands
+      - [ ] hand-prop
+      - [ ] body-parts
+      - [ ] person
+      - [ ] person-gesture
+      - [ ] person-role
+      - [ ] person-fantasy
+      - [ ] person-activity
+      - [ ] person-sport
+      - [ ] person-resting
+      - [ ] family
+      - [ ] person-symbol
+      - [ ] Component
+    - [ ] Component
+      - [ ] skin-tone
+      - [ ] hair-style
+      - [ ] Animals & Nature
+    - [ ] Animals & Nature
+      - [ ] animal-mammal
+      - [ ] animal-bird
+      - [ ] animal-amphibian
+      - [ ] animal-reptile
+      - [ ] animal-marine
+      - [ ] animal-bug
+      - [ ] plant-flower
+      - [ ] plant-other
+      - [ ] Food & Drink
+    - [ ] Food & Drink
+      - [ ] food-fruit
+      - [ ] food-vegetable
+      - [ ] food-prepared
+      - [ ] food-asian
+      - [ ] food-sweet
+      - [ ] drink
+      - [ ] dishware
+      - [ ] Travel & Places
+    - [ ] Travel & Places
+      - [ ] place-map
+      - [ ] place-geographic
+      - [ ] place-building
+      - [ ] place-religious
+      - [ ] place-other
+      - [ ] transport-ground
+      - [ ] transport-water
+      - [ ] transport-air
+      - [ ] hotel
+      - [ ] time
+      - [ ] sky & weather
+      - [ ] Activities
+    - [ ] Activities
+      - [ ] event
+      - [ ] award-medal
+      - [ ] sport
+      - [ ] game
+      - [ ] arts & crafts
+      - [ ] Objects
+    - [ ] Objects
+      - [ ] clothing
+      - [ ] sound
+      - [ ] music
+      - [ ] musical-instrument
+      - [ ] phone
+      - [ ] computer
+      - [ ] light & video
+      - [ ] book-paper
+      - [ ] money
+      - [ ] mail
+      - [ ] writing
+      - [ ] office
+      - [ ] lock
+      - [ ] tool
+      - [ ] science
+      - [ ] medical
+      - [ ] household
+      - [ ] other-object
+      - [ ] Symbols
+    - [ ] Symbols
+      - [ ] transport-sign
+      - [ ] warning
+      - [ ] arrow
+      - [ ] religion
+      - [ ] zodiac
+      - [ ] av-symbol
+      - [ ] gender
+      - [ ] math
+      - [ ] punctuation
+      - [ ] currency
+      - [ ] other-symbol
+      - [ ] keycap
+      - [ ] alphanum
+      - [ ] geometric
+      - [ ] Flags
+    - [ ] Flags
+      - [x] flag
+      - [ ] country-flag
+      - [ ] subdivision-flag
 - ![](/una-theme-icons/12px/soft/visual_studio_code.png){:.tag-icon}Visual Studio Code
   - [x] Code highlighting colors
   - [x] Filetype icons
   - [x] UI Colors
   - [ ] UI Icons
-- [ ] QBitTorrent
