@@ -136,6 +136,20 @@ input:focus, textarea:focus {
   border-color: var(--color-candy);
   outline: none;
 }
+input[type="checkbox"] {
+  appearance: initial;
+  height: 1em;
+  margin: 0 0.5em 0 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 1em;
+}
+input[type=checkbox]:checked::after {
+  content: '\2713';
+  line-height: 1;
+  padding-left: 1px;
+  vertical-align: top;
+}
 ol {
   padding-left: 2em;
 }
@@ -370,6 +384,15 @@ td.tag-path {
 td.title {
   max-width: 48em;
   min-width: 27em;
+}
+ul.task-list {
+  list-style: none;
+  padding-left: 0;
+}
+ul.task-list ul.task-list {
+  border-left: 1px solid var(--color-lotus);
+  margin-left: 0.5em;
+  padding-left: 1em;
 }
 
 .anime {

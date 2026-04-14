@@ -1,0 +1,401 @@
+---
+author: una
+lang: en 
+layout: pixel
+title: >
+  una theme to-do list
+---
+
+- ![](/una-theme-icons/12px/soft/tape.png){:.tag-icon}ΛERIF°RM Tape
+- ![](/una-theme-icons/12px/soft/aseprite.png){:.tag-icon}Aseprite
+- [ ] Android Launcher
+- [ ] BetterDiscord
+- ![](/una-theme-icons/12px/type/font.png){:.tag-icon}Cozette-(U)CSUR
+  - [ ] Unicode Basic Multilingual Plane
+    - [x] `U+0180..U+024F` Latin Extended-B
+    - [x] `U+0250..U+02AF` IPA Extensions
+    - [x] `U+02B0..U+02FF` Spacing Modifier Letters
+    - [x] `U+0300..U+036F` Combining Diacritical Marks
+    - [x] `U+0370..U+03FF` Greek and Coptic
+    - [x] `U+0400..U+04FF` Greek and Coptic
+    - [x] `U+0530..U+058F` Armenian
+    - [x] `U+0590..U+05FF` Hebrew
+    - [ ] `U+0600..U+06FF` Arabic
+    - [ ] `U+0700..U+074F` Syriac
+    - [ ] `U+0750..U+077F` Arabic Supplement
+    - [x] `U+0780..U+07BF` Thaana
+    - [ ] `U+07C0..U+07FF` N'Ko
+    - [ ] `U+0800..U+083F` Samaritan
+    - [ ] `U+0840..U+085F` Mandaic
+    - [ ] `U+0860..U+086F` Syriac Supplement
+    - [ ] `U+0870..U+089F` Arabic Extended-B
+    - [ ] `U+08A0..U+08FF` Arabic Extended-A
+    - [ ] `U+0900..U+097F` Devanagari
+    - [ ] `U+0980..U+09FF` Bengali
+    - [ ] `U+0A00..U+0A7F` Gurmukhi
+    - [ ] `U+0A80..U+0AFF` Gujarati
+    - [ ] `U+0B00..U+0B7F` Oriya
+    - [ ] `U+0B80..U+0BFF` Tamil
+    - [ ] `U+0C00..U+0C7F` Telugu
+    - [ ] `U+0C80..U+0CFF` Kannada
+    - [ ] `U+0D00..U+0D7F` Malayalam
+    - [ ] `U+0D80..U+0DFF` Sinhala
+    - [ ] `U+0E00..U+0E7F` Thai
+    - [ ] `U+0E80..U+0EFF` Lao
+    - [ ] `U+0F00..U+0FFF` Tibetan
+    - [ ] `U+1000..U+109F` Myanmar
+    - [x] `U+10A0..U+10FF` Georgian
+    - [ ] `U+1100..U+11FF` Hangul Jamo
+    - [ ] `U+1200..U+137F` Ethiopic
+    - [ ] `U+1380..U+139F` Ethiopic Supplement
+    - [x] `U+13A0..U+13FF` Cherokee
+    - [x] `U+1400..U+167F` Unified Canadian Aboriginal Syllabics
+    - [x] `U+1680..U+169F` Ogham
+    - [x] `U+16A0..U+16FF` Runic
+    - [ ] `U+1700..U+171F` Tagalog
+    - [ ] `U+1720..U+173F` Hanunoo
+    - [ ] `U+1740..U+175F` Buhid
+    - [ ] `U+1760..U+177F` Tagbanwa
+    - [ ] `U+1780..U+17FF` Khmer
+    - [ ] `U+1800..U+18AF` Mongolian
+    - [ ] `U+18B0..U+18FF` Unified Canadian Aboriginal Syllabics Extended
+    - [ ] `U+1900..U+194F` Limbu
+    - [ ] `U+1950..U+197F` Tai Le
+    - [ ] `U+1980..U+19DF` New Tai Lue
+    - [ ] `U+19E0..U+19FF` Khmer Symbols
+    - [ ] `U+1A00..U+1A1F` Buginese
+    - [ ] `U+1A20..U+1AAF` Tai Tham
+    - [ ] `U+1AB0..U+1AFF` Combining Diacritical Marks Extended
+    - [ ] `U+1B00..U+1B7F` Balinese
+    - [ ] `U+1B80..U+1BBF` Sundanese
+    - [ ] `U+1BC0..U+1BFF` Batak
+    - [ ] `U+1C00..U+1C4F` Lepcha
+    - [x] `U+1C50..U+1C7F` Ol Chiki
+    - [ ] `U+1C80..U+1C8F` Cyrillic Extended-C
+    - [x] `U+1C90..U+1CBF` Georgian Extended
+    - [ ] `U+1CC0..U+1CCF` Sundanese Supplement
+    - [ ] `U+1CD0..U+1CFF` Vedic Extensions
+    - [ ] `U+1D00..U+1D7F` Phonetic Extensions
+    - [ ] `U+1D80..U+1DBF` Phonetic Extensions Supplement
+    - [ ] `U+1DC0..U+1DFF` Combining Diacritical Marks Supplement
+    - [x] `U+1E00..U+1EFF` Latin Extended Additional
+    - [ ] `U+1F00..U+1FFF` Greek Extended
+    - [ ] `U+2000..U+206F` General Punctuation
+    - [ ] `U+2070..U+209F` Superscripts and Subscripts
+    - [ ] `U+20A0..U+20CF` Currency Symbols
+    - [ ] `U+20D0..U+20FF` Combining Diacritical Marks for Symbols
+    - [ ] `U+2100..U+214F` Letterlike Symbols
+    - [ ] `U+2150..U+218F` Number Forms
+    - [ ] `U+2190..U+21FF` Arrows
+    - [ ] `U+2200..U+22FF` Mathematical Operators
+    - [ ] `U+2300..U+23FF` Miscellaneous Technical
+    - [ ] `U+2600..U+26FF` Miscellaneous Symbols
+    - [ ] `U+2700..U+27BF` Dingbats
+    - [ ] `U+27C0..U+27EF` Miscellaneous Mathematical Symbols-A
+    - [ ] `U+27F0..U+27FF` Supplemental Arrows-A
+    - [ ] `U+2900..U+297F` Supplemental Arrows-B
+    - [ ] `U+2980..U+29FF` Miscellaneous Mathematical Symbols-B
+    - [ ] `U+2A00..U+2AFF` Supplemental Mathematical Operators
+    - [ ] `U+2B00..U+2BFF` Miscellaneous Symbols and Arrows
+    - [x] `U+2C00..U+2C5F` Glagolitic
+    - [x] `U+2C60..U+2C7F` Latin Extended-C
+    - [x] `U+2C80..U+2CFF` Coptic
+    - [x] `U+2D00..U+2D2F` Georgian Supplement
+    - [x] `U+2D30..U+2D7F` Tifinagh
+    - [ ] `U+2D80..U+2DDF` Ethiopic Extended
+    - [ ] `U+2DE0..U+2DFF` Cyrillic Extended-A
+    - [ ] `U+2E00..U+2E7F` Supplemental Punctuation
+    - [ ] `U+2E80..U+2EFF` CJK Radicals Supplement
+    - [ ] `U+2F00..U+2FDF` Kangxi Radicals
+    - [ ] `U+2FE0..U+2FEF` Unassigned
+    - [ ] `U+2FF0..U+2FFF` Ideographic Description Characters
+    - [ ] `U+3000..U+303F` CJK Symbols and Punctuation
+    - [x] `U+3100..U+312F` Bopomofo
+    - [ ] `U+3130..U+318F` Hangul Compatibility Jamo
+    - [ ] `U+3190..U+319F` Kanbun
+    - [x] `U+31A0..U+31BF` Bopomofo Extended
+    - [ ] `U+31C0..U+31EF` CJK Strokes
+    - [ ] `U+31F0..U+31FF` Katakana Phonetic Extensions
+    - [ ] `U+3200..U+32FF` Enclosed CJK Letters and Months
+    - [ ] `U+3300..U+33FF` CJK Compatibility
+    - [ ] `U+3400..U+4DBF` CJK Unified Ideographs Extension A
+    - [ ] `U+4DC0..U+4DFF` Yijing Hexagram Symbols
+    - [ ] `U+4E00..U+9FFF` CJK Unified Ideographs
+    - [ ] `U+A000..U+A48F` Yi Syllables
+    - [ ] `U+A490..U+A4CF` Yi Radicals
+    - [x] `U+A4D0..U+A4FF` Lisu
+    - [ ] `U+A500..U+A63F` Vai
+    - [ ] `U+A640..U+A69F` Cyrillic Extended-B
+    - [ ] `U+A6A0..U+A6FF` Bamum
+    - [ ] `U+A700..U+A71F` Modifier Tone Letters
+    - [ ] `U+A720..U+A7FF` Latin Extended-D
+    - [ ] `U+A800..U+A82F` Syloti Nagri
+    - [ ] `U+A830..U+A83F` Common Indic Number Forms
+    - [ ] `U+A840..U+A87F` Phags-pa
+    - [ ] `U+A880..U+A8DF` Saurashtra
+    - [ ] `U+A8E0..U+A8FF` Devanagari Extended
+    - [ ] `U+A900..U+A92F` Kayah Li
+    - [ ] `U+A930..U+A95F` Rejang
+    - [ ] `U+A960..U+A97F` Hangul Jamo Extended-A
+    - [ ] `U+A980..U+A9DF` Javanese
+    - [ ] `U+A9E0..U+A9FF` Myanmar Extended-B
+    - [ ] `U+AA00..U+AA5F` Cham
+    - [ ] `U+AA60..U+AA7F` Myanmar Extended-A
+    - [ ] `U+AA80..U+AADF` Tai Viet
+    - [ ] `U+AAE0..U+AAFF` Meetei Mayek Extensions
+    - [ ] `U+AB00..U+AB2F` Ethiopic Extended-A
+    - [ ] `U+AB30..U+AB6F` Latin Extended-E
+    - [ ] `U+AB70..U+ABBF` Cherokee Supplement
+    - [ ] `U+ABC0..U+ABFF` Meetei Mayek
+    - [ ] `U+AC00..U+D7AF` Hangul Syllables
+    - [ ] `U+D7B0..U+D7FF` Hangul Jamo Extended-B
+    - [ ] `U+F900..U+FAFF` CJK Compatibility Ideographs
+    - [ ] `U+FB00..U+FB4F` Alphabetic Presentation Forms
+    - [ ] `U+FB50..U+FDFF` Arabic Presentation Forms-A
+    - [ ] `U+FE00..U+FE0F` Variation Selectors
+    - [ ] `U+FE10..U+FE1F` Vertical Forms
+    - [ ] `U+FE20..U+FE2F` Combining Half Marks
+    - [ ] `U+FE30..U+FE4F` CJK Compatibility Forms
+    - [ ] `U+FE70..U+FEFF` Arabic Presentation Forms-B
+    - [ ] `U+FF00..U+FFEF` Halfwidth and Fullwidth Forms
+    - [ ] `U+FFF0..U+FFFF` Specials
+  - [ ] Under-ConScript Unicode Registry
+    - [x] `U+E000..U+E07F` Tengwar
+    - [x] `U+E080..U+E0FF` Cirth
+    - [ ] `U+E100..U+E14F` Engsvanyáli
+    - [ ] `U+E150..U+E1AF` Kinya
+    - [ ] `U+E1B0..U+E1CF` Ilianóre
+    - [ ] `U+E1D0..U+E1FF` Syai
+    - [ ] `U+E200..U+E26F` Verdurian
+    - [ ] `U+E280..U+E29F` aUI
+    - [ ] `U+E2A0..U+E2CF` Amman-iar
+    - [ ] `U+E2D0..U+E2FF` Xaîni
+    - [ ] `U+E300..U+E33F` Mizarian
+    - [ ] `U+E340..U+E35F` Zíirí:nka
+    - [ ] `U+E3B0..U+E3FF` Olaetyan
+    - [ ] `U+E400..U+E42F` Nísklôz
+    - [ ] `U+E430..U+E44F` Kazat ?Akkorou
+    - [ ] `U+E450..U+E46F` Kazvarad
+    - [ ] `U+E470..U+E48F` Zarkhánd
+    - [ ] `U+E490..U+E4BF` Røzhxh
+    - [ ] `U+E4C0..U+E4EF` Serivelna
+    - [ ] `U+E4F0..U+E4FF` Kelwathi
+    - [ ] `U+E500..U+E51F` Saklor
+    - [ ] `U+E520..U+E54F` Rynnan
+    - [ ] `U+E550..U+E57F` Alzetjan
+    - [ ] `U+E580..U+E59F` Telarasso
+    - [ ] `U+E5A0..U+E5BF` Ssûraki
+    - [ ] `U+E5C0..U+E5DF` Gargoyle
+    - [ ] `U+E5E0..U+E5FF` Ophidian
+    - [ ] `U+E630..U+E64F` Seussian Latin Extensions
+    - [ ] `U+E650..U+E67F` Sylabica
+    - [ ] `U+E680..U+E6CF` Ewellic
+    - [ ] `U+E6D0..U+E6EF` Amlin
+    - [ ] `U+E6F0..U+E6FF` Unifon Extended
+    - [ ] `U+E740..U+E76F` Unifon
+    - [ ] `U+E770..U+E77F` Solresol
+    - [ ] `U+E800..U+E82F` Monofon
+    - [ ] `U+E830..U+E88F` D'ni
+    - [ ] `U+E890..U+E8DF` Aurebesh
+    - [ ] `U+E8E0..U+E8FF` Tonal
+    - [ ] `U+E900..U+E97F` Glaitha-A
+    - [ ] `U+E980..U+E9FF` Glaitha-B
+    - [ ] `U+EAA0..U+EAFF` Wanya
+    - [ ] `U+EB00..U+EB3F` Orokin
+    - [ ] `U+EB40..U+EB5F` Standard Galactic
+    - [ ] `U+EB60..U+EB9F` Braille Extended
+    - [ ] `U+EBA0..U+EBDF` Cistercian Numerals
+    - [ ] `U+EBE0..U+EBEF` Lapointe Hexadecimal Numbers
+    - [ ] `U+EBF0..U+EBFF` Martin Hexadecimal Numbers
+    - [ ] `U+EC00..U+EC2F` Cylenian
+    - [ ] `U+EC30..U+EC6F` Syrrin
+    - [ ] `U+EC70..U+ECEF` Graflect
+    - [ ] `U+ECF0..U+ECFF` Whitaker Hexadecimal Numbers
+    - [ ] `U+ED00..U+ED3F` Deini
+    - [ ] `U+ED40..U+ED5F` Niji
+    - [ ] `U+F4C0..U+F4EF` Ath
+    - [ ] `U+F8A0..U+F8CF` Aiha
+    - [ ] `U+F8D0..U+F8FF` Klingon
+  - [ ] Unicode Supplementary Multilingual Plane
+    - [x] `U+010000..U+01007F` Linear B Syllabary
+    - [ ] `U+010080..U+0100FF` Linear B Ideograms
+    - [x] `U+010100..U+01013F` Aegean Numbers
+    - [x] `U+010140..U+01018F` Ancient Greek Numbers
+    - [ ] `U+010190..U+0101CF` Ancient Symbols
+    - [ ] `U+0101D0..U+0101FF` Phaistos Disc
+    - [x] `U+010280..U+01029F` Lycian
+    - [x] `U+0102A0..U+0102DF` Carian
+    - [ ] `U+0102E0..U+0102FF` Coptic Epact Numbers
+    - [x] `U+010300..U+01032F` Old Italic
+    - [x] `U+010330..U+01034F` Gothic
+    - [x] `U+010350..U+01037F` Old Permic
+    - [ ] `U+010380..U+01039F` Ugaritic
+    - [ ] `U+0103A0..U+0103DF` Old Persian
+    - [x] `U+010400..U+01044F` Deseret
+    - [x] `U+010450..U+01047F` Shavian
+    - [x] `U+010480..U+0104AF` Osmanya
+    - [x] `U+0104B0..U+0104FF` Osage
+    - [x] `U+010500..U+01052F` Elbasan
+    - [x] `U+010530..U+01056F` Caucasian Albanian
+    - [x] `U+010570..U+0105BF` Vithkuqi
+    - [x] `U+0105C0..U+0105FF` Todhri
+    - [ ] `U+010600..U+01077F` Linear A
+    - [ ] `U+010780..U+0107BF` Latin Extended-F
+    - [ ] `U+010800..U+01083F` Cypriot Syllabary
+    - [x] `U+010840..U+01085F` Imperial Aramaic
+    - [ ] `U+010860..U+01087F` Palmyrene
+    - [ ] `U+010880..U+0108AF` Nabataean
+    - [x] `U+0108E0..U+0108FF` Hatran
+    - [x] `U+010900..U+01091F` Phoenecian
+    - [x] `U+010920..U+01093F` Lydian
+    - [x] `U+010940..U+01095F` Sidetic
+    - [x] `U+010980..U+01099F` Meroitic Hieroglyphs
+    - [x] `U+0109A0..U+0109FF` Meroitic Cursive
+    - [ ] `U+010A00..U+010A5F` Kharoshthi
+    - [x] `U+010A60..U+010A7F` Old South Arabian
+    - [x] `U+010A80..U+010A9F` Old North Arabian
+    - [ ] `U+010AC0..U+010AFF` Manichaean
+    - [ ] `U+010B00..U+010B3F` Avestan
+    - [x] `U+010B40..U+010B5F` Inscriptional Parthian
+    - [x] `U+010B60..U+010B7F` Inscriptional Pahlavi
+    - [x] `U+010B80..U+010BAF` Psalter Pahlavi
+    - [x] `U+010C00..U+010C4F` Old Turkic
+    - [x] `U+010C80..U+010CFF` Old Hungarian
+    - [ ] `U+010D00..U+010D3F` Hanifi Rohingya
+    - [ ] `U+010D40..U+010D8F` Garay
+    - [ ] `U+010E60..U+010E7F` Rumi Numeral Symbols
+    - [ ] `U+010E80..U+010EBF` Yezidi
+    - [ ] `U+010EC0..U+010EFF` Arabic Extended-C
+    - [ ] `U+010F00..U+010F2F` Old Sogdian
+    - [ ] `U+010F30..U+010F6F` Sogdian
+    - [ ] `U+010F70..U+010FAF` Old Uyghur
+    - [ ] `U+010FB0..U+010FDF` Chorasmian
+    - [ ] `U+010FE0..U+010FFF` Elymaic
+    - [ ] `U+011000..U+01107F` Brahmi
+    - [ ] `U+011080..U+0110CF` Kaithi
+    - [ ] `U+0110D0..U+0110FF` Sora Sompeng
+    - [ ] `U+011100..U+01114F` Chakma
+    - [ ] `U+011150..U+01117F` Mahajani
+    - [ ] `U+011180..U+0111DF` Sharada
+    - [ ] `U+0111E0..U+0111FF` Sinhala Archaic Numbers
+    - [ ] `U+011200..U+01124F` Khojki
+    - [ ] `U+011280..U+0112AF` Multani
+    - [ ] `U+0112B0..U+0112FF` Khudawadi
+    - [ ] `U+011300..U+01137F` Grantha
+    - [ ] `U+011380..U+0113FF` Tulu-Tigalari
+    - [ ] `U+011400..U+01147F` Newa
+    - [ ] `U+011480..U+0114DF` Tirhuta
+    - [ ] `U+011580..U+0115FF` Siddham
+    - [ ] `U+011600..U+01165F` Modi
+    - [ ] `U+011660..U+01167F` Mongolian Supplement
+    - [ ] `U+011680..U+0116CF` Takri
+    - [ ] `U+0116D0..U+0116FF` Myanmar Extended-C
+    - [ ] `U+011700..U+01174F` Ahom
+    - [ ] `U+011800..U+01184F` Dogra
+    - [ ] `U+0118A0..U+0118FF` Warang Citi
+    - [ ] `U+011900..U+01195F` Dives Akuru
+    - [ ] `U+0119A0..U+0119FF` Nandinagari
+    - [ ] `U+011A00..U+011A4F` Zanabazar Square
+    - [ ] `U+011A50..U+011AAF` Soyombo
+    - [ ] `U+011AB0..U+011ABF` Unified Canadian Aboriginal Syllabics Extended-A
+    - [ ] `U+011AC0..U+011AFF` Pau Cin Hau
+    - [ ] `U+011B60..U+011B7F` Sharada Supplement
+    - [ ] `U+011BC0..U+011BFF` Sunuwar
+    - [ ] `U+011C00..U+011C6F` Bhaiksuki
+    - [ ] `U+011C70..U+011CBF` Marchen
+    - [ ] `U+011D00..U+011D5F` Masaram Gondi
+    - [ ] `U+011D60..U+011DAF` Gunjala Gondi
+    - [ ] `U+011DB0..U+011DEF` Tolong Siki
+    - [ ] `U+011EE0..U+011EFF` Makasar
+    - [ ] `U+011F00..U+011F5F` Kawi
+    - [ ] `U+011FC0..U+011FFF` Tamil Supplement
+    - [ ] `U+012000..U+0123FF` Cuneiform
+    - [ ] `U+012400..U+01247F` Cuneiform Numbers and Punctuation
+    - [ ] `U+012480..U+01254F` Early Dynastic Cuneiform
+    - [ ] `U+012F90..U+012FFF` Cypro-Minoan
+    - [ ] `U+013000..U+01342F` Egyptian Hieroglyphs
+    - [ ] `U+013430..U+01345F` Egyptian Hieroglyph Format Controls
+    - [ ] `U+013460..U+0143FF` Egyptian Hieroglyphics Extended-A
+    - [ ] `U+014400..U+01467F` Anatolian Hieroglyphs
+    - [ ] `U+016100..U+01613F` Gurung Khema
+    - [ ] `U+016800..U+016A3F` Bamum Supplement (In Progress)
+    - [ ] `U+016A40..U+016A6F` Mro
+    - [ ] `U+016A70..U+016ACF` Tangsa
+    - [ ] `U+016AD0..U+016AFF` Bassa Vah
+    - [ ] `U+016D40..U+016D7F` Kirat Rai
+    - [ ] `U+016B00..U+016B8F` Pahawh Hmong
+    - [ ] `U+016E40..U+016E9F` Medefaidrin
+    - [ ] `U+016EA0..U+016EDF` Beria Erfe
+    - [ ] `U+016F00..U+016F9F` Miao
+    - [ ] `U+016FE0..U+016FFF` Ideographic Symbols and Punctuation
+    - [ ] `U+017000..U+0187FF` Tangut
+    - [ ] `U+018800..U+018AFF` Tangut Components
+    - [ ] `U+018B00..U+018CFF` Khitan Small Script
+    - [ ] `U+018D00..U+018D7F` Tangut Supplement
+    - [ ] `U+018D80..U+018DFF` Tangut Components Supplement
+    - [ ] `U+01AFF0..U+01AFFF` Kana Extended-B
+    - [ ] `U+01B000..U+01B0FF` Kana Supplement
+    - [ ] `U+01B100..U+01B12F` Kana Extended-A
+    - [ ] `U+01B130..U+01B16F` Small Kana Extension
+    - [ ] `U+01B170..U+01B2FF` Nushu
+    - [ ] `U+01BC00..U+01BC9F` Duployan
+    - [ ] `U+01BCA0..U+01BCAF` Shorthand Format Controls
+    - [ ] `U+01CEC0..U+01CEFF` Miscellaneous Symbols Supplement
+    - [ ] `U+01CF00..U+01CFCF` Znamenny Musical Notation
+    - [ ] `U+01D000..U+01D0FF` Byzantine Musical Symbols
+    - [ ] `U+01D100..U+01D1FF` Musical Symbols
+    - [ ] `U+01D200..U+01D24F` Ancient Greek Musical Notation
+    - [ ] `U+01D2E0..U+01D2FF` Mayan Numerals
+    - [ ] `U+01D360..U+01D37F` Counting Rod Numerals
+    - [ ] `U+01D400..U+01D7FF` Mathematical Alphanumeric Symbols
+    - [ ] `U+01D800..U+01DAAF` Sutton SignWriting
+    - [ ] `U+01DF00..U+01DFFF` Latin Extended-G
+    - [ ] `U+01E000..U+01E02F` Glagolitic Supplement
+    - [ ] `U+01E100..U+01E14F` Nyiakeng Puachue Hmong
+    - [ ] `U+01E290..U+01E2BF` Toto
+    - [ ] `U+01E2C0..U+01E2FF` Wancho
+    - [ ] `U+01E5D0..U+01E5FF` Ol Onal
+    - [ ] `U+01E6C0..U+01E6FF` Tai Yo
+    - [ ] `U+01E7E0..U+01E7FF` Ethiopic Extended-B
+    - [ ] `U+01E800..U+01E8DF` Mende Kikakui
+    - [ ] `U+01E900..U+01E95F` Adlam
+    - [ ] `U+01EC70..U+01ECBF` Indic Siyaq Numbers
+    - [ ] `U+01ED00..U+01ED4F` Ottoman Siyaq Numbers
+    - [ ] `U+01EE00..U+01EEFF` Arabic Mathematical Alphabetic Symbols
+    - [ ] `U+01F000..U+01F02F` Mahjong Tiles
+    - [ ] `U+01F030..U+01F09F` Domino Tiles
+    - [ ] `U+01F0A0..U+01F0FF` Playing Cards
+    - [ ] `U+01F100..U+01F1FF` Enclosed Alphanumeric Supplement
+    - [ ] `U+01F200..U+01F2FF` Enclosed Ideographic Supplement
+    - [ ] `U+01F300..U+01F5FF` Miscellaneous Symbols and Pictographs
+    - [ ] `U+01F600..U+01F64F` Emoticons
+    - [ ] `U+01F650..U+01F67F` Ornamental Dingbats
+    - [ ] `U+01F680..U+01F6FF` Transport and Map Symbols
+    - [ ] `U+01F700..U+01F77F` Alchemical Symbols
+    - [ ] `U+01F780..U+01F7FF` Geometric Shapes Extended
+    - [ ] `U+01F800..U+01F8FF` Supplemental Arrows-C
+    - [ ] `U+01F900..U+01F9FF` Supplemental Symbols and Pictographs
+    - [ ] `U+01FA00..U+01FA6F` Chess Symbols
+    - [ ] `U+01FA70..U+01FAFF` Symbols and Pictographs Extended-A
+  - [ ] Under-ConScript Unicode Registry
+    - [ ] `U+F0000..U+F0E6F` Kinya Syllables
+    - [ ] `U+F0E70..U+F11E7` Pikto
+    - [ ] `U+F16B0..U+F16DF` Derani
+    - [ ] `U+F1900..U+F19FF` Sitelen Pona
+    - [ ] `U+F1B00..U+F1C3F` Shidinn
+    - [ ] `U+F1C40..U+F1C7F` Titi Pula
+    - [ ] `U+F1C80..U+F1C9F` Sitelen Pona Radicals
+    - [ ] `U+F2000..U+F267F` Sadalian
+    - [ ] `U+F28A0..U+F28DF` Zbalermorna
+- [ ] Firefox
+- [ ] FontForge
+- [ ] Google Chrome
+- ![](/una-theme-icons/12px/soft/intellij_idea.png){:.tag-icon}IntelliJ Idea Community Edition
+- ![](/una-theme-icons/12px/soft/scrivener.png){:.tag-icon}Scrivener
+- ![](/una-theme-icons/12px/lang/bash.png){:.tag-icon}Terminal Profile
+- ![](/una-theme-icons/12px/soft/visual_studio_code.png){:.tag-icon}Visual Studio Code
+  - [x] Code highlighting colors
+  - [x] Filetype icons
+  - [x] UI Colors
+  - [ ] UI Icons
+- [ ] QBitTorrent
