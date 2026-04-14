@@ -8,6 +8,7 @@ title: >
 
 <style>
   .sample img { margin-right: 2px; }
+  .marg td { width: 10em; text-align: center; padding: 0;}
 </style>
 
 una theme icons<br/>
@@ -66,3 +67,52 @@ punctuation.
       src="/una-theme-icons/30px/ill/${l.toLowerCase()}.png" />`
     ));
 </script>
+
+## Marginalia
+
+Marginalia, drolleries, or grotesques are what truly illuminate a manuscript, in
+my opinion. With some encouragement from my wife, I obviously had to include 
+some little guys in the icons set.
+{:.dropcap}
+<!--
+Most are directly traced from existing 
+manuscripts (the sources are listed in the tables below), but I did try my hand 
+at some originals.
+
+These are categorized by their formfactor, being vertical (48 x 84px), 
+horizontal (84 x 48px), or square (84 x 84px). 
+-->
+
+
+<table class="marg">
+  <tr>
+    <td>
+      <img src="/una-theme-icons/48px/ill/vert1.png"/><br/>
+      vert1.png<br/>
+      48 x 84px<br/>
+      <a href="https://portail.biblissima.fr/fr/ark:/43093/ifdata9d89ae1afbd7dc9375bf87a37c24e4d9b7609483" target="_blank">
+        Pontifical of Renaud de Bar, f. 137v</a>
+    </td>
+    <td>
+      <img src="/una-theme-icons/48px/ill/vert2.png"/><br/>
+      vert2.png<br/>
+      48 x 84px<br/>
+      <a href="https://www.imagesonline.bl.uk/asset/6133/" target="_blank">
+        Smithfield Decretals, f. 49v</a>
+    </td>
+    <td>
+      <img src="/una-theme-icons/48px/ill/vert3.png"/><br/>
+      vert3.png<br/>
+      48 x 84px<br/>
+      <a href="https://portail.biblissima.fr/fr/ark:/43093/ifdata35f1398405b40ea4229f4dab95fdbf9f67678d3c" target="_blank">
+        Pontifical of Renaud de Bar, f. 99v</a>
+    </td>
+    <td>
+      <img src="/una-theme-icons/48px/ill/vert4.png"/><br/>
+      vert4.png<br/>
+      48 x 84px<br/>
+      <a href="https://iiif.bl.uk/uv/#?manifest=https://bl.digirati.io/iiif/ark:/81055/vdc_100165173879.0x000001" target="_blank">
+        Maastricht Hours,<br/>f. 185r</a>
+    </td>
+  </tr>
+</table>
