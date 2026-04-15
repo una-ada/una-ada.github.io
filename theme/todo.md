@@ -6,11 +6,11 @@ title: >
   una theme to-do list
 ---
 
-- ![](/una-theme-icons/12px/soft/tape.png){:.tag-icon}ΛERIF°RM Tape
-- ![](/una-theme-icons/12px/soft/aseprite.png){:.tag-icon}Aseprite
+- ![](/una-theme-icons/12px/soft/tape.png){:.tag-icon}[ΛERIF°RM Tape](/theme/#tape)
+- [ ] Aseprite
 - [ ] Android Launcher
 - [ ] BetterDiscord
-- ![](/una-theme-icons/12px/type/font.png){:.tag-icon}Cozette-(U)CSUR
+- ![](/una-theme-icons/12px/type/font.png){:.tag-icon}[Cozette-(U)CSUR](/theme/#cozette-ucsur)
   - [ ] Unicode Basic Multilingual Plane
     - [x] `U+0180..U+024F` Latin Extended-B
     - [x] `U+0250..U+02AF` IPA Extensions
@@ -390,34 +390,34 @@ title: >
 - [ ] Firefox
 - [ ] FontForge
 - [ ] Google Chrome
-- ![](/una-theme-icons/12px/soft/intellij_idea.png){:.tag-icon}IntelliJ Idea Community Edition
+- [ ] IntelliJ Idea Community Edition
 - [ ] QBitTorrent
-- ![](/una-theme-icons/12px/soft/scrivener.png){:.tag-icon}Scrivener
-- ![](/una-theme-icons/12px/lang/bash.png){:.tag-icon}Terminal Profile
+- ![](/una-theme-icons/12px/soft/scrivener.png){:.tag-icon}[Scrivener](/theme/#scrivener)
+- ![](/una-theme-icons/12px/lang/bash.png){:.tag-icon}[Terminal Profile](/theme/#terminal)
 - ![](/una-theme-icons/12px/etc/heart_kitty.png){:.tag-icon}Una Theme Icons
-  - [ ] emoji
+  - [ ] [emoji](/theme/icons/emoji)
     - [x] Smileys & Emotion
-      - [x] face-smiling
-      - [x] face-affection
-      - [x] face-tongue
-      - [x] face-hand
-      - [x] face-neutral-skeptical
-      - [x] face-sleepy
-      - [x] face-unwell
-      - [x] face-hat
-      - [x] face-glasses
-      - [x] face-concerned
-      - [x] face-negative
-      - [x] face-costume
-      - [x] cat-face
-      - [x] monkey-face
-      - [x] heart
-      - [x] emotion
+      - ![](/una-theme-icons/12px/emoji/1f604.png){:.tag-icon}face-smiling
+      - ![](/una-theme-icons/12px/emoji/1f970.png){:.tag-icon}face-affection
+      - ![](/una-theme-icons/12px/emoji/1f60b.png){:.tag-icon}face-tongue
+      - ![](/una-theme-icons/12px/emoji/1f917.png){:.tag-icon}face-hand
+      - ![](/una-theme-icons/12px/emoji/1f60f.png){:.tag-icon}face-neutral-skeptical
+      - ![](/una-theme-icons/12px/emoji/1f924.png){:.tag-icon}face-sleepy
+      - ![](/una-theme-icons/12px/emoji/1f92f.png){:.tag-icon}face-unwell
+      - ![](/una-theme-icons/12px/emoji/1f973.png){:.tag-icon}face-hat
+      - ![](/una-theme-icons/12px/emoji/1f60e.png){:.tag-icon}face-glasses
+      - ![](/una-theme-icons/12px/emoji/1f633.png){:.tag-icon}face-concerned
+      - ![](/una-theme-icons/12px/emoji/1f621.png){:.tag-icon}face-negative
+      - ![](/una-theme-icons/12px/emoji/1f479.png){:.tag-icon}face-costume
+      - ![](/una-theme-icons/12px/emoji/1f63e.png){:.tag-icon}cat-face
+      - ![](/una-theme-icons/12px/emoji/1f64a.png){:.tag-icon}monkey-face
+      - ![](/una-theme-icons/12px/emoji/2764-fe0f-200d-1f525.png){:.tag-icon}heart
+      - ![](/una-theme-icons/12px/emoji/1f4ac.png){:.tag-icon}emotion
     - [ ] People & Body
-      - [x] hand-fingers-open
-      - [x] hand-fingers-partial
-      - [x] hand-single-finger
-      - [x] hand-fingers-closed
+      - ![](/una-theme-icons/12px/emoji/1f44b.png){:.tag-icon}hand-fingers-open
+      - ![](/una-theme-icons/12px/emoji/1f91f.png){:.tag-icon}hand-fingers-partial
+      - ![](/una-theme-icons/12px/emoji/1f446.png){:.tag-icon}hand-single-finger
+      - ![](/una-theme-icons/12px/emoji/270a.png){:.tag-icon}hand-fingers-closed
       - [ ] hands
       - [ ] hand-prop
       - [ ] body-parts
@@ -430,11 +430,9 @@ title: >
       - [ ] person-resting
       - [ ] family
       - [ ] person-symbol
-      - [ ] Component
     - [ ] Component
-      - [ ] skin-tone
+      - ![](/una-theme-icons/12px/emoji/1f3fd.png){:.tag-icon}skin-tone
       - [ ] hair-style
-      - [ ] Animals & Nature
     - [ ] Animals & Nature
       - [ ] animal-mammal
       - [ ] animal-bird
@@ -444,7 +442,6 @@ title: >
       - [ ] animal-bug
       - [ ] plant-flower
       - [ ] plant-other
-      - [ ] Food & Drink
     - [ ] Food & Drink
       - [ ] food-fruit
       - [ ] food-vegetable
@@ -453,7 +450,6 @@ title: >
       - [ ] food-sweet
       - [ ] drink
       - [ ] dishware
-      - [ ] Travel & Places
     - [ ] Travel & Places
       - [ ] place-map
       - [ ] place-geographic
@@ -466,14 +462,12 @@ title: >
       - [ ] hotel
       - [ ] time
       - [ ] sky & weather
-      - [ ] Activities
     - [ ] Activities
       - [ ] event
       - [ ] award-medal
       - [ ] sport
       - [ ] game
       - [ ] arts & crafts
-      - [ ] Objects
     - [ ] Objects
       - [ ] clothing
       - [ ] sound
@@ -493,13 +487,12 @@ title: >
       - [ ] medical
       - [ ] household
       - [ ] other-object
-      - [ ] Symbols
     - [ ] Symbols
-      - [ ] transport-sign
-      - [ ] warning
-      - [ ] arrow
-      - [ ] religion
-      - [ ] zodiac
+      - ![](/una-theme-icons/12px/emoji/1f6ae.png){:.tag-icon}transport-sign
+      - ![](/una-theme-icons/12px/emoji/1f51e.png){:.tag-icon}warning
+      - ![](/una-theme-icons/12px/emoji/27a1.png ){:.tag-icon}arrow
+      - ![](/una-theme-icons/12px/emoji/1f6d0.png){:.tag-icon}religion
+      - ![](/una-theme-icons/12px/emoji/264f.png ){:.tag-icon}zodiac
       - [ ] av-symbol
       - [ ] gender
       - [ ] math
@@ -508,14 +501,17 @@ title: >
       - [ ] other-symbol
       - [ ] keycap
       - [ ] alphanum
-      - [ ] geometric
-      - [ ] Flags
+      - ![](/una-theme-icons/12px/emoji/1f537.png){:.tag-icon}geometric
     - [ ] Flags
-      - [x] flag
+      - ![](/una-theme-icons/12px/emoji/1f38c.png){:.tag-icon}flag
       - [ ] country-flag
       - [ ] subdivision-flag
-- ![](/una-theme-icons/12px/soft/visual_studio_code.png){:.tag-icon}Visual Studio Code
+  - [ ] [illuminated](/theme/icons/illuminated)
+    - [x] english initials
+    - [ ] other latin initials
+    - [ ] marginalia
+- ![](/una-theme-icons/12px/soft/visual_studio_code.png){:.tag-icon}[Visual Studio Code](/theme/#vs-code)
   - [x] Code highlighting colors
-  - [x] Filetype icons
+  - ![](/una-theme-icons/12px/type/file.png){:.tag-icon}Filetype icons
   - [x] UI Colors
   - [ ] UI Icons

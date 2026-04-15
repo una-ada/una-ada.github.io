@@ -103,7 +103,7 @@
                 newElement('td', '', {class: 'row'})
               ]);
             }
-            if(r[i][j][k].qual == 'fully-qualified')
+            if(r[i][j][k].qual == 'fully-qualified' || i == 'Component')
               row.appendChild(newElement('td',
                 r[i][j][k].code.split('-').map(m => `&#x${m};`).join(''),
                 { class: 'glyph', title: r[i][j][k].cldr}
