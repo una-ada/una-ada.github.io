@@ -493,13 +493,13 @@ title: >
       - ![](/una-theme-icons/12px/emoji/27a1.png ){:.tag-icon}arrow
       - ![](/una-theme-icons/12px/emoji/1f6d0.png){:.tag-icon}religion
       - ![](/una-theme-icons/12px/emoji/264f.png ){:.tag-icon}zodiac
-      - [ ] av-symbol
-      - [ ] gender
-      - [ ] math
-      - [ ] punctuation
-      - [ ] currency
-      - [ ] other-symbol
-      - [ ] keycap
+      - ![](/una-theme-icons/12px/emoji/23ed.png ){:.tag-icon}av-symbol
+      - ![](/una-theme-icons/12px/emoji/26a7.png ){:.tag-icon}gender
+      - ![](/una-theme-icons/12px/emoji/2716.png ){:.tag-icon}math
+      - ![](/una-theme-icons/12px/emoji/2049.png ){:.tag-icon}punctuation
+      - ![](/una-theme-icons/12px/emoji/1f4b1.png){:.tag-icon}currency
+      - ![](/una-theme-icons/12px/emoji/269c.png ){:.tag-icon}other-symbol
+      - ![](/una-theme-icons/12px/emoji/2a-20e3.png){:.tag-icon}keycap
       - [ ] alphanum
       - ![](/una-theme-icons/12px/emoji/1f537.png){:.tag-icon}geometric
     - [ ] Flags
