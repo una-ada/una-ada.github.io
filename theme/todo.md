@@ -487,7 +487,7 @@ title: >
       - [ ] medical
       - [ ] household
       - [ ] other-object
-    - [ ] Symbols
+    - [x] Symbols
       - ![](/una-theme-icons/12px/emoji/1f6ae.png){:.tag-icon}transport-sign
       - ![](/una-theme-icons/12px/emoji/1f51e.png){:.tag-icon}warning
       - ![](/una-theme-icons/12px/emoji/27a1.png ){:.tag-icon}arrow
@@ -500,7 +500,7 @@ title: >
       - ![](/una-theme-icons/12px/emoji/1f4b1.png){:.tag-icon}currency
       - ![](/una-theme-icons/12px/emoji/269c.png ){:.tag-icon}other-symbol
       - ![](/una-theme-icons/12px/emoji/2a-20e3.png){:.tag-icon}keycap
-      - [ ] alphanum
+      - ![](/una-theme-icons/12px/emoji/1f170.png){:.tag-icon}alphanum
       - ![](/una-theme-icons/12px/emoji/1f537.png){:.tag-icon}geometric
     - [ ] Flags
       - ![](/una-theme-icons/12px/emoji/1f38c.png){:.tag-icon}flag
