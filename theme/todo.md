@@ -502,10 +502,10 @@ title: >
       - ![](/una-theme-icons/12px/emoji/2a-20e3.png){:.tag-icon}keycap
       - ![](/una-theme-icons/12px/emoji/1f170.png){:.tag-icon}alphanum
       - ![](/una-theme-icons/12px/emoji/1f537.png){:.tag-icon}geometric
-    - [ ] Flags
+    - [x] Flags
       - ![](/una-theme-icons/12px/emoji/1f38c.png){:.tag-icon}flag
-      - [ ] country-flag
-      - [ ] subdivision-flag
+      - ![](/una-theme-icons/12px/emoji/1f1ec-1f1f1.png){:.tag-icon}country-flag
+      - ![](/una-theme-icons/12px/emoji/1f3f4-e0067-e0062-e0073-e0063-e0074-e007f.png){:.tag-icon}subdivision-flag
   - [ ] [illuminated](/theme/icons/illuminated)
     - [x] english initials
     - [ ] other latin initials
