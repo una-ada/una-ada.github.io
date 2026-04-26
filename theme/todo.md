@@ -418,11 +418,11 @@ title: >
       - ![](/una-theme-icons/12px/emoji/1f91f.png){:.tag-icon}hand-fingers-partial
       - ![](/una-theme-icons/12px/emoji/1f446.png){:.tag-icon}hand-single-finger
       - ![](/una-theme-icons/12px/emoji/270a.png){:.tag-icon}hand-fingers-closed
-      - [ ] hands
-      - [ ] hand-prop
-      - [ ] body-parts
-      - [ ] person
-      - [ ] person-gesture
+      - ![](/una-theme-icons/12px/emoji/1f44f.png){:.tag-icon}hands
+      - ![](/una-theme-icons/12px/emoji/270d.png){:.tag-icon}hand-prop
+      - ![](/una-theme-icons/12px/emoji/1f440.png){:.tag-icon}body-parts
+      - ![](/una-theme-icons/12px/emoji/1f468-200d-1f9b1.png){:.tag-icon}person
+      - [ ] person-gesture 
       - [ ] person-role
       - [ ] person-fantasy
       - [ ] person-activity
