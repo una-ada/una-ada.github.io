@@ -73,6 +73,12 @@ setInterval(_ => {
 );
 ```
 
+## substringSwap
+```javascript
+// Swap substrings of `s` per pairs in an array `a` (e.g. [['a','b'],['c','d']])
+a.reduce((r, [i,j]) => r.replace(RegExp(`(${i}|${j})`), $1=>$1==i?j:i), s);
+```
+
 # dumb bullshit
 
 ## clamp
